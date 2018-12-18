@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E39165E5-80E8-4769-B29F-3FB291AD3B55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HslControlsDemo</RootNamespace>
+    <AssemblyName>HslControlsDemo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HslControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.1.0.0\lib\net35\HslControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBasic.Designer.cs">
+      <DependentUpon>FormBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBottle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBottle.Designer.cs">
+      <DependentUpon>FormBottle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClock.Designer.cs">
+      <DependentUpon>FormClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurve.Designer.cs">
+      <DependentUpon>FormCurve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeclaration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeclaration.Designer.cs">
+      <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGauge.Designer.cs">
+      <DependentUpon>FormGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGaugeChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGaugeChart.Designer.cs">
+      <DependentUpon>FormGaugeChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLanternSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLanternSimple.Designer.cs">
+      <DependentUpon>FormLanternSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLedDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLedDisplay.Designer.cs">
+      <DependentUpon>FormLedDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPieChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPieChart.Designer.cs">
+      <DependentUpon>FormPieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPipeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPipeLine.Designer.cs">
+      <DependentUpon>FormPipeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgress.Designer.cs">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBasic.resx">
+      <DependentUpon>FormBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBottle.resx">
+      <DependentUpon>FormBottle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClock.resx">
+      <DependentUpon>FormClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurve.resx">
+      <DependentUpon>FormCurve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeclaration.resx">
+      <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGauge.resx">
+      <DependentUpon>FormGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGaugeChart.resx">
+      <DependentUpon>FormGaugeChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLanternSimple.resx">
+      <DependentUpon>FormLanternSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLedDisplay.resx">
+      <DependentUpon>FormLedDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPieChart.resx">
+      <DependentUpon>FormPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPipeLine.resx">
+      <DependentUpon>FormPipeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProgress.resx">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
