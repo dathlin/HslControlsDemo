@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using HslCommunication.Enthernet;
 
 namespace HslControlsDemo
 {
@@ -165,6 +166,43 @@ namespace HslControlsDemo
             using (FormDeclaration form = new FormDeclaration( ))
             {
                 form.ShowDialog( );
+            }
+        }
+
+        private void FormLoad_Shown( object sender, EventArgs e )
+        {
+            System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
+        }
+
+
+        private void ThreadPoolCheckVersion( object obj )
+        {
+            System.Threading.Thread.Sleep( 100 );
+            HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.0" );
+            if (read.IsSuccess)
+            {
+                HslCommunication.BasicFramework.SystemVersion version = new HslCommunication.BasicFramework.SystemVersion( read.Content2 );
+                if (version > new HslCommunication.BasicFramework.SystemVersion( "1.0.0" ))
+                {
+                    // 有更新
+                    Invoke( new Action( ( ) =>
+                    {
+                        if (MessageBox.Show( "服务器有新版本：" + read.Content2 + Environment.NewLine + "是否启动更新？", "检测到更新", MessageBoxButtons.YesNo ) == DialogResult.Yes)
+                        {
+                            try
+                            {
+                                System.Diagnostics.Process.Start( Application.StartupPath + "\\软件自动更新.exe" );
+                                System.Threading.Thread.Sleep( 50 );
+                                Close( );
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show( "更新软件丢失，无法启动更新： " + ex.Message );
+                            }
+                        }
+                    } ) );
+                }
             }
         }
     }
