@@ -190,6 +190,7 @@
             // 
             // hslPipeLine3
             // 
+            this.hslPipeLine3.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
             this.hslPipeLine3.Location = new System.Drawing.Point(33, 179);
             this.hslPipeLine3.Name = "hslPipeLine3";
             this.hslPipeLine3.PipeTurnLeft = HslControls.HslPipeTurnDirection.Down;

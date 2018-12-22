@@ -35,8 +35,8 @@
     <Reference Include="HslCommunication, Version=5.6.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.5.6.6\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.1.0.0\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=1.0.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.1.0.1\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="FormClock.Designer.cs">
       <DependentUpon>FormClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConveryer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConveryer.designer.cs">
+      <DependentUpon>FormConveryer.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCurve.cs">
       <SubType>Form</SubType>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClock.resx">
       <DependentUpon>FormClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConveryer.resx">
+      <DependentUpon>FormConveryer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurve.resx">
       <DependentUpon>FormCurve.cs</DependentUpon>
