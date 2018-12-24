@@ -179,7 +179,7 @@ namespace HslControlsDemo
         {
             System.Threading.Thread.Sleep( 100 );
             HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.1" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.2" );
             if (read.IsSuccess)
             {
                 HslCommunication.BasicFramework.SystemVersion version = new HslCommunication.BasicFramework.SystemVersion( read.Content2 );
@@ -210,6 +210,22 @@ namespace HslControlsDemo
         {
             Hide( );
             using (FormConveryer form = new FormConveryer( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void linkLabel3_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
+        {
+            OpenWebside( "https://github.com/dathlin/HslControlsDemo" );
+        }
+
+        private void button13_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormConveyerRollers form = new FormConveyerRollers( ))
             {
                 form.ShowDialog( );
             }
