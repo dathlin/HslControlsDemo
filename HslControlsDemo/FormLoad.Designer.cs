@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -46,12 +47,13 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button14);
             this.groupBox1.Controls.Add(this.button13);
             this.groupBox1.Controls.Add(this.button12);
             this.groupBox1.Controls.Add(this.button11);
@@ -73,6 +75,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(178, 77);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(157, 37);
+            this.button13.TabIndex = 13;
+            this.button13.Text = "传送带（滚筒）";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
@@ -258,16 +271,16 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // button13
+            // button14
             // 
-            this.button13.Location = new System.Drawing.Point(178, 77);
-            this.button13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(157, 37);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "传送带（滚筒）";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button14.Location = new System.Drawing.Point(178, 122);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(157, 37);
+            this.button14.TabIndex = 14;
+            this.button14.Text = "温度计";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // FormLoad
             // 
@@ -315,5 +328,6 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }

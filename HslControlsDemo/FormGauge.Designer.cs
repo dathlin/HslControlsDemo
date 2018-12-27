@@ -81,7 +81,7 @@
             this.hslGauge2.Size = new System.Drawing.Size(301, 182);
             this.hslGauge2.TabIndex = 0;
             this.hslGauge2.UnitText = "* 10 ℃";
-            this.hslGauge2.ValueMax = 10D;
+            this.hslGauge2.ValueMax = 10F;
             // 
             // groupBox3
             // 
@@ -129,9 +129,9 @@
             this.hslGauge7.SegmentCount = 2;
             this.hslGauge7.Size = new System.Drawing.Size(121, 76);
             this.hslGauge7.TabIndex = 3;
-            this.hslGauge7.ValueAlarmMax = 2D;
-            this.hslGauge7.ValueAlarmMin = 0D;
-            this.hslGauge7.ValueMax = 2D;
+            this.hslGauge7.ValueAlarmMax = 2F;
+            this.hslGauge7.ValueAlarmMin = 0F;
+            this.hslGauge7.ValueMax = 2F;
             // 
             // hslGauge6
             // 
@@ -140,9 +140,9 @@
             this.hslGauge6.SegmentCount = 2;
             this.hslGauge6.Size = new System.Drawing.Size(121, 76);
             this.hslGauge6.TabIndex = 2;
-            this.hslGauge6.ValueAlarmMax = 2D;
-            this.hslGauge6.ValueAlarmMin = 0D;
-            this.hslGauge6.ValueMax = 2D;
+            this.hslGauge6.ValueAlarmMax = 2F;
+            this.hslGauge6.ValueAlarmMin = 0F;
+            this.hslGauge6.ValueMax = 2F;
             // 
             // hslGauge5
             // 
@@ -158,9 +158,9 @@
             this.hslGauge5.Size = new System.Drawing.Size(324, 295);
             this.hslGauge5.TabIndex = 1;
             this.hslGauge5.UnitText = "KM/H";
-            this.hslGauge5.ValueAlarmMax = 220D;
-            this.hslGauge5.ValueAlarmMin = 0D;
-            this.hslGauge5.ValueMax = 220D;
+            this.hslGauge5.ValueAlarmMax = 220F;
+            this.hslGauge5.ValueAlarmMin = 0F;
+            this.hslGauge5.ValueMax = 220F;
             // 
             // hslGauge4
             // 
@@ -176,9 +176,9 @@
             this.hslGauge4.Size = new System.Drawing.Size(324, 295);
             this.hslGauge4.TabIndex = 0;
             this.hslGauge4.UnitText = "× 1000 R/MIN";
-            this.hslGauge4.ValueAlarmMax = 6.5D;
-            this.hslGauge4.ValueAlarmMin = 0D;
-            this.hslGauge4.ValueMax = 8D;
+            this.hslGauge4.ValueAlarmMax = 6.5F;
+            this.hslGauge4.ValueAlarmMin = 0F;
+            this.hslGauge4.ValueMax = 8F;
             // 
             // FormGauge
             // 

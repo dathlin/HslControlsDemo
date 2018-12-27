@@ -27,11 +27,11 @@ namespace HslControlsDemo
 
         private void Timer_Tick( object sender, EventArgs e )
         {
-            hslGauge1.Value = Math.Round( random.NextDouble( ) * 100, 2 );
-            hslGauge2.Value = Math.Round( random.NextDouble( ) * 10, 2 );
-            hslGauge3.Value = Math.Round( random.NextDouble( ) * 100, 2 );
-            hslGauge4.Value = Math.Round( random.NextDouble( ) * 8, 2 );
-            hslGauge5.Value = Math.Round( random.NextDouble( ) * 220, 2 );
+            hslGauge1.Value = (float)Math.Round( random.NextDouble( ) * 100, 2 );
+            hslGauge2.Value = (float)Math.Round( random.NextDouble( ) * 10, 2 );
+            hslGauge3.Value = (float)Math.Round( random.NextDouble( ) * 100, 2 );
+            hslGauge4.Value = (float)Math.Round( random.NextDouble( ) * 8, 2 );
+            hslGauge5.Value = (float)Math.Round( random.NextDouble( ) * 220, 2 );
         }
 
         private Timer timer = null;
