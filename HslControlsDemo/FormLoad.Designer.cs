@@ -29,6 +29,8 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -47,12 +49,14 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button16);
+            this.groupBox1.Controls.Add(this.button15);
             this.groupBox1.Controls.Add(this.button14);
             this.groupBox1.Controls.Add(this.button13);
             this.groupBox1.Controls.Add(this.button12);
@@ -75,6 +79,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(178, 167);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(157, 37);
+            this.button15.TabIndex = 15;
+            this.button15.Text = "鼓风机";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(178, 122);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(157, 37);
+            this.button14.TabIndex = 14;
+            this.button14.Text = "温度计";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
@@ -271,16 +297,16 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // button14
+            // button16
             // 
-            this.button14.Location = new System.Drawing.Point(178, 122);
-            this.button14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(157, 37);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "温度计";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button16.Location = new System.Drawing.Point(178, 212);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(157, 37);
+            this.button16.TabIndex = 16;
+            this.button16.Text = "阀门";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // FormLoad
             // 
@@ -329,5 +355,7 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
     }
 }

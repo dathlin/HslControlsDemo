@@ -131,7 +131,7 @@
             this.hslThermometer3.Size = new System.Drawing.Size(155, 551);
             this.hslThermometer3.TabIndex = 4;
             this.hslThermometer3.TemperatureBackColor = System.Drawing.Color.LightGray;
-            this.hslThermometer3.TemperatureColor = System.Drawing.Color.DodgerBlue;
+            this.hslThermometer3.TemperatureColor = System.Drawing.Color.DarkOrchid;
             this.hslThermometer3.Value = 60F;
             this.hslThermometer3.ValueMax = 100F;
             this.hslThermometer3.ValueStart = 40F;
@@ -173,7 +173,7 @@
             this.Controls.Add(this.hslThermometer1);
             this.Name = "FormThermometer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormThermometer";
+            this.Text = "温度计的控件示例";
             this.Load += new System.EventHandler(this.FormThermometer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

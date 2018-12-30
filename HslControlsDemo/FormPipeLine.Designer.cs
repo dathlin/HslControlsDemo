@@ -125,7 +125,7 @@
             this.hslPipeLine11.Location = new System.Drawing.Point(539, 27);
             this.hslPipeLine11.Name = "hslPipeLine11";
             this.hslPipeLine11.PipeLineActive = true;
-            this.hslPipeLine11.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine11.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine11.PipeTurnLeft = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine11.PipeTurnRight = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine11.Size = new System.Drawing.Size(34, 182);
@@ -137,7 +137,7 @@
             this.hslPipeLine10.MoveSpeed = -0.3F;
             this.hslPipeLine10.Name = "hslPipeLine10";
             this.hslPipeLine10.PipeLineActive = true;
-            this.hslPipeLine10.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine10.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine10.PipeTurnLeft = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine10.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine10.Size = new System.Drawing.Size(34, 182);
@@ -148,7 +148,7 @@
             this.hslPipeLine9.Location = new System.Drawing.Point(423, 27);
             this.hslPipeLine9.Name = "hslPipeLine9";
             this.hslPipeLine9.PipeLineActive = true;
-            this.hslPipeLine9.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine9.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine9.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine9.Size = new System.Drawing.Size(34, 182);
             this.hslPipeLine9.TabIndex = 7;
@@ -158,7 +158,7 @@
             this.hslPipeLine8.Location = new System.Drawing.Point(371, 27);
             this.hslPipeLine8.Name = "hslPipeLine8";
             this.hslPipeLine8.PipeLineActive = true;
-            this.hslPipeLine8.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine8.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine8.PipeTurnLeft = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine8.Size = new System.Drawing.Size(34, 182);
             this.hslPipeLine8.TabIndex = 6;
@@ -168,7 +168,7 @@
             this.hslPipeLine7.Location = new System.Drawing.Point(319, 27);
             this.hslPipeLine7.Name = "hslPipeLine7";
             this.hslPipeLine7.PipeLineActive = true;
-            this.hslPipeLine7.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine7.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine7.Size = new System.Drawing.Size(34, 182);
             this.hslPipeLine7.TabIndex = 5;
             // 
@@ -220,7 +220,7 @@
             this.hslPipeLine16.MoveSpeed = 0F;
             this.hslPipeLine16.Name = "hslPipeLine16";
             this.hslPipeLine16.PipeLineActive = true;
-            this.hslPipeLine16.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine16.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine16.PipeTurnLeft = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine16.PipeTurnRight = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine16.Size = new System.Drawing.Size(30, 160);
@@ -262,7 +262,7 @@
             this.hslPipeLine12.MoveSpeed = 0F;
             this.hslPipeLine12.Name = "hslPipeLine12";
             this.hslPipeLine12.PipeLineActive = true;
-            this.hslPipeLine12.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine12.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine12.PipeTurnRight = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine12.Size = new System.Drawing.Size(30, 98);
             this.hslPipeLine12.TabIndex = 6;
@@ -273,7 +273,7 @@
             this.hslPipeLine14.MoveSpeed = 0F;
             this.hslPipeLine14.Name = "hslPipeLine14";
             this.hslPipeLine14.PipeLineActive = true;
-            this.hslPipeLine14.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine14.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine14.Size = new System.Drawing.Size(30, 53);
             this.hslPipeLine14.TabIndex = 8;
             // 
@@ -293,7 +293,7 @@
             this.hslPipeLine18.MoveSpeed = 0F;
             this.hslPipeLine18.Name = "hslPipeLine18";
             this.hslPipeLine18.PipeLineActive = true;
-            this.hslPipeLine18.PipeLineStyle = HslControls.HslPipeLineStyle.Vertical;
+            this.hslPipeLine18.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine18.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine18.Size = new System.Drawing.Size(30, 173);
             this.hslPipeLine18.TabIndex = 12;

@@ -179,11 +179,11 @@ namespace HslControlsDemo
         {
             System.Threading.Thread.Sleep( 100 );
             HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.3" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.4" );
             if (read.IsSuccess)
             {
                 HslCommunication.BasicFramework.SystemVersion version = new HslCommunication.BasicFramework.SystemVersion( read.Content2 );
-                if (version > new HslCommunication.BasicFramework.SystemVersion( "1.0.3" ))
+                if (version > new HslCommunication.BasicFramework.SystemVersion( "1.0.4" ))
                 {
                     // 有更新
                     Invoke( new Action( ( ) =>
@@ -237,6 +237,28 @@ namespace HslControlsDemo
         {
             Hide( );
             using (FormThermometer form = new FormThermometer( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button15_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormBlower form = new FormBlower( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button16_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormValves form = new FormValves( ))
             {
                 form.ShowDialog( );
             }
