@@ -19,7 +19,7 @@ namespace HslControlsDemo
 
         private void Form1_Load( object sender, EventArgs e )
         {
-
+            this.Text += $" [v{versionCurr.ToString( )}]"; 
         }
 
         private void button2_Click( object sender, EventArgs e )
@@ -174,16 +174,17 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "1.0.5" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
             System.Threading.Thread.Sleep( 100 );
             HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, "1.0.4" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, versionCurr.ToString() );
             if (read.IsSuccess)
             {
                 HslCommunication.BasicFramework.SystemVersion version = new HslCommunication.BasicFramework.SystemVersion( read.Content2 );
-                if (version > new HslCommunication.BasicFramework.SystemVersion( "1.0.4" ))
+                if (version > versionCurr)
                 {
                     // 有更新
                     Invoke( new Action( ( ) =>
@@ -259,6 +260,17 @@ namespace HslControlsDemo
         {
             Hide( );
             using (FormValves form = new FormValves( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button17_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormBattery form = new FormBattery( ))
             {
                 form.ShowDialog( );
             }
