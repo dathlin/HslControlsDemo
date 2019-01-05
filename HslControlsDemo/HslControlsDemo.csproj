@@ -35,8 +35,8 @@
     <Reference Include="HslCommunication, Version=5.7.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.5.7.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=1.0.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.1.0.5\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=1.0.6.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.1.0.6\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -75,6 +75,12 @@
     </Compile>
     <Compile Include="FormBottle.Designer.cs">
       <DependentUpon>FormBottle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClassifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClassifier.designer.cs">
+      <DependentUpon>FormClassifier.cs</DependentUpon>
     </Compile>
     <Compile Include="FormClock.cs">
       <SubType>Form</SubType>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBottle.resx">
       <DependentUpon>FormBottle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClassifier.resx">
+      <DependentUpon>FormClassifier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClock.resx">
       <DependentUpon>FormClock.cs</DependentUpon>

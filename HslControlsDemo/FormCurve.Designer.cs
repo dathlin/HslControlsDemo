@@ -28,62 +28,20 @@
         /// </summary>
         private void InitializeComponent( )
         {
-            this.hslCurve6 = new HslControls.HslCurve();
-            this.hslCurve5 = new HslControls.HslCurve();
-            this.hslCurve3 = new HslControls.HslCurve();
-            this.hslCurve1 = new HslControls.HslCurve();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.hslCurve4 = new HslControls.HslCurve();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.hslCurve6 = new HslControls.HslCurve();
+            this.hslCurve5 = new HslControls.HslCurve();
+            this.hslCurve4 = new HslControls.HslCurve();
+            this.hslCurve3 = new HslControls.HslCurve();
+            this.hslCurve1 = new HslControls.HslCurve();
             this.SuspendLayout();
-            // 
-            // hslCurve6
-            // 
-            this.hslCurve6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.hslCurve6.ColorDashLines = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.hslCurve6.ColorLinesAndText = System.Drawing.Color.LightGray;
-            this.hslCurve6.Location = new System.Drawing.Point(503, 425);
-            this.hslCurve6.Name = "hslCurve6";
-            this.hslCurve6.Size = new System.Drawing.Size(429, 172);
-            this.hslCurve6.TabIndex = 5;
-            // 
-            // hslCurve5
-            // 
-            this.hslCurve5.ColorDashLines = System.Drawing.Color.LightGray;
-            this.hslCurve5.IsAbscissaStrech = true;
-            this.hslCurve5.IsRenderRightCoordinate = false;
-            this.hslCurve5.Location = new System.Drawing.Point(24, 436);
-            this.hslCurve5.Name = "hslCurve5";
-            this.hslCurve5.Size = new System.Drawing.Size(429, 172);
-            this.hslCurve5.StrechDataCountMax = 100;
-            this.hslCurve5.TabIndex = 4;
-            // 
-            // hslCurve3
-            // 
-            this.hslCurve3.ColorDashLines = System.Drawing.Color.LightGray;
-            this.hslCurve3.IsRenderRightCoordinate = false;
-            this.hslCurve3.Location = new System.Drawing.Point(24, 221);
-            this.hslCurve3.Name = "hslCurve3";
-            this.hslCurve3.Size = new System.Drawing.Size(429, 172);
-            this.hslCurve3.TabIndex = 2;
-            // 
-            // hslCurve1
-            // 
-            this.hslCurve1.ColorDashLines = System.Drawing.Color.LightGray;
-            this.hslCurve1.IsAbscissaStrech = true;
-            this.hslCurve1.IsRenderRightCoordinate = false;
-            this.hslCurve1.Location = new System.Drawing.Point(24, 12);
-            this.hslCurve1.Name = "hslCurve1";
-            this.hslCurve1.Size = new System.Drawing.Size(908, 172);
-            this.hslCurve1.StrechDataCountMax = 12;
-            this.hslCurve1.TabIndex = 0;
-            this.hslCurve1.Title = "销售数据";
             // 
             // label1
             // 
@@ -121,19 +79,6 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "曲线平滑显示，曲线数据总数为100点";
             // 
-            // hslCurve4
-            // 
-            this.hslCurve4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.hslCurve4.ColorDashLines = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.hslCurve4.ColorLinesAndText = System.Drawing.Color.Silver;
-            this.hslCurve4.Location = new System.Drawing.Point(503, 221);
-            this.hslCurve4.Name = "hslCurve4";
-            this.hslCurve4.Size = new System.Drawing.Size(429, 172);
-            this.hslCurve4.TabIndex = 3;
-            this.hslCurve4.Title = "温度压力实时曲线图";
-            this.hslCurve4.ValueMaxLeft = 200F;
-            this.hslCurve4.ValueMaxRight = 5F;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(503, 612);
@@ -170,6 +115,61 @@
             this.button3.Text = "隐藏曲线";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // hslCurve6
+            // 
+            this.hslCurve6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hslCurve6.ColorDashLines = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.hslCurve6.ColorLinesAndText = System.Drawing.Color.LightGray;
+            this.hslCurve6.Location = new System.Drawing.Point(503, 425);
+            this.hslCurve6.Name = "hslCurve6";
+            this.hslCurve6.Size = new System.Drawing.Size(429, 172);
+            this.hslCurve6.TabIndex = 5;
+            // 
+            // hslCurve5
+            // 
+            this.hslCurve5.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve5.IsAbscissaStrech = true;
+            this.hslCurve5.IsRenderRightCoordinate = false;
+            this.hslCurve5.Location = new System.Drawing.Point(24, 436);
+            this.hslCurve5.Name = "hslCurve5";
+            this.hslCurve5.Size = new System.Drawing.Size(429, 172);
+            this.hslCurve5.StrechDataCountMax = 100;
+            this.hslCurve5.TabIndex = 4;
+            // 
+            // hslCurve4
+            // 
+            this.hslCurve4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hslCurve4.ColorDashLines = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.hslCurve4.ColorLinesAndText = System.Drawing.Color.Silver;
+            this.hslCurve4.Location = new System.Drawing.Point(503, 221);
+            this.hslCurve4.Name = "hslCurve4";
+            this.hslCurve4.Size = new System.Drawing.Size(429, 172);
+            this.hslCurve4.TabIndex = 3;
+            this.hslCurve4.Title = "温度压力实时曲线图";
+            this.hslCurve4.ValueMaxLeft = 200F;
+            this.hslCurve4.ValueMaxRight = 5F;
+            // 
+            // hslCurve3
+            // 
+            this.hslCurve3.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve3.IsRenderRightCoordinate = false;
+            this.hslCurve3.Location = new System.Drawing.Point(24, 221);
+            this.hslCurve3.Name = "hslCurve3";
+            this.hslCurve3.Size = new System.Drawing.Size(429, 172);
+            this.hslCurve3.TabIndex = 2;
+            // 
+            // hslCurve1
+            // 
+            this.hslCurve1.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve1.IsAbscissaStrech = true;
+            this.hslCurve1.IsRenderRightCoordinate = false;
+            this.hslCurve1.Location = new System.Drawing.Point(24, 12);
+            this.hslCurve1.Name = "hslCurve1";
+            this.hslCurve1.Size = new System.Drawing.Size(908, 172);
+            this.hslCurve1.StrechDataCountMax = 12;
+            this.hslCurve1.TabIndex = 0;
+            this.hslCurve1.Title = "销售数据";
             // 
             // FormCurve
             // 

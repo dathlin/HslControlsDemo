@@ -235,6 +235,7 @@
             this.Controls.Add(this.hslValves1);
             this.Controls.Add(this.hslPipeLine1);
             this.Name = "FormValves";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormValves";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
