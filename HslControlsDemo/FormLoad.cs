@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "1.0.6" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "1.1.0" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -287,6 +287,50 @@ namespace HslControlsDemo
             }
             System.Threading.Thread.Sleep(200);
             Show();
+        }
+
+        private void button19_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormGobang form = new FormGobang( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button20_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormTetris form = new FormTetris( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button21_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormTetris2 form = new FormTetris2( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void button22_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormStatus form = new FormStatus( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
         }
     }
 }

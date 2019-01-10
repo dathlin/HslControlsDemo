@@ -29,6 +29,10 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -51,12 +55,16 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button18 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button22);
+            this.groupBox1.Controls.Add(this.button21);
+            this.groupBox1.Controls.Add(this.button20);
+            this.groupBox1.Controls.Add(this.button19);
             this.groupBox1.Controls.Add(this.button18);
             this.groupBox1.Controls.Add(this.button17);
             this.groupBox1.Controls.Add(this.button16);
@@ -83,6 +91,50 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(591, 122);
+            this.button21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(157, 37);
+            this.button21.TabIndex = 21;
+            this.button21.Text = "俄罗斯方块(变态版)";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(591, 77);
+            this.button20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(157, 37);
+            this.button20.TabIndex = 20;
+            this.button20.Text = "俄罗斯方块(正常版)";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(591, 32);
+            this.button19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(157, 37);
+            this.button19.TabIndex = 19;
+            this.button19.Text = "五子棋";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(178, 302);
+            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(157, 37);
+            this.button18.TabIndex = 18;
+            this.button18.Text = "分类器";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -323,16 +375,16 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // button18
+            // button22
             // 
-            this.button18.Location = new System.Drawing.Point(178, 302);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(157, 37);
-            this.button18.TabIndex = 18;
-            this.button18.Text = "分类器";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button22.Location = new System.Drawing.Point(178, 347);
+            this.button22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(157, 37);
+            this.button22.TabIndex = 22;
+            this.button22.Text = "状态集";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // FormLoad
             // 
@@ -385,5 +437,9 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
     }
 }

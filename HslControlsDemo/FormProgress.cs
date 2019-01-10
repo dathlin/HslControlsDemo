@@ -36,6 +36,8 @@ namespace HslControlsDemo
 
             hslProgressLine9.Value = random.Next( 101 );
             hslProgressLine10.Value = random.Next( 101 );
+            
+            hslProgressLine13.Value = random.Next(101);
         }
 
         private Timer timer = new Timer( );

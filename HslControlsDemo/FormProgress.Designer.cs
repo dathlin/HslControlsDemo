@@ -29,37 +29,43 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.hslProgress6 = new HslControls.HslProgress();
+            this.hslProgress5 = new HslControls.HslProgress();
+            this.label2 = new System.Windows.Forms.Label();
+            this.hslProgress4 = new HslControls.HslProgress();
+            this.label1 = new System.Windows.Forms.Label();
+            this.hslProgress3 = new HslControls.HslProgress();
+            this.hslProgress2 = new HslControls.HslProgress();
+            this.hslProgress1 = new HslControls.HslProgress();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.hslProgressLine13 = new HslControls.HslProgressLine();
+            this.hslProgressLine12 = new HslControls.HslProgressLine();
+            this.hslProgressLine11 = new HslControls.HslProgressLine();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.hslProgressLine5 = new HslControls.HslProgressLine();
+            this.hslProgressLine4 = new HslControls.HslProgressLine();
+            this.hslProgressLine3 = new HslControls.HslProgressLine();
+            this.hslProgressLine2 = new HslControls.HslProgressLine();
+            this.hslProgressLine1 = new HslControls.HslProgressLine();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.hslProgress11 = new HslControls.HslProgress();
             this.hslProgress10 = new HslControls.HslProgress();
             this.hslProgress9 = new HslControls.HslProgress();
             this.hslProgress8 = new HslControls.HslProgress();
             this.hslProgress7 = new HslControls.HslProgress();
-            this.hslProgressLine5 = new HslControls.HslProgressLine();
-            this.hslProgressLine4 = new HslControls.HslProgressLine();
-            this.hslProgressLine3 = new HslControls.HslProgressLine();
-            this.hslProgressLine2 = new HslControls.HslProgressLine();
-            this.hslProgressLine1 = new HslControls.HslProgressLine();
-            this.hslProgress6 = new HslControls.HslProgress();
-            this.hslProgress5 = new HslControls.HslProgress();
-            this.hslProgress4 = new HslControls.HslProgress();
-            this.hslProgress3 = new HslControls.HslProgress();
-            this.hslProgress2 = new HslControls.HslProgress();
-            this.hslProgress1 = new HslControls.HslProgress();
-            this.hslProgressLine6 = new HslControls.HslProgressLine();
-            this.hslProgressLine7 = new HslControls.HslProgressLine();
-            this.hslProgressLine8 = new HslControls.HslProgressLine();
-            this.label7 = new System.Windows.Forms.Label();
-            this.hslProgressLine9 = new HslControls.HslProgressLine();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.hslProgressLine10 = new HslControls.HslProgressLine();
+            this.hslProgressLine9 = new HslControls.HslProgressLine();
+            this.label7 = new System.Windows.Forms.Label();
+            this.hslProgressLine8 = new HslControls.HslProgressLine();
+            this.hslProgressLine7 = new HslControls.HslProgressLine();
+            this.hslProgressLine6 = new HslControls.HslProgressLine();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -79,19 +85,68 @@
             this.groupBox1.Controls.Add(this.hslProgress1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(521, 281);
+            this.groupBox1.Size = new System.Drawing.Size(521, 238);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "横向进度条的基本使用";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(155, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(221, 12);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "动态更新数值，是否启动动画的两种效果";
+            // 
+            // hslProgress6
+            // 
+            this.hslProgress6.BackColor = System.Drawing.Color.LightGray;
+            this.hslProgress6.BorderColor = System.Drawing.SystemColors.Control;
+            this.hslProgress6.IsTextRender = false;
+            this.hslProgress6.Location = new System.Drawing.Point(6, 189);
+            this.hslProgress6.Name = "hslProgress6";
+            this.hslProgress6.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslProgress6.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress6.Size = new System.Drawing.Size(509, 10);
+            this.hslProgress6.TabIndex = 8;
+            this.hslProgress6.UseAnimation = true;
+            this.hslProgress6.Value = 20;
+            // 
+            // hslProgress5
+            // 
+            this.hslProgress5.BackColor = System.Drawing.Color.LightGray;
+            this.hslProgress5.BorderColor = System.Drawing.SystemColors.Control;
+            this.hslProgress5.IsTextRender = false;
+            this.hslProgress5.Location = new System.Drawing.Point(6, 173);
+            this.hslProgress5.Name = "hslProgress5";
+            this.hslProgress5.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslProgress5.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress5.Size = new System.Drawing.Size(509, 10);
+            this.hslProgress5.TabIndex = 7;
+            this.hslProgress5.Value = 20;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 155);
+            this.label2.Location = new System.Drawing.Point(185, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 12);
             this.label2.TabIndex = 5;
             this.label2.Text = "当边框和背景一致时的效果";
+            // 
+            // hslProgress4
+            // 
+            this.hslProgress4.BackColor = System.Drawing.Color.LightGray;
+            this.hslProgress4.BorderColor = System.Drawing.SystemColors.Control;
+            this.hslProgress4.IsTextRender = false;
+            this.hslProgress4.Location = new System.Drawing.Point(6, 126);
+            this.hslProgress4.Name = "hslProgress4";
+            this.hslProgress4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslProgress4.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress4.Size = new System.Drawing.Size(509, 10);
+            this.hslProgress4.TabIndex = 4;
+            this.hslProgress4.Value = 20;
             // 
             // label1
             // 
@@ -102,17 +157,47 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "以上是静态的进度条，支持设置颜色，是否显示文本";
             // 
-            // label3
+            // hslProgress3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 254);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 12);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "动态更新数值，是否启动动画的两种效果";
+            this.hslProgress3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.hslProgress3.ForeColor = System.Drawing.Color.Blue;
+            this.hslProgress3.Location = new System.Drawing.Point(6, 71);
+            this.hslProgress3.Name = "hslProgress3";
+            this.hslProgress3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslProgress3.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress3.Size = new System.Drawing.Size(509, 18);
+            this.hslProgress3.TabIndex = 2;
+            this.hslProgress3.Value = 80;
+            // 
+            // hslProgress2
+            // 
+            this.hslProgress2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.hslProgress2.IsTextRender = false;
+            this.hslProgress2.Location = new System.Drawing.Point(6, 46);
+            this.hslProgress2.Name = "hslProgress2";
+            this.hslProgress2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslProgress2.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress2.Size = new System.Drawing.Size(509, 10);
+            this.hslProgress2.TabIndex = 1;
+            this.hslProgress2.Value = 20;
+            // 
+            // hslProgress1
+            // 
+            this.hslProgress1.IsTextRender = false;
+            this.hslProgress1.Location = new System.Drawing.Point(6, 30);
+            this.hslProgress1.Name = "hslProgress1";
+            this.hslProgress1.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
+            this.hslProgress1.Size = new System.Drawing.Size(509, 10);
+            this.hslProgress1.TabIndex = 0;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.hslProgressLine13);
+            this.groupBox2.Controls.Add(this.hslProgressLine12);
+            this.groupBox2.Controls.Add(this.hslProgressLine11);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.hslProgressLine5);
@@ -120,30 +205,127 @@
             this.groupBox2.Controls.Add(this.hslProgressLine3);
             this.groupBox2.Controls.Add(this.hslProgressLine2);
             this.groupBox2.Controls.Add(this.hslProgressLine1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 310);
+            this.groupBox2.Location = new System.Drawing.Point(12, 257);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(521, 296);
+            this.groupBox2.Size = new System.Drawing.Size(521, 349);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "另一种进度条的示例";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(390, 330);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 12);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "动态变化";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(223, 330);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 12);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "修改颜色";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(59, 330);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 12);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "一般使用";
+            // 
+            // hslProgressLine13
+            // 
+            this.hslProgressLine13.Location = new System.Drawing.Point(350, 197);
+            this.hslProgressLine13.Name = "hslProgressLine13";
+            this.hslProgressLine13.ProgressStyle = HslControls.HslProgressStyle.Circular;
+            this.hslProgressLine13.Size = new System.Drawing.Size(142, 130);
+            this.hslProgressLine13.TabIndex = 15;
+            this.hslProgressLine13.UseAnimation = true;
+            // 
+            // hslProgressLine12
+            // 
+            this.hslProgressLine12.Location = new System.Drawing.Point(187, 197);
+            this.hslProgressLine12.Name = "hslProgressLine12";
+            this.hslProgressLine12.ProgressColor = System.Drawing.Color.LimeGreen;
+            this.hslProgressLine12.ProgressStyle = HslControls.HslProgressStyle.Circular;
+            this.hslProgressLine12.Size = new System.Drawing.Size(142, 130);
+            this.hslProgressLine12.TabIndex = 14;
+            // 
+            // hslProgressLine11
+            // 
+            this.hslProgressLine11.Location = new System.Drawing.Point(21, 197);
+            this.hslProgressLine11.Name = "hslProgressLine11";
+            this.hslProgressLine11.ProgressStyle = HslControls.HslProgressStyle.Circular;
+            this.hslProgressLine11.Size = new System.Drawing.Size(142, 130);
+            this.hslProgressLine11.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(155, 180);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(221, 12);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "动态更新数值，是否启动动画的两种效果";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 137);
+            this.label4.Location = new System.Drawing.Point(120, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(281, 12);
             this.label4.TabIndex = 11;
             this.label4.Text = "以上是静态的进度条，支持设置颜色，是否显示文本";
             // 
-            // label5
+            // hslProgressLine5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(155, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 12);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "动态更新数值，是否启动动画的两种效果";
+            this.hslProgressLine5.IsTextRender = false;
+            this.hslProgressLine5.Location = new System.Drawing.Point(6, 154);
+            this.hslProgressLine5.Name = "hslProgressLine5";
+            this.hslProgressLine5.Size = new System.Drawing.Size(509, 11);
+            this.hslProgressLine5.TabIndex = 10;
+            this.hslProgressLine5.UseAnimation = true;
+            // 
+            // hslProgressLine4
+            // 
+            this.hslProgressLine4.IsTextRender = false;
+            this.hslProgressLine4.Location = new System.Drawing.Point(6, 128);
+            this.hslProgressLine4.Name = "hslProgressLine4";
+            this.hslProgressLine4.Size = new System.Drawing.Size(509, 11);
+            this.hslProgressLine4.TabIndex = 9;
+            // 
+            // hslProgressLine3
+            // 
+            this.hslProgressLine3.Location = new System.Drawing.Point(6, 76);
+            this.hslProgressLine3.Name = "hslProgressLine3";
+            this.hslProgressLine3.ProgressBackColor = System.Drawing.Color.Silver;
+            this.hslProgressLine3.ProgressColor = System.Drawing.Color.ForestGreen;
+            this.hslProgressLine3.Size = new System.Drawing.Size(509, 19);
+            this.hslProgressLine3.TabIndex = 8;
+            // 
+            // hslProgressLine2
+            // 
+            this.hslProgressLine2.IsTextRender = false;
+            this.hslProgressLine2.Location = new System.Drawing.Point(6, 56);
+            this.hslProgressLine2.Name = "hslProgressLine2";
+            this.hslProgressLine2.ProgressBackColor = System.Drawing.Color.Silver;
+            this.hslProgressLine2.ProgressColor = System.Drawing.Color.ForestGreen;
+            this.hslProgressLine2.Size = new System.Drawing.Size(509, 11);
+            this.hslProgressLine2.TabIndex = 7;
+            // 
+            // hslProgressLine1
+            // 
+            this.hslProgressLine1.IsTextRender = false;
+            this.hslProgressLine1.Location = new System.Drawing.Point(6, 35);
+            this.hslProgressLine1.Name = "hslProgressLine1";
+            this.hslProgressLine1.Size = new System.Drawing.Size(509, 11);
+            this.hslProgressLine1.TabIndex = 6;
             // 
             // groupBox3
             // 
@@ -159,21 +341,6 @@
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "纵向的进度条";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.hslProgressLine10);
-            this.groupBox4.Controls.Add(this.hslProgressLine9);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.hslProgressLine8);
-            this.groupBox4.Controls.Add(this.hslProgressLine7);
-            this.groupBox4.Controls.Add(this.hslProgressLine6);
-            this.groupBox4.Location = new System.Drawing.Point(792, 12);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(245, 593);
-            this.groupBox4.TabIndex = 9;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "另一种纵向的进度条";
             // 
             // label6
             // 
@@ -242,171 +409,20 @@
             this.hslProgress7.TabIndex = 3;
             this.hslProgress7.Value = 60;
             // 
-            // hslProgressLine5
+            // groupBox4
             // 
-            this.hslProgressLine5.IsTextRender = false;
-            this.hslProgressLine5.Location = new System.Drawing.Point(6, 208);
-            this.hslProgressLine5.Name = "hslProgressLine5";
-            this.hslProgressLine5.Size = new System.Drawing.Size(509, 11);
-            this.hslProgressLine5.TabIndex = 10;
-            this.hslProgressLine5.UseAnimation = true;
-            // 
-            // hslProgressLine4
-            // 
-            this.hslProgressLine4.IsTextRender = false;
-            this.hslProgressLine4.Location = new System.Drawing.Point(6, 180);
-            this.hslProgressLine4.Name = "hslProgressLine4";
-            this.hslProgressLine4.Size = new System.Drawing.Size(509, 11);
-            this.hslProgressLine4.TabIndex = 9;
-            // 
-            // hslProgressLine3
-            // 
-            this.hslProgressLine3.Location = new System.Drawing.Point(6, 94);
-            this.hslProgressLine3.Name = "hslProgressLine3";
-            this.hslProgressLine3.ProgressBackColor = System.Drawing.Color.Silver;
-            this.hslProgressLine3.ProgressColor = System.Drawing.Color.ForestGreen;
-            this.hslProgressLine3.Size = new System.Drawing.Size(509, 19);
-            this.hslProgressLine3.TabIndex = 8;
-            // 
-            // hslProgressLine2
-            // 
-            this.hslProgressLine2.IsTextRender = false;
-            this.hslProgressLine2.Location = new System.Drawing.Point(6, 65);
-            this.hslProgressLine2.Name = "hslProgressLine2";
-            this.hslProgressLine2.ProgressBackColor = System.Drawing.Color.Silver;
-            this.hslProgressLine2.ProgressColor = System.Drawing.Color.ForestGreen;
-            this.hslProgressLine2.Size = new System.Drawing.Size(509, 11);
-            this.hslProgressLine2.TabIndex = 7;
-            // 
-            // hslProgressLine1
-            // 
-            this.hslProgressLine1.IsTextRender = false;
-            this.hslProgressLine1.Location = new System.Drawing.Point(6, 35);
-            this.hslProgressLine1.Name = "hslProgressLine1";
-            this.hslProgressLine1.Size = new System.Drawing.Size(509, 11);
-            this.hslProgressLine1.TabIndex = 6;
-            // 
-            // hslProgress6
-            // 
-            this.hslProgress6.BackColor = System.Drawing.Color.LightGray;
-            this.hslProgress6.BorderColor = System.Drawing.SystemColors.Control;
-            this.hslProgress6.IsTextRender = false;
-            this.hslProgress6.Location = new System.Drawing.Point(6, 228);
-            this.hslProgress6.Name = "hslProgress6";
-            this.hslProgress6.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.hslProgress6.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress6.Size = new System.Drawing.Size(509, 10);
-            this.hslProgress6.TabIndex = 8;
-            this.hslProgress6.UseAnimation = true;
-            this.hslProgress6.Value = 20;
-            // 
-            // hslProgress5
-            // 
-            this.hslProgress5.BackColor = System.Drawing.Color.LightGray;
-            this.hslProgress5.BorderColor = System.Drawing.SystemColors.Control;
-            this.hslProgress5.IsTextRender = false;
-            this.hslProgress5.Location = new System.Drawing.Point(6, 196);
-            this.hslProgress5.Name = "hslProgress5";
-            this.hslProgress5.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.hslProgress5.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress5.Size = new System.Drawing.Size(509, 10);
-            this.hslProgress5.TabIndex = 7;
-            this.hslProgress5.Value = 20;
-            // 
-            // hslProgress4
-            // 
-            this.hslProgress4.BackColor = System.Drawing.Color.LightGray;
-            this.hslProgress4.BorderColor = System.Drawing.SystemColors.Control;
-            this.hslProgress4.IsTextRender = false;
-            this.hslProgress4.Location = new System.Drawing.Point(6, 131);
-            this.hslProgress4.Name = "hslProgress4";
-            this.hslProgress4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.hslProgress4.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress4.Size = new System.Drawing.Size(509, 10);
-            this.hslProgress4.TabIndex = 4;
-            this.hslProgress4.Value = 20;
-            // 
-            // hslProgress3
-            // 
-            this.hslProgress3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.hslProgress3.ForeColor = System.Drawing.Color.Blue;
-            this.hslProgress3.Location = new System.Drawing.Point(6, 71);
-            this.hslProgress3.Name = "hslProgress3";
-            this.hslProgress3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.hslProgress3.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress3.Size = new System.Drawing.Size(509, 18);
-            this.hslProgress3.TabIndex = 2;
-            this.hslProgress3.Value = 80;
-            // 
-            // hslProgress2
-            // 
-            this.hslProgress2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.hslProgress2.IsTextRender = false;
-            this.hslProgress2.Location = new System.Drawing.Point(6, 46);
-            this.hslProgress2.Name = "hslProgress2";
-            this.hslProgress2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.hslProgress2.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress2.Size = new System.Drawing.Size(509, 10);
-            this.hslProgress2.TabIndex = 1;
-            this.hslProgress2.Value = 20;
-            // 
-            // hslProgress1
-            // 
-            this.hslProgress1.IsTextRender = false;
-            this.hslProgress1.Location = new System.Drawing.Point(6, 30);
-            this.hslProgress1.Name = "hslProgress1";
-            this.hslProgress1.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
-            this.hslProgress1.Size = new System.Drawing.Size(509, 10);
-            this.hslProgress1.TabIndex = 0;
-            // 
-            // hslProgressLine6
-            // 
-            this.hslProgressLine6.IsTextRender = false;
-            this.hslProgressLine6.Location = new System.Drawing.Point(17, 30);
-            this.hslProgressLine6.Name = "hslProgressLine6";
-            this.hslProgressLine6.ProgressStyle = HslControls.HslProgressStyle.Vertical;
-            this.hslProgressLine6.Size = new System.Drawing.Size(16, 550);
-            this.hslProgressLine6.TabIndex = 7;
-            // 
-            // hslProgressLine7
-            // 
-            this.hslProgressLine7.IsTextRender = false;
-            this.hslProgressLine7.Location = new System.Drawing.Point(50, 30);
-            this.hslProgressLine7.Name = "hslProgressLine7";
-            this.hslProgressLine7.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hslProgressLine7.ProgressStyle = HslControls.HslProgressStyle.Vertical;
-            this.hslProgressLine7.Size = new System.Drawing.Size(16, 550);
-            this.hslProgressLine7.TabIndex = 8;
-            // 
-            // hslProgressLine8
-            // 
-            this.hslProgressLine8.Location = new System.Drawing.Point(82, 30);
-            this.hslProgressLine8.Name = "hslProgressLine8";
-            this.hslProgressLine8.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hslProgressLine8.ProgressStyle = HslControls.HslProgressStyle.Vertical;
-            this.hslProgressLine8.Size = new System.Drawing.Size(25, 550);
-            this.hslProgressLine8.TabIndex = 9;
-            this.hslProgressLine8.Value = 80;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(151, 558);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 12);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "动态更新数值";
-            // 
-            // hslProgressLine9
-            // 
-            this.hslProgressLine9.ForeColor = System.Drawing.Color.White;
-            this.hslProgressLine9.Location = new System.Drawing.Point(153, 20);
-            this.hslProgressLine9.Name = "hslProgressLine9";
-            this.hslProgressLine9.ProgressBackColor = System.Drawing.Color.Silver;
-            this.hslProgressLine9.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hslProgressLine9.ProgressStyle = HslControls.HslProgressStyle.Vertical;
-            this.hslProgressLine9.Size = new System.Drawing.Size(25, 521);
-            this.hslProgressLine9.TabIndex = 12;
+            this.groupBox4.Controls.Add(this.hslProgressLine10);
+            this.groupBox4.Controls.Add(this.hslProgressLine9);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.hslProgressLine8);
+            this.groupBox4.Controls.Add(this.hslProgressLine7);
+            this.groupBox4.Controls.Add(this.hslProgressLine6);
+            this.groupBox4.Location = new System.Drawing.Point(792, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(245, 593);
+            this.groupBox4.TabIndex = 9;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "另一种纵向的进度条";
             // 
             // hslProgressLine10
             // 
@@ -420,6 +436,55 @@
             this.hslProgressLine10.TabIndex = 13;
             this.hslProgressLine10.UseAnimation = true;
             // 
+            // hslProgressLine9
+            // 
+            this.hslProgressLine9.ForeColor = System.Drawing.Color.White;
+            this.hslProgressLine9.Location = new System.Drawing.Point(153, 20);
+            this.hslProgressLine9.Name = "hslProgressLine9";
+            this.hslProgressLine9.ProgressBackColor = System.Drawing.Color.Silver;
+            this.hslProgressLine9.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslProgressLine9.ProgressStyle = HslControls.HslProgressStyle.Vertical;
+            this.hslProgressLine9.Size = new System.Drawing.Size(25, 521);
+            this.hslProgressLine9.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(151, 558);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "动态更新数值";
+            // 
+            // hslProgressLine8
+            // 
+            this.hslProgressLine8.Location = new System.Drawing.Point(82, 30);
+            this.hslProgressLine8.Name = "hslProgressLine8";
+            this.hslProgressLine8.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslProgressLine8.ProgressStyle = HslControls.HslProgressStyle.Vertical;
+            this.hslProgressLine8.Size = new System.Drawing.Size(25, 550);
+            this.hslProgressLine8.TabIndex = 9;
+            this.hslProgressLine8.Value = 80;
+            // 
+            // hslProgressLine7
+            // 
+            this.hslProgressLine7.IsTextRender = false;
+            this.hslProgressLine7.Location = new System.Drawing.Point(50, 30);
+            this.hslProgressLine7.Name = "hslProgressLine7";
+            this.hslProgressLine7.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslProgressLine7.ProgressStyle = HslControls.HslProgressStyle.Vertical;
+            this.hslProgressLine7.Size = new System.Drawing.Size(16, 550);
+            this.hslProgressLine7.TabIndex = 8;
+            // 
+            // hslProgressLine6
+            // 
+            this.hslProgressLine6.IsTextRender = false;
+            this.hslProgressLine6.Location = new System.Drawing.Point(17, 30);
+            this.hslProgressLine6.Name = "hslProgressLine6";
+            this.hslProgressLine6.ProgressStyle = HslControls.HslProgressStyle.Vertical;
+            this.hslProgressLine6.Size = new System.Drawing.Size(16, 550);
+            this.hslProgressLine6.TabIndex = 7;
+            // 
             // FormProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -430,6 +495,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormProgress";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "进度条控件使用示例";
             this.Load += new System.EventHandler(this.FormProgress_Load);
             this.groupBox1.ResumeLayout(false);
@@ -478,5 +544,11 @@
         private HslControls.HslProgressLine hslProgressLine8;
         private HslControls.HslProgressLine hslProgressLine7;
         private HslControls.HslProgressLine hslProgressLine6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private HslControls.HslProgressLine hslProgressLine13;
+        private HslControls.HslProgressLine hslProgressLine12;
+        private HslControls.HslProgressLine hslProgressLine11;
     }
 }

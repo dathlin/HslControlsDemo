@@ -32,19 +32,21 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.hslClock3 = new HslControls.HslClock();
-            this.hslClock2 = new HslControls.HslClock();
-            this.hslClock1 = new HslControls.HslClock();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.hslClock6 = new HslControls.HslClock();
             this.hslClock5 = new HslControls.HslClock();
             this.hslClock4 = new HslControls.HslClock();
+            this.hslClock7 = new HslControls.HslClock();
+            this.hslClock3 = new HslControls.HslClock();
+            this.hslClock2 = new HslControls.HslClock();
+            this.hslClock1 = new HslControls.HslClock();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.hslClock7);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.hslClock3);
@@ -75,38 +77,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "指针颜色变化，并显示日期";
             // 
-            // hslClock3
-            // 
-            this.hslClock3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock3.BackgroundImage")));
-            this.hslClock3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.hslClock3.IsSecondStep = true;
-            this.hslClock3.Location = new System.Drawing.Point(638, 20);
-            this.hslClock3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.hslClock3.Name = "hslClock3";
-            this.hslClock3.Size = new System.Drawing.Size(310, 274);
-            this.hslClock3.TabIndex = 2;
-            this.hslClock3.Text = "hslClock3";
-            // 
-            // hslClock2
-            // 
-            this.hslClock2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock2.BackgroundImage")));
-            this.hslClock2.HourColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hslClock2.Location = new System.Drawing.Point(339, 30);
-            this.hslClock2.MiniteColor = System.Drawing.Color.Blue;
-            this.hslClock2.Name = "hslClock2";
-            this.hslClock2.Size = new System.Drawing.Size(224, 220);
-            this.hslClock2.TabIndex = 1;
-            this.hslClock2.Text = "hslClock2";
-            // 
-            // hslClock1
-            // 
-            this.hslClock1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock1.BackgroundImage")));
-            this.hslClock1.Location = new System.Drawing.Point(26, 30);
-            this.hslClock1.Name = "hslClock1";
-            this.hslClock1.Size = new System.Drawing.Size(171, 196);
-            this.hslClock1.TabIndex = 0;
-            this.hslClock1.Text = "hslClock1";
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
@@ -129,7 +99,7 @@
             this.hslClock6.HourColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.hslClock6.IsSecondStep = true;
             this.hslClock6.Location = new System.Drawing.Point(638, 30);
-            this.hslClock6.MiniteColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hslClock6.MinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.hslClock6.Name = "hslClock6";
             this.hslClock6.SecondColor = System.Drawing.Color.Chartreuse;
             this.hslClock6.Size = new System.Drawing.Size(224, 222);
@@ -157,6 +127,48 @@
             this.hslClock4.Size = new System.Drawing.Size(179, 190);
             this.hslClock4.TabIndex = 0;
             this.hslClock4.Text = "hslClock4";
+            // 
+            // hslClock7
+            // 
+            this.hslClock7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock7.BackgroundImage")));
+            this.hslClock7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslClock7.Location = new System.Drawing.Point(26, 216);
+            this.hslClock7.Margin = new System.Windows.Forms.Padding(2);
+            this.hslClock7.Name = "hslClock7";
+            this.hslClock7.Size = new System.Drawing.Size(88, 93);
+            this.hslClock7.TabIndex = 5;
+            // 
+            // hslClock3
+            // 
+            this.hslClock3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock3.BackgroundImage")));
+            this.hslClock3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslClock3.IsSecondStep = true;
+            this.hslClock3.Location = new System.Drawing.Point(638, 20);
+            this.hslClock3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hslClock3.Name = "hslClock3";
+            this.hslClock3.Size = new System.Drawing.Size(310, 274);
+            this.hslClock3.TabIndex = 2;
+            this.hslClock3.Text = "hslClock3";
+            // 
+            // hslClock2
+            // 
+            this.hslClock2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock2.BackgroundImage")));
+            this.hslClock2.HourColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslClock2.Location = new System.Drawing.Point(339, 30);
+            this.hslClock2.MinuteColor = System.Drawing.Color.Blue;
+            this.hslClock2.Name = "hslClock2";
+            this.hslClock2.Size = new System.Drawing.Size(224, 220);
+            this.hslClock2.TabIndex = 1;
+            this.hslClock2.Text = "hslClock2";
+            // 
+            // hslClock1
+            // 
+            this.hslClock1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslClock1.BackgroundImage")));
+            this.hslClock1.Location = new System.Drawing.Point(26, 30);
+            this.hslClock1.Name = "hslClock1";
+            this.hslClock1.Size = new System.Drawing.Size(171, 196);
+            this.hslClock1.TabIndex = 0;
+            this.hslClock1.Text = "hslClock1";
             // 
             // FormClock
             // 
@@ -187,5 +199,6 @@
         private HslControls.HslClock hslClock6;
         private HslControls.HslClock hslClock5;
         private HslControls.HslClock hslClock4;
+        private HslControls.HslClock hslClock7;
     }
 }
