@@ -41,7 +41,7 @@ namespace HslControlsDemo
 
         private void button1_Click( object sender, EventArgs e )
         {
-            hslStatusManagement2.SetColorAll( Color.FromArgb( random.Next( ) ) );
+            hslStatusManagement2.SetColorAll( Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
         }
 
         private void button2_Click( object sender, EventArgs e )
@@ -53,7 +53,7 @@ namespace HslControlsDemo
         {
             if (int.TryParse( textBox1.Text, out int rowIndex ))
             {
-                hslStatusManagement2.SetColorByRow( rowIndex, Color.FromArgb( random.Next( ) ) );
+                hslStatusManagement2.SetColorByRow( rowIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
             }
             else
             {
@@ -77,7 +77,7 @@ namespace HslControlsDemo
         {
             if (int.TryParse( textBox2.Text, out int colIndex ))
             {
-                hslStatusManagement2.SetColorByCol( colIndex, Color.FromArgb( random.Next( ) ) );
+                hslStatusManagement2.SetColorByCol( colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
             }
             else
             {
@@ -101,7 +101,7 @@ namespace HslControlsDemo
         {
             if(int.TryParse( textBox3.Text, out int rowIndex ) && int.TryParse( textBox4.Text, out int colIndex ))
             {
-                hslStatusManagement2.SetColorByLocation( rowIndex, colIndex, Color.FromArgb( random.Next( ) ) );
+                hslStatusManagement2.SetColorByLocation( rowIndex, colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
             }
             else
             {

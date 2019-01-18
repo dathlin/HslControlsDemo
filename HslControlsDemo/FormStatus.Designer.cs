@@ -51,11 +51,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.hslStatusManagement6 = new HslControls.HslStatusManagement();
             this.hslStatusManagement5 = new HslControls.HslStatusManagement();
             this.hslStatusManagement4 = new HslControls.HslStatusManagement();
@@ -331,32 +331,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "一般的使用";
             // 
-            // label5
+            // label9
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(122, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "一般的使用";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(122, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "菱形界面";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(122, 319);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "椭圆界面";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(597, 319);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 12);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "标记次数的示例";
             // 
             // label8
             // 
@@ -367,20 +349,39 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "跑马灯示例";
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(597, 319);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 12);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "标记次数的示例";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(122, 319);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "椭圆界面";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(122, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "菱形界面";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(122, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "一般的使用";
             // 
             // hslStatusManagement6
             // 
             this.hslStatusManagement6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.hslStatusManagement6.ColCount = 50;
             this.hslStatusManagement6.GeneralColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hslStatusManagement6.IsRenderBorder = false;
             this.hslStatusManagement6.Location = new System.Drawing.Point(350, 213);
             this.hslStatusManagement6.Name = "hslStatusManagement6";
             this.hslStatusManagement6.RowCount = 7;

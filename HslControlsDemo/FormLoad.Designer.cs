@@ -29,6 +29,8 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -55,12 +57,14 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button24);
+            this.groupBox1.Controls.Add(this.button23);
             this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.button21);
             this.groupBox1.Controls.Add(this.button20);
@@ -91,6 +95,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(591, 167);
+            this.button23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(157, 37);
+            this.button23.TabIndex = 23;
+            this.button23.Text = "坦克大战";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(178, 347);
+            this.button22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(157, 37);
+            this.button22.TabIndex = 22;
+            this.button22.Text = "状态集";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button21
             // 
@@ -375,16 +401,16 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // button22
+            // button24
             // 
-            this.button22.Location = new System.Drawing.Point(178, 347);
-            this.button22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(157, 37);
-            this.button22.TabIndex = 22;
-            this.button22.Text = "状态集";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button24.Location = new System.Drawing.Point(178, 392);
+            this.button24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(157, 37);
+            this.button24.TabIndex = 24;
+            this.button24.Text = "曲线(历史曲线)";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // FormLoad
             // 
@@ -441,5 +467,7 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
     }
 }

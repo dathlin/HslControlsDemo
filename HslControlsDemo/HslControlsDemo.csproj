@@ -35,8 +35,8 @@
     <Reference Include="HslCommunication, Version=5.7.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.5.7.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.1.1.0\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=1.2.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.1.2.0\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -106,6 +106,12 @@
     <Compile Include="FormCurve.Designer.cs">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCurveHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory.designer.cs">
+      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDeclaration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,12 @@
     <Compile Include="FormStatus.designer.cs">
       <DependentUpon>FormStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank.designer.cs">
+      <DependentUpon>FormTank.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTetris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +237,9 @@
     <EmbeddedResource Include="FormCurve.resx">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory.resx">
+      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStatus.resx">
       <DependentUpon>FormStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank.resx">
+      <DependentUpon>FormTank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTetris.resx">
       <DependentUpon>FormTetris.cs</DependentUpon>
