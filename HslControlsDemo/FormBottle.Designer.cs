@@ -99,12 +99,17 @@
             // 
             // hslBottle10
             // 
+            this.hslBottle10.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hslBottle10.BackColorEdge = System.Drawing.Color.Gray;
+            this.hslBottle10.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.hslBottle10.DockHeight = 20F;
+            this.hslBottle10.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.hslBottle10.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslBottle10.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.hslBottle10.Location = new System.Drawing.Point(70, 20);
             this.hslBottle10.Name = "hslBottle10";
             this.hslBottle10.Size = new System.Drawing.Size(43, 220);
             this.hslBottle10.TabIndex = 0;
-            this.hslBottle10.ThemeStyle = HslControls.HslThemeStyle.Dark;
             this.hslBottle10.Value = 50D;
             // 
             // hslPipeLine7
@@ -152,8 +157,14 @@
             // 
             // hslBottle9
             // 
+            this.hslBottle9.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle9.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle9.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle9.BottleTag = "1#";
             this.hslBottle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle9.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle9.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle9.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle9.Location = new System.Drawing.Point(254, 389);
             this.hslBottle9.Name = "hslBottle9";
             this.hslBottle9.Size = new System.Drawing.Size(124, 167);
@@ -162,9 +173,15 @@
             // 
             // hslBottle8
             // 
+            this.hslBottle8.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle8.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle8.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle8.BottleTag = "8#";
             this.hslBottle8.DockHeight = 20F;
             this.hslBottle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle8.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle8.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle8.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle8.Location = new System.Drawing.Point(390, 12);
             this.hslBottle8.Name = "hslBottle8";
             this.hslBottle8.Size = new System.Drawing.Size(45, 165);
@@ -173,9 +190,15 @@
             // 
             // hslBottle7
             // 
+            this.hslBottle7.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle7.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle7.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle7.BottleTag = "7#";
             this.hslBottle7.DockHeight = 20F;
             this.hslBottle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle7.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle7.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle7.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle7.Location = new System.Drawing.Point(339, 12);
             this.hslBottle7.Name = "hslBottle7";
             this.hslBottle7.Size = new System.Drawing.Size(45, 165);
@@ -184,9 +207,15 @@
             // 
             // hslBottle6
             // 
+            this.hslBottle6.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle6.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle6.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle6.BottleTag = "6#";
             this.hslBottle6.DockHeight = 20F;
             this.hslBottle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle6.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle6.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle6.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle6.Location = new System.Drawing.Point(288, 12);
             this.hslBottle6.Name = "hslBottle6";
             this.hslBottle6.Size = new System.Drawing.Size(45, 165);
@@ -195,9 +224,15 @@
             // 
             // hslBottle5
             // 
+            this.hslBottle5.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle5.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle5.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle5.BottleTag = "5#";
             this.hslBottle5.DockHeight = 20F;
             this.hslBottle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle5.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle5.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle5.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle5.Location = new System.Drawing.Point(237, 12);
             this.hslBottle5.Name = "hslBottle5";
             this.hslBottle5.Size = new System.Drawing.Size(45, 165);
@@ -206,9 +241,15 @@
             // 
             // hslBottle4
             // 
+            this.hslBottle4.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle4.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle4.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle4.BottleTag = "4#";
             this.hslBottle4.DockHeight = 20F;
             this.hslBottle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle4.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle4.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle4.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle4.Location = new System.Drawing.Point(186, 12);
             this.hslBottle4.Name = "hslBottle4";
             this.hslBottle4.Size = new System.Drawing.Size(45, 165);
@@ -217,9 +258,15 @@
             // 
             // hslBottle3
             // 
+            this.hslBottle3.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle3.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle3.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle3.BottleTag = "3#";
             this.hslBottle3.DockHeight = 20F;
             this.hslBottle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle3.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle3.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle3.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle3.Location = new System.Drawing.Point(135, 12);
             this.hslBottle3.Name = "hslBottle3";
             this.hslBottle3.Size = new System.Drawing.Size(45, 165);
@@ -228,9 +275,15 @@
             // 
             // hslBottle2
             // 
+            this.hslBottle2.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle2.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle2.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle2.BottleTag = "2#";
             this.hslBottle2.DockHeight = 20F;
             this.hslBottle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle2.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle2.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle2.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle2.Location = new System.Drawing.Point(84, 12);
             this.hslBottle2.Name = "hslBottle2";
             this.hslBottle2.Size = new System.Drawing.Size(45, 165);
@@ -239,9 +292,15 @@
             // 
             // hslBottle1
             // 
+            this.hslBottle1.BackColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hslBottle1.BackColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
+            this.hslBottle1.BackColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(232)))), ((int)(((byte)(244)))));
             this.hslBottle1.BottleTag = "1#";
             this.hslBottle1.DockHeight = 20F;
             this.hslBottle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBottle1.ForeColorCenter = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(221)))), ((int)(((byte)(98)))));
+            this.hslBottle1.ForeColorEdge = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(190)))), ((int)(((byte)(77)))));
+            this.hslBottle1.ForeColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(245)))), ((int)(((byte)(139)))));
             this.hslBottle1.Location = new System.Drawing.Point(33, 12);
             this.hslBottle1.Name = "hslBottle1";
             this.hslBottle1.Size = new System.Drawing.Size(45, 165);

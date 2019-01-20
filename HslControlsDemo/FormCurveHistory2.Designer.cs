@@ -1,6 +1,6 @@
 ﻿namespace HslControlsDemo
 {
-    partial class FormCurveHistory
+    partial class FormCurveHistory2
     {
         /// <summary>
         /// Required designer variable.
@@ -108,8 +108,14 @@
             this.hslCurveHistory1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hslCurveHistory1.BackColor = System.Drawing.Color.White;
+            this.hslCurveHistory1.CoordinateColor = System.Drawing.Color.DimGray;
+            this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hslCurveHistory1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.hslCurveHistory1.Location = new System.Drawing.Point(12, 4);
+            this.hslCurveHistory1.MarkLineColor = System.Drawing.Color.DodgerBlue;
+            this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
+            this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
             this.hslCurveHistory1.Name = "hslCurveHistory1";
             this.hslCurveHistory1.Size = new System.Drawing.Size(980, 597);
             this.hslCurveHistory1.TabIndex = 0;
@@ -120,7 +126,7 @@
             this.hslCurveHistory1.ValueMaxRight = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
             // 
-            // FormCurveHistory
+            // FormCurveHistory2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,9 +138,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.hslCurveHistory1);
-            this.Name = "FormCurveHistory";
+            this.Name = "FormCurveHistory2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormCurveHistory";
+            this.Text = "FormCurveHistory2";
             this.Load += new System.EventHandler(this.FormCurveHistory_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
