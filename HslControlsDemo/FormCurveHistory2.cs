@@ -130,5 +130,10 @@ namespace HslControlsDemo
             hslCurveHistory1.SetScaleByXAxis( 2f );
             hslCurveHistory1.RenderCurveUI( );
         }
+
+        private void hslCurveHistory1_onCurveDoubleClick( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
+        {
+            MessageBox.Show( $"Index: {index} Time:{dateTime.ToString( )}" );
+        }
     }
 }

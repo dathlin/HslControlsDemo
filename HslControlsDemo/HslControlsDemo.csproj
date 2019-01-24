@@ -35,8 +35,8 @@
     <Reference Include="HslCommunication, Version=5.7.2.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.5.7.2\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=1.2.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.1.2.1\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=1.2.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.1.2.2\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -123,6 +123,12 @@
     </Compile>
     <Compile Include="FormDeclaration.Designer.cs">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGanttDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGanttDay.designer.cs">
+      <DependentUpon>FormGanttDay.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGauge.cs">
       <SubType>Form</SubType>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGanttDay.resx">
+      <DependentUpon>FormGanttDay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGauge.resx">
       <DependentUpon>FormGauge.cs</DependentUpon>

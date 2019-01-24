@@ -125,6 +125,7 @@
             this.hslCurveHistory1.ValueMaxLeft = 250F;
             this.hslCurveHistory1.ValueMaxRight = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
+            this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             // 
             // FormCurveHistory2
             // 

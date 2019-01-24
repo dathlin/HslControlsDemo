@@ -109,7 +109,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.hslCurveHistory1.Location = new System.Drawing.Point(12, 4);
+            this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
             this.hslCurveHistory1.Name = "hslCurveHistory1";
             this.hslCurveHistory1.Size = new System.Drawing.Size(980, 597);
             this.hslCurveHistory1.TabIndex = 0;
@@ -119,6 +121,7 @@
             this.hslCurveHistory1.ValueMaxLeft = 250F;
             this.hslCurveHistory1.ValueMaxRight = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
+            this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             // 
             // FormCurveHistory
             // 
