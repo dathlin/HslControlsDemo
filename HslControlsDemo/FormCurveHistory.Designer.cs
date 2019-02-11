@@ -110,6 +110,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.hslCurveHistory1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslCurveHistory1.Location = new System.Drawing.Point(12, 4);
             this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
             this.hslCurveHistory1.Name = "hslCurveHistory1";
