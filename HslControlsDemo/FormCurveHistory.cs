@@ -130,5 +130,31 @@ namespace HslControlsDemo
         {
             MessageBox.Show( $"Index: {index} Time:{dateTime.ToString( )}" );
         }
+
+        private void button5_Click( object sender, EventArgs e )
+        {
+            if (int.TryParse( textBox1.Text, out int index ))
+            {
+                hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
+                {
+                    Index = index,
+                    CurveKey = "温度",
+                    MarkText = textBox2.Text,
+                    CircleBrush = Brushes.HotPink,
+                    TextBrush = Brushes.Pink
+                } );
+                hslCurveHistory1.RenderCurveUI( );
+            }
+            else
+            {
+                MessageBox.Show( "Input Error" );
+            }
+        }
+
+        private void button6_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.RemoveAllMarkText( );
+            hslCurveHistory1.RenderCurveUI( );
+        }
     }
 }

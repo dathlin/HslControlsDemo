@@ -36,6 +36,19 @@ namespace HslControlsDemo
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
             hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100 ), Color.Blue );
+            hslCurve1.AddMarkText( new HslControls.HslMarkText( )
+            {
+                Index = 2,
+                CurveKey = "A",
+                MarkText = "很给力"
+            } );
+            hslCurve1.AddMarkText( new HslControls.HslMarkText( )
+            {
+                Index = 5,
+                CurveKey = "A",
+                MarkText = "不太行了",
+                TextBrush = Brushes.Red
+            } );
 
             hslCurve3.SetLeftCurve( "A", null, Color.DodgerBlue );
             hslCurve3.SetLeftCurve( "B", null, Color.DarkOrange );
