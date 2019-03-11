@@ -376,5 +376,16 @@ namespace HslControlsDemo
             System.Threading.Thread.Sleep( 200 );
             Show( );
         }
+
+        private void btnHslChart_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (FormChart form = new FormChart())
+            {
+                form.ShowDialog();
+            }
+            System.Threading.Thread.Sleep(200);
+            Show();
+        }
     }
 }

@@ -70,6 +70,7 @@ namespace HslControlsDemo
 
         private void TimerTick_Tick( object sender, EventArgs e )
         {
+            count_tick++;
             float random1 = (float)random.NextDouble( );
             float random2 = (float)random.NextDouble( );
             float random3 = (float)random.NextDouble( );
@@ -84,15 +85,36 @@ namespace HslControlsDemo
                 }
             );
 
-            hslCurve5.AddCurveData(
-                new string[] { "A", "B", "C" },
-                new float[]
-                {
+            if (count_tick % 20 == 0)
+            {
+                hslCurve5.AddCurveData(
+                    new string[] { "A", "B", "C" },
+                    new float[]
+                    {
+                        random1*10 + 80,
+                        random2*20+50,
+                        random2*30,
+                    },
+                    new string[]
+                    {
+                        "正常",
+                        "报警",
+                        "危险",
+                    }
+                );
+            }
+            else
+            {
+                hslCurve5.AddCurveData(
+                   new string[] { "A", "B", "C" },
+                   new float[]
+                   {
                     random1*10 + 80,
                     random2*20+50,
                     random2*30,
-                }
-            );
+                   }
+               );
+            }
 
             hslCurve4.AddCurveData( new string[] { "A", "B", "C", "D" },
                 new float[]
@@ -104,20 +126,42 @@ namespace HslControlsDemo
                 }
             );
 
-            hslCurve6.AddCurveData(
-                new string[] { "A", "B" },
-                new float[]
-                {
+            if (count_tick % 40 == 0)
+            {
+                hslCurve6.AddCurveData(
+                    new string[] { "A", "B" },
+                    new float[]
+                    {
+                        random1*10 + 80,
+                        random2*20+50,
+                    },
+                    new string[]
+                    {
+                        "报警",
+                        "危险",
+                    }
+                );
+            }
+            else
+            {
+                hslCurve6.AddCurveData(
+                    new string[] { "A", "B" },
+                    new float[]
+                    {
                     random1*10 + 80,
                     random2*20+50,
-                }
-            );
+                    }
+                );
+            }
 
+
+            if (count_tick > 10000) count_tick = 0;
         }
 
 
         private Random random = null;
         private Timer timerTick = null;
+        private int count_tick = 0;
 
         private void button1_Click( object sender, EventArgs e )
         {
