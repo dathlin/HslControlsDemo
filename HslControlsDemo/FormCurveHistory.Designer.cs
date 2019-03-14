@@ -46,7 +46,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(28, 605);
+            this.button1.Location = new System.Drawing.Point(12, 606);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 37);
             this.button1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(148, 605);
+            this.button2.Location = new System.Drawing.Point(132, 606);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(59, 37);
             this.button2.TabIndex = 2;
@@ -68,7 +68,7 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.Location = new System.Drawing.Point(213, 605);
+            this.button3.Location = new System.Drawing.Point(197, 606);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(59, 37);
             this.button3.TabIndex = 3;
@@ -79,7 +79,7 @@
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.Location = new System.Drawing.Point(278, 605);
+            this.button4.Location = new System.Drawing.Point(262, 606);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(59, 37);
             this.button4.TabIndex = 4;
@@ -91,7 +91,7 @@
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(418, 615);
+            this.checkBox1.Location = new System.Drawing.Point(477, 616);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(48, 16);
             this.checkBox1.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(485, 615);
+            this.checkBox2.Location = new System.Drawing.Point(531, 616);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(48, 16);
             this.checkBox2.TabIndex = 6;

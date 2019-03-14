@@ -29,7 +29,6 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnHslChart = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.btnHslChart = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,18 +101,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
-            // 
-            // btnHslChart
-            // 
-            this.btnHslChart.Location = new System.Drawing.Point(341, 32);
-            this.btnHslChart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnHslChart.Name = "btnHslChart";
-            this.btnHslChart.Size = new System.Drawing.Size(157, 37);
-            this.btnHslChart.TabIndex = 26;
-            this.btnHslChart.Text = "图表";
-            this.btnHslChart.UseVisualStyleBackColor = true;
-            this.btnHslChart.Visible = false;
-            this.btnHslChart.Click += new System.EventHandler(this.btnHslChart_Click);
             // 
             // button26
             // 
@@ -451,6 +439,17 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // btnHslChart
+            // 
+            this.btnHslChart.Location = new System.Drawing.Point(341, 32);
+            this.btnHslChart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHslChart.Name = "btnHslChart";
+            this.btnHslChart.Size = new System.Drawing.Size(157, 37);
+            this.btnHslChart.TabIndex = 26;
+            this.btnHslChart.Text = "图表";
+            this.btnHslChart.UseVisualStyleBackColor = true;
+            this.btnHslChart.Click += new System.EventHandler(this.btnHslChart_Click);
             // 
             // FormLoad
             // 

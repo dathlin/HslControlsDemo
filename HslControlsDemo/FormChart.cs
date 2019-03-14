@@ -22,12 +22,18 @@ namespace HslControlsDemo
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    columnChart.Series[i].Values.Add(new ChartPoint());
-                    columnChart.Series[i].Values[j].Y = r.Next(0, temp);
+                    columnChart.Series[i].Points.Add(new ChartPoint());
+                    columnChart.Series[i].Points[j].Y = r.Next(0, temp);
                 }
             }
             
-            myValues = lineMonitorChart.Series[0].Values;
+            myValues = lineMonitorChart.Series[0].Points;
+            for (int i = 0; i < 1000; i++)
+            {
+                double y = Math.Sin(x / 180f * Math.PI) * 10d;
+                myValues.Add(new ChartPoint(x, y));
+                x += 20;
+            }
 
             t = new Timer() { Interval = 200 };
             t.Tick += (s,e)=>
@@ -53,7 +59,7 @@ namespace HslControlsDemo
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    columnChart.Series[i].Values[j].Y = r.Next(0, temp);
+                    columnChart.Series[i].Points[j].Y = r.Next(0, temp);
                 }
             }
         }
@@ -63,15 +69,15 @@ namespace HslControlsDemo
             for (int i = 0; i < 4; i++)
             {
                 double y = r.NextDouble();
-                lineChart.Series[0].Values[i].Y = y;
-                lineChart.Series[3].Values[i].Y = y;
+                lineChart.Series[0].Points[i].Y = y;
+                lineChart.Series[3].Points[i].Y = y;
             }
             for (int j = 0; j < 2; j++)
             {
-                lineChart.Series[1].Values[j].X = r.NextDouble();
-                lineChart.Series[1].Values[j].Y = r.NextDouble();
-                lineChart.Series[2].Values[j].X = r.NextDouble();
-                lineChart.Series[2].Values[j].Y = r.NextDouble();
+                lineChart.Series[1].Points[j].X = r.NextDouble();
+                lineChart.Series[1].Points[j].Y = r.NextDouble();
+                lineChart.Series[2].Points[j].X = r.NextDouble();
+                lineChart.Series[2].Points[j].Y = r.NextDouble();
             }
         }
 
@@ -99,8 +105,8 @@ namespace HslControlsDemo
         {
             for (int i = 0; i < 3; i++)
             {
-                multipleAxesChart.Series[0].Values[i].Y = r.Next(-100, 100);
-                multipleAxesChart.Series[1].Values[i].Y = r.Next(0, 250);
+                multipleAxesChart.Series[0].Points[i].Y = r.Next(-100, 100);
+                multipleAxesChart.Series[1].Points[i].Y = r.Next(0, 250);
             }
             
         }

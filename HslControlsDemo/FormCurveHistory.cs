@@ -49,7 +49,7 @@ namespace HslControlsDemo
                  hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
                  hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
-                 // 添加两个标记
+                 // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
                  hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
                  {
                      StartIndex = 900,
@@ -68,6 +68,21 @@ namespace HslControlsDemo
                      MarkText = "报警区域"
                  } );
 
+                 // 增加一个三角形的线段标记示例 Points的每个点的X是数据索引，Y是数据值（需要选对参考坐标轴，默认为左坐标轴）
+                 hslCurveHistory1.AddMarkLine( new HslControls.HslMarkLine( )
+                 {
+                     CircleBrush = Brushes.DodgerBlue,
+                     IsLeftFrame = true,
+                     IsLineClosed = true,
+                     LinePen = Pens.DodgerBlue,
+                     TextBrush = Brushes.DodgerBlue,
+                     Points = new PointF[]
+                     {
+                         new PointF(200, 180f), new PointF(260, 20f), new PointF(550, 150f),
+                     },
+                     Marks = new string[] { "AA", "BB", "CC" },
+                 } );
+
                  // 添加一个活动的标记
                  HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
                  {
@@ -79,7 +94,7 @@ namespace HslControlsDemo
                  active.CursorTexts.Add( "工号", "asd2sd123dasf" );
                  hslCurveHistory1.AddMarkActiveSection( active );
 
-                 hslCurveHistory1.SetCurveVisible( "步序", false );
+                 hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
                  hslCurveHistory1.RenderCurveUI( );
              } ) );
         }
