@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnHslChart = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -60,12 +61,13 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.btnHslChart = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button27);
             this.groupBox1.Controls.Add(this.btnHslChart);
             this.groupBox1.Controls.Add(this.button26);
             this.groupBox1.Controls.Add(this.button25);
@@ -102,9 +104,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
             // 
+            // btnHslChart
+            // 
+            this.btnHslChart.Location = new System.Drawing.Point(341, 77);
+            this.btnHslChart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHslChart.Name = "btnHslChart";
+            this.btnHslChart.Size = new System.Drawing.Size(157, 37);
+            this.btnHslChart.TabIndex = 26;
+            this.btnHslChart.Text = "图表";
+            this.btnHslChart.UseVisualStyleBackColor = true;
+            this.btnHslChart.Click += new System.EventHandler(this.btnHslChart_Click);
+            // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(178, 482);
+            this.button26.Location = new System.Drawing.Point(341, 32);
             this.button26.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(157, 37);
@@ -440,16 +453,16 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // btnHslChart
+            // button27
             // 
-            this.btnHslChart.Location = new System.Drawing.Point(341, 32);
-            this.btnHslChart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnHslChart.Name = "btnHslChart";
-            this.btnHslChart.Size = new System.Drawing.Size(157, 37);
-            this.btnHslChart.TabIndex = 26;
-            this.btnHslChart.Text = "图表";
-            this.btnHslChart.UseVisualStyleBackColor = true;
-            this.btnHslChart.Click += new System.EventHandler(this.btnHslChart_Click);
+            this.button27.Location = new System.Drawing.Point(178, 482);
+            this.button27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(157, 37);
+            this.button27.TabIndex = 27;
+            this.button27.Text = "历史曲线(同步)";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // FormLoad
             // 
@@ -511,5 +524,6 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button btnHslChart;
+        private System.Windows.Forms.Button button27;
     }
 }

@@ -41,6 +41,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -118,12 +120,12 @@
             this.hslCurveHistory1.CoordinateColor = System.Drawing.Color.DimGray;
             this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.hslCurveHistory1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.hslCurveHistory1.Location = new System.Drawing.Point(12, 4);
+            this.hslCurveHistory1.Location = new System.Drawing.Point(12, 31);
             this.hslCurveHistory1.MarkLineColor = System.Drawing.Color.DodgerBlue;
             this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
             this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
             this.hslCurveHistory1.Name = "hslCurveHistory1";
-            this.hslCurveHistory1.Size = new System.Drawing.Size(980, 597);
+            this.hslCurveHistory1.Size = new System.Drawing.Size(980, 570);
             this.hslCurveHistory1.TabIndex = 0;
             this.hslCurveHistory1.Text = "hslCurveHistory1";
             this.hslCurveHistory1.UnitLeft = " ℃";
@@ -193,11 +195,32 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(83, 9);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(287, 12);
+            this.linkLabel1.TabIndex = 22;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.cnblogs.com/dathlin/p/10291327.html";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "详细博客：";
+            // 
             // FormCurveHistory2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
@@ -235,5 +258,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label3;
     }
 }

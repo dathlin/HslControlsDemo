@@ -109,6 +109,20 @@ namespace HslControlsDemo
 
             checkBox1.CheckedChanged += CheckBox1_CheckedChanged;
             checkBox2.CheckedChanged += CheckBox2_CheckedChanged;
+
+            linkLabel1.Click += LinkLabel1_Click;
+        }
+
+        private void LinkLabel1_Click( object sender, EventArgs e )
+        {
+            try
+            {
+                System.Diagnostics.Process.Start( linkLabel1.Text );
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show( ex.Message );
+            }
         }
 
         private void CheckBox2_CheckedChanged( object sender, EventArgs e )
