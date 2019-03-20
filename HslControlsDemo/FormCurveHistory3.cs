@@ -117,11 +117,6 @@ namespace HslControlsDemo
         private void FormCurveHistory_Load( object sender, EventArgs e )
         {
             hslCurveHistory1.AddLeftAuxiliary( 172f );
-            checkBox1.Checked = true;
-            checkBox2.Checked = true;
-
-            checkBox1.CheckedChanged += CheckBox1_CheckedChanged;
-            checkBox2.CheckedChanged += CheckBox2_CheckedChanged;
 
             linkLabel1.Click += LinkLabel1_Click;
             // 此处强制曲线图2随着曲线图1动作
@@ -144,19 +139,7 @@ namespace HslControlsDemo
                 MessageBox.Show( ex.Message );
             }
         }
-
-        private void CheckBox2_CheckedChanged( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetCurveVisible( "压力", checkBox2.Checked );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
-        private void CheckBox1_CheckedChanged( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetCurveVisible( "温度", checkBox1.Checked );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
+        
         private void button2_Click( object sender, EventArgs e )
         {
             hslCurveHistory1.SetScaleByXAxis( 0.5f );

@@ -188,5 +188,18 @@ namespace HslControlsDemo
             isVisiable = !isVisiable;
             hslCurve6.SetCurveVisible( new string[] { "A" }, isVisiable );
         }
+
+        private void button4_Click( object sender, EventArgs e )
+        {
+            SaveFileDialog fileDialog = new SaveFileDialog( );
+            fileDialog.Filter = "图片|*.png";
+            fileDialog.InitialDirectory = Application.StartupPath;
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                hslCurve5.SaveToBitmap( ).Save( fileDialog.FileName );
+                MessageBox.Show( "保存成功!" );
+            }
+            fileDialog.Dispose( );
+        }
     }
 }
