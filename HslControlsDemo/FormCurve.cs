@@ -179,6 +179,9 @@ namespace HslControlsDemo
             {
                 hslCurve6.RemoveAuxiliary( value );
             }
+
+            //hslCurve3.GetCurveItem( "A" ).MarkText[5] = "标记";
+            //hslCurve3.Invalidate( );
         }
 
         private bool isVisiable = true;

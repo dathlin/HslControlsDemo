@@ -84,8 +84,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(587, 75);
             this.label5.TabIndex = 4;
-            this.label5.Text = "个人授权：200 Rmb即可加入VIP群，实时获取新版的key，可用于个人项目，不限制使用次数，控件类型。500 Rmb购买最新的一套源代码，仅用于自身学习研究。" +
-    "禁止公开。1000 Rmb即可以升级为所有的版本源代码获取。同样禁止公开。";
+            this.label5.Text = "个人授权：200 Rmb即可加入VIP群，实时获取新版的key，同样禁止公开key，仅允许使用于个人项目，禁止商业用途；如需源代码，请联系作者进行详细咨询。";
             // 
             // label6
             // 
@@ -94,8 +93,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(587, 75);
             this.label6.TabIndex = 5;
-            this.label6.Text = "企业授权：5000 Rmb，实时的版本key，以及实时版本的源代码获取（源代码禁止公开，否则追求法律责任），组件仅限自己公司项目使用，支持作为贵公司的商业软件的一" +
-    "部分出售。如果需要培训控件使用及开发技术，费用另算。(支持开发票)";
+            this.label6.Text = "企业授权：实时的版本key，以及实时版本的源代码获取（源代码禁止公开，否则追求法律责任），组件仅限自己公司项目使用，支持作为贵公司的商业软件的一部分出售。如果需要" +
+    "培训控件使用及开发技术，费用另算。详情请联系作者(支持开发票)";
             // 
             // label7
             // 
