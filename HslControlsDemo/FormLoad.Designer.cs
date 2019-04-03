@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button27 = new System.Windows.Forms.Button();
             this.btnHslChart = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
@@ -61,12 +62,15 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button29);
+            this.groupBox1.Controls.Add(this.button28);
             this.groupBox1.Controls.Add(this.button27);
             this.groupBox1.Controls.Add(this.btnHslChart);
             this.groupBox1.Controls.Add(this.button26);
@@ -103,6 +107,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(178, 482);
+            this.button27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(157, 37);
+            this.button27.TabIndex = 27;
+            this.button27.Text = "历史曲线(同步)";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // btnHslChart
             // 
@@ -453,16 +468,27 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // button27
+            // button28
             // 
-            this.button27.Location = new System.Drawing.Point(178, 482);
-            this.button27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(157, 37);
-            this.button27.TabIndex = 27;
-            this.button27.Text = "历史曲线(同步)";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
+            this.button28.Location = new System.Drawing.Point(341, 122);
+            this.button28.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(157, 37);
+            this.button28.TabIndex = 28;
+            this.button28.Text = "水箱";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.Button28_Click);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(341, 167);
+            this.button29.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(157, 37);
+            this.button29.TabIndex = 29;
+            this.button29.Text = "厂房";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.Button29_Click);
             // 
             // FormLoad
             // 
@@ -525,5 +551,7 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button btnHslChart;
         private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
     }
 }

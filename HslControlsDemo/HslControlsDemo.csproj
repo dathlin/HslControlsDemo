@@ -32,11 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=6.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.6.0.1\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=6.0.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.6.0.3\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.0.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.0.2\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.0.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.0.3\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -136,6 +136,12 @@
     <Compile Include="FormDeclaration.Designer.cs">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactory.designer.cs">
+      <DependentUpon>FormFactory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGanttDay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,12 @@
     <Compile Include="FormValves.designer.cs">
       <DependentUpon>FormValves.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormWaterBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWaterBox.designer.cs">
+      <DependentUpon>FormWaterBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBasic.resx">
@@ -275,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactory.resx">
+      <DependentUpon>FormFactory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGanttDay.resx">
       <DependentUpon>FormGanttDay.cs</DependentUpon>
@@ -323,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormValves.resx">
       <DependentUpon>FormValves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWaterBox.resx">
+      <DependentUpon>FormWaterBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
