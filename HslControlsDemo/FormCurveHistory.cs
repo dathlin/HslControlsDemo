@@ -187,5 +187,15 @@ namespace HslControlsDemo
             }
             fileDialog.Dispose( );
         }
+
+        private void Button8_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.ScrollToRight( );
+        }
+
+        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, int index, int end )
+        {
+            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + index + "  End:" + end;
+        }
     }
 }

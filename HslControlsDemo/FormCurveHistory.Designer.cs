@@ -43,6 +43,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.hslCurveHistory1 = new HslControls.HslCurveHistory();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -209,12 +211,34 @@
             this.hslCurveHistory1.ValueMaxRight = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
+            this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(454, 612);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 25);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "滚动条右侧";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(414, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "选择信息";
             // 
             // FormCurveHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.linkLabel1);
@@ -256,5 +280,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label4;
     }
 }

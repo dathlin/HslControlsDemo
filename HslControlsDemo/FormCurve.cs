@@ -184,12 +184,11 @@ namespace HslControlsDemo
             //hslCurve3.Invalidate( );
         }
 
-        private bool isVisiable = true;
+
         private void button3_Click( object sender, EventArgs e )
         {
-            // 隐藏曲线
-            isVisiable = !isVisiable;
-            hslCurve6.SetCurveVisible( new string[] { "A" }, isVisiable );
+            // 清空所有曲线的数据
+            hslCurve6.RemoveAllCurveData( );
         }
 
         private void button4_Click( object sender, EventArgs e )
