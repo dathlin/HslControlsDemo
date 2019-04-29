@@ -77,5 +77,29 @@ namespace HslControlsDemo
 
         private int number = 0;
         private Timer timer = new Timer( );
+
+        private void Button4_Click( object sender, EventArgs e )
+        {
+            try
+            {
+                hslLedDisplay7.LeftRightOffect = int.Parse( textBox4.Text );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( "错误：" + ex.Message );
+            }
+        }
+
+        private void Button5_Click( object sender, EventArgs e )
+        {
+            try
+            {
+                hslLedDisplay7.UnitText = textBox5.Text;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( "错误：" + ex.Message );
+            }
+        }
     }
 }

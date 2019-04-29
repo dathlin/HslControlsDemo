@@ -29,32 +29,46 @@
         private void InitializeComponent( )
         {
             this.hslTetris1 = new HslControls.HslTetris();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // hslTetris1
             // 
             this.hslTetris1.CausesValidation = false;
+            this.hslTetris1.FuncGetNewTetrisItem = null;
             this.hslTetris1.Location = new System.Drawing.Point(282, 75);
             this.hslTetris1.Name = "hslTetris1";
             this.hslTetris1.Size = new System.Drawing.Size(447, 438);
             this.hslTetris1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(182, 551);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(257, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "通过方向键控制，向下为加速，向上变换姿态。";
             // 
             // FormTetris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.hslTetris1);
             this.Name = "FormTetris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormTetris";
             this.Load += new System.EventHandler(this.FormTetris_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private HslControls.HslTetris hslTetris1;
+        private System.Windows.Forms.Label label1;
     }
 }
