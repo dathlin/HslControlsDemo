@@ -23,15 +23,26 @@ Install-Package HslControls
 ## 输入激活码
 在你的程序进入的地方输入激活码即可。
 ```
-static void Main( )
-{
-    // 注册控件示例，如果注册失败，你的控件仍然只能使用8个小时
-    HslControls.Authorization.SetAuthorizationCode( "你的授权码" );
+    static class Program
+    {
+        /// <summary>
+        /// 应用程序的主入口点。
+        /// </summary>
+        [STAThread]
+        static void Main( )
+        {
+            // 注册控件示例，如果注册失败，你的控件仍然只能使用8个小时
+            bool isSuccess = HslControls.Authorization.SetAuthorizationCode( "你的授权码" );
+            if (!isSuccess)
+            {
+                Console.WriteLine( "注册失败" );
+            }
 
-    Application.EnableVisualStyles( );
-    Application.SetCompatibleTextRenderingDefault( false );
-    Application.Run( new FormLoad( ) );
-}
+            Application.EnableVisualStyles( );
+            Application.SetCompatibleTextRenderingDefault( false );
+            Application.Run( new FormLoad( ) );
+        }
+    }
 ```
 ## Demo
 初步实现的控件如下所示（有些为动图，实际需要自己下载demo运行，demo仅支持免费运行8小时）：
