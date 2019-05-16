@@ -36,12 +36,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.hslCurve6 = new HslControls.HslCurve();
             this.hslCurve5 = new HslControls.HslCurve();
             this.hslCurve4 = new HslControls.HslCurve();
             this.hslCurve3 = new HslControls.HslCurve();
             this.hslCurve1 = new HslControls.HslCurve();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -117,6 +117,16 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(301, 606);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(101, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "保存图片";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // hslCurve6
             // 
             this.hslCurve6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
@@ -130,6 +140,7 @@
             // hslCurve5
             // 
             this.hslCurve5.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve5.IntervalAbscissaText = 20;
             this.hslCurve5.IsAbscissaStrech = true;
             this.hslCurve5.IsRenderRightCoordinate = false;
             this.hslCurve5.Location = new System.Drawing.Point(24, 436);
@@ -163,6 +174,7 @@
             // hslCurve1
             // 
             this.hslCurve1.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve1.IntervalAbscissaText = -1;
             this.hslCurve1.IsAbscissaStrech = true;
             this.hslCurve1.IsRenderRightCoordinate = false;
             this.hslCurve1.Location = new System.Drawing.Point(24, 12);
@@ -171,16 +183,6 @@
             this.hslCurve1.StrechDataCountMax = 12;
             this.hslCurve1.TabIndex = 0;
             this.hslCurve1.Title = "销售数据";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(301, 606);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "保存图片";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormCurve
             // 

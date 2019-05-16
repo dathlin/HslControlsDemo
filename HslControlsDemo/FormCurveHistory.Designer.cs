@@ -42,9 +42,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button7 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.SuspendLayout();
             // 
             // button1
@@ -194,25 +194,6 @@
             this.checkBox3.Text = "右坐标";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // hslCurveHistory1
-            // 
-            this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.hslCurveHistory1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
-            this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
-            this.hslCurveHistory1.Name = "hslCurveHistory1";
-            this.hslCurveHistory1.Size = new System.Drawing.Size(980, 571);
-            this.hslCurveHistory1.TabIndex = 0;
-            this.hslCurveHistory1.Text = "hslCurveHistory1";
-            this.hslCurveHistory1.UnitLeft = " ℃";
-            this.hslCurveHistory1.UnitRight = "Mpa";
-            this.hslCurveHistory1.ValueMaxLeft = 250F;
-            this.hslCurveHistory1.ValueMaxRight = 5F;
-            this.hslCurveHistory1.ValueSegment = 25;
-            this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
-            this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
-            // 
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(454, 612);
@@ -231,6 +212,25 @@
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 24;
             this.label4.Text = "选择信息";
+            // 
+            // hslCurveHistory1
+            // 
+            this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.hslCurveHistory1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
+            this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
+            this.hslCurveHistory1.Name = "hslCurveHistory1";
+            this.hslCurveHistory1.Size = new System.Drawing.Size(980, 571);
+            this.hslCurveHistory1.TabIndex = 0;
+            this.hslCurveHistory1.Text = "hslCurveHistory1";
+            this.hslCurveHistory1.UnitLeft = " ℃";
+            this.hslCurveHistory1.UnitRight = "Mpa";
+            this.hslCurveHistory1.ValueMaxLeft = 250F;
+            this.hslCurveHistory1.ValueMaxRight = 5F;
+            this.hslCurveHistory1.ValueSegment = 25;
+            this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
+            this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
             // 
             // FormCurveHistory
             // 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="这是安卓版的HslControls的Demo项目，详细请打开菜单" />
+    <HslControls.HslBottle
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_width="100px"
+        android:layout_height="400px"
+        />
+
+    <HslControls.HslBottle
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="200px"
+        android:layout_width="100px"
+        android:layout_height="400px"
+        app:value="80"
+        />
+
+    <HslControls.HslPumpOne
+        android:layout_width="400px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="50px"
+        app:export="5"
+        android:layout_height="400px" />
+
+    <HslControls.HslPumpOne
+        android:layout_width="100px"
+        android:layout_marginLeft="900px"
+        android:layout_marginTop="50px"
+        android:layout_height="100px"
+        android:id="@+id/hslPumpOne2" />
+
+    <HslControls.HslArrow
+        android:layout_marginTop="520px"
+        android:layout_marginLeft="20px"
+        android:layout_width="300px"
+        android:layout_height="90px" />
+
+    <HslControls.HslArrow
+        android:layout_marginTop="600px"
+        android:layout_marginLeft="20px"
+        android:layout_width="90px"
+        app:arrowDirection="Down"
+        app:arrowBackColor="@android:color/holo_red_light"
+        android:layout_height="300px" />
+    <HslControls.HslFactory
+        android:layout_marginTop="1100px"
+        android:layout_width="500px"
+        android:layout_height="300px" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_HslBottle"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="HslBottle" />
+        <item
+            android:id="@+id/nav_HslPipeLine"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="HslPipeLine" />
+        <item
+          android:id="@+id/nav_HslValves"
+          android:icon="@drawable/ic_menu_slideshow"
+          android:title="HslValves" />
+      <item
+        android:id="@+id/nav_HslLedDisplay"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="HslLedDisplay" />
+      <item
+        android:id="@+id/nav_HslPumpOne"
+        android:icon="@drawable/ic_menu_send"
+        android:title="HslPumpOne" />
+      <item
+        android:id="@+id/nav_HslWaterBox"
+        android:icon="@drawable/ic_menu_share"
+        android:title="HslWaterBox" />
+      <item
+        android:id="@+id/nav_HslStatusManagement"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="HslStatusManagement" />
+      <item
+          android:id="@+id/nav_HslClassifier"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="HslClassifier" />
+      <item
+          android:id="@+id/nav_HslBattery"
+          android:icon="@drawable/ic_menu_gallery"
+          android:title="HslBattery" />
+      <item
+        android:id="@+id/nav_HslProgress"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="HslProgress" />
+      <item
+        android:id="@+id/nav_HslGanttChart"
+        android:icon="@drawable/ic_menu_send"
+        android:title="HslGanttChart" />
+      <item
+        android:id="@+id/nav_HslLanternSimple"
+        android:icon="@drawable/ic_menu_share"
+        android:title="HslLanternSimple" />
+    </group>
+</menu>

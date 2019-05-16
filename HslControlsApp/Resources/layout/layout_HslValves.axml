@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslValves
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_width="300px"
+        android:layout_height="200px" />
+    
+    <HslControls.HslValves
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="500px"
+        android:layout_width="300px"
+        app:edgeColor="@android:color/holo_red_light"
+        android:layout_height="200px" />
+
+    
+    <HslControls.HslPipeLine
+        android:id="@+id/hslPipeLine1"
+        android:layout_marginTop="530px"
+        android:layout_marginLeft="100px"
+        android:layout_width="350px"
+        app:pipeLineActive="true"
+        app:pipeTurnRight="Down"
+        android:layout_height="50px" />
+    
+    <HslControls.HslPipeLine
+        android:id="@+id/hslPipeLine2"
+        android:layout_marginTop="580px"
+        android:layout_marginLeft="400px"
+        android:layout_width="50px"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="300px" />
+
+    <HslControls.HslValves
+        android:layout_marginTop="490px"
+        android:layout_marginLeft="200px"
+        android:layout_width="150px"
+        android:id="@+id/hslValves1"
+        android:layout_height="100px" />
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Open"
+        android:textAllCaps="false"
+        android:id="@+id/button1"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="300px"
+    />
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Close"
+        android:textAllCaps="false"
+        android:id="@+id/button2"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="500px"
+    />
+
+</RelativeLayout>
