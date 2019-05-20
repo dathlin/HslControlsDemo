@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslGauge
+        android:layout_width="400px"
+        android:layout_height="360px" />
+    
+    <HslControls.HslGauge
+        android:layout_width="600px"
+        app:unitText="ma"
+        android:layout_marginLeft="450px"
+        android:layout_height="360px" />
+
+
+    
+    <HslControls.HslGauge
+        android:id="@+id/hslGauge1"
+        android:layout_marginTop="500px"
+        android:layout_width="400px"
+        app:valueMax="220"
+        app:valueAlarmMin="0"
+        app:valueAlarmMax="180"
+        app:unitText="KM/H"
+        app:segmentCount="11"
+        android:layout_height="360px" />
+
+    
+    <HslControls.HslGauge
+        android:id="@+id/hslGauge2"
+        android:layout_marginTop="500px"
+        android:layout_marginLeft="450px"
+        app:valueMax="8"
+        app:pointerColor="#3CB371"
+        app:segmentCount="8"
+        app:valueAlarmMin="0"
+        app:valueAlarmMax="6"
+        app:unitText="×1000 R/MIN"
+        android:layout_width="400px"
+        android:layout_height="360px" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslPieChart
+        android:id="@+id/hslPieChart1"
+        android:layout_width="400px"
+        android:layout_height="400px" />
+
+
+    <HslControls.HslPieChart
+        android:id="@+id/hslPieChart2"
+        android:layout_marginLeft="450px"
+        android:layout_width="400px"
+        app:isRenderPercent="true"
+        android:layout_height="400px" />
+
+    
+    <HslControls.HslPieChart
+        android:id="@+id/hslPieChart3"
+        android:layout_marginTop="500px"
+        android:layout_width="400px"
+        android:layout_height="400px" />
+
+
+    <HslControls.HslPieChart
+        android:id="@+id/hslPieChart4"
+        app:isRenderPercent="true"
+        android:layout_marginTop="500px"
+        android:layout_marginLeft="450px"
+        android:layout_width="400px"
+        android:layout_height="400px" />
+
+</RelativeLayout>

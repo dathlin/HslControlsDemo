@@ -42,7 +42,7 @@ namespace HslControlsApp
         private void CheckServer( )
         {
             NetSimplifyClient simplifyClient = new NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.0.6" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.0.7" );
         }
 
         public override void OnBackPressed()
@@ -144,6 +144,26 @@ namespace HslControlsApp
             else if (id == Resource.Id.nav_HslLanternSimple)
             {
                 Intent i = new Intent( this, typeof( Activity_HslLanternSimple ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslGauge)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslGauge ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslPieChart)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslPieChart ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslBarChart)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslBarChart ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslCurve)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslCurve ) );
                 this.StartActivity( i );
             }
 

@@ -52,5 +52,21 @@
         android:id="@+id/nav_HslLanternSimple"
         android:icon="@drawable/ic_menu_share"
         android:title="HslLanternSimple" />
+      <item
+        android:id="@+id/nav_HslGauge"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="HslGauge" />
+      <item
+          android:id="@+id/nav_HslPieChart"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="HslPieChart" />
+      <item
+          android:id="@+id/nav_HslBarChart"
+          android:icon="@drawable/ic_menu_gallery"
+          android:title="HslBarChart" />
+      <item
+        android:id="@+id/nav_HslCurve"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="HslCurve" />
     </group>
 </menu>

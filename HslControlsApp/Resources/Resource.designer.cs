@@ -98,7 +98,9 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.backgroundStacked = global::HslControlsApp.Resource.Attribute.backgroundStacked;
 			global::HslControls.Resource.Attribute.backgroundTint = global::HslControlsApp.Resource.Attribute.backgroundTint;
 			global::HslControls.Resource.Attribute.backgroundTintMode = global::HslControlsApp.Resource.Attribute.backgroundTintMode;
+			global::HslControls.Resource.Attribute.barBackColor = global::HslControlsApp.Resource.Attribute.barBackColor;
 			global::HslControls.Resource.Attribute.barLength = global::HslControlsApp.Resource.Attribute.barLength;
+			global::HslControls.Resource.Attribute.barPercentWidth = global::HslControlsApp.Resource.Attribute.barPercentWidth;
 			global::HslControls.Resource.Attribute.batteryBackColor = global::HslControlsApp.Resource.Attribute.batteryBackColor;
 			global::HslControls.Resource.Attribute.boderColor = global::HslControlsApp.Resource.Attribute.boderColor;
 			global::HslControls.Resource.Attribute.borderColor = global::HslControlsApp.Resource.Attribute.borderColor;
@@ -138,7 +140,9 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.colorControlActivated = global::HslControlsApp.Resource.Attribute.colorControlActivated;
 			global::HslControls.Resource.Attribute.colorControlHighlight = global::HslControlsApp.Resource.Attribute.colorControlHighlight;
 			global::HslControls.Resource.Attribute.colorControlNormal = global::HslControlsApp.Resource.Attribute.colorControlNormal;
+			global::HslControls.Resource.Attribute.colorDashLines = global::HslControlsApp.Resource.Attribute.colorDashLines;
 			global::HslControls.Resource.Attribute.colorError = global::HslControlsApp.Resource.Attribute.colorError;
+			global::HslControls.Resource.Attribute.colorLinesAndText = global::HslControlsApp.Resource.Attribute.colorLinesAndText;
 			global::HslControls.Resource.Attribute.colorPrimary = global::HslControlsApp.Resource.Attribute.colorPrimary;
 			global::HslControls.Resource.Attribute.colorPrimaryDark = global::HslControlsApp.Resource.Attribute.colorPrimaryDark;
 			global::HslControls.Resource.Attribute.colorSwitchThumbNormal = global::HslControlsApp.Resource.Attribute.colorSwitchThumbNormal;
@@ -151,6 +155,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.contentInsetStart = global::HslControlsApp.Resource.Attribute.contentInsetStart;
 			global::HslControls.Resource.Attribute.contentInsetStartWithNavigation = global::HslControlsApp.Resource.Attribute.contentInsetStartWithNavigation;
 			global::HslControls.Resource.Attribute.controlBackground = global::HslControlsApp.Resource.Attribute.controlBackground;
+			global::HslControls.Resource.Attribute.curveNameWidth = global::HslControlsApp.Resource.Attribute.curveNameWidth;
 			global::HslControls.Resource.Attribute.customNavigationLayout = global::HslControlsApp.Resource.Attribute.customNavigationLayout;
 			global::HslControls.Resource.Attribute.defaultQueryHint = global::HslControlsApp.Resource.Attribute.defaultQueryHint;
 			global::HslControls.Resource.Attribute.dialogPreferredPadding = global::HslControlsApp.Resource.Attribute.dialogPreferredPadding;
@@ -195,6 +200,8 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.foreColorTop = global::HslControlsApp.Resource.Attribute.foreColorTop;
 			global::HslControls.Resource.Attribute.ganttBackColor = global::HslControlsApp.Resource.Attribute.ganttBackColor;
 			global::HslControls.Resource.Attribute.gapBetweenBars = global::HslControlsApp.Resource.Attribute.gapBetweenBars;
+			global::HslControls.Resource.Attribute.gaugeAlarmColor = global::HslControlsApp.Resource.Attribute.gaugeAlarmColor;
+			global::HslControls.Resource.Attribute.gaugeBorder = global::HslControlsApp.Resource.Attribute.gaugeBorder;
 			global::HslControls.Resource.Attribute.generalColor = global::HslControlsApp.Resource.Attribute.generalColor;
 			global::HslControls.Resource.Attribute.goIcon = global::HslControlsApp.Resource.Attribute.goIcon;
 			global::HslControls.Resource.Attribute.headTag = global::HslControlsApp.Resource.Attribute.headTag;
@@ -212,10 +219,19 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.imageButtonStyle = global::HslControlsApp.Resource.Attribute.imageButtonStyle;
 			global::HslControls.Resource.Attribute.indeterminateProgressStyle = global::HslControlsApp.Resource.Attribute.indeterminateProgressStyle;
 			global::HslControls.Resource.Attribute.initialActivityCount = global::HslControlsApp.Resource.Attribute.initialActivityCount;
+			global::HslControls.Resource.Attribute.intervalAbscissaText = global::HslControlsApp.Resource.Attribute.intervalAbscissaText;
+			global::HslControls.Resource.Attribute.isAbscissaStrech = global::HslControlsApp.Resource.Attribute.isAbscissaStrech;
+			global::HslControls.Resource.Attribute.isBigSemiCircle = global::HslControlsApp.Resource.Attribute.isBigSemiCircle;
 			global::HslControls.Resource.Attribute.isLightTheme = global::HslControlsApp.Resource.Attribute.isLightTheme;
 			global::HslControls.Resource.Attribute.isOpen = global::HslControlsApp.Resource.Attribute.isOpen;
 			global::HslControls.Resource.Attribute.isRenderBorder = global::HslControlsApp.Resource.Attribute.isRenderBorder;
+			global::HslControls.Resource.Attribute.isRenderDashLine = global::HslControlsApp.Resource.Attribute.isRenderDashLine;
+			global::HslControls.Resource.Attribute.isRenderPercent = global::HslControlsApp.Resource.Attribute.isRenderPercent;
+			global::HslControls.Resource.Attribute.isRenderRightCoordinate = global::HslControlsApp.Resource.Attribute.isRenderRightCoordinate;
+			global::HslControls.Resource.Attribute.isRenderSmall = global::HslControlsApp.Resource.Attribute.isRenderSmall;
+			global::HslControls.Resource.Attribute.isShowBarValue = global::HslControlsApp.Resource.Attribute.isShowBarValue;
 			global::HslControls.Resource.Attribute.isTextRender = global::HslControlsApp.Resource.Attribute.isTextRender;
+			global::HslControls.Resource.Attribute.isTextUnderPointer = global::HslControlsApp.Resource.Attribute.isTextUnderPointer;
 			global::HslControls.Resource.Attribute.itemPadding = global::HslControlsApp.Resource.Attribute.itemPadding;
 			global::HslControls.Resource.Attribute.lanternBackground = global::HslControlsApp.Resource.Attribute.lanternBackground;
 			global::HslControls.Resource.Attribute.layout = global::HslControlsApp.Resource.Attribute.layout;
@@ -254,6 +270,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.pipeLineActive = global::HslControlsApp.Resource.Attribute.pipeLineActive;
 			global::HslControls.Resource.Attribute.pipeTurnLeft = global::HslControlsApp.Resource.Attribute.pipeTurnLeft;
 			global::HslControls.Resource.Attribute.pipeTurnRight = global::HslControlsApp.Resource.Attribute.pipeTurnRight;
+			global::HslControls.Resource.Attribute.pointerColor = global::HslControlsApp.Resource.Attribute.pointerColor;
 			global::HslControls.Resource.Attribute.popupMenuStyle = global::HslControlsApp.Resource.Attribute.popupMenuStyle;
 			global::HslControls.Resource.Attribute.popupTheme = global::HslControlsApp.Resource.Attribute.popupTheme;
 			global::HslControls.Resource.Attribute.popupWindowStyle = global::HslControlsApp.Resource.Attribute.popupWindowStyle;
@@ -273,6 +290,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.searchIcon = global::HslControlsApp.Resource.Attribute.searchIcon;
 			global::HslControls.Resource.Attribute.searchViewStyle = global::HslControlsApp.Resource.Attribute.searchViewStyle;
 			global::HslControls.Resource.Attribute.seekBarStyle = global::HslControlsApp.Resource.Attribute.seekBarStyle;
+			global::HslControls.Resource.Attribute.segmentCount = global::HslControlsApp.Resource.Attribute.segmentCount;
 			global::HslControls.Resource.Attribute.selectableItemBackground = global::HslControlsApp.Resource.Attribute.selectableItemBackground;
 			global::HslControls.Resource.Attribute.selectableItemBackgroundBorderless = global::HslControlsApp.Resource.Attribute.selectableItemBackgroundBorderless;
 			global::HslControls.Resource.Attribute.separatrix1 = global::HslControlsApp.Resource.Attribute.separatrix1;
@@ -280,6 +298,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.separatrix3 = global::HslControlsApp.Resource.Attribute.separatrix3;
 			global::HslControls.Resource.Attribute.separatrix4 = global::HslControlsApp.Resource.Attribute.separatrix4;
 			global::HslControls.Resource.Attribute.showAsAction = global::HslControlsApp.Resource.Attribute.showAsAction;
+			global::HslControls.Resource.Attribute.showBarValueFormat = global::HslControlsApp.Resource.Attribute.showBarValueFormat;
 			global::HslControls.Resource.Attribute.showDividers = global::HslControlsApp.Resource.Attribute.showDividers;
 			global::HslControls.Resource.Attribute.showText = global::HslControlsApp.Resource.Attribute.showText;
 			global::HslControls.Resource.Attribute.showTitle = global::HslControlsApp.Resource.Attribute.showTitle;
@@ -291,6 +310,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.splitTrack = global::HslControlsApp.Resource.Attribute.splitTrack;
 			global::HslControls.Resource.Attribute.srcCompat = global::HslControlsApp.Resource.Attribute.srcCompat;
 			global::HslControls.Resource.Attribute.state_above_anchor = global::HslControlsApp.Resource.Attribute.state_above_anchor;
+			global::HslControls.Resource.Attribute.strechDataCountMax = global::HslControlsApp.Resource.Attribute.strechDataCountMax;
 			global::HslControls.Resource.Attribute.stringFormat = global::HslControlsApp.Resource.Attribute.stringFormat;
 			global::HslControls.Resource.Attribute.subMenuArrow = global::HslControlsApp.Resource.Attribute.subMenuArrow;
 			global::HslControls.Resource.Attribute.submitBackground = global::HslControlsApp.Resource.Attribute.submitBackground;
@@ -304,6 +324,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.switchStyle = global::HslControlsApp.Resource.Attribute.switchStyle;
 			global::HslControls.Resource.Attribute.switchTextAppearance = global::HslControlsApp.Resource.Attribute.switchTextAppearance;
 			global::HslControls.Resource.Attribute.text = global::HslControlsApp.Resource.Attribute.text;
+			global::HslControls.Resource.Attribute.textAddFormat = global::HslControlsApp.Resource.Attribute.textAddFormat;
 			global::HslControls.Resource.Attribute.textAllCaps = global::HslControlsApp.Resource.Attribute.textAllCaps;
 			global::HslControls.Resource.Attribute.textAppearanceLargePopupMenu = global::HslControlsApp.Resource.Attribute.textAppearanceLargePopupMenu;
 			global::HslControls.Resource.Attribute.textAppearanceListItem = global::HslControlsApp.Resource.Attribute.textAppearanceListItem;
@@ -353,11 +374,22 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.trackTintMode = global::HslControlsApp.Resource.Attribute.trackTintMode;
 			global::HslControls.Resource.Attribute.unitText = global::HslControlsApp.Resource.Attribute.unitText;
 			global::HslControls.Resource.Attribute.useAnimation = global::HslControlsApp.Resource.Attribute.useAnimation;
+			global::HslControls.Resource.Attribute.useGradient = global::HslControlsApp.Resource.Attribute.useGradient;
 			global::HslControls.Resource.Attribute.useGradientColor = global::HslControlsApp.Resource.Attribute.useGradientColor;
 			global::HslControls.Resource.Attribute.value = global::HslControlsApp.Resource.Attribute.value;
+			global::HslControls.Resource.Attribute.valueAlarmMax = global::HslControlsApp.Resource.Attribute.valueAlarmMax;
+			global::HslControls.Resource.Attribute.valueAlarmMin = global::HslControlsApp.Resource.Attribute.valueAlarmMin;
 			global::HslControls.Resource.Attribute.valueCurrent = global::HslControlsApp.Resource.Attribute.valueCurrent;
 			global::HslControls.Resource.Attribute.valueMax = global::HslControlsApp.Resource.Attribute.valueMax;
+			global::HslControls.Resource.Attribute.valueMaxLeft = global::HslControlsApp.Resource.Attribute.valueMaxLeft;
+			global::HslControls.Resource.Attribute.valueMaxOfLeft = global::HslControlsApp.Resource.Attribute.valueMaxOfLeft;
+			global::HslControls.Resource.Attribute.valueMaxOfRight = global::HslControlsApp.Resource.Attribute.valueMaxOfRight;
 			global::HslControls.Resource.Attribute.valueMin = global::HslControlsApp.Resource.Attribute.valueMin;
+			global::HslControls.Resource.Attribute.valueMinLeft = global::HslControlsApp.Resource.Attribute.valueMinLeft;
+			global::HslControls.Resource.Attribute.valueMinOfLeft = global::HslControlsApp.Resource.Attribute.valueMinOfLeft;
+			global::HslControls.Resource.Attribute.valueMinOfRight = global::HslControlsApp.Resource.Attribute.valueMinOfRight;
+			global::HslControls.Resource.Attribute.valueSegment = global::HslControlsApp.Resource.Attribute.valueSegment;
+			global::HslControls.Resource.Attribute.valueStart = global::HslControlsApp.Resource.Attribute.valueStart;
 			global::HslControls.Resource.Attribute.voiceIcon = global::HslControlsApp.Resource.Attribute.voiceIcon;
 			global::HslControls.Resource.Attribute.waterColor = global::HslControlsApp.Resource.Attribute.waterColor;
 			global::HslControls.Resource.Attribute.windowActionBar = global::HslControlsApp.Resource.Attribute.windowActionBar;
@@ -1480,6 +1512,21 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslArrow_text = global::HslControlsApp.Resource.Styleable.HslArrow_text;
 			global::HslControls.Resource.Styleable.HslArrow_textColor = global::HslControlsApp.Resource.Styleable.HslArrow_textColor;
 			global::HslControls.Resource.Styleable.HslArrow_textSize = global::HslControlsApp.Resource.Styleable.HslArrow_textSize;
+			global::HslControls.Resource.Styleable.HslBarChart = global::HslControlsApp.Resource.Styleable.HslBarChart;
+			global::HslControls.Resource.Styleable.HslBarChart_barBackColor = global::HslControlsApp.Resource.Styleable.HslBarChart_barBackColor;
+			global::HslControls.Resource.Styleable.HslBarChart_barPercentWidth = global::HslControlsApp.Resource.Styleable.HslBarChart_barPercentWidth;
+			global::HslControls.Resource.Styleable.HslBarChart_colorDashLines = global::HslControlsApp.Resource.Styleable.HslBarChart_colorDashLines;
+			global::HslControls.Resource.Styleable.HslBarChart_colorLinesAndText = global::HslControlsApp.Resource.Styleable.HslBarChart_colorLinesAndText;
+			global::HslControls.Resource.Styleable.HslBarChart_isRenderDashLine = global::HslControlsApp.Resource.Styleable.HslBarChart_isRenderDashLine;
+			global::HslControls.Resource.Styleable.HslBarChart_isShowBarValue = global::HslControlsApp.Resource.Styleable.HslBarChart_isShowBarValue;
+			global::HslControls.Resource.Styleable.HslBarChart_showBarValueFormat = global::HslControlsApp.Resource.Styleable.HslBarChart_showBarValueFormat;
+			global::HslControls.Resource.Styleable.HslBarChart_textColor = global::HslControlsApp.Resource.Styleable.HslBarChart_textColor;
+			global::HslControls.Resource.Styleable.HslBarChart_textSize = global::HslControlsApp.Resource.Styleable.HslBarChart_textSize;
+			global::HslControls.Resource.Styleable.HslBarChart_title = global::HslControlsApp.Resource.Styleable.HslBarChart_title;
+			global::HslControls.Resource.Styleable.HslBarChart_useGradient = global::HslControlsApp.Resource.Styleable.HslBarChart_useGradient;
+			global::HslControls.Resource.Styleable.HslBarChart_valueMaxLeft = global::HslControlsApp.Resource.Styleable.HslBarChart_valueMaxLeft;
+			global::HslControls.Resource.Styleable.HslBarChart_valueMinLeft = global::HslControlsApp.Resource.Styleable.HslBarChart_valueMinLeft;
+			global::HslControls.Resource.Styleable.HslBarChart_valueSegment = global::HslControlsApp.Resource.Styleable.HslBarChart_valueSegment;
 			global::HslControls.Resource.Styleable.HslBattery = global::HslControlsApp.Resource.Styleable.HslBattery;
 			global::HslControls.Resource.Styleable.HslBattery_animationTime = global::HslControlsApp.Resource.Styleable.HslBattery_animationTime;
 			global::HslControls.Resource.Styleable.HslBattery_batteryBackColor = global::HslControlsApp.Resource.Styleable.HslBattery_batteryBackColor;
@@ -1524,6 +1571,23 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslClassifier_textBackColor = global::HslControlsApp.Resource.Styleable.HslClassifier_textBackColor;
 			global::HslControls.Resource.Styleable.HslClassifier_textColor = global::HslControlsApp.Resource.Styleable.HslClassifier_textColor;
 			global::HslControls.Resource.Styleable.HslClassifier_textSize = global::HslControlsApp.Resource.Styleable.HslClassifier_textSize;
+			global::HslControls.Resource.Styleable.HslCurve = global::HslControlsApp.Resource.Styleable.HslCurve;
+			global::HslControls.Resource.Styleable.HslCurve_colorDashLines = global::HslControlsApp.Resource.Styleable.HslCurve_colorDashLines;
+			global::HslControls.Resource.Styleable.HslCurve_colorLinesAndText = global::HslControlsApp.Resource.Styleable.HslCurve_colorLinesAndText;
+			global::HslControls.Resource.Styleable.HslCurve_curveNameWidth = global::HslControlsApp.Resource.Styleable.HslCurve_curveNameWidth;
+			global::HslControls.Resource.Styleable.HslCurve_intervalAbscissaText = global::HslControlsApp.Resource.Styleable.HslCurve_intervalAbscissaText;
+			global::HslControls.Resource.Styleable.HslCurve_isAbscissaStrech = global::HslControlsApp.Resource.Styleable.HslCurve_isAbscissaStrech;
+			global::HslControls.Resource.Styleable.HslCurve_isRenderDashLine = global::HslControlsApp.Resource.Styleable.HslCurve_isRenderDashLine;
+			global::HslControls.Resource.Styleable.HslCurve_isRenderRightCoordinate = global::HslControlsApp.Resource.Styleable.HslCurve_isRenderRightCoordinate;
+			global::HslControls.Resource.Styleable.HslCurve_strechDataCountMax = global::HslControlsApp.Resource.Styleable.HslCurve_strechDataCountMax;
+			global::HslControls.Resource.Styleable.HslCurve_textAddFormat = global::HslControlsApp.Resource.Styleable.HslCurve_textAddFormat;
+			global::HslControls.Resource.Styleable.HslCurve_textSize = global::HslControlsApp.Resource.Styleable.HslCurve_textSize;
+			global::HslControls.Resource.Styleable.HslCurve_title = global::HslControlsApp.Resource.Styleable.HslCurve_title;
+			global::HslControls.Resource.Styleable.HslCurve_valueMaxOfLeft = global::HslControlsApp.Resource.Styleable.HslCurve_valueMaxOfLeft;
+			global::HslControls.Resource.Styleable.HslCurve_valueMaxOfRight = global::HslControlsApp.Resource.Styleable.HslCurve_valueMaxOfRight;
+			global::HslControls.Resource.Styleable.HslCurve_valueMinOfLeft = global::HslControlsApp.Resource.Styleable.HslCurve_valueMinOfLeft;
+			global::HslControls.Resource.Styleable.HslCurve_valueMinOfRight = global::HslControlsApp.Resource.Styleable.HslCurve_valueMinOfRight;
+			global::HslControls.Resource.Styleable.HslCurve_valueSegment = global::HslControlsApp.Resource.Styleable.HslCurve_valueSegment;
 			global::HslControls.Resource.Styleable.HslFactory = global::HslControlsApp.Resource.Styleable.HslFactory;
 			global::HslControls.Resource.Styleable.HslFactory_color1 = global::HslControlsApp.Resource.Styleable.HslFactory_color1;
 			global::HslControls.Resource.Styleable.HslFactory_color2 = global::HslControlsApp.Resource.Styleable.HslFactory_color2;
@@ -1542,6 +1606,23 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslGanttChart_timeMax = global::HslControlsApp.Resource.Styleable.HslGanttChart_timeMax;
 			global::HslControls.Resource.Styleable.HslGanttChart_timeSegment = global::HslControlsApp.Resource.Styleable.HslGanttChart_timeSegment;
 			global::HslControls.Resource.Styleable.HslGanttChart_timeStart = global::HslControlsApp.Resource.Styleable.HslGanttChart_timeStart;
+			global::HslControls.Resource.Styleable.HslGauge = global::HslControlsApp.Resource.Styleable.HslGauge;
+			global::HslControls.Resource.Styleable.HslGauge_animationTime = global::HslControlsApp.Resource.Styleable.HslGauge_animationTime;
+			global::HslControls.Resource.Styleable.HslGauge_gaugeAlarmColor = global::HslControlsApp.Resource.Styleable.HslGauge_gaugeAlarmColor;
+			global::HslControls.Resource.Styleable.HslGauge_gaugeBorder = global::HslControlsApp.Resource.Styleable.HslGauge_gaugeBorder;
+			global::HslControls.Resource.Styleable.HslGauge_isBigSemiCircle = global::HslControlsApp.Resource.Styleable.HslGauge_isBigSemiCircle;
+			global::HslControls.Resource.Styleable.HslGauge_isTextUnderPointer = global::HslControlsApp.Resource.Styleable.HslGauge_isTextUnderPointer;
+			global::HslControls.Resource.Styleable.HslGauge_pointerColor = global::HslControlsApp.Resource.Styleable.HslGauge_pointerColor;
+			global::HslControls.Resource.Styleable.HslGauge_segmentCount = global::HslControlsApp.Resource.Styleable.HslGauge_segmentCount;
+			global::HslControls.Resource.Styleable.HslGauge_textColor = global::HslControlsApp.Resource.Styleable.HslGauge_textColor;
+			global::HslControls.Resource.Styleable.HslGauge_textSize = global::HslControlsApp.Resource.Styleable.HslGauge_textSize;
+			global::HslControls.Resource.Styleable.HslGauge_unitText = global::HslControlsApp.Resource.Styleable.HslGauge_unitText;
+			global::HslControls.Resource.Styleable.HslGauge_useAnimation = global::HslControlsApp.Resource.Styleable.HslGauge_useAnimation;
+			global::HslControls.Resource.Styleable.HslGauge_value = global::HslControlsApp.Resource.Styleable.HslGauge_value;
+			global::HslControls.Resource.Styleable.HslGauge_valueAlarmMax = global::HslControlsApp.Resource.Styleable.HslGauge_valueAlarmMax;
+			global::HslControls.Resource.Styleable.HslGauge_valueAlarmMin = global::HslControlsApp.Resource.Styleable.HslGauge_valueAlarmMin;
+			global::HslControls.Resource.Styleable.HslGauge_valueMax = global::HslControlsApp.Resource.Styleable.HslGauge_valueMax;
+			global::HslControls.Resource.Styleable.HslGauge_valueStart = global::HslControlsApp.Resource.Styleable.HslGauge_valueStart;
 			global::HslControls.Resource.Styleable.HslLanternSimple = global::HslControlsApp.Resource.Styleable.HslLanternSimple;
 			global::HslControls.Resource.Styleable.HslLanternSimple_centerBackground = global::HslControlsApp.Resource.Styleable.HslLanternSimple_centerBackground;
 			global::HslControls.Resource.Styleable.HslLanternSimple_lanternBackground = global::HslControlsApp.Resource.Styleable.HslLanternSimple_lanternBackground;
@@ -1558,6 +1639,10 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslLedDisplay_leftRightOffect = global::HslControlsApp.Resource.Styleable.HslLedDisplay_leftRightOffect;
 			global::HslControls.Resource.Styleable.HslLedDisplay_textSize = global::HslControlsApp.Resource.Styleable.HslLedDisplay_textSize;
 			global::HslControls.Resource.Styleable.HslLedDisplay_unitText = global::HslControlsApp.Resource.Styleable.HslLedDisplay_unitText;
+			global::HslControls.Resource.Styleable.HslPieChart = global::HslControlsApp.Resource.Styleable.HslPieChart;
+			global::HslControls.Resource.Styleable.HslPieChart_isRenderPercent = global::HslControlsApp.Resource.Styleable.HslPieChart_isRenderPercent;
+			global::HslControls.Resource.Styleable.HslPieChart_isRenderSmall = global::HslControlsApp.Resource.Styleable.HslPieChart_isRenderSmall;
+			global::HslControls.Resource.Styleable.HslPieChart_textSize = global::HslControlsApp.Resource.Styleable.HslPieChart_textSize;
 			global::HslControls.Resource.Styleable.HslPipeLine = global::HslControlsApp.Resource.Styleable.HslPipeLine;
 			global::HslControls.Resource.Styleable.HslPipeLine_centerColor = global::HslControlsApp.Resource.Styleable.HslPipeLine_centerColor;
 			global::HslControls.Resource.Styleable.HslPipeLine_edgeColor = global::HslControlsApp.Resource.Styleable.HslPipeLine_edgeColor;
@@ -2056,8 +2141,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100fe
 			public const int backgroundTintMode = 2130772222;
 			
+			// aapt resource value: 0x7f0101b4
+			public const int barBackColor = 2130772404;
+			
 			// aapt resource value: 0x7f0100bc
 			public const int barLength = 2130772156;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int barPercentWidth = 2130772412;
 			
 			// aapt resource value: 0x7f010191
 			public const int batteryBackColor = 2130772369;
@@ -2206,8 +2297,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010092
 			public const int colorControlNormal = 2130772114;
 			
+			// aapt resource value: 0x7f0101b5
+			public const int colorDashLines = 2130772405;
+			
 			// aapt resource value: 0x7f0100b1
 			public const int colorError = 2130772145;
+			
+			// aapt resource value: 0x7f0101b2
+			public const int colorLinesAndText = 2130772402;
 			
 			// aapt resource value: 0x7f01008f
 			public const int colorPrimary = 2130772111;
@@ -2259,6 +2356,9 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f010149
 			public const int counterTextAppearance = 2130772297;
+			
+			// aapt resource value: 0x7f0101c5
+			public const int curveNameWidth = 2130772421;
 			
 			// aapt resource value: 0x7f010018
 			public const int customNavigationLayout = 2130771992;
@@ -2443,6 +2543,12 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100b9
 			public const int gapBetweenBars = 2130772153;
 			
+			// aapt resource value: 0x7f0101af
+			public const int gaugeAlarmColor = 2130772399;
+			
+			// aapt resource value: 0x7f0101a7
+			public const int gaugeBorder = 2130772391;
+			
 			// aapt resource value: 0x7f01018b
 			public const int generalColor = 2130772363;
 			
@@ -2509,6 +2615,15 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010130
 			public const int insetForeground = 2130772272;
 			
+			// aapt resource value: 0x7f0101c4
+			public const int intervalAbscissaText = 2130772420;
+			
+			// aapt resource value: 0x7f0101c1
+			public const int isAbscissaStrech = 2130772417;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int isBigSemiCircle = 2130772398;
+			
 			// aapt resource value: 0x7f01000b
 			public const int isLightTheme = 2130771979;
 			
@@ -2518,8 +2633,26 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01018a
 			public const int isRenderBorder = 2130772362;
 			
+			// aapt resource value: 0x7f0101b6
+			public const int isRenderDashLine = 2130772406;
+			
+			// aapt resource value: 0x7f0101b0
+			public const int isRenderPercent = 2130772400;
+			
+			// aapt resource value: 0x7f0101c6
+			public const int isRenderRightCoordinate = 2130772422;
+			
+			// aapt resource value: 0x7f0101b1
+			public const int isRenderSmall = 2130772401;
+			
+			// aapt resource value: 0x7f0101ba
+			public const int isShowBarValue = 2130772410;
+			
 			// aapt resource value: 0x7f010194
 			public const int isTextRender = 2130772372;
+			
+			// aapt resource value: 0x7f0101ad
+			public const int isTextUnderPointer = 2130772397;
 			
 			// aapt resource value: 0x7f01012d
 			public const int itemBackground = 2130772269;
@@ -2704,6 +2837,9 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01015d
 			public const int pipeTurnRight = 2130772317;
 			
+			// aapt resource value: 0x7f0101a8
+			public const int pointerColor = 2130772392;
+			
 			// aapt resource value: 0x7f010078
 			public const int popupMenuStyle = 2130772088;
 			
@@ -2776,6 +2912,9 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100ab
 			public const int seekBarStyle = 2130772139;
 			
+			// aapt resource value: 0x7f0101ac
+			public const int segmentCount = 2130772396;
+			
 			// aapt resource value: 0x7f010070
 			public const int selectableItemBackground = 2130772080;
 			
@@ -2796,6 +2935,9 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f0100c3
 			public const int showAsAction = 2130772163;
+			
+			// aapt resource value: 0x7f0101bb
+			public const int showBarValueFormat = 2130772411;
 			
 			// aapt resource value: 0x7f0100bf
 			public const int showDividers = 2130772159;
@@ -2847,6 +2989,9 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f01010f
 			public const int statusBarScrim = 2130772239;
+			
+			// aapt resource value: 0x7f0101c2
+			public const int strechDataCountMax = 2130772418;
 			
 			// aapt resource value: 0x7f010195
 			public const int stringFormat = 2130772373;
@@ -2934,6 +3079,9 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f010173
 			public const int text = 2130772339;
+			
+			// aapt resource value: 0x7f0101c3
+			public const int textAddFormat = 2130772419;
 			
 			// aapt resource value: 0x7f010036
 			public const int textAllCaps = 2130772022;
@@ -3094,11 +3242,20 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010127
 			public const int useCompatPadding = 2130772263;
 			
+			// aapt resource value: 0x7f0101b3
+			public const int useGradient = 2130772403;
+			
 			// aapt resource value: 0x7f0101a6
 			public const int useGradientColor = 2130772390;
 			
 			// aapt resource value: 0x7f010162
 			public const int value = 2130772322;
+			
+			// aapt resource value: 0x7f0101aa
+			public const int valueAlarmMax = 2130772394;
+			
+			// aapt resource value: 0x7f0101ab
+			public const int valueAlarmMin = 2130772395;
 			
 			// aapt resource value: 0x7f01019d
 			public const int valueCurrent = 2130772381;
@@ -3106,8 +3263,32 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010192
 			public const int valueMax = 2130772370;
 			
+			// aapt resource value: 0x7f0101b8
+			public const int valueMaxLeft = 2130772408;
+			
+			// aapt resource value: 0x7f0101bd
+			public const int valueMaxOfLeft = 2130772413;
+			
+			// aapt resource value: 0x7f0101bf
+			public const int valueMaxOfRight = 2130772415;
+			
 			// aapt resource value: 0x7f010193
 			public const int valueMin = 2130772371;
+			
+			// aapt resource value: 0x7f0101b9
+			public const int valueMinLeft = 2130772409;
+			
+			// aapt resource value: 0x7f0101be
+			public const int valueMinOfLeft = 2130772414;
+			
+			// aapt resource value: 0x7f0101c0
+			public const int valueMinOfRight = 2130772416;
+			
+			// aapt resource value: 0x7f0101b7
+			public const int valueSegment = 2130772407;
+			
+			// aapt resource value: 0x7f0101a9
+			public const int valueStart = 2130772393;
 			
 			// aapt resource value: 0x7f0100d9
 			public const int voiceIcon = 2130772185;
@@ -4410,8 +4591,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080063
 			public const int Vertical = 2131230819;
 			
-			// aapt resource value: 0x7f0800d5
-			public const int action0 = 2131230933;
+			// aapt resource value: 0x7f0800e1
+			public const int action0 = 2131230945;
 			
 			// aapt resource value: 0x7f080087
 			public const int action_bar = 2131230855;
@@ -4434,17 +4615,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080065
 			public const int action_bar_title = 2131230821;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int action_container = 2131230930;
+			// aapt resource value: 0x7f0800de
+			public const int action_container = 2131230942;
 			
 			// aapt resource value: 0x7f080088
 			public const int action_context_bar = 2131230856;
 			
-			// aapt resource value: 0x7f0800d9
-			public const int action_divider = 2131230937;
+			// aapt resource value: 0x7f0800e5
+			public const int action_divider = 2131230949;
 			
-			// aapt resource value: 0x7f0800d3
-			public const int action_image = 2131230931;
+			// aapt resource value: 0x7f0800df
+			public const int action_image = 2131230943;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -4461,14 +4642,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080067
 			public const int action_mode_close_button = 2131230823;
 			
-			// aapt resource value: 0x7f0800f4
-			public const int action_settings = 2131230964;
+			// aapt resource value: 0x7f080104
+			public const int action_settings = 2131230980;
 			
-			// aapt resource value: 0x7f0800d4
-			public const int action_text = 2131230932;
+			// aapt resource value: 0x7f0800e0
+			public const int action_text = 2131230944;
 			
-			// aapt resource value: 0x7f0800e2
-			public const int actions = 2131230946;
+			// aapt resource value: 0x7f0800ee
+			public const int actions = 2131230958;
 			
 			// aapt resource value: 0x7f080068
 			public const int activity_chooser_view_content = 2131230824;
@@ -4500,32 +4681,32 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int button1 = 2131230892;
+			// aapt resource value: 0x7f0800af
+			public const int button1 = 2131230895;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int button2 = 2131230914;
+			// aapt resource value: 0x7f0800ce
+			public const int button2 = 2131230926;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int button3 = 2131230917;
+			// aapt resource value: 0x7f0800d1
+			public const int button3 = 2131230929;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int button4 = 2131230918;
+			// aapt resource value: 0x7f0800d2
+			public const int button4 = 2131230930;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int button5 = 2131230919;
+			// aapt resource value: 0x7f0800d3
+			public const int button5 = 2131230931;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int button6 = 2131230921;
+			// aapt resource value: 0x7f0800d5
+			public const int button6 = 2131230933;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int button7 = 2131230923;
+			// aapt resource value: 0x7f0800d7
+			public const int button7 = 2131230935;
 			
 			// aapt resource value: 0x7f08006e
 			public const int buttonPanel = 2131230830;
 			
-			// aapt resource value: 0x7f0800d6
-			public const int cancel_action = 2131230934;
+			// aapt resource value: 0x7f0800e2
+			public const int cancel_action = 2131230946;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -4539,8 +4720,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08007e
 			public const int checkbox = 2131230846;
 			
-			// aapt resource value: 0x7f0800de
-			public const int chronometer = 2131230942;
+			// aapt resource value: 0x7f0800ea
+			public const int chronometer = 2131230954;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -4593,11 +4774,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080096
 			public const int drawer_layout = 2131230870;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int editText1 = 2131230920;
+			// aapt resource value: 0x7f0800d4
+			public const int editText1 = 2131230932;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int editText2 = 2131230922;
+			// aapt resource value: 0x7f0800d6
+			public const int editText2 = 2131230934;
 			
 			// aapt resource value: 0x7f080089
 			public const int edit_query = 2131230857;
@@ -4605,8 +4786,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f0800e4
-			public const int end_padder = 2131230948;
+			// aapt resource value: 0x7f0800f0
+			public const int end_padder = 2131230960;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -4651,103 +4832,139 @@ namespace HslControlsApp
 			public const int homeAsUp = 2131230753;
 			
 			// aapt resource value: 0x7f0800a9
-			public const int hslBattery1 = 2131230889;
+			public const int hslBarChart1 = 2131230889;
 			
 			// aapt resource value: 0x7f0800aa
-			public const int hslBattery2 = 2131230890;
+			public const int hslBarChart2 = 2131230890;
 			
 			// aapt resource value: 0x7f0800ab
-			public const int hslBattery3 = 2131230891;
+			public const int hslBarChart3 = 2131230891;
+			
+			// aapt resource value: 0x7f0800ac
+			public const int hslBattery1 = 2131230892;
 			
 			// aapt resource value: 0x7f0800ad
-			public const int hslBottle1 = 2131230893;
+			public const int hslBattery2 = 2131230893;
 			
 			// aapt resource value: 0x7f0800ae
-			public const int hslBottle2 = 2131230894;
-			
-			// aapt resource value: 0x7f0800af
-			public const int hslGanttChart1 = 2131230895;
+			public const int hslBattery3 = 2131230894;
 			
 			// aapt resource value: 0x7f0800b0
-			public const int hslGanttChart2 = 2131230896;
+			public const int hslBottle1 = 2131230896;
 			
 			// aapt resource value: 0x7f0800b1
-			public const int hslGanttChart3 = 2131230897;
+			public const int hslBottle2 = 2131230897;
 			
 			// aapt resource value: 0x7f0800b2
-			public const int hslGanttChart4 = 2131230898;
+			public const int hslCurve1 = 2131230898;
 			
 			// aapt resource value: 0x7f0800b3
-			public const int hslGanttChart5 = 2131230899;
+			public const int hslCurve2 = 2131230899;
 			
 			// aapt resource value: 0x7f0800b4
-			public const int hslLedDisplay1 = 2131230900;
-			
-			// aapt resource value: 0x7f0800bf
-			public const int hslPipeLine1 = 2131230911;
-			
-			// aapt resource value: 0x7f0800c0
-			public const int hslPipeLine2 = 2131230912;
+			public const int hslCurve3 = 2131230900;
 			
 			// aapt resource value: 0x7f0800b5
-			public const int hslProgress1 = 2131230901;
+			public const int hslGanttChart1 = 2131230901;
 			
 			// aapt resource value: 0x7f0800b6
-			public const int hslProgress2 = 2131230902;
+			public const int hslGanttChart2 = 2131230902;
 			
 			// aapt resource value: 0x7f0800b7
-			public const int hslProgress3 = 2131230903;
+			public const int hslGanttChart3 = 2131230903;
 			
 			// aapt resource value: 0x7f0800b8
-			public const int hslProgress4 = 2131230904;
+			public const int hslGanttChart4 = 2131230904;
 			
 			// aapt resource value: 0x7f0800b9
-			public const int hslProgressLine1 = 2131230905;
+			public const int hslGanttChart5 = 2131230905;
 			
 			// aapt resource value: 0x7f0800ba
-			public const int hslProgressLine2 = 2131230906;
+			public const int hslGauge1 = 2131230906;
 			
 			// aapt resource value: 0x7f0800bb
-			public const int hslProgressLine3 = 2131230907;
+			public const int hslGauge2 = 2131230907;
 			
 			// aapt resource value: 0x7f0800bc
-			public const int hslProgressLine4 = 2131230908;
+			public const int hslLedDisplay1 = 2131230908;
 			
 			// aapt resource value: 0x7f0800bd
-			public const int hslProgressLine5 = 2131230909;
+			public const int hslPieChart1 = 2131230909;
 			
 			// aapt resource value: 0x7f0800be
-			public const int hslProgressLine6 = 2131230910;
+			public const int hslPieChart2 = 2131230910;
+			
+			// aapt resource value: 0x7f0800bf
+			public const int hslPieChart3 = 2131230911;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int hslPieChart4 = 2131230912;
+			
+			// aapt resource value: 0x7f0800cb
+			public const int hslPipeLine1 = 2131230923;
+			
+			// aapt resource value: 0x7f0800cc
+			public const int hslPipeLine2 = 2131230924;
 			
 			// aapt resource value: 0x7f0800c1
-			public const int hslPumpOne1 = 2131230913;
+			public const int hslProgress1 = 2131230913;
+			
+			// aapt resource value: 0x7f0800c2
+			public const int hslProgress2 = 2131230914;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int hslProgress3 = 2131230915;
+			
+			// aapt resource value: 0x7f0800c4
+			public const int hslProgress4 = 2131230916;
+			
+			// aapt resource value: 0x7f0800c5
+			public const int hslProgressLine1 = 2131230917;
+			
+			// aapt resource value: 0x7f0800c6
+			public const int hslProgressLine2 = 2131230918;
+			
+			// aapt resource value: 0x7f0800c7
+			public const int hslProgressLine3 = 2131230919;
+			
+			// aapt resource value: 0x7f0800c8
+			public const int hslProgressLine4 = 2131230920;
+			
+			// aapt resource value: 0x7f0800c9
+			public const int hslProgressLine5 = 2131230921;
+			
+			// aapt resource value: 0x7f0800ca
+			public const int hslProgressLine6 = 2131230922;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int hslPumpOne1 = 2131230925;
 			
 			// aapt resource value: 0x7f08009a
 			public const int hslPumpOne2 = 2131230874;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int hslStatusManagement1 = 2131230915;
-			
-			// aapt resource value: 0x7f0800c4
-			public const int hslStatusManagement2 = 2131230916;
-			
-			// aapt resource value: 0x7f0800cc
-			public const int hslValves1 = 2131230924;
-			
-			// aapt resource value: 0x7f0800cd
-			public const int hslWaterBox1 = 2131230925;
-			
-			// aapt resource value: 0x7f0800ce
-			public const int hslWaterBox2 = 2131230926;
-			
 			// aapt resource value: 0x7f0800cf
-			public const int hslWaterBox3 = 2131230927;
+			public const int hslStatusManagement1 = 2131230927;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int hslStatusManagement2 = 2131230928;
+			
+			// aapt resource value: 0x7f0800d8
+			public const int hslValves1 = 2131230936;
+			
+			// aapt resource value: 0x7f0800d9
+			public const int hslWaterBox1 = 2131230937;
+			
+			// aapt resource value: 0x7f0800da
+			public const int hslWaterBox2 = 2131230938;
+			
+			// aapt resource value: 0x7f0800db
+			public const int hslWaterBox3 = 2131230939;
 			
 			// aapt resource value: 0x7f08006d
 			public const int icon = 2131230829;
 			
-			// aapt resource value: 0x7f0800e3
-			public const int icon_group = 2131230947;
+			// aapt resource value: 0x7f0800ef
+			public const int icon_group = 2131230959;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -4755,11 +4972,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08006a
 			public const int image = 2131230826;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int imageView = 2131230928;
+			// aapt resource value: 0x7f0800dc
+			public const int imageView = 2131230940;
 			
-			// aapt resource value: 0x7f0800df
-			public const int info = 2131230943;
+			// aapt resource value: 0x7f0800eb
+			public const int info = 2131230955;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -4785,14 +5002,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08006c
 			public const int list_item = 2131230828;
 			
-			// aapt resource value: 0x7f0800e7
-			public const int masked = 2131230951;
+			// aapt resource value: 0x7f0800f3
+			public const int masked = 2131230963;
 			
-			// aapt resource value: 0x7f0800d8
-			public const int media_actions = 2131230936;
+			// aapt resource value: 0x7f0800e4
+			public const int media_actions = 2131230948;
 			
-			// aapt resource value: 0x7f0800e5
-			public const int message = 2131230949;
+			// aapt resource value: 0x7f0800f1
+			public const int message = 2131230961;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -4803,41 +5020,53 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f0800f0
-			public const int nav_HslBattery = 2131230960;
+			// aapt resource value: 0x7f080102
+			public const int nav_HslBarChart = 2131230978;
 			
-			// aapt resource value: 0x7f0800e8
-			public const int nav_HslBottle = 2131230952;
+			// aapt resource value: 0x7f0800fc
+			public const int nav_HslBattery = 2131230972;
 			
-			// aapt resource value: 0x7f0800ef
-			public const int nav_HslClassifier = 2131230959;
+			// aapt resource value: 0x7f0800f4
+			public const int nav_HslBottle = 2131230964;
 			
-			// aapt resource value: 0x7f0800f2
-			public const int nav_HslGanttChart = 2131230962;
+			// aapt resource value: 0x7f0800fb
+			public const int nav_HslClassifier = 2131230971;
 			
-			// aapt resource value: 0x7f0800f3
-			public const int nav_HslLanternSimple = 2131230963;
+			// aapt resource value: 0x7f080103
+			public const int nav_HslCurve = 2131230979;
 			
-			// aapt resource value: 0x7f0800eb
-			public const int nav_HslLedDisplay = 2131230955;
+			// aapt resource value: 0x7f0800fe
+			public const int nav_HslGanttChart = 2131230974;
 			
-			// aapt resource value: 0x7f0800e9
-			public const int nav_HslPipeLine = 2131230953;
+			// aapt resource value: 0x7f080100
+			public const int nav_HslGauge = 2131230976;
 			
-			// aapt resource value: 0x7f0800f1
-			public const int nav_HslProgress = 2131230961;
+			// aapt resource value: 0x7f0800ff
+			public const int nav_HslLanternSimple = 2131230975;
 			
-			// aapt resource value: 0x7f0800ec
-			public const int nav_HslPumpOne = 2131230956;
+			// aapt resource value: 0x7f0800f7
+			public const int nav_HslLedDisplay = 2131230967;
 			
-			// aapt resource value: 0x7f0800ee
-			public const int nav_HslStatusManagement = 2131230958;
+			// aapt resource value: 0x7f080101
+			public const int nav_HslPieChart = 2131230977;
 			
-			// aapt resource value: 0x7f0800ea
-			public const int nav_HslValves = 2131230954;
+			// aapt resource value: 0x7f0800f5
+			public const int nav_HslPipeLine = 2131230965;
 			
-			// aapt resource value: 0x7f0800ed
-			public const int nav_HslWaterBox = 2131230957;
+			// aapt resource value: 0x7f0800fd
+			public const int nav_HslProgress = 2131230973;
+			
+			// aapt resource value: 0x7f0800f8
+			public const int nav_HslPumpOne = 2131230968;
+			
+			// aapt resource value: 0x7f0800fa
+			public const int nav_HslStatusManagement = 2131230970;
+			
+			// aapt resource value: 0x7f0800f6
+			public const int nav_HslValves = 2131230966;
+			
+			// aapt resource value: 0x7f0800f9
+			public const int nav_HslWaterBox = 2131230969;
 			
 			// aapt resource value: 0x7f080097
 			public const int nav_view = 2131230871;
@@ -4854,14 +5083,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f0800e1
-			public const int notification_background = 2131230945;
+			// aapt resource value: 0x7f0800ed
+			public const int notification_background = 2131230957;
 			
-			// aapt resource value: 0x7f0800db
-			public const int notification_main_column = 2131230939;
+			// aapt resource value: 0x7f0800e7
+			public const int notification_main_column = 2131230951;
 			
-			// aapt resource value: 0x7f0800da
-			public const int notification_main_column_container = 2131230938;
+			// aapt resource value: 0x7f0800e6
+			public const int notification_main_column_container = 2131230950;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -4887,11 +5116,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f0800e0
-			public const int right_icon = 2131230944;
+			// aapt resource value: 0x7f0800ec
+			public const int right_icon = 2131230956;
 			
-			// aapt resource value: 0x7f0800dc
-			public const int right_side = 2131230940;
+			// aapt resource value: 0x7f0800e8
+			public const int right_side = 2131230952;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -4995,8 +5224,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f0800d7
-			public const int status_bar_latest_event_content = 2131230935;
+			// aapt resource value: 0x7f0800e3
+			public const int status_bar_latest_event_content = 2131230947;
 			
 			// aapt resource value: 0x7f080081
 			public const int submenuarrow = 2131230849;
@@ -5022,8 +5251,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080074
 			public const int textSpacerNoTitle = 2131230836;
 			
-			// aapt resource value: 0x7f0800d1
-			public const int textView = 2131230929;
+			// aapt resource value: 0x7f0800dd
+			public const int textView = 2131230941;
 			
 			// aapt resource value: 0x7f0800a8
 			public const int text_input_password_toggle = 2131230888;
@@ -5034,8 +5263,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800dd
-			public const int time = 2131230941;
+			// aapt resource value: 0x7f0800e9
+			public const int time = 2131230953;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -5085,8 +5314,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800e6
-			public const int visible = 2131230950;
+			// aapt resource value: 0x7f0800f2
+			public const int visible = 2131230962;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -5280,103 +5509,115 @@ namespace HslControlsApp
 			public const int design_text_input_password_icon = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int layout_HslBattery = 2130968619;
+			public const int layout_HslBarChart = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int layout_HslBottle = 2130968620;
+			public const int layout_HslBattery = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int layout_HslClassifier = 2130968621;
+			public const int layout_HslBottle = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int layout_HslGanttChart = 2130968622;
+			public const int layout_HslClassifier = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int layout_HslLanternSimple = 2130968623;
+			public const int layout_HslCurve = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int layout_HslLedDisplay = 2130968624;
+			public const int layout_HslGanttChart = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int layout_HslPipeLine = 2130968625;
+			public const int layout_HslGauge = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int layout_HslProgress = 2130968626;
+			public const int layout_HslLanternSimple = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int layout_HslPumpOne = 2130968627;
+			public const int layout_HslLedDisplay = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int layout_HslStatusManagement = 2130968628;
+			public const int layout_HslPieChart = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int layout_HslValves = 2130968629;
+			public const int layout_HslPipeLine = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int layout_HslWaterBox = 2130968630;
+			public const int layout_HslProgress = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int nav_header_main = 2130968631;
+			public const int layout_HslPumpOne = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_action = 2130968632;
+			public const int layout_HslStatusManagement = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_action_tombstone = 2130968633;
+			public const int layout_HslValves = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_media_action = 2130968634;
+			public const int layout_HslWaterBox = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_media_cancel_action = 2130968635;
+			public const int nav_header_main = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_big_media = 2130968636;
+			public const int notification_action = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_big_media_custom = 2130968637;
+			public const int notification_action_tombstone = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_template_big_media_narrow = 2130968638;
+			public const int notification_media_action = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_template_big_media_narrow_custom = 2130968639;
+			public const int notification_media_cancel_action = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_template_custom_big = 2130968640;
+			public const int notification_template_big_media = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_template_icon_group = 2130968641;
+			public const int notification_template_big_media_custom = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_template_lines_media = 2130968642;
+			public const int notification_template_big_media_narrow = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_template_media = 2130968643;
+			public const int notification_template_big_media_narrow_custom = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_template_media_custom = 2130968644;
+			public const int notification_template_custom_big = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_template_part_chronometer = 2130968645;
+			public const int notification_template_icon_group = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_part_time = 2130968646;
+			public const int notification_template_lines_media = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int select_dialog_item_material = 2130968647;
+			public const int notification_template_media = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int select_dialog_multichoice_material = 2130968648;
+			public const int notification_template_media_custom = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int select_dialog_singlechoice_material = 2130968649;
+			public const int notification_template_part_chronometer = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int support_simple_spinner_dropdown_item = 2130968650;
+			public const int notification_template_part_time = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int tooltip = 2130968651;
+			public const int select_dialog_item_material = 2130968651;
+			
+			// aapt resource value: 0x7f04004c
+			public const int select_dialog_multichoice_material = 2130968652;
+			
+			// aapt resource value: 0x7f04004d
+			public const int select_dialog_singlechoice_material = 2130968653;
+			
+			// aapt resource value: 0x7f04004e
+			public const int support_simple_spinner_dropdown_item = 2130968654;
+			
+			// aapt resource value: 0x7f04004f
+			public const int tooltip = 2130968655;
 			
 			static Layout()
 			{
@@ -7946,6 +8187,64 @@ namespace HslControlsApp
 			// aapt resource value: 0
 			public const int HslArrow_textSize = 0;
 			
+			public static int[] HslBarChart = new int[] {
+					2130771980,
+					2130772314,
+					2130772315,
+					2130772402,
+					2130772403,
+					2130772404,
+					2130772405,
+					2130772406,
+					2130772407,
+					2130772408,
+					2130772409,
+					2130772410,
+					2130772411,
+					2130772412};
+			
+			// aapt resource value: 5
+			public const int HslBarChart_barBackColor = 5;
+			
+			// aapt resource value: 13
+			public const int HslBarChart_barPercentWidth = 13;
+			
+			// aapt resource value: 6
+			public const int HslBarChart_colorDashLines = 6;
+			
+			// aapt resource value: 3
+			public const int HslBarChart_colorLinesAndText = 3;
+			
+			// aapt resource value: 7
+			public const int HslBarChart_isRenderDashLine = 7;
+			
+			// aapt resource value: 11
+			public const int HslBarChart_isShowBarValue = 11;
+			
+			// aapt resource value: 12
+			public const int HslBarChart_showBarValueFormat = 12;
+			
+			// aapt resource value: 2
+			public const int HslBarChart_textColor = 2;
+			
+			// aapt resource value: 1
+			public const int HslBarChart_textSize = 1;
+			
+			// aapt resource value: 0
+			public const int HslBarChart_title = 0;
+			
+			// aapt resource value: 4
+			public const int HslBarChart_useGradient = 4;
+			
+			// aapt resource value: 9
+			public const int HslBarChart_valueMaxLeft = 9;
+			
+			// aapt resource value: 10
+			public const int HslBarChart_valueMinLeft = 10;
+			
+			// aapt resource value: 8
+			public const int HslBarChart_valueSegment = 8;
+			
 			public static int[] HslBattery = new int[] {
 					2130772314,
 					2130772315,
@@ -8116,6 +8415,72 @@ namespace HslControlsApp
 			// aapt resource value: 0
 			public const int HslClassifier_textSize = 0;
 			
+			public static int[] HslCurve = new int[] {
+					2130771980,
+					2130772314,
+					2130772402,
+					2130772405,
+					2130772406,
+					2130772407,
+					2130772413,
+					2130772414,
+					2130772415,
+					2130772416,
+					2130772417,
+					2130772418,
+					2130772419,
+					2130772420,
+					2130772421,
+					2130772422};
+			
+			// aapt resource value: 3
+			public const int HslCurve_colorDashLines = 3;
+			
+			// aapt resource value: 2
+			public const int HslCurve_colorLinesAndText = 2;
+			
+			// aapt resource value: 14
+			public const int HslCurve_curveNameWidth = 14;
+			
+			// aapt resource value: 13
+			public const int HslCurve_intervalAbscissaText = 13;
+			
+			// aapt resource value: 10
+			public const int HslCurve_isAbscissaStrech = 10;
+			
+			// aapt resource value: 4
+			public const int HslCurve_isRenderDashLine = 4;
+			
+			// aapt resource value: 15
+			public const int HslCurve_isRenderRightCoordinate = 15;
+			
+			// aapt resource value: 11
+			public const int HslCurve_strechDataCountMax = 11;
+			
+			// aapt resource value: 12
+			public const int HslCurve_textAddFormat = 12;
+			
+			// aapt resource value: 1
+			public const int HslCurve_textSize = 1;
+			
+			// aapt resource value: 0
+			public const int HslCurve_title = 0;
+			
+			// aapt resource value: 6
+			public const int HslCurve_valueMaxOfLeft = 6;
+			
+			// aapt resource value: 8
+			public const int HslCurve_valueMaxOfRight = 8;
+			
+			// aapt resource value: 7
+			public const int HslCurve_valueMinOfLeft = 7;
+			
+			// aapt resource value: 9
+			public const int HslCurve_valueMinOfRight = 9;
+			
+			// aapt resource value: 5
+			public const int HslCurve_valueSegment = 5;
+			
 			public static int[] HslFactory = new int[] {
 					2130772347,
 					2130772348,
@@ -8184,6 +8549,72 @@ namespace HslControlsApp
 			// aapt resource value: 5
 			public const int HslGanttChart_timeStart = 5;
 			
+			public static int[] HslGauge = new int[] {
+					2130772314,
+					2130772315,
+					2130772322,
+					2130772333,
+					2130772334,
+					2130772345,
+					2130772370,
+					2130772391,
+					2130772392,
+					2130772393,
+					2130772394,
+					2130772395,
+					2130772396,
+					2130772397,
+					2130772398,
+					2130772399};
+			
+			// aapt resource value: 4
+			public const int HslGauge_animationTime = 4;
+			
+			// aapt resource value: 15
+			public const int HslGauge_gaugeAlarmColor = 15;
+			
+			// aapt resource value: 7
+			public const int HslGauge_gaugeBorder = 7;
+			
+			// aapt resource value: 14
+			public const int HslGauge_isBigSemiCircle = 14;
+			
+			// aapt resource value: 13
+			public const int HslGauge_isTextUnderPointer = 13;
+			
+			// aapt resource value: 8
+			public const int HslGauge_pointerColor = 8;
+			
+			// aapt resource value: 12
+			public const int HslGauge_segmentCount = 12;
+			
+			// aapt resource value: 1
+			public const int HslGauge_textColor = 1;
+			
+			// aapt resource value: 0
+			public const int HslGauge_textSize = 0;
+			
+			// aapt resource value: 5
+			public const int HslGauge_unitText = 5;
+			
+			// aapt resource value: 3
+			public const int HslGauge_useAnimation = 3;
+			
+			// aapt resource value: 2
+			public const int HslGauge_value = 2;
+			
+			// aapt resource value: 10
+			public const int HslGauge_valueAlarmMax = 10;
+			
+			// aapt resource value: 11
+			public const int HslGauge_valueAlarmMin = 11;
+			
+			// aapt resource value: 6
+			public const int HslGauge_valueMax = 6;
+			
+			// aapt resource value: 9
+			public const int HslGauge_valueStart = 9;
+			
 			public static int[] HslLanternSimple = new int[] {
 					2130772314,
 					2130772315,
@@ -8243,6 +8674,20 @@ namespace HslControlsApp
 			
 			// aapt resource value: 6
 			public const int HslLedDisplay_unitText = 6;
+			
+			public static int[] HslPieChart = new int[] {
+					2130772314,
+					2130772400,
+					2130772401};
+			
+			// aapt resource value: 1
+			public const int HslPieChart_isRenderPercent = 1;
+			
+			// aapt resource value: 2
+			public const int HslPieChart_isRenderSmall = 2;
+			
+			// aapt resource value: 0
+			public const int HslPieChart_textSize = 0;
 			
 			public static int[] HslPipeLine = new int[] {
 					2130772316,

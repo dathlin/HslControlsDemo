@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HslControlsApp</string>
+    <string name="app_name">HslControls Demo</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>

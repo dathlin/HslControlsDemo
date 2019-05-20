@@ -197,5 +197,11 @@ namespace HslControlsDemo
         {
             label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + index + "  End:" + end;
         }
+
+        private void Button9_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.RemoveAllMarkMouseSection( );
+            hslCurveHistory1.RenderCurveUI( );
+        }
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -64,12 +66,12 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.button30 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button31);
             this.groupBox1.Controls.Add(this.button30);
             this.groupBox1.Controls.Add(this.button29);
             this.groupBox1.Controls.Add(this.button28);
@@ -109,6 +111,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(259, 257);
+            this.button31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(109, 37);
+            this.button31.TabIndex = 31;
+            this.button31.Text = "柱状图";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.Button31_Click);
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(259, 212);
+            this.button30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(109, 37);
+            this.button30.TabIndex = 30;
+            this.button30.Text = "泵";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.Button30_Click);
             // 
             // button29
             // 
@@ -442,22 +466,22 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 17);
+            this.label1.Size = new System.Drawing.Size(535, 43);
             this.label1.TabIndex = 1;
-            this.label1.Text = "本DEMO程序仅支持运行8小时，如果需要注册码，联系QQ群：948305931  作者 Richard.Hu   官网：";
+            this.label1.Text = "本DEMO程序仅支持运行8小时，如果需要注册码，联系QQ群：948305931  作者 Richard.Hu \r\n本控件库支持PC版和手机版，详细请点击DEMO源" +
+    "代码地址，感谢支持。";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(567, 20);
+            this.linkLabel1.Location = new System.Drawing.Point(580, 9);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(199, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(235, 17);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "http://www.hslcommunication.cn/";
+            this.linkLabel1.Text = "官网：http://www.hslcommunication.cn/";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // linkLabel2
@@ -484,24 +508,13 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(794, 20);
+            this.linkLabel3.Location = new System.Drawing.Point(821, 9);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(103, 17);
             this.linkLabel3.TabIndex = 5;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(259, 212);
-            this.button30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(109, 37);
-            this.button30.TabIndex = 30;
-            this.button30.Text = "泵";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.Button30_Click);
             // 
             // FormLoad
             // 
@@ -567,5 +580,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
     }
 }

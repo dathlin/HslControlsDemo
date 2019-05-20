@@ -33,9 +33,11 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -59,12 +61,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity_HslBarChart.cs" />
     <Compile Include="Activity_HslBattery.cs" />
     <Compile Include="Activity_HslBottle.cs" />
     <Compile Include="Activity_HslClassifier.cs" />
+    <Compile Include="Activity_HslCurve.cs" />
     <Compile Include="Activity_HslGanttChart.cs" />
+    <Compile Include="Activity_HslGauge.cs" />
     <Compile Include="Activity_HslLanternSimple.cs" />
     <Compile Include="Activity_HslLedDisplay.cs" />
+    <Compile Include="Activity_HslPieChart.cs" />
     <Compile Include="Activity_HslPipeLine.cs" />
     <Compile Include="Activity_HslProgress.cs" />
     <Compile Include="Activity_HslPumpOne.cs" />
@@ -132,7 +138,7 @@
       <Version>6.2.2</Version>
     </PackageReference>
     <PackageReference Include="HslControls">
-      <Version>2.0.6</Version>
+      <Version>2.0.7</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
@@ -140,40 +146,84 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslBattery.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslBottle.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslBottle.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslPipeLine.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslClassifier.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslValves.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslGanttChart.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslLedDisplay.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslLanternSimple.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslPumpOne.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslLedDisplay.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslWaterBox.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslPipeLine.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslStatusManagement.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslProgress.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslClassifier.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslPumpOne.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslBattery.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslStatusManagement.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslProgress.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslValves.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslGanttChart.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout_HslWaterBox.axml" />
+    <AndroidResource Include="Resources\layout\layout_HslLanternSimple.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslGauge.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslPieChart.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslBarChart.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslCurve.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

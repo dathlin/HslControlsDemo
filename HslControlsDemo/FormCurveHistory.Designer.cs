@@ -45,6 +45,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.hslCurveHistory1 = new HslControls.HslCurveHistory();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -232,11 +233,22 @@
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(700, 4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(115, 23);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "移除前景标记";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
             // FormCurveHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.checkBox3);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button9;
     }
 }
