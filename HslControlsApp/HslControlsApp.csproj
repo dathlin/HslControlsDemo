@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5E90B881-DC96-48BB-99E4-B5EB01124AA2}</ProjectGuid>
+    <ProjectGuid>{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{d0238942-4dcf-4d08-b23a-81159ca3b345}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -65,16 +65,19 @@
     <Compile Include="Activity_HslBattery.cs" />
     <Compile Include="Activity_HslBottle.cs" />
     <Compile Include="Activity_HslClassifier.cs" />
+    <Compile Include="Activity_HslConveyer.cs" />
     <Compile Include="Activity_HslCurve.cs" />
     <Compile Include="Activity_HslGanttChart.cs" />
     <Compile Include="Activity_HslGauge.cs" />
     <Compile Include="Activity_HslLanternSimple.cs" />
     <Compile Include="Activity_HslLedDisplay.cs" />
+    <Compile Include="Activity_HslMotor.cs" />
     <Compile Include="Activity_HslPieChart.cs" />
     <Compile Include="Activity_HslPipeLine.cs" />
     <Compile Include="Activity_HslProgress.cs" />
     <Compile Include="Activity_HslPumpOne.cs" />
     <Compile Include="Activity_HslStatusManagement.cs" />
+    <Compile Include="Activity_HslThermometer.cs" />
     <Compile Include="Activity_HslValves.cs" />
     <Compile Include="Activity_HslWaterBox.cs" />
     <Compile Include="MainActivity.cs" />
@@ -138,7 +141,7 @@
       <Version>6.2.2</Version>
     </PackageReference>
     <PackageReference Include="HslControls">
-      <Version>2.0.7</Version>
+      <Version>2.1.0</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
@@ -222,6 +225,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\layout_HslCurve.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslConveyer.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslThermometer.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_HslMotor.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

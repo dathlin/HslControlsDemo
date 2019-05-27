@@ -20,7 +20,7 @@ namespace HslControlsDemo
         {
             hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart3.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
-
+            
 
 
             hslBarChart4.SetDataSource( new int[] { random.Next(1500), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ) }, 
@@ -29,6 +29,7 @@ namespace HslControlsDemo
 
             hslBarChart5.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ) },
                 new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            hslBarChart5.AddLeftAuxiliary( 300, Color.Blue, 1f, false );
 
             hslBarChart6.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) },
                 new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" } );

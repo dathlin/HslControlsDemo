@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
@@ -66,11 +67,15 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.button33 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button33);
+            this.groupBox1.Controls.Add(this.button32);
             this.groupBox1.Controls.Add(this.button31);
             this.groupBox1.Controls.Add(this.button30);
             this.groupBox1.Controls.Add(this.button29);
@@ -111,6 +116,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(259, 392);
+            this.button32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(109, 37);
+            this.button32.TabIndex = 32;
+            this.button32.Text = "自定义(历史曲线)";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.Button32_Click);
             // 
             // button31
             // 
@@ -158,10 +174,10 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(139, 482);
+            this.button27.Location = new System.Drawing.Point(259, 437);
             this.button27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(114, 37);
+            this.button27.Size = new System.Drawing.Size(109, 37);
             this.button27.TabIndex = 27;
             this.button27.Text = "历史曲线(同步)";
             this.button27.UseVisualStyleBackColor = true;
@@ -191,10 +207,10 @@
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(139, 437);
+            this.button25.Location = new System.Drawing.Point(259, 347);
             this.button25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(114, 37);
+            this.button25.Size = new System.Drawing.Size(109, 37);
             this.button25.TabIndex = 25;
             this.button25.Text = "亮曲线(历史曲线)";
             this.button25.UseVisualStyleBackColor = true;
@@ -202,10 +218,10 @@
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(139, 392);
+            this.button24.Location = new System.Drawing.Point(259, 302);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(114, 37);
+            this.button24.Size = new System.Drawing.Size(109, 37);
             this.button24.TabIndex = 24;
             this.button24.Text = "暗曲线(历史曲线)";
             this.button24.UseVisualStyleBackColor = true;
@@ -516,12 +532,35 @@
             this.linkLabel3.Text = "Demo源代码地址";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(581, 31);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(230, 17);
+            this.linkLabel4.TabIndex = 6;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "论坛：http://bbs.hslcommunication.cn/";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel4_LinkClicked);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(139, 392);
+            this.button33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(114, 37);
+            this.button33.TabIndex = 33;
+            this.button33.Text = "电机(Motor)";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.Button33_Click);
+            // 
             // FormLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1007, 626);
+            this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.linkLabel2);
@@ -581,5 +620,8 @@
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
     }
 }

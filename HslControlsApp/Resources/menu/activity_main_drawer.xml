@@ -68,5 +68,17 @@
         android:id="@+id/nav_HslCurve"
         android:icon="@drawable/ic_menu_slideshow"
         android:title="HslCurve" />
+      <item
+          android:id="@+id/nav_HslConveyer"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="HslConveyer" />
+      <item
+          android:id="@+id/nav_HslThermometer"
+          android:icon="@drawable/ic_menu_gallery"
+          android:title="HslThermometer" />
+      <item
+        android:id="@+id/nav_HslMotor"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="HslMotor" />
     </group>
 </menu>

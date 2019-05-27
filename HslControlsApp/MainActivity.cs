@@ -36,13 +36,19 @@ namespace HslControlsApp
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
 
+            bool isSuccess = HslControls.Authorization.SetAuthorizationCode( "你的授权码" );
+            if (!isSuccess)
+            {
+                Console.WriteLine( "注册失败" );
+            }
+
             new Thread( new ThreadStart( CheckServer ) ) { IsBackground = true }.Start( );
         }
 
         private void CheckServer( )
         {
             NetSimplifyClient simplifyClient = new NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.0.7" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.1.0" );
         }
 
         public override void OnBackPressed()
@@ -164,6 +170,21 @@ namespace HslControlsApp
             else if (id == Resource.Id.nav_HslCurve)
             {
                 Intent i = new Intent( this, typeof( Activity_HslCurve ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslConveyer)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslConveyer ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslThermometer)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslThermometer ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslMotor)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslMotor ) );
                 this.StartActivity( i );
             }
 

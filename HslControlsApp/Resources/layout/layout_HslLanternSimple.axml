@@ -66,4 +66,53 @@
         android:layout_width="200px"
         android:layout_height="200px" />
 
+    <HslControls.HslLanternAlarm
+        android:layout_marginTop="800px"
+        android:layout_width="100px"
+        android:layout_height="120px"/>
+    
+    <HslControls.HslLanternAlarm
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="800px"
+        android:layout_width="100px"
+        app:lightColor="#00CD00"
+        android:layout_height="120px"/>
+
+    
+    <HslControls.HslLanternAlarm
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="800px"
+        android:layout_width="100px"
+        app:isAlarm="true"
+        android:id="@+id/hslLanternAlarm1"
+        android:layout_height="120px"/>
+
+
+    <HslControls.HslLanternAlarm
+        android:layout_marginLeft="450px"
+        android:layout_marginTop="800px"
+        android:layout_width="100px"
+        app:alarmColor="#FFC125"
+        app:normalColor="#EEE8AA"
+        app:isAlarm="true"
+        android:id="@+id/hslLanternAlarm2"
+        android:layout_height="120px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1000px"
+        android:text="stop"
+        android:id="@+id/button1"
+    />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="250px"
+        android:text="start"
+        android:id="@+id/button2"
+    />
+
 </RelativeLayout>

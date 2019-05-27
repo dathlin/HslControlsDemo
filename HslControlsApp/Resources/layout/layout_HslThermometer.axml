@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HslControls.HslThermometer
+        android:id="@+id/hslThermometer1"
+        android:layout_width="200px"
+        android:layout_height="1000px"/>
+
+    <HslControls.HslThermometer
+        android:id="@+id/hslThermometer2"
+        android:layout_marginLeft="250px"
+        android:layout_width="200px"
+        app:isRenderText="true"
+        app:temperatureColor="#912CEE"
+        android:layout_height="1000px"/>
+
+
+    <HslControls.HslThermometer
+        android:layout_marginLeft="500px"
+        android:id="@+id/hslThermometer3"
+        android:background="#363636"
+        app:textColor="#FFFF00"
+        app:valueMax="100"
+        app:segmentCount="12"
+        app:temperatureBackColor="#696969"
+        app:temperatureColor="#4169E1"
+        android:layout_width="200px"
+        android:layout_height="1000px"/>
+</RelativeLayout>

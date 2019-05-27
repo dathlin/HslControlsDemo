@@ -100,7 +100,7 @@
             this.hslThermometer5.Font = new System.Drawing.Font("等线 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslThermometer5.ForeColor = System.Drawing.Color.Bisque;
             this.hslThermometer5.Location = new System.Drawing.Point(793, 6);
-            this.hslThermometer5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslThermometer5.Margin = new System.Windows.Forms.Padding(4);
             this.hslThermometer5.Name = "hslThermometer5";
             this.hslThermometer5.Size = new System.Drawing.Size(152, 551);
             this.hslThermometer5.TabIndex = 7;
@@ -113,7 +113,7 @@
             this.hslThermometer4.Font = new System.Drawing.Font("等线 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslThermometer4.ForeColor = System.Drawing.Color.Black;
             this.hslThermometer4.Location = new System.Drawing.Point(592, 6);
-            this.hslThermometer4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslThermometer4.Margin = new System.Windows.Forms.Padding(4);
             this.hslThermometer4.Name = "hslThermometer4";
             this.hslThermometer4.Size = new System.Drawing.Size(152, 551);
             this.hslThermometer4.TabIndex = 6;
@@ -125,7 +125,7 @@
             this.hslThermometer3.Font = new System.Drawing.Font("华文细黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslThermometer3.IsRenderText = true;
             this.hslThermometer3.Location = new System.Drawing.Point(375, 6);
-            this.hslThermometer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslThermometer3.Margin = new System.Windows.Forms.Padding(4);
             this.hslThermometer3.Name = "hslThermometer3";
             this.hslThermometer3.SegmentCount = 6;
             this.hslThermometer3.Size = new System.Drawing.Size(155, 551);
@@ -140,7 +140,7 @@
             // 
             this.hslThermometer2.Font = new System.Drawing.Font("等线 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslThermometer2.Location = new System.Drawing.Point(180, 6);
-            this.hslThermometer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslThermometer2.Margin = new System.Windows.Forms.Padding(4);
             this.hslThermometer2.Name = "hslThermometer2";
             this.hslThermometer2.Size = new System.Drawing.Size(152, 551);
             this.hslThermometer2.TabIndex = 2;
