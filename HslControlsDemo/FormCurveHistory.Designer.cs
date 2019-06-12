@@ -44,8 +44,8 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.button9 = new System.Windows.Forms.Button();
+            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.SuspendLayout();
             // 
             // button1
@@ -214,6 +214,16 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "选择信息";
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(700, 4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(115, 23);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "移除前景标记";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
             // hslCurveHistory1
             // 
             this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
@@ -227,21 +237,11 @@
             this.hslCurveHistory1.Text = "hslCurveHistory1";
             this.hslCurveHistory1.UnitLeft = " ℃";
             this.hslCurveHistory1.UnitRight = "Mpa";
-            this.hslCurveHistory1.ValueMaxLeft = 250F;
+            this.hslCurveHistory1.ValueMaxLeft = 200F;
             this.hslCurveHistory1.ValueMaxRight = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(700, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(115, 23);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "移除前景标记";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // FormCurveHistory
             // 

@@ -32,11 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=6.2.2.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.6.2.2\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=6.2.5.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.6.2.5\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.1.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.0\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.1\lib\net35\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -202,6 +202,12 @@
     <Compile Include="FormMotor.designer.cs">
       <DependentUpon>FormMotor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanel.designer.cs">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPieChart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -344,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMotor.resx">
       <DependentUpon>FormMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanel.resx">
+      <DependentUpon>FormPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPieChart.resx">
       <DependentUpon>FormPieChart.cs</DependentUpon>

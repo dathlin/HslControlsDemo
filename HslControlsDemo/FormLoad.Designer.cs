@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button33 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
@@ -68,12 +69,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button34);
             this.groupBox1.Controls.Add(this.button33);
             this.groupBox1.Controls.Add(this.button32);
             this.groupBox1.Controls.Add(this.button31);
@@ -116,6 +118,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(139, 392);
+            this.button33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(114, 37);
+            this.button33.TabIndex = 33;
+            this.button33.Text = "电机(Motor)";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.Button33_Click);
             // 
             // button32
             // 
@@ -543,16 +556,16 @@
             this.linkLabel4.Text = "论坛：http://bbs.hslcommunication.cn/";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel4_LinkClicked);
             // 
-            // button33
+            // button34
             // 
-            this.button33.Location = new System.Drawing.Point(139, 392);
-            this.button33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(114, 37);
-            this.button33.TabIndex = 33;
-            this.button33.Text = "电机(Motor)";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.Button33_Click);
+            this.button34.Location = new System.Drawing.Point(139, 437);
+            this.button34.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(114, 37);
+            this.button34.TabIndex = 34;
+            this.button34.Text = "容器(Panel)";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.Button34_Click);
             // 
             // FormLoad
             // 
@@ -623,5 +636,6 @@
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
     }
 }

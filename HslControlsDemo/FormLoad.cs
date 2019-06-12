@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.1" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -463,6 +463,17 @@ namespace HslControlsDemo
         {
             Hide( );
             using (FormMotor form = new FormMotor( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button34_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPanel form = new FormPanel( ))
             {
                 form.ShowDialog( );
             }
