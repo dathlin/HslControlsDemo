@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button34 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
@@ -69,7 +70,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.button34 = new System.Windows.Forms.Button();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +119,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(139, 437);
+            this.button34.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(114, 37);
+            this.button34.TabIndex = 34;
+            this.button34.Text = "容器(Panel)";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.Button34_Click);
             // 
             // button33
             // 
@@ -499,8 +511,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(535, 43);
             this.label1.TabIndex = 1;
-            this.label1.Text = "本DEMO程序仅支持运行8小时，如果需要注册码，联系QQ群：948305931  作者 Richard.Hu \r\n本控件库支持PC版和手机版，详细请点击DEMO源" +
-    "代码地址，感谢支持。";
+            this.label1.Text = "本DEMO程序仅支持运行8小时，如果需要注册码，需要赞助加入VIP技术支持群，作者 Richard.Hu\r\n本控件库支持PC版和手机版，详细请点击DEMO源代码地" +
+    "址，感谢支持。";
             // 
             // linkLabel1
             // 
@@ -517,7 +529,7 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.Chocolate;
-            this.linkLabel2.Location = new System.Drawing.Point(939, 20);
+            this.linkLabel2.Location = new System.Drawing.Point(939, 31);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(56, 17);
             this.linkLabel2.TabIndex = 3;
@@ -556,16 +568,17 @@
             this.linkLabel4.Text = "论坛：http://bbs.hslcommunication.cn/";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel4_LinkClicked);
             // 
-            // button34
+            // linkLabel5
             // 
-            this.button34.Location = new System.Drawing.Point(139, 437);
-            this.button34.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(114, 37);
-            this.button34.TabIndex = 34;
-            this.button34.Text = "容器(Panel)";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.Button34_Click);
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.LinkColor = System.Drawing.Color.Chocolate;
+            this.linkLabel5.Location = new System.Drawing.Point(939, 9);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(56, 17);
+            this.linkLabel5.TabIndex = 7;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "赞助链接";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel5_LinkClicked);
             // 
             // FormLoad
             // 
@@ -573,6 +586,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1007, 626);
+            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.groupBox2);
@@ -637,5 +651,6 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.LinkLabel linkLabel5;
     }
 }

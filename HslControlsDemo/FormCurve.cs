@@ -17,12 +17,12 @@ namespace HslControlsDemo
             random = new Random( );
         }
 
-        private float[] GetRandomData( int length, int max )
+        private float[] GetRandomData( int length, int max, int offect )
         {
             float[] buffer = new float[length];
             for (int i = 0; i < buffer.Length; i++)
             {
-                buffer[i] = random.Next( max );
+                buffer[i] = random.Next( max ) - offect;
             }
             return buffer;
         }
@@ -35,7 +35,7 @@ namespace HslControlsDemo
             timerTick.Start( );
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
-            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100 ), Color.Blue );
+            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue );
             hslCurve1.AddMarkText( new HslControls.HslMarkText( )
             {
                 Index = 2,
@@ -91,9 +91,9 @@ namespace HslControlsDemo
                     new string[] { "A", "B", "C" },
                     new float[]
                     {
-                        random1*10 + 80,
-                        random2*20+50,
-                        random2*30,
+                        random1*10 + 80 - 100,
+                        random2*20 + 50 - 100,
+                        random2*30 - 100,
                     },
                     new string[]
                     {
@@ -109,9 +109,9 @@ namespace HslControlsDemo
                    new string[] { "A", "B", "C" },
                    new float[]
                    {
-                    random1*10 + 80,
-                    random2*20+50,
-                    random2*30,
+                        random1*10 + 80 - 100,
+                        random2*20 + 50 - 100,
+                        random2*30 - 100,
                    }
                );
             }

@@ -148,6 +148,8 @@
             this.hslCurve5.Size = new System.Drawing.Size(429, 172);
             this.hslCurve5.StrechDataCountMax = 100;
             this.hslCurve5.TabIndex = 4;
+            this.hslCurve5.ValueMaxLeft = 0F;
+            this.hslCurve5.ValueMinLeft = -100F;
             // 
             // hslCurve4
             // 
