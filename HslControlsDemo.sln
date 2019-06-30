@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsDemo", "HslContr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsApp", "HslControlsApp\HslControlsApp.csproj", "{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsWpf", "HslControlsWpf\HslControlsWpf.csproj", "{766349F9-A153-470E-BBA6-17DC186DDB39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

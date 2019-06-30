@@ -71,9 +71,9 @@ namespace HslControlsDemo
         private void TimerTick_Tick( object sender, EventArgs e )
         {
             count_tick++;
-            float random1 = (float)random.NextDouble( );
-            float random2 = (float)random.NextDouble( );
-            float random3 = (float)random.NextDouble( );
+            float random1 = (float)(Math.Sin( 2 * Math.PI * count_tick / 30 ) * 0.5d + 0.5);
+            float random2 = (float)(Math.Sin( 2 * Math.PI * count_tick / 50 ) * 0.5d + 0.5);
+            float random3 = (float)(Math.Cos( 2 * Math.PI * count_tick / 80 ) * 0.5d + 0.5);
 
             hslCurve3.AddCurveData(
                 new string[] { "A", "B", "C"},
@@ -81,7 +81,7 @@ namespace HslControlsDemo
                 {
                     random1*10 + 80,
                     random2*20+50,
-                    random2*30,
+                    random2*10,
                 }
             );
 

@@ -1,0 +1,178 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslPipeLine"
+        mc:Ignorable="d"
+        Title="WindowHslPipeLine" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslPipeLine Height="25" Canvas.Left="10" Canvas.Top="9" Width="215" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="25" Canvas.Left="10" Canvas.Top="39" Width="215" LeftDirection="None" RightDirection="None" MoveSpeed="1"/>
+        <WPF:HslPipeLine Height="25" Canvas.Left="10" Canvas.Top="69" Width="215" LeftDirection="Left" RightDirection="Left" MoveSpeed="-0.3"/>
+        <WPF:HslPipeLine Height="25" Canvas.Left="10" Canvas.Top="99" Width="215" LeftDirection="Right" RightDirection="Right" MoveSpeed="0.3"/>
+        <WPF:HslPipeLine Height="25" Canvas.Left="-52" Canvas.Top="198" Width="153" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+        <WPF:HslPipeLine Height="25" Canvas.Left="-21" Canvas.Top="197" Width="153" LeftDirection="Left" RightDirection="Right" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+        <WPF:HslPipeLine Height="25" Canvas.Left="12" Canvas.Top="199" Width="153" LeftDirection="Right" RightDirection="Left" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="10" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="26" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="42" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="58" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="75" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="91" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="107" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="123" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="139" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="155" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="10" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="26" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="42" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="58" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="75" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="91" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="107" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="123" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="139" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="155" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="10" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="26" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="42" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="58" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="75" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="91" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="107" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="123" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="139" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="155" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="174" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="190" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="206" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="222" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="239" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="255" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="271" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="287" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="303" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="319" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="174" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="190" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="206" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="222" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="239" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="255" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="271" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="287" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="303" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="319" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="174" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="190" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="206" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="222" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="239" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="255" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="271" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="287" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="303" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="319" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="352" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="368" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="384" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="400" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="417" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="433" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="449" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="465" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="481" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="30" Canvas.Top="497" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="352" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="368" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="384" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="400" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="417" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="433" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="449" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="465" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="481" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="244" Canvas.Top="497" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="352" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="368" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="384" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="400" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="417" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="433" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="449" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="465" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="481" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="444" Canvas.Top="497" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="352" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="368" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="384" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="400" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="417" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="433" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="449" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="465" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="481" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="11" Canvas.Left="644" Canvas.Top="497" Width="195" LeftDirection="None" RightDirection="None"/>
+        <WPF:HslPipeLine Height="25" Canvas.Left="89" Canvas.Top="567" Width="153" LeftDirection="Left" RightDirection="Right" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.924"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+        <WPF:HslPipeLine Height="25" Canvas.Left="220" Canvas.Top="579" Width="153" LeftDirection="Left" RightDirection="Right" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.924"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+        <WPF:HslPipeLine Height="25" Canvas.Left="350" Canvas.Top="590" Width="153" LeftDirection="Left" RightDirection="Right" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.924"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+
+    </Canvas>
+</Window>

@@ -91,7 +91,7 @@ namespace HslControlsDemo
         private void button9_Click( object sender, EventArgs e )
         {
             Hide( );
-            using (FormPipeLine form = new FormPipeLine( ))
+            using (FormPipeLineTest form = new FormPipeLineTest( ))
             {
                 form.ShowDialog( );
             }
@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.2" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.3" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -487,6 +487,28 @@ namespace HslControlsDemo
             {
                 form.ShowDialog( );
             }
+        }
+
+        private void Button35_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormProgressColorful form = new FormProgressColorful( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button36_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPipeLine form = new FormPipeLine( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
         }
     }
 }

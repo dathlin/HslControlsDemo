@@ -36,9 +36,9 @@ namespace HslControlsDemo
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
-                data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
+                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
                 times[i] = DateTime.Now.AddSeconds( i - 2000 );
-                press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
+                press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.5d + 4.1d);
             }
 
             // 显示出数据信息来
