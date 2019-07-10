@@ -10,13 +10,13 @@
         Title="WindowHslBottle" Height="684" Width="1020">
     <Canvas>
 
-        <WPF:HslBottle Height="200" Canvas.Left="40" Canvas.Top="37" Width="50" Value="0"/>
-        <WPF:HslBottle Height="200" Canvas.Left="95" Canvas.Top="37" Width="50" Value="0"/>
-        <WPF:HslBottle Height="200" Canvas.Left="150" Canvas.Top="37" Width="50" Value="0"/>
-        <WPF:HslBottle Height="200" Canvas.Left="205" Canvas.Top="37" Width="50" Value="60"/>
-        <WPF:HslBottle Height="200" Canvas.Left="260" Canvas.Top="37" Width="50" Value="70"/>
-        <WPF:HslBottle Height="200" Canvas.Left="315" Canvas.Top="37" Width="50" Value="0"/>
-        <WPF:HslBottle Height="200" Canvas.Left="370" Canvas.Top="37" Width="50" Value="0"/>
+        <WPF:HslBottle Name="hslBottle1" Height="200" Canvas.Left="40" Canvas.Top="37" Width="50" Value="0"/>
+        <WPF:HslBottle Name="hslBottle2" Height="200" Canvas.Left="95" Canvas.Top="37" Width="50" Value="0"/>
+        <WPF:HslBottle Name="hslBottle3" Height="200" Canvas.Left="150" Canvas.Top="37" Width="50" Value="0"/>
+        <WPF:HslBottle Name="hslBottle4" Height="200" Canvas.Left="205" Canvas.Top="37" Width="50" Value="60"/>
+        <WPF:HslBottle Name="hslBottle5" Height="200" Canvas.Left="260" Canvas.Top="37" Width="50" Value="70"/>
+        <WPF:HslBottle Name="hslBottle6" Height="200" Canvas.Left="315" Canvas.Top="37" Width="50" Value="0"/>
+        <WPF:HslBottle Name="hslBottle7" Height="200" Canvas.Left="370" Canvas.Top="37" Width="50" Value="0"/>
 
     </Canvas>
 </Window>

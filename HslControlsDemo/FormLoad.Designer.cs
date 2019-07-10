@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button36 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
@@ -72,7 +73,7 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.button36 = new System.Windows.Forms.Button();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +124,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(591, 212);
+            this.button36.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(157, 37);
+            this.button36.TabIndex = 36;
+            this.button36.Text = "管道性能测试";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.Button36_Click);
             // 
             // button35
             // 
@@ -595,16 +607,16 @@
             this.linkLabel5.Text = "赞助链接";
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel5_LinkClicked);
             // 
-            // button36
+            // linkLabel6
             // 
-            this.button36.Location = new System.Drawing.Point(591, 212);
-            this.button36.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(157, 37);
-            this.button36.TabIndex = 36;
-            this.button36.Text = "管道性能测试";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.Button36_Click);
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Location = new System.Drawing.Point(470, 31);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(77, 17);
+            this.linkLabel6.TabIndex = 8;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "wpf版本控件";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
             // FormLoad
             // 
@@ -612,6 +624,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1007, 626);
+            this.Controls.Add(this.linkLabel6);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
@@ -680,5 +693,6 @@
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.LinkLabel linkLabel6;
     }
 }

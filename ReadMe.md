@@ -85,7 +85,11 @@ Install-Package HslControls
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/302.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/303.png)
 
-这是windows版本的界面
+这是wpf版本的界面
+
+![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/2.png)
+
+这是winform版本的界面
 
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/1.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/100.png)

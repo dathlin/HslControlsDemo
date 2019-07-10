@@ -42,5 +42,17 @@ namespace HslControlsWpf
             WindowHslLanternSimple window = new WindowHslLanternSimple( );
             window.ShowDialog( );
         }
+
+        private void B_HslHandValve_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslHandValve window = new WindowHslHandValve( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslWaterBasin_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslWaterBasin window = new WindowHslWaterBasin( );
+            window.ShowDialog( );
+        }
     }
 }

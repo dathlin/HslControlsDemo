@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.3" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.4" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -509,6 +509,18 @@ namespace HslControlsDemo
             }
             System.Threading.Thread.Sleep( 200 );
             Show( );
+        }
+
+        private void LinkLabel6_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
+        {
+            try
+            {
+                System.Diagnostics.Process.Start( System.IO.Path.Combine( Application.StartupPath, "HslControlsWpf.exe" ) );
+            }
+            catch
+            {
+                MessageBox.Show( "启动wpf版本的程序失败！" );
+            }
         }
     }
 }

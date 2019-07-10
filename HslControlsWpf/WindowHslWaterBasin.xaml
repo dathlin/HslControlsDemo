@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslWaterBasin"
+        mc:Ignorable="d"
+        Title="WindowHslWaterBasin"
+        WindowStartupLocation="CenterOwner"
+        Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslWaterBasin Height="123" Canvas.Left="28" Canvas.Top="10" Width="165"/>
+        <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="默认控件，气泡流速慢，液位为80" Canvas.Top="133"/>
+        <WPF:HslWaterBasin Height="123" Canvas.Left="518" Canvas.Top="10" Width="165" BubblesVisibility="Hidden"/>
+        <TextBlock Canvas.Left="518" TextWrapping="Wrap" Text="隐藏了气泡" Canvas.Top="133"/>
+        <WPF:HslWaterBasin Height="123" Canvas.Left="279" Canvas.Top="13" Width="165" WaterSpeed="600"/>
+        <TextBlock Canvas.Left="279" TextWrapping="Wrap" Text="气泡流速调整" Canvas.Top="136"/>
+        <WPF:HslWaterBasin x:Name="waterBasin1" Height="123" Canvas.Left="28" Canvas.Top="180" Width="165" BubblesVisibility="Hidden"/>
+        <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="动态的液位变化" Canvas.Top="303"/>
+        <WPF:HslWaterBasin x:Name="waterBasin1_Copy" Height="123" Canvas.Left="279" Canvas.Top="180" Width="165" BubblesVisibility="Hidden" WaterColor="Orchid"/>
+        <TextBlock Canvas.Left="279" TextWrapping="Wrap" Text="液体的颜色调整" Canvas.Top="303"/>
+        <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="组合应用" Canvas.Top="356" FontSize="30"/>
+        <WPF:HslPipeLine x:Name="pipeLine1" Height="22" Canvas.Left="63" Canvas.Top="414" Width="515" LeftDirection="None" RightDirection="Left" MoveSpeed="-0.3"/>
+        <WPF:HslHandValve x:Name="handValve1" Height="111" Canvas.Left="279" Canvas.Top="359" Width="86" Text="0.3 m/s"/>
+        <WPF:HslSwitch x:Name="swtich1" Height="121" Canvas.Left="202" Canvas.Top="495" Width="138" SwitchStatus="True" OnSwitchChanged="HslSwitch_OnSwitchChanged"/>
+        <WPF:HslWaterBasin x:Name="waterBasin2" Height="123" Canvas.Left="518" Canvas.Top="493" Width="165" BubblesVisibility="Hidden" Value="0"/>
+        <WPF:HslPipeLine x:Name="pipeLine2" Height="22" Canvas.Left="514" Canvas.Top="478" Width="107" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5" MoveSpeed="-0.3">
+            <WPF:HslPipeLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPipeLine.RenderTransform>
+        </WPF:HslPipeLine>
+
+    </Canvas>
+</Window>

@@ -146,6 +146,7 @@
         app:hslProgressStyle="Horizontal"
         android:layout_marginTop="800px"
         android:layout_width="500px"
+        app:textRenderFormat="{0}-{1}"
         android:layout_height="60px" />
 
     <HslControls.HslProgressLine

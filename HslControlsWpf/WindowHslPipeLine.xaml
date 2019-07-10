@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:HslControlsWpf"
         xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslPipeLine"
         mc:Ignorable="d"
-        Title="WindowHslPipeLine" Height="684" Width="1020">
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslBottle" Height="684" Width="1020">
     <Canvas>
 
         <WPF:HslPipeLine Height="25" Canvas.Left="10" Canvas.Top="9" Width="215" LeftDirection="None" RightDirection="None"/>

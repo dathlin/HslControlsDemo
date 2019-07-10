@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:HslControlsWpf"
         xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslLanternSimple"
         mc:Ignorable="d"
-        Title="WindowHslLanternSimple" Height="684" Width="1020">
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslBottle" Height="684" Width="1020">
     <Canvas>
 
         <WPF:HslLanternSimple Height="13" Canvas.Left="31" Canvas.Top="23" Width="22"/>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HslControlsWpf"
         xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1000">
     <Canvas>
         <WPF:HslPipeLine Height="23" Canvas.Left="227" Canvas.Top="255" Width="121" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
             <WPF:HslPipeLine.RenderTransform>
@@ -18,20 +18,30 @@
                 </TransformGroup>
             </WPF:HslPipeLine.RenderTransform>
         </WPF:HslPipeLine>
-        <Button x:Name="B_HslBottle" Content="HslBottle" Canvas.Left="21" Canvas.Top="10" Width="94" Height="27" Click="B_HslBottle_Click"/>
+        <Button x:Name="B_HslBottle" Content="HslBottle" Canvas.Left="21" Canvas.Top="10" Width="113" Height="27" Click="B_HslBottle_Click"/>
         <WPF:HslSwitch Height="123" Canvas.Left="352" Canvas.Top="197" Width="120" SwitchStatus="True" SwitchText="off:On"/>
         <WPF:HslIndicator Height="101" Canvas.Left="371" Canvas.Top="61" Width="101" IndicatorColor="Red"/>
         <WPF:HslIndicator Height="101" Canvas.Left="477" Canvas.Top="61" Width="101" IndicatorColor="Blue"/>
-        <WPF:HslBottle Height="258" Canvas.Left="264" Canvas.Top="10" Width="47"/>
+        <WPF:HslBottle Height="258" Canvas.Left="264" Canvas.Top="10" Width="47" Value="90" UseAnimation="True"/>
         <WPF:HslIndicator Height="101" Canvas.Left="583" Canvas.Top="61" Width="101" IndicatorColor="Green"/>
         <WPF:HslSwitch Height="123" Canvas.Left="458" Canvas.Top="197" Width="120" SwitchStatus="True"/>
         <WPF:HslPipeLine Height="23" Canvas.Left="105" Canvas.Top="327" Width="194" LeftDirection="Left" RightDirection="Right"
                          RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="0.3">
         </WPF:HslPipeLine>
-        <Button x:Name="B_HslPipeLine" Content="HslPipeLine" Canvas.Left="21" Canvas.Top="43" Width="94" Height="27" Click="B_HslPipeLine_Click" RenderTransformOrigin="0.511,2.481"/>
-        <WPF:HslLanternSimple Height="100" Canvas.Left="35" Canvas.Top="132" Width="100"/>
+        <Button x:Name="B_HslPipeLine" Content="HslPipeLine" Canvas.Left="21" Canvas.Top="43" Width="113" Height="27" Click="B_HslPipeLine_Click" RenderTransformOrigin="0.511,2.481"/>
+        <WPF:HslLanternSimple Height="100" Canvas.Left="748" Canvas.Top="64" Width="100"/>
         <WPF:HslLanternAlarm Height="136" Canvas.Left="162" Canvas.Top="28" Width="97"/>
-        <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="94" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="113" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
+        <WPF:HslBoiler Height="128" Canvas.Left="594" Canvas.Top="232" Width="125"/>
+        <WPF:HslWaterBasin Height="180" Canvas.Left="83" Canvas.Top="366" Width="367" WaterSpeed="1000" Value="90"/>
+        <WPF:HslPipeLine Height="23" Canvas.Left="65" Canvas.Top="287" Width="194" LeftDirection="Left" RightDirection="Right"
+            RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="2"/>
+        <WPF:HslPipeLine Height="23" Canvas.Left="35" Canvas.Top="245" Width="194" LeftDirection="Left" RightDirection="Right"
+            RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="4"/>
+        <WPF:HslHandValve Height="134" Canvas.Left="488" Canvas.Top="400" Width="184" Text="正常"/>
+        <WPF:HslHandValve Height="134" Canvas.Left="698" Canvas.Top="400" Width="184" OpenEnable="False" EdgeColor="OrangeRed"/>
+        <Button x:Name="B_HslHandValve" Content="HslHandValve" Canvas.Left="21" Canvas.Top="107" Width="113" Height="27" Click="B_HslHandValve_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslWaterBasin" Content="HslWaterBasin" Canvas.Left="21" Canvas.Top="139" Width="113" Height="27" Click="B_HslWaterBasin_Click" RenderTransformOrigin="0.511,2.481"/>
 
     </Canvas>
 </Window>
