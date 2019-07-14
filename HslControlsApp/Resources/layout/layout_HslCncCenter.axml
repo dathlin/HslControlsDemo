@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="350px">
+    
+        <HslControls.HslCncCenter
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        
+        <HslControls.HslCncCenter
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            app:cncDoorState="500"
+            android:layout_height="match_parent"/>
+        
+    </LinearLayout>
+
+    <HslControls.HslCncCenter
+        android:id="@+id/hslCncCenter1"
+        android:layout_marginTop="530px"
+        android:layout_width="match_parent"
+        android:layout_height="600px"/>
+        
+    
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Open"
+        android:textAllCaps="false"
+        android:id="@+id/button1"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="300px"
+    />
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Close"
+        android:textAllCaps="false"
+        android:id="@+id/button2"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="500px"
+    />
+
+
+</RelativeLayout>

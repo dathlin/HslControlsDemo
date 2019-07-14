@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslCncCenter"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslCncCenter" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslCncCenter Height="144" Canvas.Left="26" Canvas.Top="26" Width="186"/>
+        <TextBlock Canvas.Left="26" TextWrapping="Wrap" Text="默认的示例" Canvas.Top="175"/>
+        <WPF:HslCncCenter Height="144" Canvas.Left="252" Canvas.Top="26" Width="186" CncDoorState="50"/>
+        <TextBlock Canvas.Left="252" TextWrapping="Wrap" Text="门关到一般的时候" Canvas.Top="175"/>
+        <WPF:HslCncCenter Height="144" Canvas.Left="472" Canvas.Top="26" Width="186" CncDoorState="100"/>
+        <TextBlock Canvas.Left="472" TextWrapping="Wrap" Text="门完全关闭的时候" Canvas.Top="175"/>
+        <WPF:HslCncCenter x:Name="hslCncCenter1" Height="254" Canvas.Left="26" Canvas.Top="234" Width="378"/>
+        <WPF:HslCncCenter x:Name="hslCncCenter2" Height="254" Canvas.Left="390" Canvas.Top="234" Width="378"/>
+        <Button Content="开启" Canvas.Left="243" Canvas.Top="544" Width="138" Height="38" Click="Button_Click"/>
+        <Button Content="关闭" Canvas.Left="430" Canvas.Top="544" Width="138" Height="38" Click="Button_Click_1"/>
+    </Canvas>
+</Window>

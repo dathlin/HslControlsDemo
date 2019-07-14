@@ -71,6 +71,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.actionOverflowMenuStyle = global::HslControlsApp.Resource.Attribute.actionOverflowMenuStyle;
 			global::HslControls.Resource.Attribute.actionProviderClass = global::HslControlsApp.Resource.Attribute.actionProviderClass;
 			global::HslControls.Resource.Attribute.actionViewClass = global::HslControlsApp.Resource.Attribute.actionViewClass;
+			global::HslControls.Resource.Attribute.activeLineCenterColor = global::HslControlsApp.Resource.Attribute.activeLineCenterColor;
 			global::HslControls.Resource.Attribute.activityChooserViewStyle = global::HslControlsApp.Resource.Attribute.activityChooserViewStyle;
 			global::HslControls.Resource.Attribute.alarmColor = global::HslControlsApp.Resource.Attribute.alarmColor;
 			global::HslControls.Resource.Attribute.alarmFlushTime = global::HslControlsApp.Resource.Attribute.alarmFlushTime;
@@ -127,6 +128,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.circularRadius = global::HslControlsApp.Resource.Attribute.circularRadius;
 			global::HslControls.Resource.Attribute.closeIcon = global::HslControlsApp.Resource.Attribute.closeIcon;
 			global::HslControls.Resource.Attribute.closeItemLayout = global::HslControlsApp.Resource.Attribute.closeItemLayout;
+			global::HslControls.Resource.Attribute.cncDoorState = global::HslControlsApp.Resource.Attribute.cncDoorState;
 			global::HslControls.Resource.Attribute.colCount = global::HslControlsApp.Resource.Attribute.colCount;
 			global::HslControls.Resource.Attribute.collapseContentDescription = global::HslControlsApp.Resource.Attribute.collapseContentDescription;
 			global::HslControls.Resource.Attribute.collapseIcon = global::HslControlsApp.Resource.Attribute.collapseIcon;
@@ -279,6 +281,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.panelMenuListTheme = global::HslControlsApp.Resource.Attribute.panelMenuListTheme;
 			global::HslControls.Resource.Attribute.panelMenuListWidth = global::HslControlsApp.Resource.Attribute.panelMenuListWidth;
 			global::HslControls.Resource.Attribute.pipeLineActive = global::HslControlsApp.Resource.Attribute.pipeLineActive;
+			global::HslControls.Resource.Attribute.pipeLineWidth = global::HslControlsApp.Resource.Attribute.pipeLineWidth;
 			global::HslControls.Resource.Attribute.pipeTurnLeft = global::HslControlsApp.Resource.Attribute.pipeTurnLeft;
 			global::HslControls.Resource.Attribute.pipeTurnRight = global::HslControlsApp.Resource.Attribute.pipeTurnRight;
 			global::HslControls.Resource.Attribute.pointerColor = global::HslControlsApp.Resource.Attribute.pointerColor;
@@ -367,6 +370,7 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.timeMax = global::HslControlsApp.Resource.Attribute.timeMax;
 			global::HslControls.Resource.Attribute.timeSegment = global::HslControlsApp.Resource.Attribute.timeSegment;
 			global::HslControls.Resource.Attribute.timeStart = global::HslControlsApp.Resource.Attribute.timeStart;
+			global::HslControls.Resource.Attribute.timerInterval = global::HslControlsApp.Resource.Attribute.timerInterval;
 			global::HslControls.Resource.Attribute.tint = global::HslControlsApp.Resource.Attribute.tint;
 			global::HslControls.Resource.Attribute.tintMode = global::HslControlsApp.Resource.Attribute.tintMode;
 			global::HslControls.Resource.Attribute.title = global::HslControlsApp.Resource.Attribute.title;
@@ -1588,6 +1592,8 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslClassifier_textBackColor = global::HslControlsApp.Resource.Styleable.HslClassifier_textBackColor;
 			global::HslControls.Resource.Styleable.HslClassifier_textColor = global::HslControlsApp.Resource.Styleable.HslClassifier_textColor;
 			global::HslControls.Resource.Styleable.HslClassifier_textSize = global::HslControlsApp.Resource.Styleable.HslClassifier_textSize;
+			global::HslControls.Resource.Styleable.HslCncCenter = global::HslControlsApp.Resource.Styleable.HslCncCenter;
+			global::HslControls.Resource.Styleable.HslCncCenter_cncDoorState = global::HslControlsApp.Resource.Styleable.HslCncCenter_cncDoorState;
 			global::HslControls.Resource.Styleable.HslConveyer = global::HslControlsApp.Resource.Styleable.HslConveyer;
 			global::HslControls.Resource.Styleable.HslConveyer_circularRadius = global::HslControlsApp.Resource.Styleable.HslConveyer_circularRadius;
 			global::HslControls.Resource.Styleable.HslConveyer_conveyerActive = global::HslControlsApp.Resource.Styleable.HslConveyer_conveyerActive;
@@ -1684,13 +1690,16 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslPieChart_isRenderSmall = global::HslControlsApp.Resource.Styleable.HslPieChart_isRenderSmall;
 			global::HslControls.Resource.Styleable.HslPieChart_textSize = global::HslControlsApp.Resource.Styleable.HslPieChart_textSize;
 			global::HslControls.Resource.Styleable.HslPipeLine = global::HslControlsApp.Resource.Styleable.HslPipeLine;
+			global::HslControls.Resource.Styleable.HslPipeLine_activeLineCenterColor = global::HslControlsApp.Resource.Styleable.HslPipeLine_activeLineCenterColor;
 			global::HslControls.Resource.Styleable.HslPipeLine_centerColor = global::HslControlsApp.Resource.Styleable.HslPipeLine_centerColor;
 			global::HslControls.Resource.Styleable.HslPipeLine_edgeColor = global::HslControlsApp.Resource.Styleable.HslPipeLine_edgeColor;
 			global::HslControls.Resource.Styleable.HslPipeLine_hslDirectionStyle = global::HslControlsApp.Resource.Styleable.HslPipeLine_hslDirectionStyle;
 			global::HslControls.Resource.Styleable.HslPipeLine_moveSpeed = global::HslControlsApp.Resource.Styleable.HslPipeLine_moveSpeed;
 			global::HslControls.Resource.Styleable.HslPipeLine_pipeLineActive = global::HslControlsApp.Resource.Styleable.HslPipeLine_pipeLineActive;
+			global::HslControls.Resource.Styleable.HslPipeLine_pipeLineWidth = global::HslControlsApp.Resource.Styleable.HslPipeLine_pipeLineWidth;
 			global::HslControls.Resource.Styleable.HslPipeLine_pipeTurnLeft = global::HslControlsApp.Resource.Styleable.HslPipeLine_pipeTurnLeft;
 			global::HslControls.Resource.Styleable.HslPipeLine_pipeTurnRight = global::HslControlsApp.Resource.Styleable.HslPipeLine_pipeTurnRight;
+			global::HslControls.Resource.Styleable.HslPipeLine_timerInterval = global::HslControlsApp.Resource.Styleable.HslPipeLine_timerInterval;
 			global::HslControls.Resource.Styleable.HslProgress = global::HslControlsApp.Resource.Styleable.HslProgress;
 			global::HslControls.Resource.Styleable.HslProgress_animationTime = global::HslControlsApp.Resource.Styleable.HslProgress_animationTime;
 			global::HslControls.Resource.Styleable.HslProgress_borderColor = global::HslControlsApp.Resource.Styleable.HslProgress_borderColor;
@@ -2116,14 +2125,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100c5
 			public const int actionViewClass = 2130772165;
 			
+			// aapt resource value: 0x7f010177
+			public const int activeLineCenterColor = 2130772343;
+			
 			// aapt resource value: 0x7f010075
 			public const int activityChooserViewStyle = 2130772085;
 			
-			// aapt resource value: 0x7f0101cb
-			public const int alarmColor = 2130772427;
-			
 			// aapt resource value: 0x7f0101ce
-			public const int alarmFlushTime = 2130772430;
+			public const int alarmColor = 2130772430;
+			
+			// aapt resource value: 0x7f0101d1
+			public const int alarmFlushTime = 2130772433;
 			
 			// aapt resource value: 0x7f01009a
 			public const int alertDialogButtonGroupStyle = 2130772122;
@@ -2149,8 +2161,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010170
 			public const int animationTime = 2130772336;
 			
-			// aapt resource value: 0x7f01018e
-			public const int arrowBackColor = 2130772366;
+			// aapt resource value: 0x7f010191
+			public const int arrowBackColor = 2130772369;
 			
 			// aapt resource value: 0x7f010162
 			public const int arrowDirection = 2130772322;
@@ -2203,17 +2215,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100fe
 			public const int backgroundTintMode = 2130772222;
 			
-			// aapt resource value: 0x7f0101b6
-			public const int barBackColor = 2130772406;
+			// aapt resource value: 0x7f0101b9
+			public const int barBackColor = 2130772409;
 			
 			// aapt resource value: 0x7f0100bc
 			public const int barLength = 2130772156;
 			
-			// aapt resource value: 0x7f0101be
-			public const int barPercentWidth = 2130772414;
+			// aapt resource value: 0x7f0101c1
+			public const int barPercentWidth = 2130772417;
 			
-			// aapt resource value: 0x7f010193
-			public const int batteryBackColor = 2130772371;
+			// aapt resource value: 0x7f010196
+			public const int batteryBackColor = 2130772374;
 			
 			// aapt resource value: 0x7f010128
 			public const int behavior_autoHide = 2130772264;
@@ -2230,11 +2242,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010106
 			public const int behavior_skipCollapsed = 2130772230;
 			
-			// aapt resource value: 0x7f010191
-			public const int boderColor = 2130772369;
+			// aapt resource value: 0x7f010194
+			public const int boderColor = 2130772372;
 			
-			// aapt resource value: 0x7f010186
-			public const int borderColor = 2130772358;
+			// aapt resource value: 0x7f010189
+			public const int borderColor = 2130772361;
 			
 			// aapt resource value: 0x7f010126
 			public const int borderWidth = 2130772262;
@@ -2245,8 +2257,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010165
 			public const int bottleTag = 2130772325;
 			
-			// aapt resource value: 0x7f0101c9
-			public const int bottomColor = 2130772425;
+			// aapt resource value: 0x7f0101cc
+			public const int bottomColor = 2130772428;
 			
 			// aapt resource value: 0x7f010120
 			public const int bottomSheetDialogTheme = 2130772256;
@@ -2287,8 +2299,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100b5
 			public const int buttonTintMode = 2130772149;
 			
-			// aapt resource value: 0x7f0101a7
-			public const int centerBackground = 2130772391;
+			// aapt resource value: 0x7f0101aa
+			public const int centerBackground = 2130772394;
 			
 			// aapt resource value: 0x7f010172
 			public const int centerColor = 2130772338;
@@ -2299,8 +2311,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100a5
 			public const int checkedTextViewStyle = 2130772133;
 			
-			// aapt resource value: 0x7f0101d0
-			public const int circularRadius = 2130772432;
+			// aapt resource value: 0x7f0101d3
+			public const int circularRadius = 2130772435;
 			
 			// aapt resource value: 0x7f0100d5
 			public const int closeIcon = 2130772181;
@@ -2308,8 +2320,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010027
 			public const int closeItemLayout = 2130772007;
 			
-			// aapt resource value: 0x7f01018b
-			public const int colCount = 2130772363;
+			// aapt resource value: 0x7f0101d9
+			public const int cncDoorState = 2130772441;
+			
+			// aapt resource value: 0x7f01018e
+			public const int colCount = 2130772366;
 			
 			// aapt resource value: 0x7f0100f4
 			public const int collapseContentDescription = 2130772212;
@@ -2326,26 +2341,26 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100b6
 			public const int color = 2130772150;
 			
-			// aapt resource value: 0x7f01017d
-			public const int color1 = 2130772349;
-			
-			// aapt resource value: 0x7f01017e
-			public const int color2 = 2130772350;
-			
-			// aapt resource value: 0x7f01017f
-			public const int color3 = 2130772351;
-			
 			// aapt resource value: 0x7f010180
-			public const int color4 = 2130772352;
+			public const int color1 = 2130772352;
 			
 			// aapt resource value: 0x7f010181
-			public const int color5 = 2130772353;
+			public const int color2 = 2130772353;
 			
 			// aapt resource value: 0x7f010182
-			public const int color6 = 2130772354;
+			public const int color3 = 2130772354;
 			
 			// aapt resource value: 0x7f010183
-			public const int color7 = 2130772355;
+			public const int color4 = 2130772355;
+			
+			// aapt resource value: 0x7f010184
+			public const int color5 = 2130772356;
+			
+			// aapt resource value: 0x7f010185
+			public const int color6 = 2130772357;
+			
+			// aapt resource value: 0x7f010186
+			public const int color7 = 2130772358;
 			
 			// aapt resource value: 0x7f010091
 			public const int colorAccent = 2130772113;
@@ -2365,14 +2380,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010092
 			public const int colorControlNormal = 2130772114;
 			
-			// aapt resource value: 0x7f0101b7
-			public const int colorDashLines = 2130772407;
+			// aapt resource value: 0x7f0101ba
+			public const int colorDashLines = 2130772410;
 			
 			// aapt resource value: 0x7f0100b1
 			public const int colorError = 2130772145;
 			
-			// aapt resource value: 0x7f0101b4
-			public const int colorLinesAndText = 2130772404;
+			// aapt resource value: 0x7f0101b7
+			public const int colorLinesAndText = 2130772407;
 			
 			// aapt resource value: 0x7f01008f
 			public const int colorPrimary = 2130772111;
@@ -2413,8 +2428,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010097
 			public const int controlBackground = 2130772119;
 			
-			// aapt resource value: 0x7f0101cf
-			public const int conveyerActive = 2130772431;
+			// aapt resource value: 0x7f0101d2
+			public const int conveyerActive = 2130772434;
 			
 			// aapt resource value: 0x7f010147
 			public const int counterEnabled = 2130772295;
@@ -2428,8 +2443,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010149
 			public const int counterTextAppearance = 2130772297;
 			
-			// aapt resource value: 0x7f0101c7
-			public const int curveNameWidth = 2130772423;
+			// aapt resource value: 0x7f0101ca
+			public const int curveNameWidth = 2130772426;
 			
 			// aapt resource value: 0x7f010018
 			public const int customNavigationLayout = 2130771992;
@@ -2443,20 +2458,20 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010066
 			public const int dialogTheme = 2130772070;
 			
+			// aapt resource value: 0x7f01017c
+			public const int displayBackColor = 2130772348;
+			
+			// aapt resource value: 0x7f01017d
+			public const int displayForeColor = 2130772349;
+			
 			// aapt resource value: 0x7f010179
-			public const int displayBackColor = 2130772345;
-			
-			// aapt resource value: 0x7f01017a
-			public const int displayForeColor = 2130772346;
-			
-			// aapt resource value: 0x7f010176
-			public const int displayNumber = 2130772342;
+			public const int displayNumber = 2130772345;
 			
 			// aapt resource value: 0x7f01000e
 			public const int displayOptions = 2130771982;
 			
-			// aapt resource value: 0x7f010178
-			public const int displayText = 2130772344;
+			// aapt resource value: 0x7f01017b
+			public const int displayText = 2130772347;
 			
 			// aapt resource value: 0x7f010014
 			public const int divider = 2130771988;
@@ -2488,8 +2503,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010171
 			public const int edgeColor = 2130772337;
 			
-			// aapt resource value: 0x7f010188
-			public const int edgeWidth = 2130772360;
+			// aapt resource value: 0x7f01018b
+			public const int edgeWidth = 2130772363;
 			
 			// aapt resource value: 0x7f01007b
 			public const int editTextBackground = 2130772091;
@@ -2503,8 +2518,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010025
 			public const int elevation = 2130772005;
 			
-			// aapt resource value: 0x7f010184
-			public const int entrance = 2130772356;
+			// aapt resource value: 0x7f010187
+			public const int entrance = 2130772359;
 			
 			// aapt resource value: 0x7f010145
 			public const int errorEnabled = 2130772293;
@@ -2539,17 +2554,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01010c
 			public const int expandedTitleTextAppearance = 2130772236;
 			
-			// aapt resource value: 0x7f010185
-			public const int export = 2130772357;
+			// aapt resource value: 0x7f010188
+			public const int export = 2130772360;
 			
 			// aapt resource value: 0x7f010124
 			public const int fabSize = 2130772260;
 			
-			// aapt resource value: 0x7f01018f
-			public const int factorX = 2130772367;
+			// aapt resource value: 0x7f010192
+			public const int factorX = 2130772370;
 			
-			// aapt resource value: 0x7f010190
-			public const int factorY = 2130772368;
+			// aapt resource value: 0x7f010193
+			public const int factorY = 2130772371;
 			
 			// aapt resource value: 0x7f010004
 			public const int fastScrollEnabled = 2130771972;
@@ -2608,20 +2623,20 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010129
 			public const int foregroundInsidePadding = 2130772265;
 			
-			// aapt resource value: 0x7f0101a0
-			public const int ganttBackColor = 2130772384;
+			// aapt resource value: 0x7f0101a3
+			public const int ganttBackColor = 2130772387;
 			
 			// aapt resource value: 0x7f0100b9
 			public const int gapBetweenBars = 2130772153;
 			
-			// aapt resource value: 0x7f0101b1
-			public const int gaugeAlarmColor = 2130772401;
+			// aapt resource value: 0x7f0101b4
+			public const int gaugeAlarmColor = 2130772404;
 			
-			// aapt resource value: 0x7f0101a9
-			public const int gaugeBorder = 2130772393;
+			// aapt resource value: 0x7f0101ac
+			public const int gaugeBorder = 2130772396;
 			
-			// aapt resource value: 0x7f01018d
-			public const int generalColor = 2130772365;
+			// aapt resource value: 0x7f010190
+			public const int generalColor = 2130772368;
 			
 			// aapt resource value: 0x7f0100d6
 			public const int goIcon = 2130772182;
@@ -2689,17 +2704,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010130
 			public const int insetForeground = 2130772272;
 			
+			// aapt resource value: 0x7f0101c9
+			public const int intervalAbscissaText = 2130772425;
+			
 			// aapt resource value: 0x7f0101c6
-			public const int intervalAbscissaText = 2130772422;
+			public const int isAbscissaStrech = 2130772422;
 			
-			// aapt resource value: 0x7f0101c3
-			public const int isAbscissaStrech = 2130772419;
+			// aapt resource value: 0x7f0101d0
+			public const int isAlarm = 2130772432;
 			
-			// aapt resource value: 0x7f0101cd
-			public const int isAlarm = 2130772429;
-			
-			// aapt resource value: 0x7f0101b0
-			public const int isBigSemiCircle = 2130772400;
+			// aapt resource value: 0x7f0101b3
+			public const int isBigSemiCircle = 2130772403;
 			
 			// aapt resource value: 0x7f01000b
 			public const int isLightTheme = 2130771979;
@@ -2707,32 +2722,32 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010166
 			public const int isOpen = 2130772326;
 			
-			// aapt resource value: 0x7f01018c
-			public const int isRenderBorder = 2130772364;
+			// aapt resource value: 0x7f01018f
+			public const int isRenderBorder = 2130772367;
 			
-			// aapt resource value: 0x7f0101b8
-			public const int isRenderDashLine = 2130772408;
+			// aapt resource value: 0x7f0101bb
+			public const int isRenderDashLine = 2130772411;
+			
+			// aapt resource value: 0x7f0101b5
+			public const int isRenderPercent = 2130772405;
+			
+			// aapt resource value: 0x7f0101cb
+			public const int isRenderRightCoordinate = 2130772427;
+			
+			// aapt resource value: 0x7f0101b6
+			public const int isRenderSmall = 2130772406;
+			
+			// aapt resource value: 0x7f0101d6
+			public const int isRenderText = 2130772438;
+			
+			// aapt resource value: 0x7f0101bf
+			public const int isShowBarValue = 2130772415;
+			
+			// aapt resource value: 0x7f010199
+			public const int isTextRender = 2130772377;
 			
 			// aapt resource value: 0x7f0101b2
-			public const int isRenderPercent = 2130772402;
-			
-			// aapt resource value: 0x7f0101c8
-			public const int isRenderRightCoordinate = 2130772424;
-			
-			// aapt resource value: 0x7f0101b3
-			public const int isRenderSmall = 2130772403;
-			
-			// aapt resource value: 0x7f0101d3
-			public const int isRenderText = 2130772435;
-			
-			// aapt resource value: 0x7f0101bc
-			public const int isShowBarValue = 2130772412;
-			
-			// aapt resource value: 0x7f010196
-			public const int isTextRender = 2130772374;
-			
-			// aapt resource value: 0x7f0101af
-			public const int isTextUnderPointer = 2130772399;
+			public const int isTextUnderPointer = 2130772402;
 			
 			// aapt resource value: 0x7f01012d
 			public const int itemBackground = 2130772269;
@@ -2752,8 +2767,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010118
 			public const int keylines = 2130772248;
 			
-			// aapt resource value: 0x7f0101a6
-			public const int lanternBackground = 2130772390;
+			// aapt resource value: 0x7f0101a9
+			public const int lanternBackground = 2130772393;
 			
 			// aapt resource value: 0x7f0100d1
 			public const int layout = 2130772177;
@@ -2791,17 +2806,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010103
 			public const int layout_scrollInterpolator = 2130772227;
 			
-			// aapt resource value: 0x7f010177
-			public const int ledNumberSize = 2130772343;
+			// aapt resource value: 0x7f01017a
+			public const int ledNumberSize = 2130772346;
 			
-			// aapt resource value: 0x7f01017c
-			public const int leftRightOffect = 2130772348;
+			// aapt resource value: 0x7f01017f
+			public const int leftRightOffect = 2130772351;
 			
-			// aapt resource value: 0x7f0101d4
-			public const int leftUnitText = 2130772436;
+			// aapt resource value: 0x7f0101d7
+			public const int leftUnitText = 2130772439;
 			
-			// aapt resource value: 0x7f0101ca
-			public const int lightColor = 2130772426;
+			// aapt resource value: 0x7f0101cd
+			public const int lightColor = 2130772429;
 			
 			// aapt resource value: 0x7f01008e
 			public const int listChoiceBackgroundIndicator = 2130772110;
@@ -2842,8 +2857,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100f7
 			public const int logoDescription = 2130772215;
 			
-			// aapt resource value: 0x7f01019e
-			public const int max = 2130772382;
+			// aapt resource value: 0x7f0101a1
+			public const int max = 2130772385;
 			
 			// aapt resource value: 0x7f010132
 			public const int maxActionInlineWidth = 2130772274;
@@ -2872,8 +2887,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01000d
 			public const int navigationMode = 2130771981;
 			
-			// aapt resource value: 0x7f0101cc
-			public const int normalColor = 2130772428;
+			// aapt resource value: 0x7f0101cf
+			public const int normalColor = 2130772431;
 			
 			// aapt resource value: 0x7f0100c2
 			public const int numericModifiers = 2130772162;
@@ -2920,14 +2935,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010173
 			public const int pipeLineActive = 2130772339;
 			
+			// aapt resource value: 0x7f010176
+			public const int pipeLineWidth = 2130772342;
+			
 			// aapt resource value: 0x7f01015d
 			public const int pipeTurnLeft = 2130772317;
 			
 			// aapt resource value: 0x7f01015e
 			public const int pipeTurnRight = 2130772318;
 			
-			// aapt resource value: 0x7f0101aa
-			public const int pointerColor = 2130772394;
+			// aapt resource value: 0x7f0101ad
+			public const int pointerColor = 2130772397;
 			
 			// aapt resource value: 0x7f010078
 			public const int popupMenuStyle = 2130772088;
@@ -2944,8 +2962,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010125
 			public const int pressedTranslationZ = 2130772261;
 			
-			// aapt resource value: 0x7f01019c
-			public const int progressBackColor = 2130772380;
+			// aapt resource value: 0x7f01019f
+			public const int progressBackColor = 2130772383;
 			
 			// aapt resource value: 0x7f01001c
 			public const int progressBarPadding = 2130771996;
@@ -2953,8 +2971,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01001a
 			public const int progressBarStyle = 2130771994;
 			
-			// aapt resource value: 0x7f01019d
-			public const int progressColor = 2130772381;
+			// aapt resource value: 0x7f0101a0
+			public const int progressColor = 2130772384;
 			
 			// aapt resource value: 0x7f0100dc
 			public const int queryBackground = 2130772188;
@@ -2977,14 +2995,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010002
 			public const int reverseLayout = 2130771970;
 			
-			// aapt resource value: 0x7f0101d5
-			public const int rightUnitText = 2130772437;
+			// aapt resource value: 0x7f0101d8
+			public const int rightUnitText = 2130772440;
 			
 			// aapt resource value: 0x7f010123
 			public const int rippleColor = 2130772259;
 			
-			// aapt resource value: 0x7f01018a
-			public const int rowCount = 2130772362;
+			// aapt resource value: 0x7f01018d
+			public const int rowCount = 2130772365;
 			
 			// aapt resource value: 0x7f010112
 			public const int scrimAnimationDuration = 2130772242;
@@ -3004,8 +3022,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100ab
 			public const int seekBarStyle = 2130772139;
 			
-			// aapt resource value: 0x7f0101ae
-			public const int segmentCount = 2130772398;
+			// aapt resource value: 0x7f0101b1
+			public const int segmentCount = 2130772401;
 			
 			// aapt resource value: 0x7f010070
 			public const int selectableItemBackground = 2130772080;
@@ -3013,23 +3031,23 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010071
 			public const int selectableItemBackgroundBorderless = 2130772081;
 			
-			// aapt resource value: 0x7f010198
-			public const int separatrix1 = 2130772376;
-			
-			// aapt resource value: 0x7f010199
-			public const int separatrix2 = 2130772377;
-			
-			// aapt resource value: 0x7f01019a
-			public const int separatrix3 = 2130772378;
-			
 			// aapt resource value: 0x7f01019b
-			public const int separatrix4 = 2130772379;
+			public const int separatrix1 = 2130772379;
+			
+			// aapt resource value: 0x7f01019c
+			public const int separatrix2 = 2130772380;
+			
+			// aapt resource value: 0x7f01019d
+			public const int separatrix3 = 2130772381;
+			
+			// aapt resource value: 0x7f01019e
+			public const int separatrix4 = 2130772382;
 			
 			// aapt resource value: 0x7f0100c3
 			public const int showAsAction = 2130772163;
 			
-			// aapt resource value: 0x7f0101bd
-			public const int showBarValueFormat = 2130772413;
+			// aapt resource value: 0x7f0101c0
+			public const int showBarValueFormat = 2130772416;
 			
 			// aapt resource value: 0x7f0100bf
 			public const int showDividers = 2130772159;
@@ -3043,8 +3061,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01002d
 			public const int singleChoiceItemLayout = 2130772013;
 			
-			// aapt resource value: 0x7f010189
-			public const int spacingOffect = 2130772361;
+			// aapt resource value: 0x7f01018c
+			public const int spacingOffect = 2130772364;
 			
 			// aapt resource value: 0x7f010001
 			public const int spanCount = 2130771969;
@@ -3082,11 +3100,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01010f
 			public const int statusBarScrim = 2130772239;
 			
-			// aapt resource value: 0x7f0101c4
-			public const int strechDataCountMax = 2130772420;
+			// aapt resource value: 0x7f0101c7
+			public const int strechDataCountMax = 2130772423;
 			
-			// aapt resource value: 0x7f010197
-			public const int stringFormat = 2130772375;
+			// aapt resource value: 0x7f01019a
+			public const int stringFormat = 2130772378;
 			
 			// aapt resource value: 0x7f0100cc
 			public const int subMenuArrow = 2130772172;
@@ -3169,17 +3187,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f01013c
 			public const int tabTextColor = 2130772284;
 			
-			// aapt resource value: 0x7f0101d2
-			public const int temperatureBackColor = 2130772434;
+			// aapt resource value: 0x7f0101d5
+			public const int temperatureBackColor = 2130772437;
 			
-			// aapt resource value: 0x7f0101d1
-			public const int temperatureColor = 2130772433;
+			// aapt resource value: 0x7f0101d4
+			public const int temperatureColor = 2130772436;
 			
-			// aapt resource value: 0x7f010175
-			public const int text = 2130772341;
+			// aapt resource value: 0x7f010178
+			public const int text = 2130772344;
 			
-			// aapt resource value: 0x7f0101c5
-			public const int textAddFormat = 2130772421;
+			// aapt resource value: 0x7f0101c8
+			public const int textAddFormat = 2130772424;
 			
 			// aapt resource value: 0x7f010036
 			public const int textAllCaps = 2130772022;
@@ -3208,8 +3226,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010064
 			public const int textAppearanceSmallPopupMenu = 2130772068;
 			
-			// aapt resource value: 0x7f010192
-			public const int textBackColor = 2130772370;
+			// aapt resource value: 0x7f010195
+			public const int textBackColor = 2130772373;
 			
 			// aapt resource value: 0x7f01015b
 			public const int textColor = 2130772315;
@@ -3253,20 +3271,23 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010035
 			public const int tickMarkTintMode = 2130772021;
 			
+			// aapt resource value: 0x7f0101a7
+			public const int timeCount = 2130772391;
+			
+			// aapt resource value: 0x7f0101a8
+			public const int timeFormate = 2130772392;
+			
+			// aapt resource value: 0x7f0101a6
+			public const int timeMax = 2130772390;
+			
 			// aapt resource value: 0x7f0101a4
-			public const int timeCount = 2130772388;
+			public const int timeSegment = 2130772388;
 			
 			// aapt resource value: 0x7f0101a5
-			public const int timeFormate = 2130772389;
+			public const int timeStart = 2130772389;
 			
-			// aapt resource value: 0x7f0101a3
-			public const int timeMax = 2130772387;
-			
-			// aapt resource value: 0x7f0101a1
-			public const int timeSegment = 2130772385;
-			
-			// aapt resource value: 0x7f0101a2
-			public const int timeStart = 2130772386;
+			// aapt resource value: 0x7f010175
+			public const int timerInterval = 2130772341;
 			
 			// aapt resource value: 0x7f010031
 			public const int tint = 2130772017;
@@ -3334,8 +3355,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0100e2
 			public const int trackTintMode = 2130772194;
 			
-			// aapt resource value: 0x7f01017b
-			public const int unitText = 2130772347;
+			// aapt resource value: 0x7f01017e
+			public const int unitText = 2130772350;
 			
 			// aapt resource value: 0x7f01016f
 			public const int useAnimation = 2130772335;
@@ -3343,59 +3364,59 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010127
 			public const int useCompatPadding = 2130772263;
 			
-			// aapt resource value: 0x7f0101b5
-			public const int useGradient = 2130772405;
+			// aapt resource value: 0x7f0101b8
+			public const int useGradient = 2130772408;
 			
-			// aapt resource value: 0x7f0101a8
-			public const int useGradientColor = 2130772392;
+			// aapt resource value: 0x7f0101ab
+			public const int useGradientColor = 2130772395;
 			
 			// aapt resource value: 0x7f010164
 			public const int value = 2130772324;
 			
-			// aapt resource value: 0x7f0101ac
-			public const int valueAlarmMax = 2130772396;
+			// aapt resource value: 0x7f0101af
+			public const int valueAlarmMax = 2130772399;
 			
-			// aapt resource value: 0x7f0101ad
-			public const int valueAlarmMin = 2130772397;
+			// aapt resource value: 0x7f0101b0
+			public const int valueAlarmMin = 2130772400;
 			
-			// aapt resource value: 0x7f01019f
-			public const int valueCurrent = 2130772383;
+			// aapt resource value: 0x7f0101a2
+			public const int valueCurrent = 2130772386;
 			
-			// aapt resource value: 0x7f010194
-			public const int valueMax = 2130772372;
+			// aapt resource value: 0x7f010197
+			public const int valueMax = 2130772375;
 			
-			// aapt resource value: 0x7f0101ba
-			public const int valueMaxLeft = 2130772410;
-			
-			// aapt resource value: 0x7f0101bf
-			public const int valueMaxOfLeft = 2130772415;
-			
-			// aapt resource value: 0x7f0101c1
-			public const int valueMaxOfRight = 2130772417;
-			
-			// aapt resource value: 0x7f010195
-			public const int valueMin = 2130772373;
-			
-			// aapt resource value: 0x7f0101bb
-			public const int valueMinLeft = 2130772411;
-			
-			// aapt resource value: 0x7f0101c0
-			public const int valueMinOfLeft = 2130772416;
+			// aapt resource value: 0x7f0101bd
+			public const int valueMaxLeft = 2130772413;
 			
 			// aapt resource value: 0x7f0101c2
-			public const int valueMinOfRight = 2130772418;
+			public const int valueMaxOfLeft = 2130772418;
 			
-			// aapt resource value: 0x7f0101b9
-			public const int valueSegment = 2130772409;
+			// aapt resource value: 0x7f0101c4
+			public const int valueMaxOfRight = 2130772420;
 			
-			// aapt resource value: 0x7f0101ab
-			public const int valueStart = 2130772395;
+			// aapt resource value: 0x7f010198
+			public const int valueMin = 2130772376;
+			
+			// aapt resource value: 0x7f0101be
+			public const int valueMinLeft = 2130772414;
+			
+			// aapt resource value: 0x7f0101c3
+			public const int valueMinOfLeft = 2130772419;
+			
+			// aapt resource value: 0x7f0101c5
+			public const int valueMinOfRight = 2130772421;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int valueSegment = 2130772412;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int valueStart = 2130772398;
 			
 			// aapt resource value: 0x7f0100d9
 			public const int voiceIcon = 2130772185;
 			
-			// aapt resource value: 0x7f010187
-			public const int waterColor = 2130772359;
+			// aapt resource value: 0x7f01018a
+			public const int waterColor = 2130772362;
 			
 			// aapt resource value: 0x7f01003d
 			public const int windowActionBar = 2130772029;
@@ -4698,8 +4719,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080063
 			public const int Vertical = 2131230819;
 			
-			// aapt resource value: 0x7f0800e8
-			public const int action0 = 2131230952;
+			// aapt resource value: 0x7f0800e9
+			public const int action0 = 2131230953;
 			
 			// aapt resource value: 0x7f080089
 			public const int action_bar = 2131230857;
@@ -4722,17 +4743,17 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080067
 			public const int action_bar_title = 2131230823;
 			
-			// aapt resource value: 0x7f0800e5
-			public const int action_container = 2131230949;
+			// aapt resource value: 0x7f0800e6
+			public const int action_container = 2131230950;
 			
 			// aapt resource value: 0x7f08008a
 			public const int action_context_bar = 2131230858;
 			
-			// aapt resource value: 0x7f0800ec
-			public const int action_divider = 2131230956;
+			// aapt resource value: 0x7f0800ed
+			public const int action_divider = 2131230957;
 			
-			// aapt resource value: 0x7f0800e6
-			public const int action_image = 2131230950;
+			// aapt resource value: 0x7f0800e7
+			public const int action_image = 2131230951;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -4749,14 +4770,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080069
 			public const int action_mode_close_button = 2131230825;
 			
-			// aapt resource value: 0x7f08010e
-			public const int action_settings = 2131230990;
+			// aapt resource value: 0x7f080110
+			public const int action_settings = 2131230992;
 			
-			// aapt resource value: 0x7f0800e7
-			public const int action_text = 2131230951;
+			// aapt resource value: 0x7f0800e8
+			public const int action_text = 2131230952;
 			
-			// aapt resource value: 0x7f0800f5
-			public const int actions = 2131230965;
+			// aapt resource value: 0x7f0800f6
+			public const int actions = 2131230966;
 			
 			// aapt resource value: 0x7f08006a
 			public const int activity_chooser_view_content = 2131230826;
@@ -4791,29 +4812,29 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f0800b1
 			public const int button1 = 2131230897;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int button2 = 2131230912;
-			
-			// aapt resource value: 0x7f0800d5
-			public const int button3 = 2131230933;
+			// aapt resource value: 0x7f0800b5
+			public const int button2 = 2131230901;
 			
 			// aapt resource value: 0x7f0800d6
-			public const int button4 = 2131230934;
+			public const int button3 = 2131230934;
 			
 			// aapt resource value: 0x7f0800d7
-			public const int button5 = 2131230935;
+			public const int button4 = 2131230935;
 			
-			// aapt resource value: 0x7f0800d9
-			public const int button6 = 2131230937;
+			// aapt resource value: 0x7f0800d8
+			public const int button5 = 2131230936;
 			
-			// aapt resource value: 0x7f0800db
-			public const int button7 = 2131230939;
+			// aapt resource value: 0x7f0800da
+			public const int button6 = 2131230938;
+			
+			// aapt resource value: 0x7f0800dc
+			public const int button7 = 2131230940;
 			
 			// aapt resource value: 0x7f080070
 			public const int buttonPanel = 2131230832;
 			
-			// aapt resource value: 0x7f0800e9
-			public const int cancel_action = 2131230953;
+			// aapt resource value: 0x7f0800ea
+			public const int cancel_action = 2131230954;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -4827,8 +4848,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080080
 			public const int checkbox = 2131230848;
 			
-			// aapt resource value: 0x7f0800f1
-			public const int chronometer = 2131230961;
+			// aapt resource value: 0x7f0800f2
+			public const int chronometer = 2131230962;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -4881,11 +4902,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080098
 			public const int drawer_layout = 2131230872;
 			
-			// aapt resource value: 0x7f0800d8
-			public const int editText1 = 2131230936;
+			// aapt resource value: 0x7f0800d9
+			public const int editText1 = 2131230937;
 			
-			// aapt resource value: 0x7f0800da
-			public const int editText2 = 2131230938;
+			// aapt resource value: 0x7f0800db
+			public const int editText2 = 2131230939;
 			
 			// aapt resource value: 0x7f08008b
 			public const int edit_query = 2131230859;
@@ -4893,8 +4914,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f0800f7
-			public const int end_padder = 2131230967;
+			// aapt resource value: 0x7f0800f8
+			public const int end_padder = 2131230968;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -4963,130 +4984,133 @@ namespace HslControlsApp
 			public const int hslBottle2 = 2131230899;
 			
 			// aapt resource value: 0x7f0800b4
-			public const int hslCurve1 = 2131230900;
-			
-			// aapt resource value: 0x7f0800b5
-			public const int hslCurve2 = 2131230901;
+			public const int hslCncCenter1 = 2131230900;
 			
 			// aapt resource value: 0x7f0800b6
-			public const int hslCurve3 = 2131230902;
+			public const int hslCurve1 = 2131230902;
 			
 			// aapt resource value: 0x7f0800b7
-			public const int hslGanttChart1 = 2131230903;
+			public const int hslCurve2 = 2131230903;
 			
 			// aapt resource value: 0x7f0800b8
-			public const int hslGanttChart2 = 2131230904;
+			public const int hslCurve3 = 2131230904;
 			
 			// aapt resource value: 0x7f0800b9
-			public const int hslGanttChart3 = 2131230905;
+			public const int hslGanttChart1 = 2131230905;
 			
 			// aapt resource value: 0x7f0800ba
-			public const int hslGanttChart4 = 2131230906;
+			public const int hslGanttChart2 = 2131230906;
 			
 			// aapt resource value: 0x7f0800bb
-			public const int hslGanttChart5 = 2131230907;
+			public const int hslGanttChart3 = 2131230907;
 			
 			// aapt resource value: 0x7f0800bc
-			public const int hslGauge1 = 2131230908;
+			public const int hslGanttChart4 = 2131230908;
 			
 			// aapt resource value: 0x7f0800bd
-			public const int hslGauge2 = 2131230909;
+			public const int hslGanttChart5 = 2131230909;
 			
 			// aapt resource value: 0x7f0800be
-			public const int hslLanternAlarm1 = 2131230910;
+			public const int hslGauge1 = 2131230910;
 			
 			// aapt resource value: 0x7f0800bf
-			public const int hslLanternAlarm2 = 2131230911;
+			public const int hslGauge2 = 2131230911;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int hslLanternAlarm1 = 2131230912;
 			
 			// aapt resource value: 0x7f0800c1
-			public const int hslLedDisplay1 = 2131230913;
+			public const int hslLanternAlarm2 = 2131230913;
 			
 			// aapt resource value: 0x7f0800c2
-			public const int hslPieChart1 = 2131230914;
+			public const int hslLedDisplay1 = 2131230914;
 			
 			// aapt resource value: 0x7f0800c3
-			public const int hslPieChart2 = 2131230915;
+			public const int hslPieChart1 = 2131230915;
 			
 			// aapt resource value: 0x7f0800c4
-			public const int hslPieChart3 = 2131230916;
+			public const int hslPieChart2 = 2131230916;
 			
 			// aapt resource value: 0x7f0800c5
-			public const int hslPieChart4 = 2131230917;
-			
-			// aapt resource value: 0x7f0800d0
-			public const int hslPipeLine1 = 2131230928;
-			
-			// aapt resource value: 0x7f0800d1
-			public const int hslPipeLine2 = 2131230929;
+			public const int hslPieChart3 = 2131230917;
 			
 			// aapt resource value: 0x7f0800c6
-			public const int hslProgress1 = 2131230918;
+			public const int hslPieChart4 = 2131230918;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int hslProgress2 = 2131230919;
-			
-			// aapt resource value: 0x7f0800c8
-			public const int hslProgress3 = 2131230920;
-			
-			// aapt resource value: 0x7f0800c9
-			public const int hslProgress4 = 2131230921;
-			
-			// aapt resource value: 0x7f0800ca
-			public const int hslProgressLine1 = 2131230922;
-			
-			// aapt resource value: 0x7f0800cb
-			public const int hslProgressLine2 = 2131230923;
-			
-			// aapt resource value: 0x7f0800cc
-			public const int hslProgressLine3 = 2131230924;
-			
-			// aapt resource value: 0x7f0800cd
-			public const int hslProgressLine4 = 2131230925;
-			
-			// aapt resource value: 0x7f0800ce
-			public const int hslProgressLine5 = 2131230926;
-			
-			// aapt resource value: 0x7f0800cf
-			public const int hslProgressLine6 = 2131230927;
+			// aapt resource value: 0x7f0800d1
+			public const int hslPipeLine1 = 2131230929;
 			
 			// aapt resource value: 0x7f0800d2
-			public const int hslPumpOne1 = 2131230930;
+			public const int hslPipeLine2 = 2131230930;
+			
+			// aapt resource value: 0x7f0800c7
+			public const int hslProgress1 = 2131230919;
+			
+			// aapt resource value: 0x7f0800c8
+			public const int hslProgress2 = 2131230920;
+			
+			// aapt resource value: 0x7f0800c9
+			public const int hslProgress3 = 2131230921;
+			
+			// aapt resource value: 0x7f0800ca
+			public const int hslProgress4 = 2131230922;
+			
+			// aapt resource value: 0x7f0800cb
+			public const int hslProgressLine1 = 2131230923;
+			
+			// aapt resource value: 0x7f0800cc
+			public const int hslProgressLine2 = 2131230924;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int hslProgressLine3 = 2131230925;
+			
+			// aapt resource value: 0x7f0800ce
+			public const int hslProgressLine4 = 2131230926;
+			
+			// aapt resource value: 0x7f0800cf
+			public const int hslProgressLine5 = 2131230927;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int hslProgressLine6 = 2131230928;
+			
+			// aapt resource value: 0x7f0800d3
+			public const int hslPumpOne1 = 2131230931;
 			
 			// aapt resource value: 0x7f08009c
 			public const int hslPumpOne2 = 2131230876;
 			
-			// aapt resource value: 0x7f0800d3
-			public const int hslStatusManagement1 = 2131230931;
-			
 			// aapt resource value: 0x7f0800d4
-			public const int hslStatusManagement2 = 2131230932;
+			public const int hslStatusManagement1 = 2131230932;
 			
-			// aapt resource value: 0x7f0800dc
-			public const int hslThermometer1 = 2131230940;
+			// aapt resource value: 0x7f0800d5
+			public const int hslStatusManagement2 = 2131230933;
 			
 			// aapt resource value: 0x7f0800dd
-			public const int hslThermometer2 = 2131230941;
+			public const int hslThermometer1 = 2131230941;
 			
 			// aapt resource value: 0x7f0800de
-			public const int hslThermometer3 = 2131230942;
+			public const int hslThermometer2 = 2131230942;
 			
 			// aapt resource value: 0x7f0800df
-			public const int hslValves1 = 2131230943;
+			public const int hslThermometer3 = 2131230943;
 			
 			// aapt resource value: 0x7f0800e0
-			public const int hslWaterBox1 = 2131230944;
+			public const int hslValves1 = 2131230944;
 			
 			// aapt resource value: 0x7f0800e1
-			public const int hslWaterBox2 = 2131230945;
+			public const int hslWaterBox1 = 2131230945;
 			
 			// aapt resource value: 0x7f0800e2
-			public const int hslWaterBox3 = 2131230946;
+			public const int hslWaterBox2 = 2131230946;
+			
+			// aapt resource value: 0x7f0800e3
+			public const int hslWaterBox3 = 2131230947;
 			
 			// aapt resource value: 0x7f08006f
 			public const int icon = 2131230831;
 			
-			// aapt resource value: 0x7f0800f6
-			public const int icon_group = 2131230966;
+			// aapt resource value: 0x7f0800f7
+			public const int icon_group = 2131230967;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -5094,11 +5118,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08006c
 			public const int image = 2131230828;
 			
-			// aapt resource value: 0x7f0800e3
-			public const int imageView = 2131230947;
+			// aapt resource value: 0x7f0800e4
+			public const int imageView = 2131230948;
 			
-			// aapt resource value: 0x7f0800f2
-			public const int info = 2131230962;
+			// aapt resource value: 0x7f0800f3
+			public const int info = 2131230963;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -5124,14 +5148,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08006e
 			public const int list_item = 2131230830;
 			
-			// aapt resource value: 0x7f0800fa
-			public const int masked = 2131230970;
+			// aapt resource value: 0x7f0800fb
+			public const int masked = 2131230971;
 			
-			// aapt resource value: 0x7f0800eb
-			public const int media_actions = 2131230955;
+			// aapt resource value: 0x7f0800ec
+			public const int media_actions = 2131230956;
 			
-			// aapt resource value: 0x7f0800f8
-			public const int message = 2131230968;
+			// aapt resource value: 0x7f0800f9
+			public const int message = 2131230969;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -5142,62 +5166,65 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f080109
-			public const int nav_HslBarChart = 2131230985;
-			
-			// aapt resource value: 0x7f080103
-			public const int nav_HslBattery = 2131230979;
-			
-			// aapt resource value: 0x7f0800fb
-			public const int nav_HslBottle = 2131230971;
-			
-			// aapt resource value: 0x7f080102
-			public const int nav_HslClassifier = 2131230978;
-			
-			// aapt resource value: 0x7f08010b
-			public const int nav_HslConveyer = 2131230987;
-			
 			// aapt resource value: 0x7f08010a
-			public const int nav_HslCurve = 2131230986;
-			
-			// aapt resource value: 0x7f080105
-			public const int nav_HslGanttChart = 2131230981;
-			
-			// aapt resource value: 0x7f080107
-			public const int nav_HslGauge = 2131230983;
-			
-			// aapt resource value: 0x7f080106
-			public const int nav_HslLanternSimple = 2131230982;
-			
-			// aapt resource value: 0x7f0800fe
-			public const int nav_HslLedDisplay = 2131230974;
-			
-			// aapt resource value: 0x7f08010d
-			public const int nav_HslMotor = 2131230989;
-			
-			// aapt resource value: 0x7f080108
-			public const int nav_HslPieChart = 2131230984;
-			
-			// aapt resource value: 0x7f0800fc
-			public const int nav_HslPipeLine = 2131230972;
+			public const int nav_HslBarChart = 2131230986;
 			
 			// aapt resource value: 0x7f080104
-			public const int nav_HslProgress = 2131230980;
+			public const int nav_HslBattery = 2131230980;
 			
-			// aapt resource value: 0x7f0800ff
-			public const int nav_HslPumpOne = 2131230975;
+			// aapt resource value: 0x7f0800fc
+			public const int nav_HslBottle = 2131230972;
 			
-			// aapt resource value: 0x7f080101
-			public const int nav_HslStatusManagement = 2131230977;
+			// aapt resource value: 0x7f080103
+			public const int nav_HslClassifier = 2131230979;
+			
+			// aapt resource value: 0x7f08010f
+			public const int nav_HslCncCenter = 2131230991;
 			
 			// aapt resource value: 0x7f08010c
-			public const int nav_HslThermometer = 2131230988;
+			public const int nav_HslConveyer = 2131230988;
+			
+			// aapt resource value: 0x7f08010b
+			public const int nav_HslCurve = 2131230987;
+			
+			// aapt resource value: 0x7f080106
+			public const int nav_HslGanttChart = 2131230982;
+			
+			// aapt resource value: 0x7f080108
+			public const int nav_HslGauge = 2131230984;
+			
+			// aapt resource value: 0x7f080107
+			public const int nav_HslLanternSimple = 2131230983;
+			
+			// aapt resource value: 0x7f0800ff
+			public const int nav_HslLedDisplay = 2131230975;
+			
+			// aapt resource value: 0x7f08010e
+			public const int nav_HslMotor = 2131230990;
+			
+			// aapt resource value: 0x7f080109
+			public const int nav_HslPieChart = 2131230985;
 			
 			// aapt resource value: 0x7f0800fd
-			public const int nav_HslValves = 2131230973;
+			public const int nav_HslPipeLine = 2131230973;
+			
+			// aapt resource value: 0x7f080105
+			public const int nav_HslProgress = 2131230981;
 			
 			// aapt resource value: 0x7f080100
-			public const int nav_HslWaterBox = 2131230976;
+			public const int nav_HslPumpOne = 2131230976;
+			
+			// aapt resource value: 0x7f080102
+			public const int nav_HslStatusManagement = 2131230978;
+			
+			// aapt resource value: 0x7f08010d
+			public const int nav_HslThermometer = 2131230989;
+			
+			// aapt resource value: 0x7f0800fe
+			public const int nav_HslValves = 2131230974;
+			
+			// aapt resource value: 0x7f080101
+			public const int nav_HslWaterBox = 2131230977;
 			
 			// aapt resource value: 0x7f080099
 			public const int nav_view = 2131230873;
@@ -5214,14 +5241,14 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f0800f4
-			public const int notification_background = 2131230964;
+			// aapt resource value: 0x7f0800f5
+			public const int notification_background = 2131230965;
+			
+			// aapt resource value: 0x7f0800ef
+			public const int notification_main_column = 2131230959;
 			
 			// aapt resource value: 0x7f0800ee
-			public const int notification_main_column = 2131230958;
-			
-			// aapt resource value: 0x7f0800ed
-			public const int notification_main_column_container = 2131230957;
+			public const int notification_main_column_container = 2131230958;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -5247,11 +5274,11 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f0800f3
-			public const int right_icon = 2131230963;
+			// aapt resource value: 0x7f0800f4
+			public const int right_icon = 2131230964;
 			
-			// aapt resource value: 0x7f0800ef
-			public const int right_side = 2131230959;
+			// aapt resource value: 0x7f0800f0
+			public const int right_side = 2131230960;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -5355,8 +5382,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f0800ea
-			public const int status_bar_latest_event_content = 2131230954;
+			// aapt resource value: 0x7f0800eb
+			public const int status_bar_latest_event_content = 2131230955;
 			
 			// aapt resource value: 0x7f080083
 			public const int submenuarrow = 2131230851;
@@ -5382,8 +5409,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080076
 			public const int textSpacerNoTitle = 2131230838;
 			
-			// aapt resource value: 0x7f0800e4
-			public const int textView = 2131230948;
+			// aapt resource value: 0x7f0800e5
+			public const int textView = 2131230949;
 			
 			// aapt resource value: 0x7f0800aa
 			public const int text_input_password_toggle = 2131230890;
@@ -5394,8 +5421,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800f0
-			public const int time = 2131230960;
+			// aapt resource value: 0x7f0800f1
+			public const int time = 2131230961;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -5445,8 +5472,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800f9
-			public const int visible = 2131230969;
+			// aapt resource value: 0x7f0800fa
+			public const int visible = 2131230970;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -5652,112 +5679,115 @@ namespace HslControlsApp
 			public const int layout_HslClassifier = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int layout_HslConveyer = 2130968623;
+			public const int layout_HslCncCenter = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int layout_HslCurve = 2130968624;
+			public const int layout_HslConveyer = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int layout_HslGanttChart = 2130968625;
+			public const int layout_HslCurve = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int layout_HslGauge = 2130968626;
+			public const int layout_HslGanttChart = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int layout_HslLanternSimple = 2130968627;
+			public const int layout_HslGauge = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int layout_HslLedDisplay = 2130968628;
+			public const int layout_HslLanternSimple = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int layout_HslMotor = 2130968629;
+			public const int layout_HslLedDisplay = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int layout_HslPieChart = 2130968630;
+			public const int layout_HslMotor = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int layout_HslPipeLine = 2130968631;
+			public const int layout_HslPieChart = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int layout_HslProgress = 2130968632;
+			public const int layout_HslPipeLine = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int layout_HslPumpOne = 2130968633;
+			public const int layout_HslProgress = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int layout_HslStatusManagement = 2130968634;
+			public const int layout_HslPumpOne = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int layout_HslThermometer = 2130968635;
+			public const int layout_HslStatusManagement = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int layout_HslValves = 2130968636;
+			public const int layout_HslThermometer = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int layout_HslWaterBox = 2130968637;
+			public const int layout_HslValves = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int nav_header_main = 2130968638;
+			public const int layout_HslWaterBox = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_action = 2130968639;
+			public const int nav_header_main = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_action_tombstone = 2130968640;
+			public const int notification_action = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_media_action = 2130968641;
+			public const int notification_action_tombstone = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_media_cancel_action = 2130968642;
+			public const int notification_media_action = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_template_big_media = 2130968643;
+			public const int notification_media_cancel_action = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_template_big_media_custom = 2130968644;
+			public const int notification_template_big_media = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_template_big_media_narrow = 2130968645;
+			public const int notification_template_big_media_custom = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_big_media_narrow_custom = 2130968646;
+			public const int notification_template_big_media_narrow = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int notification_template_custom_big = 2130968647;
+			public const int notification_template_big_media_narrow_custom = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int notification_template_icon_group = 2130968648;
+			public const int notification_template_custom_big = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int notification_template_lines_media = 2130968649;
+			public const int notification_template_icon_group = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int notification_template_media = 2130968650;
+			public const int notification_template_lines_media = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int notification_template_media_custom = 2130968651;
+			public const int notification_template_media = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int notification_template_part_chronometer = 2130968652;
+			public const int notification_template_media_custom = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int notification_template_part_time = 2130968653;
+			public const int notification_template_part_chronometer = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int select_dialog_item_material = 2130968654;
+			public const int notification_template_part_time = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int select_dialog_multichoice_material = 2130968655;
+			public const int select_dialog_item_material = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int select_dialog_singlechoice_material = 2130968656;
+			public const int select_dialog_multichoice_material = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int support_simple_spinner_dropdown_item = 2130968657;
+			public const int select_dialog_singlechoice_material = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int tooltip = 2130968658;
+			public const int support_simple_spinner_dropdown_item = 2130968658;
+			
+			// aapt resource value: 0x7f040053
+			public const int tooltip = 2130968659;
 			
 			static Layout()
 			{
@@ -8298,10 +8328,10 @@ namespace HslControlsApp
 					2130772315,
 					2130772322,
 					2130772337,
-					2130772341,
-					2130772366,
-					2130772367,
-					2130772368};
+					2130772344,
+					2130772369,
+					2130772370,
+					2130772371};
 			
 			// aapt resource value: 5
 			public const int HslArrow_arrowBackColor = 5;
@@ -8331,9 +8361,6 @@ namespace HslControlsApp
 					2130771980,
 					2130772314,
 					2130772315,
-					2130772404,
-					2130772405,
-					2130772406,
 					2130772407,
 					2130772408,
 					2130772409,
@@ -8341,7 +8368,10 @@ namespace HslControlsApp
 					2130772411,
 					2130772412,
 					2130772413,
-					2130772414};
+					2130772414,
+					2130772415,
+					2130772416,
+					2130772417};
 			
 			// aapt resource value: 5
 			public const int HslBarChart_barBackColor = 5;
@@ -8392,20 +8422,20 @@ namespace HslControlsApp
 					2130772324,
 					2130772335,
 					2130772336,
-					2130772349,
-					2130772350,
-					2130772351,
 					2130772352,
 					2130772353,
-					2130772371,
-					2130772372,
-					2130772373,
+					2130772354,
+					2130772355,
+					2130772356,
 					2130772374,
 					2130772375,
 					2130772376,
 					2130772377,
 					2130772378,
-					2130772379};
+					2130772379,
+					2130772380,
+					2130772381,
+					2130772382};
 			
 			// aapt resource value: 5
 			public const int HslBattery_animationTime = 5;
@@ -8530,9 +8560,9 @@ namespace HslControlsApp
 					2130772315,
 					2130772337,
 					2130772338,
-					2130772341,
-					2130772369,
-					2130772370};
+					2130772344,
+					2130772372,
+					2130772373};
 			
 			// aapt resource value: 5
 			public const int HslClassifier_boderColor = 5;
@@ -8555,14 +8585,20 @@ namespace HslControlsApp
 			// aapt resource value: 0
 			public const int HslClassifier_textSize = 0;
 			
+			public static int[] HslCncCenter = new int[] {
+					2130772441};
+			
+			// aapt resource value: 0
+			public const int HslCncCenter_cncDoorState = 0;
+			
 			public static int[] HslConveyer = new int[] {
 					2130772314,
 					2130772315,
 					2130772323,
 					2130772340,
-					2130772341,
-					2130772431,
-					2130772432};
+					2130772344,
+					2130772434,
+					2130772435};
 			
 			// aapt resource value: 6
 			public const int HslConveyer_circularRadius = 6;
@@ -8588,20 +8624,20 @@ namespace HslControlsApp
 			public static int[] HslCurve = new int[] {
 					2130771980,
 					2130772314,
-					2130772404,
 					2130772407,
-					2130772408,
-					2130772409,
-					2130772415,
-					2130772416,
-					2130772417,
+					2130772410,
+					2130772411,
+					2130772412,
 					2130772418,
 					2130772419,
 					2130772420,
 					2130772421,
 					2130772422,
 					2130772423,
-					2130772424};
+					2130772424,
+					2130772425,
+					2130772426,
+					2130772427};
 			
 			// aapt resource value: 3
 			public const int HslCurve_colorDashLines = 3;
@@ -8652,13 +8688,13 @@ namespace HslControlsApp
 			public const int HslCurve_valueSegment = 5;
 			
 			public static int[] HslFactory = new int[] {
-					2130772349,
-					2130772350,
-					2130772351,
 					2130772352,
 					2130772353,
 					2130772354,
-					2130772355};
+					2130772355,
+					2130772356,
+					2130772357,
+					2130772358};
 			
 			// aapt resource value: 0
 			public const int HslFactory_color1 = 0;
@@ -8684,13 +8720,13 @@ namespace HslControlsApp
 			public static int[] HslGanttChart = new int[] {
 					2130772314,
 					2130772315,
-					2130772348,
-					2130772384,
-					2130772385,
-					2130772386,
+					2130772351,
 					2130772387,
 					2130772388,
-					2130772389};
+					2130772389,
+					2130772390,
+					2130772391,
+					2130772392};
 			
 			// aapt resource value: 3
 			public const int HslGanttChart_ganttBackColor = 3;
@@ -8725,17 +8761,17 @@ namespace HslControlsApp
 					2130772324,
 					2130772335,
 					2130772336,
-					2130772347,
-					2130772372,
-					2130772393,
-					2130772394,
-					2130772395,
+					2130772350,
+					2130772375,
 					2130772396,
 					2130772397,
 					2130772398,
 					2130772399,
 					2130772400,
-					2130772401};
+					2130772401,
+					2130772402,
+					2130772403,
+					2130772404};
 			
 			// aapt resource value: 4
 			public const int HslGauge_animationTime = 4;
@@ -8786,12 +8822,12 @@ namespace HslControlsApp
 			public const int HslGauge_valueStart = 9;
 			
 			public static int[] HslLanternAlarm = new int[] {
-					2130772425,
-					2130772426,
-					2130772427,
 					2130772428,
 					2130772429,
-					2130772430};
+					2130772430,
+					2130772431,
+					2130772432,
+					2130772433};
 			
 			// aapt resource value: 2
 			public const int HslLanternAlarm_alarmColor = 2;
@@ -8814,10 +8850,10 @@ namespace HslControlsApp
 			public static int[] HslLanternSimple = new int[] {
 					2130772314,
 					2130772315,
-					2130772341,
-					2130772390,
-					2130772391,
-					2130772392};
+					2130772344,
+					2130772393,
+					2130772394,
+					2130772395};
 			
 			// aapt resource value: 4
 			public const int HslLanternSimple_centerBackground = 4;
@@ -8839,13 +8875,13 @@ namespace HslControlsApp
 			
 			public static int[] HslLedDisplay = new int[] {
 					2130772314,
-					2130772342,
-					2130772343,
-					2130772344,
 					2130772345,
 					2130772346,
 					2130772347,
-					2130772348};
+					2130772348,
+					2130772349,
+					2130772350,
+					2130772351};
 			
 			// aapt resource value: 4
 			public const int HslLedDisplay_displayBackColor = 4;
@@ -8877,8 +8913,8 @@ namespace HslControlsApp
 					2130772322,
 					2130772337,
 					2130772338,
-					2130772341,
-					2130772358};
+					2130772344,
+					2130772361};
 			
 			// aapt resource value: 2
 			public const int HslMotor_arrowDirection = 2;
@@ -8903,8 +8939,8 @@ namespace HslControlsApp
 			
 			public static int[] HslPieChart = new int[] {
 					2130772314,
-					2130772402,
-					2130772403};
+					2130772405,
+					2130772406};
 			
 			// aapt resource value: 1
 			public const int HslPieChart_isRenderPercent = 1;
@@ -8922,7 +8958,13 @@ namespace HslControlsApp
 					2130772337,
 					2130772338,
 					2130772339,
-					2130772340};
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343};
+			
+			// aapt resource value: 9
+			public const int HslPipeLine_activeLineCenterColor = 9;
 			
 			// aapt resource value: 4
 			public const int HslPipeLine_centerColor = 4;
@@ -8939,11 +8981,17 @@ namespace HslControlsApp
 			// aapt resource value: 5
 			public const int HslPipeLine_pipeLineActive = 5;
 			
+			// aapt resource value: 8
+			public const int HslPipeLine_pipeLineWidth = 8;
+			
 			// aapt resource value: 0
 			public const int HslPipeLine_pipeTurnLeft = 0;
 			
 			// aapt resource value: 1
 			public const int HslPipeLine_pipeTurnRight = 1;
+			
+			// aapt resource value: 7
+			public const int HslPipeLine_timerInterval = 7;
 			
 			public static int[] HslProgress = new int[] {
 					2130772314,
@@ -8952,12 +9000,12 @@ namespace HslControlsApp
 					2130772321,
 					2130772335,
 					2130772336,
-					2130772358,
-					2130772374,
-					2130772380,
-					2130772381,
-					2130772382,
-					2130772383};
+					2130772361,
+					2130772377,
+					2130772383,
+					2130772384,
+					2130772385,
+					2130772386};
 			
 			// aapt resource value: 5
 			public const int HslProgress_animationTime = 5;
@@ -9002,11 +9050,11 @@ namespace HslControlsApp
 					2130772321,
 					2130772335,
 					2130772336,
-					2130772374,
-					2130772380,
-					2130772381,
-					2130772382,
-					2130772383};
+					2130772377,
+					2130772383,
+					2130772384,
+					2130772385,
+					2130772386};
 			
 			// aapt resource value: 5
 			public const int HslProgressLine_animationTime = 5;
@@ -9046,16 +9094,16 @@ namespace HslControlsApp
 					2130772315,
 					2130772320,
 					2130772340,
-					2130772341,
-					2130772349,
-					2130772350,
-					2130772351,
+					2130772344,
 					2130772352,
 					2130772353,
 					2130772354,
 					2130772355,
 					2130772356,
-					2130772357};
+					2130772357,
+					2130772358,
+					2130772359,
+					2130772360};
 			
 			// aapt resource value: 5
 			public const int HslPumpOne_color1 = 5;
@@ -9101,12 +9149,12 @@ namespace HslControlsApp
 			
 			public static int[] HslStatusManagement = new int[] {
 					2130772319,
-					2130772358,
 					2130772361,
-					2130772362,
-					2130772363,
 					2130772364,
-					2130772365};
+					2130772365,
+					2130772366,
+					2130772367,
+					2130772368};
 			
 			// aapt resource value: 1
 			public const int HslStatusManagement_borderColor = 1;
@@ -9135,14 +9183,14 @@ namespace HslControlsApp
 					2130772324,
 					2130772335,
 					2130772336,
-					2130772372,
-					2130772395,
+					2130772375,
 					2130772398,
-					2130772433,
-					2130772434,
-					2130772435,
+					2130772401,
 					2130772436,
-					2130772437};
+					2130772437,
+					2130772438,
+					2130772439,
+					2130772440};
 			
 			// aapt resource value: 4
 			public const int HslThermometer_animationTime = 4;
@@ -9188,7 +9236,7 @@ namespace HslControlsApp
 					2130772315,
 					2130772320,
 					2130772337,
-					2130772341};
+					2130772344};
 			
 			// aapt resource value: 3
 			public const int HslValves_edgeColor = 3;
@@ -9212,10 +9260,10 @@ namespace HslControlsApp
 					2130772335,
 					2130772336,
 					2130772337,
-					2130772341,
-					2130772358,
-					2130772359,
-					2130772360};
+					2130772344,
+					2130772361,
+					2130772362,
+					2130772363};
 			
 			// aapt resource value: 4
 			public const int HslWaterBox_animationTime = 4;

@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.1.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.4\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.5\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -105,6 +105,12 @@
     </Compile>
     <Compile Include="FormClock.Designer.cs">
       <DependentUpon>FormClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCncCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCncCenter.designer.cs">
+      <DependentUpon>FormCncCenter.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConveryer.cs">
       <SubType>Form</SubType>
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClock.resx">
       <DependentUpon>FormClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCncCenter.resx">
+      <DependentUpon>FormCncCenter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConveryer.resx">
       <DependentUpon>FormConveryer.cs</DependentUpon>

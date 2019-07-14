@@ -25,6 +25,12 @@ namespace HslControlsWpf
             InitializeComponent( );
         }
 
+        protected override void OnRender( DrawingContext drawingContext )
+        {
+            base.OnRender( drawingContext );
+            barChart1.SetDataSource( new int[] { 123, 533, 736, 283, 87 } );
+        }
+
         private void B_HslBottle_Click( object sender, RoutedEventArgs e )
         {
             WindowHslBottle window = new WindowHslBottle( );
@@ -52,6 +58,24 @@ namespace HslControlsWpf
         private void B_HslWaterBasin_Click( object sender, RoutedEventArgs e )
         {
             WindowHslWaterBasin window = new WindowHslWaterBasin( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslBarChart_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslBarChart window = new WindowHslBarChart( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslCncCenter_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslCncCenter window = new WindowHslCncCenter( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslCurve_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslCurve window = new WindowHslCurve( );
             window.ShowDialog( );
         }
     }

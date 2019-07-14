@@ -74,11 +74,13 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.button37 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button37);
             this.groupBox1.Controls.Add(this.button36);
             this.groupBox1.Controls.Add(this.button35);
             this.groupBox1.Controls.Add(this.button34);
@@ -141,7 +143,7 @@
             this.button35.Location = new System.Drawing.Point(139, 482);
             this.button35.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(118, 37);
+            this.button35.Size = new System.Drawing.Size(114, 37);
             this.button35.TabIndex = 35;
             this.button35.Text = "进度条2";
             this.button35.UseVisualStyleBackColor = true;
@@ -618,6 +620,17 @@
             this.linkLabel6.Text = "wpf版本控件";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(259, 482);
+            this.button37.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(109, 37);
+            this.button37.TabIndex = 37;
+            this.button37.Text = "加工中心";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.Button37_Click);
+            // 
             // FormLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -694,5 +707,6 @@
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.LinkLabel linkLabel6;
+        private System.Windows.Forms.Button button37;
     }
 }

@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.1.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.4\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.5\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -59,8 +59,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WindowHslBarChart.xaml.cs">
+      <DependentUpon>WindowHslBarChart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHslBottle.xaml.cs">
       <DependentUpon>WindowHslBottle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslCncCenter.xaml.cs">
+      <DependentUpon>WindowHslCncCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslCurve.xaml.cs">
+      <DependentUpon>WindowHslCurve.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslHandValve.xaml.cs">
       <DependentUpon>WindowHslHandValve.xaml</DependentUpon>
@@ -86,9 +95,21 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowHslBarChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowHslBottle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslCncCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowHslCurve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslHandValve.xaml">
       <SubType>Designer</SubType>

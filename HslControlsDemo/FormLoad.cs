@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.4" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.1.5" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -521,6 +521,17 @@ namespace HslControlsDemo
             {
                 MessageBox.Show( "启动wpf版本的程序失败！" );
             }
+        }
+
+        private void Button37_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormCncCenter form = new FormCncCenter( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
         }
     }
 }
