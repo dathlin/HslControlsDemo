@@ -65,9 +65,9 @@
             this.hslPanelText3.Controls.Add(this.hslBarChart1);
             this.hslPanelText3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hslPanelText3.ForeColor = System.Drawing.Color.Blue;
-            this.hslPanelText3.Location = new System.Drawing.Point(22, 365);
+            this.hslPanelText3.Location = new System.Drawing.Point(22, 397);
             this.hslPanelText3.Name = "hslPanelText3";
-            this.hslPanelText3.Size = new System.Drawing.Size(396, 268);
+            this.hslPanelText3.Size = new System.Drawing.Size(396, 236);
             this.hslPanelText3.TabIndex = 2;
             this.hslPanelText3.Text = "产量信息";
             this.hslPanelText3.TextOffect = 20;
@@ -75,11 +75,12 @@
             // 
             // hslBarChart1
             // 
-            this.hslBarChart1.Location = new System.Drawing.Point(5, 32);
-            this.hslBarChart1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hslBarChart1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBarChart1.Location = new System.Drawing.Point(5, 18);
+            this.hslBarChart1.Margin = new System.Windows.Forms.Padding(5);
             this.hslBarChart1.Name = "hslBarChart1";
             this.hslBarChart1.ShowBarValueFormat = "{0}";
-            this.hslBarChart1.Size = new System.Drawing.Size(386, 231);
+            this.hslBarChart1.Size = new System.Drawing.Size(374, 218);
             this.hslBarChart1.TabIndex = 0;
             this.hslBarChart1.Text = "hslBarChart1";
             // 
@@ -115,7 +116,7 @@
             // hslBarChart2
             // 
             this.hslBarChart2.Location = new System.Drawing.Point(7, 41);
-            this.hslBarChart2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.hslBarChart2.Margin = new System.Windows.Forms.Padding(7);
             this.hslBarChart2.Name = "hslBarChart2";
             this.hslBarChart2.ShowBarValueFormat = "{0}";
             this.hslBarChart2.Size = new System.Drawing.Size(471, 183);

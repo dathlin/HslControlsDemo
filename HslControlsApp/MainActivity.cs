@@ -48,7 +48,7 @@ namespace HslControlsApp
         private void CheckServer( )
         {
             NetSimplifyClient simplifyClient = new NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.1.5" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.1.6" );
         }
 
         public override void OnBackPressed()
@@ -190,6 +190,11 @@ namespace HslControlsApp
             else if (id == Resource.Id.nav_HslCncCenter)
             {
                 Intent i = new Intent( this, typeof( Activity_HslCncCenter ) );
+                this.StartActivity( i );
+            }
+            else if (id == Resource.Id.nav_HslMachineCenter)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslMachineCenter ) );
                 this.StartActivity( i );
             }
 

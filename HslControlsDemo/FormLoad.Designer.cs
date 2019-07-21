@@ -29,6 +29,8 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
@@ -74,12 +76,14 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.button37 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button39);
+            this.groupBox1.Controls.Add(this.button38);
             this.groupBox1.Controls.Add(this.button37);
             this.groupBox1.Controls.Add(this.button36);
             this.groupBox1.Controls.Add(this.button35);
@@ -127,6 +131,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
             // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(374, 77);
+            this.button38.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(109, 37);
+            this.button38.TabIndex = 38;
+            this.button38.Text = "数控机床";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.Button38_Click);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(374, 32);
+            this.button37.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(109, 37);
+            this.button37.TabIndex = 37;
+            this.button37.Text = "加工中心";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.Button37_Click);
+            // 
             // button36
             // 
             this.button36.Location = new System.Drawing.Point(591, 212);
@@ -140,7 +166,7 @@
             // 
             // button35
             // 
-            this.button35.Location = new System.Drawing.Point(139, 482);
+            this.button35.Location = new System.Drawing.Point(15, 122);
             this.button35.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(114, 37);
@@ -415,10 +441,10 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(15, 482);
+            this.button11.Location = new System.Drawing.Point(259, 482);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(118, 37);
+            this.button11.Size = new System.Drawing.Size(109, 37);
             this.button11.TabIndex = 11;
             this.button11.Text = "饼图";
             this.button11.UseVisualStyleBackColor = true;
@@ -448,7 +474,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(15, 122);
+            this.button8.Location = new System.Drawing.Point(15, 482);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(118, 37);
@@ -620,16 +646,16 @@
             this.linkLabel6.Text = "wpf版本控件";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
-            // button37
+            // button39
             // 
-            this.button37.Location = new System.Drawing.Point(259, 482);
-            this.button37.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(109, 37);
-            this.button37.TabIndex = 37;
-            this.button37.Text = "加工中心";
-            this.button37.UseVisualStyleBackColor = true;
-            this.button37.Click += new System.EventHandler(this.Button37_Click);
+            this.button39.Location = new System.Drawing.Point(139, 482);
+            this.button39.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(114, 37);
+            this.button39.TabIndex = 39;
+            this.button39.Text = "容器2(Panel)";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.Button39_Click);
             // 
             // FormLoad
             // 
@@ -708,5 +734,7 @@
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button39;
     }
 }

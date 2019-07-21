@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslMachineCenter"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslMachineCenter" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslMachineCenter Height="293" Canvas.Left="64" Canvas.Top="34" Width="320"/>
+        <WPF:HslMachineCenter Height="293" Canvas.Left="517" Canvas.Top="34" Width="320" DoorOpenStatus="True"/>
+    </Canvas>
+</Window>

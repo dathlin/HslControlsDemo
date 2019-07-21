@@ -37,6 +37,10 @@
             this.hslSwitch2 = new HslControls.HslSwitch();
             this.hslSwitch1 = new HslControls.HslSwitch();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.hslArrow9 = new HslControls.HslArrow();
+            this.hslArrow8 = new HslControls.HslArrow();
+            this.hslArrow7 = new HslControls.HslArrow();
+            this.hslArrow6 = new HslControls.HslArrow();
             this.hslArrow5 = new HslControls.HslArrow();
             this.hslArrow4 = new HslControls.HslArrow();
             this.hslArrow3 = new HslControls.HslArrow();
@@ -45,6 +49,7 @@
             this.hslButton3 = new HslControls.HslButton();
             this.hslButton2 = new HslControls.HslButton();
             this.hslButton1 = new HslControls.HslButton();
+            this.hslButton4 = new HslControls.HslButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -138,6 +143,10 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.hslArrow9);
+            this.groupBox3.Controls.Add(this.hslArrow8);
+            this.groupBox3.Controls.Add(this.hslArrow7);
+            this.groupBox3.Controls.Add(this.hslArrow6);
             this.groupBox3.Controls.Add(this.hslArrow5);
             this.groupBox3.Controls.Add(this.hslArrow4);
             this.groupBox3.Controls.Add(this.hslArrow3);
@@ -145,10 +154,64 @@
             this.groupBox3.Controls.Add(this.hslArrow1);
             this.groupBox3.Location = new System.Drawing.Point(517, 85);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(475, 226);
+            this.groupBox3.Size = new System.Drawing.Size(475, 342);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "箭头";
+            // 
+            // hslArrow9
+            // 
+            this.hslArrow9.ArrowDirection = System.Windows.Forms.ArrowDirection.Down;
+            this.hslArrow9.EdgeColor = System.Drawing.Color.Gray;
+            this.hslArrow9.FactorX = 0.75F;
+            this.hslArrow9.FactorY = 0.17F;
+            this.hslArrow9.Location = new System.Drawing.Point(276, 204);
+            this.hslArrow9.Name = "hslArrow9";
+            this.hslArrow9.Size = new System.Drawing.Size(91, 124);
+            this.hslArrow9.TabIndex = 8;
+            this.hslArrow9.Text = "流量";
+            this.hslArrow9.UseGradient = false;
+            // 
+            // hslArrow8
+            // 
+            this.hslArrow8.ArrowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslArrow8.ArrowDirection = System.Windows.Forms.ArrowDirection.Up;
+            this.hslArrow8.EdgeColor = System.Drawing.Color.Gray;
+            this.hslArrow8.FactorX = 0.85F;
+            this.hslArrow8.FactorY = 0.27F;
+            this.hslArrow8.ForeColor = System.Drawing.Color.DarkOrange;
+            this.hslArrow8.Location = new System.Drawing.Point(207, 204);
+            this.hslArrow8.Name = "hslArrow8";
+            this.hslArrow8.Size = new System.Drawing.Size(48, 132);
+            this.hslArrow8.TabIndex = 7;
+            this.hslArrow8.Text = "出水口";
+            this.hslArrow8.UseGradient = false;
+            // 
+            // hslArrow7
+            // 
+            this.hslArrow7.ArrowDirection = System.Windows.Forms.ArrowDirection.Left;
+            this.hslArrow7.EdgeColor = System.Drawing.Color.Gray;
+            this.hslArrow7.FactorX = 0.75F;
+            this.hslArrow7.FactorY = 0.27F;
+            this.hslArrow7.Location = new System.Drawing.Point(24, 242);
+            this.hslArrow7.Name = "hslArrow7";
+            this.hslArrow7.Size = new System.Drawing.Size(176, 49);
+            this.hslArrow7.TabIndex = 6;
+            this.hslArrow7.Text = "hslArrow7";
+            this.hslArrow7.UseGradient = false;
+            // 
+            // hslArrow6
+            // 
+            this.hslArrow6.ArrowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.hslArrow6.EdgeColor = System.Drawing.Color.Gray;
+            this.hslArrow6.FactorX = 0.75F;
+            this.hslArrow6.FactorY = 0.27F;
+            this.hslArrow6.Location = new System.Drawing.Point(24, 297);
+            this.hslArrow6.Name = "hslArrow6";
+            this.hslArrow6.Size = new System.Drawing.Size(176, 39);
+            this.hslArrow6.TabIndex = 5;
+            this.hslArrow6.Text = "出水口";
+            this.hslArrow6.UseGradient = false;
             // 
             // hslArrow5
             // 
@@ -156,7 +219,7 @@
             this.hslArrow5.EdgeColor = System.Drawing.Color.Gray;
             this.hslArrow5.FactorX = 0.75F;
             this.hslArrow5.FactorY = 0.17F;
-            this.hslArrow5.Location = new System.Drawing.Point(315, 37);
+            this.hslArrow5.Location = new System.Drawing.Point(327, 25);
             this.hslArrow5.Name = "hslArrow5";
             this.hslArrow5.Size = new System.Drawing.Size(142, 173);
             this.hslArrow5.TabIndex = 4;
@@ -170,7 +233,7 @@
             this.hslArrow4.FactorX = 0.85F;
             this.hslArrow4.FactorY = 0.27F;
             this.hslArrow4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.hslArrow4.Location = new System.Drawing.Point(250, 37);
+            this.hslArrow4.Location = new System.Drawing.Point(252, 25);
             this.hslArrow4.Name = "hslArrow4";
             this.hslArrow4.Size = new System.Drawing.Size(48, 173);
             this.hslArrow4.TabIndex = 3;
@@ -240,11 +303,23 @@
             this.hslButton1.TabIndex = 0;
             this.hslButton1.Text = "hslButton1";
             // 
+            // hslButton4
+            // 
+            this.hslButton4.CustomerInformation = null;
+            this.hslButton4.Location = new System.Drawing.Point(593, 24);
+            this.hslButton4.Name = "hslButton4";
+            this.hslButton4.Selected = true;
+            this.hslButton4.Size = new System.Drawing.Size(124, 44);
+            this.hslButton4.TabIndex = 11;
+            this.hslButton4.Text = "hslButton4";
+            this.hslButton4.UseGradient = true;
+            // 
             // FormBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.hslButton4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -282,5 +357,10 @@
         private HslControls.HslArrow hslArrow3;
         private HslControls.HslArrow hslArrow2;
         private HslControls.HslArrow hslArrow1;
+        private HslControls.HslArrow hslArrow8;
+        private HslControls.HslArrow hslArrow7;
+        private HslControls.HslArrow hslArrow6;
+        private HslControls.HslArrow hslArrow9;
+        private HslControls.HslButton hslButton4;
     }
 }

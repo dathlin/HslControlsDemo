@@ -78,5 +78,11 @@ namespace HslControlsWpf
             WindowHslCurve window = new WindowHslCurve( );
             window.ShowDialog( );
         }
+
+        private void B_HslMachineCenter_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslMachineCenter window = new WindowHslMachineCenter( );
+            window.ShowDialog( );
+        }
     }
 }

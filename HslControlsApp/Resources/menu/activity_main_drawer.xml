@@ -84,5 +84,9 @@
         android:id="@+id/nav_HslCncCenter"
         android:icon="@drawable/ic_menu_send"
         android:title="HslCncCenter" />
+      <item
+        android:id="@+id/nav_HslMachineCenter"
+        android:icon="@drawable/ic_menu_share"
+        android:title="HslMachineCenter" />
     </group>
 </menu>

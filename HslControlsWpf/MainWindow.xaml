@@ -34,7 +34,7 @@
         <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="113" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
         <WPF:HslBoiler Height="128" Canvas.Left="857" Canvas.Top="28" Width="125"/>
         <WPF:HslWaterBasin Height="180" Canvas.Left="190" Canvas.Top="369" Width="367" WaterSpeed="1000" Value="90"/>
-        <WPF:HslPipeLine Height="23" Canvas.Left="65" Canvas.Top="287" Width="194" LeftDirection="Left" RightDirection="Right" PipeLineWidth="2"
+        <WPF:HslPipeLine Height="23" Canvas.Left="10" Canvas.Top="447" Width="194" LeftDirection="Left" RightDirection="Right" PipeLineWidth="2"
             RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="2"/>
         <WPF:HslPipeLine Height="23" Canvas.Left="10" Canvas.Top="400" Width="194" LeftDirection="Left" RightDirection="Right" ActiveLineCenterColor="Purple"
             RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="4"/>
@@ -46,6 +46,7 @@
         <Button x:Name="B_HslBarChart" Content="HslBarChart" Canvas.Left="21" Canvas.Top="171" Width="113" Height="27" Click="B_HslBarChart_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCncCenter" Content="HslCncCenter" Canvas.Left="21" Canvas.Top="203" Width="113" Height="27" Click="B_HslCncCenter_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCurve" Content="HslCurve" Canvas.Left="21" Canvas.Top="235" Width="113" Height="27" Click="B_HslCurve_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslMachineCenter" Content="HslMachineCenter" Canvas.Left="21" Canvas.Top="269" Width="113" Height="27" Click="B_HslMachineCenter_Click" RenderTransformOrigin="0.511,2.481"/>
 
 
 

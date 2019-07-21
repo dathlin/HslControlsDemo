@@ -34,6 +34,8 @@ namespace HslControlsDemo
             timer.Tick += Timer_Tick;
             timer.Interval = 1000;
             timer.Start( );
+
+            hslThermometer6.RightDataTransfer = m => m;
         }
 
         private void Timer_Tick( object sender, EventArgs e )

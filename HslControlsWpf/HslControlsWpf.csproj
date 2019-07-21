@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.1.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.5\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.6.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.6\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -76,6 +76,9 @@
     </Compile>
     <Compile Include="WindowHslLanternSimple.xaml.cs">
       <DependentUpon>WindowHslLanternSimple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslMachineCenter.xaml.cs">
+      <DependentUpon>WindowHslMachineCenter.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslPipeLine.xaml.cs">
       <DependentUpon>WindowHslPipeLine.xaml</DependentUpon>
@@ -118,6 +121,10 @@
     <Page Include="WindowHslLanternSimple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslMachineCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslPipeLine.xaml">
       <SubType>Designer</SubType>

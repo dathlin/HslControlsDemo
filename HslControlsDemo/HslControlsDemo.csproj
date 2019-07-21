@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.1.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.5\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.6.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.6\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -208,6 +208,12 @@
     <Compile Include="FormLoad.Designer.cs">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMachineCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMachineCenter.designer.cs">
+      <DependentUpon>FormMachineCenter.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMotor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,12 @@
     </Compile>
     <Compile Include="FormPanel.Designer.cs">
       <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPanelBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanelBack.designer.cs">
+      <DependentUpon>FormPanelBack.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPieChart.cs">
       <SubType>Form</SubType>
@@ -375,11 +387,17 @@
     <EmbeddedResource Include="FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMachineCenter.resx">
+      <DependentUpon>FormMachineCenter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMotor.resx">
       <DependentUpon>FormMotor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPanel.resx">
       <DependentUpon>FormPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanelBack.resx">
+      <DependentUpon>FormPanelBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPieChart.resx">
       <DependentUpon>FormPieChart.cs</DependentUpon>
