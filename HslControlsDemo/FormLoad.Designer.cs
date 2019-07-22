@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button39 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
@@ -76,12 +77,13 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button40);
             this.groupBox1.Controls.Add(this.button39);
             this.groupBox1.Controls.Add(this.button38);
             this.groupBox1.Controls.Add(this.button37);
@@ -130,6 +132,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(139, 482);
+            this.button39.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(114, 37);
+            this.button39.TabIndex = 39;
+            this.button39.Text = "容器2(Panel)";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.Button39_Click);
             // 
             // button38
             // 
@@ -646,16 +659,16 @@
             this.linkLabel6.Text = "wpf版本控件";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
-            // button39
+            // button40
             // 
-            this.button39.Location = new System.Drawing.Point(139, 482);
-            this.button39.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(114, 37);
-            this.button39.TabIndex = 39;
-            this.button39.Text = "容器2(Panel)";
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.Button39_Click);
+            this.button40.Location = new System.Drawing.Point(374, 122);
+            this.button40.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(109, 37);
+            this.button40.TabIndex = 40;
+            this.button40.Text = "看板标题";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.Button40_Click);
             // 
             // FormLoad
             // 
@@ -736,5 +749,6 @@
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
     }
 }

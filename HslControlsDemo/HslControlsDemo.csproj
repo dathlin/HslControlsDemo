@@ -190,6 +190,12 @@
     <Compile Include="FormGobang.Designer.cs">
       <DependentUpon>FormGobang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHslTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslTitle.Designer.cs">
+      <DependentUpon>FormHslTitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLanternSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGobang.resx">
       <DependentUpon>FormGobang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslTitle.resx">
+      <DependentUpon>FormHslTitle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLanternSimple.resx">
       <DependentUpon>FormLanternSimple.cs</DependentUpon>

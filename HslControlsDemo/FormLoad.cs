@@ -555,5 +555,16 @@ namespace HslControlsDemo
             System.Threading.Thread.Sleep( 200 );
             Show( );
         }
+
+        private void Button40_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormHslTitle form = new FormHslTitle( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
     }
 }
