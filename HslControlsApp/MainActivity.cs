@@ -48,7 +48,7 @@ namespace HslControlsApp
         private void CheckServer( )
         {
             NetSimplifyClient simplifyClient = new NetSimplifyClient( "118.24.36.220", 18467 );
-            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.1.6" );
+            HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 101, "2.1.7" );
         }
 
         public override void OnBackPressed()

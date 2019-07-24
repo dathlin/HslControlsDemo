@@ -28,14 +28,9 @@
         /// </summary>
         private void InitializeComponent( )
         {
-            this.hslCncCenter1 = new HslControls.HslCncCenter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.hslCncCenter2 = new HslControls.HslCncCenter();
             this.label3 = new System.Windows.Forms.Label();
-            this.hslCncCenter3 = new HslControls.HslCncCenter();
-            this.hslCncCenter4 = new HslControls.HslCncCenter();
-            this.hslCncCenter5 = new HslControls.HslCncCenter();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,15 +39,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.hslCncCenter5 = new HslControls.HslCncCenter();
+            this.hslCncCenter4 = new HslControls.HslCncCenter();
+            this.hslCncCenter3 = new HslControls.HslCncCenter();
+            this.hslCncCenter2 = new HslControls.HslCncCenter();
+            this.hslCncCenter1 = new HslControls.HslCncCenter();
             this.SuspendLayout();
-            // 
-            // hslCncCenter1
-            // 
-            this.hslCncCenter1.Location = new System.Drawing.Point(12, 12);
-            this.hslCncCenter1.Name = "hslCncCenter1";
-            this.hslCncCenter1.Size = new System.Drawing.Size(218, 154);
-            this.hslCncCenter1.TabIndex = 0;
-            this.hslCncCenter1.Text = "hslCncCenter1";
             // 
             // label1
             // 
@@ -72,15 +64,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "仓门关闭到一半的效果";
             // 
-            // hslCncCenter2
-            // 
-            this.hslCncCenter2.CncDoorState = 50F;
-            this.hslCncCenter2.Location = new System.Drawing.Point(341, 12);
-            this.hslCncCenter2.Name = "hslCncCenter2";
-            this.hslCncCenter2.Size = new System.Drawing.Size(218, 154);
-            this.hslCncCenter2.TabIndex = 2;
-            this.hslCncCenter2.Text = "hslCncCenter2";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -89,31 +72,6 @@
             this.label3.Size = new System.Drawing.Size(113, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "仓门全部关闭的效果";
-            // 
-            // hslCncCenter3
-            // 
-            this.hslCncCenter3.CncDoorState = 100F;
-            this.hslCncCenter3.Location = new System.Drawing.Point(650, 12);
-            this.hslCncCenter3.Name = "hslCncCenter3";
-            this.hslCncCenter3.Size = new System.Drawing.Size(218, 154);
-            this.hslCncCenter3.TabIndex = 4;
-            this.hslCncCenter3.Text = "hslCncCenter3";
-            // 
-            // hslCncCenter4
-            // 
-            this.hslCncCenter4.Location = new System.Drawing.Point(23, 209);
-            this.hslCncCenter4.Name = "hslCncCenter4";
-            this.hslCncCenter4.Size = new System.Drawing.Size(472, 337);
-            this.hslCncCenter4.TabIndex = 6;
-            this.hslCncCenter4.Text = "hslCncCenter4";
-            // 
-            // hslCncCenter5
-            // 
-            this.hslCncCenter5.Location = new System.Drawing.Point(501, 209);
-            this.hslCncCenter5.Name = "hslCncCenter5";
-            this.hslCncCenter5.Size = new System.Drawing.Size(472, 337);
-            this.hslCncCenter5.TabIndex = 7;
-            this.hslCncCenter5.Text = "hslCncCenter5";
             // 
             // label4
             // 
@@ -186,6 +144,51 @@
             this.label7.Size = new System.Drawing.Size(323, 12);
             this.label7.TabIndex = 15;
             this.label7.Text = "方法设定，有简单的动画，高级动画的版本请使用wpf版本。";
+            // 
+            // hslCncCenter5
+            // 
+            this.hslCncCenter5.Location = new System.Drawing.Point(501, 209);
+            this.hslCncCenter5.Name = "hslCncCenter5";
+            this.hslCncCenter5.Size = new System.Drawing.Size(472, 337);
+            this.hslCncCenter5.TabIndex = 7;
+            this.hslCncCenter5.Text = "hslCncCenter5";
+            // 
+            // hslCncCenter4
+            // 
+            this.hslCncCenter4.Location = new System.Drawing.Point(23, 209);
+            this.hslCncCenter4.Name = "hslCncCenter4";
+            this.hslCncCenter4.Size = new System.Drawing.Size(472, 337);
+            this.hslCncCenter4.TabIndex = 6;
+            this.hslCncCenter4.Text = "hslCncCenter4";
+            // 
+            // hslCncCenter3
+            // 
+            this.hslCncCenter3.CncDoorState = 100F;
+            this.hslCncCenter3.LightGreen = true;
+            this.hslCncCenter3.Location = new System.Drawing.Point(650, 12);
+            this.hslCncCenter3.Name = "hslCncCenter3";
+            this.hslCncCenter3.Size = new System.Drawing.Size(218, 154);
+            this.hslCncCenter3.TabIndex = 4;
+            this.hslCncCenter3.Text = "hslCncCenter3";
+            // 
+            // hslCncCenter2
+            // 
+            this.hslCncCenter2.CncDoorState = 50F;
+            this.hslCncCenter2.LightYellow = true;
+            this.hslCncCenter2.Location = new System.Drawing.Point(341, 12);
+            this.hslCncCenter2.Name = "hslCncCenter2";
+            this.hslCncCenter2.Size = new System.Drawing.Size(218, 154);
+            this.hslCncCenter2.TabIndex = 2;
+            this.hslCncCenter2.Text = "hslCncCenter2";
+            // 
+            // hslCncCenter1
+            // 
+            this.hslCncCenter1.LightRed = true;
+            this.hslCncCenter1.Location = new System.Drawing.Point(12, 12);
+            this.hslCncCenter1.Name = "hslCncCenter1";
+            this.hslCncCenter1.Size = new System.Drawing.Size(218, 154);
+            this.hslCncCenter1.TabIndex = 0;
+            this.hslCncCenter1.Text = "hslCncCenter1";
             // 
             // FormCncCenter
             // 

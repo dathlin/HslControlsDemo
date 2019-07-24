@@ -17,12 +17,13 @@
         <HslControls.HslCncCenter
             android:layout_width="match_parent"
             android:layout_weight="1"
+            app:lightRed="true"
             android:layout_height="match_parent"/>
         
         <HslControls.HslCncCenter
             android:layout_width="match_parent"
             android:layout_weight="1"
-            app:cncDoorState="500"
+            app:cncDoorState="50"
             android:layout_height="match_parent"/>
         
     </LinearLayout>

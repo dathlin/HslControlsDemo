@@ -250,6 +250,9 @@ namespace HslControlsApp
 			global::HslControls.Resource.Attribute.leftRightOffect = global::HslControlsApp.Resource.Attribute.leftRightOffect;
 			global::HslControls.Resource.Attribute.leftUnitText = global::HslControlsApp.Resource.Attribute.leftUnitText;
 			global::HslControls.Resource.Attribute.lightColor = global::HslControlsApp.Resource.Attribute.lightColor;
+			global::HslControls.Resource.Attribute.lightGreen = global::HslControlsApp.Resource.Attribute.lightGreen;
+			global::HslControls.Resource.Attribute.lightRed = global::HslControlsApp.Resource.Attribute.lightRed;
+			global::HslControls.Resource.Attribute.lightYellow = global::HslControlsApp.Resource.Attribute.lightYellow;
 			global::HslControls.Resource.Attribute.listChoiceBackgroundIndicator = global::HslControlsApp.Resource.Attribute.listChoiceBackgroundIndicator;
 			global::HslControls.Resource.Attribute.listDividerAlertDialog = global::HslControlsApp.Resource.Attribute.listDividerAlertDialog;
 			global::HslControls.Resource.Attribute.listItemLayout = global::HslControlsApp.Resource.Attribute.listItemLayout;
@@ -1595,6 +1598,9 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslClassifier_textSize = global::HslControlsApp.Resource.Styleable.HslClassifier_textSize;
 			global::HslControls.Resource.Styleable.HslCncCenter = global::HslControlsApp.Resource.Styleable.HslCncCenter;
 			global::HslControls.Resource.Styleable.HslCncCenter_cncDoorState = global::HslControlsApp.Resource.Styleable.HslCncCenter_cncDoorState;
+			global::HslControls.Resource.Styleable.HslCncCenter_lightGreen = global::HslControlsApp.Resource.Styleable.HslCncCenter_lightGreen;
+			global::HslControls.Resource.Styleable.HslCncCenter_lightRed = global::HslControlsApp.Resource.Styleable.HslCncCenter_lightRed;
+			global::HslControls.Resource.Styleable.HslCncCenter_lightYellow = global::HslControlsApp.Resource.Styleable.HslCncCenter_lightYellow;
 			global::HslControls.Resource.Styleable.HslConveyer = global::HslControlsApp.Resource.Styleable.HslConveyer;
 			global::HslControls.Resource.Styleable.HslConveyer_circularRadius = global::HslControlsApp.Resource.Styleable.HslConveyer_circularRadius;
 			global::HslControls.Resource.Styleable.HslConveyer_conveyerActive = global::HslControlsApp.Resource.Styleable.HslConveyer_conveyerActive;
@@ -2491,8 +2497,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f010168
 			public const int dockHeight = 2130772328;
 			
-			// aapt resource value: 0x7f0101da
-			public const int doorOpenStatus = 2130772442;
+			// aapt resource value: 0x7f0101dd
+			public const int doorOpenStatus = 2130772445;
 			
 			// aapt resource value: 0x7f0100b8
 			public const int drawableSize = 2130772152;
@@ -2823,6 +2829,15 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f0101cd
 			public const int lightColor = 2130772429;
+			
+			// aapt resource value: 0x7f0101dc
+			public const int lightGreen = 2130772444;
+			
+			// aapt resource value: 0x7f0101da
+			public const int lightRed = 2130772442;
+			
+			// aapt resource value: 0x7f0101db
+			public const int lightYellow = 2130772443;
 			
 			// aapt resource value: 0x7f01008e
 			public const int listChoiceBackgroundIndicator = 2130772110;
@@ -8601,10 +8616,22 @@ namespace HslControlsApp
 			public const int HslClassifier_textSize = 0;
 			
 			public static int[] HslCncCenter = new int[] {
-					2130772441};
+					2130772441,
+					2130772442,
+					2130772443,
+					2130772444};
 			
 			// aapt resource value: 0
 			public const int HslCncCenter_cncDoorState = 0;
+			
+			// aapt resource value: 3
+			public const int HslCncCenter_lightGreen = 3;
+			
+			// aapt resource value: 1
+			public const int HslCncCenter_lightRed = 1;
+			
+			// aapt resource value: 2
+			public const int HslCncCenter_lightYellow = 2;
 			
 			public static int[] HslConveyer = new int[] {
 					2130772314,
@@ -8923,7 +8950,7 @@ namespace HslControlsApp
 			public const int HslLedDisplay_unitText = 6;
 			
 			public static int[] HslMachineCenter = new int[] {
-					2130772442};
+					2130772445};
 			
 			// aapt resource value: 0
 			public const int HslMachineCenter_doorOpenStatus = 0;
