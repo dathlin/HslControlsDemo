@@ -84,7 +84,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(587, 75);
             this.label5.TabIndex = 4;
-            this.label5.Text = "个人授权：200 Rmb即可加入VIP群，实时获取新版的key，同样禁止公开key，仅允许使用于个人项目，禁止商业用途；如需源代码，请联系作者进行详细咨询。";
+            this.label5.Text = "个人授权：240 Rmb即可加入VIP群，实时获取新版的key，同样禁止公开key，仅允许使用于个人项目，禁止商业用途；如需源代码，请联系作者进行详细咨询。";
             // 
             // label6
             // 
@@ -102,9 +102,9 @@
             this.label7.Font = new System.Drawing.Font("华文细黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(215, 346);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 17);
+            this.label7.Size = new System.Drawing.Size(136, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "联系QQ： 200962190";
+            this.label7.Text = "详细参考赞助链接";
             // 
             // FormDeclaration
             // 
