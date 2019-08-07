@@ -39,23 +39,44 @@ namespace HslControlsApp
             hslCurve2.SetLeftCurve( "B", null, Color.Tomato );
             hslCurve2.SetRightCurve( "C", null, Color.LimeGreen );
             hslCurve2.SetRightCurve( "D", null, Color.Orchid );
+            hslCurve2.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+            {
+                LocationX = 0.63f,
+                Text = "平均值：46 mm",
+                TextBack = Color.Black,
+                TextBrush = Color.DodgerBlue
+            } );
+
 
             hslCurve3.SetLeftCurve( "A", null, Color.DodgerBlue );
             hslCurve3.SetLeftCurve( "B", null, Color.DarkOrange );
             hslCurve3.SetLeftCurve( "C", null, Color.LimeGreen );
+            auxiliaryLable3 = new AuxiliaryLable( )
+            {
+                LocationX = 0.6f,
+                Text = "报警信息：6 个",
+                TextBack = Color.DimGray,
+                TextBrush = Color.Pink
+            };
+            hslCurve3.AddAuxiliaryLabel( auxiliaryLable3 );
 
             timer = new Timer( new TimerCallback( TimerTick ), null, 100, 300 );
         }
 
+        private HslControls.AuxiliaryLable auxiliaryLable3;
 
         private void TimerTick( object state )
         {
             count_tick++;
             RunOnUiThread( new Action( ( ) =>
             {
-                float random1 = (float)random.NextDouble( );
-                float random2 = (float)random.NextDouble( );
-                float random3 = (float)random.NextDouble( );
+                //float random1 = (float)random.NextDouble( );
+                //float random2 = (float)random.NextDouble( );
+                //float random3 = (float)random.NextDouble( );
+
+                float random1 = (float)(Math.Sin( 2 * Math.PI * count_tick / 30 ) * 0.5d + 0.5);
+                float random2 = (float)(Math.Sin( 2 * Math.PI * count_tick / 50 ) * 0.5d + 0.5);
+                float random3 = (float)(Math.Cos( 2 * Math.PI * count_tick / 80 ) * 0.5d + 0.5);
 
 
                 hslCurve1.AddCurveData(
@@ -68,6 +89,8 @@ namespace HslControlsApp
                     }
                 );
 
+
+                auxiliaryLable3.Text = "报警信息：" + random.Next( 10 ) + " 个";
                 if (count_tick % 100 == 0)
                 {
                     hslCurve3.AddCurveData(

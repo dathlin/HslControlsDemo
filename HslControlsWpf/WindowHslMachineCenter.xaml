@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterOwner"
         Title="WindowHslMachineCenter" Height="684" Width="1020">
     <Canvas>
-        <WPF:HslMachineCenter Height="293" Canvas.Left="64" Canvas.Top="34" Width="320"/>
+        <WPF:HslMachineCenter Height="293" Canvas.Left="64" Canvas.Top="34" Width="320" LightGreen="True"/>
         <WPF:HslMachineCenter Height="293" Canvas.Left="517" Canvas.Top="34" Width="320" DoorOpenStatus="True"/>
     </Canvas>
 </Window>

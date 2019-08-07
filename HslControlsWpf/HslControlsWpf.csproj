@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.1.7.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.7\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.1.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.1.9\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -83,8 +83,14 @@
     <Compile Include="WindowHslPipeLine.xaml.cs">
       <DependentUpon>WindowHslPipeLine.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowHslPumpOne.xaml.cs">
+      <DependentUpon>WindowHslPumpOne.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHslWaterBasin.xaml.cs">
       <DependentUpon>WindowHslWaterBasin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowSizeTest.xaml.cs">
+      <DependentUpon>WindowSizeTest.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -107,12 +113,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslCncCenter.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslCurve.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslHandValve.xaml">
       <SubType>Designer</SubType>
@@ -123,14 +129,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslMachineCenter.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslPipeLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowHslPumpOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowHslWaterBasin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowSizeTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

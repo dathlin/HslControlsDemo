@@ -1686,6 +1686,9 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslLedDisplay_unitText = global::HslControlsApp.Resource.Styleable.HslLedDisplay_unitText;
 			global::HslControls.Resource.Styleable.HslMachineCenter = global::HslControlsApp.Resource.Styleable.HslMachineCenter;
 			global::HslControls.Resource.Styleable.HslMachineCenter_doorOpenStatus = global::HslControlsApp.Resource.Styleable.HslMachineCenter_doorOpenStatus;
+			global::HslControls.Resource.Styleable.HslMachineCenter_lightGreen = global::HslControlsApp.Resource.Styleable.HslMachineCenter_lightGreen;
+			global::HslControls.Resource.Styleable.HslMachineCenter_lightRed = global::HslControlsApp.Resource.Styleable.HslMachineCenter_lightRed;
+			global::HslControls.Resource.Styleable.HslMachineCenter_lightYellow = global::HslControlsApp.Resource.Styleable.HslMachineCenter_lightYellow;
 			global::HslControls.Resource.Styleable.HslMotor = global::HslControlsApp.Resource.Styleable.HslMotor;
 			global::HslControls.Resource.Styleable.HslMotor_arrowDirection = global::HslControlsApp.Resource.Styleable.HslMotor_arrowDirection;
 			global::HslControls.Resource.Styleable.HslMotor_borderColor = global::HslControlsApp.Resource.Styleable.HslMotor_borderColor;
@@ -8950,10 +8953,22 @@ namespace HslControlsApp
 			public const int HslLedDisplay_unitText = 6;
 			
 			public static int[] HslMachineCenter = new int[] {
+					2130772442,
+					2130772443,
+					2130772444,
 					2130772445};
 			
+			// aapt resource value: 3
+			public const int HslMachineCenter_doorOpenStatus = 3;
+			
+			// aapt resource value: 2
+			public const int HslMachineCenter_lightGreen = 2;
+			
 			// aapt resource value: 0
-			public const int HslMachineCenter_doorOpenStatus = 0;
+			public const int HslMachineCenter_lightRed = 0;
+			
+			// aapt resource value: 1
+			public const int HslMachineCenter_lightYellow = 1;
 			
 			public static int[] HslMotor = new int[] {
 					2130772314,

@@ -49,6 +49,20 @@ namespace HslControlsDemo
                 MarkText = "不太行了",
                 TextBrush = Brushes.Red
             } );
+            hslCurve1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+            {
+                LocationX = 0.6f,
+                Text = "带材厚度：0.1 mm",
+                TextBack = Brushes.Black,
+                TextBrush = Brushes.Pink
+            } );
+            hslCurve1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+            {
+                LocationX = 0.8f,
+                Text = "平均值：46 mm",
+                TextBack = Brushes.Black,
+                TextBrush = Brushes.Pink
+            } );
 
             hslCurve3.SetLeftCurve( "A", null, Color.DodgerBlue );
             hslCurve3.SetLeftCurve( "B", null, Color.DarkOrange );
@@ -58,15 +72,31 @@ namespace HslControlsDemo
             hslCurve4.SetLeftCurve( "B", null, Color.Tomato );
             hslCurve4.SetRightCurve( "C", null, Color.LimeGreen );
             hslCurve4.SetRightCurve( "D", null, Color.Orchid );
+            hslCurve4.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+            {
+                LocationX = 0.65f,
+                Text = "平均值：46 mm",
+                TextBack = Brushes.Black,
+                TextBrush = Brushes.DodgerBlue
+            } );
 
             hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, true );
             hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, true );
             hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, true );
-
+            auxiliaryLable5 = new HslControls.AuxiliaryLable( )
+            {
+                LocationX = 0.7f,
+                Text = "报警信息：6 个",
+                TextBack = Brushes.DimGray,
+                TextBrush = Brushes.Pink
+            };
+            hslCurve5.AddAuxiliaryLabel( auxiliaryLable5 );
 
             hslCurve6.SetLeftCurve( "A", null, Color.DodgerBlue );
             hslCurve6.SetLeftCurve( "B", null, Color.DarkOrange );
         }
+
+        private HslControls.AuxiliaryLable auxiliaryLable5;
 
         private void TimerTick_Tick( object sender, EventArgs e )
         {
@@ -85,6 +115,7 @@ namespace HslControlsDemo
                 }
             );
 
+            auxiliaryLable5.Text = "报警信息：" + random.Next( 10 ) + " 个";
             if (count_tick % 20 == 0)
             {
                 hslCurve5.AddCurveData(

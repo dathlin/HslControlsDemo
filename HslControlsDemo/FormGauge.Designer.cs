@@ -94,6 +94,7 @@
             // 
             // hslGauge7
             // 
+            this.hslGauge7.CustomerCalibration = "空; ;满";
             this.hslGauge7.Location = new System.Drawing.Point(500, 259);
             this.hslGauge7.Name = "hslGauge7";
             this.hslGauge7.PointerColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -107,6 +108,7 @@
             // 
             // hslGauge6
             // 
+            this.hslGauge6.CustomerCalibration = "N; ;F";
             this.hslGauge6.Location = new System.Drawing.Point(388, 259);
             this.hslGauge6.Name = "hslGauge6";
             this.hslGauge6.PointerSize = 1;

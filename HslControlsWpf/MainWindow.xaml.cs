@@ -84,5 +84,11 @@ namespace HslControlsWpf
             WindowHslMachineCenter window = new WindowHslMachineCenter( );
             window.ShowDialog( );
         }
+
+        private void B_HslPumpOne_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslPumpOne window = new WindowHslPumpOne( );
+            window.ShowDialog( );
+        }
     }
 }

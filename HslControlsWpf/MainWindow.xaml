@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Canvas>
-        <WPF:HslPipeLine Height="23" Canvas.Left="227" Canvas.Top="255" Width="121" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
+        <WPF:HslPipeLine Height="23" Canvas.Left="227" Canvas.Top="264" Width="121" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
             <WPF:HslPipeLine.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,10 +22,10 @@
         <WPF:HslSwitch Height="123" Canvas.Left="352" Canvas.Top="197" Width="120" SwitchStatus="True" SwitchText="off:On"/>
         <WPF:HslIndicator Height="101" Canvas.Left="371" Canvas.Top="61" Width="101" IndicatorColor="Red"/>
         <WPF:HslIndicator Height="101" Canvas.Left="477" Canvas.Top="61" Width="101" IndicatorColor="Blue"/>
-        <WPF:HslBottle Height="258" Canvas.Left="264" Canvas.Top="10" Width="47" Value="90" UseAnimation="True"/>
+        <WPF:HslBottle Height="258" Canvas.Left="264" Canvas.Top="19" Width="47" Value="90" UseAnimation="True"/>
         <WPF:HslIndicator Height="101" Canvas.Left="583" Canvas.Top="61" Width="101" IndicatorColor="Green"/>
         <WPF:HslSwitch Height="123" Canvas.Left="458" Canvas.Top="197" Width="120" SwitchStatus="True"/>
-        <WPF:HslPipeLine Height="23" Canvas.Left="105" Canvas.Top="327" Width="194" LeftDirection="Left" RightDirection="Right"
+        <WPF:HslPipeLine Height="23" Canvas.Left="105" Canvas.Top="336" Width="194" LeftDirection="Left" RightDirection="Right"
                          RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="0.3">
         </WPF:HslPipeLine>
         <Button x:Name="B_HslPipeLine" Content="HslPipeLine" Canvas.Left="21" Canvas.Top="43" Width="113" Height="27" Click="B_HslPipeLine_Click" RenderTransformOrigin="0.511,2.481"/>
@@ -47,6 +47,7 @@
         <Button x:Name="B_HslCncCenter" Content="HslCncCenter" Canvas.Left="21" Canvas.Top="203" Width="113" Height="27" Click="B_HslCncCenter_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCurve" Content="HslCurve" Canvas.Left="21" Canvas.Top="235" Width="113" Height="27" Click="B_HslCurve_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslMachineCenter" Content="HslMachineCenter" Canvas.Left="21" Canvas.Top="269" Width="113" Height="27" Click="B_HslMachineCenter_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslPumpOne" Content="HslPumpOne" Canvas.Left="21" Canvas.Top="302" Width="113" Height="27" Click="B_HslPumpOne_Click" RenderTransformOrigin="0.511,2.481"/>
 
 
 

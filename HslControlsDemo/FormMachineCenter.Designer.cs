@@ -45,6 +45,7 @@
             // hslMachineCenter6
             // 
             this.hslMachineCenter6.DoorOpenStatus = true;
+            this.hslMachineCenter6.LightGreen = true;
             this.hslMachineCenter6.Location = new System.Drawing.Point(512, 192);
             this.hslMachineCenter6.Name = "hslMachineCenter6";
             this.hslMachineCenter6.Size = new System.Drawing.Size(432, 377);
@@ -53,6 +54,7 @@
             // 
             // hslMachineCenter5
             // 
+            this.hslMachineCenter5.LightRed = true;
             this.hslMachineCenter5.Location = new System.Drawing.Point(42, 192);
             this.hslMachineCenter5.Name = "hslMachineCenter5";
             this.hslMachineCenter5.Size = new System.Drawing.Size(432, 377);
@@ -62,6 +64,7 @@
             // hslMachineCenter4
             // 
             this.hslMachineCenter4.DoorOpenStatus = true;
+            this.hslMachineCenter4.LightGreen = true;
             this.hslMachineCenter4.Location = new System.Drawing.Point(656, 18);
             this.hslMachineCenter4.Name = "hslMachineCenter4";
             this.hslMachineCenter4.Size = new System.Drawing.Size(255, 136);
@@ -70,6 +73,7 @@
             // 
             // hslMachineCenter3
             // 
+            this.hslMachineCenter3.LightYellow = true;
             this.hslMachineCenter3.Location = new System.Drawing.Point(346, 18);
             this.hslMachineCenter3.Name = "hslMachineCenter3";
             this.hslMachineCenter3.Size = new System.Drawing.Size(255, 136);
@@ -78,6 +82,7 @@
             // 
             // hslMachineCenter2
             // 
+            this.hslMachineCenter2.LightRed = true;
             this.hslMachineCenter2.Location = new System.Drawing.Point(152, 18);
             this.hslMachineCenter2.Name = "hslMachineCenter2";
             this.hslMachineCenter2.Size = new System.Drawing.Size(125, 127);

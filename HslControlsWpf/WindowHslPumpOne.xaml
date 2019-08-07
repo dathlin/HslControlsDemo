@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslPumpOne"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslPumpOne" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslPumpOne Height="150" Canvas.Left="65" Canvas.Top="30" Width="150"/>
+        <WPF:HslPumpOne Height="150" Canvas.Left="318" Canvas.Top="30" Width="150" Entrance="2" Export="6" MoveSpeed="0"/>
+        <WPF:HslPumpOne Height="150" Canvas.Left="581" Canvas.Top="30" Width="150" Entrance="3" Export="4"/>
+        <WPF:HslPumpOne Height="150" Canvas.Left="771" Canvas.Top="30" Width="150" Entrance="5" Export="6"/>
+        <WPF:HslPumpOne Height="150" Canvas.Left="60" Canvas.Top="227" Width="150" RenderTransformOrigin="0.5,0.5" Color6="Orange">
+            <WPF:HslPumpOne.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </WPF:HslPumpOne.RenderTransform>
+        </WPF:HslPumpOne>
+        <WPF:HslPumpOne Height="150" Canvas.Left="327" Canvas.Top="198" Width="150" RenderTransformOrigin="0.5,0.5" Color6="Orange">
+            <WPF:HslPumpOne.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslPumpOne.RenderTransform>
+        </WPF:HslPumpOne>
+        <WPF:HslPumpOne Height="150" Canvas.Left="581" Canvas.Top="200" Width="150" Entrance="2" Export="6" MoveSpeed="-0.5"/>
+        <WPF:HslPumpOne Height="150" Canvas.Left="791" Canvas.Top="200" Width="150" Entrance="2" Export="6" MoveSpeed="2"/>
+        
+        
+        <WPF:HslPipeLine Name="hslPipeLine1" Height="37" Canvas.Left="66" Canvas.Top="456" Width="272" LeftDirection="None" RightDirection="None" MoveSpeed="-0"/>
+        <WPF:HslPipeLine Name="hslPipeLine2" Height="37" Canvas.Left="483" Canvas.Top="510" Width="272" LeftDirection="None" RightDirection="None" MoveSpeed="0"/>
+        <WPF:HslPumpOne Name="hslPumpOne1" Height="150" Canvas.Left="337" Canvas.Top="426" Width="150" Entrance="2" Export="6" MoveSpeed="0"/>
+        <Button Content="启动" Canvas.Left="547" Canvas.Top="576" Width="158" Height="45" Click="Button_Click"/>
+        <Button Content="停止" Canvas.Left="754" Canvas.Top="576" Width="158" Height="45" Click="Button_Click_1"/>
+
+    </Canvas>
+</Window>

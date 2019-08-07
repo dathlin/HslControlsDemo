@@ -52,24 +52,56 @@ namespace HslControlsWpf
                 MarkText = "不太行了",
                 TextColor = Colors.Red
             } );
+            hslCurve1.AddAuxiliaryLabel( new WpfAuxiliaryLable( )
+            {
+                LocationX = 0.6f,
+                Text = "带材厚度：0.1 mm",
+                TextBack = Colors.Black,
+                TextBrush = Colors.Pink
+            } );
+            hslCurve1.AddAuxiliaryLabel( new WpfAuxiliaryLable( )
+            {
+                LocationX = 0.8f,
+                Text = "平均值：46 mm",
+                TextBack = Colors.Black,
+                TextBrush = Colors.Pink
+            } );
 
             hslCurve3.SetLeftCurve( "A", null, Colors.DodgerBlue );
             hslCurve3.SetLeftCurve( "B", null, Colors.DarkOrange );
             hslCurve3.SetLeftCurve( "C", null, Colors.LimeGreen );
 
+
             hslCurve4.SetLeftCurve( "A", null, Colors.LightSkyBlue );
             hslCurve4.SetLeftCurve( "B", null, Colors.Tomato );
             hslCurve4.SetRightCurve( "C", null, Colors.LimeGreen );
             hslCurve4.SetRightCurve( "D", null, Colors.Orchid );
+            hslCurve4.AddAuxiliaryLabel( new HslControls.WPF.WpfAuxiliaryLable( )
+            {
+                LocationX = 0.65f,
+                Text = "平均值：46 mm",
+                TextBack = Colors.Black,
+                TextBrush = Colors.DodgerBlue
+            } );
 
             hslCurve5.SetLeftCurve( "A", null, Colors.DodgerBlue, true );
             hslCurve5.SetLeftCurve( "B", null, Colors.DarkOrange, true );
             hslCurve5.SetLeftCurve( "C", null, Colors.LimeGreen, true );
+            auxiliaryLable5 = new WpfAuxiliaryLable( )
+            {
+                LocationX = 0.7f,
+                Text = "报警信息：6 个",
+                TextBack = Colors.DimGray,
+                TextBrush = Colors.Pink
+            };
+            hslCurve5.AddAuxiliaryLabel( auxiliaryLable5 );
 
 
             hslCurve6.SetLeftCurve( "A", null, Colors.DodgerBlue );
             hslCurve6.SetLeftCurve( "B", null, Colors.DarkOrange );
         }
+
+        private WpfAuxiliaryLable auxiliaryLable5;
 
         private void TimerTick_Tick( object sender, EventArgs e )
         {
@@ -88,6 +120,7 @@ namespace HslControlsWpf
                 }
             );
 
+            auxiliaryLable5.Text = "报警信息：" + random.Next( 10 ) + " 个";
             if (count_tick % 20 == 0)
             {
                 hslCurve5.AddCurveData(
