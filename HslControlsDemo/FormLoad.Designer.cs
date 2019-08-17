@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button40 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
@@ -77,12 +78,13 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button41);
             this.groupBox1.Controls.Add(this.button40);
             this.groupBox1.Controls.Add(this.button39);
             this.groupBox1.Controls.Add(this.button38);
@@ -132,6 +134,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(374, 122);
+            this.button40.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(109, 37);
+            this.button40.TabIndex = 40;
+            this.button40.Text = "看板标题";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.Button40_Click);
             // 
             // button39
             // 
@@ -659,16 +672,16 @@
             this.linkLabel6.Text = "wpf版本控件";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
-            // button40
+            // button41
             // 
-            this.button40.Location = new System.Drawing.Point(374, 122);
-            this.button40.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(109, 37);
-            this.button40.TabIndex = 40;
-            this.button40.Text = "看板标题";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.Button40_Click);
+            this.button41.Location = new System.Drawing.Point(374, 167);
+            this.button41.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(109, 37);
+            this.button41.TabIndex = 41;
+            this.button41.Text = "HMI信号灯";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.Button41_Click);
             // 
             // FormLoad
             // 
@@ -750,5 +763,6 @@
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button41;
     }
 }

@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.1.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.9\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.0\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -189,6 +189,12 @@
     </Compile>
     <Compile Include="FormGobang.Designer.cs">
       <DependentUpon>FormGobang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHMILedSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHMILedSingle.designer.cs">
+      <DependentUpon>FormHMILedSingle.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHslTitle.cs">
       <SubType>Form</SubType>
@@ -383,6 +389,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGobang.resx">
       <DependentUpon>FormGobang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHMILedSingle.resx">
+      <DependentUpon>FormHMILedSingle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHslTitle.resx">
       <DependentUpon>FormHslTitle.cs</DependentUpon>

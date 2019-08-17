@@ -46,10 +46,10 @@
             this.hslArrow3 = new HslControls.HslArrow();
             this.hslArrow2 = new HslControls.HslArrow();
             this.hslArrow1 = new HslControls.HslArrow();
+            this.hslButton4 = new HslControls.HslButton();
             this.hslButton3 = new HslControls.HslButton();
             this.hslButton2 = new HslControls.HslButton();
             this.hslButton1 = new HslControls.HslButton();
-            this.hslButton4 = new HslControls.HslButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -274,6 +274,17 @@
             this.hslArrow1.TabIndex = 0;
             this.hslArrow1.Text = "hslArrow1";
             // 
+            // hslButton4
+            // 
+            this.hslButton4.CustomerInformation = null;
+            this.hslButton4.Location = new System.Drawing.Point(593, 24);
+            this.hslButton4.Name = "hslButton4";
+            this.hslButton4.Selected = true;
+            this.hslButton4.Size = new System.Drawing.Size(124, 44);
+            this.hslButton4.TabIndex = 11;
+            this.hslButton4.Text = "hslButton4";
+            this.hslButton4.UseGradient = true;
+            // 
             // hslButton3
             // 
             this.hslButton3.CustomerInformation = null;
@@ -302,17 +313,6 @@
             this.hslButton1.Size = new System.Drawing.Size(124, 44);
             this.hslButton1.TabIndex = 0;
             this.hslButton1.Text = "hslButton1";
-            // 
-            // hslButton4
-            // 
-            this.hslButton4.CustomerInformation = null;
-            this.hslButton4.Location = new System.Drawing.Point(593, 24);
-            this.hslButton4.Name = "hslButton4";
-            this.hslButton4.Selected = true;
-            this.hslButton4.Size = new System.Drawing.Size(124, 44);
-            this.hslButton4.TabIndex = 11;
-            this.hslButton4.Text = "hslButton4";
-            this.hslButton4.UseGradient = true;
             // 
             // FormBasic
             // 

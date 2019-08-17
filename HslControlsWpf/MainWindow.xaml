@@ -30,7 +30,6 @@
         </WPF:HslPipeLine>
         <Button x:Name="B_HslPipeLine" Content="HslPipeLine" Canvas.Left="21" Canvas.Top="43" Width="113" Height="27" Click="B_HslPipeLine_Click" RenderTransformOrigin="0.511,2.481"/>
         <WPF:HslLanternSimple Height="100" Canvas.Left="718" Canvas.Top="28" Width="100"/>
-        <WPF:HslLanternAlarm Height="136" Canvas.Left="162" Canvas.Top="28" Width="97"/>
         <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="113" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
         <WPF:HslBoiler Height="128" Canvas.Left="857" Canvas.Top="28" Width="125"/>
         <WPF:HslWaterBasin Height="180" Canvas.Left="190" Canvas.Top="369" Width="367" WaterSpeed="1000" Value="90"/>
@@ -48,6 +47,8 @@
         <Button x:Name="B_HslCurve" Content="HslCurve" Canvas.Left="21" Canvas.Top="235" Width="113" Height="27" Click="B_HslCurve_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslMachineCenter" Content="HslMachineCenter" Canvas.Left="21" Canvas.Top="269" Width="113" Height="27" Click="B_HslMachineCenter_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslPumpOne" Content="HslPumpOne" Canvas.Left="21" Canvas.Top="302" Width="113" Height="27" Click="B_HslPumpOne_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslVacuumPump" Content="HslVacuumPump" Canvas.Left="146" Canvas.Top="10" Width="113" Height="27" Click="B_HslVacuumPump_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslMotorTwo" Content="HslMotorTwo" Canvas.Left="146" Canvas.Top="43" Width="113" Height="27" Click="B_HslMotorTwo_Click" RenderTransformOrigin="0.511,2.481"/>
 
 
 

@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.1.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.1.9\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.0\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -80,11 +80,17 @@
     <Compile Include="WindowHslMachineCenter.xaml.cs">
       <DependentUpon>WindowHslMachineCenter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowHslMotorTwo.xaml.cs">
+      <DependentUpon>WindowHslMotorTwo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHslPipeLine.xaml.cs">
       <DependentUpon>WindowHslPipeLine.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslPumpOne.xaml.cs">
       <DependentUpon>WindowHslPumpOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslVacuumPump.xaml.cs">
+      <DependentUpon>WindowHslVacuumPump.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslWaterBasin.xaml.cs">
       <DependentUpon>WindowHslWaterBasin.xaml</DependentUpon>
@@ -132,11 +138,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowHslMotorTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowHslPipeLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslPumpOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslVacuumPump.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

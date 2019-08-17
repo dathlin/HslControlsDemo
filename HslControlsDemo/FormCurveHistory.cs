@@ -48,6 +48,13 @@ namespace HslControlsDemo
                  hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, true, "{0:F1} ℃" );
                  hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
+                 hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+                 {
+                     LocationX = 0.6f,
+                     Text = $"今日产量：{random.Next(10)}个",
+                     TextBack = new SolidBrush(Color.FromArgb(10,10,10)),
+                     TextBrush = Brushes.Gray,
+                 } );
                  hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
                  // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
                  hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )

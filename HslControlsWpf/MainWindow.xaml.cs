@@ -90,5 +90,17 @@ namespace HslControlsWpf
             WindowHslPumpOne window = new WindowHslPumpOne( );
             window.ShowDialog( );
         }
+
+        private void B_HslVacuumPump_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslVacuumPump window = new WindowHslVacuumPump( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslMotorTwo_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslMotorTwo window = new WindowHslMotorTwo( );
+            window.ShowDialog( );
+        }
     }
 }

@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslVacuumPump"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslVacuumPump" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="30" Canvas.Top="20" Width="160"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="190" Canvas.Top="20" Width="160" MoveSpeed="1"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="350" Canvas.Top="20" Width="160" MoveSpeed="-1"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="517" Canvas.Top="20" Width="160" MoveSpeed="-1" EdgeColor="Red"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="710" Canvas.Top="20" Width="160" MoveSpeed="-1" EdgeColor="Red" CenterColor="DodgerBlue"/>
+        <TextBlock Canvas.Left="76" TextWrapping="Wrap" Text="默认的控件" Canvas.Top="193"/>
+        <TextBlock Canvas.Left="227" TextWrapping="Wrap" Text="速度调快了很多" Canvas.Top="196"/>
+        <TextBlock Canvas.Left="402" TextWrapping="Wrap" Text="速度反向" Canvas.Top="196"/>
+        <TextBlock Canvas.Left="548" TextWrapping="Wrap" Text="修改了外面的颜色" Canvas.Top="199"/>
+        <TextBlock Canvas.Left="740" TextWrapping="Wrap" Text="修改了里面的颜色" Canvas.Top="202"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="30" Canvas.Top="255" Width="160" MoveSpeed="2"/>
+        <TextBlock Canvas.Left="76" TextWrapping="Wrap" Text="非常快速的转动" Canvas.Top="428"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="205" Canvas.Top="255" Width="160" MoveSpeed="4"/>
+        <TextBlock Canvas.Left="251" TextWrapping="Wrap" Text="非常快速的转动" Canvas.Top="428"/>
+        <WPF:HslVacuumPump Height="168" Canvas.Left="371" Canvas.Top="255" Width="160" MoveSpeed="0"/>
+        <TextBlock Canvas.Left="417" TextWrapping="Wrap" Text="停止转动" Canvas.Top="428"/>
+        <WPF:HslVacuumPump Height="86" Canvas.Left="596" Canvas.Top="306" Width="65" MoveSpeed="0.1"/>
+        <TextBlock Canvas.Left="596" TextWrapping="Wrap" Text="缓慢转动" Canvas.Top="416"/>
+        <WPF:HslVacuumPump Height="86" Canvas.Left="710" Canvas.Top="306" Width="65" MoveSpeed="0.1" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslVacuumPump.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-49.086"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslVacuumPump.RenderTransform>
+        </WPF:HslVacuumPump>
+
+    </Canvas>
+</Window>

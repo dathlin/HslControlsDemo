@@ -39,6 +39,7 @@
             this.hslGauge3 = new HslControls.HslGauge();
             this.hslGauge2 = new HslControls.HslGauge();
             this.hslGauge1 = new HslControls.HslGauge();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -80,6 +81,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.hslGauge7);
             this.groupBox4.Controls.Add(this.hslGauge6);
             this.groupBox4.Controls.Add(this.hslGauge5);
@@ -125,6 +127,7 @@
             this.hslGauge5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.hslGauge5.GaugeBorder = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
             this.hslGauge5.IsBigSemiCircle = true;
+            this.hslGauge5.IsTextInfoRenderBlow = true;
             this.hslGauge5.Location = new System.Drawing.Point(589, 31);
             this.hslGauge5.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.hslGauge5.Name = "hslGauge5";
@@ -143,6 +146,7 @@
             this.hslGauge4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.hslGauge4.GaugeBorder = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
             this.hslGauge4.IsBigSemiCircle = true;
+            this.hslGauge4.IsTextUnderPointer = false;
             this.hslGauge4.Location = new System.Drawing.Point(80, 31);
             this.hslGauge4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.hslGauge4.Name = "hslGauge4";
@@ -151,6 +155,7 @@
             this.hslGauge4.Size = new System.Drawing.Size(324, 295);
             this.hslGauge4.TabIndex = 0;
             this.hslGauge4.UnitText = "× 1000 R/MIN";
+            this.hslGauge4.Value = 4F;
             this.hslGauge4.ValueAlarmMax = 6.5F;
             this.hslGauge4.ValueAlarmMin = 0F;
             this.hslGauge4.ValueMax = 8F;
@@ -184,6 +189,15 @@
             this.hslGauge1.Size = new System.Drawing.Size(301, 182);
             this.hslGauge1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(671, 342);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 12);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "单位和文本信息可以显示在下方";
+            // 
             // FormGauge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -201,6 +215,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -218,5 +233,6 @@
         private HslControls.HslGauge hslGauge6;
         private HslControls.HslGauge hslGauge5;
         private HslControls.HslGauge hslGauge4;
+        private System.Windows.Forms.Label label1;
     }
 }
