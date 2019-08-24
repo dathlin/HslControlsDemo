@@ -88,5 +88,9 @@
         android:id="@+id/nav_HslMachineCenter"
         android:icon="@drawable/ic_menu_share"
         android:title="HslMachineCenter" />
+      <item
+        android:id="@+id/nav_HslVacuumPump"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="HslVacuumPump" />
     </group>
 </menu>

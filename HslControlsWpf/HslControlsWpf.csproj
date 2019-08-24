@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.0\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.1\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -94,6 +94,9 @@
     </Compile>
     <Compile Include="WindowHslWaterBasin.xaml.cs">
       <DependentUpon>WindowHslWaterBasin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslWaterBox.xaml.cs">
+      <DependentUpon>WindowHslWaterBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowSizeTest.xaml.cs">
       <DependentUpon>WindowSizeTest.xaml</DependentUpon>
@@ -155,6 +158,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslWaterBasin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslWaterBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

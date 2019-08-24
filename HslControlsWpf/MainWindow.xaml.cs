@@ -102,5 +102,11 @@ namespace HslControlsWpf
             WindowHslMotorTwo window = new WindowHslMotorTwo( );
             window.ShowDialog( );
         }
+
+        private void B_HslWaterBox_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslWaterBox window = new WindowHslWaterBox( );
+            window.ShowDialog( );
+        }
     }
 }

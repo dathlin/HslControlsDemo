@@ -1774,6 +1774,16 @@ namespace HslControlsApp
 			global::HslControls.Resource.Styleable.HslThermometer_value = global::HslControlsApp.Resource.Styleable.HslThermometer_value;
 			global::HslControls.Resource.Styleable.HslThermometer_valueMax = global::HslControlsApp.Resource.Styleable.HslThermometer_valueMax;
 			global::HslControls.Resource.Styleable.HslThermometer_valueStart = global::HslControlsApp.Resource.Styleable.HslThermometer_valueStart;
+			global::HslControls.Resource.Styleable.HslVacuumPump = global::HslControlsApp.Resource.Styleable.HslVacuumPump;
+			global::HslControls.Resource.Styleable.HslVacuumPump_color1 = global::HslControlsApp.Resource.Styleable.HslVacuumPump_color1;
+			global::HslControls.Resource.Styleable.HslVacuumPump_color2 = global::HslControlsApp.Resource.Styleable.HslVacuumPump_color2;
+			global::HslControls.Resource.Styleable.HslVacuumPump_color3 = global::HslControlsApp.Resource.Styleable.HslVacuumPump_color3;
+			global::HslControls.Resource.Styleable.HslVacuumPump_color4 = global::HslControlsApp.Resource.Styleable.HslVacuumPump_color4;
+			global::HslControls.Resource.Styleable.HslVacuumPump_hslDirectionStyle = global::HslControlsApp.Resource.Styleable.HslVacuumPump_hslDirectionStyle;
+			global::HslControls.Resource.Styleable.HslVacuumPump_moveSpeed = global::HslControlsApp.Resource.Styleable.HslVacuumPump_moveSpeed;
+			global::HslControls.Resource.Styleable.HslVacuumPump_text = global::HslControlsApp.Resource.Styleable.HslVacuumPump_text;
+			global::HslControls.Resource.Styleable.HslVacuumPump_textColor = global::HslControlsApp.Resource.Styleable.HslVacuumPump_textColor;
+			global::HslControls.Resource.Styleable.HslVacuumPump_textSize = global::HslControlsApp.Resource.Styleable.HslVacuumPump_textSize;
 			global::HslControls.Resource.Styleable.HslValves = global::HslControlsApp.Resource.Styleable.HslValves;
 			global::HslControls.Resource.Styleable.HslValves_edgeColor = global::HslControlsApp.Resource.Styleable.HslValves_edgeColor;
 			global::HslControls.Resource.Styleable.HslValves_hslDirectionStyle = global::HslControlsApp.Resource.Styleable.HslValves_hslDirectionStyle;
@@ -4794,8 +4804,8 @@ namespace HslControlsApp
 			// aapt resource value: 0x7f080069
 			public const int action_mode_close_button = 2131230825;
 			
-			// aapt resource value: 0x7f080112
-			public const int action_settings = 2131230994;
+			// aapt resource value: 0x7f080113
+			public const int action_settings = 2131230995;
 			
 			// aapt resource value: 0x7f0800e9
 			public const int action_text = 2131230953;
@@ -5249,6 +5259,9 @@ namespace HslControlsApp
 			
 			// aapt resource value: 0x7f08010e
 			public const int nav_HslThermometer = 2131230990;
+			
+			// aapt resource value: 0x7f080112
+			public const int nav_HslVacuumPump = 2131230994;
 			
 			// aapt resource value: 0x7f0800ff
 			public const int nav_HslValves = 2131230975;
@@ -5754,73 +5767,76 @@ namespace HslControlsApp
 			public const int layout_HslThermometer = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int layout_HslValves = 2130968638;
+			public const int layout_HslVacuumPump = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int layout_HslWaterBox = 2130968639;
+			public const int layout_HslValves = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int nav_header_main = 2130968640;
+			public const int layout_HslWaterBox = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_action = 2130968641;
+			public const int nav_header_main = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_action_tombstone = 2130968642;
+			public const int notification_action = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_media_action = 2130968643;
+			public const int notification_action_tombstone = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_media_cancel_action = 2130968644;
+			public const int notification_media_action = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_template_big_media = 2130968645;
+			public const int notification_media_cancel_action = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_big_media_custom = 2130968646;
+			public const int notification_template_big_media = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int notification_template_big_media_narrow = 2130968647;
+			public const int notification_template_big_media_custom = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int notification_template_big_media_narrow_custom = 2130968648;
+			public const int notification_template_big_media_narrow = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int notification_template_custom_big = 2130968649;
+			public const int notification_template_big_media_narrow_custom = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int notification_template_icon_group = 2130968650;
+			public const int notification_template_custom_big = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int notification_template_lines_media = 2130968651;
+			public const int notification_template_icon_group = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int notification_template_media = 2130968652;
+			public const int notification_template_lines_media = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int notification_template_media_custom = 2130968653;
+			public const int notification_template_media = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int notification_template_part_chronometer = 2130968654;
+			public const int notification_template_media_custom = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int notification_template_part_time = 2130968655;
+			public const int notification_template_part_chronometer = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int select_dialog_item_material = 2130968656;
+			public const int notification_template_part_time = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int select_dialog_multichoice_material = 2130968657;
+			public const int select_dialog_item_material = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int select_dialog_singlechoice_material = 2130968658;
+			public const int select_dialog_multichoice_material = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int support_simple_spinner_dropdown_item = 2130968659;
+			public const int select_dialog_singlechoice_material = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int tooltip = 2130968660;
+			public const int support_simple_spinner_dropdown_item = 2130968660;
+			
+			// aapt resource value: 0x7f040055
+			public const int tooltip = 2130968661;
 			
 			static Layout()
 			{
@@ -9293,6 +9309,44 @@ namespace HslControlsApp
 			
 			// aapt resource value: 6
 			public const int HslThermometer_valueStart = 6;
+			
+			public static int[] HslVacuumPump = new int[] {
+					2130772314,
+					2130772315,
+					2130772320,
+					2130772340,
+					2130772344,
+					2130772352,
+					2130772353,
+					2130772354,
+					2130772355};
+			
+			// aapt resource value: 5
+			public const int HslVacuumPump_color1 = 5;
+			
+			// aapt resource value: 6
+			public const int HslVacuumPump_color2 = 6;
+			
+			// aapt resource value: 7
+			public const int HslVacuumPump_color3 = 7;
+			
+			// aapt resource value: 8
+			public const int HslVacuumPump_color4 = 8;
+			
+			// aapt resource value: 2
+			public const int HslVacuumPump_hslDirectionStyle = 2;
+			
+			// aapt resource value: 3
+			public const int HslVacuumPump_moveSpeed = 3;
+			
+			// aapt resource value: 4
+			public const int HslVacuumPump_text = 4;
+			
+			// aapt resource value: 1
+			public const int HslVacuumPump_textColor = 1;
+			
+			// aapt resource value: 0
+			public const int HslVacuumPump_textSize = 0;
 			
 			public static int[] HslValves = new int[] {
 					2130772314,

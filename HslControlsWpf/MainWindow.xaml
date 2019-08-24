@@ -49,6 +49,7 @@
         <Button x:Name="B_HslPumpOne" Content="HslPumpOne" Canvas.Left="21" Canvas.Top="302" Width="113" Height="27" Click="B_HslPumpOne_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslVacuumPump" Content="HslVacuumPump" Canvas.Left="146" Canvas.Top="10" Width="113" Height="27" Click="B_HslVacuumPump_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslMotorTwo" Content="HslMotorTwo" Canvas.Left="146" Canvas.Top="43" Width="113" Height="27" Click="B_HslMotorTwo_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslWaterBox" Content="HslWaterBox" Canvas.Left="146" Canvas.Top="75" Width="113" Height="27" Click="B_HslWaterBox_Click" RenderTransformOrigin="0.511,2.481"/>
 
 
 

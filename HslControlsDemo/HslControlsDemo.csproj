@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.0\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.1\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -310,6 +310,12 @@
     <Compile Include="FormThermometer.Designer.cs">
       <DependentUpon>FormThermometer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVacuumPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVacuumPump.designer.cs">
+      <DependentUpon>FormVacuumPump.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormValves.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -449,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormThermometer.resx">
       <DependentUpon>FormThermometer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVacuumPump.resx">
+      <DependentUpon>FormVacuumPump.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormValves.resx">
       <DependentUpon>FormValves.cs</DependentUpon>

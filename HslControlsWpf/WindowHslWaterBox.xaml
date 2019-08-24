@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslWaterBox"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslWaterBox" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslWaterBox Height="93" Canvas.Left="32" Canvas.Top="31" Width="157" WaterValue="50"/>
+        <WPF:HslWaterBox Height="93" Canvas.Left="232" Canvas.Top="31" Width="157" WaterValue="60" EdgeColor="DodgerBlue"/>
+        <WPF:HslWaterBox Height="93" Canvas.Left="432" Canvas.Top="31" Width="157" WaterValue="60" WaterColor="Orange"/>
+        <WPF:HslWaterBox Height="93" Canvas.Left="632" Canvas.Top="31" Width="157" Text="1#液位池" WaterValue="60"/>
+        <Label Content="正常的使用状态" Canvas.Left="66" Canvas.Top="140"/>
+        <Label Content="修改了边界的颜色" Canvas.Left="256" Canvas.Top="140"/>
+        <Label Content="修改了水的颜色" Canvas.Left="461" Canvas.Top="140"/>
+        <Label Content="修改了文本信息" Canvas.Left="661" Canvas.Top="140"/>
+        <WPF:HslWaterBox x:Name="hslWaterBox1" Height="158" Canvas.Left="32" Canvas.Top="202" Width="221"/>
+        <Label Content="液位随机变化" Canvas.Left="95" Canvas.Top="377"/>
+        <WPF:HslWaterBox x:Name="hslWaterBox2" Height="158" Canvas.Left="311" Canvas.Top="202" Width="221"/>
+        <Label Content="液位随机变化，带动画" Canvas.Left="359" Canvas.Top="377"/>
+        <WPF:HslWaterBox x:Name="hslWaterBox3" Height="333" Canvas.Left="611" Canvas.Top="202" Width="192"/>
+        <Label Content="形状随意调整" Canvas.Left="648" Canvas.Top="555"/>
+        <WPF:HslWaterBox Height="123" Canvas.Left="49" Canvas.Top="466" Width="204" WaterValue="50" EdgeWidth="4"/>
+        <Label Content="调整边框的大小" Canvas.Left="111" Canvas.Top="603"/>
+
+
+    </Canvas>
+</Window>

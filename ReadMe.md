@@ -23,9 +23,9 @@ Install-Package HslControls
 ## 关于源代码和激活码
 具体可以参照 http://www.hslcommunication.cn/Cooperation
 
-激活码 加入 *技术支持VIP群* 即可以获得，永久支持更新。
+激活码 加入 **技术支持VIP群** 即可以获得，永久支持更新。
 
-源代码 加入 *HslControls粉丝群* 即可以获得，永久支持更新。
+源代码 加入 **HslControls粉丝群** 即可以获得，永久支持更新。
 
 ## 输入激活码
 在你的程序进入的地方输入激活码即可。
