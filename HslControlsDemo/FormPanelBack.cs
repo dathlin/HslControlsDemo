@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormPanelBack : Form
+    public partial class FormPanelBack : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormPanelBack( )
         {

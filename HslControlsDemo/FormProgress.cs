@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormProgress : Form
+    public partial class FormProgress : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormProgress( )
         {

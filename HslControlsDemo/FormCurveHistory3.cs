@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory3 : Form
+    public partial class FormCurveHistory3 : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormCurveHistory3( )
         {

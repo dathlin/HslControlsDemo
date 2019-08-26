@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormBarChart : Form
+    public partial class FormBarChart : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormBarChart( )
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormWaterBox : Form
+    public partial class FormWaterBox : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormWaterBox( )
         {

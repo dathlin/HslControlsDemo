@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormClassifier : Form
+    public partial class FormClassifier : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormClassifier()
         {

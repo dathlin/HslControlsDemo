@@ -10,7 +10,7 @@ using HslControls;
 
 namespace HslControlsDemo
 {
-    public partial class FormPipeLineTest : Form
+    public partial class FormPipeLineTest : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormPipeLineTest( )
         {

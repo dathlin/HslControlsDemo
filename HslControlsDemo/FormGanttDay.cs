@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGanttDay : Form
+    public partial class FormGanttDay : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormGanttDay( )
         {

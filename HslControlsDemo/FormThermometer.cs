@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormThermometer : Form
+    public partial class FormThermometer : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormThermometer( )
         {

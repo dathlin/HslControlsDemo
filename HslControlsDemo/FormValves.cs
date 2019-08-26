@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormValves : Form
+    public partial class FormValves : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormValves( )
         {

@@ -10,7 +10,7 @@ using HslControls;
 
 namespace HslControlsDemo
 {
-    public partial class FormBottle : Form
+    public partial class FormBottle : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormBottle( )
         {

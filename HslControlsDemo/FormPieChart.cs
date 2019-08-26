@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormPieChart : Form
+    public partial class FormPieChart : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormPieChart( )
         {

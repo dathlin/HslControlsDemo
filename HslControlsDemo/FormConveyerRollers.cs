@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormConveyerRollers : Form
+    public partial class FormConveyerRollers : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormConveyerRollers( )
         {

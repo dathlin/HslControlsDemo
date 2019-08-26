@@ -10,7 +10,7 @@ using HslControls.Charts;
 
 namespace HslControlsDemo
 {
-    public partial class FormChart : Form
+    public partial class FormChart : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormChart()
         {

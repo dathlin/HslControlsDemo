@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormMachineCenter : Form
+    public partial class FormMachineCenter : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormMachineCenter( )
         {

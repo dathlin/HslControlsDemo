@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormHMILedSingle : Form
+    public partial class FormHMILedSingle : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormHMILedSingle( )
         {

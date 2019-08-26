@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormLedDisplay : Form
+    public partial class FormLedDisplay : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormLedDisplay( )
         {

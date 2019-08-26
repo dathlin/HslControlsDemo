@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormVacuumPump : Form
+    public partial class FormVacuumPump : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormVacuumPump( )
         {

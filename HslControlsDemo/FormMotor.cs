@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormMotor : Form
+    public partial class FormMotor : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormMotor( )
         {

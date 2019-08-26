@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormClock : Form
+    public partial class FormClock : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormClock( )
         {

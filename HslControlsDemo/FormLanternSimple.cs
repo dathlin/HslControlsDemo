@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormLanternSimple : Form
+    public partial class FormLanternSimple : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormLanternSimple( )
         {

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGauge : Form
+    public partial class FormGauge : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public FormGauge( )
         {
