@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormVacuumPump : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormVacuumPump : FormContent
     {
         public FormVacuumPump( )
         {
@@ -19,7 +19,12 @@ namespace HslControlsDemo
 
         private void FormVacuumPump_Load( object sender, EventArgs e )
         {
-            propertyGrid1.SelectedObject = hslVacuumPump7;
+
+        }
+
+        private void HslVacuumPump1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

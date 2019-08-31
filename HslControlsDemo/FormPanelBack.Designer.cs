@@ -62,6 +62,7 @@
             this.hslPanelTextBack7.TabIndex = 6;
             this.hslPanelTextBack7.Text = "系统日志";
             this.hslPanelTextBack7.TextOffect = 20;
+            this.hslPanelTextBack7.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack6
             // 
@@ -75,6 +76,7 @@
             this.hslPanelTextBack6.TabIndex = 5;
             this.hslPanelTextBack6.Text = "报警信息";
             this.hslPanelTextBack6.TextOffect = 20;
+            this.hslPanelTextBack6.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack5
             // 
@@ -88,6 +90,7 @@
             this.hslPanelTextBack5.TabIndex = 4;
             this.hslPanelTextBack5.Text = "产量信息";
             this.hslPanelTextBack5.TextOffect = 20;
+            this.hslPanelTextBack5.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack4
             // 
@@ -100,6 +103,7 @@
             this.hslPanelTextBack4.TabIndex = 4;
             this.hslPanelTextBack4.Text = "产量信息";
             this.hslPanelTextBack4.TextOffect = 20;
+            this.hslPanelTextBack4.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack3
             // 
@@ -112,6 +116,7 @@
             this.hslPanelTextBack3.TabIndex = 3;
             this.hslPanelTextBack3.Text = "产量信息";
             this.hslPanelTextBack3.TextOffect = 20;
+            this.hslPanelTextBack3.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack2
             // 
@@ -123,6 +128,7 @@
             this.hslPanelTextBack2.TabIndex = 2;
             this.hslPanelTextBack2.Text = "hslPanelTextBack2";
             this.hslPanelTextBack2.TextOffect = 20;
+            this.hslPanelTextBack2.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // hslPanelTextBack1
             // 
@@ -132,11 +138,13 @@
             this.hslPanelTextBack1.TabIndex = 1;
             this.hslPanelTextBack1.Text = "hslPanelTextBack1";
             this.hslPanelTextBack1.TextOffect = 20;
+            this.hslPanelTextBack1.Click += new System.EventHandler(this.HslPanelTextBack1_Click);
             // 
             // FormPanelBack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslPanelTextBack4);
             this.Controls.Add(this.hslPanelTextBack3);

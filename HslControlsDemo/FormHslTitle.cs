@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormHslTitle : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormHslTitle : FormContent
     {
         public FormHslTitle( )
         {
             InitializeComponent( );
+        }
+
+        private void HslTitle1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

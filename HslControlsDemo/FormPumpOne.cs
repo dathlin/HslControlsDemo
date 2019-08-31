@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormPumpOne : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormPumpOne : FormContent
     {
         public FormPumpOne( )
         {
@@ -28,6 +28,11 @@ namespace HslControlsDemo
             hslPumpOne7.MoveSpeed = 0f;
             hslPipeLine1.MoveSpeed = 0f;
             hslPipeLine2.MoveSpeed = 0f;
+        }
+
+        private void HslPumpOne4_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

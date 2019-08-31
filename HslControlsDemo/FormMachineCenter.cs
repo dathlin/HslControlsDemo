@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormMachineCenter : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormMachineCenter : FormContent
     {
         public FormMachineCenter( )
         {
             InitializeComponent( );
+        }
+
+        private void HslMachineCenter1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

@@ -10,7 +10,7 @@ using HslCommunication.Enthernet;
 
 namespace HslControlsDemo
 {
-    public partial class FormLoad : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormLoad : Form
     {
         public FormLoad( )
         {

@@ -78,6 +78,7 @@
             this.hslPlay2.Size = new System.Drawing.Size(132, 173);
             this.hslPlay2.TabIndex = 5;
             this.hslPlay2.Text = "hslPlay2";
+            this.hslPlay2.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // label1
             // 
@@ -97,6 +98,7 @@
             this.hslPlay1.TabIndex = 3;
             this.hslPlay1.Text = "hslPlay1";
             this.hslPlay1.OnPlayChanged += new System.Action<object, bool>(this.hslPlay1_OnPlayChanged);
+            this.hslPlay1.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // groupBox2
             // 
@@ -129,6 +131,7 @@
             this.hslSwitch2.SwitchStatusDescription = "关;开";
             this.hslSwitch2.TabIndex = 1;
             this.hslSwitch2.Text = "hslSwitch2";
+            this.hslSwitch2.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslSwitch1
             // 
@@ -140,6 +143,7 @@
             this.hslSwitch1.TabIndex = 0;
             this.hslSwitch1.Text = "hslSwitch1";
             this.hslSwitch1.OnSwitchChanged += new System.Action<object, bool>(this.hslSwitch1_OnSwitchChanged);
+            this.hslSwitch1.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // groupBox3
             // 
@@ -171,6 +175,7 @@
             this.hslArrow9.TabIndex = 8;
             this.hslArrow9.Text = "流量";
             this.hslArrow9.UseGradient = false;
+            this.hslArrow9.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow8
             // 
@@ -186,6 +191,7 @@
             this.hslArrow8.TabIndex = 7;
             this.hslArrow8.Text = "出水口";
             this.hslArrow8.UseGradient = false;
+            this.hslArrow8.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow7
             // 
@@ -199,6 +205,7 @@
             this.hslArrow7.TabIndex = 6;
             this.hslArrow7.Text = "hslArrow7";
             this.hslArrow7.UseGradient = false;
+            this.hslArrow7.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow6
             // 
@@ -212,6 +219,7 @@
             this.hslArrow6.TabIndex = 5;
             this.hslArrow6.Text = "出水口";
             this.hslArrow6.UseGradient = false;
+            this.hslArrow6.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow5
             // 
@@ -224,6 +232,7 @@
             this.hslArrow5.Size = new System.Drawing.Size(142, 173);
             this.hslArrow5.TabIndex = 4;
             this.hslArrow5.Text = "流量";
+            this.hslArrow5.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow4
             // 
@@ -238,6 +247,7 @@
             this.hslArrow4.Size = new System.Drawing.Size(48, 173);
             this.hslArrow4.TabIndex = 3;
             this.hslArrow4.Text = "出水口";
+            this.hslArrow4.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow3
             // 
@@ -250,6 +260,7 @@
             this.hslArrow3.Size = new System.Drawing.Size(176, 49);
             this.hslArrow3.TabIndex = 2;
             this.hslArrow3.Text = "出水口";
+            this.hslArrow3.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow2
             // 
@@ -262,6 +273,7 @@
             this.hslArrow2.Size = new System.Drawing.Size(176, 49);
             this.hslArrow2.TabIndex = 1;
             this.hslArrow2.Text = "hslArrow2";
+            this.hslArrow2.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslArrow1
             // 
@@ -273,6 +285,7 @@
             this.hslArrow1.Size = new System.Drawing.Size(176, 49);
             this.hslArrow1.TabIndex = 0;
             this.hslArrow1.Text = "hslArrow1";
+            this.hslArrow1.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslButton4
             // 
@@ -284,6 +297,7 @@
             this.hslButton4.TabIndex = 11;
             this.hslButton4.Text = "hslButton4";
             this.hslButton4.UseGradient = true;
+            this.hslButton4.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslButton3
             // 
@@ -294,6 +308,7 @@
             this.hslButton3.Size = new System.Drawing.Size(124, 44);
             this.hslButton3.TabIndex = 2;
             this.hslButton3.Text = "hslButton3";
+            this.hslButton3.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslButton2
             // 
@@ -304,6 +319,7 @@
             this.hslButton2.Size = new System.Drawing.Size(124, 44);
             this.hslButton2.TabIndex = 1;
             this.hslButton2.Text = "hslButton2";
+            this.hslButton2.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // hslButton1
             // 
@@ -313,11 +329,13 @@
             this.hslButton1.Size = new System.Drawing.Size(124, 44);
             this.hslButton1.TabIndex = 0;
             this.hslButton1.Text = "hslButton1";
+            this.hslButton1.Click += new System.EventHandler(this.HslButton1_Click);
             // 
             // FormBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslButton4);
             this.Controls.Add(this.groupBox3);

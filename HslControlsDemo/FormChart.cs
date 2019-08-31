@@ -10,7 +10,7 @@ using HslControls.Charts;
 
 namespace HslControlsDemo
 {
-    public partial class FormChart : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormChart : FormContent
     {
         public FormChart()
         {
@@ -128,8 +128,12 @@ namespace HslControlsDemo
             timeAxisChart.Series[0].SetValuesY(values1);
             timeAxisChart.Series[1].SetValuesY(values2);
         }
-        
+
         #endregion
 
+        private void BaseChart_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

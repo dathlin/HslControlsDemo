@@ -49,6 +49,7 @@
             this.hslMotor8.Size = new System.Drawing.Size(440, 243);
             this.hslMotor8.TabIndex = 7;
             this.hslMotor8.Text = "hslMotor8";
+            this.hslMotor8.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor7
             // 
@@ -61,6 +62,7 @@
             this.hslMotor7.Size = new System.Drawing.Size(239, 363);
             this.hslMotor7.TabIndex = 6;
             this.hslMotor7.Text = "hslMotor7";
+            this.hslMotor7.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor6
             // 
@@ -72,6 +74,7 @@
             this.hslMotor6.Size = new System.Drawing.Size(239, 363);
             this.hslMotor6.TabIndex = 5;
             this.hslMotor6.Text = "hslMotor6";
+            this.hslMotor6.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor5
             // 
@@ -81,6 +84,7 @@
             this.hslMotor5.Name = "hslMotor5";
             this.hslMotor5.Size = new System.Drawing.Size(160, 76);
             this.hslMotor5.TabIndex = 4;
+            this.hslMotor5.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor4
             // 
@@ -90,6 +94,7 @@
             this.hslMotor4.Name = "hslMotor4";
             this.hslMotor4.Size = new System.Drawing.Size(160, 76);
             this.hslMotor4.TabIndex = 3;
+            this.hslMotor4.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor3
             // 
@@ -99,6 +104,7 @@
             this.hslMotor3.Name = "hslMotor3";
             this.hslMotor3.Size = new System.Drawing.Size(230, 111);
             this.hslMotor3.TabIndex = 2;
+            this.hslMotor3.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor2
             // 
@@ -108,6 +114,7 @@
             this.hslMotor2.Name = "hslMotor2";
             this.hslMotor2.Size = new System.Drawing.Size(230, 111);
             this.hslMotor2.TabIndex = 1;
+            this.hslMotor2.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor1
             // 
@@ -118,6 +125,7 @@
             this.hslMotor1.Size = new System.Drawing.Size(440, 243);
             this.hslMotor1.TabIndex = 0;
             this.hslMotor1.Text = "hslMotor1";
+            this.hslMotor1.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // hslMotor9
             // 
@@ -127,11 +135,13 @@
             this.hslMotor9.Name = "hslMotor9";
             this.hslMotor9.Size = new System.Drawing.Size(88, 55);
             this.hslMotor9.TabIndex = 8;
+            this.hslMotor9.Click += new System.EventHandler(this.HslMotor9_Click);
             // 
             // FormMotor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslMotor9);
             this.Controls.Add(this.hslMotor8);

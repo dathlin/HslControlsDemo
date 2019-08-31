@@ -342,6 +342,7 @@
             this.baseChart.Text = "cartesianChart2";
             this.baseChart.VerticalGridVisible = false;
             this.baseChart.VerticalSeparatorSum = 5;
+            this.baseChart.Click += new System.EventHandler(this.BaseChart_Click);
             this.baseChart.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lineChart_MouseUp);
             // 
             // label7
@@ -570,6 +571,7 @@
             this.multipleAxesChart.TabIndex = 0;
             this.multipleAxesChart.TabStop = false;
             this.multipleAxesChart.Text = "cartesianChart3";
+            this.multipleAxesChart.Click += new System.EventHandler(this.BaseChart_Click);
             // 
             // label8
             // 
@@ -717,6 +719,7 @@
             this.lineMonitorChart.TabIndex = 1;
             this.lineMonitorChart.TabStop = false;
             this.lineMonitorChart.Text = "cartesianChart1";
+            this.lineMonitorChart.Click += new System.EventHandler(this.BaseChart_Click);
             // 
             // label5
             // 
@@ -899,6 +902,7 @@
             this.timeAxisChart.TabIndex = 3;
             this.timeAxisChart.TabStop = false;
             this.timeAxisChart.Text = "zChart1";
+            this.timeAxisChart.Click += new System.EventHandler(this.BaseChart_Click);
             // 
             // btnLoadData
             // 
@@ -916,6 +920,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(954, 641);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));

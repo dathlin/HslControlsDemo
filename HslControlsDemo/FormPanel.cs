@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormPanel : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormPanel : FormContent
     {
         public FormPanel( )
         {
@@ -21,6 +21,11 @@ namespace HslControlsDemo
 
             hslBarChart1.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+        }
+
+        private void HslPanelText1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

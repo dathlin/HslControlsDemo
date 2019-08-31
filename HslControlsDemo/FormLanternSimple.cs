@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormLanternSimple : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormLanternSimple : FormContent
     {
         public FormLanternSimple( )
         {
@@ -46,5 +46,10 @@ namespace HslControlsDemo
         }
 
         private Timer timer = null;
+
+        private void HslLanternSimple8_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

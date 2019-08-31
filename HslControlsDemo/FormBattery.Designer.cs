@@ -29,6 +29,8 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.hslBattery12 = new HslControls.HslBattery();
+            this.hslBattery11 = new HslControls.HslBattery();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,8 +38,6 @@
             this.hslBattery15 = new HslControls.HslBattery();
             this.hslBattery14 = new HslControls.HslBattery();
             this.hslBattery13 = new HslControls.HslBattery();
-            this.hslBattery12 = new HslControls.HslBattery();
-            this.hslBattery11 = new HslControls.HslBattery();
             this.hslBattery10 = new HslControls.HslBattery();
             this.hslBattery9 = new HslControls.HslBattery();
             this.hslBattery8 = new HslControls.HslBattery();
@@ -63,6 +63,39 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "黑色的主题下";
+            // 
+            // hslBattery12
+            // 
+            this.hslBattery12.BatteryBackColor = System.Drawing.Color.Silver;
+            this.hslBattery12.BatteryStyle = HslControls.HslDirectionStyle.Vertical;
+            this.hslBattery12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBattery12.ForeColor = System.Drawing.Color.Blue;
+            this.hslBattery12.IsTextRender = true;
+            this.hslBattery12.Location = new System.Drawing.Point(363, 21);
+            this.hslBattery12.Margin = new System.Windows.Forms.Padding(4);
+            this.hslBattery12.Name = "hslBattery12";
+            this.hslBattery12.Size = new System.Drawing.Size(217, 63);
+            this.hslBattery12.StringFormat = "{0} ma";
+            this.hslBattery12.TabIndex = 11;
+            this.hslBattery12.Value = 3450F;
+            this.hslBattery12.ValueMax = 5000F;
+            this.hslBattery12.Click += new System.EventHandler(this.HslBattery7_Click);
+            // 
+            // hslBattery11
+            // 
+            this.hslBattery11.BatteryBackColor = System.Drawing.Color.Silver;
+            this.hslBattery11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.hslBattery11.ForeColor = System.Drawing.Color.Blue;
+            this.hslBattery11.IsTextRender = true;
+            this.hslBattery11.Location = new System.Drawing.Point(147, 21);
+            this.hslBattery11.Margin = new System.Windows.Forms.Padding(4);
+            this.hslBattery11.Name = "hslBattery11";
+            this.hslBattery11.Size = new System.Drawing.Size(74, 173);
+            this.hslBattery11.StringFormat = "{0} ma";
+            this.hslBattery11.TabIndex = 10;
+            this.hslBattery11.Value = 3450F;
+            this.hslBattery11.ValueMax = 5000F;
+            this.hslBattery11.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // label1
             // 
@@ -108,6 +141,7 @@
             this.hslBattery15.Size = new System.Drawing.Size(35, 102);
             this.hslBattery15.TabIndex = 14;
             this.hslBattery15.Value = 10F;
+            this.hslBattery15.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery14
             // 
@@ -117,6 +151,7 @@
             this.hslBattery14.Size = new System.Drawing.Size(35, 102);
             this.hslBattery14.TabIndex = 13;
             this.hslBattery14.Value = 10F;
+            this.hslBattery14.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery13
             // 
@@ -126,37 +161,7 @@
             this.hslBattery13.Size = new System.Drawing.Size(35, 102);
             this.hslBattery13.TabIndex = 12;
             this.hslBattery13.Value = 10F;
-            // 
-            // hslBattery12
-            // 
-            this.hslBattery12.BatteryBackColor = System.Drawing.Color.Silver;
-            this.hslBattery12.BatteryStyle = HslControls.HslDirectionStyle.Vertical;
-            this.hslBattery12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.hslBattery12.ForeColor = System.Drawing.Color.Blue;
-            this.hslBattery12.IsTextRender = true;
-            this.hslBattery12.Location = new System.Drawing.Point(363, 21);
-            this.hslBattery12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hslBattery12.Name = "hslBattery12";
-            this.hslBattery12.Size = new System.Drawing.Size(217, 63);
-            this.hslBattery12.StringFormat = "{0} ma";
-            this.hslBattery12.TabIndex = 11;
-            this.hslBattery12.Value = 3450F;
-            this.hslBattery12.ValueMax = 5000F;
-            // 
-            // hslBattery11
-            // 
-            this.hslBattery11.BatteryBackColor = System.Drawing.Color.Silver;
-            this.hslBattery11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.hslBattery11.ForeColor = System.Drawing.Color.Blue;
-            this.hslBattery11.IsTextRender = true;
-            this.hslBattery11.Location = new System.Drawing.Point(147, 21);
-            this.hslBattery11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hslBattery11.Name = "hslBattery11";
-            this.hslBattery11.Size = new System.Drawing.Size(74, 173);
-            this.hslBattery11.StringFormat = "{0} ma";
-            this.hslBattery11.TabIndex = 10;
-            this.hslBattery11.Value = 3450F;
-            this.hslBattery11.ValueMax = 5000F;
+            this.hslBattery13.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery10
             // 
@@ -165,13 +170,14 @@
             this.hslBattery10.ForeColor = System.Drawing.Color.Blue;
             this.hslBattery10.IsTextRender = true;
             this.hslBattery10.Location = new System.Drawing.Point(244, 283);
-            this.hslBattery10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslBattery10.Margin = new System.Windows.Forms.Padding(4);
             this.hslBattery10.Name = "hslBattery10";
             this.hslBattery10.Size = new System.Drawing.Size(74, 173);
             this.hslBattery10.StringFormat = "{0} ma";
             this.hslBattery10.TabIndex = 9;
             this.hslBattery10.Value = 3450F;
             this.hslBattery10.ValueMax = 5000F;
+            this.hslBattery10.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery9
             // 
@@ -180,7 +186,7 @@
             this.hslBattery9.ForeColor = System.Drawing.Color.Blue;
             this.hslBattery9.IsTextRender = true;
             this.hslBattery9.Location = new System.Drawing.Point(134, 283);
-            this.hslBattery9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslBattery9.Margin = new System.Windows.Forms.Padding(4);
             this.hslBattery9.Name = "hslBattery9";
             this.hslBattery9.Size = new System.Drawing.Size(74, 173);
             this.hslBattery9.StringFormat = "{0:F2} V";
@@ -188,6 +194,7 @@
             this.hslBattery9.UseAnimation = false;
             this.hslBattery9.Value = 2.45F;
             this.hslBattery9.ValueMax = 5F;
+            this.hslBattery9.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery8
             // 
@@ -196,13 +203,14 @@
             this.hslBattery8.ForeColor = System.Drawing.Color.Blue;
             this.hslBattery8.IsTextRender = true;
             this.hslBattery8.Location = new System.Drawing.Point(37, 283);
-            this.hslBattery8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslBattery8.Margin = new System.Windows.Forms.Padding(4);
             this.hslBattery8.Name = "hslBattery8";
             this.hslBattery8.Size = new System.Drawing.Size(74, 173);
             this.hslBattery8.StringFormat = "{0:F2} V";
             this.hslBattery8.TabIndex = 7;
             this.hslBattery8.Value = 1.45F;
             this.hslBattery8.ValueMax = 5F;
+            this.hslBattery8.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery7
             // 
@@ -214,6 +222,7 @@
             this.hslBattery7.Size = new System.Drawing.Size(146, 63);
             this.hslBattery7.TabIndex = 6;
             this.hslBattery7.Value = 88F;
+            this.hslBattery7.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery6
             // 
@@ -225,6 +234,7 @@
             this.hslBattery6.Size = new System.Drawing.Size(244, 88);
             this.hslBattery6.TabIndex = 5;
             this.hslBattery6.Value = 3F;
+            this.hslBattery6.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery5
             // 
@@ -234,6 +244,7 @@
             this.hslBattery5.Size = new System.Drawing.Size(86, 174);
             this.hslBattery5.TabIndex = 4;
             this.hslBattery5.Value = 96F;
+            this.hslBattery5.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery4
             // 
@@ -243,6 +254,7 @@
             this.hslBattery4.Size = new System.Drawing.Size(86, 174);
             this.hslBattery4.TabIndex = 3;
             this.hslBattery4.Value = 75F;
+            this.hslBattery4.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery3
             // 
@@ -252,6 +264,7 @@
             this.hslBattery3.Size = new System.Drawing.Size(86, 174);
             this.hslBattery3.TabIndex = 2;
             this.hslBattery3.Value = 50F;
+            this.hslBattery3.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery2
             // 
@@ -261,6 +274,7 @@
             this.hslBattery2.Size = new System.Drawing.Size(86, 174);
             this.hslBattery2.TabIndex = 1;
             this.hslBattery2.Value = 25F;
+            this.hslBattery2.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // hslBattery1
             // 
@@ -270,11 +284,13 @@
             this.hslBattery1.Size = new System.Drawing.Size(86, 174);
             this.hslBattery1.TabIndex = 0;
             this.hslBattery1.Value = 3F;
+            this.hslBattery1.Click += new System.EventHandler(this.HslBattery7_Click);
             // 
             // FormBattery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

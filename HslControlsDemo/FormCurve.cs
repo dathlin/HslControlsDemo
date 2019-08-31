@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurve : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormCurve : FormContent
     {
         public FormCurve( )
         {
@@ -233,6 +233,11 @@ namespace HslControlsDemo
                 MessageBox.Show( "保存成功!" );
             }
             fileDialog.Dispose( );
+        }
+
+        private void HslCurve1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

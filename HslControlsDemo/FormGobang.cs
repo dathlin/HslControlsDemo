@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGobang : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormGobang : FormContent
     {
         public FormGobang( )
         {
             InitializeComponent( );
+        }
+
+        private void HslGobang1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

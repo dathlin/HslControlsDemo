@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormThermometer : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormThermometer : FormContent
     {
         public FormThermometer( )
         {
@@ -46,5 +46,10 @@ namespace HslControlsDemo
 
         private Timer timer;
         private Random random = new Random( );
+
+        private void HslThermometer1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

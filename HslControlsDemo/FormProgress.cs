@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormProgress : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormProgress : FormContent
     {
         public FormProgress( )
         {
@@ -42,5 +42,10 @@ namespace HslControlsDemo
 
         private Timer timer = new Timer( );
         private Random random = new Random( );
+
+        private void HslProgress3_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

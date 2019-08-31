@@ -52,6 +52,7 @@
             this.hslGanttChart1.Name = "hslGanttChart1";
             this.hslGanttChart1.Size = new System.Drawing.Size(296, 65);
             this.hslGanttChart1.TabIndex = 0;
+            this.hslGanttChart1.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox1
             // 
@@ -107,6 +108,7 @@
             this.hslGanttChart4.TimeFormate = "{0}";
             this.hslGanttChart4.TimeMax = 31;
             this.hslGanttChart4.TimeSegment = 31;
+            this.hslGanttChart4.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // hslGanttChart3
             // 
@@ -118,6 +120,7 @@
             this.hslGanttChart3.TimeFormate = "{0}";
             this.hslGanttChart3.TimeMax = 31;
             this.hslGanttChart3.TimeSegment = 31;
+            this.hslGanttChart3.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // hslGanttChart2
             // 
@@ -126,6 +129,7 @@
             this.hslGanttChart2.Size = new System.Drawing.Size(296, 65);
             this.hslGanttChart2.TabIndex = 1;
             this.hslGanttChart2.TimeSegment = 8;
+            this.hslGanttChart2.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox2
             // 
@@ -144,6 +148,7 @@
             this.hslGanttChart6.Name = "hslGanttChart6";
             this.hslGanttChart6.Size = new System.Drawing.Size(402, 65);
             this.hslGanttChart6.TabIndex = 2;
+            this.hslGanttChart6.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // hslGanttChart5
             // 
@@ -151,6 +156,7 @@
             this.hslGanttChart5.Name = "hslGanttChart5";
             this.hslGanttChart5.Size = new System.Drawing.Size(402, 65);
             this.hslGanttChart5.TabIndex = 1;
+            this.hslGanttChart5.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox3
             // 
@@ -172,11 +178,13 @@
             this.hslGanttChart7.Name = "hslGanttChart7";
             this.hslGanttChart7.Size = new System.Drawing.Size(402, 75);
             this.hslGanttChart7.TabIndex = 1;
+            this.hslGanttChart7.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // FormGanttDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

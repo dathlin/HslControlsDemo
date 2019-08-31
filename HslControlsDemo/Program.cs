@@ -26,7 +26,7 @@ namespace HslControlsDemo
 
             Application.EnableVisualStyles( );
             Application.SetCompatibleTextRenderingDefault( false );
-            Application.Run( new FormLoad( ) );
+            Application.Run( new FormMainWindow( ) );
         }
     }
 }

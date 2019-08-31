@@ -69,6 +69,7 @@
             this.hslClock7.Name = "hslClock7";
             this.hslClock7.Size = new System.Drawing.Size(88, 93);
             this.hslClock7.TabIndex = 5;
+            this.hslClock7.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // label2
             // 
@@ -101,6 +102,7 @@
             this.hslClock3.Size = new System.Drawing.Size(310, 274);
             this.hslClock3.TabIndex = 2;
             this.hslClock3.Text = "hslClock3";
+            this.hslClock3.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // hslClock2
             // 
@@ -113,6 +115,7 @@
             this.hslClock2.Size = new System.Drawing.Size(224, 220);
             this.hslClock2.TabIndex = 1;
             this.hslClock2.Text = "hslClock2";
+            this.hslClock2.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // hslClock1
             // 
@@ -123,6 +126,7 @@
             this.hslClock1.Size = new System.Drawing.Size(171, 196);
             this.hslClock1.TabIndex = 0;
             this.hslClock1.Text = "hslClock1";
+            this.hslClock1.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // groupBox2
             // 
@@ -153,6 +157,7 @@
             this.hslClock6.Size = new System.Drawing.Size(224, 222);
             this.hslClock6.TabIndex = 2;
             this.hslClock6.Text = "hslClock6";
+            this.hslClock6.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // hslClock5
             // 
@@ -164,6 +169,7 @@
             this.hslClock5.Size = new System.Drawing.Size(179, 190);
             this.hslClock5.TabIndex = 1;
             this.hslClock5.Text = "hslClock5";
+            this.hslClock5.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // hslClock4
             // 
@@ -177,11 +183,13 @@
             this.hslClock4.Size = new System.Drawing.Size(179, 190);
             this.hslClock4.TabIndex = 0;
             this.hslClock4.Text = "hslClock4";
+            this.hslClock4.Click += new System.EventHandler(this.HslClock1_Click);
             // 
             // FormClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

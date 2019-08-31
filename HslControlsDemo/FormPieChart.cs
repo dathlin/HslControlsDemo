@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormPieChart : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormPieChart : FormContent
     {
         public FormPieChart( )
         {
@@ -58,5 +58,10 @@ namespace HslControlsDemo
         private HslControls.HslPieChart[] charts = new HslControls.HslPieChart[5];
         private Random random = new Random( );
         private Timer timerTick = null;
+
+        private void HslPieChart1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

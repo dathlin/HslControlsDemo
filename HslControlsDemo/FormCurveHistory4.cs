@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory4 : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormCurveHistory4 : FormContent
     {
         public FormCurveHistory4( )
         {
@@ -191,6 +191,11 @@ namespace HslControlsDemo
         {
             hslCurveHistory1.RemoveAllMarkMouseSection( );
             hslCurveHistory1.RenderCurveUI( );
+        }
+
+        private void HslCurveHistory1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

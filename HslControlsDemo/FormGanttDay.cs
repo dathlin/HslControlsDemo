@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGanttDay : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormGanttDay : FormContent
     {
         public FormGanttDay( )
         {
@@ -65,5 +65,10 @@ namespace HslControlsDemo
 
         private Timer timer;
         private Random random = new Random( );
+
+        private void HslGanttChart1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

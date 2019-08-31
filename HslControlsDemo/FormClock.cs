@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormClock : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormClock : FormContent
     {
         public FormClock( )
         {
             InitializeComponent( );
+        }
+
+        private void HslClock1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

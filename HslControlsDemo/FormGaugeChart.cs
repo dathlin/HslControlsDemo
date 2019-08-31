@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGaugeChart : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormGaugeChart : FormContent
     {
         public FormGaugeChart( )
         {
@@ -34,5 +34,10 @@ namespace HslControlsDemo
 
         private Timer timer;
         private Random random;
+
+        private void HslGaugeChart1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

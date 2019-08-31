@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormValves : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormValves : FormContent
     {
         public FormValves( )
         {
@@ -28,6 +28,11 @@ namespace HslControlsDemo
             // 阀门关
             hslPipeLine6.MoveSpeed = 0.0f;
             hslValves6.EdgeColor = Color.Red;
+        }
+
+        private void HslValves1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

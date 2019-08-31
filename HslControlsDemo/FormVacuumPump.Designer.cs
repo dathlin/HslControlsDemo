@@ -41,7 +41,6 @@
             this.hslVacuumPump1 = new HslControls.HslVacuumPump();
             this.label6 = new System.Windows.Forms.Label();
             this.hslVacuumPump7 = new HslControls.HslVacuumPump();
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -103,6 +102,7 @@
             this.hslVacuumPump6.Size = new System.Drawing.Size(190, 117);
             this.hslVacuumPump6.TabIndex = 10;
             this.hslVacuumPump6.Text = "hslVacuumPump6";
+            this.hslVacuumPump6.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // hslVacuumPump5
             // 
@@ -116,6 +116,7 @@
             this.hslVacuumPump5.Size = new System.Drawing.Size(114, 162);
             this.hslVacuumPump5.TabIndex = 4;
             this.hslVacuumPump5.Text = "hslVacuumPump5";
+            this.hslVacuumPump5.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // hslVacuumPump4
             // 
@@ -129,6 +130,7 @@
             this.hslVacuumPump4.Size = new System.Drawing.Size(114, 162);
             this.hslVacuumPump4.TabIndex = 3;
             this.hslVacuumPump4.Text = "hslVacuumPump4";
+            this.hslVacuumPump4.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // hslVacuumPump3
             // 
@@ -142,6 +144,7 @@
             this.hslVacuumPump3.Size = new System.Drawing.Size(114, 162);
             this.hslVacuumPump3.TabIndex = 2;
             this.hslVacuumPump3.Text = "hslVacuumPump3";
+            this.hslVacuumPump3.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // hslVacuumPump2
             // 
@@ -155,6 +158,7 @@
             this.hslVacuumPump2.Size = new System.Drawing.Size(114, 162);
             this.hslVacuumPump2.TabIndex = 1;
             this.hslVacuumPump2.Text = "hslVacuumPump2";
+            this.hslVacuumPump2.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // hslVacuumPump1
             // 
@@ -167,6 +171,7 @@
             this.hslVacuumPump1.Size = new System.Drawing.Size(114, 162);
             this.hslVacuumPump1.TabIndex = 0;
             this.hslVacuumPump1.Text = "hslVacuumPump1";
+            this.hslVacuumPump1.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // label6
             // 
@@ -188,15 +193,7 @@
             this.hslVacuumPump7.Size = new System.Drawing.Size(217, 318);
             this.hslVacuumPump7.TabIndex = 12;
             this.hslVacuumPump7.Text = "hslVacuumPump7";
-            // 
-            // propertyGrid1
-            // 
-            this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.propertyGrid1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.propertyGrid1.Location = new System.Drawing.Point(693, 0);
-            this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(311, 645);
-            this.propertyGrid1.TabIndex = 13;
+            this.hslVacuumPump7.Click += new System.EventHandler(this.HslVacuumPump1_Click);
             // 
             // label7
             // 
@@ -211,9 +208,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.propertyGrid1);
             this.Controls.Add(this.hslVacuumPump7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.hslVacuumPump6);
@@ -251,7 +248,6 @@
         private HslControls.HslVacuumPump hslVacuumPump6;
         private System.Windows.Forms.Label label6;
         private HslControls.HslVacuumPump hslVacuumPump7;
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.Label label7;
     }
 }

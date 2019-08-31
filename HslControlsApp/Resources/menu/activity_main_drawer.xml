@@ -92,5 +92,9 @@
         android:id="@+id/nav_HslVacuumPump"
         android:icon="@drawable/ic_menu_slideshow"
         android:title="HslVacuumPump" />
+      <item
+          android:id="@+id/nav_HslMoveText"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="HslMoveText" />
     </group>
 </menu>

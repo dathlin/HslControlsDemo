@@ -112,6 +112,7 @@
             this.hslProgress6.TabIndex = 8;
             this.hslProgress6.UseAnimation = true;
             this.hslProgress6.Value = 20;
+            this.hslProgress6.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress5
             // 
@@ -125,6 +126,7 @@
             this.hslProgress5.Size = new System.Drawing.Size(509, 10);
             this.hslProgress5.TabIndex = 7;
             this.hslProgress5.Value = 20;
+            this.hslProgress5.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // label2
             // 
@@ -147,6 +149,7 @@
             this.hslProgress4.Size = new System.Drawing.Size(509, 10);
             this.hslProgress4.TabIndex = 4;
             this.hslProgress4.Value = 20;
+            this.hslProgress4.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // label1
             // 
@@ -168,6 +171,7 @@
             this.hslProgress3.Size = new System.Drawing.Size(509, 18);
             this.hslProgress3.TabIndex = 2;
             this.hslProgress3.Value = 80;
+            this.hslProgress3.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress2
             // 
@@ -180,6 +184,7 @@
             this.hslProgress2.Size = new System.Drawing.Size(509, 10);
             this.hslProgress2.TabIndex = 1;
             this.hslProgress2.Value = 20;
+            this.hslProgress2.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress1
             // 
@@ -189,6 +194,7 @@
             this.hslProgress1.ProgressStyle = HslControls.HslProgressStyle.Horizontal;
             this.hslProgress1.Size = new System.Drawing.Size(509, 10);
             this.hslProgress1.TabIndex = 0;
+            this.hslProgress1.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // groupBox2
             // 
@@ -247,6 +253,7 @@
             this.hslProgressLine13.Size = new System.Drawing.Size(142, 130);
             this.hslProgressLine13.TabIndex = 15;
             this.hslProgressLine13.UseAnimation = true;
+            this.hslProgressLine13.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine12
             // 
@@ -256,6 +263,7 @@
             this.hslProgressLine12.ProgressStyle = HslControls.HslProgressStyle.Circular;
             this.hslProgressLine12.Size = new System.Drawing.Size(142, 130);
             this.hslProgressLine12.TabIndex = 14;
+            this.hslProgressLine12.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine11
             // 
@@ -264,6 +272,7 @@
             this.hslProgressLine11.ProgressStyle = HslControls.HslProgressStyle.Circular;
             this.hslProgressLine11.Size = new System.Drawing.Size(142, 130);
             this.hslProgressLine11.TabIndex = 13;
+            this.hslProgressLine11.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // label5
             // 
@@ -291,6 +300,7 @@
             this.hslProgressLine5.Size = new System.Drawing.Size(509, 11);
             this.hslProgressLine5.TabIndex = 10;
             this.hslProgressLine5.UseAnimation = true;
+            this.hslProgressLine5.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine4
             // 
@@ -299,6 +309,7 @@
             this.hslProgressLine4.Name = "hslProgressLine4";
             this.hslProgressLine4.Size = new System.Drawing.Size(509, 11);
             this.hslProgressLine4.TabIndex = 9;
+            this.hslProgressLine4.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine3
             // 
@@ -308,6 +319,7 @@
             this.hslProgressLine3.ProgressColor = System.Drawing.Color.ForestGreen;
             this.hslProgressLine3.Size = new System.Drawing.Size(509, 19);
             this.hslProgressLine3.TabIndex = 8;
+            this.hslProgressLine3.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine2
             // 
@@ -318,6 +330,7 @@
             this.hslProgressLine2.ProgressColor = System.Drawing.Color.ForestGreen;
             this.hslProgressLine2.Size = new System.Drawing.Size(509, 11);
             this.hslProgressLine2.TabIndex = 7;
+            this.hslProgressLine2.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine1
             // 
@@ -326,6 +339,7 @@
             this.hslProgressLine1.Name = "hslProgressLine1";
             this.hslProgressLine1.Size = new System.Drawing.Size(509, 11);
             this.hslProgressLine1.TabIndex = 6;
+            this.hslProgressLine1.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // groupBox3
             // 
@@ -362,6 +376,7 @@
             this.hslProgress11.TabIndex = 7;
             this.hslProgress11.UseAnimation = true;
             this.hslProgress11.Value = 60;
+            this.hslProgress11.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress10
             // 
@@ -373,6 +388,7 @@
             this.hslProgress10.Size = new System.Drawing.Size(27, 509);
             this.hslProgress10.TabIndex = 6;
             this.hslProgress10.Value = 60;
+            this.hslProgress10.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress9
             // 
@@ -385,6 +401,7 @@
             this.hslProgress9.Size = new System.Drawing.Size(30, 567);
             this.hslProgress9.TabIndex = 5;
             this.hslProgress9.Value = 60;
+            this.hslProgress9.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress8
             // 
@@ -397,6 +414,7 @@
             this.hslProgress8.Size = new System.Drawing.Size(17, 567);
             this.hslProgress8.TabIndex = 4;
             this.hslProgress8.Value = 80;
+            this.hslProgress8.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgress7
             // 
@@ -408,6 +426,7 @@
             this.hslProgress7.Size = new System.Drawing.Size(30, 567);
             this.hslProgress7.TabIndex = 3;
             this.hslProgress7.Value = 60;
+            this.hslProgress7.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // groupBox4
             // 
@@ -435,6 +454,7 @@
             this.hslProgressLine10.Size = new System.Drawing.Size(25, 521);
             this.hslProgressLine10.TabIndex = 13;
             this.hslProgressLine10.UseAnimation = true;
+            this.hslProgressLine10.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine9
             // 
@@ -446,6 +466,7 @@
             this.hslProgressLine9.ProgressStyle = HslControls.HslProgressStyle.Vertical;
             this.hslProgressLine9.Size = new System.Drawing.Size(25, 521);
             this.hslProgressLine9.TabIndex = 12;
+            this.hslProgressLine9.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // label7
             // 
@@ -465,6 +486,7 @@
             this.hslProgressLine8.Size = new System.Drawing.Size(25, 550);
             this.hslProgressLine8.TabIndex = 9;
             this.hslProgressLine8.Value = 80;
+            this.hslProgressLine8.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine7
             // 
@@ -475,6 +497,7 @@
             this.hslProgressLine7.ProgressStyle = HslControls.HslProgressStyle.Vertical;
             this.hslProgressLine7.Size = new System.Drawing.Size(16, 550);
             this.hslProgressLine7.TabIndex = 8;
+            this.hslProgressLine7.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // hslProgressLine6
             // 
@@ -484,11 +507,13 @@
             this.hslProgressLine6.ProgressStyle = HslControls.HslProgressStyle.Vertical;
             this.hslProgressLine6.Size = new System.Drawing.Size(16, 550);
             this.hslProgressLine6.TabIndex = 7;
+            this.hslProgressLine6.Click += new System.EventHandler(this.HslProgress3_Click);
             // 
             // FormProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1049, 618);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

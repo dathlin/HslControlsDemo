@@ -10,7 +10,7 @@ using HslControls;
 
 namespace HslControlsDemo
 {
-    public partial class FormPipeLineTest : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormPipeLineTest : FormContent
     {
         public FormPipeLineTest( )
         {
@@ -84,6 +84,11 @@ namespace HslControlsDemo
             {
                 MessageBox.Show( "速度值输入错误！" );
             }
+        }
+
+        private void HslPipeLine22_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

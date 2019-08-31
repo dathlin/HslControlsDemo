@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormBarChart : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormBarChart : FormContent
     {
         public FormBarChart( )
         {
@@ -44,9 +44,21 @@ namespace HslControlsDemo
             // 此处将小于1000的和大于1000的颜色区分开发
             hslBarChart7.SetDataSource( month.ToArray( ), days.ToArray( ), month.Select( m => m < 1000 ? Color.Orchid : Color.Gold ).ToArray( ) );
             hslBarChart7.AddLeftAuxiliary( 1000, Color.Yellow );
+
+
+
+            //foreach(var control in components.Components)
+            //{
+            //    control
+            //}
         }
 
 
         private Random random = new Random( );
+
+        private void HslBarChart1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

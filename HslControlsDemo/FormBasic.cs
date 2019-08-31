@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormBasic : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormBasic : FormContent
     {
         public FormBasic( )
         {
@@ -24,6 +24,11 @@ namespace HslControlsDemo
         private void hslSwitch1_OnSwitchChanged( object arg1, bool arg2 )
         {
             label2.Text = "状态：" + arg2;
+        }
+
+        private void HslButton1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

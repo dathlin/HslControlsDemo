@@ -51,6 +51,7 @@
             this.hslMachineCenter6.Size = new System.Drawing.Size(432, 377);
             this.hslMachineCenter6.TabIndex = 5;
             this.hslMachineCenter6.Text = "hslMachineCenter6";
+            this.hslMachineCenter6.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // hslMachineCenter5
             // 
@@ -60,6 +61,7 @@
             this.hslMachineCenter5.Size = new System.Drawing.Size(432, 377);
             this.hslMachineCenter5.TabIndex = 4;
             this.hslMachineCenter5.Text = "hslMachineCenter5";
+            this.hslMachineCenter5.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // hslMachineCenter4
             // 
@@ -70,6 +72,7 @@
             this.hslMachineCenter4.Size = new System.Drawing.Size(255, 136);
             this.hslMachineCenter4.TabIndex = 3;
             this.hslMachineCenter4.Text = "hslMachineCenter4";
+            this.hslMachineCenter4.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // hslMachineCenter3
             // 
@@ -79,6 +82,7 @@
             this.hslMachineCenter3.Size = new System.Drawing.Size(255, 136);
             this.hslMachineCenter3.TabIndex = 2;
             this.hslMachineCenter3.Text = "hslMachineCenter3";
+            this.hslMachineCenter3.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // hslMachineCenter2
             // 
@@ -88,6 +92,7 @@
             this.hslMachineCenter2.Size = new System.Drawing.Size(125, 127);
             this.hslMachineCenter2.TabIndex = 1;
             this.hslMachineCenter2.Text = "hslMachineCenter2";
+            this.hslMachineCenter2.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // hslMachineCenter1
             // 
@@ -96,6 +101,7 @@
             this.hslMachineCenter1.Size = new System.Drawing.Size(81, 77);
             this.hslMachineCenter1.TabIndex = 0;
             this.hslMachineCenter1.Text = "hslMachineCenter1";
+            this.hslMachineCenter1.Click += new System.EventHandler(this.HslMachineCenter1_Click);
             // 
             // label1
             // 
@@ -155,6 +161,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

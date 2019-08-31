@@ -48,6 +48,7 @@
             this.hslPanelText1.TabIndex = 0;
             this.hslPanelText1.Text = "hslPanelText1";
             this.hslPanelText1.TextOffect = 20;
+            this.hslPanelText1.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslPanelText2
             // 
@@ -59,6 +60,7 @@
             this.hslPanelText2.Text = "hslPanelText2";
             this.hslPanelText2.TextOffect = 20;
             this.hslPanelText2.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.hslPanelText2.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslPanelText3
             // 
@@ -72,6 +74,7 @@
             this.hslPanelText3.Text = "产量信息";
             this.hslPanelText3.TextOffect = 20;
             this.hslPanelText3.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.hslPanelText3.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslBarChart1
             // 
@@ -91,6 +94,7 @@
             this.hslPanelHead1.Size = new System.Drawing.Size(485, 179);
             this.hslPanelHead1.TabIndex = 3;
             this.hslPanelHead1.Text = "hslPanelHead1";
+            this.hslPanelHead1.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslPanelHead2
             // 
@@ -100,6 +104,7 @@
             this.hslPanelHead2.TabIndex = 4;
             this.hslPanelHead2.Text = "hslPanelHead2";
             this.hslPanelHead2.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hslPanelHead2.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslPanelHead3
             // 
@@ -112,6 +117,7 @@
             this.hslPanelHead3.TabIndex = 5;
             this.hslPanelHead3.Text = "产量信息";
             this.hslPanelHead3.ThemeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hslPanelHead3.Click += new System.EventHandler(this.HslPanelText1_Click);
             // 
             // hslBarChart2
             // 
@@ -127,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslPanelHead3);
             this.Controls.Add(this.hslPanelHead2);

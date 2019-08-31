@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormLedDisplay : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormLedDisplay : FormContent
     {
         public FormLedDisplay( )
         {
@@ -100,6 +100,11 @@ namespace HslControlsDemo
             {
                 MessageBox.Show( "错误：" + ex.Message );
             }
+        }
+
+        private void HslLedDisplay1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

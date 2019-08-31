@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.1\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.2\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -83,6 +83,9 @@
     <Compile Include="WindowHslMotorTwo.xaml.cs">
       <DependentUpon>WindowHslMotorTwo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowHslMoveText.xaml.cs">
+      <DependentUpon>WindowHslMoveText.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHslPipeLine.xaml.cs">
       <DependentUpon>WindowHslPipeLine.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,9 @@
     </Compile>
     <Compile Include="WindowHslWaterBox.xaml.cs">
       <DependentUpon>WindowHslWaterBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslWaterPump.xaml.cs">
+      <DependentUpon>WindowHslWaterPump.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowSizeTest.xaml.cs">
       <DependentUpon>WindowSizeTest.xaml</DependentUpon>
@@ -145,6 +151,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowHslMoveText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowHslPipeLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -162,6 +172,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslWaterBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslWaterPump.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

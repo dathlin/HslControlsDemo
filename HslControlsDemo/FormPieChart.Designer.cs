@@ -42,14 +42,16 @@
             this.hslPieChart5.Name = "hslPieChart5";
             this.hslPieChart5.Size = new System.Drawing.Size(224, 233);
             this.hslPieChart5.TabIndex = 4;
+            this.hslPieChart5.Click += new System.EventHandler(this.HslPieChart1_Click);
             // 
             // hslPieChart4
             // 
             this.hslPieChart4.BackColor = System.Drawing.Color.Transparent;
-            this.hslPieChart4.Location = new System.Drawing.Point(154, 326);
+            this.hslPieChart4.Location = new System.Drawing.Point(134, 326);
             this.hslPieChart4.Name = "hslPieChart4";
-            this.hslPieChart4.Size = new System.Drawing.Size(224, 233);
+            this.hslPieChart4.Size = new System.Drawing.Size(327, 307);
             this.hslPieChart4.TabIndex = 3;
+            this.hslPieChart4.Click += new System.EventHandler(this.HslPieChart1_Click);
             // 
             // hslPieChart3
             // 
@@ -58,6 +60,7 @@
             this.hslPieChart3.Name = "hslPieChart3";
             this.hslPieChart3.Size = new System.Drawing.Size(224, 233);
             this.hslPieChart3.TabIndex = 2;
+            this.hslPieChart3.Click += new System.EventHandler(this.HslPieChart1_Click);
             // 
             // hslPieChart2
             // 
@@ -67,19 +70,22 @@
             this.hslPieChart2.Name = "hslPieChart2";
             this.hslPieChart2.Size = new System.Drawing.Size(224, 233);
             this.hslPieChart2.TabIndex = 1;
+            this.hslPieChart2.Click += new System.EventHandler(this.HslPieChart1_Click);
             // 
             // hslPieChart1
             // 
             this.hslPieChart1.BackColor = System.Drawing.Color.Transparent;
-            this.hslPieChart1.Location = new System.Drawing.Point(40, 42);
+            this.hslPieChart1.Location = new System.Drawing.Point(47, 70);
             this.hslPieChart1.Name = "hslPieChart1";
-            this.hslPieChart1.Size = new System.Drawing.Size(224, 233);
+            this.hslPieChart1.Size = new System.Drawing.Size(257, 250);
             this.hslPieChart1.TabIndex = 0;
+            this.hslPieChart1.Click += new System.EventHandler(this.HslPieChart1_Click);
             // 
             // FormPieChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslPieChart5);
             this.Controls.Add(this.hslPieChart4);

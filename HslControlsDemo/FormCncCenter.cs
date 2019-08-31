@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormCncCenter : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormCncCenter : FormContent
     {
         public FormCncCenter( )
         {
@@ -39,6 +39,11 @@ namespace HslControlsDemo
             {
                 MessageBox.Show( "进度输入错误！需要为数值，0-100" );
             }
+        }
+
+        private void HslCncCenter1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

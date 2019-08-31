@@ -99,6 +99,7 @@
             this.hmiLedSingle1.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle1.TextVisible = false;
             this.hmiLedSingle1.Value = true;
+            this.hmiLedSingle1.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle2
             // 
@@ -140,6 +141,7 @@
             this.hmiLedSingle2.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle2.TextVisible = false;
             this.hmiLedSingle2.Value = true;
+            this.hmiLedSingle2.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle3
             // 
@@ -181,6 +183,7 @@
             this.hmiLedSingle3.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle3.TextVisible = false;
             this.hmiLedSingle3.Value = true;
+            this.hmiLedSingle3.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle4
             // 
@@ -222,6 +225,7 @@
             this.hmiLedSingle4.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle4.TextVisible = false;
             this.hmiLedSingle4.Value = true;
+            this.hmiLedSingle4.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle5
             // 
@@ -263,6 +267,7 @@
             this.hmiLedSingle5.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle5.TextVisible = false;
             this.hmiLedSingle5.Value = false;
+            this.hmiLedSingle5.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle6
             // 
@@ -304,6 +309,7 @@
             this.hmiLedSingle6.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle6.TextVisible = true;
             this.hmiLedSingle6.Value = true;
+            this.hmiLedSingle6.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle7
             // 
@@ -345,6 +351,7 @@
             this.hmiLedSingle7.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle7.TextVisible = false;
             this.hmiLedSingle7.Value = true;
+            this.hmiLedSingle7.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle8
             // 
@@ -386,6 +393,7 @@
             this.hmiLedSingle8.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle8.TextVisible = false;
             this.hmiLedSingle8.Value = true;
+            this.hmiLedSingle8.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle9
             // 
@@ -427,6 +435,7 @@
             this.hmiLedSingle9.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle9.TextVisible = false;
             this.hmiLedSingle9.Value = true;
+            this.hmiLedSingle9.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle10
             // 
@@ -468,6 +477,7 @@
             this.hmiLedSingle10.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle10.TextVisible = false;
             this.hmiLedSingle10.Value = true;
+            this.hmiLedSingle10.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle11
             // 
@@ -509,6 +519,7 @@
             this.hmiLedSingle11.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle11.TextVisible = false;
             this.hmiLedSingle11.Value = true;
+            this.hmiLedSingle11.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle12
             // 
@@ -550,6 +561,7 @@
             this.hmiLedSingle12.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle12.TextVisible = false;
             this.hmiLedSingle12.Value = true;
+            this.hmiLedSingle12.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle13
             // 
@@ -591,6 +603,7 @@
             this.hmiLedSingle13.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle13.TextVisible = false;
             this.hmiLedSingle13.Value = true;
+            this.hmiLedSingle13.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle14
             // 
@@ -632,6 +645,7 @@
             this.hmiLedSingle14.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle14.TextVisible = false;
             this.hmiLedSingle14.Value = true;
+            this.hmiLedSingle14.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle15
             // 
@@ -673,6 +687,7 @@
             this.hmiLedSingle15.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle15.TextVisible = false;
             this.hmiLedSingle15.Value = true;
+            this.hmiLedSingle15.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle16
             // 
@@ -714,6 +729,7 @@
             this.hmiLedSingle16.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle16.TextVisible = false;
             this.hmiLedSingle16.Value = true;
+            this.hmiLedSingle16.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle17
             // 
@@ -755,6 +771,7 @@
             this.hmiLedSingle17.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle17.TextVisible = false;
             this.hmiLedSingle17.Value = true;
+            this.hmiLedSingle17.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle18
             // 
@@ -796,6 +813,7 @@
             this.hmiLedSingle18.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle18.TextVisible = false;
             this.hmiLedSingle18.Value = false;
+            this.hmiLedSingle18.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // hmiLedSingle19
             // 
@@ -837,11 +855,13 @@
             this.hmiLedSingle19.TextPosition = HslControls.HMI.DAS_TextPosStyle.TPS_Left;
             this.hmiLedSingle19.TextVisible = false;
             this.hmiLedSingle19.Value = false;
+            this.hmiLedSingle19.Click += new System.EventHandler(this.HmiLedSingle19_Click);
             // 
             // FormHMILedSingle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hmiLedSingle19);
             this.Controls.Add(this.hmiLedSingle18);

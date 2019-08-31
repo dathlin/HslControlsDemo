@@ -202,6 +202,11 @@ namespace HslControlsApp
                 Intent i = new Intent( this, typeof( Activity_HslVacuumPump ) );
                 this.StartActivity( i );
             }
+            else if (id == Resource.Id.nav_HslMoveText)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslMoveText ) );
+                this.StartActivity( i );
+            }
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);

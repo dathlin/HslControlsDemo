@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslMoveText
+        android:layout_width="match_parent"
+        android:layout_height="60px">
+
+    </HslControls.HslMoveText>
+
+    
+    <HslControls.HslMoveText
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        app:text="这是一个示例的数据信息">
+    </HslControls.HslMoveText>
+    
+    <HslControls.HslMoveText
+        android:layout_marginTop="200px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#FF00"
+        app:textSize="50"
+        app:text="这是一个示例的数据信息">
+    </HslControls.HslMoveText>
+
+    
+    <HslControls.HslMoveText
+        android:layout_marginTop="300px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#FF00"
+        app:textSize="50"
+        app:moveSpeed="5"
+        app:text="Some Text Example">
+    </HslControls.HslMoveText>
+
+
+    <HslControls.HslMoveText
+        android:layout_marginTop="400px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#FF00FFFF"
+        app:textSize="50"
+        app:moveSpeed="5"
+        app:textColor="@android:color/holo_blue_light"
+        app:text="Some Text Example">
+    </HslControls.HslMoveText>
+</RelativeLayout>

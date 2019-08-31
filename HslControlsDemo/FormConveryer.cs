@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormConveryer : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormConveryer : FormContent
     {
         public FormConveryer( )
         {
@@ -38,6 +38,11 @@ namespace HslControlsDemo
             hslConveyer4.MoveSpeed = -1;
             hslConveyer5.MoveSpeed = -1;
             hslConveyer6.MoveSpeed = -1;
+        }
+
+        private void HslConveyer8_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

@@ -46,6 +46,12 @@
             this.hslLedDisplay9 = new HslControls.HslLedDisplay();
             this.hslLedDisplay3 = new HslControls.HslLedDisplay();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -56,12 +62,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.hslLedDisplay7 = new HslControls.HslLedDisplay();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -90,6 +90,7 @@
             this.hslLedDisplay1.Name = "hslLedDisplay1";
             this.hslLedDisplay1.Size = new System.Drawing.Size(974, 70);
             this.hslLedDisplay1.TabIndex = 1;
+            this.hslLedDisplay1.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // groupBox2
             // 
@@ -118,6 +119,7 @@
             this.hslLedDisplay8.Name = "hslLedDisplay8";
             this.hslLedDisplay8.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay8.TabIndex = 4;
+            this.hslLedDisplay8.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay6
             // 
@@ -132,6 +134,7 @@
             this.hslLedDisplay6.Name = "hslLedDisplay6";
             this.hslLedDisplay6.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay6.TabIndex = 3;
+            this.hslLedDisplay6.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay5
             // 
@@ -146,6 +149,7 @@
             this.hslLedDisplay5.Name = "hslLedDisplay5";
             this.hslLedDisplay5.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay5.TabIndex = 2;
+            this.hslLedDisplay5.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay4
             // 
@@ -159,6 +163,7 @@
             this.hslLedDisplay4.Name = "hslLedDisplay4";
             this.hslLedDisplay4.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay4.TabIndex = 1;
+            this.hslLedDisplay4.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay2
             // 
@@ -172,6 +177,7 @@
             this.hslLedDisplay2.Name = "hslLedDisplay2";
             this.hslLedDisplay2.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay2.TabIndex = 0;
+            this.hslLedDisplay2.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // groupBox3
             // 
@@ -204,6 +210,7 @@
             this.hslLedDisplay15.Size = new System.Drawing.Size(183, 33);
             this.hslLedDisplay15.TabIndex = 10;
             this.hslLedDisplay15.UnitText = "米/秒";
+            this.hslLedDisplay15.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay14
             // 
@@ -219,6 +226,7 @@
             this.hslLedDisplay14.Size = new System.Drawing.Size(191, 33);
             this.hslLedDisplay14.TabIndex = 9;
             this.hslLedDisplay14.UnitText = "Mpa";
+            this.hslLedDisplay14.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay13
             // 
@@ -234,6 +242,7 @@
             this.hslLedDisplay13.Size = new System.Drawing.Size(169, 33);
             this.hslLedDisplay13.TabIndex = 5;
             this.hslLedDisplay13.UnitText = "℃";
+            this.hslLedDisplay13.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay12
             // 
@@ -248,6 +257,7 @@
             this.hslLedDisplay12.Name = "hslLedDisplay12";
             this.hslLedDisplay12.Size = new System.Drawing.Size(113, 33);
             this.hslLedDisplay12.TabIndex = 8;
+            this.hslLedDisplay12.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay11
             // 
@@ -262,6 +272,7 @@
             this.hslLedDisplay11.Name = "hslLedDisplay11";
             this.hslLedDisplay11.Size = new System.Drawing.Size(171, 33);
             this.hslLedDisplay11.TabIndex = 7;
+            this.hslLedDisplay11.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay10
             // 
@@ -276,6 +287,7 @@
             this.hslLedDisplay10.Name = "hslLedDisplay10";
             this.hslLedDisplay10.Size = new System.Drawing.Size(155, 33);
             this.hslLedDisplay10.TabIndex = 6;
+            this.hslLedDisplay10.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay9
             // 
@@ -290,6 +302,7 @@
             this.hslLedDisplay9.Name = "hslLedDisplay9";
             this.hslLedDisplay9.Size = new System.Drawing.Size(160, 33);
             this.hslLedDisplay9.TabIndex = 5;
+            this.hslLedDisplay9.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // hslLedDisplay3
             // 
@@ -303,6 +316,7 @@
             this.hslLedDisplay3.Name = "hslLedDisplay3";
             this.hslLedDisplay3.Size = new System.Drawing.Size(741, 170);
             this.hslLedDisplay3.TabIndex = 0;
+            this.hslLedDisplay3.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // groupBox4
             // 
@@ -328,6 +342,59 @@
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "X";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(862, 151);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 26);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "确定";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(709, 153);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(147, 23);
+            this.textBox5.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(599, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "单位信息：";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(862, 120);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 26);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "确定";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(709, 122);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(147, 23);
+            this.textBox4.TabIndex = 11;
+            this.textBox4.Text = "10";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(599, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "左右宽度：";
             // 
             // button3
             // 
@@ -422,64 +489,13 @@
             this.hslLedDisplay7.Name = "hslLedDisplay7";
             this.hslLedDisplay7.Size = new System.Drawing.Size(563, 151);
             this.hslLedDisplay7.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(862, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 26);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "确定";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(709, 122);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(147, 23);
-            this.textBox4.TabIndex = 11;
-            this.textBox4.Text = "10";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(599, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "左右宽度：";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(862, 151);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 26);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "确定";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(709, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(147, 23);
-            this.textBox5.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(599, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "单位信息：";
+            this.hslLedDisplay7.Click += new System.EventHandler(this.HslLedDisplay1_Click);
             // 
             // FormLedDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

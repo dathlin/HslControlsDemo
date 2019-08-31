@@ -67,6 +67,7 @@
             this.hslGaugeChart1.Name = "hslGaugeChart1";
             this.hslGaugeChart1.Size = new System.Drawing.Size(220, 120);
             this.hslGaugeChart1.TabIndex = 0;
+            this.hslGaugeChart1.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox2
             // 
@@ -89,6 +90,7 @@
             this.hslGaugeChart2.ValueAlarmMax = 6D;
             this.hslGaugeChart2.ValueAlarmMin = 0D;
             this.hslGaugeChart2.ValueMax = 8D;
+            this.hslGaugeChart2.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox3
             // 
@@ -114,6 +116,7 @@
             this.hslGaugeChart3.ValueAlarmMax = 6D;
             this.hslGaugeChart3.ValueAlarmMin = 0D;
             this.hslGaugeChart3.ValueMax = 8D;
+            this.hslGaugeChart3.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox4
             // 
@@ -139,6 +142,7 @@
             this.hslGaugeChart4.ValueAlarmMax = 6D;
             this.hslGaugeChart4.ValueAlarmMin = 0D;
             this.hslGaugeChart4.ValueMax = 8D;
+            this.hslGaugeChart4.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox5
             // 
@@ -158,6 +162,7 @@
             this.hslGaugeChart5.Size = new System.Drawing.Size(214, 191);
             this.hslGaugeChart5.TabIndex = 0;
             this.hslGaugeChart5.ValueMax = 200D;
+            this.hslGaugeChart5.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox6
             // 
@@ -177,11 +182,12 @@
             this.hslGaugeChart6.ForeColor = System.Drawing.Color.White;
             this.hslGaugeChart6.GaugeBorder = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.hslGaugeChart6.Location = new System.Drawing.Point(0, 20);
-            this.hslGaugeChart6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hslGaugeChart6.Margin = new System.Windows.Forms.Padding(4);
             this.hslGaugeChart6.Name = "hslGaugeChart6";
             this.hslGaugeChart6.PointerColor = System.Drawing.Color.Lime;
             this.hslGaugeChart6.Size = new System.Drawing.Size(332, 180);
             this.hslGaugeChart6.TabIndex = 0;
+            this.hslGaugeChart6.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // groupBox7
             // 
@@ -203,11 +209,13 @@
             this.hslGaugeChart7.Size = new System.Drawing.Size(531, 292);
             this.hslGaugeChart7.TabIndex = 0;
             this.hslGaugeChart7.UnitText = "℃";
+            this.hslGaugeChart7.Click += new System.EventHandler(this.HslGaugeChart1_Click);
             // 
             // FormGaugeChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);

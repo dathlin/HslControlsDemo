@@ -136,6 +136,7 @@
             this.hslCurve6.Name = "hslCurve6";
             this.hslCurve6.Size = new System.Drawing.Size(429, 172);
             this.hslCurve6.TabIndex = 5;
+            this.hslCurve6.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve5
             // 
@@ -150,6 +151,7 @@
             this.hslCurve5.TabIndex = 4;
             this.hslCurve5.ValueMaxLeft = 0F;
             this.hslCurve5.ValueMinLeft = -100F;
+            this.hslCurve5.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve4
             // 
@@ -163,6 +165,7 @@
             this.hslCurve4.Title = "温度压力实时曲线图";
             this.hslCurve4.ValueMaxLeft = 200F;
             this.hslCurve4.ValueMaxRight = 5F;
+            this.hslCurve4.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve3
             // 
@@ -172,6 +175,7 @@
             this.hslCurve3.Name = "hslCurve3";
             this.hslCurve3.Size = new System.Drawing.Size(429, 172);
             this.hslCurve3.TabIndex = 2;
+            this.hslCurve3.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve1
             // 
@@ -185,11 +189,13 @@
             this.hslCurve1.StrechDataCountMax = 12;
             this.hslCurve1.TabIndex = 0;
             this.hslCurve1.Title = "销售数据";
+            this.hslCurve1.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // FormCurve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

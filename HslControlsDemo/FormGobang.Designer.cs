@@ -41,11 +41,13 @@
             this.hslGobang1.Name = "hslGobang1";
             this.hslGobang1.Size = new System.Drawing.Size(816, 545);
             this.hslGobang1.TabIndex = 0;
+            this.hslGobang1.Click += new System.EventHandler(this.HslGobang1_Click);
             // 
             // FormGobang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslGobang1);
             this.Name = "FormGobang";

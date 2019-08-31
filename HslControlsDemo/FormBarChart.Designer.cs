@@ -54,6 +54,7 @@
             this.hslBarChart7.Text = "hslBarChart7";
             this.hslBarChart7.Title = "月产量统计表";
             this.hslBarChart7.UseGradient = true;
+            this.hslBarChart7.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart6
             // 
@@ -70,6 +71,7 @@
             this.hslBarChart6.Text = "hslBarChart6";
             this.hslBarChart6.Title = "日产量统计表";
             this.hslBarChart6.UseGradient = true;
+            this.hslBarChart6.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart5
             // 
@@ -83,6 +85,7 @@
             this.hslBarChart5.TabIndex = 4;
             this.hslBarChart5.Text = "hslBarChart5";
             this.hslBarChart5.UseGradient = true;
+            this.hslBarChart5.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart4
             // 
@@ -96,6 +99,7 @@
             this.hslBarChart4.TabIndex = 3;
             this.hslBarChart4.Text = "hslBarChart4";
             this.hslBarChart4.UseGradient = true;
+            this.hslBarChart4.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart3
             // 
@@ -108,6 +112,7 @@
             this.hslBarChart3.Text = "hslBarChart3";
             this.hslBarChart3.Title = "测试的信息";
             this.hslBarChart3.UseGradient = true;
+            this.hslBarChart3.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart2
             // 
@@ -119,6 +124,7 @@
             this.hslBarChart2.Size = new System.Drawing.Size(324, 197);
             this.hslBarChart2.TabIndex = 1;
             this.hslBarChart2.Text = "hslBarChart2";
+            this.hslBarChart2.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // hslBarChart1
             // 
@@ -129,6 +135,7 @@
             this.hslBarChart1.Size = new System.Drawing.Size(308, 197);
             this.hslBarChart1.TabIndex = 0;
             this.hslBarChart1.Text = "hslBarChart1";
+            this.hslBarChart1.Click += new System.EventHandler(this.HslBarChart1_Click);
             // 
             // label1
             // 
@@ -143,6 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.hslBarChart7);

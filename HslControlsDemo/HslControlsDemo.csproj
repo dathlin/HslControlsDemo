@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.1\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.2\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -117,6 +117,9 @@
     </Compile>
     <Compile Include="FormCncCenter.designer.cs">
       <DependentUpon>FormCncCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContent.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormConveryer.cs">
       <SubType>Form</SubType>
@@ -232,11 +235,23 @@
     <Compile Include="FormMachineCenter.designer.cs">
       <DependentUpon>FormMachineCenter.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMotor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMotor.Designer.cs">
       <DependentUpon>FormMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoveText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoveText.designer.cs">
+      <DependentUpon>FormMoveText.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPanel.cs">
       <SubType>Form</SubType>
@@ -279,6 +294,12 @@
     </Compile>
     <Compile Include="FormProgress.Designer.cs">
       <DependentUpon>FormProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPropertySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPropertySetting.designer.cs">
+      <DependentUpon>FormPropertySetting.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPumpOne.cs">
       <SubType>Form</SubType>
@@ -420,8 +441,14 @@
     <EmbeddedResource Include="FormMachineCenter.resx">
       <DependentUpon>FormMachineCenter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMotor.resx">
       <DependentUpon>FormMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveText.resx">
+      <DependentUpon>FormMoveText.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPanel.resx">
       <DependentUpon>FormPanel.cs</DependentUpon>
@@ -443,6 +470,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProgress.resx">
       <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPropertySetting.resx">
+      <DependentUpon>FormPropertySetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPumpOne.resx">
       <DependentUpon>FormPumpOne.cs</DependentUpon>

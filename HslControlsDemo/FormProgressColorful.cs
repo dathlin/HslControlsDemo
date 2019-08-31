@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormProgressColorful : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class FormProgressColorful : FormContent
     {
         public FormProgressColorful( )
         {
@@ -38,5 +38,10 @@ namespace HslControlsDemo
 
         private Timer timer = new Timer( );
         private Random random = new Random( );
+
+        private void HslProgressColorful4_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

@@ -74,6 +74,7 @@
             this.hslConveyer10.Size = new System.Drawing.Size(406, 64);
             this.hslConveyer10.TabIndex = 6;
             this.hslConveyer10.Text = "hslConveyer10";
+            this.hslConveyer10.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer9
             // 
@@ -86,6 +87,7 @@
             this.hslConveyer9.Size = new System.Drawing.Size(242, 64);
             this.hslConveyer9.TabIndex = 5;
             this.hslConveyer9.Text = "hslConveyer9";
+            this.hslConveyer9.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer8
             // 
@@ -96,6 +98,7 @@
             this.hslConveyer8.Size = new System.Drawing.Size(262, 71);
             this.hslConveyer8.TabIndex = 4;
             this.hslConveyer8.Text = "hslConveyer8";
+            this.hslConveyer8.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer7
             // 
@@ -107,6 +110,7 @@
             this.hslConveyer7.Size = new System.Drawing.Size(290, 39);
             this.hslConveyer7.TabIndex = 3;
             this.hslConveyer7.Text = "hslConveyer7";
+            this.hslConveyer7.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer1
             // 
@@ -119,6 +123,7 @@
             this.hslConveyer1.Size = new System.Drawing.Size(242, 64);
             this.hslConveyer1.TabIndex = 0;
             this.hslConveyer1.Text = "hslConveyer1";
+            this.hslConveyer1.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer3
             // 
@@ -132,6 +137,7 @@
             this.hslConveyer3.Size = new System.Drawing.Size(322, 165);
             this.hslConveyer3.TabIndex = 2;
             this.hslConveyer3.Text = "hslConveyer3";
+            this.hslConveyer3.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer2
             // 
@@ -145,6 +151,7 @@
             this.hslConveyer2.Size = new System.Drawing.Size(188, 165);
             this.hslConveyer2.TabIndex = 1;
             this.hslConveyer2.Text = "hslConveyer2";
+            this.hslConveyer2.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // groupBox2
             // 
@@ -207,6 +214,7 @@
             this.hslConveyer4.Size = new System.Drawing.Size(242, 64);
             this.hslConveyer4.TabIndex = 3;
             this.hslConveyer4.Text = "hslConveyer4";
+            this.hslConveyer4.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer5
             // 
@@ -219,6 +227,7 @@
             this.hslConveyer5.Size = new System.Drawing.Size(309, 64);
             this.hslConveyer5.TabIndex = 5;
             this.hslConveyer5.Text = "hslConveyer5";
+            this.hslConveyer5.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // hslConveyer6
             // 
@@ -232,11 +241,13 @@
             this.hslConveyer6.Size = new System.Drawing.Size(188, 165);
             this.hslConveyer6.TabIndex = 4;
             this.hslConveyer6.Text = "hslConveyer6";
+            this.hslConveyer6.Click += new System.EventHandler(this.HslConveyer8_Click);
             // 
             // FormConveryer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox2);

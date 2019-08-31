@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslWaterPump"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslWaterPump" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslWaterPump Height="168" Width="360" Canvas.Left="51" Canvas.Top="31"/>
+        <WPF:HslWaterPump Height="168" Width="359" Canvas.Left="536" Canvas.Top="31" Value="True"/>
+        <WPF:HslWaterPump Height="343" Width="844" Canvas.Left="51" Canvas.Top="250" Value="True"/>
+
+    </Canvas>
+</Window>

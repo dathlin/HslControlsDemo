@@ -108,5 +108,17 @@ namespace HslControlsWpf
             WindowHslWaterBox window = new WindowHslWaterBox( );
             window.ShowDialog( );
         }
+
+        private void B_HslMoveText_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslMoveText window = new WindowHslMoveText( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslWaterPump_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslWaterPump window = new WindowHslWaterPump( );
+            window.ShowDialog( );
+        }
     }
 }

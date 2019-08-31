@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent( )
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormValves));
             this.hslValves2 = new HslControls.HslValves();
             this.hslPipeLine2 = new HslControls.HslPipeLine();
             this.hslValves1 = new HslControls.HslValves();
@@ -58,14 +59,17 @@
             this.hslValves2.Size = new System.Drawing.Size(66, 73);
             this.hslValves2.TabIndex = 4;
             this.hslValves2.Text = "阀门";
+            this.hslValves2.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine2
             // 
+            this.hslPipeLine2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine2.BackgroundImage")));
             this.hslPipeLine2.Location = new System.Drawing.Point(642, 12);
             this.hslPipeLine2.Name = "hslPipeLine2";
             this.hslPipeLine2.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine2.Size = new System.Drawing.Size(35, 250);
             this.hslPipeLine2.TabIndex = 3;
+            this.hslPipeLine2.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslValves1
             // 
@@ -75,13 +79,16 @@
             this.hslValves1.Size = new System.Drawing.Size(198, 153);
             this.hslValves1.TabIndex = 2;
             this.hslValves1.Text = "hslValves1";
+            this.hslValves1.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine1
             // 
+            this.hslPipeLine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine1.BackgroundImage")));
             this.hslPipeLine1.Location = new System.Drawing.Point(45, 72);
             this.hslPipeLine1.Name = "hslPipeLine1";
             this.hslPipeLine1.Size = new System.Drawing.Size(517, 79);
             this.hslPipeLine1.TabIndex = 1;
+            this.hslPipeLine1.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslValves3
             // 
@@ -92,14 +99,17 @@
             this.hslValves3.Size = new System.Drawing.Size(66, 73);
             this.hslValves3.TabIndex = 6;
             this.hslValves3.Text = "阀门";
+            this.hslValves3.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine3
             // 
+            this.hslPipeLine3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine3.BackgroundImage")));
             this.hslPipeLine3.Location = new System.Drawing.Point(727, 12);
             this.hslPipeLine3.Name = "hslPipeLine3";
             this.hslPipeLine3.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine3.Size = new System.Drawing.Size(35, 250);
             this.hslPipeLine3.TabIndex = 5;
+            this.hslPipeLine3.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslValves4
             // 
@@ -110,14 +120,17 @@
             this.hslValves4.Size = new System.Drawing.Size(66, 73);
             this.hslValves4.TabIndex = 8;
             this.hslValves4.Text = "阀门";
+            this.hslValves4.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine4
             // 
+            this.hslPipeLine4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine4.BackgroundImage")));
             this.hslPipeLine4.Location = new System.Drawing.Point(816, 12);
             this.hslPipeLine4.Name = "hslPipeLine4";
             this.hslPipeLine4.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine4.Size = new System.Drawing.Size(35, 250);
             this.hslPipeLine4.TabIndex = 7;
+            this.hslPipeLine4.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslValves5
             // 
@@ -128,14 +141,17 @@
             this.hslValves5.Size = new System.Drawing.Size(66, 73);
             this.hslValves5.TabIndex = 10;
             this.hslValves5.Text = "阀门";
+            this.hslValves5.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine5
             // 
+            this.hslPipeLine5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine5.BackgroundImage")));
             this.hslPipeLine5.Location = new System.Drawing.Point(903, 12);
             this.hslPipeLine5.Name = "hslPipeLine5";
             this.hslPipeLine5.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine5.Size = new System.Drawing.Size(35, 250);
             this.hslPipeLine5.TabIndex = 9;
+            this.hslPipeLine5.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // label1
             // 
@@ -191,21 +207,26 @@
             this.hslValves6.Size = new System.Drawing.Size(97, 86);
             this.hslValves6.TabIndex = 3;
             this.hslValves6.Text = "阀门";
+            this.hslValves6.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine6
             // 
+            this.hslPipeLine6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine6.BackgroundImage")));
             this.hslPipeLine6.Location = new System.Drawing.Point(59, 131);
             this.hslPipeLine6.Name = "hslPipeLine6";
             this.hslPipeLine6.PipeLineActive = true;
             this.hslPipeLine6.Size = new System.Drawing.Size(474, 42);
             this.hslPipeLine6.TabIndex = 2;
+            this.hslPipeLine6.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslPipeLine7
             // 
+            this.hslPipeLine7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine7.BackgroundImage")));
             this.hslPipeLine7.Location = new System.Drawing.Point(146, 222);
             this.hslPipeLine7.Name = "hslPipeLine7";
             this.hslPipeLine7.Size = new System.Drawing.Size(349, 22);
             this.hslPipeLine7.TabIndex = 13;
+            this.hslPipeLine7.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // hslValves7
             // 
@@ -214,11 +235,13 @@
             this.hslValves7.Name = "hslValves7";
             this.hslValves7.Size = new System.Drawing.Size(42, 45);
             this.hslValves7.TabIndex = 14;
+            this.hslValves7.Click += new System.EventHandler(this.HslValves1_Click);
             // 
             // FormValves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslValves7);
             this.Controls.Add(this.hslPipeLine7);

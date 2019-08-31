@@ -29,6 +29,7 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button42 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
@@ -74,12 +75,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.button42 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,6 +136,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "控件";
+            // 
+            // button42
+            // 
+            this.button42.Location = new System.Drawing.Point(374, 212);
+            this.button42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(109, 37);
+            this.button42.TabIndex = 42;
+            this.button42.Text = "双叶泵";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.Button42_Click);
             // 
             // button41
             // 
@@ -631,15 +642,6 @@
             this.linkLabel2.Text = "授权声明";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Location = new System.Drawing.Point(772, 56);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(223, 557);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "优秀组态界面示例（等待各位完善）";
-            // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
@@ -685,16 +687,14 @@
             this.linkLabel6.Text = "wpf版本控件";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel6_LinkClicked);
             // 
-            // button42
+            // groupBox2
             // 
-            this.button42.Location = new System.Drawing.Point(374, 212);
-            this.button42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(109, 37);
-            this.button42.TabIndex = 42;
-            this.button42.Text = "双叶泵";
-            this.button42.UseVisualStyleBackColor = true;
-            this.button42.Click += new System.EventHandler(this.Button42_Click);
+            this.groupBox2.Location = new System.Drawing.Point(772, 56);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(223, 557);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "优秀组态界面示例（等待各位完善）";
             // 
             // FormLoad
             // 
@@ -741,7 +741,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Button button13;
@@ -778,5 +777,6 @@
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button41;
         private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

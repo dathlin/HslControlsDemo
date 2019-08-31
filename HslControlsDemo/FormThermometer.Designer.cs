@@ -108,6 +108,7 @@
             this.hslThermometer5.TabIndex = 7;
             this.hslThermometer5.TemperatureBackColor = System.Drawing.Color.DimGray;
             this.hslThermometer5.TemperatureColor = System.Drawing.Color.DodgerBlue;
+            this.hslThermometer5.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // hslThermometer4
             // 
@@ -121,6 +122,7 @@
             this.hslThermometer4.TabIndex = 6;
             this.hslThermometer4.TemperatureBackColor = System.Drawing.Color.LightGray;
             this.hslThermometer4.TemperatureColor = System.Drawing.Color.DodgerBlue;
+            this.hslThermometer4.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // hslThermometer3
             // 
@@ -137,6 +139,7 @@
             this.hslThermometer3.Value = 60F;
             this.hslThermometer3.ValueMax = 100F;
             this.hslThermometer3.ValueStart = 40F;
+            this.hslThermometer3.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // hslThermometer2
             // 
@@ -148,6 +151,7 @@
             this.hslThermometer2.TabIndex = 2;
             this.hslThermometer2.TemperatureBackColor = System.Drawing.Color.LightGray;
             this.hslThermometer2.TemperatureColor = System.Drawing.Color.DodgerBlue;
+            this.hslThermometer2.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // hslThermometer1
             // 
@@ -156,6 +160,7 @@
             this.hslThermometer1.Size = new System.Drawing.Size(113, 551);
             this.hslThermometer1.TabIndex = 0;
             this.hslThermometer1.TemperatureBackColor = System.Drawing.Color.LightGray;
+            this.hslThermometer1.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // hslThermometer6
             // 
@@ -174,6 +179,7 @@
             this.hslThermometer6.TemperatureColor = System.Drawing.Color.DodgerBlue;
             this.hslThermometer6.ValueMax = 100F;
             this.hslThermometer6.ValueStart = 0F;
+            this.hslThermometer6.Click += new System.EventHandler(this.HslThermometer1_Click);
             // 
             // label5
             // 
@@ -188,6 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.hslThermometer6);

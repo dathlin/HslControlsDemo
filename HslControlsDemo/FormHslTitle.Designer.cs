@@ -98,6 +98,7 @@
             this.hslTitle5.Size = new System.Drawing.Size(968, 88);
             this.hslTitle5.TabIndex = 8;
             this.hslTitle5.Text = "KanBan System";
+            this.hslTitle5.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // hslTitle4
             // 
@@ -111,6 +112,7 @@
             this.hslTitle4.TabIndex = 6;
             this.hslTitle4.Text = "hslTitle4";
             this.hslTitle4.WidthPercent = 0.3F;
+            this.hslTitle4.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // hslTitle3
             // 
@@ -123,6 +125,7 @@
             this.hslTitle3.Size = new System.Drawing.Size(968, 82);
             this.hslTitle3.TabIndex = 4;
             this.hslTitle3.Text = "hslTitle3";
+            this.hslTitle3.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // hslTitle2
             // 
@@ -135,6 +138,7 @@
             this.hslTitle2.Text = "hslTitle2";
             this.hslTitle2.TextLeft = "";
             this.hslTitle2.TextRight = "";
+            this.hslTitle2.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // hslTitle1
             // 
@@ -145,6 +149,7 @@
             this.hslTitle1.Size = new System.Drawing.Size(459, 41);
             this.hslTitle1.TabIndex = 0;
             this.hslTitle1.Text = "hslTitle1";
+            this.hslTitle1.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // label6
             // 
@@ -168,11 +173,13 @@
             this.hslTitle6.Size = new System.Drawing.Size(968, 88);
             this.hslTitle6.TabIndex = 10;
             this.hslTitle6.Text = "KanBan System";
+            this.hslTitle6.Click += new System.EventHandler(this.HslTitle1_Click);
             // 
             // FormHslTitle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.hslTitle6);

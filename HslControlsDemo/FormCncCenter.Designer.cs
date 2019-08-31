@@ -152,6 +152,7 @@
             this.hslCncCenter5.Size = new System.Drawing.Size(472, 337);
             this.hslCncCenter5.TabIndex = 7;
             this.hslCncCenter5.Text = "hslCncCenter5";
+            this.hslCncCenter5.Click += new System.EventHandler(this.HslCncCenter1_Click);
             // 
             // hslCncCenter4
             // 
@@ -160,6 +161,7 @@
             this.hslCncCenter4.Size = new System.Drawing.Size(472, 337);
             this.hslCncCenter4.TabIndex = 6;
             this.hslCncCenter4.Text = "hslCncCenter4";
+            this.hslCncCenter4.Click += new System.EventHandler(this.HslCncCenter1_Click);
             // 
             // hslCncCenter3
             // 
@@ -170,6 +172,7 @@
             this.hslCncCenter3.Size = new System.Drawing.Size(218, 154);
             this.hslCncCenter3.TabIndex = 4;
             this.hslCncCenter3.Text = "hslCncCenter3";
+            this.hslCncCenter3.Click += new System.EventHandler(this.HslCncCenter1_Click);
             // 
             // hslCncCenter2
             // 
@@ -180,6 +183,7 @@
             this.hslCncCenter2.Size = new System.Drawing.Size(218, 154);
             this.hslCncCenter2.TabIndex = 2;
             this.hslCncCenter2.Text = "hslCncCenter2";
+            this.hslCncCenter2.Click += new System.EventHandler(this.HslCncCenter1_Click);
             // 
             // hslCncCenter1
             // 
@@ -189,11 +193,13 @@
             this.hslCncCenter1.Size = new System.Drawing.Size(218, 154);
             this.hslCncCenter1.TabIndex = 0;
             this.hslCncCenter1.Text = "hslCncCenter1";
+            this.hslCncCenter1.Click += new System.EventHandler(this.HslCncCenter1_Click);
             // 
             // FormCncCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
