@@ -55,7 +55,8 @@
             System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("HMI信号灯");
             System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("双叶泵");
             System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("移动文本");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("控件库", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("数字键盘");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("控件库", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
@@ -82,46 +83,47 @@
             treeNode24,
             treeNode25,
             treeNode26,
-            treeNode27});
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("实时曲线");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("历史曲线暗");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("历史曲线亮");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("历史曲线自定义");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("历史曲线同步");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("曲线", new System.Windows.Forms.TreeNode[] {
-            treeNode29,
+            treeNode27,
+            treeNode28});
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("实时曲线");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("历史曲线暗");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("历史曲线亮");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("历史曲线自定义");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("历史曲线同步");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("曲线", new System.Windows.Forms.TreeNode[] {
             treeNode30,
             treeNode31,
             treeNode32,
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("柱状图");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("饼图");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("综合图表");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("仪表盘1");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("仪表盘2");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("图表", new System.Windows.Forms.TreeNode[] {
-            treeNode35,
+            treeNode33,
+            treeNode34});
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("柱状图");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("饼图");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("综合图表");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("仪表盘1");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("仪表盘2");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("图表", new System.Windows.Forms.TreeNode[] {
             treeNode36,
             treeNode37,
             treeNode38,
-            treeNode39});
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("加工中心");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("数控机床");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("机床", new System.Windows.Forms.TreeNode[] {
-            treeNode41,
-            treeNode42});
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("五子棋");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("俄罗斯方块正常版");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("俄罗斯方块变态版");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("坦克大战");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("游戏", new System.Windows.Forms.TreeNode[] {
-            treeNode44,
+            treeNode39,
+            treeNode40});
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("加工中心");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("数控机床");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("机床", new System.Windows.Forms.TreeNode[] {
+            treeNode42,
+            treeNode43});
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("五子棋");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("俄罗斯方块正常版");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("俄罗斯方块变态版");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("坦克大战");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("游戏", new System.Windows.Forms.TreeNode[] {
             treeNode45,
             treeNode46,
-            treeNode47});
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("管道测试");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
-            treeNode49});
+            treeNode47,
+            treeNode48});
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("管道测试");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
+            treeNode50});
             this.vS2015LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015LightTheme();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,12 +132,12 @@
             this.论坛ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.demo地址ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.赞助说明ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wpfDemoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.vS2015DarkTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015DarkTheme();
             this.vS2015BlueTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015BlueTheme();
             this.hslMoveText1 = new HslControls.HslMoveText();
-            this.wpfDemoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -193,6 +195,12 @@
             this.赞助说明ToolStripMenuItem.Name = "赞助说明ToolStripMenuItem";
             this.赞助说明ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.赞助说明ToolStripMenuItem.Text = "激活码说明";
+            // 
+            // wpfDemoToolStripMenuItem
+            // 
+            this.wpfDemoToolStripMenuItem.Name = "wpfDemoToolStripMenuItem";
+            this.wpfDemoToolStripMenuItem.Size = new System.Drawing.Size(79, 21);
+            this.wpfDemoToolStripMenuItem.Text = "WpfDemo";
             // 
             // treeView1
             // 
@@ -254,58 +262,60 @@
             treeNode27.Name = "节点0";
             treeNode27.Text = "移动文本";
             treeNode28.Name = "节点0";
-            treeNode28.Text = "控件库";
-            treeNode29.Name = "节点29";
-            treeNode29.Text = "实时曲线";
-            treeNode30.Name = "节点30";
-            treeNode30.Text = "历史曲线暗";
-            treeNode31.Name = "节点31";
-            treeNode31.Text = "历史曲线亮";
-            treeNode32.Name = "节点32";
-            treeNode32.Text = "历史曲线自定义";
-            treeNode33.Name = "节点33";
-            treeNode33.Text = "历史曲线同步";
-            treeNode34.Name = "节点28";
-            treeNode34.Text = "曲线";
-            treeNode35.Name = "节点36";
-            treeNode35.Text = "柱状图";
-            treeNode36.Name = "节点37";
-            treeNode36.Text = "饼图";
-            treeNode37.Name = "节点38";
-            treeNode37.Text = "综合图表";
-            treeNode38.Name = "节点39";
-            treeNode38.Text = "仪表盘1";
-            treeNode39.Name = "节点40";
-            treeNode39.Text = "仪表盘2";
-            treeNode40.Name = "节点35";
-            treeNode40.Text = "图表";
-            treeNode41.Name = "节点42";
-            treeNode41.Text = "加工中心";
-            treeNode42.Name = "节点43";
-            treeNode42.Text = "数控机床";
-            treeNode43.Name = "节点41";
-            treeNode43.Text = "机床";
-            treeNode44.Name = "节点48";
-            treeNode44.Text = "五子棋";
-            treeNode45.Name = "节点49";
-            treeNode45.Text = "俄罗斯方块正常版";
-            treeNode46.Name = "节点50";
-            treeNode46.Text = "俄罗斯方块变态版";
-            treeNode47.Name = "节点51";
-            treeNode47.Text = "坦克大战";
-            treeNode48.Name = "节点47";
-            treeNode48.Text = "游戏";
-            treeNode49.Name = "节点53";
-            treeNode49.Text = "管道测试";
-            treeNode50.Name = "节点52";
-            treeNode50.Text = "性能测试";
+            treeNode28.Text = "数字键盘";
+            treeNode29.Name = "节点0";
+            treeNode29.Text = "控件库";
+            treeNode30.Name = "节点29";
+            treeNode30.Text = "实时曲线";
+            treeNode31.Name = "节点30";
+            treeNode31.Text = "历史曲线暗";
+            treeNode32.Name = "节点31";
+            treeNode32.Text = "历史曲线亮";
+            treeNode33.Name = "节点32";
+            treeNode33.Text = "历史曲线自定义";
+            treeNode34.Name = "节点33";
+            treeNode34.Text = "历史曲线同步";
+            treeNode35.Name = "节点28";
+            treeNode35.Text = "曲线";
+            treeNode36.Name = "节点36";
+            treeNode36.Text = "柱状图";
+            treeNode37.Name = "节点37";
+            treeNode37.Text = "饼图";
+            treeNode38.Name = "节点38";
+            treeNode38.Text = "综合图表";
+            treeNode39.Name = "节点39";
+            treeNode39.Text = "仪表盘1";
+            treeNode40.Name = "节点40";
+            treeNode40.Text = "仪表盘2";
+            treeNode41.Name = "节点35";
+            treeNode41.Text = "图表";
+            treeNode42.Name = "节点42";
+            treeNode42.Text = "加工中心";
+            treeNode43.Name = "节点43";
+            treeNode43.Text = "数控机床";
+            treeNode44.Name = "节点41";
+            treeNode44.Text = "机床";
+            treeNode45.Name = "节点48";
+            treeNode45.Text = "五子棋";
+            treeNode46.Name = "节点49";
+            treeNode46.Text = "俄罗斯方块正常版";
+            treeNode47.Name = "节点50";
+            treeNode47.Text = "俄罗斯方块变态版";
+            treeNode48.Name = "节点51";
+            treeNode48.Text = "坦克大战";
+            treeNode49.Name = "节点47";
+            treeNode49.Text = "游戏";
+            treeNode50.Name = "节点53";
+            treeNode50.Text = "管道测试";
+            treeNode51.Name = "节点52";
+            treeNode51.Text = "性能测试";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode28,
-            treeNode34,
-            treeNode40,
-            treeNode43,
-            treeNode48,
-            treeNode50});
+            treeNode29,
+            treeNode35,
+            treeNode41,
+            treeNode44,
+            treeNode49,
+            treeNode51});
             this.treeView1.Size = new System.Drawing.Size(169, 604);
             this.treeView1.TabIndex = 1;
             // 
@@ -328,12 +338,6 @@
             this.hslMoveText1.Size = new System.Drawing.Size(803, 23);
             this.hslMoveText1.TabIndex = 10;
             this.hslMoveText1.Text = "公告：本Demo仅支持运行8小时，如果你觉得好用，欢迎支持正版。";
-            // 
-            // wpfDemoToolStripMenuItem
-            // 
-            this.wpfDemoToolStripMenuItem.Name = "wpfDemoToolStripMenuItem";
-            this.wpfDemoToolStripMenuItem.Size = new System.Drawing.Size(79, 21);
-            this.wpfDemoToolStripMenuItem.Text = "WpfDemo";
             // 
             // FormMainWindow
             // 

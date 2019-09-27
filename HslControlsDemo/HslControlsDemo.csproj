@@ -35,11 +35,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=8.0.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.8.0.3\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.2\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.3\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -168,6 +168,12 @@
     </Compile>
     <Compile Include="FormDeclaration.Designer.cs">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDigitalInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDigitalInput.designer.cs">
+      <DependentUpon>FormDigitalInput.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFactory.cs">
       <SubType>Form</SubType>
@@ -407,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDigitalInput.resx">
+      <DependentUpon>FormDigitalInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFactory.resx">
       <DependentUpon>FormFactory.cs</DependentUpon>

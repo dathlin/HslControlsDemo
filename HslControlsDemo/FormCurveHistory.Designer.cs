@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.hslCurveHistory1 = new HslControls.HslCurveHistory();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -197,6 +198,7 @@
             // 
             // button8
             // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button8.Location = new System.Drawing.Point(454, 612);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 25);
@@ -239,10 +241,21 @@
             this.hslCurveHistory1.UnitRight = "Mpa";
             this.hslCurveHistory1.ValueMaxLeft = 200F;
             this.hslCurveHistory1.ValueMaxRight = 5F;
+            this.hslCurveHistory1.ValueMinLeft = 50F;
             this.hslCurveHistory1.ValueSegment = 25;
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
             this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(821, 4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(77, 23);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "修改范围";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
             // FormCurveHistory
             // 
@@ -250,6 +263,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button8);
@@ -297,5 +311,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }

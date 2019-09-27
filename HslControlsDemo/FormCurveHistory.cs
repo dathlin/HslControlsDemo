@@ -215,5 +215,11 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
+
+        private void Button10_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.RenderCurveUI( );
+        }
     }
 }

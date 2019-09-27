@@ -52,7 +52,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.2" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.3" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -165,7 +165,8 @@ namespace HslControlsDemo
                 case "HMI信号灯": return new FormHMILedSingle( );
                 case "双叶泵": return new FormVacuumPump( );
                 case "移动文本": return new FormMoveText( );
-                    // 曲线
+                case "数字键盘": return new FormDigitalInput( );
+                // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "历史曲线暗": return new FormCurveHistory( );
                 case "历史曲线亮": return new FormCurveHistory2( );
