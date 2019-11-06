@@ -28,7 +28,6 @@ namespace HslControlsWpf
         protected override void OnRender( DrawingContext drawingContext )
         {
             base.OnRender( drawingContext );
-            barChart1.SetDataSource( new int[] { 123, 533, 736, 283, 87 } );
         }
 
         private void B_HslBottle_Click( object sender, RoutedEventArgs e )
@@ -118,6 +117,12 @@ namespace HslControlsWpf
         private void B_HslWaterPump_Click( object sender, RoutedEventArgs e )
         {
             WindowHslWaterPump window = new WindowHslWaterPump( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslCoolFan_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslCoolFan window = new WindowHslCoolFan( );
             window.ShowDialog( );
         }
     }

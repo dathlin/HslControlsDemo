@@ -207,6 +207,11 @@ namespace HslControlsApp
                 Intent i = new Intent( this, typeof( Activity_HslMoveText ) );
                 this.StartActivity( i );
             }
+            else if (id == Resource.Id.nav_HslCoolFan)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslCoolFan ) );
+                this.StartActivity( i );
+            }
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);

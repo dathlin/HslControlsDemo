@@ -35,11 +35,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=8.0.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.8.0.3\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=8.1.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.8.1.3\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.3\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.4\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -93,6 +93,12 @@
     </Compile>
     <Compile Include="FormBottle.Designer.cs">
       <DependentUpon>FormBottle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCharge.designer.cs">
+      <DependentUpon>FormCharge.cs</DependentUpon>
     </Compile>
     <Compile Include="FormChart.cs">
       <SubType>Form</SubType>
@@ -210,6 +216,12 @@
     </Compile>
     <Compile Include="FormHMILedSingle.designer.cs">
       <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslCoolFan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslCoolFan.designer.cs">
+      <DependentUpon>FormHslCoolFan.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHslTitle.cs">
       <SubType>Form</SubType>
@@ -378,6 +390,9 @@
     <EmbeddedResource Include="FormBottle.resx">
       <DependentUpon>FormBottle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCharge.resx">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChart.resx">
       <DependentUpon>FormChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -434,6 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHMILedSingle.resx">
       <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslCoolFan.resx">
+      <DependentUpon>FormHslCoolFan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHslTitle.resx">
       <DependentUpon>FormHslTitle.cs</DependentUpon>

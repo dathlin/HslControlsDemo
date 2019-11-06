@@ -48,11 +48,14 @@ namespace HslControlsDemo
 
             this.Text += $" [v{versionCurr.ToString( )}]";
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
+
+            FormContent form = new FormCharge( );
+            form.Show( dockPanel1 );
         }
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.3" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.4" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -166,6 +169,7 @@ namespace HslControlsDemo
                 case "双叶泵": return new FormVacuumPump( );
                 case "移动文本": return new FormMoveText( );
                 case "数字键盘": return new FormDigitalInput( );
+                case "冷却风扇": return new FormHslCoolFan( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "历史曲线暗": return new FormCurveHistory( );

@@ -41,7 +41,6 @@
         <WPF:HslHandValve Height="134" Canvas.Left="769" Canvas.Top="400" Width="184" OpenEnable="False" EdgeColor="OrangeRed"/>
         <Button x:Name="B_HslHandValve" Content="HslHandValve" Canvas.Left="21" Canvas.Top="107" Width="113" Height="27" Click="B_HslHandValve_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslWaterBasin" Content="HslWaterBasin" Canvas.Left="21" Canvas.Top="139" Width="113" Height="27" Click="B_HslWaterBasin_Click" RenderTransformOrigin="0.511,2.481"/>
-        <WPF:HslBarChart x:Name="barChart1" Height="182" Canvas.Left="601" Canvas.Top="171" Width="352" Title="月视图" UseGradient="True"/>
         <Button x:Name="B_HslBarChart" Content="HslBarChart" Canvas.Left="21" Canvas.Top="171" Width="113" Height="27" Click="B_HslBarChart_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCncCenter" Content="HslCncCenter" Canvas.Left="21" Canvas.Top="203" Width="113" Height="27" Click="B_HslCncCenter_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCurve" Content="HslCurve" Canvas.Left="21" Canvas.Top="235" Width="113" Height="27" Click="B_HslCurve_Click" RenderTransformOrigin="0.511,2.481"/>
@@ -52,8 +51,7 @@
         <Button x:Name="B_HslWaterBox" Content="HslWaterBox" Canvas.Left="146" Canvas.Top="75" Width="113" Height="27" Click="B_HslWaterBox_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslMoveText" Content="HslMoveText" Canvas.Left="146" Canvas.Top="107" Width="113" Height="27" Click="B_HslMoveText_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslWaterPump" Content="HslWaterPump" Canvas.Left="146" Canvas.Top="139" Width="113" Height="27" Click="B_HslWaterPump_Click" RenderTransformOrigin="0.511,2.481"/>
-
-
+        <Button x:Name="B_HslCoolFan" Content="HslCoolFan" Canvas.Left="146" Canvas.Top="171" Width="113" Height="27" Click="B_HslCoolFan_Click" RenderTransformOrigin="0.511,2.481"/>
 
     </Canvas>
 </Window>

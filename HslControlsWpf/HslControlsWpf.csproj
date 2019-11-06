@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.3\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.4\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -67,6 +67,9 @@
     </Compile>
     <Compile Include="WindowHslCncCenter.xaml.cs">
       <DependentUpon>WindowHslCncCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslCoolFan.xaml.cs">
+      <DependentUpon>WindowHslCoolFan.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslCurve.xaml.cs">
       <DependentUpon>WindowHslCurve.xaml</DependentUpon>
@@ -130,6 +133,10 @@
     <Page Include="WindowHslCncCenter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslCoolFan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="WindowHslCurve.xaml">
       <SubType>Designer</SubType>
