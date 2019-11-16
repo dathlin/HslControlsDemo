@@ -30,9 +30,10 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.2.4
-1. 历史曲线控件的曲线名称修复太长的情况造成换行的bug。
-2. 新增一个冷却风扇控件，支持转速调节，详细参考demo，支持winform，wpf,android，其中wpf版本动画效果最好。
+            textBox1.Text = @"V2.2.5
+1. 实时曲线的控件支持曲线中断功能，新增数据的时候，添加 float.NaN 即可。
+2. 历史的控件支持曲线中断功能，初始化曲线数据的时候，添加 float.NaN 即可。
+3. wpf版本新增一个已经在winform上存在的控件，分类器控件。
 ";
         }
     }

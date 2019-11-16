@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.4\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.5\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -64,6 +64,9 @@
     </Compile>
     <Compile Include="WindowHslBottle.xaml.cs">
       <DependentUpon>WindowHslBottle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslClassifier.xaml.cs">
+      <DependentUpon>WindowHslClassifier.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslCncCenter.xaml.cs">
       <DependentUpon>WindowHslCncCenter.xaml</DependentUpon>
@@ -129,6 +132,10 @@
     <Page Include="WindowHslBottle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslClassifier.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslCncCenter.xaml">
       <SubType>Designer</SubType>

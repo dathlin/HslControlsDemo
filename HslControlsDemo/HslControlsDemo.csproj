@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=8.1.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.8.1.3\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.4\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.5\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -145,6 +145,12 @@
     <Compile Include="FormCurve.Designer.cs">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCurve2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurve2.designer.cs">
+      <DependentUpon>FormCurve2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCurveHistory4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,12 @@
     </Compile>
     <Compile Include="FormCurveHistory.Designer.cs">
       <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory5.designer.cs">
+      <DependentUpon>FormCurveHistory5.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDeclaration.cs">
       <SubType>Form</SubType>
@@ -414,6 +426,9 @@
     <EmbeddedResource Include="FormCurve.resx">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCurve2.resx">
+      <DependentUpon>FormCurve2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCurveHistory4.resx">
       <DependentUpon>FormCurveHistory4.cs</DependentUpon>
     </EmbeddedResource>
@@ -425,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurveHistory.resx">
       <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory5.resx">
+      <DependentUpon>FormCurveHistory5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>

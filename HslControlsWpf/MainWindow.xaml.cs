@@ -125,5 +125,11 @@ namespace HslControlsWpf
             WindowHslCoolFan window = new WindowHslCoolFan( );
             window.ShowDialog( );
         }
+
+        private void B_HslClassifier_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslClassifier window = new WindowHslClassifier( );
+            window.ShowDialog( );
+        }
     }
 }

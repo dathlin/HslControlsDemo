@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslClassifier"
+        mc:Ignorable="d"
+        Title="WindowHslClassifier"
+        WindowStartupLocation="CenterOwner"
+        Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslClassifier Height="67" Canvas.Left="24" Canvas.Top="19" Width="80"/>
+        <WPF:HslClassifier Height="137" Canvas.Left="132" Canvas.Top="19" Width="171"/>
+        <WPF:HslClassifier Height="137" Canvas.Left="325" Canvas.Top="19" Width="171" Text="123.4℃"/>
+        <WPF:HslClassifier Height="115" Canvas.Left="24" Canvas.Top="234" Width="125" EdgeColor="Red"/>
+        <WPF:HslClassifier Height="115" Canvas.Left="178" Canvas.Top="234" Width="125" EdgeColor="Tomato"/>
+        <WPF:HslClassifier Height="115" Canvas.Left="325" Canvas.Top="234" Width="125" EdgeColor="Gray"/>
+        <WPF:HslClassifier Height="115" Canvas.Left="481" Canvas.Top="234" Width="125" EdgeColor="Lime"/>
+        <WPF:HslClassifier Height="115" Canvas.Left="648" Canvas.Top="234" Width="125" EdgeColor="Green"/>
+        <WPF:HslClassifier Height="137" Canvas.Left="527" Canvas.Top="19" Width="171" Text="123.4℃" Foreground="Lime"/>
+        <WPF:HslClassifier Height="137" Canvas.Left="730" Canvas.Top="19" Width="171" Text="123.4℃" Foreground="Cyan"/>
+        <WPF:HslClassifier Height="234" Canvas.Left="58" Canvas.Top="395" Width="278" Text="123.4℃"/>
+
+    </Canvas>
+</Window>

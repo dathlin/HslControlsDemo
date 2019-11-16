@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.4" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.5" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -172,11 +172,13 @@ namespace HslControlsDemo
                 case "冷却风扇": return new FormHslCoolFan( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
+                case "实时曲线中断": return new FormCurve2( );
                 case "历史曲线暗": return new FormCurveHistory( );
                 case "历史曲线亮": return new FormCurveHistory2( );
                 case "历史曲线自定义": return new FormCurveHistory4( );
                 case "历史曲线同步": return new FormCurveHistory3( );
-                    // 图表
+                case "历史曲线中断": return new FormCurveHistory5( );
+                // 图表
                 case "柱状图": return new FormBarChart( );
                 case "饼图": return new FormPieChart( );
                 case "综合图表": return new FormChart( );
