@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.5" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.7" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -170,6 +170,7 @@ namespace HslControlsDemo
                 case "移动文本": return new FormMoveText( );
                 case "数字键盘": return new FormDigitalInput( );
                 case "冷却风扇": return new FormHslCoolFan( );
+                case "手动签名": return new FormSignature( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "实时曲线中断": return new FormCurve2( );

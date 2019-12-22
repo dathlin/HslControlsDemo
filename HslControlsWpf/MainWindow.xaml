@@ -53,6 +53,8 @@
         <Button x:Name="B_HslWaterPump" Content="HslWaterPump" Canvas.Left="146" Canvas.Top="139" Width="113" Height="27" Click="B_HslWaterPump_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCoolFan" Content="HslCoolFan" Canvas.Left="146" Canvas.Top="171" Width="113" Height="27" Click="B_HslCoolFan_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslClassifier" Content="HslClassifier" Canvas.Left="146" Canvas.Top="203" Width="113" Height="27" Click="B_HslClassifier_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslSignature" Content="HslSignature" Canvas.Left="146" Canvas.Top="235" Width="113" Height="27" Click="B_HslSignature_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslCircularGauge" Content="HslCircularGauge" Canvas.Left="146" Canvas.Top="269" Width="113" Height="27" Click="B_HslCircularGauge_Click" RenderTransformOrigin="0.511,2.481"/>
 
     </Canvas>
 </Window>

@@ -100,5 +100,9 @@
           android:id="@+id/nav_HslCoolFan"
           android:icon="@drawable/ic_menu_gallery"
           android:title="HslCoolFan" />
+      <item
+        android:id="@+id/nav_HslSignature"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="HslSignature" />
     </group>
 </menu>

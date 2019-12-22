@@ -1,0 +1,181 @@
+﻿<Window x:Class="HslControlsWpf.WindowHslCircularGauge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslCircularGauge" Height="684" Width="1020"
+        Loaded="Window_Loaded"
+        >
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF552322" Offset="1"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Black Gauge -->
+            <WPF:HslCircularGauge x:Name="myGauge1" Grid.Column="0" Grid.Row="0" 
+                                        Radius="150" 
+                                        ScaleRadius="110" 
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        PointerLength="85" 
+                                        PointerCapRadius="35" 
+                                        MinValue="0" 
+                                        MaxValue="1000" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5" 
+                                        ImageSource="windowslogo.png"
+                                        ImageSize="40,50"
+                                        RangeIndicatorThickness="8"
+                                        RangeIndicatorRadius="120"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="80"
+                                        ScaleLabelRadius="90"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="10"
+                                        ScaleLabelForeground="LightGray"
+                                        MajorTickSize="10,3"
+                                        MinorTickSize="3,1"
+                                        MajorTickColor="LightGray"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-50"
+                                        GaugeBackgroundColor="Black"
+                                        PointerThickness ="16"
+                                        OptimalRangeStartValue="300"
+                                        OptimalRangeEndValue="700" 
+                                        DialTextOffset="40" 
+                                        DialText="Black"
+                                        DialTextColor="Black"
+                                        >
+            </WPF:HslCircularGauge>
+
+            <!--Blue Gauge -->
+            <WPF:HslCircularGauge x:Name="myGauge2"  Grid.Column="1" Grid.Row="0"
+                                        Radius="150" 
+                                        ScaleRadius="100" 
+                                        ScaleStartAngle="140" 
+                                        ScaleSweepAngle="270"
+                                        PointerLength="90" 
+                                        PointerCapRadius="35" 
+                                        MinValue="0" 
+                                        MaxValue="1" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5" 
+                                        OptimalRangeEndValue="0.8"
+                                        OptimalRangeStartValue="0.5"
+                                        ImageSource="windowslogo.png"
+                                        ImageSize="40,50"
+                                        RangeIndicatorThickness="9"
+                                        RangeIndicatorRadius="80"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="80"
+                                        ScaleLabelRadius="115"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="10"
+                                        ScaleLabelForeground="White"
+                                        MajorTickSize="10,3"
+                                        MinorTickSize="3,1"
+                                        MajorTickColor="White"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-50"
+                                        GaugeBackgroundColor="CornflowerBlue"
+                                        PointerThickness ="5"
+                                        DialTextOffset="40"
+                                        DialText="Aqua Blue"
+                                        DialTextColor="DarkBlue"
+                                        
+                                        />
+
+
+            <!--Red Gauge -->
+            <WPF:HslCircularGauge x:Name="myGauge3" Grid.Column="0" Grid.Row="1"
+                                        Radius="150" 
+                                        ScaleRadius="90" 
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        PointerLength="80" 
+                                        PointerCapRadius="45" 
+                                        MinValue="-50" 
+                                        MaxValue="50" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5" 
+                                        OptimalRangeStartValue="-10"
+                                        OptimalRangeEndValue="30"
+                                        ImageSource="windowslogo.png"
+                                        ImageSize="40,50"
+                                        RangeIndicatorThickness="0"
+                                        RangeIndicatorRadius="0"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="80"
+                                        ScaleLabelRadius="110"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="10"
+                                        ScaleLabelForeground="White"
+                                        MajorTickSize="13,3"
+                                        MinorTickSize="5,1"
+                                        MajorTickColor="White"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-50"
+                                        GaugeBackgroundColor="DarkRed"
+                                        PointerThickness ="20"
+                                        DialTextOffset="40"
+                                        DialText="Dark Red"
+                                        DialTextColor="DarkRed"
+                                        />
+
+            <!--DarkSlateGray gauge-->
+            <WPF:HslCircularGauge x:Name="myGauge4" Grid.Column="1" Grid.Row="1" 
+                                        Radius="150" 
+                                        ScaleRadius="110" 
+                                        ScaleStartAngle="120" 
+                                        ResetPointerOnStartUp="True"
+                                        ScaleSweepAngle="300"
+                                        PointerLength="85" 
+                                        PointerCapRadius="35" 
+                                        MinValue="0" 
+                                        MaxValue="1000" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5" 
+                                        CurrentValue="{Binding Score}"
+                                        ImageSource="hsl_logo.jpg"
+                                        ImageSize="40,50"
+                                        RangeIndicatorThickness="0"
+                                        RangeIndicatorRadius="0"
+                                        ScaleLabelRadius="90"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="11"
+                                        ScaleLabelForeground="Black"
+                                        MajorTickSize="10,3"
+                                        MinorTickSize="3,1"
+                                        MajorTickColor="DarkGray"
+                                        MinorTickColor="DarkGray"
+                                        ImageOffset="-50"
+                                        GaugeBackgroundColor="DarkSlateGray"
+                                        PointerThickness ="12"
+                                        OptimalRangeStartValue="300"
+                                        OptimalRangeEndValue="700" 
+                                        DialTextOffset="40"
+                                        DialText="Slate Gray"
+                                        DialTextColor="DarkSlateGray"
+                                  AnimatingSpeedFactor="3"
+                                        >
+            </WPF:HslCircularGauge>
+        </Grid>
+    </Grid>
+</Window>

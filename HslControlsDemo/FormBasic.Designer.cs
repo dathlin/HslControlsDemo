@@ -33,7 +33,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.hslCoolFan1 = new HslControls.HslCoolFan();
             this.hslButton4 = new HslControls.HslButton();
             this.hslArrow9 = new HslControls.HslArrow();
             this.hslArrow8 = new HslControls.HslArrow();
@@ -115,17 +114,6 @@
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "箭头";
-            // 
-            // hslCoolFan1
-            // 
-            this.hslCoolFan1.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(92)))), ((int)(((byte)(93)))));
-            this.hslCoolFan1.EdgeColor = System.Drawing.Color.Gray;
-            this.hslCoolFan1.Location = new System.Drawing.Point(541, 433);
-            this.hslCoolFan1.MoveSpeed = 0.1F;
-            this.hslCoolFan1.Name = "hslCoolFan1";
-            this.hslCoolFan1.Size = new System.Drawing.Size(209, 200);
-            this.hslCoolFan1.TabIndex = 12;
-            this.hslCoolFan1.Text = "hslCoolFan1";
             // 
             // hslButton4
             // 
@@ -349,7 +337,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
-            this.Controls.Add(this.hslCoolFan1);
             this.Controls.Add(this.hslButton4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -393,6 +380,5 @@
         private HslControls.HslArrow hslArrow6;
         private HslControls.HslArrow hslArrow9;
         private HslControls.HslButton hslButton4;
-        private HslControls.HslCoolFan hslCoolFan1;
     }
 }

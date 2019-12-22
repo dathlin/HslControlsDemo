@@ -45,8 +45,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
-            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.button10 = new System.Windows.Forms.Button();
+            this.hslCurveHistory1 = new HslControls.HslCurveHistory();
             this.SuspendLayout();
             // 
             // button1
@@ -226,6 +226,16 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(821, 4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(77, 23);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "修改范围";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
             // hslCurveHistory1
             // 
             this.hslCurveHistory1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -242,22 +252,13 @@
             this.hslCurveHistory1.Text = "hslCurveHistory1";
             this.hslCurveHistory1.UnitLeft = " ℃";
             this.hslCurveHistory1.UnitRight = "Mpa";
-            this.hslCurveHistory1.ValueMaxLeft = 200F;
+            this.hslCurveHistory1.ValueMaxLeft = 230F;
             this.hslCurveHistory1.ValueMaxRight = 5F;
+            this.hslCurveHistory1.ValueMinLeft = 30F;
             this.hslCurveHistory1.ValueSegment = 25;
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
             this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(821, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(77, 23);
-            this.button10.TabIndex = 26;
-            this.button10.Text = "修改范围";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
             // FormCurveHistory5
             // 

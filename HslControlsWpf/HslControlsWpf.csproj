@@ -35,11 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.5\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.7.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.7\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,9 @@
     </Compile>
     <Compile Include="WindowHslBottle.xaml.cs">
       <DependentUpon>WindowHslBottle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslCircularGauge.xaml.cs">
+      <DependentUpon>WindowHslCircularGauge.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslClassifier.xaml.cs">
       <DependentUpon>WindowHslClassifier.xaml</DependentUpon>
@@ -97,6 +101,9 @@
     </Compile>
     <Compile Include="WindowHslPumpOne.xaml.cs">
       <DependentUpon>WindowHslPumpOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslSignature.xaml.cs">
+      <DependentUpon>WindowHslSignature.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslVacuumPump.xaml.cs">
       <DependentUpon>WindowHslVacuumPump.xaml</DependentUpon>
@@ -132,6 +139,10 @@
     <Page Include="WindowHslBottle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslCircularGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslClassifier.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -176,6 +187,10 @@
     <Page Include="WindowHslPumpOne.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslSignature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslVacuumPump.xaml">
       <SubType>Designer</SubType>
@@ -224,6 +239,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hsl_logo.jpg" />
+    <Resource Include="windowsLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

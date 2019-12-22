@@ -131,5 +131,17 @@ namespace HslControlsWpf
             WindowHslClassifier window = new WindowHslClassifier( );
             window.ShowDialog( );
         }
+
+        private void B_HslSignature_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslSignature window = new WindowHslSignature( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslCircularGauge_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslCircularGauge window = new WindowHslCircularGauge( );
+            window.ShowDialog( );
+        }
     }
 }
