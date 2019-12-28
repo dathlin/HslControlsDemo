@@ -1,0 +1,70 @@
+﻿<Window x:Class="HslControlsWpf.WindowHslArcGauge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:wpf="clr-namespace:HslControls.WPF;assembly=HslControls"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslArcGauge" Height="684" Width="1020">
+
+    <Window.Resources>
+        <local:MainWindowModel x:Key="model"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!--下面的示例是使用了绑定数据的形式示例-->
+        <Grid DataContext="{Binding Source={StaticResource model}}">
+            <wpf:HslArcGauge
+                        GaugeTitle="{Binding Path=GaugeTitle}"
+                        GaugeUnit="{Binding Path=GaugeUnit}"
+                        Max="{Binding Path=Max}"
+                        Min="{Binding Path=Min}"
+                        Value="{Binding Path=Value}"
+                        SettingValue="{Binding Path=SettingValue}"
+                        GaugeColor="SkyBlue"
+                        SettingGaugeColor="#FF3333"/>
+        </Grid>
+        <Canvas Grid.Row="1">
+            <Slider Canvas.Left="81" Canvas.Top="21" Height="22" Width="365" Minimum="0" Maximum="100" 
+                    DataContext="{Binding Source={StaticResource model}}" Value="{Binding Path=Value}"/>
+
+        </Canvas>
+        <!--下面的示例是使用了直接的赋值使用的例子-->
+        <Grid Grid.Column="1">
+            <wpf:HslArcGauge
+                Name="hslArcGauge2"
+                        GaugeTitle="TestA"
+                        GaugeUnit="A"
+                        Max="1000"
+                        Min="0"
+                        Value="600"
+                        SettingValue="700"
+                        GaugeColor="Tomato"
+                        ArcGaugeFormat="F0"
+                        SettingGaugeColor="#FF3333"/>
+        </Grid>
+        <!--下面的示例是动态更新的例子-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <wpf:HslArcGauge
+                Name="hslArcGauge3"
+                        GaugeTitle="温度"
+                        GaugeUnit="℃"
+                        Max="60"
+                        Min="0"
+                        Value="45.8"
+                        SettingValue="45"
+                        GaugeColor="Tomato"
+                        ArcGaugeFormat="F2"
+                        SettingGaugeColor="#FF3333"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.7.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.7\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.8.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.8\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WindowHslArcGauge.xaml.cs">
+      <DependentUpon>WindowHslArcGauge.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHslBarChart.xaml.cs">
       <DependentUpon>WindowHslBarChart.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,9 @@
     <Compile Include="WindowHslWaterPump.xaml.cs">
       <DependentUpon>WindowHslWaterPump.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowSevenSegments.xaml.cs">
+      <DependentUpon>WindowSevenSegments.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowSizeTest.xaml.cs">
       <DependentUpon>WindowSizeTest.xaml</DependentUpon>
     </Compile>
@@ -132,6 +138,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowHslArcGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowHslBarChart.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -207,6 +217,10 @@
     <Page Include="WindowHslWaterPump.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowSevenSegments.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowSizeTest.xaml">
       <SubType>Designer</SubType>

@@ -143,5 +143,17 @@ namespace HslControlsWpf
             WindowHslCircularGauge window = new WindowHslCircularGauge( );
             window.ShowDialog( );
         }
+
+        private void B_HslSegments_Click( object sender, RoutedEventArgs e )
+        {
+            WindowSevenSegments window = new WindowSevenSegments( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslArcGauge_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslArcGauge window = new WindowHslArcGauge( );
+            window.ShowDialog( );
+        }
     }
 }

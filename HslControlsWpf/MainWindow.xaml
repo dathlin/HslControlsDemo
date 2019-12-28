@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Canvas>
-        <WPF:HslPipeLine Height="23" Canvas.Left="227" Canvas.Top="264" Width="121" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
+        <WPF:HslPipeLine Height="23" Canvas.Left="773" Canvas.Top="261" Width="121" LeftDirection="None" RightDirection="None" RenderTransformOrigin="0.5,0.5">
             <WPF:HslPipeLine.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,19 +19,18 @@
             </WPF:HslPipeLine.RenderTransform>
         </WPF:HslPipeLine>
         <Button x:Name="B_HslBottle" Content="HslBottle" Canvas.Left="21" Canvas.Top="10" Width="113" Height="27" Click="B_HslBottle_Click"/>
-        <WPF:HslSwitch Height="123" Canvas.Left="352" Canvas.Top="197" Width="120" SwitchStatus="True" SwitchText="off:On"/>
-        <WPF:HslIndicator Height="101" Canvas.Left="371" Canvas.Top="61" Width="101" IndicatorColor="Red"/>
-        <WPF:HslIndicator Height="101" Canvas.Left="477" Canvas.Top="61" Width="101" IndicatorColor="Blue"/>
-        <WPF:HslBottle Height="258" Canvas.Left="264" Canvas.Top="19" Width="47" Value="90" UseAnimation="True"/>
-        <WPF:HslIndicator Height="101" Canvas.Left="583" Canvas.Top="61" Width="101" IndicatorColor="Green"/>
-        <WPF:HslSwitch Height="123" Canvas.Left="458" Canvas.Top="197" Width="120" SwitchStatus="True"/>
-        <WPF:HslPipeLine Height="23" Canvas.Left="105" Canvas.Top="336" Width="194" LeftDirection="Left" RightDirection="Right"
+        <WPF:HslSwitch Height="123" Canvas.Left="446" Canvas.Top="173" Width="120" SwitchStatus="True" SwitchText="off:On"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="456" Canvas.Top="10" Width="101" IndicatorColor="Blue"/>
+        <WPF:HslBottle Height="192" Canvas.Left="810" Canvas.Top="25" Width="47" Value="90" UseAnimation="True"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="571" Canvas.Top="10" Width="101" IndicatorColor="Green"/>
+        <WPF:HslSwitch Height="123" Canvas.Left="571" Canvas.Top="173" Width="120" SwitchStatus="True"/>
+        <WPF:HslPipeLine Height="23" Canvas.Left="651" Canvas.Top="333" Width="194" LeftDirection="Left" RightDirection="Right"
                          RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="0.3">
         </WPF:HslPipeLine>
         <Button x:Name="B_HslPipeLine" Content="HslPipeLine" Canvas.Left="21" Canvas.Top="43" Width="113" Height="27" Click="B_HslPipeLine_Click" RenderTransformOrigin="0.511,2.481"/>
-        <WPF:HslLanternSimple Height="100" Canvas.Left="718" Canvas.Top="28" Width="100"/>
+        <WPF:HslLanternSimple Height="100" Canvas.Left="701" Canvas.Top="10" Width="100"/>
         <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="113" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
-        <WPF:HslBoiler Height="128" Canvas.Left="857" Canvas.Top="28" Width="125"/>
+        <WPF:HslBoiler Height="128" Canvas.Left="857" Canvas.Top="6" Width="125"/>
         <WPF:HslWaterBasin Height="180" Canvas.Left="190" Canvas.Top="369" Width="367" WaterSpeed="1000" Value="90"/>
         <WPF:HslPipeLine Height="23" Canvas.Left="10" Canvas.Top="447" Width="194" LeftDirection="Left" RightDirection="Right" PipeLineWidth="2"
             RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="2"/>
@@ -55,6 +54,8 @@
         <Button x:Name="B_HslClassifier" Content="HslClassifier" Canvas.Left="146" Canvas.Top="203" Width="113" Height="27" Click="B_HslClassifier_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslSignature" Content="HslSignature" Canvas.Left="146" Canvas.Top="235" Width="113" Height="27" Click="B_HslSignature_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCircularGauge" Content="HslCircularGauge" Canvas.Left="146" Canvas.Top="269" Width="113" Height="27" Click="B_HslCircularGauge_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslSegments" Content="HslSegments" Canvas.Left="146" Canvas.Top="302" Width="113" Height="27" Click="B_HslSegments_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslArcGauge" Content="HslArcGauge" Canvas.Left="264" Canvas.Top="10" Width="113" Height="27" Click="B_HslArcGauge_Click" RenderTransformOrigin="0.511,2.481"/>
 
     </Canvas>
 </Window>

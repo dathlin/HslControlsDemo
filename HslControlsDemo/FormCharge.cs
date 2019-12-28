@@ -30,10 +30,11 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.2.7
-1. HslBottle: Wpf版本的控件修复BottleTag失败的bug。
-2. HslSignature: 新增签名控件，支持设置颜色，背景，画笔粗细，支持winform，wpf，安卓的版本。
-3. HslCircularGauge: Wpf版本新增仪表盘控件，感谢埃及朋友abdalaMask（QQ：3165336899）提供支持，详细功能见demo。
+            textBox1.Text = @"V2.2.8
+1. HslDigitalInput: 数字键盘控件修复一些逻辑bug，增加掩码功能，这样就可以用于密码输入。
+2. HslCircularGauge: wpf版本的仪表盘控件优化，动画效果优化，更加流畅。
+3. wpf: Wpf版本新增七段数码管和十六段数码管的控件，感谢埃及朋友abdalaMask（QQ：3165336899）提供支持，详细功能见demo。
+4. wpf: Wpf版本角度仪表盘控件，感谢埃及朋友abdalaMask（QQ：3165336899）提供支持，详细功能见demo。
 ";
         }
     }

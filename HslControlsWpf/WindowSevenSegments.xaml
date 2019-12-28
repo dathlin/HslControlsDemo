@@ -1,0 +1,53 @@
+﻿<Window x:Class="HslControlsWpf.WindowSevenSegments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:segments="clr-namespace:HslControls.WPF.Segments;assembly=HslControls"
+        xmlns:wpf="clr-namespace:HslControls.WPF;assembly=HslControls"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowSevenSegments" Height="684" Width="1020">
+    <Grid>
+        <Button Content="Select segments" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
+        <Button Content="Set value" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1" Height="22"/>
+        <Button Content="Set colors" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_2"/>
+        <segments:SixteenSegments 
+        	x:Name="MySegments"
+        	RoundedCorners="True"
+        	Value="Q"
+        	GapWidth="4"
+        	HorizontalAlignment="Left" Height="170" Margin="619,10,0,0" VerticalAlignment="Top" Width="160"/>
+        <segments:SevenSegments 
+        	Value="5"
+            x:Name="MySevenSegments"
+        	ShowDot ="True"
+        	OnDot="True"
+        	ShowColon="True"
+        	PenThickness="1"
+        	VertSegDivider="6"
+        	PenColor="Black"
+        	HorizontalAlignment="Left" Height="157" Margin="427,23,0,0" VerticalAlignment="Top" Width="120"/>
+        <wpf:SevenSegmentsStack 
+        	Value=":1239"
+        	ElementsCount="5"
+        	ShowColon="True"
+        	ShowDot="True"
+        	RoundedCorners="True"
+        	HorizontalAlignment="Left" Height="100" Margin="305,348,0,0" VerticalAlignment="Top" Width="367"/>
+        <wpf:SixteenSegmentsStack 
+        	Value="ABCDEFG"
+        	RoundedCorners="True"
+        	SelectedFillBrush="Coral"
+        	ElementsCount="8"
+        	HorizontalAlignment="Left" Height="100" Margin="147,204,0,0" VerticalAlignment="Top" Width="705"/>
+        <wpf:SevenSegmentsStack 
+            Value="123.45"
+            ElementsCount="5"
+            ShowColon="True"
+            ShowDot="True"
+            RoundedCorners="True"
+            HorizontalAlignment="Left" Height="42" Margin="78,506,0,0" VerticalAlignment="Top" Width="187"/>
+    </Grid>
+</Window>
