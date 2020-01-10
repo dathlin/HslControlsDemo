@@ -10,7 +10,7 @@ using HslControls;
 
 namespace HslControlsDemo
 {
-    public partial class FormBottle : Form
+    public partial class FormBottle : FormContent
     {
         public FormBottle( )
         {
@@ -76,6 +76,11 @@ namespace HslControlsDemo
                     hslPipeLines[i].MoveSpeed = 0;
                 }
             }
+        }
+
+        private void HslBottle8_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

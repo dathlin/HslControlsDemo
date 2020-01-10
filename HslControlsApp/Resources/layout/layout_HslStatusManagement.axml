@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="50px"
+        android:text="example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <HslControls.HslStatusManagement
+        android:id="@+id/hslStatusManagement1"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        app:rowCount="10"
+        app:colCount="40"
+        android:layout_height="300px" />
+
+
+    
+    <HslControls.HslStatusManagement
+        android:id="@+id/hslStatusManagement2"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="400px"
+        android:layout_width="match_parent"
+        app:rowCount="10"
+        app:colCount="40"
+        android:layout_height="300px" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="750px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rectangle"
+            android:textAllCaps="false"
+            android:id="@+id/button1"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ellipse"
+            android:textAllCaps="false"
+            android:id="@+id/button2"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rhombus"
+            android:textAllCaps="false"
+            android:id="@+id/button3"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="850px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Color"
+            android:textAllCaps="false"
+            android:id="@+id/button4"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Color"
+            android:textAllCaps="false"
+            android:id="@+id/button5"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="950px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rowIndex:   "
+        />
+        
+        <EditText
+            android:background="@android:drawable/editbox_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textAllCaps="false"
+            android:id="@+id/editText1"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Color"
+            android:textAllCaps="false"
+            android:id="@+id/button6"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="1050px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="colIndex:    "
+        />
+        
+        <EditText
+            android:background="@android:drawable/editbox_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textAllCaps="false"
+            android:id="@+id/editText2"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Color"
+            android:textAllCaps="false"
+            android:id="@+id/button7"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

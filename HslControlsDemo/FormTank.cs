@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormTank : Form
+    public partial class FormTank : FormContent
     {
         public FormTank( )
         {

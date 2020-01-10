@@ -1,9 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsDemo", "HslControlsDemo\HslControlsDemo.csproj", "{E39165E5-80E8-4769-B29F-3FB291AD3B55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsDemo", "HslControlsDemo\HslControlsDemo.csproj", "{73D3C71E-04B6-46A3-9DB3-7D029949F93D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsApp", "HslControlsApp\HslControlsApp.csproj", "{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HslControlsWpf", "HslControlsWpf\HslControlsWpf.csproj", "{766349F9-A153-470E-BBA6-17DC186DDB39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1941AEEA-FCCB-482C-ACB4-8CD5FC409A2E}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +20,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E39165E5-80E8-4769-B29F-3FB291AD3B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E39165E5-80E8-4769-B29F-3FB291AD3B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E39165E5-80E8-4769-B29F-3FB291AD3B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E39165E5-80E8-4769-B29F-3FB291AD3B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D3C71E-04B6-46A3-9DB3-7D029949F93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D3C71E-04B6-46A3-9DB3-7D029949F93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D3C71E-04B6-46A3-9DB3-7D029949F93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D3C71E-04B6-46A3-9DB3-7D029949F93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F419C90-0CE6-4D61-B67A-7F3AEE4B039D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766349F9-A153-470E-BBA6-17DC186DDB39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

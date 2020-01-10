@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px">
+    
+    <HslControls.HslSignature
+        android:layout_width="match_parent"
+        app:borderColor="#00FF00"
+        android:layout_height="500px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520px"
+        android:text="简单的使用"
+        android:textAlignment="center"
+        android:textSize="40px"
+    />
+
+    <HslControls.HslSignature
+        android:layout_width="match_parent"
+        android:layout_marginTop="650px"
+        app:signColor="#0000ff"
+        android:id="@+id/hslSignature1"
+        android:background="#eeeeee"
+        android:layout_height="600px"/>
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="1300px"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:id="@+id/button1"
+    />
+    
+    <Button
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="1300px"
+        android:text="Save"
+        android:textAllCaps="false"
+
+        android:id="@+id/button2"
+    />
+</RelativeLayout>

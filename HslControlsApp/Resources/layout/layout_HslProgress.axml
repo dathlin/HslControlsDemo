@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslProgress
+        android:layout_width="60px"
+        android:layout_height="500px" />
+    
+    <HslControls.HslProgress
+        app:valueCurrent="80"
+        app:progressColor="@android:color/holo_green_light"
+        android:layout_marginLeft="100px"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+
+    <HslControls.HslProgress
+        android:id="@+id/hslProgress1"
+        app:valueCurrent="0"
+        android:layout_marginLeft="200px"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+    
+    <HslControls.HslProgress
+        android:id="@+id/hslProgress2"
+        app:valueCurrent="0"
+        app:useAnimation="true"
+        android:layout_marginLeft="300px"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+
+    <HslControls.HslProgress
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_width="500px"
+        android:layout_height="60px" />
+    
+    <HslControls.HslProgress
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="100px"
+        app:isTextRender="false"
+        app:progressBackColor="@color/material_grey_300"
+        app:borderColor="@android:color/white"
+        android:layout_width="500px"
+        android:layout_height="20px" />
+    
+    <HslControls.HslProgress
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="150px"
+        app:isTextRender="false"
+        app:progressBackColor="@color/material_grey_300"
+        app:borderColor="@android:color/holo_blue_light"
+        android:layout_width="500px"
+        android:layout_height="20px" />
+    
+    <HslControls.HslProgress
+        android:id="@+id/hslProgress3"
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="200px"
+        android:layout_width="500px"
+        android:layout_height="60px" />
+
+    <HslControls.HslProgress
+        android:id="@+id/hslProgress4"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="300px"
+        app:hslProgressStyle="Horizontal"
+        app:useAnimation="true"
+        android:layout_width="500px"
+        android:layout_height="60px" />
+
+    <HslControls.HslProgressLine
+        android:layout_marginTop="600px"
+        android:layout_width="60px"
+        app:hslProgressStyle="Vertical"
+        android:layout_height="500px" />
+    
+    <HslControls.HslProgressLine
+        app:hslProgressStyle="Vertical"
+        android:layout_marginTop="600px"
+        android:layout_marginLeft="100px"
+        app:progressColor="@android:color/holo_green_light"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+
+    
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine1"
+        app:valueCurrent="0"
+        app:hslProgressStyle="Vertical"
+        android:layout_marginTop="600px"
+        android:layout_marginLeft="200px"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+    
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine2"
+        app:hslProgressStyle="Vertical"
+        app:valueCurrent="0"
+        app:useAnimation="true"
+        android:layout_marginTop="600px"
+        android:layout_marginLeft="300px"
+        android:layout_width="60px"
+        android:layout_height="500px" />
+
+    
+    <HslControls.HslProgressLine
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="600px"
+        android:layout_width="500px"
+        android:layout_height="60px" />
+    
+    <HslControls.HslProgressLine
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="700px"
+        app:isTextRender="false"
+        app:progressBackColor="@color/material_grey_300"
+        app:borderColor="@android:color/white"
+        android:layout_width="500px"
+        android:layout_height="20px" />
+    
+    <HslControls.HslProgressLine
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="750px"
+        app:isTextRender="false"
+        app:progressBackColor="@color/material_grey_300"
+        app:borderColor="@android:color/holo_blue_light"
+        android:layout_width="500px"
+        android:layout_height="20px" />
+    
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine3"
+        android:layout_marginLeft="400px"
+        app:hslProgressStyle="Horizontal"
+        android:layout_marginTop="800px"
+        android:layout_width="500px"
+        app:textRenderFormat="{0}-{1}"
+        android:layout_height="60px" />
+
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine4"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="900px"
+        app:hslProgressStyle="Horizontal"
+        app:useAnimation="true"
+        android:layout_width="500px"
+        android:layout_height="60px" />
+
+    
+    
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine5"
+        app:valueCurrent="0"
+        app:hslProgressStyle="Circular"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="0px"
+        android:layout_width="400px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslProgressLine
+        android:id="@+id/hslProgressLine6"
+        app:valueCurrent="0"
+        app:useAnimation="true"
+        app:hslProgressStyle="Circular"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="500px"
+        android:layout_width="400px"
+        android:layout_height="400px" />
+
+</RelativeLayout>

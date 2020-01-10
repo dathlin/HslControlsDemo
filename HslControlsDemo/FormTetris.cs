@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormTetris : Form
+    public partial class FormTetris : FormContent
     {
         public FormTetris( )
         {

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <HslControls.HslPumpOne
+        android:layout_width="400px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslPumpOne
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="50px"
+        android:layout_width="200px"
+        android:layout_height="200px" />
+    
+    
+    <HslControls.HslPumpOne
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="250px"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:export="5"
+    />
+
+    <HslControls.HslPumpOne
+        android:layout_width="100px"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="50px"
+        android:layout_height="100px"/>
+    
+    <HslControls.HslPumpOne
+        android:layout_width="100px"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="250px"
+        android:layout_height="100px"
+        app:entrance="2"
+        app:export="6"
+        app:moveSpeed="-1"
+    />
+    
+    <HslControls.HslPumpOne
+        android:layout_width="100px"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="400px"
+        android:layout_height="100px"
+        app:entrance="3"
+        app:export="4"
+        app:moveSpeed="-1"
+    />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="755px"
+        android:layout_marginLeft="100px"
+        android:layout_width="400px"
+        app:pipeLineActive="true"
+        android:id="@+id/hslPipeLine1"
+        android:layout_height="25px" />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="720px"
+        android:layout_marginLeft="560px"
+        android:layout_width="200px"
+        app:pipeLineActive="true"
+        android:id="@+id/hslPipeLine2"
+        android:layout_height="25px" />
+
+    <HslControls.HslPumpOne
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="700px"
+        app:export="5"
+        android:id="@+id/hslPumpOne1"
+        android:layout_width="100px"
+        android:layout_height="100px"/>
+
+    
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Open"
+        android:textAllCaps="false"
+        android:id="@+id/button1"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="300px"
+    />
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Close"
+        android:textAllCaps="false"
+        android:id="@+id/button2"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="500px"
+    />
+
+</RelativeLayout>

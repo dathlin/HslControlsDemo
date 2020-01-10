@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslBarChart
+        android:id="@+id/hslBarChart1"
+        android:layout_width="match_parent"
+        android:layout_height="500px" />
+    
+    <HslControls.HslBarChart
+        android:id="@+id/hslBarChart2"
+        android:background="#303030"
+        app:useGradient="true"
+        app:title="周产量报表"
+        app:colorLinesAndText="@color/material_grey_300"
+        app:textColor="@android:color/white"
+        android:layout_marginTop="550px"
+        android:layout_width="match_parent"
+        android:layout_height="500px" />
+
+    
+    <HslControls.HslBarChart
+        android:id="@+id/hslBarChart3"
+        android:background="#303030"
+        app:useGradient="true"
+        app:title="月产量报表"
+        app:textColor="@android:color/white"
+        app:colorLinesAndText="@color/material_grey_300"
+        android:layout_marginTop="1150px"
+        android:layout_width="match_parent"
+        android:layout_height="500px" />
+
+</RelativeLayout>

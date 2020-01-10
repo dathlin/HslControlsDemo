@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormStatus : Form
+    public partial class FormStatus : FormContent
     {
         public FormStatus( )
         {
@@ -227,9 +227,14 @@ namespace HslControlsDemo
                 hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
             }
         }
-        
+
 
 
         #endregion
+
+        private void HslStatusManagement1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

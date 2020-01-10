@@ -48,6 +48,7 @@
             this.hslFactory4.Size = new System.Drawing.Size(251, 156);
             this.hslFactory4.TabIndex = 3;
             this.hslFactory4.Text = "hslFactory4";
+            this.hslFactory4.Click += new System.EventHandler(this.HslFactory4_Click);
             // 
             // hslFactory3
             // 
@@ -63,6 +64,7 @@
             this.hslFactory3.Size = new System.Drawing.Size(201, 140);
             this.hslFactory3.TabIndex = 2;
             this.hslFactory3.Text = "hslFactory3";
+            this.hslFactory3.Click += new System.EventHandler(this.HslFactory4_Click);
             // 
             // hslFactory2
             // 
@@ -78,6 +80,7 @@
             this.hslFactory2.Size = new System.Drawing.Size(165, 80);
             this.hslFactory2.TabIndex = 1;
             this.hslFactory2.Text = "hslFactory2";
+            this.hslFactory2.Click += new System.EventHandler(this.HslFactory4_Click);
             // 
             // hslFactory1
             // 
@@ -93,11 +96,13 @@
             this.hslFactory1.Size = new System.Drawing.Size(165, 80);
             this.hslFactory1.TabIndex = 0;
             this.hslFactory1.Text = "hslFactory1";
+            this.hslFactory1.Click += new System.EventHandler(this.HslFactory4_Click);
             // 
             // FormFactory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslFactory4);
             this.Controls.Add(this.hslFactory3);

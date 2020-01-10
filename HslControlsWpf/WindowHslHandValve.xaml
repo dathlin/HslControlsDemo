@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslHandValve"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslBottle" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslHandValve Height="100" Canvas.Left="47" Canvas.Top="26" Width="100"/>
+        <TextBlock Canvas.Left="47" TextWrapping="Wrap" Text="简单的使用" Canvas.Top="126"/>
+        <WPF:HslHandValve Height="100" Canvas.Left="170" Canvas.Top="26" Width="100" OpenEnable="False"/>
+        <TextBlock Canvas.Left="170" TextWrapping="Wrap" Text="关闭状态" Canvas.Top="126"/>
+        <WPF:HslHandValve Height="100" Canvas.Left="296" Canvas.Top="26" Width="100" EdgeColor="DodgerBlue"/>
+        <WPF:HslHandValve Height="100" Canvas.Left="401" Canvas.Top="26" Width="100" EdgeColor="Red"/>
+        <TextBlock Canvas.Left="356" TextWrapping="Wrap" Text="设置颜色信息" Canvas.Top="131"/>
+        <WPF:HslHandValve Height="100" Canvas.Left="553" Canvas.Top="26" Width="100" Text="正常"/>
+        <TextBlock Canvas.Left="553" TextWrapping="Wrap" Text="设置文本" Canvas.Top="126"/>
+        <WPF:HslHandValve Height="173" Canvas.Left="699" Canvas.Top="26" Width="260" Text="正常"/>
+        <TextBlock Canvas.Left="738" TextWrapping="Wrap" Text="超大号控件" Canvas.Top="214"/>
+        <WPF:HslPipeLine x:Name="pipeLine1" Height="42" Canvas.Left="36" Canvas.Top="362" Width="633" LeftDirection="None" RightDirection="None" MoveSpeed="-0.3"/>
+        <WPF:HslHandValve x:Name="handValve1" Height="129" Canvas.Left="260" Canvas.Top="301" Width="136" Text="0.3 m/s"/>
+        <WPF:HslSwitch Height="121" Canvas.Left="491" Canvas.Top="468" Width="138" SwitchStatus="True" OnSwitchChanged="HslSwitch_OnSwitchChanged"/>
+        <TextBlock Canvas.Left="47" TextWrapping="Wrap" Text="以下是组合应用" Canvas.Top="270" FontSize="30"/>
+
+    </Canvas>
+</Window>

@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent( )
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBottle));
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.hslPipeLine5 = new HslControls.HslPipeLine();
             this.hslPipeLine6 = new HslControls.HslPipeLine();
             this.hslBottle10 = new HslControls.HslBottle();
             this.hslPipeLine7 = new HslControls.HslPipeLine();
+            this.hslPipeLine5 = new HslControls.HslPipeLine();
             this.hslPipeLine1 = new HslControls.HslPipeLine();
             this.hslPipeLine4 = new HslControls.HslPipeLine();
             this.hslPipeLine3 = new HslControls.HslPipeLine();
@@ -74,17 +75,9 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // hslPipeLine5
-            // 
-            this.hslPipeLine5.Location = new System.Drawing.Point(356, 527);
-            this.hslPipeLine5.MoveSpeed = 0F;
-            this.hslPipeLine5.Name = "hslPipeLine5";
-            this.hslPipeLine5.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
-            this.hslPipeLine5.Size = new System.Drawing.Size(22, 66);
-            this.hslPipeLine5.TabIndex = 16;
-            // 
             // hslPipeLine6
             // 
+            this.hslPipeLine6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine6.BackgroundImage")));
             this.hslPipeLine6.EdgeColor = System.Drawing.Color.HotPink;
             this.hslPipeLine6.ForeColor = System.Drawing.Color.White;
             this.hslPipeLine6.LineCenterColor = System.Drawing.Color.Pink;
@@ -96,6 +89,7 @@
             this.hslPipeLine6.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine6.Size = new System.Drawing.Size(22, 156);
             this.hslPipeLine6.TabIndex = 10;
+            this.hslPipeLine6.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle10
             // 
@@ -111,9 +105,11 @@
             this.hslBottle10.Size = new System.Drawing.Size(43, 220);
             this.hslBottle10.TabIndex = 0;
             this.hslBottle10.Value = 50D;
+            this.hslBottle10.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslPipeLine7
             // 
+            this.hslPipeLine7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine7.BackgroundImage")));
             this.hslPipeLine7.EdgeColor = System.Drawing.Color.HotPink;
             this.hslPipeLine7.ForeColor = System.Drawing.Color.White;
             this.hslPipeLine7.LineCenterColor = System.Drawing.Color.Pink;
@@ -124,36 +120,51 @@
             this.hslPipeLine7.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine7.Size = new System.Drawing.Size(220, 22);
             this.hslPipeLine7.TabIndex = 11;
+            this.hslPipeLine7.Click += new System.EventHandler(this.HslBottle8_Click);
+            // 
+            // hslPipeLine5
+            // 
+            this.hslPipeLine5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine5.BackgroundImage")));
+            this.hslPipeLine5.Location = new System.Drawing.Point(356, 527);
+            this.hslPipeLine5.Name = "hslPipeLine5";
+            this.hslPipeLine5.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
+            this.hslPipeLine5.Size = new System.Drawing.Size(22, 66);
+            this.hslPipeLine5.TabIndex = 16;
+            this.hslPipeLine5.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslPipeLine1
             // 
+            this.hslPipeLine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine1.BackgroundImage")));
             this.hslPipeLine1.Location = new System.Drawing.Point(45, 168);
-            this.hslPipeLine1.MoveSpeed = 0F;
             this.hslPipeLine1.Name = "hslPipeLine1";
             this.hslPipeLine1.PipeLineActive = true;
             this.hslPipeLine1.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine1.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine1.Size = new System.Drawing.Size(22, 153);
             this.hslPipeLine1.TabIndex = 9;
+            this.hslPipeLine1.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslPipeLine4
             // 
+            this.hslPipeLine4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine4.BackgroundImage")));
             this.hslPipeLine4.Location = new System.Drawing.Point(356, 593);
             this.hslPipeLine4.Name = "hslPipeLine4";
             this.hslPipeLine4.PipeTurnLeft = HslControls.HslPipeTurnDirection.Up;
             this.hslPipeLine4.Size = new System.Drawing.Size(199, 22);
             this.hslPipeLine4.TabIndex = 12;
+            this.hslPipeLine4.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslPipeLine3
             // 
+            this.hslPipeLine3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine3.BackgroundImage")));
             this.hslPipeLine3.Location = new System.Drawing.Point(266, 299);
-            this.hslPipeLine3.MoveSpeed = 0F;
             this.hslPipeLine3.Name = "hslPipeLine3";
             this.hslPipeLine3.PipeLineActive = true;
             this.hslPipeLine3.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine3.PipeTurnLeft = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine3.Size = new System.Drawing.Size(22, 109);
             this.hslPipeLine3.TabIndex = 11;
+            this.hslPipeLine3.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle9
             // 
@@ -170,6 +181,7 @@
             this.hslBottle9.Size = new System.Drawing.Size(124, 167);
             this.hslBottle9.TabIndex = 8;
             this.hslBottle9.Value = 20D;
+            this.hslBottle9.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle8
             // 
@@ -187,6 +199,7 @@
             this.hslBottle8.Size = new System.Drawing.Size(45, 165);
             this.hslBottle8.TabIndex = 7;
             this.hslBottle8.Value = 0D;
+            this.hslBottle8.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle7
             // 
@@ -204,6 +217,7 @@
             this.hslBottle7.Size = new System.Drawing.Size(45, 165);
             this.hslBottle7.TabIndex = 6;
             this.hslBottle7.Value = 0D;
+            this.hslBottle7.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle6
             // 
@@ -221,6 +235,7 @@
             this.hslBottle6.Size = new System.Drawing.Size(45, 165);
             this.hslBottle6.TabIndex = 5;
             this.hslBottle6.Value = 0D;
+            this.hslBottle6.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle5
             // 
@@ -238,6 +253,7 @@
             this.hslBottle5.Size = new System.Drawing.Size(45, 165);
             this.hslBottle5.TabIndex = 4;
             this.hslBottle5.Value = 0D;
+            this.hslBottle5.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle4
             // 
@@ -255,6 +271,7 @@
             this.hslBottle4.Size = new System.Drawing.Size(45, 165);
             this.hslBottle4.TabIndex = 3;
             this.hslBottle4.Value = 0D;
+            this.hslBottle4.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle3
             // 
@@ -272,6 +289,7 @@
             this.hslBottle3.Size = new System.Drawing.Size(45, 165);
             this.hslBottle3.TabIndex = 2;
             this.hslBottle3.Value = 0D;
+            this.hslBottle3.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle2
             // 
@@ -289,6 +307,7 @@
             this.hslBottle2.Size = new System.Drawing.Size(45, 165);
             this.hslBottle2.TabIndex = 1;
             this.hslBottle2.Value = 0D;
+            this.hslBottle2.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslBottle1
             // 
@@ -306,20 +325,23 @@
             this.hslBottle1.Size = new System.Drawing.Size(45, 165);
             this.hslBottle1.TabIndex = 0;
             this.hslBottle1.Value = 0D;
+            this.hslBottle1.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // hslPipeLine2
             // 
+            this.hslPipeLine2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine2.BackgroundImage")));
             this.hslPipeLine2.Location = new System.Drawing.Point(66, 299);
-            this.hslPipeLine2.MoveSpeed = 0F;
             this.hslPipeLine2.Name = "hslPipeLine2";
             this.hslPipeLine2.PipeLineActive = true;
             this.hslPipeLine2.Size = new System.Drawing.Size(200, 22);
             this.hslPipeLine2.TabIndex = 10;
+            this.hslPipeLine2.Click += new System.EventHandler(this.HslBottle8_Click);
             // 
             // FormBottle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslPipeLine5);
             this.Controls.Add(this.groupBox1);
@@ -341,6 +363,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormBottle";
             this.Load += new System.EventHandler(this.FormBottle_Load);
+            this.Click += new System.EventHandler(this.HslBottle8_Click);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -91,7 +91,7 @@ namespace HslControlsDemo
         private void button9_Click( object sender, EventArgs e )
         {
             Hide( );
-            using (FormPipeLine form = new FormPipeLine( ))
+            using (FormPipeLineTest form = new FormPipeLineTest( ))
             {
                 form.ShowDialog( );
             }
@@ -174,7 +174,7 @@ namespace HslControlsDemo
             System.Threading.ThreadPool.QueueUserWorkItem( new System.Threading.WaitCallback( ThreadPoolCheckVersion ), null );
         }
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.0.3" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.3" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -414,6 +414,174 @@ namespace HslControlsDemo
         {
             Hide( );
             using (FormFactory form = new FormFactory( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button30_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPumpOne form = new FormPumpOne( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button31_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormBarChart form = new FormBarChart( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void LinkLabel4_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
+        {
+            OpenWebside( "http://bbs.hslcommunication.cn/" );
+        }
+
+        private void Button32_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormCurveHistory4 form = new FormCurveHistory4( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button33_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormMotor form = new FormMotor( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button34_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPanel form = new FormPanel( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void LinkLabel5_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
+        {
+            using (HslCommunication.BasicFramework.FormSupport form = new HslCommunication.BasicFramework.FormSupport( ))
+            {
+                form.ShowDialog( );
+            }
+        }
+
+        private void Button35_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormProgressColorful form = new FormProgressColorful( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button36_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPipeLine form = new FormPipeLine( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void LinkLabel6_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e )
+        {
+            try
+            {
+                System.Diagnostics.Process.Start( System.IO.Path.Combine( Application.StartupPath, "HslControlsWpf.exe" ) );
+            }
+            catch
+            {
+                MessageBox.Show( "启动wpf版本的程序失败！" );
+            }
+        }
+
+        private void Button37_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormCncCenter form = new FormCncCenter( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button38_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormMachineCenter form = new FormMachineCenter( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button39_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormPanelBack form = new FormPanelBack( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button40_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormHslTitle form = new FormHslTitle( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button41_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormHMILedSingle form = new FormHMILedSingle( ))
+            {
+                form.ShowDialog( );
+            }
+            System.Threading.Thread.Sleep( 200 );
+            Show( );
+        }
+
+        private void Button42_Click( object sender, EventArgs e )
+        {
+            Hide( );
+            using (FormVacuumPump form = new FormVacuumPump( ))
             {
                 form.ShowDialog( );
             }

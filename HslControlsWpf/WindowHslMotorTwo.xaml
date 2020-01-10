@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslMotorTwo"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslMotorTwo" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslMotorTwo Height="108" Canvas.Left="38" Canvas.Top="26" Width="195"/>
+        <WPF:HslMotorTwo Height="108" Canvas.Left="280" Canvas.Top="26" Width="195" MotorColors="Green"/>
+        <WPF:HslMotorTwo Height="108" Canvas.Left="518" Canvas.Top="26" Width="195" MotorColors="Red"/>
+        <WPF:HslMotorTwo Height="108" Canvas.Left="762" Canvas.Top="26" Width="195" MotorColors="Yellow"/>
+        <WPF:HslMotorTwo Height="267" Canvas.Left="38" Canvas.Top="156" Width="499"/>
+        <WPF:HslMotorTwo Height="105" Canvas.Left="581" Canvas.Top="178" Width="181"/>
+        <WPF:HslMotorTwo Height="105" Canvas.Left="784" Canvas.Top="211" Width="181" RenderTransformOrigin="0.5,0.5">
+            <WPF:HslMotorTwo.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslMotorTwo.RenderTransform>
+        </WPF:HslMotorTwo>
+
+    </Canvas>
+</Window>

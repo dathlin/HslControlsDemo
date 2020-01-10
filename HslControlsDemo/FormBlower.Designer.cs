@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent( )
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBlower));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.hslBlower8 = new HslControls.HslBlower();
+            this.hslPipeLine1 = new HslControls.HslPipeLine();
             this.hslBlower7 = new HslControls.HslBlower();
             this.hslBlower6 = new HslControls.HslBlower();
             this.hslBlower5 = new HslControls.HslBlower();
@@ -38,8 +41,6 @@
             this.hslBlower3 = new HslControls.HslBlower();
             this.hslBlower2 = new HslControls.HslBlower();
             this.hslBlower1 = new HslControls.HslBlower();
-            this.hslBlower8 = new HslControls.HslBlower();
-            this.hslPipeLine1 = new HslControls.HslPipeLine();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "黑色的主题下";
             // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(726, 159);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(174, 46);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "停止";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
@@ -69,16 +81,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // hslBlower8
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(726, 159);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 46);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "停止";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.hslBlower8.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(205)))), ((int)(((byte)(211)))));
+            this.hslBlower8.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.hslBlower8.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
+            this.hslBlower8.Color4 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(160)))), ((int)(((byte)(169)))));
+            this.hslBlower8.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(100)))), ((int)(((byte)(111)))));
+            this.hslBlower8.Color6 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(121)))));
+            this.hslBlower8.Color7 = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(165)))), ((int)(((byte)(173)))));
+            this.hslBlower8.Color8 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(182)))), ((int)(((byte)(189)))));
+            this.hslBlower8.Location = new System.Drawing.Point(23, 46);
+            this.hslBlower8.MoveSpeed = 0F;
+            this.hslBlower8.Name = "hslBlower8";
+            this.hslBlower8.Size = new System.Drawing.Size(153, 186);
+            this.hslBlower8.TabIndex = 7;
+            this.hslBlower8.Text = "风机";
+            this.hslBlower8.Click += new System.EventHandler(this.HslBlower1_Click);
+            // 
+            // hslPipeLine1
+            // 
+            this.hslPipeLine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine1.BackgroundImage")));
+            this.hslPipeLine1.Location = new System.Drawing.Point(175, 70);
+            this.hslPipeLine1.Name = "hslPipeLine1";
+            this.hslPipeLine1.PipeLineActive = true;
+            this.hslPipeLine1.Size = new System.Drawing.Size(380, 45);
+            this.hslPipeLine1.TabIndex = 8;
+            this.hslPipeLine1.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower7
             // 
@@ -97,6 +126,7 @@
             this.hslBlower7.Size = new System.Drawing.Size(223, 274);
             this.hslBlower7.TabIndex = 12;
             this.hslBlower7.Text = "大号控件";
+            this.hslBlower7.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower6
             // 
@@ -115,6 +145,7 @@
             this.hslBlower6.Size = new System.Drawing.Size(120, 138);
             this.hslBlower6.TabIndex = 11;
             this.hslBlower6.Text = "方向向下";
+            this.hslBlower6.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower5
             // 
@@ -133,6 +164,7 @@
             this.hslBlower5.Size = new System.Drawing.Size(120, 138);
             this.hslBlower5.TabIndex = 10;
             this.hslBlower5.Text = "方向向上";
+            this.hslBlower5.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower4
             // 
@@ -151,6 +183,7 @@
             this.hslBlower4.Size = new System.Drawing.Size(120, 138);
             this.hslBlower4.TabIndex = 9;
             this.hslBlower4.Text = "方向向左";
+            this.hslBlower4.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower3
             // 
@@ -168,6 +201,7 @@
             this.hslBlower3.Size = new System.Drawing.Size(120, 138);
             this.hslBlower3.TabIndex = 8;
             this.hslBlower3.Text = "转速为0";
+            this.hslBlower3.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower2
             // 
@@ -184,6 +218,7 @@
             this.hslBlower2.Size = new System.Drawing.Size(36, 104);
             this.hslBlower2.TabIndex = 7;
             this.hslBlower2.Text = "迷你的控件";
+            this.hslBlower2.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // hslBlower1
             // 
@@ -200,37 +235,13 @@
             this.hslBlower1.Size = new System.Drawing.Size(120, 138);
             this.hslBlower1.TabIndex = 6;
             this.hslBlower1.Text = "简单的应用";
-            // 
-            // hslBlower8
-            // 
-            this.hslBlower8.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(205)))), ((int)(((byte)(211)))));
-            this.hslBlower8.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.hslBlower8.Color3 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
-            this.hslBlower8.Color4 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(160)))), ((int)(((byte)(169)))));
-            this.hslBlower8.Color5 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(100)))), ((int)(((byte)(111)))));
-            this.hslBlower8.Color6 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(114)))), ((int)(((byte)(121)))));
-            this.hslBlower8.Color7 = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(165)))), ((int)(((byte)(173)))));
-            this.hslBlower8.Color8 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(182)))), ((int)(((byte)(189)))));
-            this.hslBlower8.Location = new System.Drawing.Point(23, 46);
-            this.hslBlower8.MoveSpeed = 0F;
-            this.hslBlower8.Name = "hslBlower8";
-            this.hslBlower8.Size = new System.Drawing.Size(153, 186);
-            this.hslBlower8.TabIndex = 7;
-            this.hslBlower8.Text = "风机";
-            // 
-            // hslPipeLine1
-            // 
-            this.hslPipeLine1.Location = new System.Drawing.Point(175, 70);
-            this.hslPipeLine1.MoveSpeed = 0F;
-            this.hslPipeLine1.Name = "hslPipeLine1";
-            this.hslPipeLine1.PipeLineActive = true;
-            this.hslPipeLine1.Size = new System.Drawing.Size(380, 45);
-            this.hslPipeLine1.TabIndex = 8;
+            this.hslBlower1.Click += new System.EventHandler(this.HslBlower1_Click);
             // 
             // FormBlower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.hslBlower7);
             this.Controls.Add(this.hslBlower6);

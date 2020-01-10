@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormConveyerRollers : Form
+    public partial class FormConveyerRollers : FormContent
     {
         public FormConveyerRollers( )
         {
@@ -28,6 +28,11 @@ namespace HslControlsDemo
             {
                 MessageBox.Show( "您输入的数据不正确！" );
             }
+        }
+
+        private void HslConveyerRollers1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_height="match_parent">
+
+
+    <HslControls.HslBattery
+        android:layout_marginLeft="0px"
+        app:value="5"
+        android:layout_width="120px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="25"
+        android:layout_marginLeft="150px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="55"
+        android:layout_marginLeft="300px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="75"
+        android:layout_marginLeft="450px"
+        android:layout_height="400px" />
+    
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="90"
+        android:layout_marginLeft="600px"
+        android:layout_height="400px" />
+
+    
+    <HslControls.HslBattery
+        android:layout_width="400px"
+        app:value="50"
+        app:hslDirectionStyle="Vertical"
+        android:layout_marginLeft="600px"
+        app:isTextRender="true"
+        android:layout_marginTop="500px"
+        android:layout_height="120px" />
+    
+    <HslControls.HslBattery
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="500px"
+        app:value="2.5"
+        app:valueMax="5"
+        app:isTextRender="true"
+        app:stringFormat="{0:F1} V"
+        android:id="@+id/hslBattery1"
+        android:layout_width="120px"
+        android:layout_height="400px" />
+
+    <HslControls.HslBattery
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="500px"
+        app:value="2.5"
+        app:valueMax="5"
+        app:isTextRender="true"
+        app:stringFormat="{0:F1} A"
+        android:id="@+id/hslBattery2"
+        android:layout_width="120px"
+        android:layout_height="400px" />
+
+    <HslControls.HslBattery
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="500px"
+        app:value="1000"
+        app:valueMax="5000"
+        app:isTextRender="true"
+        app:stringFormat="{0} ma"
+        android:id="@+id/hslBattery3"
+        android:layout_width="120px"
+        android:layout_height="400px" />
+
+
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="30"
+        app:batteryBackColor="#FFDEAD"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="1100px"
+        android:layout_height="400px" />
+
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="30"
+        app:batteryBackColor="#EE82EE"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="1100px"
+        android:layout_height="400px" />
+
+
+    <HslControls.HslBattery
+        android:layout_width="120px"
+        app:value="30"
+        app:batteryBackColor="#CDCDC1"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="1100px"
+        android:layout_height="400px" />
+</RelativeLayout>

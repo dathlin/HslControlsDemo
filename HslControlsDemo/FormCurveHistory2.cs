@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory2 : Form
+    public partial class FormCurveHistory2 : FormContent
     {
         public FormCurveHistory2( )
         {
@@ -170,6 +170,11 @@ namespace HslControlsDemo
                 MessageBox.Show( "保存成功!" );
             }
             fileDialog.Dispose( );
+        }
+
+        private void HslCurveHistory1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

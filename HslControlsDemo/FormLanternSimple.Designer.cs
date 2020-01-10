@@ -81,6 +81,7 @@
             this.hslLanternSimple8.Size = new System.Drawing.Size(117, 134);
             this.hslLanternSimple8.TabIndex = 7;
             this.hslLanternSimple8.Text = "定时变换的";
+            this.hslLanternSimple8.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple7
             // 
@@ -90,6 +91,7 @@
             this.hslLanternSimple7.Size = new System.Drawing.Size(117, 134);
             this.hslLanternSimple7.TabIndex = 6;
             this.hslLanternSimple7.Text = "hslLanternSimple7";
+            this.hslLanternSimple7.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple6
             // 
@@ -99,6 +101,7 @@
             this.hslLanternSimple6.Size = new System.Drawing.Size(117, 134);
             this.hslLanternSimple6.TabIndex = 5;
             this.hslLanternSimple6.Text = "hslLanternSimple6";
+            this.hslLanternSimple6.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple5
             // 
@@ -108,6 +111,7 @@
             this.hslLanternSimple5.Size = new System.Drawing.Size(40, 42);
             this.hslLanternSimple5.TabIndex = 4;
             this.hslLanternSimple5.Text = "hslLanternSimple5";
+            this.hslLanternSimple5.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple4
             // 
@@ -117,6 +121,7 @@
             this.hslLanternSimple4.Size = new System.Drawing.Size(40, 42);
             this.hslLanternSimple4.TabIndex = 3;
             this.hslLanternSimple4.Text = "hslLanternSimple4";
+            this.hslLanternSimple4.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple3
             // 
@@ -126,6 +131,7 @@
             this.hslLanternSimple3.Size = new System.Drawing.Size(31, 28);
             this.hslLanternSimple3.TabIndex = 2;
             this.hslLanternSimple3.Text = "hslLanternSimple3";
+            this.hslLanternSimple3.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple2
             // 
@@ -134,6 +140,7 @@
             this.hslLanternSimple2.Size = new System.Drawing.Size(31, 28);
             this.hslLanternSimple2.TabIndex = 1;
             this.hslLanternSimple2.Text = "hslLanternSimple2";
+            this.hslLanternSimple2.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple1
             // 
@@ -142,6 +149,7 @@
             this.hslLanternSimple1.Size = new System.Drawing.Size(18, 19);
             this.hslLanternSimple1.TabIndex = 0;
             this.hslLanternSimple1.Text = "hslLanternSimple1";
+            this.hslLanternSimple1.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // groupBox2
             // 
@@ -166,6 +174,7 @@
             this.hslLanternSimple12.TabIndex = 3;
             this.hslLanternSimple12.Text = "hslLanternSimple12";
             this.hslLanternSimple12.UseGradientColor = true;
+            this.hslLanternSimple12.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple11
             // 
@@ -177,6 +186,7 @@
             this.hslLanternSimple11.TabIndex = 2;
             this.hslLanternSimple11.Text = "hslLanternSimple11";
             this.hslLanternSimple11.UseGradientColor = true;
+            this.hslLanternSimple11.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple10
             // 
@@ -187,6 +197,7 @@
             this.hslLanternSimple10.TabIndex = 1;
             this.hslLanternSimple10.Text = "hslLanternSimple10";
             this.hslLanternSimple10.UseGradientColor = true;
+            this.hslLanternSimple10.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternSimple9
             // 
@@ -196,6 +207,7 @@
             this.hslLanternSimple9.TabIndex = 0;
             this.hslLanternSimple9.Text = "hslLanternSimple9";
             this.hslLanternSimple9.UseGradientColor = true;
+            this.hslLanternSimple9.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // groupBox3
             // 
@@ -251,6 +263,7 @@
             this.hslLanternAlarm5.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.hslLanternAlarm5.Size = new System.Drawing.Size(61, 86);
             this.hslLanternAlarm5.TabIndex = 12;
+            this.hslLanternAlarm5.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternAlarm4
             // 
@@ -259,6 +272,7 @@
             this.hslLanternAlarm4.Name = "hslLanternAlarm4";
             this.hslLanternAlarm4.Size = new System.Drawing.Size(61, 86);
             this.hslLanternAlarm4.TabIndex = 11;
+            this.hslLanternAlarm4.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternAlarm3
             // 
@@ -267,6 +281,7 @@
             this.hslLanternAlarm3.Name = "hslLanternAlarm3";
             this.hslLanternAlarm3.Size = new System.Drawing.Size(61, 86);
             this.hslLanternAlarm3.TabIndex = 10;
+            this.hslLanternAlarm3.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternAlarm2
             // 
@@ -275,6 +290,7 @@
             this.hslLanternAlarm2.Name = "hslLanternAlarm2";
             this.hslLanternAlarm2.Size = new System.Drawing.Size(61, 86);
             this.hslLanternAlarm2.TabIndex = 9;
+            this.hslLanternAlarm2.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // hslLanternAlarm1
             // 
@@ -282,11 +298,13 @@
             this.hslLanternAlarm1.Name = "hslLanternAlarm1";
             this.hslLanternAlarm1.Size = new System.Drawing.Size(61, 86);
             this.hslLanternAlarm1.TabIndex = 8;
+            this.hslLanternAlarm1.Click += new System.EventHandler(this.HslLanternSimple8_Click);
             // 
             // FormLanternSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory : Form
+    public partial class FormCurveHistory : FormContent
     {
         public FormCurveHistory( )
         {
@@ -36,9 +36,9 @@ namespace HslControlsDemo
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
-                data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
+                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
                 times[i] = DateTime.Now.AddSeconds( i - 2000 );
-                press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
+                press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.5d + 4.1d);
             }
 
             // 显示出数据信息来
@@ -48,6 +48,13 @@ namespace HslControlsDemo
                  hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, true, "{0:F1} ℃" );
                  hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
+                 hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+                 {
+                     LocationX = 0.6f,
+                     Text = $"今日产量：{random.Next(10)}个",
+                     TextBack = new SolidBrush(Color.FromArgb(10,10,10)),
+                     TextBrush = Brushes.Gray,
+                 } );
                  hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
                  // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
                  hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
@@ -186,6 +193,33 @@ namespace HslControlsDemo
                 MessageBox.Show( "保存成功!" );
             }
             fileDialog.Dispose( );
+        }
+
+        private void Button8_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.ScrollToRight( );
+        }
+
+        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, int index, int end )
+        {
+            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + index + "  End:" + end;
+        }
+
+        private void Button9_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.RemoveAllMarkMouseSection( );
+            hslCurveHistory1.RenderCurveUI( );
+        }
+
+        private void HslCurveHistory1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
+
+        private void Button10_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.RenderCurveUI( );
         }
     }
 }

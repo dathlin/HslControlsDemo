@@ -50,18 +50,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.hslStatusManagement2 = new HslControls.HslStatusManagement();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.hslStatusManagement6 = new HslControls.HslStatusManagement();
+            this.hslStatusManagement5 = new HslControls.HslStatusManagement();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.hslStatusManagement6 = new HslControls.HslStatusManagement();
-            this.hslStatusManagement5 = new HslControls.HslStatusManagement();
             this.hslStatusManagement4 = new HslControls.HslStatusManagement();
             this.hslStatusManagement3 = new HslControls.HslStatusManagement();
             this.hslStatusManagement1 = new HslControls.HslStatusManagement();
-            this.hslStatusManagement2 = new HslControls.HslStatusManagement();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -312,6 +312,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // hslStatusManagement2
+            // 
+            this.hslStatusManagement2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.hslStatusManagement2.ColCount = 20;
+            this.hslStatusManagement2.GeneralColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.hslStatusManagement2.Location = new System.Drawing.Point(14, 20);
+            this.hslStatusManagement2.Name = "hslStatusManagement2";
+            this.hslStatusManagement2.RowCount = 10;
+            this.hslStatusManagement2.Size = new System.Drawing.Size(437, 222);
+            this.hslStatusManagement2.SpacingOffect = 8F;
+            this.hslStatusManagement2.TabIndex = 1;
+            this.hslStatusManagement2.Click += new System.EventHandler(this.HslStatusManagement1_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label9);
@@ -349,6 +362,31 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "跑马灯示例";
             // 
+            // hslStatusManagement6
+            // 
+            this.hslStatusManagement6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hslStatusManagement6.ColCount = 50;
+            this.hslStatusManagement6.GeneralColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hslStatusManagement6.IsRenderBorder = false;
+            this.hslStatusManagement6.Location = new System.Drawing.Point(350, 213);
+            this.hslStatusManagement6.Name = "hslStatusManagement6";
+            this.hslStatusManagement6.RowCount = 7;
+            this.hslStatusManagement6.Size = new System.Drawing.Size(603, 88);
+            this.hslStatusManagement6.SpacingOffect = 2F;
+            this.hslStatusManagement6.TabIndex = 7;
+            this.hslStatusManagement6.Click += new System.EventHandler(this.HslStatusManagement1_Click);
+            // 
+            // hslStatusManagement5
+            // 
+            this.hslStatusManagement5.ColCount = 30;
+            this.hslStatusManagement5.GeneralColor = System.Drawing.Color.Linen;
+            this.hslStatusManagement5.Location = new System.Drawing.Point(398, 33);
+            this.hslStatusManagement5.Name = "hslStatusManagement5";
+            this.hslStatusManagement5.RowCount = 6;
+            this.hslStatusManagement5.Size = new System.Drawing.Size(480, 93);
+            this.hslStatusManagement5.TabIndex = 6;
+            this.hslStatusManagement5.Click += new System.EventHandler(this.HslStatusManagement1_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -376,29 +414,6 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "一般的使用";
             // 
-            // hslStatusManagement6
-            // 
-            this.hslStatusManagement6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.hslStatusManagement6.ColCount = 50;
-            this.hslStatusManagement6.GeneralColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.hslStatusManagement6.IsRenderBorder = false;
-            this.hslStatusManagement6.Location = new System.Drawing.Point(350, 213);
-            this.hslStatusManagement6.Name = "hslStatusManagement6";
-            this.hslStatusManagement6.RowCount = 7;
-            this.hslStatusManagement6.Size = new System.Drawing.Size(603, 88);
-            this.hslStatusManagement6.SpacingOffect = 2F;
-            this.hslStatusManagement6.TabIndex = 7;
-            // 
-            // hslStatusManagement5
-            // 
-            this.hslStatusManagement5.ColCount = 30;
-            this.hslStatusManagement5.GeneralColor = System.Drawing.Color.Linen;
-            this.hslStatusManagement5.Location = new System.Drawing.Point(398, 33);
-            this.hslStatusManagement5.Name = "hslStatusManagement5";
-            this.hslStatusManagement5.RowCount = 6;
-            this.hslStatusManagement5.Size = new System.Drawing.Size(480, 93);
-            this.hslStatusManagement5.TabIndex = 6;
-            // 
             // hslStatusManagement4
             // 
             this.hslStatusManagement4.Location = new System.Drawing.Point(14, 242);
@@ -407,6 +422,7 @@
             this.hslStatusManagement4.Size = new System.Drawing.Size(284, 59);
             this.hslStatusManagement4.SpacingOffect = 6F;
             this.hslStatusManagement4.TabIndex = 2;
+            this.hslStatusManagement4.Click += new System.EventHandler(this.HslStatusManagement1_Click);
             // 
             // hslStatusManagement3
             // 
@@ -416,6 +432,7 @@
             this.hslStatusManagement3.Size = new System.Drawing.Size(284, 59);
             this.hslStatusManagement3.SpacingOffect = 6F;
             this.hslStatusManagement3.TabIndex = 1;
+            this.hslStatusManagement3.Click += new System.EventHandler(this.HslStatusManagement1_Click);
             // 
             // hslStatusManagement1
             // 
@@ -424,23 +441,13 @@
             this.hslStatusManagement1.Size = new System.Drawing.Size(284, 59);
             this.hslStatusManagement1.SpacingOffect = 6F;
             this.hslStatusManagement1.TabIndex = 0;
-            // 
-            // hslStatusManagement2
-            // 
-            this.hslStatusManagement2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.hslStatusManagement2.ColCount = 20;
-            this.hslStatusManagement2.GeneralColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.hslStatusManagement2.Location = new System.Drawing.Point(14, 20);
-            this.hslStatusManagement2.Name = "hslStatusManagement2";
-            this.hslStatusManagement2.RowCount = 10;
-            this.hslStatusManagement2.Size = new System.Drawing.Size(437, 222);
-            this.hslStatusManagement2.SpacingOffect = 8F;
-            this.hslStatusManagement2.TabIndex = 1;
+            this.hslStatusManagement1.Click += new System.EventHandler(this.HslStatusManagement1_Click);
             // 
             // FormStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

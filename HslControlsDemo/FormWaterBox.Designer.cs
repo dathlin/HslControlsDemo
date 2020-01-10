@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent( )
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWaterBox));
             this.hslWaterBox1 = new HslControls.HslWaterBox();
             this.hslWaterBox2 = new HslControls.HslWaterBox();
             this.hslWaterBox3 = new HslControls.HslWaterBox();
@@ -52,6 +53,7 @@
             this.hslWaterBox1.TabIndex = 0;
             this.hslWaterBox1.Text = "水箱1";
             this.hslWaterBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(246)))));
+            this.hslWaterBox1.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslWaterBox2
             // 
@@ -64,6 +66,7 @@
             this.hslWaterBox2.TabIndex = 1;
             this.hslWaterBox2.Text = "水箱2";
             this.hslWaterBox2.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(246)))));
+            this.hslWaterBox2.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslWaterBox3
             // 
@@ -75,6 +78,7 @@
             this.hslWaterBox3.TabIndex = 2;
             this.hslWaterBox3.Text = "水箱3";
             this.hslWaterBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(246)))));
+            this.hslWaterBox3.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslWaterBox4
             // 
@@ -86,37 +90,41 @@
             this.hslWaterBox4.TabIndex = 3;
             this.hslWaterBox4.Text = "水箱4";
             this.hslWaterBox4.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.hslWaterBox4.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslPipeLine1
             // 
+            this.hslPipeLine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine1.BackgroundImage")));
             this.hslPipeLine1.Location = new System.Drawing.Point(54, 231);
-            this.hslPipeLine1.MoveSpeed = 0F;
             this.hslPipeLine1.Name = "hslPipeLine1";
             this.hslPipeLine1.PipeLineActive = true;
             this.hslPipeLine1.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine1.PipeTurnRight = HslControls.HslPipeTurnDirection.Right;
             this.hslPipeLine1.Size = new System.Drawing.Size(22, 153);
             this.hslPipeLine1.TabIndex = 11;
+            this.hslPipeLine1.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslPipeLine2
             // 
+            this.hslPipeLine2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine2.BackgroundImage")));
             this.hslPipeLine2.Location = new System.Drawing.Point(75, 362);
-            this.hslPipeLine2.MoveSpeed = 0F;
             this.hslPipeLine2.Name = "hslPipeLine2";
             this.hslPipeLine2.PipeLineActive = true;
             this.hslPipeLine2.Size = new System.Drawing.Size(200, 22);
             this.hslPipeLine2.TabIndex = 12;
+            this.hslPipeLine2.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslPipeLine3
             // 
+            this.hslPipeLine3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine3.BackgroundImage")));
             this.hslPipeLine3.Location = new System.Drawing.Point(275, 362);
-            this.hslPipeLine3.MoveSpeed = 0F;
             this.hslPipeLine3.Name = "hslPipeLine3";
             this.hslPipeLine3.PipeLineActive = true;
             this.hslPipeLine3.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
             this.hslPipeLine3.PipeTurnLeft = HslControls.HslPipeTurnDirection.Left;
             this.hslPipeLine3.Size = new System.Drawing.Size(22, 109);
             this.hslPipeLine3.TabIndex = 13;
+            this.hslPipeLine3.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // hslWaterBox5
             // 
@@ -129,6 +137,7 @@
             this.hslWaterBox5.Text = "水箱5";
             this.hslWaterBox5.Value = 0F;
             this.hslWaterBox5.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(246)))));
+            this.hslWaterBox5.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // groupBox1
             // 
@@ -153,11 +162,13 @@
             this.hslWaterBox6.TabIndex = 3;
             this.hslWaterBox6.Text = "水箱6";
             this.hslWaterBox6.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(235)))), ((int)(((byte)(246)))));
+            this.hslWaterBox6.Click += new System.EventHandler(this.HslWaterBox1_Click);
             // 
             // FormWaterBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.hslPipeLine3);

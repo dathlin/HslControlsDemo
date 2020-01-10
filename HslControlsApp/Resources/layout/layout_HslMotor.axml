@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslMotor
+        android:layout_width="match_parent"
+        android:layout_height="500px"/>
+
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="600px"
+        android:layout_width="500px"
+        app:edgeColor="#6B8E23"
+        android:layout_height="300px"/>
+
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="600px"
+        android:layout_marginLeft="600px"
+        android:layout_width="500px"
+        app:edgeColor="#A020F0"
+        android:layout_height="300px"/>
+
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="1000px"
+        android:layout_width="300px"
+        app:text=""
+        android:layout_height="200px"/>
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="1300px"
+        android:layout_width="300px"
+        app:text=""
+        app:arrowDirection="Left"
+        android:layout_height="200px"/>
+
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="400px"
+        android:layout_width="300px"
+        app:arrowDirection="Up"
+        app:text=""
+        android:layout_height="450px"/>
+    
+    
+    <HslControls.HslMotor
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="750px"
+        android:layout_width="300px"
+        app:arrowDirection="Down"
+        app:text=""
+        android:layout_height="450px"/>
+
+</RelativeLayout>

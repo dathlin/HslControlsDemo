@@ -30,15 +30,15 @@
         {
             this.hslGanttChart1 = new HslControls.HslGanttChart();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.hslGanttChart2 = new HslControls.HslGanttChart();
-            this.hslGanttChart3 = new HslControls.HslGanttChart();
-            this.hslGanttChart4 = new HslControls.HslGanttChart();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.hslGanttChart4 = new HslControls.HslGanttChart();
+            this.hslGanttChart3 = new HslControls.HslGanttChart();
+            this.hslGanttChart2 = new HslControls.HslGanttChart();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.hslGanttChart5 = new HslControls.HslGanttChart();
             this.hslGanttChart6 = new HslControls.HslGanttChart();
+            this.hslGanttChart5 = new HslControls.HslGanttChart();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.hslGanttChart7 = new HslControls.HslGanttChart();
             this.groupBox1.SuspendLayout();
@@ -52,6 +52,7 @@
             this.hslGanttChart1.Name = "hslGanttChart1";
             this.hslGanttChart1.Size = new System.Drawing.Size(296, 65);
             this.hslGanttChart1.TabIndex = 0;
+            this.hslGanttChart1.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox1
             // 
@@ -69,24 +70,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "简单的使用";
             // 
-            // hslGanttChart2
+            // label3
             // 
-            this.hslGanttChart2.Location = new System.Drawing.Point(18, 134);
-            this.hslGanttChart2.Name = "hslGanttChart2";
-            this.hslGanttChart2.Size = new System.Drawing.Size(296, 65);
-            this.hslGanttChart2.TabIndex = 1;
-            this.hslGanttChart2.TimeSegment = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(636, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "背景隐藏";
             // 
-            // hslGanttChart3
+            // label2
             // 
-            this.hslGanttChart3.Location = new System.Drawing.Point(355, 31);
-            this.hslGanttChart3.Name = "hslGanttChart3";
-            this.hslGanttChart3.Size = new System.Drawing.Size(619, 65);
-            this.hslGanttChart3.TabIndex = 2;
-            this.hslGanttChart3.TimeCount = 31;
-            this.hslGanttChart3.TimeFormate = "{0}";
-            this.hslGanttChart3.TimeMax = 31;
-            this.hslGanttChart3.TimeSegment = 31;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(588, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(185, 12);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "范围设置，用来表示一个月的情况";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(137, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "区段设置";
             // 
             // hslGanttChart4
             // 
@@ -99,33 +108,28 @@
             this.hslGanttChart4.TimeFormate = "{0}";
             this.hslGanttChart4.TimeMax = 31;
             this.hslGanttChart4.TimeSegment = 31;
+            this.hslGanttChart4.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
-            // label1
+            // hslGanttChart3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(137, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "区段设置";
+            this.hslGanttChart3.Location = new System.Drawing.Point(355, 31);
+            this.hslGanttChart3.Name = "hslGanttChart3";
+            this.hslGanttChart3.Size = new System.Drawing.Size(619, 65);
+            this.hslGanttChart3.TabIndex = 2;
+            this.hslGanttChart3.TimeCount = 31;
+            this.hslGanttChart3.TimeFormate = "{0}";
+            this.hslGanttChart3.TimeMax = 31;
+            this.hslGanttChart3.TimeSegment = 31;
+            this.hslGanttChart3.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
-            // label2
+            // hslGanttChart2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(588, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 12);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "范围设置，用来表示一个月的情况";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(636, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "背景隐藏";
+            this.hslGanttChart2.Location = new System.Drawing.Point(18, 134);
+            this.hslGanttChart2.Name = "hslGanttChart2";
+            this.hslGanttChart2.Size = new System.Drawing.Size(296, 65);
+            this.hslGanttChart2.TabIndex = 1;
+            this.hslGanttChart2.TimeSegment = 8;
+            this.hslGanttChart2.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox2
             // 
@@ -138,19 +142,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "动态更新";
             // 
-            // hslGanttChart5
-            // 
-            this.hslGanttChart5.Location = new System.Drawing.Point(46, 50);
-            this.hslGanttChart5.Name = "hslGanttChart5";
-            this.hslGanttChart5.Size = new System.Drawing.Size(402, 65);
-            this.hslGanttChart5.TabIndex = 1;
-            // 
             // hslGanttChart6
             // 
             this.hslGanttChart6.Location = new System.Drawing.Point(507, 50);
             this.hslGanttChart6.Name = "hslGanttChart6";
             this.hslGanttChart6.Size = new System.Drawing.Size(402, 65);
             this.hslGanttChart6.TabIndex = 2;
+            this.hslGanttChart6.Click += new System.EventHandler(this.HslGanttChart1_Click);
+            // 
+            // hslGanttChart5
+            // 
+            this.hslGanttChart5.Location = new System.Drawing.Point(46, 50);
+            this.hslGanttChart5.Name = "hslGanttChart5";
+            this.hslGanttChart5.Size = new System.Drawing.Size(402, 65);
+            this.hslGanttChart5.TabIndex = 1;
+            this.hslGanttChart5.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // groupBox3
             // 
@@ -172,11 +178,13 @@
             this.hslGanttChart7.Name = "hslGanttChart7";
             this.hslGanttChart7.Size = new System.Drawing.Size(402, 75);
             this.hslGanttChart7.TabIndex = 1;
+            this.hslGanttChart7.Click += new System.EventHandler(this.HslGanttChart1_Click);
             // 
             // FormGanttDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormGauge : Form
+    public partial class FormGauge : FormContent
     {
         public FormGauge( )
         {
@@ -36,5 +36,10 @@ namespace HslControlsDemo
 
         private Timer timer = null;
         private Random random = null;
+
+        private void HslGauge1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

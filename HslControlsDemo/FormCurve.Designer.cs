@@ -36,12 +36,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.hslCurve6 = new HslControls.HslCurve();
             this.hslCurve5 = new HslControls.HslCurve();
             this.hslCurve4 = new HslControls.HslCurve();
             this.hslCurve3 = new HslControls.HslCurve();
             this.hslCurve1 = new HslControls.HslCurve();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,9 +113,19 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(83, 23);
             this.button3.TabIndex = 13;
-            this.button3.Text = "隐藏曲线";
+            this.button3.Text = "清空曲线";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(301, 606);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(101, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "保存图片";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // hslCurve6
             // 
@@ -126,10 +136,12 @@
             this.hslCurve6.Name = "hslCurve6";
             this.hslCurve6.Size = new System.Drawing.Size(429, 172);
             this.hslCurve6.TabIndex = 5;
+            this.hslCurve6.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve5
             // 
             this.hslCurve5.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve5.IntervalAbscissaText = 20;
             this.hslCurve5.IsAbscissaStrech = true;
             this.hslCurve5.IsRenderRightCoordinate = false;
             this.hslCurve5.Location = new System.Drawing.Point(24, 436);
@@ -137,6 +149,9 @@
             this.hslCurve5.Size = new System.Drawing.Size(429, 172);
             this.hslCurve5.StrechDataCountMax = 100;
             this.hslCurve5.TabIndex = 4;
+            this.hslCurve5.ValueMaxLeft = 0F;
+            this.hslCurve5.ValueMinLeft = -100F;
+            this.hslCurve5.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve4
             // 
@@ -150,6 +165,7 @@
             this.hslCurve4.Title = "温度压力实时曲线图";
             this.hslCurve4.ValueMaxLeft = 200F;
             this.hslCurve4.ValueMaxRight = 5F;
+            this.hslCurve4.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve3
             // 
@@ -159,10 +175,12 @@
             this.hslCurve3.Name = "hslCurve3";
             this.hslCurve3.Size = new System.Drawing.Size(429, 172);
             this.hslCurve3.TabIndex = 2;
+            this.hslCurve3.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // hslCurve1
             // 
             this.hslCurve1.ColorDashLines = System.Drawing.Color.LightGray;
+            this.hslCurve1.IntervalAbscissaText = -1;
             this.hslCurve1.IsAbscissaStrech = true;
             this.hslCurve1.IsRenderRightCoordinate = false;
             this.hslCurve1.Location = new System.Drawing.Point(24, 12);
@@ -171,21 +189,13 @@
             this.hslCurve1.StrechDataCountMax = 12;
             this.hslCurve1.TabIndex = 0;
             this.hslCurve1.Title = "销售数据";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(301, 606);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "保存图片";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.hslCurve1.Click += new System.EventHandler(this.HslCurve1_Click);
             // 
             // FormCurve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1004, 645);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

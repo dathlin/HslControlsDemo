@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormBlower : Form
+    public partial class FormBlower : FormContent
     {
         public FormBlower( )
         {
@@ -26,6 +26,11 @@ namespace HslControlsDemo
         {
             hslBlower8.MoveSpeed = 0f;
             hslPipeLine1.MoveSpeed = 0f;
+        }
+
+        private void HslBlower1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
         }
     }
 }

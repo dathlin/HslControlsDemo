@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E39165E5-80E8-4769-B29F-3FB291AD3B55}</ProjectGuid>
+    <ProjectGuid>{73D3C71E-04B6-46A3-9DB3-7D029949F93D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>HslControlsDemo</RootNamespace>
     <AssemblyName>HslControlsDemo</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,19 +32,20 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=6.0.3.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.6.0.3\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=8.2.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.8.2.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.0.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.0.3\lib\net35\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.8.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.8\lib\net45\HslControls.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
-    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -50,8 +53,23 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBarChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarChart.Designer.cs">
+      <DependentUpon>FormBarChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBasic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,13 +79,13 @@
     <Compile Include="FormBattery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBattery.designer.cs">
+    <Compile Include="FormBattery.Designer.cs">
       <DependentUpon>FormBattery.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBlower.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBlower.designer.cs">
+    <Compile Include="FormBlower.Designer.cs">
       <DependentUpon>FormBlower.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBottle.cs">
@@ -75,6 +93,12 @@
     </Compile>
     <Compile Include="FormBottle.Designer.cs">
       <DependentUpon>FormBottle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCharge.designer.cs">
+      <DependentUpon>FormCharge.cs</DependentUpon>
     </Compile>
     <Compile Include="FormChart.cs">
       <SubType>Form</SubType>
@@ -85,7 +109,7 @@
     <Compile Include="FormClassifier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormClassifier.designer.cs">
+    <Compile Include="FormClassifier.Designer.cs">
       <DependentUpon>FormClassifier.cs</DependentUpon>
     </Compile>
     <Compile Include="FormClock.cs">
@@ -94,16 +118,25 @@
     <Compile Include="FormClock.Designer.cs">
       <DependentUpon>FormClock.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCncCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCncCenter.designer.cs">
+      <DependentUpon>FormCncCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormConveryer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConveryer.designer.cs">
+    <Compile Include="FormConveryer.Designer.cs">
       <DependentUpon>FormConveryer.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConveyerRollers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConveyerRollers.designer.cs">
+    <Compile Include="FormConveyerRollers.Designer.cs">
       <DependentUpon>FormConveyerRollers.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCurve.cs">
@@ -112,23 +145,41 @@
     <Compile Include="FormCurve.Designer.cs">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCurveHistory.cs">
+    <Compile Include="FormCurve2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCurveHistory.designer.cs">
-      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    <Compile Include="FormCurve2.designer.cs">
+      <DependentUpon>FormCurve2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCurveHistory2.cs">
+    <Compile Include="FormCurveHistory4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCurveHistory2.designer.cs">
-      <DependentUpon>FormCurveHistory2.cs</DependentUpon>
+    <Compile Include="FormCurveHistory4.Designer.cs">
+      <DependentUpon>FormCurveHistory4.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCurveHistory3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCurveHistory3.designer.cs">
+    <Compile Include="FormCurveHistory3.Designer.cs">
       <DependentUpon>FormCurveHistory3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory2.Designer.cs">
+      <DependentUpon>FormCurveHistory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory.Designer.cs">
+      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory5.designer.cs">
+      <DependentUpon>FormCurveHistory5.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDeclaration.cs">
       <SubType>Form</SubType>
@@ -136,16 +187,22 @@
     <Compile Include="FormDeclaration.Designer.cs">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDigitalInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDigitalInput.designer.cs">
+      <DependentUpon>FormDigitalInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFactory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFactory.designer.cs">
+    <Compile Include="FormFactory.Designer.cs">
       <DependentUpon>FormFactory.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGanttDay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGanttDay.designer.cs">
+    <Compile Include="FormGanttDay.Designer.cs">
       <DependentUpon>FormGanttDay.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGauge.cs">
@@ -163,8 +220,26 @@
     <Compile Include="FormGobang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGobang.designer.cs">
+    <Compile Include="FormGobang.Designer.cs">
       <DependentUpon>FormGobang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHMILedSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHMILedSingle.designer.cs">
+      <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslCoolFan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslCoolFan.designer.cs">
+      <DependentUpon>FormHslCoolFan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslTitle.Designer.cs">
+      <DependentUpon>FormHslTitle.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLanternSimple.cs">
       <SubType>Form</SubType>
@@ -184,11 +259,53 @@
     <Compile Include="FormLoad.Designer.cs">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMachineCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMachineCenter.designer.cs">
+      <DependentUpon>FormMachineCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMotor.Designer.cs">
+      <DependentUpon>FormMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoveText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoveText.designer.cs">
+      <DependentUpon>FormMoveText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanel.Designer.cs">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPanelBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanelBack.designer.cs">
+      <DependentUpon>FormPanelBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPieChart.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPieChart.Designer.cs">
       <DependentUpon>FormPieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPipeLineTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPipeLineTest.Designer.cs">
+      <DependentUpon>FormPipeLineTest.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPipeLine.cs">
       <SubType>Form</SubType>
@@ -196,56 +313,89 @@
     <Compile Include="FormPipeLine.Designer.cs">
       <DependentUpon>FormPipeLine.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProgressColorful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgressColorful.Designer.cs">
+      <DependentUpon>FormProgressColorful.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProgress.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormProgress.Designer.cs">
       <DependentUpon>FormProgress.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPropertySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPropertySetting.designer.cs">
+      <DependentUpon>FormPropertySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPumpOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPumpOne.Designer.cs">
+      <DependentUpon>FormPumpOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignature.designer.cs">
+      <DependentUpon>FormSignature.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStatus.designer.cs">
+    <Compile Include="FormStatus.Designer.cs">
       <DependentUpon>FormStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTank.designer.cs">
+    <Compile Include="FormTank.Designer.cs">
       <DependentUpon>FormTank.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormTetris.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTetris.designer.cs">
-      <DependentUpon>FormTetris.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTetris2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTetris2.designer.cs">
+    <Compile Include="FormTetris2.Designer.cs">
       <DependentUpon>FormTetris2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTetris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTetris.Designer.cs">
+      <DependentUpon>FormTetris.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThermometer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThermometer.designer.cs">
+    <Compile Include="FormThermometer.Designer.cs">
       <DependentUpon>FormThermometer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVacuumPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVacuumPump.designer.cs">
+      <DependentUpon>FormVacuumPump.cs</DependentUpon>
     </Compile>
     <Compile Include="FormValves.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormValves.designer.cs">
+    <Compile Include="FormValves.Designer.cs">
       <DependentUpon>FormValves.cs</DependentUpon>
     </Compile>
     <Compile Include="FormWaterBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormWaterBox.designer.cs">
+    <Compile Include="FormWaterBox.Designer.cs">
       <DependentUpon>FormWaterBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBarChart.resx">
+      <DependentUpon>FormBarChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBasic.resx">
       <DependentUpon>FormBasic.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +408,9 @@
     <EmbeddedResource Include="FormBottle.resx">
       <DependentUpon>FormBottle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCharge.resx">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChart.resx">
       <DependentUpon>FormChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClock.resx">
       <DependentUpon>FormClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCncCenter.resx">
+      <DependentUpon>FormCncCenter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConveryer.resx">
       <DependentUpon>FormConveryer.cs</DependentUpon>
@@ -276,17 +432,29 @@
     <EmbeddedResource Include="FormCurve.resx">
       <DependentUpon>FormCurve.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCurveHistory.resx">
-      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    <EmbeddedResource Include="FormCurve2.resx">
+      <DependentUpon>FormCurve2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCurveHistory2.resx">
-      <DependentUpon>FormCurveHistory2.cs</DependentUpon>
+    <EmbeddedResource Include="FormCurveHistory4.resx">
+      <DependentUpon>FormCurveHistory4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurveHistory3.resx">
       <DependentUpon>FormCurveHistory3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory2.resx">
+      <DependentUpon>FormCurveHistory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory.resx">
+      <DependentUpon>FormCurveHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory5.resx">
+      <DependentUpon>FormCurveHistory5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDeclaration.resx">
       <DependentUpon>FormDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDigitalInput.resx">
+      <DependentUpon>FormDigitalInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFactory.resx">
       <DependentUpon>FormFactory.cs</DependentUpon>
@@ -303,6 +471,15 @@
     <EmbeddedResource Include="FormGobang.resx">
       <DependentUpon>FormGobang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHMILedSingle.resx">
+      <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslCoolFan.resx">
+      <DependentUpon>FormHslCoolFan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslTitle.resx">
+      <DependentUpon>FormHslTitle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLanternSimple.resx">
       <DependentUpon>FormLanternSimple.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,14 +489,47 @@
     <EmbeddedResource Include="FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMachineCenter.resx">
+      <DependentUpon>FormMachineCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMotor.resx">
+      <DependentUpon>FormMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveText.resx">
+      <DependentUpon>FormMoveText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanel.resx">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanelBack.resx">
+      <DependentUpon>FormPanelBack.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPieChart.resx">
       <DependentUpon>FormPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPipeLineTest.resx">
+      <DependentUpon>FormPipeLineTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPipeLine.resx">
       <DependentUpon>FormPipeLine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormProgressColorful.resx">
+      <DependentUpon>FormProgressColorful.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormProgress.resx">
       <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPropertySetting.resx">
+      <DependentUpon>FormPropertySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPumpOne.resx">
+      <DependentUpon>FormPumpOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignature.resx">
+      <DependentUpon>FormSignature.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStatus.resx">
       <DependentUpon>FormStatus.cs</DependentUpon>
@@ -327,14 +537,17 @@
     <EmbeddedResource Include="FormTank.resx">
       <DependentUpon>FormTank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTetris.resx">
-      <DependentUpon>FormTetris.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormTetris2.resx">
       <DependentUpon>FormTetris2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTetris.resx">
+      <DependentUpon>FormTetris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThermometer.resx">
       <DependentUpon>FormThermometer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVacuumPump.resx">
+      <DependentUpon>FormVacuumPump.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormValves.resx">
       <DependentUpon>FormValves.cs</DependentUpon>
@@ -350,8 +563,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -362,6 +576,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="car.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,15 +14,19 @@ namespace HslControlsDemo
         static void Main( )
         {
             // 注册控件示例，如果注册失败，你的控件仍然只能使用8个小时
-            bool isSuccess = HslControls.Authorization.SetAuthorizationCode( "你的授权码" );
-            if (!isSuccess)
+            if(HslControls.Authorization.SetAuthorizationCode( "Your Code" ))
             {
-                Console.WriteLine( "注册失败" );
+                // 注册成功 Registration Successful;
+            }
+            else
+            {
+                // 注册失败 Registration Failed;
+
             }
 
             Application.EnableVisualStyles( );
             Application.SetCompatibleTextRenderingDefault( false );
-            Application.Run( new FormLoad( ) );
+            Application.Run( new FormMainWindow( ) );
         }
     }
 }

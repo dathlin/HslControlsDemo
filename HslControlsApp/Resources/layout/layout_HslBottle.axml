@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="200px"
+        android:layout_height="120px" 
+        android:text="Click"
+        android:textAllCaps="false"
+        android:id="@+id/button1"
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="400px"
+    />
+    
+    <HslControls.HslBottle
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="20px"
+        android:layout_width="100px"
+        android:layout_height="400px"
+        android:id = "@+id/hslBottle1"
+        app:bottleTag="1#"
+        />
+    
+    <HslControls.HslBottle
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="200px"
+        android:layout_width="100px"
+        android:layout_height="400px"
+        app:value="80"
+        app:bottleTag="2#"
+        app:useAnimation="true"
+        android:id = "@+id/hslBottle2"
+        />
+
+</RelativeLayout>

@@ -33,8 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -84,17 +84,8 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(587, 75);
             this.label5.TabIndex = 4;
-            this.label5.Text = "个人授权：200 Rmb即可加入VIP群，实时获取新版的key，同样禁止公开key，仅允许使用于个人项目，禁止商业用途；如需源代码，请联系作者进行详细咨询。";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("华文细黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(26, 254);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(587, 75);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "企业授权：实时的版本key，以及实时版本的源代码获取（源代码禁止公开，否则追求法律责任），组件仅限自己公司项目使用，支持作为贵公司的商业软件的一部分出售。如果需要" +
-    "培训控件使用及开发技术，费用另算。详情请联系作者(支持开发票)";
+            this.label5.Text = "个人授权：240 Rmb即可加入VIP群，实时获取新版的key，同样禁止公开key，仅允许使用于个人项目，禁止商业用途；如需源代码，赞助2000rmb即可以获得永" +
+    "久的源代码更新，详情参考下面的地址：\r\n";
             // 
             // label7
             // 
@@ -102,17 +93,29 @@
             this.label7.Font = new System.Drawing.Font("华文细黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(215, 346);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 17);
+            this.label7.Size = new System.Drawing.Size(136, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "联系QQ： 200962190";
+            this.label7.Text = "详细参考赞助链接";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel1.Location = new System.Drawing.Point(27, 274);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(272, 17);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "http://www.hslcommunication.cn/Cooperation";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // FormDeclaration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 400);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -134,7 +137,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

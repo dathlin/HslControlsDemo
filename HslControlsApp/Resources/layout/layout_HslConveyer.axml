@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HslControls.HslConveyer
+        android:layout_width="match_parent"
+        android:layout_height="150px"/>
+
+     <HslControls.HslConveyer
+        android:layout_marginTop="200px"
+        android:layout_width="300px"
+        app:textColor="#FFD700"
+        android:layout_height="50px"/>
+    
+     <HslControls.HslConveyer
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="200px"
+        android:layout_width="300px"
+        app:moveSpeed="2"
+        app:textColor="#9932CC"
+        android:layout_height="50px"/>
+
+
+    <HslControls.HslConveyer
+        android:layout_marginTop="300px"
+        app:conveyerActive="true"
+        app:moveSpeed="2"
+        android:layout_width="match_parent"
+        android:layout_height="150px"/>
+
+    
+    <HslControls.HslConveyer
+        android:layout_marginLeft="0px"
+        app:conveyerActive="true"
+        android:layout_marginTop="600px"
+        android:layout_width="400px"
+        app:hslConveyerStyle="Upslope"
+        android:layout_height="500px"/>
+
+    
+    <HslControls.HslConveyer
+        android:layout_marginLeft="500px"
+        app:conveyerActive="true"
+        android:layout_marginTop="600px"
+        android:layout_width="400px"
+        app:hslConveyerStyle="Downslope"
+        android:layout_height="500px"/>
+
+</RelativeLayout>

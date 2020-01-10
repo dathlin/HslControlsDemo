@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_width="400px"
+        android:layout_height="150px" />
+
+    
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="500px"
+        android:layout_width="400px"
+        app:displayText="5UCCE55"
+        app:displayForeColor="@android:color/holo_green_light"
+        android:layout_height="150px" />
+
+
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="250px"
+        android:layout_marginLeft="50px"
+        android:layout_width="900px"
+        app:displayNumber = "30"
+        app:ledNumberSize = "4"
+        app:displayText="0123456789AbCcdEFHhJLoPrU: -"
+        android:layout_height="50px"
+        app:displayForeColor="#ff18ffff" />
+
+    
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="50px"
+        android:layout_width="400px"
+        android:background="@android:color/white"
+        android:layout_height="150px" />
+
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="800px"
+        android:layout_marginLeft="50px"
+        android:layout_width="400px"
+        app:unitText="米/秒"
+        android:layout_height="150px" />
+
+
+    <HslControls.HslLedDisplay
+        android:layout_marginTop="800px"
+        android:layout_marginLeft="500px"
+        android:layout_width="400px"
+        android:layout_height="150px"
+        app:displayText="0"
+        android:id="@+id/hslLedDisplay1"
+    />
+</RelativeLayout>

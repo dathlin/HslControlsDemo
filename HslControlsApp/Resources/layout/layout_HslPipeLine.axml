@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        android:layout_height="50px" />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="150px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        app:pipeLineActive="true"
+        android:layout_height="50px" />
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="250px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        app:pipeTurnLeft="Up"
+        app:pipeTurnRight="Down"
+        android:layout_height="50px" />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="350px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        app:pipeTurnLeft="Up"
+        app:pipeLineActive="true"
+        app:pipeTurnRight="Down"
+        android:layout_height="50px" />
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="450px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        app:pipeTurnLeft="Down"
+        app:pipeTurnRight="Up"
+        android:layout_height="50px" />
+
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="550px"
+        android:layout_marginLeft="100px"
+        android:layout_width="700px"
+        app:pipeTurnLeft="Down"
+        app:pipeTurnRight="Up"
+        app:pipeLineActive="true"
+        android:layout_height="50px" />
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="100px"
+        android:layout_width="50px"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="200px"
+        android:layout_width="50px"
+        app:pipeLineActive="true"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="300px"
+        android:layout_width="50px"
+        app:pipeTurnLeft="Left"
+        app:pipeTurnRight="Right"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="400px"
+        android:layout_width="50px"
+        app:pipeTurnLeft="Left"
+        app:pipeTurnRight="Right"
+        app:pipeLineActive="true"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+    
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="500px"
+        android:layout_width="50px"
+        app:pipeTurnLeft="Right"
+        app:pipeTurnRight="Left"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+
+
+    <HslControls.HslPipeLine
+        android:layout_marginTop="700px"
+        android:layout_marginLeft="600px"
+        android:layout_width="50px"
+        app:pipeTurnLeft="Right"
+        app:pipeTurnRight="Left"
+        app:pipeLineActive="true"
+        app:hslDirectionStyle="Vertical"
+        android:layout_height="700px" />
+
+</RelativeLayout>

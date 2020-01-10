@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormThermometer : Form
+    public partial class FormThermometer : FormContent
     {
         public FormThermometer( )
         {
@@ -34,6 +34,8 @@ namespace HslControlsDemo
             timer.Tick += Timer_Tick;
             timer.Interval = 1000;
             timer.Start( );
+
+            hslThermometer6.RightDataTransfer = m => m;
         }
 
         private void Timer_Tick( object sender, EventArgs e )
@@ -44,5 +46,10 @@ namespace HslControlsDemo
 
         private Timer timer;
         private Random random = new Random( );
+
+        private void HslThermometer1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormWaterBox : Form
+    public partial class FormWaterBox : FormContent
     {
         public FormWaterBox( )
         {
@@ -46,6 +46,9 @@ namespace HslControlsDemo
         private Timer timer = new Timer( );
         private List<HslPipeLine> hslPipeLines = new List<HslPipeLine>( );
 
-
+        private void HslWaterBox1_Click( object sender, EventArgs e )
+        {
+            Control_Click( sender, e );
+        }
     }
 }
