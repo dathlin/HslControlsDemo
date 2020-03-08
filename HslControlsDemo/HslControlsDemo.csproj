@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=8.2.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.8.2.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.8.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.8\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.2.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.2.9\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -228,6 +228,12 @@
     </Compile>
     <Compile Include="FormHMILedSingle.designer.cs">
       <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslBagFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslBagFilter.designer.cs">
+      <DependentUpon>FormHslBagFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHslCoolFan.cs">
       <SubType>Form</SubType>
@@ -473,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHMILedSingle.resx">
       <DependentUpon>FormHMILedSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslBagFilter.resx">
+      <DependentUpon>FormHslBagFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHslCoolFan.resx">
       <DependentUpon>FormHslCoolFan.cs</DependentUpon>

@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.8" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.9" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -123,7 +123,7 @@ namespace HslControlsDemo
 
         private void 属性窗口ToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            if (propertySetting.IsDisposed) propertySetting = new FormPropertySetting( );
+            if (propertySetting == null || propertySetting.IsDisposed) propertySetting = new FormPropertySetting( );
             propertySetting.Show( dockPanel1, WeifenLuo.WinFormsUI.Docking.DockState.DockRight );
         }
         private void TreeView1_MouseDoubleClick( object sender, MouseEventArgs e )
@@ -133,7 +133,10 @@ namespace HslControlsDemo
 
             FormContent form = GetFormByName( treeNode.Text );
             if (form == null) return;
-            form.OnControlSelected += new Action<object>( m => propertySetting.SetControlRender( m ) );
+            if (propertySetting != null)
+            {
+                form.OnControlSelected += new Action<object>( m => propertySetting.SetControlRender( m ) );
+            }
             form.Show( dockPanel1 );
         }
 
@@ -171,6 +174,7 @@ namespace HslControlsDemo
                 case "数字键盘": return new FormDigitalInput( );
                 case "冷却风扇": return new FormHslCoolFan( );
                 case "手动签名": return new FormSignature( );
+                case "袋式除尘": return new FormHslBagFilter( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "实时曲线中断": return new FormCurve2( );

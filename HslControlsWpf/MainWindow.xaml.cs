@@ -155,5 +155,11 @@ namespace HslControlsWpf
             WindowHslArcGauge window = new WindowHslArcGauge( );
             window.ShowDialog( );
         }
+
+        private void B_HslBagFilter_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslBagFilter window = new WindowHslBagFilter( );
+            window.ShowDialog( );
+        }
     }
 }

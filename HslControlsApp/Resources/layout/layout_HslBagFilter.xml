@@ -1,0 +1,44 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslBagFilter
+        android:layout_width="400px"
+        android:layout_height="300px"/>
+
+    <HslControls.HslBagFilter
+        android:layout_marginLeft="500px"
+        android:layout_width="300px"
+        android:layout_height="200px"/>
+
+    <HslControls.HslBagFilter
+        android:layout_marginLeft="900px"
+        android:layout_width="100px"
+        android:layout_height="70px"/>
+
+
+    <HslControls.HslBagFilter
+        android:layout_marginTop="400px"
+        android:layout_width="400px"
+        app:borderColor="#6A5ACD"
+        app:centerColor="#C0C0FF"
+        app:edgeColor="#8080FF"
+        android:layout_height="300px"/>
+
+
+    <HslControls.HslBagFilter
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="500px"
+        android:layout_width="400px"
+        app:borderColor="#FF8000"
+        app:centerColor="#FFE0C0"
+        app:edgeColor="#FFC080"
+        android:layout_height="300px"/>
+</RelativeLayout>
