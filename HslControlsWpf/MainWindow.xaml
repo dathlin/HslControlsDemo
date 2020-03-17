@@ -57,6 +57,7 @@
         <Button x:Name="B_HslSegments" Content="HslSegments" Canvas.Left="146" Canvas.Top="302" Width="113" Height="27" Click="B_HslSegments_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslArcGauge" Content="HslArcGauge" Canvas.Left="264" Canvas.Top="10" Width="113" Height="27" Click="B_HslArcGauge_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslBagFilter" Content="HslBagFilter" Canvas.Left="264" Canvas.Top="43" Width="113" Height="27" Click="B_HslBagFilter_Click" RenderTransformOrigin="0.511,2.481"/>
+        <Button x:Name="B_HslCurveHistory" Content="HslCurveHistory" Canvas.Left="264" Canvas.Top="75" Width="113" Height="27" Click="B_HslCurveHistory_Click" RenderTransformOrigin="0.511,2.481"/>
 
     </Canvas>
 </Window>

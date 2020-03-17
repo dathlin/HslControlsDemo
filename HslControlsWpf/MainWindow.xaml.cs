@@ -161,5 +161,11 @@ namespace HslControlsWpf
             WindowHslBagFilter window = new WindowHslBagFilter( );
             window.ShowDialog( );
         }
+
+        private void B_HslCurveHistory_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslCurveHistory window = new WindowHslCurveHistory( );
+            window.ShowDialog( );
+        }
     }
 }

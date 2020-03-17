@@ -148,6 +148,7 @@ namespace HslControlsDemo
             byte[] buffer = new byte[hslStatusManagement6.RowCount * hslStatusManagement6.ColCount];
             random.NextBytes(buffer);
             hslStatusManagement6.SetColorAll(buffer.Select(new Func<byte, Color>(GetColorFromValue)).ToArray());
+            hslStatusManagement6.SetAllDescription( buffer.Select( new Func<byte, string>( m => $"Value:{m}" ) ).ToArray( ) ) ;
         }
 
         private Color GetColorFromValue( byte value )

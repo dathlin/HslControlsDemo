@@ -30,9 +30,9 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.2.9
-1. HslPanel：新增一个增强型panel组件，继承系统panel，支持渐变色背景。
-2. HslBagFilter: 新增一个袋式除尘器控件。适用winform，安卓，wpf
+            textBox1.Text = @"V2.3.0
+1. HslStatusManagement：对每个的点阵信息，支持设置消息提示，当光标挪动到点阵上，提示信息文本。
+2. HslTruck: 新增一个卡车控件，支持两种状态，方向变换，升降功能，目前仅支持winform。
 ";
         }
     }

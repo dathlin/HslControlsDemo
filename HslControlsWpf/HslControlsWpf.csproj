@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.2.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.9\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.3.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.3.0\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -54,6 +54,7 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -86,6 +87,9 @@
     </Compile>
     <Compile Include="WindowHslCurve.xaml.cs">
       <DependentUpon>WindowHslCurve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslCurveHistory.xaml.cs">
+      <DependentUpon>WindowHslCurveHistory.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslHandValve.xaml.cs">
       <DependentUpon>WindowHslHandValve.xaml</DependentUpon>
@@ -176,6 +180,10 @@
     <Page Include="WindowHslCurve.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslCurveHistory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowHslHandValve.xaml">
       <SubType>Designer</SubType>

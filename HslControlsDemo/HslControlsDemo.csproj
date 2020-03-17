@@ -38,8 +38,8 @@
     <Reference Include="HslCommunication, Version=8.2.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.8.2.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.2.9.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.2.9\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.3.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.3.0\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -246,6 +246,12 @@
     </Compile>
     <Compile Include="FormHslTitle.Designer.cs">
       <DependentUpon>FormHslTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslTruck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslTruck.designer.cs">
+      <DependentUpon>FormHslTruck.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLanternSimple.cs">
       <SubType>Form</SubType>
@@ -488,6 +494,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHslTitle.resx">
       <DependentUpon>FormHslTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslTruck.resx">
+      <DependentUpon>FormHslTruck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLanternSimple.resx">
       <DependentUpon>FormLanternSimple.cs</DependentUpon>

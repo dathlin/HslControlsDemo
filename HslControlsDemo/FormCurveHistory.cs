@@ -106,6 +106,42 @@ namespace HslControlsDemo
              } ) );
         }
 
+        private void ThreadReadExample2( )
+        {
+            Thread.Sleep( 100 );
+            // 我们读取记事本的数据
+            string text = System.IO.File.ReadAllText( @"C:\Users\DATHLIN\Desktop\历史曲线-数据.txt", Encoding.UTF8 );
+            string[] texts = text.Split( new char[] { '#' } );
+
+            string[] str_datas = texts[0].Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] str_dates = texts[1].Split( new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries );
+
+            float[] data = new float[str_datas.Length];
+            DateTime[] times = new DateTime[str_dates.Length];
+            for (int i = 0; i < str_datas.Length; i++)
+            {
+                if (str_datas[i] == "NaN")
+                    data[i] = float.NaN;
+                else
+                    data[i] = float.Parse( str_datas[i] );
+            }
+            for (int i = 0; i < str_dates.Length; i++)
+            {
+                times[i] = DateTime.Parse( str_dates[i] );
+            }
+
+
+            // 显示出数据信息来
+            Invoke( new Action( ( ) =>
+            {
+                hslCurveHistory1.ValueMinLeft = 0;
+                hslCurveHistory1.ValueMaxLeft = 1500;
+
+                hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, false, "{0:F1} ℃" );
+                hslCurveHistory1.SetDateTimes( times );
+                hslCurveHistory1.RenderCurveUI( );
+            } ) );
+        }
         private Random random = new Random( );
 
         private void FormCurveHistory_Load( object sender, EventArgs e )
