@@ -30,9 +30,12 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.3.0
-1. HslStatusManagement：对每个的点阵信息，支持设置消息提示，当光标挪动到点阵上，提示信息文本。
-2. HslTruck: 新增一个卡车控件，支持两种状态，方向变换，升降功能，目前仅支持winform。
+            textBox1.Text = @"V2.3.1
+1. HslIndicator: WPF版本的控件添加指示灯控件，感谢埃及朋友支持。
+2. hslcurvehistory：历史曲线控件的光标移动时X轴提示的信息支持自定义格式化操作。
+3. hslcurvehistory：历史曲线控件的光标移动到边界时，x轴提示信息显示不会遮挡。
+4. annotation：winform所有的控件增加设计时的注释信息，方便大家选取。
+5. HslDialPlate：winform增加一个新的流量表控件。
 ";
         }
     }

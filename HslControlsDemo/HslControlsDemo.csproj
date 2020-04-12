@@ -34,12 +34,15 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hslcontrols.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HslCommunication, Version=8.2.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.8.2.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.3.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.3.0\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.3.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.3.1\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -240,6 +243,12 @@
     </Compile>
     <Compile Include="FormHslCoolFan.designer.cs">
       <DependentUpon>FormHslCoolFan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslDialPlate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslDialPlate.designer.cs">
+      <DependentUpon>FormHslDialPlate.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHslTitle.cs">
       <SubType>Form</SubType>
@@ -492,6 +501,9 @@
     <EmbeddedResource Include="FormHslCoolFan.resx">
       <DependentUpon>FormHslCoolFan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHslDialPlate.resx">
+      <DependentUpon>FormHslDialPlate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHslTitle.resx">
       <DependentUpon>FormHslTitle.cs</DependentUpon>
     </EmbeddedResource>
@@ -597,6 +609,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="car.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hslcontrols.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

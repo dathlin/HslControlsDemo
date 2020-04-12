@@ -60,7 +60,7 @@
 			this.groupBox1.Controls.Add(this.hslPlay2);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.hslPlay1);
-			this.groupBox1.Location = new System.Drawing.Point(29, 85);
+			this.groupBox1.Location = new System.Drawing.Point(29, 169);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(482, 216);
 			this.groupBox1.TabIndex = 4;
@@ -81,7 +81,7 @@
 			this.groupBox2.Controls.Add(this.label2);
 			this.groupBox2.Controls.Add(this.hslSwitch2);
 			this.groupBox2.Controls.Add(this.hslSwitch1);
-			this.groupBox2.Location = new System.Drawing.Point(29, 307);
+			this.groupBox2.Location = new System.Drawing.Point(29, 391);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(482, 326);
 			this.groupBox2.TabIndex = 5;
@@ -108,7 +108,7 @@
 			this.groupBox3.Controls.Add(this.hslArrow3);
 			this.groupBox3.Controls.Add(this.hslArrow2);
 			this.groupBox3.Controls.Add(this.hslArrow1);
-			this.groupBox3.Location = new System.Drawing.Point(517, 85);
+			this.groupBox3.Location = new System.Drawing.Point(517, 169);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(475, 342);
 			this.groupBox3.TabIndex = 10;
@@ -118,7 +118,7 @@
 			// hslButton4
 			// 
 			this.hslButton4.CustomerInformation = null;
-			this.hslButton4.Location = new System.Drawing.Point(593, 24);
+			this.hslButton4.Location = new System.Drawing.Point(593, 108);
 			this.hslButton4.Name = "hslButton4";
 			this.hslButton4.Selected = true;
 			this.hslButton4.Size = new System.Drawing.Size(124, 44);
@@ -303,7 +303,7 @@
 			// 
 			this.hslButton3.CustomerInformation = null;
 			this.hslButton3.Enabled = false;
-			this.hslButton3.Location = new System.Drawing.Point(321, 24);
+			this.hslButton3.Location = new System.Drawing.Point(321, 108);
 			this.hslButton3.Name = "hslButton3";
 			this.hslButton3.Size = new System.Drawing.Size(124, 44);
 			this.hslButton3.TabIndex = 2;
@@ -313,7 +313,7 @@
 			// hslButton2
 			// 
 			this.hslButton2.CustomerInformation = null;
-			this.hslButton2.Location = new System.Drawing.Point(173, 24);
+			this.hslButton2.Location = new System.Drawing.Point(173, 108);
 			this.hslButton2.Name = "hslButton2";
 			this.hslButton2.Selected = true;
 			this.hslButton2.Size = new System.Drawing.Size(124, 44);
@@ -324,7 +324,7 @@
 			// hslButton1
 			// 
 			this.hslButton1.CustomerInformation = null;
-			this.hslButton1.Location = new System.Drawing.Point(29, 24);
+			this.hslButton1.Location = new System.Drawing.Point(29, 108);
 			this.hslButton1.Name = "hslButton1";
 			this.hslButton1.Size = new System.Drawing.Size(124, 44);
 			this.hslButton1.TabIndex = 0;
@@ -336,7 +336,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.ClientSize = new System.Drawing.Size(1055, 645);
 			this.Controls.Add(this.hslButton4);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
@@ -380,5 +380,5 @@
         private HslControls.HslArrow hslArrow6;
         private HslControls.HslArrow hslArrow9;
         private HslControls.HslButton hslButton4;
-    }
+	}
 }

@@ -19,11 +19,11 @@
             </WPF:HslPipeLine.RenderTransform>
         </WPF:HslPipeLine>
         <Button x:Name="B_HslBottle" Content="HslBottle" Canvas.Left="21" Canvas.Top="10" Width="113" Height="27" Click="B_HslBottle_Click"/>
-        <WPF:HslSwitch Height="123" Canvas.Left="446" Canvas.Top="173" Width="120" SwitchStatus="True" SwitchText="off:On"/>
-        <WPF:HslIndicator Height="101" Canvas.Left="456" Canvas.Top="10" Width="101" IndicatorColor="Blue"/>
+        <WPF:HslSwitch Height="123" Canvas.Left="446" Canvas.Top="199" Width="120" SwitchStatus="True" SwitchText="off:On"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="456" Canvas.Top="10" Width="101" IndicatorColor="Blue" IndicatorStyles="RoundedSides"/>
         <WPF:HslBottle Height="192" Canvas.Left="810" Canvas.Top="25" Width="47" Value="90" UseAnimation="True"/>
         <WPF:HslIndicator Height="101" Canvas.Left="571" Canvas.Top="10" Width="101" IndicatorColor="Green"/>
-        <WPF:HslSwitch Height="123" Canvas.Left="571" Canvas.Top="173" Width="120" SwitchStatus="True"/>
+        <WPF:HslSwitch Height="123" Canvas.Left="571" Canvas.Top="199" Width="120" SwitchStatus="True"/>
         <WPF:HslPipeLine Height="23" Canvas.Left="651" Canvas.Top="333" Width="194" LeftDirection="Left" RightDirection="Right"
                          RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="0.3">
         </WPF:HslPipeLine>
@@ -58,6 +58,10 @@
         <Button x:Name="B_HslArcGauge" Content="HslArcGauge" Canvas.Left="264" Canvas.Top="10" Width="113" Height="27" Click="B_HslArcGauge_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslBagFilter" Content="HslBagFilter" Canvas.Left="264" Canvas.Top="43" Width="113" Height="27" Click="B_HslBagFilter_Click" RenderTransformOrigin="0.511,2.481"/>
         <Button x:Name="B_HslCurveHistory" Content="HslCurveHistory" Canvas.Left="264" Canvas.Top="75" Width="113" Height="27" Click="B_HslCurveHistory_Click" RenderTransformOrigin="0.511,2.481"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="456" Canvas.Top="93" Width="101" IndicatorColor="#FFF3FF00" IndicatorStyles="Arrow2"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="571" Canvas.Top="116" Width="101" IndicatorColor="#FF00FF68" IndicatorStyles="Diamond"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="696" Canvas.Top="115" Width="101" IndicatorColor="#FFFF0C00" IndicatorStyles="Triangle"/>
+        <WPF:HslIndicator Height="101" Canvas.Left="700" Canvas.Top="221" Width="101" IndicatorColor="#FF46FF00" IndicatorStyles="Rectangle"/>
 
     </Canvas>
 </Window>

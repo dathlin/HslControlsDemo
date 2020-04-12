@@ -140,11 +140,11 @@
 			this.label7.BackColor = System.Drawing.Color.Transparent;
 			this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.label7.ForeColor = System.Drawing.Color.Red;
-			this.label7.Location = new System.Drawing.Point(-1, 131);
+			this.label7.Location = new System.Drawing.Point(-1, 140);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(215, 36);
 			this.label7.TabIndex = 2;
-			this.label7.Text = "永久";
+			this.label7.Text = "永久\r\n咨询QQ：200962190";
 			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label8
@@ -158,7 +158,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(215, 36);
 			this.label8.TabIndex = 1;
-			this.label8.Text = "3600 ￥";
+			this.label8.Text = "3600 ￥\r\nC#+andriod+wpf";
 			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label9
@@ -221,11 +221,11 @@
 			this.label4.BackColor = System.Drawing.Color.Transparent;
 			this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.label4.ForeColor = System.Drawing.Color.Red;
-			this.label4.Location = new System.Drawing.Point(-1, 131);
+			this.label4.Location = new System.Drawing.Point(-1, 150);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(215, 36);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "永久";
+			this.label4.Text = "永久\r\nEmail: hsl200909@163.com";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label5
@@ -239,7 +239,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(215, 36);
 			this.label5.TabIndex = 1;
-			this.label5.Text = "2000 ￥";
+			this.label5.Text = "2000 ￥\r\nC# + android + wpf";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label6
@@ -304,9 +304,9 @@
 			this.label3.ForeColor = System.Drawing.Color.Red;
 			this.label3.Location = new System.Drawing.Point(-1, 131);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(215, 36);
+			this.label3.Size = new System.Drawing.Size(215, 75);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "20年";
+			this.label3.Text = "连续运行20年\r\n软件重启计时\r\n普通vip群:838185568\r\n赞助240";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label2

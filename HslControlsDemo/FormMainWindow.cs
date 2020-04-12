@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.3.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.3.1" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -190,7 +190,8 @@ namespace HslControlsDemo
                 case "综合图表": return new FormChart( );
                 case "仪表盘1": return new FormGauge( );
                 case "仪表盘2": return new FormGaugeChart( );
-                    // 机床
+                case "流量表": return new FormHslDialPlate( );
+                // 机床
                 case "加工中心": return new FormCncCenter( );
                 case "数控机床": return new FormMachineCenter( );
                     // 游戏
