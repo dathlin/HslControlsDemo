@@ -80,9 +80,9 @@ namespace HslControlsDemo
                 TextBrush = Brushes.DodgerBlue
             } );
 
-            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, true );
-            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, true );
-            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, true );
+            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.Curve );
             auxiliaryLable5 = new HslControls.AuxiliaryLable( )
             {
                 LocationX = 0.7f,

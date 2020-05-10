@@ -29,15 +29,16 @@ namespace HslControlsApp
             hslCurve1 = FindViewById<HslCurve>( Resource.Id.hslCurve1 );
             hslCurve2 = FindViewById<HslCurve>( Resource.Id.hslCurve2 );
             hslCurve3 = FindViewById<HslCurve>( Resource.Id.hslCurve3 );
+            hslCurve4 = FindViewById<HslCurve>( Resource.Id.hslCurve4 );
 
 
             hslCurve1.SetLeftCurve( "A", null, Color.DodgerBlue );
             hslCurve1.SetLeftCurve( "B", null, Color.DarkOrange );
-            hslCurve1.SetCurve( "C", true, null, Color.LimeGreen, 2f, true );
+            hslCurve1.SetCurve( "C", true, null, Color.LimeGreen, 2f, CurveStyle.LineSegment );
 
             hslCurve2.SetLeftCurve( "A", null, Color.LightSkyBlue );
-            hslCurve2.SetLeftCurve( "B", null, Color.Tomato );
-            hslCurve2.SetRightCurve( "C", null, Color.LimeGreen );
+            hslCurve2.SetLeftCurve( "B", null, Color.Tomato, CurveStyle.StepLine );
+            hslCurve2.SetRightCurve( "C", null, Color.LimeGreen, CurveStyle.StepLineWithoutVertical );
             hslCurve2.SetRightCurve( "D", null, Color.Orchid );
             hslCurve2.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
             {
@@ -60,6 +61,8 @@ namespace HslControlsApp
             };
             hslCurve3.AddAuxiliaryLabel( auxiliaryLable3 );
 
+
+            hslCurve4.SetLeftCurve( "A", null, Color.DodgerBlue, CurveStyle.StepLine );
             timer = new Timer( new TimerCallback( TimerTick ), null, 100, 300 );
         }
 
@@ -126,11 +129,13 @@ namespace HslControlsApp
                     new float[]
                     {
                    (float)random.NextDouble( ) * 10 + 170,
-                   (float)random.NextDouble( ) * 4 + 150,
-                   (float)random.NextDouble( ) * 1 + 3,
+                   (float)random1 * 80 + 80,
+                   (float)random2 * 5 + 1,
                    (float)random.NextDouble( ) * 0.4f,
                     }
                 );
+
+                hslCurve4.AddCurveData( "A", random1 * 150 + 10 );
             } ) );
         }
 
@@ -140,5 +145,6 @@ namespace HslControlsApp
         private HslCurve hslCurve1 = null;
         private HslCurve hslCurve2 = null;
         private HslCurve hslCurve3 = null;
+        private HslCurve hslCurve4 = null;
     }
 }

@@ -122,7 +122,7 @@ namespace HslControlsWpf
                 hslCurveHistory1.ValueMinLeft = 0;
                 hslCurveHistory1.ValueMaxLeft = 150;
 
-                hslCurveHistory1.SetLeftCurve( "温度", data, System.Drawing.Color.DodgerBlue, false, "{0:F1} ℃" );
+                hslCurveHistory1.SetLeftCurve( "温度", data, System.Drawing.Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
                 hslCurveHistory1.SetDateTimes( times );
                 hslCurveHistory1.RenderCurveUI( );
             } ) );

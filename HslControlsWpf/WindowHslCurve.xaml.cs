@@ -84,9 +84,9 @@ namespace HslControlsWpf
                 TextBrush = Colors.DodgerBlue
             } );
 
-            hslCurve5.SetLeftCurve( "A", null, Colors.DodgerBlue, true );
-            hslCurve5.SetLeftCurve( "B", null, Colors.DarkOrange, true );
-            hslCurve5.SetLeftCurve( "C", null, Colors.LimeGreen, true );
+            hslCurve5.SetLeftCurve( "A", null, Colors.DodgerBlue, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "B", null, Colors.DarkOrange, HslControls.CurveStyle.StepLine );
+            hslCurve5.SetLeftCurve( "C", null, Colors.LimeGreen, HslControls.CurveStyle.StepLineWithoutVertical );
             auxiliaryLable5 = new WpfAuxiliaryLable( )
             {
                 LocationX = 0.7f,
@@ -128,8 +128,8 @@ namespace HslControlsWpf
                     new float[]
                     {
                         random1*10 + 80 - 100,
-                        random2*20 + 50 - 100,
-                        random2*30 - 100,
+                        random2*40 + 20 - 100,
+                        random2*50 - 100,
                     },
                     new string[]
                     {
@@ -146,8 +146,8 @@ namespace HslControlsWpf
                    new float[]
                    {
                         random1*10 + 80 - 100,
-                        random2*20 + 50 - 100,
-                        random2*30 - 100,
+                        random2*40 + 20 - 100,
+                        random2*50 - 100,
                    }
                );
             }
@@ -185,7 +185,7 @@ namespace HslControlsWpf
                     new float[]
                     {
                     random1*10 + 80,
-                    random2*20+50,
+                    random2*20 + 50,
                     }
                 );
             }

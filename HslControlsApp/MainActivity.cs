@@ -222,6 +222,11 @@ namespace HslControlsApp
                 Intent i = new Intent( this, typeof( Activity_HslBagFilter ) );
                 this.StartActivity( i );
             }
+            else if(id == Resource.Id.nav_HslDialPlate)
+            {
+                Intent i = new Intent( this, typeof( Activity_HslDialPlate ) );
+                this.StartActivity( i );
+            }
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);

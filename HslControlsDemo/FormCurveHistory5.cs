@@ -107,8 +107,8 @@ namespace HslControlsDemo
             Invoke( new Action( ( ) =>
              {
                  hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, false, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
+                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.LineSegment, "{0:F1} ℃" );
+                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
                  hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
                  {

@@ -30,12 +30,12 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.3.1
-1. HslIndicator: WPF版本的控件添加指示灯控件，感谢埃及朋友支持。
-2. hslcurvehistory：历史曲线控件的光标移动时X轴提示的信息支持自定义格式化操作。
-3. hslcurvehistory：历史曲线控件的光标移动到边界时，x轴提示信息显示不会遮挡。
-4. annotation：winform所有的控件增加设计时的注释信息，方便大家选取。
-5. HslDialPlate：winform增加一个新的流量表控件。
+            textBox1.Text = @"V2.3.2
+1. HslDialPlate: 安卓版本添加流量表控件。
+2. hslcurve：实时曲线控件的样式，从是否平滑改为，线段，曲线，阶梯，阶梯不带竖线。
+3. hslcurvehistory：历史曲线控件的样式，从是否平滑改为，线段，曲线，阶梯，阶梯不带竖线。
+4. hslcurve：实时曲线控件增加一个属性PointsRadius，数据点的大小，默认为0，不显示，值越大，显示的数据点越大。
+5. hslcurvehistory：历史曲线控件增加一个属性PointsRadius，数据点的大小，默认为0，不显示，值越大，显示的数据点越大。
 ";
         }
     }

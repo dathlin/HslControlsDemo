@@ -10,9 +10,9 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory : FormContent
+    public partial class FormCurveHistory6 : FormContent
     {
-        public FormCurveHistory( )
+        public FormCurveHistory6( )
         {
             InitializeComponent();
         }
@@ -28,78 +28,27 @@ namespace HslControlsDemo
         {
             Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            float[] steps = new float[2000];
-            float[] data = new float[2000];
-            float[] press = new float[2000];
-            DateTime[] times = new DateTime[2000];
+            float[] steps = new float[300];
+            float[] data = new float[300];
+            float[] press = new float[300];
+            DateTime[] times = new DateTime[300];
 
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
-                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
+                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 40 + 120);
                 times[i] = DateTime.Now.AddSeconds( i - 2000 );
-                press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.5d + 4.1d);
+                press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.8d + 4.1d);
             }
 
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
-             {
+            {
+                 hslCurveHistory1.SetScaleByXAxis( 8f );
                  hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
+                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.StepLine, "{0:F1} ℃" );
+                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.StepLineWithoutVertical, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
-                 hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
-                 {
-                     LocationX = 0.6f,
-                     Text = $"今日产量：{random.Next(10)}个",
-                     TextBack = new SolidBrush(Color.FromArgb(10,10,10)),
-                     TextBrush = Brushes.Gray,
-                 } );
-                 hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
-                 // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
-                 hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 900,
-                     EndIndex = 1300,
-                     StartHeight = 0.2f,
-                     Height = 0.8f,
-                 } );
-                 hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 500,
-                     EndIndex = 700,
-                     StartHeight = 0.3f,
-                     Height = 0.7f,
-                     IsRenderTimeText = false,
-                     LinePen = Pens.Orange,
-                     MarkText = "报警区域"
-                 } );
-
-                 // 增加一个三角形的线段标记示例 Points的每个点的X是数据索引，Y是数据值（需要选对参考坐标轴，默认为左坐标轴）
-                 hslCurveHistory1.AddMarkLine( new HslControls.HslMarkLine( )
-                 {
-                     CircleBrush = Brushes.DodgerBlue,
-                     IsLeftFrame = true,
-                     IsLineClosed = true,
-                     LinePen = Pens.DodgerBlue,
-                     TextBrush = Brushes.DodgerBlue,
-                     Points = new PointF[]
-                     {
-                         new PointF(200, 180f), new PointF(260, 20f), new PointF(550, 150f),
-                     },
-                     Marks = new string[] { "AA", "BB", "CC" },
-                 } );
-
-                 // 添加一个活动的标记
-                 HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 1000,
-                     EndIndex = 1500,
-                     Height = 0.9f,
-                 };
-                 active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
-                 active.CursorTexts.Add( "工号", "asd2sd123dasf" );
-                 hslCurveHistory1.AddMarkActiveSection( active );
 
                  hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
                  hslCurveHistory1.RenderCurveUI( );
@@ -171,19 +120,19 @@ namespace HslControlsDemo
 
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 0.5f );
+            hslCurveHistory1.SetScaleByXAxis( 4f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
         private void button3_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis(1f );
+            hslCurveHistory1.SetScaleByXAxis( 8f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
         private void button4_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
+            hslCurveHistory1.SetScaleByXAxis( 16f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
@@ -194,16 +143,9 @@ namespace HslControlsDemo
 
         private void button5_Click( object sender, EventArgs e )
         {
-            if (int.TryParse( textBox1.Text, out int index ))
+            if (int.TryParse( textBox2.Text, out int radius ))
             {
-                hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
-                {
-                    Index = index,
-                    CurveKey = "温度",
-                    MarkText = textBox2.Text,
-                    CircleBrush = Brushes.HotPink,
-                    TextBrush = Brushes.Pink
-                } );
+                hslCurveHistory1.PointsRadius = radius;
                 hslCurveHistory1.RenderCurveUI( );
             }
             else
@@ -212,11 +154,6 @@ namespace HslControlsDemo
             }
         }
 
-        private void button6_Click( object sender, EventArgs e )
-        {
-            hslCurveHistory1.RemoveAllMarkText( );
-            hslCurveHistory1.RenderCurveUI( );
-        }
 
         private void button7_Click( object sender, EventArgs e )
         {

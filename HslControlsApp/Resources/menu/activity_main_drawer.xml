@@ -108,5 +108,9 @@
         android:id="@+id/nav_HslBagFilter"
         android:icon="@drawable/ic_menu_send"
         android:title="HslBagFilter" />
+      <item
+        android:id="@+id/nav_HslDialPlate"
+        android:icon="@drawable/ic_menu_share"
+        android:title="HslDialPlate" />
     </group>
 </menu>

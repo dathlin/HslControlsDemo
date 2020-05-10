@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurve : FormContent
+    public partial class FormCurve3 : FormContent
     {
-        public FormCurve( )
+        public FormCurve3( )
         {
             InitializeComponent( );
             random = new Random( );
@@ -35,7 +35,7 @@ namespace HslControlsDemo
             timerTick.Start( );
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
-            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue );
+            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue, HslControls.CurveStyle.StepLine );
             hslCurve1.AddMarkText( new HslControls.HslMarkText( )
             {
                 Index = 2,
@@ -64,14 +64,14 @@ namespace HslControlsDemo
                 TextBrush = Brushes.Pink
             } );
 
-            hslCurve3.SetLeftCurve( "A", null, Color.DodgerBlue );
-            hslCurve3.SetLeftCurve( "B", null, Color.DarkOrange );
-            hslCurve3.SetLeftCurve( "C", null, Color.LimeGreen );
+            hslCurve3.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.StepLine );
+            hslCurve3.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.StepLine );
+            hslCurve3.SetLeftCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.StepLine );
             
-            hslCurve4.SetLeftCurve( "A", null, Color.LightSkyBlue );
-            hslCurve4.SetLeftCurve( "B", null, Color.Tomato );
-            hslCurve4.SetRightCurve( "C", null, Color.LimeGreen );
-            hslCurve4.SetRightCurve( "D", null, Color.Orchid );
+            hslCurve4.SetLeftCurve( "A", null, Color.LightSkyBlue, HslControls.CurveStyle.StepLine );
+            hslCurve4.SetLeftCurve( "B", null, Color.Tomato, HslControls.CurveStyle.StepLineWithoutVertical );
+            hslCurve4.SetRightCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.StepLineWithoutVertical );
+            hslCurve4.SetRightCurve( "D", null, Color.Orchid, HslControls.CurveStyle.StepLine );
             hslCurve4.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
             {
                 LocationX = 0.65f,
@@ -80,9 +80,9 @@ namespace HslControlsDemo
                 TextBrush = Brushes.DodgerBlue
             } );
 
-            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.Curve );
-            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.Curve );
-            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.StepLine );
+            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.StepLine );
+            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.StepLine );
             auxiliaryLable5 = new HslControls.AuxiliaryLable( )
             {
                 LocationX = 0.7f,
@@ -92,8 +92,8 @@ namespace HslControlsDemo
             };
             hslCurve5.AddAuxiliaryLabel( auxiliaryLable5 );
 
-            hslCurve6.SetLeftCurve( "A", null, Color.DodgerBlue );
-            hslCurve6.SetLeftCurve( "B", null, Color.DarkOrange );
+            hslCurve6.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.StepLine );
+            hslCurve6.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.StepLine );
         }
 
         private HslControls.AuxiliaryLable auxiliaryLable5;
@@ -151,7 +151,7 @@ namespace HslControlsDemo
                 new float[]
                 {
                    (float)random.NextDouble( ) * 10 + 170,
-                   (float)random.NextDouble( ) * 4 + 150,
+                   (float)random.NextDouble( ) * 50 + 50,
                    (float)random.NextDouble( ) * 1 + 3,
                    (float)random.NextDouble( ) * 0.4f,
                 }
@@ -163,8 +163,8 @@ namespace HslControlsDemo
                     new string[] { "A", "B" },
                     new float[]
                     {
-                        random1*10 + 80,
-                        random2*20+50,
+                        random1*50 + 30,
+                        random2*70 + 20,
                     },
                     new string[]
                     {
@@ -179,8 +179,8 @@ namespace HslControlsDemo
                     new string[] { "A", "B" },
                     new float[]
                     {
-                    random1*10 + 80,
-                    random2*20+50,
+                        random1*50 + 30,
+                        random2*70 + 20,
                     }
                 );
             }

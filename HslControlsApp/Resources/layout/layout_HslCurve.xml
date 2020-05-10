@@ -1,0 +1,54 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HslControls.HslCurve
+        android:id="@+id/hslCurve1"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        />
+
+    <HslControls.HslCurve
+        android:id="@+id/hslCurve2"
+        android:background="#303030"
+        android:layout_width="match_parent"
+        android:layout_marginTop="550px"
+        android:layout_height="500px"
+        app:valueMaxOfLeft="200"
+        app:valueMaxOfRight="10"
+        app:isAbscissaStrech="true"
+        app:strechDataCountMax="80"
+        app:intervalAbscissaText="50"
+        app:colorDashLines="@color/material_grey_800"
+        />
+    
+    <HslControls.HslCurve
+        android:id="@+id/hslCurve3"
+        android:background="#303030"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1100px"
+        android:layout_height="500px"
+        />
+
+    <HslControls.HslCurve
+        android:id="@+id/hslCurve4"
+        android:background="#303030"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1650px"
+        android:layout_height="300px"
+        app:valueMaxOfLeft="200"
+        app:valueMaxOfRight="10"
+        app:isAbscissaStrech="true"
+        app:strechDataCountMax="50"
+        app:pointsRadius="2"
+        app:intervalAbscissaText="50"
+        app:colorDashLines="@color/material_grey_800"
+        />
+</RelativeLayout>
