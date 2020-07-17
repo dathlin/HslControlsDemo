@@ -17,11 +17,12 @@ namespace HslControlsDemo
             if(HslControls.Authorization.SetAuthorizationCode( "Your Code" ))
             {
                 // 注册成功 Registration Successful;
+                // MessageBox.Show( "Registration Successful", "Check", MessageBoxButtons.OK, MessageBoxIcon.Information );
             }
             else
             {
                 // 注册失败 Registration Failed;
-
+                // MessageBox.Show( "Registration Failed", "Check", MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
 
             Application.EnableVisualStyles( );

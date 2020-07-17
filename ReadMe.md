@@ -132,6 +132,8 @@ Install-Package HslControls
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/124.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/125.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/127.png)
+![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/128.png)
+![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/129.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/200.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/201.png)
 ![Picture](https://raw.githubusercontent.com/dathlin/HslControlsDemo/master/img/202.png)

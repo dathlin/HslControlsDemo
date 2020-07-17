@@ -181,6 +181,7 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.timeAxisChart = new HslControls.HslChart();
             this.btnLoadData = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -205,6 +206,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.baseChart);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.btnChangeBaseChart);
@@ -916,6 +918,16 @@
             this.btnLoadData.UseVisualStyleBackColor = true;
             this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(518, 48);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 51);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "缩放复原";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -967,5 +979,6 @@
         private System.Windows.Forms.TabPage tabPage5;
         private HslControls.HslChart timeAxisChart;
         private System.Windows.Forms.Button btnLoadData;
+        private System.Windows.Forms.Button button1;
     }
 }

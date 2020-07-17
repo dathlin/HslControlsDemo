@@ -62,6 +62,8 @@
         <WPF:HslIndicator Height="101" Canvas.Left="571" Canvas.Top="116" Width="101" IndicatorColor="#FF00FF68" IndicatorStyles="Diamond"/>
         <WPF:HslIndicator Height="101" Canvas.Left="696" Canvas.Top="115" Width="101" IndicatorColor="#FFFF0C00" IndicatorStyles="Triangle"/>
         <WPF:HslIndicator Height="101" Canvas.Left="700" Canvas.Top="221" Width="101" IndicatorColor="#FF46FF00" IndicatorStyles="Rectangle"/>
-
+        <Button x:Name="B_HslBattery" Content="HslBattery" Canvas.Left="264" Canvas.Top="107" Width="113" Height="27" Click="B_HslBattery_Click"/>
+        <Button x:Name="B_HslArrow" Content="HslArrow" Canvas.Left="264" Canvas.Top="139" Width="113" Height="27" Click="B_HslArrow_Click"/>
+        <Button x:Name="B_HslGanttChart" Content="HslGanttChart" Canvas.Left="264" Canvas.Top="171" Width="113" Height="27" Click="B_HslGanttChart_Click"/>
     </Canvas>
 </Window>

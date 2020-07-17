@@ -135,5 +135,12 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
+
+        private void button1_Click( object sender, EventArgs e )
+        {
+            baseChart.OffsetX = 0;
+            baseChart.OffsetY = 0;
+            baseChart.SetZoomTimes( 0 );
+        }
     }
 }

@@ -142,6 +142,15 @@
             System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("管道测试");
             System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
             treeNode59});
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("基本无界控件");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("中国地图");
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("中国地图暗主题");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("中国地图天气");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("无界控件", new System.Windows.Forms.TreeNode[] {
+            treeNode61,
+            treeNode62,
+            treeNode63,
+            treeNode64});
             this.vS2015LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015LightTheme();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -345,13 +354,24 @@
             treeNode59.Text = "管道测试";
             treeNode60.Name = "节点52";
             treeNode60.Text = "性能测试";
+            treeNode61.Name = "节点1";
+            treeNode61.Text = "基本无界控件";
+            treeNode62.Name = "节点0";
+            treeNode62.Text = "中国地图";
+            treeNode63.Name = "节点0";
+            treeNode63.Text = "中国地图暗主题";
+            treeNode64.Name = "节点0";
+            treeNode64.Text = "中国地图天气";
+            treeNode65.Name = "节点0";
+            treeNode65.Text = "无界控件";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode33,
             treeNode43,
             treeNode50,
             treeNode53,
             treeNode58,
-            treeNode60});
+            treeNode60,
+            treeNode65});
             this.treeView1.Size = new System.Drawing.Size(169, 677);
             this.treeView1.TabIndex = 1;
             // 

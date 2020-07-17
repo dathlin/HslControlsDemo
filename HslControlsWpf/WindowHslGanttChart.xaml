@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslGanttChart"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslGanttChart"  Height="684" Width="1020">
+    <Canvas Initialized="Canvas_Initialized">
+
+        <WPF:HslGanttChart Name="hslGanttChart1" Width="297" Height="73" Canvas.Left="20" Canvas.Top="10"/>
+        <WPF:HslGanttChart x:Name="hslGanttChart2" Width="680" Height="73" TimeStart="0" TimeMax="31" TimeSegment="31" TimeCount="31" TimeFormate="{}{0}" Canvas.Left="322" Canvas.Top="10"/>
+        <Label Content="用来表示24小时的使用" Canvas.Left="104" Canvas.Top="88"/>
+        <Label Content="可以用来表示一个月的情况" Canvas.Left="578" Canvas.Top="88"/>
+        <WPF:HslGanttChart x:Name="hslGanttChart3" Width="439" Height="73" Canvas.Left="20" Canvas.Top="186"/>
+        <Label Content="随机动态更新" Canvas.Left="171" Canvas.Top="264"/>
+        <WPF:HslGanttChart x:Name="hslGanttChart4" Width="439" Height="73" Canvas.Left="507" Canvas.Top="186"/>
+        <Label Content="增量动态更新" Canvas.Left="658" Canvas.Top="264"/>
+
+    </Canvas>
+</Window>

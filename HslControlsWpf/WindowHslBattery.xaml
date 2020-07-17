@@ -1,0 +1,35 @@
+﻿<Window x:Class="HslControlsWpf.WindowHslBattery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslBarChart" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="35" Canvas.Top="20" Value="10" ValueMax="100" />
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="162" Canvas.Top="20" Value="40" ValueMax="100" />
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="283" Canvas.Top="20" Value="60" ValueMax="100" />
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="422" Canvas.Top="20" Value="80" ValueMax="100" />
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="557" Canvas.Top="20" Value="90" ValueMax="100" />
+        <WPF:HslBattery Name="hslBattery1" Height="174" Width="86" Canvas.Left="35" Canvas.Top="292" Value="1.24" IsTextRender="True" StringFormat="{}{0} V" ValueMax="5" />
+        <WPF:HslBattery Name="hslBattery2" Height="174" Width="86" Canvas.Left="162" Canvas.Top="292" Value="3.44" IsTextRender="True" StringFormat="{}{0:F2} V" ValueMax="5" />
+        <WPF:HslBattery Name="hslBattery3" Height="174" Width="86" Canvas.Left="295" Canvas.Top="292" Value="2456" IsTextRender="True" StringFormat="{}{0:F0} ma" ValueMax="5000" />
+        <WPF:HslBattery Height="306" Width="80" Canvas.Left="604" Canvas.Top="182" Value="2456" IsTextRender="True" StringFormat="{}{0} ma" ValueMax="5000" RenderTransformOrigin="0.5,0.5" >
+            <WPF:HslBattery.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WPF:HslBattery.RenderTransform>
+        </WPF:HslBattery>
+        <WPF:HslBattery BatteryBackColor="Gray" Height="174" Width="86" Canvas.Left="438" Canvas.Top="423" Value="2456" IsTextRender="True" StringFormat="{}{0} ma" ValueMax="5000" />
+        <WPF:HslBattery BatteryBackColor="Wheat" Height="174" Width="86" Canvas.Left="544" Canvas.Top="423" Value="2456" IsTextRender="True" StringFormat="{}{0} ma" ValueMax="5000" />
+        <WPF:HslBattery BatteryBackColor="LightPink" Height="174" Width="86" Canvas.Left="653" Canvas.Top="423" Value="2456" IsTextRender="True" StringFormat="{}{0} ma" ValueMax="5000" />
+        <WPF:HslBattery Height="174" Width="86" Canvas.Left="762" Canvas.Top="20" Value="90" ValueMax="100" IsTextRender="True" />
+    </Canvas>
+</Window>

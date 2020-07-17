@@ -167,5 +167,23 @@ namespace HslControlsWpf
             WindowHslCurveHistory window = new WindowHslCurveHistory( );
             window.ShowDialog( );
         }
+
+        private void B_HslBattery_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslBattery window = new WindowHslBattery( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslArrow_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslArrow window = new WindowHslArrow( );
+            window.ShowDialog( );
+        }
+
+        private void B_HslGanttChart_Click( object sender, RoutedEventArgs e )
+        {
+            WindowHslGanttChart window = new WindowHslGanttChart( );
+            window.ShowDialog( );
+        }
     }
 }
