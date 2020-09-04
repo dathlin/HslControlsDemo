@@ -41,8 +41,8 @@
     <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.4.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.4.1\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.4.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.4.3\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -232,6 +232,18 @@
     <Compile Include="FormHslDialPlate.Designer.cs">
       <DependentUpon>FormHslDialPlate.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHslTable2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslTable2.Designer.cs">
+      <DependentUpon>FormHslTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslTable.Designer.cs">
+      <DependentUpon>FormHslTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHslTruck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +261,12 @@
     </Compile>
     <Compile Include="FormNoBoundaryControl.Designer.cs">
       <DependentUpon>FormNoBoundaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPipeLineThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPipeLineThree.Designer.cs">
+      <DependentUpon>FormPipeLineThree.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSignature.cs">
       <SubType>Form</SubType>
@@ -531,6 +549,12 @@
     <EmbeddedResource Include="FormHslDialPlate.resx">
       <DependentUpon>FormHslDialPlate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHslTable2.resx">
+      <DependentUpon>FormHslTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHslTable.resx">
+      <DependentUpon>FormHslTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHslTruck.resx">
       <DependentUpon>FormHslTruck.cs</DependentUpon>
     </EmbeddedResource>
@@ -539,6 +563,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNoBoundaryControl.resx">
       <DependentUpon>FormNoBoundaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPipeLineThree.resx">
+      <DependentUpon>FormPipeLineThree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSignature.resx">
       <DependentUpon>FormSignature.cs</DependentUpon>

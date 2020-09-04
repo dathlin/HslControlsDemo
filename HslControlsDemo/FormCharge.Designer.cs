@@ -274,7 +274,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 75);
             this.label3.TabIndex = 2;
-            this.label3.Text = "连续运行3个月\r\n软件重启计时\r\n普通vip群:838185568\r\n赞助240";
+            this.label3.Text = "连续运行12个月\r\n软件重启计时\r\n普通vip群:838185568\r\n赞助240";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

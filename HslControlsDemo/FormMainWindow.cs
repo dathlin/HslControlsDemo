@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.4.1" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.4.3" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -150,6 +150,7 @@ namespace HslControlsDemo
                 case "数码管": return new FormLedDisplay( );
                 case "时钟": return new FormClock( );
                 case "管道线": return new FormPipeLineTest( );
+                case "三通管道": return new FormPipeLineThree( );
                 case "瓶子控件": return new FormBottle( );
                 case "信号灯": return new FormLanternSimple( );
                 case "传送带": return new FormConveryer( );
@@ -193,6 +194,8 @@ namespace HslControlsDemo
                 case "仪表盘1": return new FormGauge( );
                 case "仪表盘2": return new FormGaugeChart( );
                 case "流量表": return new FormHslDialPlate( );
+                case "表格": return new FormHslTable( );
+                case "表格自定义": return new FormHslTable2( );
                 // 机床
                 case "加工中心": return new FormCncCenter( );
                 case "数控机床": return new FormMachineCenter( );

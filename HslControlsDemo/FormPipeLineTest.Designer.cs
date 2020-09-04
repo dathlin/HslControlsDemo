@@ -30,6 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPipeLineTest));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.hslPipeLine16 = new HslControls.HslPipeLine();
+            this.hslPipeLine15 = new HslControls.HslPipeLine();
+            this.hslPipeLine13 = new HslControls.HslPipeLine();
+            this.hslPipeLine4 = new HslControls.HslPipeLine();
             this.hslPipeLine22 = new HslControls.HslPipeLine();
             this.hslPipeLine21 = new HslControls.HslPipeLine();
             this.hslPipeLine20 = new HslControls.HslPipeLine();
@@ -44,16 +54,6 @@
             this.hslPipeLine3 = new HslControls.HslPipeLine();
             this.hslPipeLine2 = new HslControls.HslPipeLine();
             this.hslPipeLine1 = new HslControls.HslPipeLine();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.hslPipeLine16 = new HslControls.HslPipeLine();
-            this.hslPipeLine15 = new HslControls.HslPipeLine();
-            this.hslPipeLine13 = new HslControls.HslPipeLine();
-            this.hslPipeLine4 = new HslControls.HslPipeLine();
             this.hslPipeLine12 = new HslControls.HslPipeLine();
             this.hslPipeLine14 = new HslControls.HslPipeLine();
             this.hslPipeLine17 = new HslControls.HslPipeLine();
@@ -84,6 +84,109 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "简单的使用";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 273);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "入口";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(705, 505);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "出口";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(724, 287);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 31);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "激活液体";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(850, 287);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 31);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "隐藏液体";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox1.Location = new System.Drawing.Point(724, 348);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(117, 26);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Text = "0.5";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(871, 346);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 31);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "设置流速";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // hslPipeLine16
+            // 
+            this.hslPipeLine16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine16.BackgroundImage")));
+            this.hslPipeLine16.Location = new System.Drawing.Point(313, 348);
+            this.hslPipeLine16.Name = "hslPipeLine16";
+            this.hslPipeLine16.PipeLineActive = true;
+            this.hslPipeLine16.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
+            this.hslPipeLine16.PipeTurnLeft = HslControls.HslPipeTurnDirection.Right;
+            this.hslPipeLine16.PipeTurnRight = HslControls.HslPipeTurnDirection.Left;
+            this.hslPipeLine16.Size = new System.Drawing.Size(30, 160);
+            this.hslPipeLine16.TabIndex = 10;
+            this.hslPipeLine16.Click += new System.EventHandler(this.HslPipeLine22_Click);
+            // 
+            // hslPipeLine15
+            // 
+            this.hslPipeLine15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine15.BackgroundImage")));
+            this.hslPipeLine15.Location = new System.Drawing.Point(173, 478);
+            this.hslPipeLine15.Name = "hslPipeLine15";
+            this.hslPipeLine15.PipeLineActive = true;
+            this.hslPipeLine15.PipeTurnLeft = HslControls.HslPipeTurnDirection.Up;
+            this.hslPipeLine15.Size = new System.Drawing.Size(140, 30);
+            this.hslPipeLine15.TabIndex = 9;
+            this.hslPipeLine15.Click += new System.EventHandler(this.HslPipeLine22_Click);
+            // 
+            // hslPipeLine13
+            // 
+            this.hslPipeLine13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine13.BackgroundImage")));
+            this.hslPipeLine13.Location = new System.Drawing.Point(173, 396);
+            this.hslPipeLine13.Name = "hslPipeLine13";
+            this.hslPipeLine13.PipeLineActive = true;
+            this.hslPipeLine13.PipeTurnLeft = HslControls.HslPipeTurnDirection.Down;
+            this.hslPipeLine13.Size = new System.Drawing.Size(84, 30);
+            this.hslPipeLine13.TabIndex = 7;
+            this.hslPipeLine13.Click += new System.EventHandler(this.HslPipeLine22_Click);
+            // 
+            // hslPipeLine4
+            // 
+            this.hslPipeLine4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine4.BackgroundImage")));
+            this.hslPipeLine4.Location = new System.Drawing.Point(34, 299);
+            this.hslPipeLine4.Name = "hslPipeLine4";
+            this.hslPipeLine4.PipeLineActive = true;
+            this.hslPipeLine4.PipeTurnRight = HslControls.HslPipeTurnDirection.Down;
+            this.hslPipeLine4.Size = new System.Drawing.Size(253, 30);
+            this.hslPipeLine4.TabIndex = 1;
+            this.hslPipeLine4.Click += new System.EventHandler(this.HslPipeLine22_Click);
             // 
             // hslPipeLine22
             // 
@@ -250,109 +353,6 @@
             this.hslPipeLine1.Size = new System.Drawing.Size(242, 30);
             this.hslPipeLine1.TabIndex = 0;
             this.hslPipeLine1.Click += new System.EventHandler(this.HslPipeLine22_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 273);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "入口";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(705, 505);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "出口";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(724, 287);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 31);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "激活液体";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(850, 287);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 31);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "隐藏液体";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(724, 348);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 26);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Text = "0.5";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(871, 346);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 31);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "设置流速";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // hslPipeLine16
-            // 
-            this.hslPipeLine16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine16.BackgroundImage")));
-            this.hslPipeLine16.Location = new System.Drawing.Point(313, 348);
-            this.hslPipeLine16.Name = "hslPipeLine16";
-            this.hslPipeLine16.PipeLineActive = true;
-            this.hslPipeLine16.PipeLineStyle = HslControls.HslDirectionStyle.Vertical;
-            this.hslPipeLine16.PipeTurnLeft = HslControls.HslPipeTurnDirection.Right;
-            this.hslPipeLine16.PipeTurnRight = HslControls.HslPipeTurnDirection.Left;
-            this.hslPipeLine16.Size = new System.Drawing.Size(30, 160);
-            this.hslPipeLine16.TabIndex = 10;
-            this.hslPipeLine16.Click += new System.EventHandler(this.HslPipeLine22_Click);
-            // 
-            // hslPipeLine15
-            // 
-            this.hslPipeLine15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine15.BackgroundImage")));
-            this.hslPipeLine15.Location = new System.Drawing.Point(173, 478);
-            this.hslPipeLine15.Name = "hslPipeLine15";
-            this.hslPipeLine15.PipeLineActive = true;
-            this.hslPipeLine15.PipeTurnLeft = HslControls.HslPipeTurnDirection.Up;
-            this.hslPipeLine15.Size = new System.Drawing.Size(140, 30);
-            this.hslPipeLine15.TabIndex = 9;
-            this.hslPipeLine15.Click += new System.EventHandler(this.HslPipeLine22_Click);
-            // 
-            // hslPipeLine13
-            // 
-            this.hslPipeLine13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine13.BackgroundImage")));
-            this.hslPipeLine13.Location = new System.Drawing.Point(173, 396);
-            this.hslPipeLine13.Name = "hslPipeLine13";
-            this.hslPipeLine13.PipeLineActive = true;
-            this.hslPipeLine13.PipeTurnLeft = HslControls.HslPipeTurnDirection.Down;
-            this.hslPipeLine13.Size = new System.Drawing.Size(84, 30);
-            this.hslPipeLine13.TabIndex = 7;
-            this.hslPipeLine13.Click += new System.EventHandler(this.HslPipeLine22_Click);
-            // 
-            // hslPipeLine4
-            // 
-            this.hslPipeLine4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hslPipeLine4.BackgroundImage")));
-            this.hslPipeLine4.Location = new System.Drawing.Point(34, 299);
-            this.hslPipeLine4.Name = "hslPipeLine4";
-            this.hslPipeLine4.PipeLineActive = true;
-            this.hslPipeLine4.PipeTurnRight = HslControls.HslPipeTurnDirection.Down;
-            this.hslPipeLine4.Size = new System.Drawing.Size(253, 30);
-            this.hslPipeLine4.TabIndex = 1;
-            this.hslPipeLine4.Click += new System.EventHandler(this.HslPipeLine22_Click);
             // 
             // hslPipeLine12
             // 
