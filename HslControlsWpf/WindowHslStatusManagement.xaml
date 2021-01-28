@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslStatusManagement"
+        mc:Ignorable="d"
+        Title="WindowHslStatusManagement" 
+        Height="684" Width="1020" Loaded="Window_Loaded">
+    <Canvas>
+
+        <WPF:HslStatusManagement Height="60" Canvas.Left="10" Canvas.Top="10" Width="300"/>
+        <Label Content="一般的使用" Canvas.Left="121" Canvas.Top="75"/>
+        <WPF:HslStatusManagement Height="60" Canvas.Left="10" Canvas.Top="101" Width="300" RenderStyle="Rhombus"/>
+        <Label Content="菱形" Canvas.Left="145" Canvas.Top="161"/>
+        <WPF:HslStatusManagement Height="60" Canvas.Left="10" Canvas.Top="199" Width="300" RenderStyle="Ellipse"/>
+        <Label Content="椭圆" Canvas.Left="145" Canvas.Top="264"/>
+        <WPF:HslStatusManagement Name="hslStatusManagement5" Height="90" Canvas.Left="426" Canvas.Top="30" Width="475" RowCount="6" ColCount="30" 
+                                 GeneralColor="Wheat" BorderColor="Gray"/>
+        <Label Content="跑马灯示例" Canvas.Left="643" Canvas.Top="120"/>
+        <WPF:HslStatusManagement Name="hslStatusManagement6" Height="86" Canvas.Left="348" Canvas.Top="161" Width="605" RowCount="7" ColCount="50" 
+            GeneralColor="#eeeeee" IsRenderBorder="False" SpacingOffect="2"/>
+        <Label Content="标记次数的示例+tip显示" Canvas.Left="571" Canvas.Top="264"/>
+        <GroupBox Header="GroupBox" Background="#363636" Height="330" Canvas.Left="24" Canvas.Top="313" Width="978">
+            <Canvas>
+                <WPF:HslStatusManagement Name="hslStatusManagement2" RowCount="10" ColCount="20" Canvas.Left="20" Canvas.Top="19"
+                GeneralColor="#464646" BorderColor="#565656" Width="482" Height="269"/>
+                <Button Width="109" Height="32" Canvas.Left="528" Canvas.Top="19" Content="矩阵样式" Click="Button_Click" />
+                <Button Width="109" Height="32" Canvas.Left="680" Canvas.Top="19" Content="椭圆样式" Click="Button_Click_1" />
+                <Button Width="109" Height="32" Canvas.Left="826" Canvas.Top="19" Content="菱形样式" Click="Button_Click_2" />
+                <Button Width="109" Height="32" Canvas.Left="528" Canvas.Top="67" Content="设置随机颜色" Click="Button_Click_3" />
+                <Button Width="109" Height="32" Canvas.Left="680" Canvas.Top="67" Content="还原颜色" Click="Button_Click_4" />
+            </Canvas>
+        </GroupBox>
+
+    </Canvas>
+</Window>

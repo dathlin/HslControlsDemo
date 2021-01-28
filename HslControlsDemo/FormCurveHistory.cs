@@ -236,9 +236,10 @@ namespace HslControlsDemo
             hslCurveHistory1.ScrollToRight( );
         }
 
-        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, int index, int end )
+        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, HslControls.HslMarkForeSection foreSection )
         {
-            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + index + "  End:" + end;
+            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + foreSection.StartIndex + "  End:" + foreSection.EndIndex;
+            foreSection.MarkText = "这是标记的自定义的数据";
         }
 
         private void Button9_Click( object sender, EventArgs e )

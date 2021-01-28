@@ -90,10 +90,11 @@ namespace HslControlsDemo
         }
 
         private Random random = new Random( );
+        private HslControls.AuxiliaryLine auxiliary;
 
         private void FormCurveHistory_Load( object sender, EventArgs e )
         {
-            hslCurveHistory1.AddLeftAuxiliary( 172f );
+            auxiliary = hslCurveHistory1.AddLeftAuxiliary( 172f );
 
             linkLabel1.Click += LinkLabel1_Click;
         }
@@ -175,6 +176,20 @@ namespace HslControlsDemo
         private void HslCurveHistory1_Click( object sender, EventArgs e )
         {
             Control_Click( sender, e );
+        }
+
+        private void button8_Click( object sender, EventArgs e )
+        {
+            // 动态修改辅助线的值
+            try
+            {
+                auxiliary.Value = float.Parse( textBox3.Text );
+                hslCurveHistory1.RenderCurveUI( );
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show( "Wrong:" + ex.Message );
+            }
         }
     }
 }

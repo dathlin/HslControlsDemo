@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslThermometer"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslThermometer" Height="684" Width="1020">
+    <Canvas>
+        <WPF:HslThermometer HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="31" Canvas.Top="30" ValueMax="60" Value="0"/>
+        <WPF:HslThermometer HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="189" Canvas.Top="30" ValueMax="60" Value="0" TemperatureColor="#FF0FA8FF" FontSize="14"/>
+        <WPF:HslThermometer HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="351" Canvas.Top="30" ValueStart="-20" IsRenderText="True" Value="50" TemperatureColor="#FFC447FF" SegmentCount="12"/>
+        <WPF:HslThermometer Name="hslThermometer1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="519" Canvas.Top="30" ValueMax="60" ValueStart="-20" Value="0" Background="#FFB4B4B4" TemperatureBackColor="#FFE2E2E2"/>
+        <WPF:HslThermometer Name="hslThermometer2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="679" Canvas.Top="30" ValueMax="60" ValueStart="-20" Value="0" Background="#FF343434" Foreground="#FFFFFAC9" TemperatureBackColor="#FF787878"/>
+        <WPF:HslThermometer Name="hslThermometer3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="513" Canvas.Left="837" Canvas.Top="30" Value="0" SegmentCount="10" LeftUnitText="百分比" RightUnitText="" Background="#FF1D1D1D" Foreground="#FF7DFFC4" TemperatureColor="#FF4747FF" TemperatureBackColor="#FF7E7E7E"/>
+        <TextBlock Canvas.Left="68" TextWrapping="Wrap" Text="简单的使用" Canvas.Top="577" Height="30" Width="74"/>
+        <TextBlock Canvas.Left="214" TextWrapping="Wrap" Text="调整字体和颜色" Canvas.Top="577" Height="30" Width="102"/>
+        <TextBlock Canvas.Left="360" TextWrapping="Wrap" Text="调整范围并显示文字" Canvas.Top="577" Height="30" Width="129"/>
+        <TextBlock Canvas.Left="546" TextWrapping="Wrap" Text="静态更新数据" Canvas.Top="577" Height="30" Width="102" RenderTransformOrigin="3.657,0.367"/>
+        <TextBlock Canvas.Left="700" TextWrapping="Wrap" Text="动态更新数据" Canvas.Top="577" Height="30" Width="102" RenderTransformOrigin="3.657,0.367"/>
+        <TextBlock Canvas.Left="855" TextWrapping="Wrap" Text="当做进度条来使用" Canvas.Top="577" Height="30" Width="102" RenderTransformOrigin="3.657,0.367"/>
+
+
+    </Canvas>
+</Window>

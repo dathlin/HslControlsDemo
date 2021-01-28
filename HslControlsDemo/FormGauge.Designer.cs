@@ -29,17 +29,17 @@
         private void InitializeComponent( )
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.hslGauge1 = new HslControls.HslGauge();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.hslGauge2 = new HslControls.HslGauge();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.hslGauge3 = new HslControls.HslGauge();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.hslGauge7 = new HslControls.HslGauge();
             this.hslGauge6 = new HslControls.HslGauge();
             this.hslGauge5 = new HslControls.HslGauge();
             this.hslGauge4 = new HslControls.HslGauge();
+            this.hslGauge3 = new HslControls.HslGauge();
+            this.hslGauge2 = new HslControls.HslGauge();
+            this.hslGauge1 = new HslControls.HslGauge();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,14 +56,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "简单的使用";
             // 
-            // hslGauge1
-            // 
-            this.hslGauge1.Location = new System.Drawing.Point(6, 20);
-            this.hslGauge1.Name = "hslGauge1";
-            this.hslGauge1.Size = new System.Drawing.Size(301, 182);
-            this.hslGauge1.TabIndex = 0;
-            this.hslGauge1.Click += new System.EventHandler(this.HslGauge1_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.hslGauge2);
@@ -73,18 +65,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "设置颜色，数据范围";
-            // 
-            // hslGauge2
-            // 
-            this.hslGauge2.GaugeBorder = System.Drawing.Color.Blue;
-            this.hslGauge2.Location = new System.Drawing.Point(6, 20);
-            this.hslGauge2.Name = "hslGauge2";
-            this.hslGauge2.SegmentCount = 5;
-            this.hslGauge2.Size = new System.Drawing.Size(301, 182);
-            this.hslGauge2.TabIndex = 0;
-            this.hslGauge2.UnitText = "* 10 ℃";
-            this.hslGauge2.ValueMax = 10F;
-            this.hslGauge2.Click += new System.EventHandler(this.HslGauge1_Click);
             // 
             // groupBox3
             // 
@@ -97,18 +77,6 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "大的圆盘加黑色主题";
-            // 
-            // hslGauge3
-            // 
-            this.hslGauge3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.hslGauge3.GaugeBorder = System.Drawing.Color.Gray;
-            this.hslGauge3.IsBigSemiCircle = true;
-            this.hslGauge3.Location = new System.Drawing.Point(55, 32);
-            this.hslGauge3.Name = "hslGauge3";
-            this.hslGauge3.PointerColor = System.Drawing.Color.Lime;
-            this.hslGauge3.Size = new System.Drawing.Size(203, 182);
-            this.hslGauge3.TabIndex = 0;
-            this.hslGauge3.Click += new System.EventHandler(this.HslGauge1_Click);
             // 
             // groupBox4
             // 
@@ -190,20 +158,53 @@
             this.hslGauge4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.hslGauge4.GaugeBorder = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(196)))), ((int)(((byte)(216)))));
             this.hslGauge4.IsBigSemiCircle = true;
-            this.hslGauge4.IsTextUnderPointer = false;
             this.hslGauge4.Location = new System.Drawing.Point(80, 31);
             this.hslGauge4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.hslGauge4.Name = "hslGauge4";
             this.hslGauge4.PointerColor = System.Drawing.Color.HotPink;
-            this.hslGauge4.SegmentCount = 8;
-            this.hslGauge4.Size = new System.Drawing.Size(324, 295);
+            this.hslGauge4.SegmentCount = 5;
+            this.hslGauge4.Size = new System.Drawing.Size(380, 202);
             this.hslGauge4.TabIndex = 0;
             this.hslGauge4.UnitText = "× 1000 R/MIN";
             this.hslGauge4.Value = 4F;
             this.hslGauge4.ValueAlarmMax = 6.5F;
             this.hslGauge4.ValueAlarmMin = 0F;
-            this.hslGauge4.ValueMax = 8F;
+            this.hslGauge4.ValueFormat = "{0:F1}";
+            this.hslGauge4.ValueMax = 1060F;
+            this.hslGauge4.ValueStart = 539F;
             this.hslGauge4.Click += new System.EventHandler(this.HslGauge1_Click);
+            // 
+            // hslGauge3
+            // 
+            this.hslGauge3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.hslGauge3.GaugeBorder = System.Drawing.Color.Gray;
+            this.hslGauge3.IsBigSemiCircle = true;
+            this.hslGauge3.Location = new System.Drawing.Point(55, 32);
+            this.hslGauge3.Name = "hslGauge3";
+            this.hslGauge3.PointerColor = System.Drawing.Color.Lime;
+            this.hslGauge3.Size = new System.Drawing.Size(203, 182);
+            this.hslGauge3.TabIndex = 0;
+            this.hslGauge3.Click += new System.EventHandler(this.HslGauge1_Click);
+            // 
+            // hslGauge2
+            // 
+            this.hslGauge2.GaugeBorder = System.Drawing.Color.Blue;
+            this.hslGauge2.Location = new System.Drawing.Point(6, 20);
+            this.hslGauge2.Name = "hslGauge2";
+            this.hslGauge2.SegmentCount = 5;
+            this.hslGauge2.Size = new System.Drawing.Size(301, 182);
+            this.hslGauge2.TabIndex = 0;
+            this.hslGauge2.UnitText = "* 10 ℃";
+            this.hslGauge2.ValueMax = 10F;
+            this.hslGauge2.Click += new System.EventHandler(this.HslGauge1_Click);
+            // 
+            // hslGauge1
+            // 
+            this.hslGauge1.Location = new System.Drawing.Point(6, 20);
+            this.hslGauge1.Name = "hslGauge1";
+            this.hslGauge1.Size = new System.Drawing.Size(301, 182);
+            this.hslGauge1.TabIndex = 0;
+            this.hslGauge1.Click += new System.EventHandler(this.HslGauge1_Click);
             // 
             // FormGauge
             // 

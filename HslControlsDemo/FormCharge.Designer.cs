@@ -156,7 +156,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(215, 36);
             this.label8.TabIndex = 1;
-            this.label8.Text = "3900 ￥\r\nC#+andriod+wpf";
+            this.label8.Text = "4000 ￥\r\nC#+andriod+wpf";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9

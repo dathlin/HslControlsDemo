@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslControls, Version=2.4.3.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.4.3\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.5.2.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.5.2\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -123,6 +123,15 @@
     </Compile>
     <Compile Include="WindowHslSignature.xaml.cs">
       <DependentUpon>WindowHslSignature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslStatusManagement.xaml.cs">
+      <DependentUpon>WindowHslStatusManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslThermometer.xaml.cs">
+      <DependentUpon>WindowHslThermometer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHslTitle.xaml.cs">
+      <DependentUpon>WindowHslTitle.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowHslVacuumPump.xaml.cs">
       <DependentUpon>WindowHslVacuumPump.xaml</DependentUpon>
@@ -235,6 +244,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowHslSignature.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslStatusManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslThermometer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowHslTitle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

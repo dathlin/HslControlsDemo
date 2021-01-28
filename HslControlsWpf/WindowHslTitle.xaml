@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslTitle"
+        mc:Ignorable="d"
+        Title="WindowHslTitle" 
+        Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslTitle Height="39" Canvas.Left="10" Canvas.Top="10" Width="483"/>
+        <WPF:HslTitle Height="72" Canvas.Left="10" Canvas.Top="89" Width="992" FontSize="32" TextLeftFontSize="18" TextRightFontSize="18"/>
+        <WPF:HslTitle Height="39" Canvas.Left="519" Canvas.Top="10" Width="483" TextLeft="" TextRight=""/>
+        <WPF:HslTitle Height="72" Canvas.Left="10" Canvas.Top="227" Width="992" FontSize="32" TextLeftFontSize="18" TextRightFontSize="18" WidthPercent="0.3"/>
+        <Label Content="修改了字体大小" Canvas.Left="475" Canvas.Top="179"/>
+        <Label Content="修改了中间宽度" Canvas.Left="463" Canvas.Top="316"/>
+        <WPF:HslTitle Height="72" Canvas.Left="10" Canvas.Top="386" Width="992" FontSize="32" TextLeftFontSize="18" TextRightFontSize="18" Text="KanBan System"/>
+        <Label Content="修改了中间宽度" Canvas.Left="463" Canvas.Top="475"/>
+        <WPF:HslTitle Height="72" Canvas.Left="10" Canvas.Top="529" Width="992" FontSize="32" TextLeftFontSize="18" TextRightFontSize="18" Text="KanBan System" LeftRightEdgeColor="#FFFF6800" EdgeColor="#FFE8AB8E" TextLeft="杭州XXXXX科技有限公司"/>
+        <Label Content="修改了中间宽度" Canvas.Left="463" Canvas.Top="618"/>
+
+    </Canvas>
+</Window>
