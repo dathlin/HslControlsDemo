@@ -120,11 +120,11 @@ namespace HslControlsDemo
 
             linkLabel1.Click += LinkLabel1_Click;
             // 此处强制曲线图2随着曲线图1动作
-            hslCurveHistory1.Scroll += (sender1 , e1) => hslCurveHistory2.SetScrollPosition( e1 );
-            hslCurveHistory1.onCurveMouseMove += ( curve, x, y ) => hslCurveHistory2.SetCurveMousePosition( x, y );
+            //hslCurveHistory1.Scroll += ( sender1, e1 ) => { hslCurveHistory2.SetScrollPosition( e1 ); Console.WriteLine( "设置曲线2的滚动条：" + e1.NewValue ); };
+            //hslCurveHistory1.onCurveMouseMove += ( curve, x, y ) => { hslCurveHistory2.SetCurveMousePosition( x, y ); Console.WriteLine( "设置曲线2的坐标：" + x + "," + y  ); };
             // 此处强制曲线图1随着曲线图2动作
-            hslCurveHistory2.Scroll += ( sender1, e1 ) => hslCurveHistory1.SetScrollPosition( e1 );
-            hslCurveHistory2.onCurveMouseMove += ( curve, x, y ) => hslCurveHistory1.SetCurveMousePosition( x, y );
+            hslCurveHistory2.Scroll += ( sender1, e1 ) => { hslCurveHistory1.SetScrollPosition( e1 ); Console.WriteLine( "设置曲线1的滚动条：" + e1.NewValue ); };
+            hslCurveHistory2.onCurveMouseMove += ( curve, x, y ) => { hslCurveHistory1.SetCurveMousePosition( x, y ); Console.WriteLine( "设置曲线1的坐标：" + x + "," + y ); };
 
         }
         

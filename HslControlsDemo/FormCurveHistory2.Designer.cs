@@ -105,6 +105,7 @@
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
 			this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
 			this.hslCurveHistory1.Name = "hslCurveHistory1";
+			this.hslCurveHistory1.ScrollColor = System.Drawing.Color.Silver;
 			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 570);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";
