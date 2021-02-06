@@ -55,7 +55,7 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.5.3" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.5.4" );
 
         private void ThreadPoolCheckVersion( object obj )
         {
@@ -206,7 +206,8 @@ namespace HslControlsDemo
                 case "坦克大战": return new FormTank( );
                     // 测试
                 case "管道测试": return new FormPipeLine( );
-                    // 无界控件
+                case "曲线压力测试": return new FormCurveHistory7();
+                // 无界控件
                 case "基本无界控件": return new FormNoBoundaryControl( );
                 case "中国地图": return new FormHslChinaMap( );
                 case "中国地图暗主题": return new FormHslChinaMap2( );

@@ -83,7 +83,7 @@ namespace HslControlsDemo
                  active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
                  active.CursorTexts.Add( "工号", "asd2sd123dasf" );
                  hslCurveHistory1.AddMarkActiveSection( active );
-
+                 hslCurveHistory1.DateTimeFormate = "yyyy-MM-dd\r\nHH:mm:ss";
                  hslCurveHistory1.SetCurveVisible( "步序", false );
                  hslCurveHistory1.RenderCurveUI( );
              } ) );

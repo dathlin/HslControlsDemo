@@ -146,17 +146,19 @@
             treeNode59,
             treeNode60});
             System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("管道测试");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
-            treeNode62});
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("基本无界控件");
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("中国地图");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("中国地图暗主题");
-            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("中国地图天气");
-            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("无界控件", new System.Windows.Forms.TreeNode[] {
-            treeNode64,
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("曲线压力测试");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
+            treeNode62,
+            treeNode63});
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("基本无界控件");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("中国地图");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("中国地图暗主题");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("中国地图天气");
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("无界控件", new System.Windows.Forms.TreeNode[] {
             treeNode65,
             treeNode66,
-            treeNode67});
+            treeNode67,
+            treeNode68});
             this.vS2015LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015LightTheme();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -364,26 +366,28 @@
             treeNode61.Text = "游戏";
             treeNode62.Name = "节点53";
             treeNode62.Text = "管道测试";
-            treeNode63.Name = "节点52";
-            treeNode63.Text = "性能测试";
-            treeNode64.Name = "节点1";
-            treeNode64.Text = "基本无界控件";
-            treeNode65.Name = "节点0";
-            treeNode65.Text = "中国地图";
+            treeNode63.Name = "节点0";
+            treeNode63.Text = "曲线压力测试";
+            treeNode64.Name = "节点52";
+            treeNode64.Text = "性能测试";
+            treeNode65.Name = "节点1";
+            treeNode65.Text = "基本无界控件";
             treeNode66.Name = "节点0";
-            treeNode66.Text = "中国地图暗主题";
+            treeNode66.Text = "中国地图";
             treeNode67.Name = "节点0";
-            treeNode67.Text = "中国地图天气";
+            treeNode67.Text = "中国地图暗主题";
             treeNode68.Name = "节点0";
-            treeNode68.Text = "无界控件";
+            treeNode68.Text = "中国地图天气";
+            treeNode69.Name = "节点0";
+            treeNode69.Text = "无界控件";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode34,
             treeNode44,
             treeNode53,
             treeNode56,
             treeNode61,
-            treeNode63,
-            treeNode68});
+            treeNode64,
+            treeNode69});
             this.treeView1.Size = new System.Drawing.Size(169, 677);
             this.treeView1.TabIndex = 1;
             // 
