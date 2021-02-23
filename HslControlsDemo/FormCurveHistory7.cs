@@ -28,7 +28,7 @@ namespace HslControlsDemo
         {
             Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            int total = 100000;
+            int total = 200000;
             float[] steps = new float[total];
             float[] press = new float[total];
             float[] data1 = new float[total];

@@ -93,37 +93,64 @@ namespace HslControlsWpf
 
         private void ThreadReadExample1( )
         {
-            Thread.Sleep( 100 );
-            // 我们读取记事本的数据
-            string text = System.IO.File.ReadAllText( @"C:\Users\DATHLIN\Desktop\历史曲线-数据.txt", Encoding.UTF8 );
-            string[] texts = text.Split( new char[] { '#' } );
+            Thread.Sleep( 2000 );
+            // 我们假定从数据库中获取到了这些数据信息
+            float[] steps = new float[2000];
+            float[] data = new float[2000];
+            float[] press = new float[2000];
+            DateTime[] times = new DateTime[2000];
 
-            string[] str_datas = texts[0].Split( new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries );
-            string[] str_dates = texts[1].Split( new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries );
-
-            float[] data = new float[str_datas.Length];
-            DateTime[] times = new DateTime[str_dates.Length];
-            for (int i = 0; i < str_datas.Length; i++)
+            for (int i = 0; i < data.Length; i++)
             {
-                if (str_datas[i] == "NaN")
-                    data[i] = float.NaN;
-                else
-                    data[i] = float.Parse( str_datas[i] );
+                steps[i] = random.Next( 10 );
+                data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
+                times[i] = DateTime.Now.AddSeconds( i - 2000 );
+                press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
             }
-            for (int i = 0; i < str_dates.Length; i++)
-            {
-                times[i] = DateTime.Parse( str_dates[i] );
-            }
-
 
             // 显示出数据信息来
             Dispatcher.Invoke( new Action( ( ) =>
             {
-                hslCurveHistory1.ValueMinLeft = 0;
-                hslCurveHistory1.ValueMaxLeft = 150;
-
+                hslCurveHistory1.SetLeftCurve( "步序", steps );
                 hslCurveHistory1.SetLeftCurve( "温度", data, System.Drawing.Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                hslCurveHistory1.SetRightCurve( "压力", press, System.Drawing.Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                 hslCurveHistory1.SetDateTimes( times );
+                hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了", BackColor = System.Drawing.Color.FromArgb( 56, 56, 56 ) } );
+                // 添加两个标记
+                hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 900,
+                    EndIndex = 1300,
+                    StartHeight = 0.2f,
+                    Height = 0.8f,
+                    LinePen = System.Drawing.Pens.Blue,
+                    FontBrush = System.Drawing.Brushes.Chocolate
+                } );
+                hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 500,
+                    EndIndex = 700,
+                    StartHeight = 0.3f,
+                    Height = 0.7f,
+                    IsRenderTimeText = false,
+                    LinePen = System.Drawing.Pens.Orange,
+                    MarkText = "报警区域",
+                    FontBrush = System.Drawing.Brushes.Chocolate
+                } );
+
+                // 添加一个活动的标记
+                HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 1000,
+                    EndIndex = 1500,
+                    Height = 0.9f,
+                    LinePen = System.Drawing.Pens.Blue,
+                    FontBrush = System.Drawing.Brushes.Chocolate
+                };
+                active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
+                active.CursorTexts.Add( "工号", "asd2sd123dasf" );
+                hslCurveHistory1.AddMarkActiveSection( active );
+                hslCurveHistory1.SetCurveVisible( "步序", false );
                 hslCurveHistory1.RenderCurveUI( );
             } ) );
         }

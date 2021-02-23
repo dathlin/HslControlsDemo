@@ -97,9 +97,19 @@ namespace HslControlsDemo
             auxiliary = hslCurveHistory1.AddLeftAuxiliary( 172f );
 
             linkLabel1.Click += LinkLabel1_Click;
+            comboBox1.DataSource = (HslControls.CurveStyle[])Enum.GetValues( typeof( HslControls.CurveStyle ) );
+            comboBox1.SelectedItem = HslControls.CurveStyle.Curve;
+			comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
         }
 
-        private void LinkLabel1_Click( object sender, EventArgs e )
+		private void ComboBox1_SelectedIndexChanged( object sender, EventArgs e )
+        {
+            hslCurveHistory1.SetCurveLineCurveStyle( "温度", (HslControls.CurveStyle)comboBox1.SelectedItem );
+            hslCurveHistory1.SetCurveLineCurveStyle( "压力", (HslControls.CurveStyle)comboBox1.SelectedItem );
+
+        }
+
+		private void LinkLabel1_Click( object sender, EventArgs e )
         {
             try
             {

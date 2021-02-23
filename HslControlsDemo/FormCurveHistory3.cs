@@ -29,18 +29,19 @@ namespace HslControlsDemo
 
         private void ThreadReadExample1( )
         {
+            int dataCount = 2000;
             Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            float[] steps = new float[2000];
-            float[] data = new float[2000];
-            float[] press = new float[2000];
-            DateTime[] times = new DateTime[2000];
+            float[] steps = new float[dataCount];
+            float[] data = new float[dataCount];
+            float[] press = new float[dataCount];
+            DateTime[] times = new DateTime[dataCount];
 
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
                 data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
-                times[i] = DateTime.Now.AddSeconds( i - 2000 );
+                times[i] = DateTime.Now.AddSeconds( i - dataCount );
                 press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
             }
 
@@ -144,20 +145,33 @@ namespace HslControlsDemo
         {
             hslCurveHistory1.SetScaleByXAxis( 0.5f );
             hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory2.SetScaleByXAxis( 0.5f );
+            hslCurveHistory2.RenderCurveUI( );
         }
 
         private void button3_Click( object sender, EventArgs e )
         {
             hslCurveHistory1.SetScaleByXAxis(1f );
             hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory2.SetScaleByXAxis( 1f );
+            hslCurveHistory2.RenderCurveUI( );
         }
 
         private void button4_Click( object sender, EventArgs e )
         {
             hslCurveHistory1.SetScaleByXAxis( 2f );
             hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory2.SetScaleByXAxis( 2f );
+            hslCurveHistory2.RenderCurveUI( );
         }
 
+        private void button7_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory1.SetScaleByXAxis( 32f );
+            hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory2.SetScaleByXAxis( 32f );
+            hslCurveHistory2.RenderCurveUI( );
+        }
         private void hslCurveHistory1_onCurveDoubleClick( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
         {
             MessageBox.Show( $"Index: {index} Time:{dateTime.ToString( )}" );
@@ -193,5 +207,6 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
-    }
+
+	}
 }
