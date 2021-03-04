@@ -24,6 +24,9 @@ namespace HslControlsDemo
 
             hslCurveHistory2.Text = "正在加载数据...";
             hslCurveHistory2.RemoveAllCurve( );
+
+            hslCurveHistory3.Text = "正在加载数据...";
+            hslCurveHistory3.RemoveAllCurve( );
             new Thread( new ThreadStart( ThreadReadExample1 ) ) { IsBackground = true }.Start( );
         }
 
@@ -102,14 +105,20 @@ namespace HslControlsDemo
                  hslCurveHistory1.RenderCurveUI( );
 
 
-
-
                  hslCurveHistory2.SetLeftCurve( "步序", steps );
                  hslCurveHistory2.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
                  hslCurveHistory2.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory2.SetDateTimes( times );
                  hslCurveHistory2.SetCurveVisible( "步序", false );
                  hslCurveHistory2.RenderCurveUI( );
+
+
+                 hslCurveHistory3.SetLeftCurve( "步序", steps );
+                 hslCurveHistory3.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                 hslCurveHistory3.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
+                 hslCurveHistory3.SetDateTimes( times );
+                 hslCurveHistory3.SetCurveVisible( "步序", false );
+                 hslCurveHistory3.RenderCurveUI( );
              } ) );
         }
 
@@ -120,12 +129,9 @@ namespace HslControlsDemo
             hslCurveHistory1.AddLeftAuxiliary( 172f );
 
             linkLabel1.Click += LinkLabel1_Click;
-            // 此处强制曲线图2随着曲线图1动作
-            hslCurveHistory1.Scroll += ( sender1, e1 ) => { hslCurveHistory2.SetScrollPosition( e1 ); Console.WriteLine( "设置曲线2的滚动条：" + e1.NewValue ); };
-            hslCurveHistory1.onCurveMouseMove += ( curve, x, y ) => { hslCurveHistory2.SetCurveMousePosition( x, y ); Console.WriteLine( "设置曲线2的坐标：" + x + "," + y  ); };
-            // 此处强制曲线图1随着曲线图2动作
-            hslCurveHistory2.Scroll += ( sender1, e1 ) => { hslCurveHistory1.SetScrollPosition( e1 ); Console.WriteLine( "设置曲线1的滚动条：" + e1.NewValue ); };
-            hslCurveHistory2.onCurveMouseMove += ( curve, x, y ) => { hslCurveHistory1.SetCurveMousePosition( x, y ); Console.WriteLine( "设置曲线1的坐标：" + x + "," + y ); };
+            // 此处强制曲线图1和曲线图2随着曲线图3动作
+            hslCurveHistory1.SetSyncHslCurveHistory( hslCurveHistory3 );
+            hslCurveHistory2.SetSyncHslCurveHistory( hslCurveHistory3 );
 
         }
         
@@ -143,34 +149,26 @@ namespace HslControlsDemo
         
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 0.5f );
-            hslCurveHistory1.RenderCurveUI( );
-            hslCurveHistory2.SetScaleByXAxis( 0.5f );
-            hslCurveHistory2.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 0.5f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
         private void button3_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis(1f );
-            hslCurveHistory1.RenderCurveUI( );
-            hslCurveHistory2.SetScaleByXAxis( 1f );
-            hslCurveHistory2.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 1f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
         private void button4_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
-            hslCurveHistory1.RenderCurveUI( );
-            hslCurveHistory2.SetScaleByXAxis( 2f );
-            hslCurveHistory2.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 2f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
         private void button7_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 32f );
-            hslCurveHistory1.RenderCurveUI( );
-            hslCurveHistory2.SetScaleByXAxis( 32f );
-            hslCurveHistory2.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 32f );
+            hslCurveHistory3.RenderCurveUI( );
         }
         private void hslCurveHistory1_onCurveDoubleClick( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
         {

@@ -30,12 +30,13 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.5.5
-1. HslCurveHistory: 清空曲线的数据的方法里复位当前的滚动条位置。
-2. HslCurveHistory: 修复数量量在20万个以上，放大倍数在32倍时，部分的图形不限制的bug。
-3. HslCurveHistory: 修复在20万数据量以上，进行放大缩小时，滚动条跳变位置不正确的bug。
-4. HslCurveHistory: 曲线样式增加点点线，虚线，长虚线，以及对应的曲线版本。也适用于HslCurve实时曲线，wpf版本的实时曲线。
-5. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V2.5.6
+1. HslButton: 圆角支持0，按钮选中的颜色可以设置，通过SelectColor来设置。
+2. HslCurveHistory: 在数据量很大的时候，滚轮移动曲线时，修复滚动条跳变0的bug。
+3. HslCurveHistory: 修复在40万数据量以上，32倍放大条件下，X轴坐标轴消失的BUG。
+4. HslCurveHistory: 曲线控件右上角显示了缩放的倍数，滚动条支持点击任意位置快速跳转曲线。
+5. HslCurveHistory: 优化多个曲线控件同步动作的功能，只需要调用一个方法：SetSyncHslCurveHistory 就可以跟随另一个曲线控件动作。
+6. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }

@@ -26,84 +26,85 @@ namespace HslControlsDemo
 
         private void ThreadReadExample1( )
         {
+            int total = 400000;
             Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            float[] steps = new float[2000];
-            float[] data = new float[2000];
-            float[] press = new float[2000];
-            DateTime[] times = new DateTime[2000];
+            float[] steps = new float[total];
+            float[] data = new float[total];
+            float[] press = new float[total];
+            DateTime[] times = new DateTime[total];
 
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
-                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
-                times[i] = DateTime.Now.AddSeconds( i - 2000 );
+                data[i] = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
+                times[i] = DateTime.Now.AddSeconds( i - total );
                 press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.5d + 4.1d);
             }
 
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
-             {
-                 hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
-                 hslCurveHistory1.SetDateTimes( times );
-                 hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
-                 {
-                     LocationX = 0.6f,
-                     Text = $"今日产量：{random.Next(10)}个",
-                     TextBack = new SolidBrush(Color.FromArgb(10,10,10)),
-                     TextBrush = Brushes.Gray,
-                 } );
-                 hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
-                 // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
-                 hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 900,
-                     EndIndex = 1300,
-                     StartHeight = 0.2f,
-                     Height = 0.8f,
-                 } );
-                 hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 500,
-                     EndIndex = 700,
-                     StartHeight = 0.3f,
-                     Height = 0.7f,
-                     IsRenderTimeText = false,
-                     LinePen = Pens.Orange,
-                     MarkText = "报警区域"
-                 } );
+            {
+                hslCurveHistory1.SetLeftCurve( "步序", steps );
+                hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
+                hslCurveHistory1.SetDateTimes( times );
+                hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
+                {
+                    LocationX = 0.6f,
+                    Text = $"今日产量：{random.Next( 10 )}个",
+                    TextBack = new SolidBrush( Color.FromArgb( 10, 10, 10 ) ),
+                    TextBrush = Brushes.Gray,
+                } );
+                hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
+                // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
+                hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 900,
+                    EndIndex = 1300,
+                    StartHeight = 0.2f,
+                    Height = 0.8f,
+                } );
+                hslCurveHistory1.AddMarkForeSection( new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 500,
+                    EndIndex = 700,
+                    StartHeight = 0.3f,
+                    Height = 0.7f,
+                    IsRenderTimeText = false,
+                    LinePen = Pens.Orange,
+                    MarkText = "报警区域"
+                } );
 
-                 // 增加一个三角形的线段标记示例 Points的每个点的X是数据索引，Y是数据值（需要选对参考坐标轴，默认为左坐标轴）
-                 hslCurveHistory1.AddMarkLine( new HslControls.HslMarkLine( )
-                 {
-                     CircleBrush = Brushes.DodgerBlue,
-                     IsLeftFrame = true,
-                     IsLineClosed = true,
-                     LinePen = Pens.DodgerBlue,
-                     TextBrush = Brushes.DodgerBlue,
-                     Points = new PointF[]
-                     {
+                // 增加一个三角形的线段标记示例 Points的每个点的X是数据索引，Y是数据值（需要选对参考坐标轴，默认为左坐标轴）
+                hslCurveHistory1.AddMarkLine( new HslControls.HslMarkLine( )
+                {
+                    CircleBrush = Brushes.DodgerBlue,
+                    IsLeftFrame = true,
+                    IsLineClosed = true,
+                    LinePen = Pens.DodgerBlue,
+                    TextBrush = Brushes.DodgerBlue,
+                    Points = new PointF[]
+                    {
                          new PointF(200, 180f), new PointF(260, 20f), new PointF(550, 150f),
-                     },
-                     Marks = new string[] { "AA", "BB", "CC" },
-                 } );
+                    },
+                    Marks = new string[] { "AA", "BB", "CC" },
+                } );
 
-                 // 添加一个活动的标记
-                 HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
-                 {
-                     StartIndex = 1000,
-                     EndIndex = 1500,
-                     Height = 0.9f,
-                 };
-                 active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
-                 active.CursorTexts.Add( "工号", "asd2sd123dasf" );
-                 hslCurveHistory1.AddMarkActiveSection( active );
+                // 添加一个活动的标记
+                HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
+                {
+                    StartIndex = 1000,
+                    EndIndex = 1500,
+                    Height = 0.9f,
+                };
+                active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
+                active.CursorTexts.Add( "工号", "asd2sd123dasf" );
+                hslCurveHistory1.AddMarkActiveSection( active );
 
-                 hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
-                 hslCurveHistory1.RenderCurveUI( );
-             } ) );
+                hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
+                hslCurveHistory1.RenderCurveUI( );
+            } ) );
         }
 
         private void ThreadReadExample2( )

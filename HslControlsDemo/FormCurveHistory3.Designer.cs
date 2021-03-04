@@ -43,6 +43,7 @@
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.hslCurveHistory2 = new HslControls.HslCurveHistory();
 			this.button7 = new System.Windows.Forms.Button();
+			this.hslCurveHistory3 = new HslControls.HslCurveHistory();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -99,7 +100,7 @@
 			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
 			this.hslCurveHistory1.Name = "hslCurveHistory1";
-			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 280);
+			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 200);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";
 			this.hslCurveHistory1.UnitLeft = " ℃";
@@ -196,10 +197,10 @@
 			this.hslCurveHistory2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
 			this.hslCurveHistory2.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
 			this.hslCurveHistory2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.hslCurveHistory2.Location = new System.Drawing.Point(12, 310);
+			this.hslCurveHistory2.Location = new System.Drawing.Point(12, 213);
 			this.hslCurveHistory2.MarkTextColor = System.Drawing.Color.Yellow;
 			this.hslCurveHistory2.Name = "hslCurveHistory2";
-			this.hslCurveHistory2.Size = new System.Drawing.Size(980, 280);
+			this.hslCurveHistory2.Size = new System.Drawing.Size(980, 200);
 			this.hslCurveHistory2.TabIndex = 21;
 			this.hslCurveHistory2.Text = "hslCurveHistory2";
 			this.hslCurveHistory2.UnitLeft = " ℃";
@@ -220,12 +221,32 @@
 			this.button7.UseVisualStyleBackColor = true;
 			this.button7.Click += new System.EventHandler(this.button7_Click);
 			// 
+			// hslCurveHistory3
+			// 
+			this.hslCurveHistory3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.hslCurveHistory3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+			this.hslCurveHistory3.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+			this.hslCurveHistory3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslCurveHistory3.Location = new System.Drawing.Point(12, 396);
+			this.hslCurveHistory3.MarkTextColor = System.Drawing.Color.Yellow;
+			this.hslCurveHistory3.Name = "hslCurveHistory3";
+			this.hslCurveHistory3.Size = new System.Drawing.Size(980, 200);
+			this.hslCurveHistory3.TabIndex = 23;
+			this.hslCurveHistory3.Text = "hslCurveHistory3";
+			this.hslCurveHistory3.UnitLeft = " ℃";
+			this.hslCurveHistory3.UnitRight = "Mpa";
+			this.hslCurveHistory3.ValueMaxLeft = 250F;
+			this.hslCurveHistory3.ValueMaxRight = 5F;
+			this.hslCurveHistory3.ValueSegment = 10;
+			// 
 			// FormCurveHistory3
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.Controls.Add(this.hslCurveHistory3);
 			this.Controls.Add(this.button7);
 			this.Controls.Add(this.hslCurveHistory2);
 			this.Controls.Add(this.linkLabel1);
@@ -267,5 +288,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private HslControls.HslCurveHistory hslCurveHistory2;
 		private System.Windows.Forms.Button button7;
+		private HslControls.HslCurveHistory hslCurveHistory3;
 	}
 }
