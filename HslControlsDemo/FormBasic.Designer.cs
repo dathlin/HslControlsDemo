@@ -29,14 +29,13 @@
         private void InitializeComponent( )
         {
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.hslPlay2 = new HslControls.HslPlay();
 			this.label1 = new System.Windows.Forms.Label();
-			this.hslPlay1 = new HslControls.HslPlay();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.hslSwitch2 = new HslControls.HslSwitch();
-			this.hslSwitch1 = new HslControls.HslSwitch();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.hslLabel2 = new HslControls.HslLabel();
+			this.hslLabel1 = new HslControls.HslLabel();
+			this.hslButton4 = new HslControls.HslButton();
 			this.hslArrow9 = new HslControls.HslArrow();
 			this.hslArrow8 = new HslControls.HslArrow();
 			this.hslArrow7 = new HslControls.HslArrow();
@@ -46,7 +45,10 @@
 			this.hslArrow3 = new HslControls.HslArrow();
 			this.hslArrow2 = new HslControls.HslArrow();
 			this.hslArrow1 = new HslControls.HslArrow();
-			this.hslButton4 = new HslControls.HslButton();
+			this.hslSwitch2 = new HslControls.HslSwitch();
+			this.hslSwitch1 = new HslControls.HslSwitch();
+			this.hslPlay2 = new HslControls.HslPlay();
+			this.hslPlay1 = new HslControls.HslPlay();
 			this.hslButton3 = new HslControls.HslButton();
 			this.hslButton2 = new HslControls.HslButton();
 			this.hslButton1 = new HslControls.HslButton();
@@ -67,19 +69,6 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "开关的按钮";
 			// 
-			// hslPlay2
-			// 
-			this.hslPlay2.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-			this.hslPlay2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.hslPlay2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.hslPlay2.ForeColor = System.Drawing.Color.DimGray;
-			this.hslPlay2.Location = new System.Drawing.Point(172, 37);
-			this.hslPlay2.Name = "hslPlay2";
-			this.hslPlay2.Size = new System.Drawing.Size(132, 173);
-			this.hslPlay2.TabIndex = 5;
-			this.hslPlay2.Text = "hslPlay2";
-			this.hslPlay2.Click += new System.EventHandler(this.HslButton1_Click);
-			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -88,17 +77,6 @@
 			this.label1.Size = new System.Drawing.Size(41, 12);
 			this.label1.TabIndex = 4;
 			this.label1.Text = "状态：";
-			// 
-			// hslPlay1
-			// 
-			this.hslPlay1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.hslPlay1.Location = new System.Drawing.Point(47, 37);
-			this.hslPlay1.Name = "hslPlay1";
-			this.hslPlay1.Size = new System.Drawing.Size(96, 110);
-			this.hslPlay1.TabIndex = 3;
-			this.hslPlay1.Text = "hslPlay1";
-			this.hslPlay1.OnPlayChanged += new System.Action<object, bool>(this.hslPlay1_OnPlayChanged);
-			this.hslPlay1.Click += new System.EventHandler(this.HslButton1_Click);
 			// 
 			// groupBox2
 			// 
@@ -121,30 +99,6 @@
 			this.label2.TabIndex = 5;
 			this.label2.Text = "状态：";
 			// 
-			// hslSwitch2
-			// 
-			this.hslSwitch2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.hslSwitch2.Location = new System.Drawing.Point(233, 49);
-			this.hslSwitch2.Name = "hslSwitch2";
-			this.hslSwitch2.Size = new System.Drawing.Size(183, 175);
-			this.hslSwitch2.SwitchForeground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-			this.hslSwitch2.SwitchStatusDescription = "关;开";
-			this.hslSwitch2.TabIndex = 1;
-			this.hslSwitch2.Text = "hslSwitch2";
-			this.hslSwitch2.Click += new System.EventHandler(this.HslButton1_Click);
-			// 
-			// hslSwitch1
-			// 
-			this.hslSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.hslSwitch1.Location = new System.Drawing.Point(34, 49);
-			this.hslSwitch1.Name = "hslSwitch1";
-			this.hslSwitch1.Size = new System.Drawing.Size(183, 175);
-			this.hslSwitch1.SwitchForeground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-			this.hslSwitch1.TabIndex = 0;
-			this.hslSwitch1.Text = "hslSwitch1";
-			this.hslSwitch1.OnSwitchChanged += new System.Action<object, bool>(this.hslSwitch1_OnSwitchChanged);
-			this.hslSwitch1.Click += new System.EventHandler(this.HslButton1_Click);
-			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.hslArrow9);
@@ -162,6 +116,42 @@
 			this.groupBox3.TabIndex = 10;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "箭头";
+			// 
+			// hslLabel2
+			// 
+			this.hslLabel2.BackColor = System.Drawing.Color.Green;
+			this.hslLabel2.ForeColor = System.Drawing.Color.White;
+			this.hslLabel2.Location = new System.Drawing.Point(514, 470);
+			this.hslLabel2.Name = "hslLabel2";
+			this.hslLabel2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+			this.hslLabel2.Size = new System.Drawing.Size(527, 25);
+			this.hslLabel2.TabIndex = 13;
+			this.hslLabel2.Text = "hslLabel2";
+			this.hslLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// hslLabel1
+			// 
+			this.hslLabel1.BackColor = System.Drawing.Color.DodgerBlue;
+			this.hslLabel1.ForeColor = System.Drawing.Color.White;
+			this.hslLabel1.Location = new System.Drawing.Point(514, 438);
+			this.hslLabel1.Name = "hslLabel1";
+			this.hslLabel1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+			this.hslLabel1.Size = new System.Drawing.Size(527, 25);
+			this.hslLabel1.TabIndex = 12;
+			this.hslLabel1.Text = "hslLabel1";
+			this.hslLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// hslButton4
+			// 
+			this.hslButton4.CustomerInformation = null;
+			this.hslButton4.Location = new System.Drawing.Point(592, 22);
+			this.hslButton4.Name = "hslButton4";
+			this.hslButton4.Selected = true;
+			this.hslButton4.Size = new System.Drawing.Size(124, 44);
+			this.hslButton4.TabIndex = 11;
+			this.hslButton4.Text = "hslButton4";
+			this.hslButton4.UseGradient = true;
+			this.hslButton4.Click += new System.EventHandler(this.HslButton1_Click);
 			// 
 			// hslArrow9
 			// 
@@ -287,17 +277,53 @@
 			this.hslArrow1.Text = "hslArrow1";
 			this.hslArrow1.Click += new System.EventHandler(this.HslButton1_Click);
 			// 
-			// hslButton4
+			// hslSwitch2
 			// 
-			this.hslButton4.CustomerInformation = null;
-			this.hslButton4.Location = new System.Drawing.Point(592, 22);
-			this.hslButton4.Name = "hslButton4";
-			this.hslButton4.Selected = true;
-			this.hslButton4.Size = new System.Drawing.Size(124, 44);
-			this.hslButton4.TabIndex = 11;
-			this.hslButton4.Text = "hslButton4";
-			this.hslButton4.UseGradient = true;
-			this.hslButton4.Click += new System.EventHandler(this.HslButton1_Click);
+			this.hslSwitch2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.hslSwitch2.Location = new System.Drawing.Point(233, 49);
+			this.hslSwitch2.Name = "hslSwitch2";
+			this.hslSwitch2.Size = new System.Drawing.Size(183, 175);
+			this.hslSwitch2.SwitchForeground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+			this.hslSwitch2.SwitchStatusDescription = "关;开";
+			this.hslSwitch2.TabIndex = 1;
+			this.hslSwitch2.Text = "hslSwitch2";
+			this.hslSwitch2.Click += new System.EventHandler(this.HslButton1_Click);
+			// 
+			// hslSwitch1
+			// 
+			this.hslSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.hslSwitch1.Location = new System.Drawing.Point(34, 49);
+			this.hslSwitch1.Name = "hslSwitch1";
+			this.hslSwitch1.Size = new System.Drawing.Size(183, 175);
+			this.hslSwitch1.SwitchForeground = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+			this.hslSwitch1.TabIndex = 0;
+			this.hslSwitch1.Text = "hslSwitch1";
+			this.hslSwitch1.OnSwitchChanged += new System.Action<object, bool>(this.hslSwitch1_OnSwitchChanged);
+			this.hslSwitch1.Click += new System.EventHandler(this.HslButton1_Click);
+			// 
+			// hslPlay2
+			// 
+			this.hslPlay2.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+			this.hslPlay2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.hslPlay2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.hslPlay2.ForeColor = System.Drawing.Color.DimGray;
+			this.hslPlay2.Location = new System.Drawing.Point(172, 37);
+			this.hslPlay2.Name = "hslPlay2";
+			this.hslPlay2.Size = new System.Drawing.Size(132, 173);
+			this.hslPlay2.TabIndex = 5;
+			this.hslPlay2.Text = "hslPlay2";
+			this.hslPlay2.Click += new System.EventHandler(this.HslButton1_Click);
+			// 
+			// hslPlay1
+			// 
+			this.hslPlay1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.hslPlay1.Location = new System.Drawing.Point(47, 37);
+			this.hslPlay1.Name = "hslPlay1";
+			this.hslPlay1.Size = new System.Drawing.Size(96, 110);
+			this.hslPlay1.TabIndex = 3;
+			this.hslPlay1.Text = "hslPlay1";
+			this.hslPlay1.OnPlayChanged += new System.Action<object, bool>(this.hslPlay1_OnPlayChanged);
+			this.hslPlay1.Click += new System.EventHandler(this.HslButton1_Click);
 			// 
 			// hslButton3
 			// 
@@ -338,6 +364,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1055, 645);
+			this.Controls.Add(this.hslLabel2);
+			this.Controls.Add(this.hslLabel1);
 			this.Controls.Add(this.hslButton4);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
@@ -381,5 +409,7 @@
         private HslControls.HslArrow hslArrow6;
         private HslControls.HslArrow hslArrow9;
         private HslControls.HslButton hslButton4;
-    }
+		private HslControls.HslLabel hslLabel1;
+		private HslControls.HslLabel hslLabel2;
+	}
 }

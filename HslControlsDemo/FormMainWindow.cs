@@ -55,11 +55,25 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.5.6" );
+        private HslCommunication.MQTT.MqttClient mqttClient;
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.6.0" );
+
+        protected override void OnClosing( CancelEventArgs e )
+        {
+            mqttClient?.ConnectClose( );
+            base.OnClosing( e );
+        }
 
         private void ThreadPoolCheckVersion( object obj )
         {
             System.Threading.Thread.Sleep( 100 );
+            mqttClient = new HslCommunication.MQTT.MqttClient( new HslCommunication.MQTT.MqttConnectionOptions( )
+            {
+                IpAddress = "118.24.36.220",
+                Port = 1883,
+                ClientId = "HslControls"
+            } );
+            mqttClient.ConnectServer( );
             HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
             HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, versionCurr.ToString( ) );
             if (read.IsSuccess)
@@ -187,6 +201,8 @@ namespace HslControlsDemo
                 case "历史曲线同步": return new FormCurveHistory3( );
                 case "历史曲线中断": return new FormCurveHistory5( );
                 case "历史曲线阶梯": return new FormCurveHistory6( );
+                case "历史曲线多轴": return new FormCurveHistory8( );
+                case "历史曲线实时": return new FormCurveHistory9( );
                 // 图表
                 case "柱状图": return new FormBarChart( );
                 case "饼图": return new FormPieChart( );

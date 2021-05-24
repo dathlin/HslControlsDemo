@@ -38,11 +38,14 @@
     <ApplicationIcon>hslcontrols.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslCommunication.7.0.1\lib\net35\HslCommunication.dll</HintPath>
+    <Reference Include="HslCommunication, Version=9.7.0.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslCommunication.9.7.0\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.5.6.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.5.6\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.6.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.6.0\lib\net45\HslControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -159,6 +162,18 @@
     </Compile>
     <Compile Include="FormCurve.Designer.cs">
       <DependentUpon>FormCurve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory9.Designer.cs">
+      <DependentUpon>FormCurveHistory9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurveHistory8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurveHistory8.Designer.cs">
+      <DependentUpon>FormCurveHistory8.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCurveHistory7.cs">
       <SubType>Form</SubType>
@@ -518,6 +533,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurve.resx">
       <DependentUpon>FormCurve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory9.resx">
+      <DependentUpon>FormCurveHistory9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurveHistory8.resx">
+      <DependentUpon>FormCurveHistory8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCurveHistory7.resx">
       <DependentUpon>FormCurveHistory7.cs</DependentUpon>
