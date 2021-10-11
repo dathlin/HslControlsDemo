@@ -48,6 +48,7 @@
 			this.hslCurveHistory1 = new HslControls.HslCurveHistory();
 			this.button10 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -238,14 +239,13 @@
 			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
 			this.hslCurveHistory1.Name = "hslCurveHistory1";
-			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 551);
+			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 537);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";
 			this.hslCurveHistory1.UnitLeft = " ℃";
 			this.hslCurveHistory1.UnitRight = "Mpa";
 			this.hslCurveHistory1.ValueMaxLeft = 200F;
 			this.hslCurveHistory1.ValueMaxRight = 5F;
-			this.hslCurveHistory1.ValueMinLeft = 50F;
 			this.hslCurveHistory1.ValueSegment = 25;
 			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
 			this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
@@ -265,11 +265,21 @@
 			// 
 			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(16, 586);
+			this.label5.Location = new System.Drawing.Point(12, 571);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(809, 12);
 			this.label5.TabIndex = 27;
 			this.label5.Text = "鼠标左键双击固定活动标记线，右键清除固定，鼠标左键点击滑动是选择数据段，右键清除所有数据段。滚轮是放大缩小曲线，滚轮按下平移为平移曲线";
+			// 
+			// label6
+			// 
+			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(12, 588);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(647, 12);
+			this.label6.TabIndex = 28;
+			this.label6.Text = "默认缩放只有X轴的，如果需要Y轴也缩放，或是全部没有缩放，可以修改属性，ScaleMode，是枚举，可以选择其他的选项";
 			// 
 			// FormCurveHistory
 			// 
@@ -277,6 +287,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.button10);
 			this.Controls.Add(this.button9);
@@ -328,5 +339,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
 	}
 }

@@ -30,5 +30,10 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
-    }
+
+		private void hslBadge9_Click( object sender, EventArgs e )
+		{
+            MessageBox.Show( hslBadge9.RightText );
+		}
+	}
 }

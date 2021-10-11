@@ -239,7 +239,6 @@
 			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
 			this.hslCurveHistory1.Name = "hslCurveHistory1";
-			this.hslCurveHistory1.ScrollEnable = false;
 			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 524);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";

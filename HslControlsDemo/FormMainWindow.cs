@@ -56,7 +56,7 @@ namespace HslControlsDemo
 
 
         private HslCommunication.MQTT.MqttClient mqttClient;
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.6.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.7.0" );
 
         protected override void OnClosing( CancelEventArgs e )
         {

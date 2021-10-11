@@ -30,12 +30,13 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V2.6.0
-1. HslPipeLine: 修复管道控件在设置 EdgeColor 属性和 LineCenterColor 属性时设计界面不发生变化的bug。
-2. HslCurveHistory: 优化ScrollToRight方法，在滚动条挪动到最后之前，重新计算滚动条大小，可以消除实时刷新数据时抖动的问题。
-3. HslCurveHistory: 新增多个Y轴的支持，通过属性ReferenceAxis来修改，然后设置曲线时，选择参考轴，详细参考demo。
-4. HslCurveHistory: 当鼠标挪动时，在底部显示的当前的时间的矩形的宽度可调节，修改 HoverDateTimeWidth ，默认100。
-5. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V2.7.0
+1. HslCurveHistory: 新增属性RenderInvertedTriangle，可以控制历史曲线的纵轴的倒三角是否显示。
+2. HslCurveHistory: 新增属性RenderScaleInfo，用于控制是否显示缩放的倍率信息。
+3. HslButton: 优化圆角代码，现在四个角分别都支持选择是否圆角操作，方便自定义按钮样式。
+4. hslbadge: 新增HSL的徽章显示控件，可以用来显示一些键值数据，支持左右两部分单独使用，右部分可以当按钮使用。
+5. HslCurveHistory: 删除属性ScrollEnable，新增ScaleMode缩放模式属性，支持不缩放，X轴缩放，XY轴同时缩放，先X轴后Y轴缩放。
+6. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }
