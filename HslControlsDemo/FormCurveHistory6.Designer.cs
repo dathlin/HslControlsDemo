@@ -217,10 +217,10 @@
             this.hslCurveHistory1.Size = new System.Drawing.Size(980, 571);
             this.hslCurveHistory1.TabIndex = 0;
             this.hslCurveHistory1.Text = "hslCurveHistory1";
-            this.hslCurveHistory1.UnitLeft = " ℃";
-            this.hslCurveHistory1.UnitRight = "Mpa";
-            this.hslCurveHistory1.ValueMaxLeft = 200F;
-            this.hslCurveHistory1.ValueMaxRight = 5F;
+            this.hslCurveHistory1.ReferenceAxisLeft.Unit = " ℃";
+            this.hslCurveHistory1.ReferenceAxisRight.Unit = "Mpa";
+            this.hslCurveHistory1.ReferenceAxisLeft.Max = 200F;
+            this.hslCurveHistory1.ReferenceAxisRight.Max = 5F;
             this.hslCurveHistory1.ValueSegment = 25;
             this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
             this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);

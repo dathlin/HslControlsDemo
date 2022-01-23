@@ -103,10 +103,10 @@
 			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 200);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";
-			this.hslCurveHistory1.UnitLeft = " ℃";
-			this.hslCurveHistory1.UnitRight = "Mpa";
-			this.hslCurveHistory1.ValueMaxLeft = 250F;
-			this.hslCurveHistory1.ValueMaxRight = 5F;
+			this.hslCurveHistory1.ReferenceAxisLeft.Unit = " ℃";
+			this.hslCurveHistory1.ReferenceAxisRight.Unit = "Mpa";
+			this.hslCurveHistory1.ReferenceAxisLeft.Max = 250F;
+			this.hslCurveHistory1.ReferenceAxisRight.Max = 5F;
 			this.hslCurveHistory1.ValueSegment = 10;
 			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
 			this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
@@ -203,10 +203,10 @@
 			this.hslCurveHistory2.Size = new System.Drawing.Size(980, 200);
 			this.hslCurveHistory2.TabIndex = 21;
 			this.hslCurveHistory2.Text = "hslCurveHistory2";
-			this.hslCurveHistory2.UnitLeft = " ℃";
-			this.hslCurveHistory2.UnitRight = "Mpa";
-			this.hslCurveHistory2.ValueMaxLeft = 250F;
-			this.hslCurveHistory2.ValueMaxRight = 5F;
+			this.hslCurveHistory2.ReferenceAxisLeft.Unit = " ℃";
+			this.hslCurveHistory2.ReferenceAxisRight.Unit = "Mpa";
+			this.hslCurveHistory2.ReferenceAxisLeft.Max = 250F;
+			this.hslCurveHistory2.ReferenceAxisRight.Max = 5F;
 			this.hslCurveHistory2.ValueSegment = 10;
 			this.hslCurveHistory2.Click += new System.EventHandler(this.HslCurveHistory1_Click);
 			// 
@@ -234,10 +234,10 @@
 			this.hslCurveHistory3.Size = new System.Drawing.Size(980, 200);
 			this.hslCurveHistory3.TabIndex = 23;
 			this.hslCurveHistory3.Text = "hslCurveHistory3";
-			this.hslCurveHistory3.UnitLeft = " ℃";
-			this.hslCurveHistory3.UnitRight = "Mpa";
-			this.hslCurveHistory3.ValueMaxLeft = 250F;
-			this.hslCurveHistory3.ValueMaxRight = 5F;
+			this.hslCurveHistory3.ReferenceAxisLeft.Unit = " ℃";
+			this.hslCurveHistory3.ReferenceAxisRight.Unit = "Mpa";
+			this.hslCurveHistory3.ReferenceAxisLeft.Max = 250F;
+			this.hslCurveHistory3.ReferenceAxisRight.Max = 5F;
 			this.hslCurveHistory3.ValueSegment = 10;
 			// 
 			// FormCurveHistory3

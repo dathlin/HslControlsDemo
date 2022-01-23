@@ -39,8 +39,6 @@
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new HslControls.HslPanel();
 			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new HslControls.HslPanel();
 			this.label3 = new System.Windows.Forms.Label();
@@ -170,7 +168,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(215, 36);
 			this.label9.TabIndex = 0;
-			this.label9.Text = "企业商用+源码";
+			this.label9.Text = "企业终身商用+源码";
 			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// panel3
@@ -189,8 +187,6 @@
 			this.panel4.BackColor = System.Drawing.Color.White;
 			this.panel4.CenterColor = System.Drawing.Color.AliceBlue;
 			this.panel4.Controls.Add(this.label4);
-			this.panel4.Controls.Add(this.label5);
-			this.panel4.Controls.Add(this.label6);
 			this.panel4.EdgeColor = System.Drawing.Color.LightCyan;
 			this.panel4.Location = new System.Drawing.Point(3, 14);
 			this.panel4.Name = "panel4";
@@ -204,40 +200,13 @@
 			this.label4.BackColor = System.Drawing.Color.Transparent;
 			this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.label4.ForeColor = System.Drawing.Color.Red;
-			this.label4.Location = new System.Drawing.Point(-1, 150);
+			this.label4.Location = new System.Drawing.Point(3, 44);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(215, 36);
-			this.label4.TabIndex = 2;
-			this.label4.Text = "永久\r\nEmail: hsl200909@163.com";
+			this.label4.Size = new System.Drawing.Size(207, 162);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "QQ群信息\r\n群1: 592132877\r\n群2: 948305931\r\n群3: 767856490\r\n群4: 818409889\r\n普通vip群: 838185" +
+    "568 (赞助240元)";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label5
-			// 
-			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.label5.BackColor = System.Drawing.Color.Transparent;
-			this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label5.ForeColor = System.Drawing.Color.Blue;
-			this.label5.Location = new System.Drawing.Point(-1, 95);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(215, 36);
-			this.label5.TabIndex = 1;
-			this.label5.Text = "2000 ￥\r\nC# + android + wpf";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label6
-			// 
-			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.label6.BackColor = System.Drawing.Color.Transparent;
-			this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(-1, 44);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(215, 36);
-			this.label6.TabIndex = 0;
-			this.label6.Text = "个人商用+源码";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// panel1
 			// 
@@ -302,7 +271,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(215, 36);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "个人非商用";
+			this.label1.Text = "个人使用";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// linkLabel1
@@ -391,9 +360,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
         private HslControls.HslPanel panel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private HslControls.HslPanel panel2;
         private System.Windows.Forms.Label label3;
@@ -404,5 +370,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label14;
-    }
+		private System.Windows.Forms.Label label4;
+	}
 }

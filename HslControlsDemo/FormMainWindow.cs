@@ -56,7 +56,7 @@ namespace HslControlsDemo
 
 
         private HslCommunication.MQTT.MqttClient mqttClient;
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.7.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.8.0" );
 
         protected override void OnClosing( CancelEventArgs e )
         {
@@ -191,6 +191,7 @@ namespace HslControlsDemo
                 case "手动签名": return new FormSignature( );
                 case "袋式除尘": return new FormHslBagFilter( );
                 case "卡车": return new FormHslTruck( );
+                case "组合标签": return new FormHslLabelCombo( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "实时曲线中断": return new FormCurve2( );

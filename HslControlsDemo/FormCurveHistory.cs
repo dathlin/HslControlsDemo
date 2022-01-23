@@ -90,6 +90,31 @@ namespace HslControlsDemo
                     },
                     Marks = new string[] { "AA", "BB", "CC" },
                 } );
+                // 增加一个点的标记图片
+                hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
+                {
+                    CircleBrush = Brushes.Tomato,
+                    CurveKey = "温度",
+                    Index = 300,
+                    TextBrush = Brushes.Tomato,
+                    MarkImage = global::HslControlsDemo.Properties.Resources.plane
+                } );
+                hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
+                {
+                    CircleBrush = Brushes.Tomato,
+                    CurveKey = "温度",
+                    Index = 400,
+                    TextBrush = Brushes.Tomato,
+                    MarkImage = global::HslControlsDemo.Properties.Resources.weatherRain
+                } );
+
+                // 添加一张图片的背景
+                hslCurveHistory1.AddMarkImage( new HslControls.HslMarkImage( )
+                {
+                    Index = 800,
+                    OffsetY = 0.2f,
+                    MarkImage = Properties.Resources.weipay
+                } );
 
                 // 添加一个活动的标记
                 HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
@@ -135,8 +160,8 @@ namespace HslControlsDemo
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
             {
-                hslCurveHistory1.ValueMinLeft = 0;
-                hslCurveHistory1.ValueMaxLeft = 1500;
+                hslCurveHistory1.ReferenceAxisLeft.Min = 0;
+                hslCurveHistory1.ReferenceAxisLeft.Max = 1500;
 
                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
                 hslCurveHistory1.SetDateTimes( times );
@@ -256,7 +281,7 @@ namespace HslControlsDemo
 
         private void Button10_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.ReferenceAxisLeft.Min = 80;
             hslCurveHistory1.RenderCurveUI( );
         }
     }

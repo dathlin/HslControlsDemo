@@ -20,8 +20,8 @@
         </WPF:HslPipeLine>
         <Button x:Name="B_HslBottle" Content="HslBottle" Canvas.Left="21" Canvas.Top="10" Width="113" Height="27" Click="B_HslBottle_Click"/>
         <WPF:HslSwitch Name="hslSwitch1" Height="123" Canvas.Left="446" Canvas.Top="199" Width="120" SwitchStatus="True" SwitchText="off:On"/>
-        <WPF:HslIndicator Height="101" Canvas.Left="456" Canvas.Top="10" Width="101" IndicatorColor="Blue" IndicatorStyles="RoundedSides"/>
-        <WPF:HslBottle Height="192" Canvas.Left="810" Canvas.Top="25" Width="47" Value="90" UseAnimation="True"/>
+        <WPF:HslIndicator Name="hslIndicator1" Height="101" Canvas.Left="456" Canvas.Top="10" Width="101" IndicatorColor="Blue" IndicatorStyles="RoundedSides"/>
+        <WPF:HslBottle Height="192" Canvas.Left="810" Canvas.Top="25" Width="47" Value="90" UseAnimation="True" BackColorEdge="{Binding ElementName=hslIndicator1, Path=IndicatorColor}"/>
         <WPF:HslIndicator Height="101" Canvas.Left="571" Canvas.Top="10" Width="101" IndicatorColor="Green"/>
         <WPF:HslSwitch Height="123" Canvas.Left="571" Canvas.Top="199" Width="120" SwitchStatus="True"/>
         <WPF:HslPipeLine Height="23" Canvas.Left="651" Canvas.Top="333" Width="194" LeftDirection="Left" RightDirection="Right"
@@ -32,9 +32,9 @@
         <Button x:Name="B_HslLanternSimple" Content="HslLanternSimple" Canvas.Left="21" Canvas.Top="75" Width="113" Height="27" Click="B_HslLanternSimple_Click" RenderTransformOrigin="0.511,2.481"/>
         <WPF:HslBoiler Height="128" Canvas.Left="857" Canvas.Top="6" Width="125"/>
         <WPF:HslWaterBasin Height="180" Canvas.Left="190" Canvas.Top="369" Width="367" WaterSpeed="1000" Value="90"/>
-        <WPF:HslPipeLine Height="23" Canvas.Left="10" Canvas.Top="447" Width="194" LeftDirection="Left" RightDirection="Right" PipeLineWidth="2"
+        <WPF:HslPipeLine Name="hslPipeLine2" Height="23" Canvas.Left="10" Canvas.Top="447" Width="194" LeftDirection="Left" RightDirection="Right" PipeLineWidth="2"
             RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="2"/>
-        <WPF:HslPipeLine Height="23" Canvas.Left="10" Canvas.Top="400" Width="194" LeftDirection="Left" RightDirection="Right" ActiveLineCenterColor="Purple"
+        <WPF:HslPipeLine Name="hslPipeLine1" Height="23" Canvas.Left="10" Canvas.Top="400" Width="194" LeftDirection="Left" RightDirection="Right" ActiveLineCenterColor="Purple"
             RenderTransformOrigin="0.5,0.5" PipeLineActive="True" MoveSpeed="4"/>
         <WPF:HslHandValve Height="134" Canvas.Left="571" Canvas.Top="400" Width="184" Text="正常"/>
         <WPF:HslHandValve Height="134" Canvas.Left="769" Canvas.Top="400" Width="184" OpenEnable="False" EdgeColor="OrangeRed"/>
@@ -71,5 +71,7 @@
         <Button x:Name="B_HslTitle" Content="HslTitle" Canvas.Left="264" Canvas.Top="235" Width="113" Height="27" Click="B_HslTitle_Click"/>
         <Button x:Name="B_HslSwitch" Content="变更状态" Canvas.Left="456" Canvas.Top="327" Width="113" Height="27" Click="B_HslSwitch_Click"/>
         <Button x:Name="B_HslThermometer" Content="HslThermometer" Canvas.Left="264" Canvas.Top="269" Width="113" Height="27" Click="B_HslThermometer_Click"/>
+        <TextBox Name="textBox_speed" Height="20" Canvas.Left="12" TextWrapping="Wrap" Text="1" Canvas.Top="534" Width="90"/>
+        <Button Content="设定速度" Height="20" Canvas.Left="111" Canvas.Top="534" Width="62" Click="Button_Click"/>
     </Canvas>
 </Window>

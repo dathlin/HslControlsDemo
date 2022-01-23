@@ -255,7 +255,7 @@ namespace HslControlsDemo
 
         private void Button10_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.ReferenceAxisLeft.Min = 80;
             hslCurveHistory1.RenderCurveUI( );
         }
     }

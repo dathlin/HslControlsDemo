@@ -8,9 +8,15 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         Title="WindowHslCurve" Height="684" Width="1020">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Control.Background" Value="Red"/>
+            <Setter Property="Control.FontSize" Value="30"/>
+        </Style>
+    </Window.Resources>
     <Canvas>
 
-        <WPF:HslCurve x:Name="hslCurve1" Height="189" Canvas.Left="10" Canvas.Top="10" Width="992" Title="销售数据" IsRenderRightCoordinate="False" ColorDashLines="#D0D0D0" IsAbscissaStrech="True" StrechDataCountMax="12" IntervalAbscissaText="-1" PointsRadius="2"/>
+        <WPF:HslCurve x:Name="hslCurve1" Height="189" Canvas.Left="10" Canvas.Top="10" Width="992" Title="销售数据" IsRenderRightCoordinate="True" ValueMaxRight="200" ColorDashLines="#D0D0D0" IsAbscissaStrech="True" StrechDataCountMax="12" IntervalAbscissaText="-1" PointsRadius="3"/>
         <WPF:HslCurve x:Name="hslCurve3" Height="197" Canvas.Left="10" Canvas.Top="199" Width="491" IsRenderRightCoordinate="False" ValueMaxLeft="100" ColorDashLines="#D0D0D0"/>
         <WPF:HslCurve x:Name="hslCurve4" Height="197" Canvas.Left="511" Canvas.Top="199" Width="491" ValueMaxLeft="200" ValueMaxRight="5" Background="#FF303030" ColorDashLines="#505050" ColorLinesAndText="LightGray" Title="温度压力实时曲线"/>
         <WPF:HslCurve x:Name="hslCurve5" Height="197" Canvas.Left="10" Canvas.Top="401" Width="491" IsRenderRightCoordinate="False" ValueMaxLeft="0" ValueMinLeft="-100" ColorDashLines="#D0D0D0" IsAbscissaStrech="True" StrechDataCountMax="100" IntervalAbscissaText="20"/>
@@ -20,6 +26,7 @@
         <Button Content="新增辅助线" Canvas.Left="636" Canvas.Top="603" Width="83" Height="23" Click="Button_Click"/>
         <Button Content="移除辅助线" Canvas.Left="724" Canvas.Top="603" Width="83" Height="23" Click="Button_Click_1"/>
         <Button Content="清除曲线" Canvas.Left="919" Canvas.Top="603" Width="83" Height="23" Click="Button_Click_2"/>
+        <CheckBox Content="数据中断" Canvas.Left="262" Canvas.Top="620" Foreground="Blue" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
 
     </Canvas>
 </Window>

@@ -208,5 +208,12 @@ namespace HslControlsWpf
 			WindowHslThermometer window = new WindowHslThermometer( );
 			window.ShowDialog( );
 		}
+
+		private void Button_Click( object sender, RoutedEventArgs e )
+		{
+			double speed = double.Parse( textBox_speed.Text );
+			hslPipeLine1.MoveSpeed = speed;
+			hslPipeLine2.MoveSpeed = speed;
+		}
 	}
 }

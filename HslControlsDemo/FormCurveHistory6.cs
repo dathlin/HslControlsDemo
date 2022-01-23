@@ -83,8 +83,8 @@ namespace HslControlsDemo
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
             {
-                hslCurveHistory1.ValueMinLeft = 0;
-                hslCurveHistory1.ValueMaxLeft = 1500;
+                hslCurveHistory1.ReferenceAxisLeft.Min = 0;
+                hslCurveHistory1.ReferenceAxisLeft.Max = 1500;
 
                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
                 hslCurveHistory1.SetDateTimes( times );
@@ -191,7 +191,7 @@ namespace HslControlsDemo
 
         private void Button10_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.ReferenceAxisLeft.Min = 80;
             hslCurveHistory1.RenderCurveUI( );
         }
     }

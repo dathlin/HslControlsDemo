@@ -41,8 +41,8 @@
     <Reference Include="HslCommunication, Version=9.7.0.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.9.7.0\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
-    <Reference Include="HslControls, Version=2.7.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
-      <HintPath>..\packages\HslControls.2.7.0\lib\net45\HslControls.dll</HintPath>
+    <Reference Include="HslControls, Version=2.8.0.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <HintPath>..\packages\HslControls.2.8.0\lib\net45\HslControls.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -228,6 +228,12 @@
     </Compile>
     <Compile Include="FormDigitalInput.Designer.cs">
       <DependentUpon>FormDigitalInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHslLabelCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHslLabelCombo.Designer.cs">
+      <DependentUpon>FormHslLabelCombo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHslBagFilter.cs">
       <SubType>Form</SubType>
@@ -567,6 +573,9 @@
     <EmbeddedResource Include="FormDigitalInput.resx">
       <DependentUpon>FormDigitalInput.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHslLabelCombo.resx">
+      <DependentUpon>FormHslLabelCombo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHslBagFilter.resx">
       <DependentUpon>FormHslBagFilter.cs</DependentUpon>
     </EmbeddedResource>
@@ -723,6 +732,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hslcontrols.ico" />
+    <None Include="weipay.png" />
     <None Include="weatherSun.png" />
     <None Include="weatherRain.png" />
     <None Include="plane.png" />

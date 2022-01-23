@@ -13,7 +13,7 @@
         Title="WindowHslCurve[wpf调用winform的历史曲线控件]" Height="684" Width="1020">
     <Canvas>
         <wfi:WindowsFormsHost Width="950" Height="560" Margin="20,20">
-            <HslControls:HslCurveHistory x:Name="hslCurveHistory1" ValueSegment="20" ValueMaxLeft="200" ValueMaxRight="5" Text="hslCurveHistory1"></HslControls:HslCurveHistory>
+            <HslControls:HslCurveHistory x:Name="hslCurveHistory1" ValueSegment="20" Text="hslCurveHistory1"></HslControls:HslCurveHistory>
         </wfi:WindowsFormsHost>
 
         <TextBox x:Name="textBox1" Height="23" Canvas.Left="511" TextWrapping="Wrap" Text="100" Canvas.Top="603" Width="120"/>

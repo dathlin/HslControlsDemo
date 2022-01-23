@@ -32,7 +32,6 @@
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
-			this.hslCurveHistory1 = new HslControls.HslCurveHistory();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
 			this.button8 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.hslCurveHistory1 = new HslControls.HslCurveHistory();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -92,34 +92,6 @@
 			this.button4.Text = "2 倍";
 			this.button4.UseVisualStyleBackColor = true;
 			this.button4.Click += new System.EventHandler(this.button4_Click);
-			// 
-			// hslCurveHistory1
-			// 
-			this.hslCurveHistory1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.hslCurveHistory1.BackColor = System.Drawing.Color.White;
-			this.hslCurveHistory1.ButtomHeight = 40;
-			this.hslCurveHistory1.CoordinateColor = System.Drawing.Color.DimGray;
-			this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.hslCurveHistory1.ForeColor = System.Drawing.Color.RoyalBlue;
-			this.hslCurveHistory1.IntervalAbscissaText = 100;
-			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 31);
-			this.hslCurveHistory1.MarkLineColor = System.Drawing.Color.DodgerBlue;
-			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
-			this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
-			this.hslCurveHistory1.Name = "hslCurveHistory1";
-			this.hslCurveHistory1.ScrollColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 546);
-			this.hslCurveHistory1.TabIndex = 0;
-			this.hslCurveHistory1.Text = "hslCurveHistory1";
-			this.hslCurveHistory1.UnitLeft = " ℃";
-			this.hslCurveHistory1.UnitRight = "Mpa";
-			this.hslCurveHistory1.ValueMaxLeft = 250F;
-			this.hslCurveHistory1.ValueMaxRight = 5F;
-			this.hslCurveHistory1.ValueSegment = 25;
-			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
-			this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
 			// 
 			// textBox1
 			// 
@@ -260,6 +232,34 @@
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 20);
 			this.comboBox1.TabIndex = 29;
+			// 
+			// hslCurveHistory1
+			// 
+			this.hslCurveHistory1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.hslCurveHistory1.BackColor = System.Drawing.Color.White;
+			this.hslCurveHistory1.ButtomHeight = 40;
+			this.hslCurveHistory1.CoordinateColor = System.Drawing.Color.DimGray;
+			this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.hslCurveHistory1.ForeColor = System.Drawing.Color.RoyalBlue;
+			this.hslCurveHistory1.IntervalAbscissaText = 100;
+			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 31);
+			this.hslCurveHistory1.MarkLineColor = System.Drawing.Color.DodgerBlue;
+			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
+			this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
+			this.hslCurveHistory1.Name = "hslCurveHistory1";
+			this.hslCurveHistory1.ScrollColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 546);
+			this.hslCurveHistory1.TabIndex = 0;
+			this.hslCurveHistory1.Text = "hslCurveHistory1";
+			this.hslCurveHistory1.ReferenceAxisLeft.Unit = " ℃";
+			this.hslCurveHistory1.ReferenceAxisRight.Unit = "Mpa";
+			this.hslCurveHistory1.ReferenceAxisLeft.Max = 250F;
+			this.hslCurveHistory1.ReferenceAxisRight.Max = 5F;
+			this.hslCurveHistory1.ValueSegment = 25;
+			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
+			this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
 			// 
 			// FormCurveHistory2
 			// 

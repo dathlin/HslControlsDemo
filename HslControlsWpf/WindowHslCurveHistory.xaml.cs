@@ -31,6 +31,8 @@ namespace HslControlsWpf
         protected override void OnSourceInitialized( EventArgs e )
         {
             base.OnSourceInitialized( e );
+            hslCurveHistory1.ReferenceAxisLeft.Max = 200;
+            hslCurveHistory1.ReferenceAxisRight.Max = 5;
         }
 
         private WpfAuxiliaryLable auxiliaryLable5;
