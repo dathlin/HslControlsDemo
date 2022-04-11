@@ -108,7 +108,8 @@
 			System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("历史曲线阶梯");
 			System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("历史曲线多轴");
 			System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("历史曲线实时");
-			System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("曲线", new System.Windows.Forms.TreeNode[] {
+			System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("历史曲线截面");
+			System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("曲线", new System.Windows.Forms.TreeNode[] {
             treeNode36,
             treeNode37,
             treeNode38,
@@ -119,52 +120,53 @@
             treeNode43,
             treeNode44,
             treeNode45,
-            treeNode46});
-			System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("柱状图");
-			System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("饼图");
-			System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("综合图表");
-			System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("仪表盘1");
-			System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("仪表盘2");
-			System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("流量表");
-			System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("表格");
-			System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("表格自定义");
-			System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("图表", new System.Windows.Forms.TreeNode[] {
-            treeNode48,
+            treeNode46,
+            treeNode47});
+			System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("柱状图");
+			System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("饼图");
+			System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("综合图表");
+			System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("仪表盘1");
+			System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("仪表盘2");
+			System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("流量表");
+			System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("表格");
+			System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("表格自定义");
+			System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("图表", new System.Windows.Forms.TreeNode[] {
             treeNode49,
             treeNode50,
             treeNode51,
             treeNode52,
             treeNode53,
             treeNode54,
-            treeNode55});
-			System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("加工中心");
-			System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("数控机床");
-			System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("机床", new System.Windows.Forms.TreeNode[] {
-            treeNode57,
-            treeNode58});
-			System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("五子棋");
-			System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("俄罗斯方块正常版");
-			System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("俄罗斯方块变态版");
-			System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("坦克大战");
-			System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("游戏", new System.Windows.Forms.TreeNode[] {
-            treeNode60,
+            treeNode55,
+            treeNode56});
+			System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("加工中心");
+			System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("数控机床");
+			System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("机床", new System.Windows.Forms.TreeNode[] {
+            treeNode58,
+            treeNode59});
+			System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("五子棋");
+			System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("俄罗斯方块正常版");
+			System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("俄罗斯方块变态版");
+			System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("坦克大战");
+			System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("游戏", new System.Windows.Forms.TreeNode[] {
             treeNode61,
             treeNode62,
-            treeNode63});
-			System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("管道测试");
-			System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("曲线压力测试");
-			System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
-            treeNode65,
-            treeNode66});
-			System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("基本无界控件");
-			System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("中国地图");
-			System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("中国地图暗主题");
-			System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("中国地图天气");
-			System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("无界控件", new System.Windows.Forms.TreeNode[] {
-            treeNode68,
+            treeNode63,
+            treeNode64});
+			System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("管道测试");
+			System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("曲线压力测试");
+			System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("性能测试", new System.Windows.Forms.TreeNode[] {
+            treeNode66,
+            treeNode67});
+			System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("基本无界控件");
+			System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("中国地图");
+			System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("中国地图暗主题");
+			System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("中国地图天气");
+			System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("无界控件", new System.Windows.Forms.TreeNode[] {
             treeNode69,
             treeNode70,
-            treeNode71});
+            treeNode71,
+            treeNode72});
 			this.vS2015LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2015LightTheme();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -340,66 +342,68 @@
 			treeNode45.Text = "历史曲线多轴";
 			treeNode46.Name = "节点0";
 			treeNode46.Text = "历史曲线实时";
-			treeNode47.Name = "节点28";
-			treeNode47.Text = "曲线";
-			treeNode48.Name = "节点36";
-			treeNode48.Text = "柱状图";
-			treeNode49.Name = "节点37";
-			treeNode49.Text = "饼图";
-			treeNode50.Name = "节点38";
-			treeNode50.Text = "综合图表";
-			treeNode51.Name = "节点39";
-			treeNode51.Text = "仪表盘1";
-			treeNode52.Name = "节点40";
-			treeNode52.Text = "仪表盘2";
-			treeNode53.Name = "节点0";
-			treeNode53.Text = "流量表";
-			treeNode54.Name = "节点1";
-			treeNode54.Text = "表格";
-			treeNode55.Name = "节点0";
-			treeNode55.Text = "表格自定义";
-			treeNode56.Name = "节点35";
-			treeNode56.Text = "图表";
-			treeNode57.Name = "节点42";
-			treeNode57.Text = "加工中心";
-			treeNode58.Name = "节点43";
-			treeNode58.Text = "数控机床";
-			treeNode59.Name = "节点41";
-			treeNode59.Text = "机床";
-			treeNode60.Name = "节点48";
-			treeNode60.Text = "五子棋";
-			treeNode61.Name = "节点49";
-			treeNode61.Text = "俄罗斯方块正常版";
-			treeNode62.Name = "节点50";
-			treeNode62.Text = "俄罗斯方块变态版";
-			treeNode63.Name = "节点51";
-			treeNode63.Text = "坦克大战";
-			treeNode64.Name = "节点47";
-			treeNode64.Text = "游戏";
-			treeNode65.Name = "节点53";
-			treeNode65.Text = "管道测试";
-			treeNode66.Name = "节点0";
-			treeNode66.Text = "曲线压力测试";
-			treeNode67.Name = "节点52";
-			treeNode67.Text = "性能测试";
-			treeNode68.Name = "节点1";
-			treeNode68.Text = "基本无界控件";
-			treeNode69.Name = "节点0";
-			treeNode69.Text = "中国地图";
+			treeNode47.Name = "节点0";
+			treeNode47.Text = "历史曲线截面";
+			treeNode48.Name = "节点28";
+			treeNode48.Text = "曲线";
+			treeNode49.Name = "节点36";
+			treeNode49.Text = "柱状图";
+			treeNode50.Name = "节点37";
+			treeNode50.Text = "饼图";
+			treeNode51.Name = "节点38";
+			treeNode51.Text = "综合图表";
+			treeNode52.Name = "节点39";
+			treeNode52.Text = "仪表盘1";
+			treeNode53.Name = "节点40";
+			treeNode53.Text = "仪表盘2";
+			treeNode54.Name = "节点0";
+			treeNode54.Text = "流量表";
+			treeNode55.Name = "节点1";
+			treeNode55.Text = "表格";
+			treeNode56.Name = "节点0";
+			treeNode56.Text = "表格自定义";
+			treeNode57.Name = "节点35";
+			treeNode57.Text = "图表";
+			treeNode58.Name = "节点42";
+			treeNode58.Text = "加工中心";
+			treeNode59.Name = "节点43";
+			treeNode59.Text = "数控机床";
+			treeNode60.Name = "节点41";
+			treeNode60.Text = "机床";
+			treeNode61.Name = "节点48";
+			treeNode61.Text = "五子棋";
+			treeNode62.Name = "节点49";
+			treeNode62.Text = "俄罗斯方块正常版";
+			treeNode63.Name = "节点50";
+			treeNode63.Text = "俄罗斯方块变态版";
+			treeNode64.Name = "节点51";
+			treeNode64.Text = "坦克大战";
+			treeNode65.Name = "节点47";
+			treeNode65.Text = "游戏";
+			treeNode66.Name = "节点53";
+			treeNode66.Text = "管道测试";
+			treeNode67.Name = "节点0";
+			treeNode67.Text = "曲线压力测试";
+			treeNode68.Name = "节点52";
+			treeNode68.Text = "性能测试";
+			treeNode69.Name = "节点1";
+			treeNode69.Text = "基本无界控件";
 			treeNode70.Name = "节点0";
-			treeNode70.Text = "中国地图暗主题";
+			treeNode70.Text = "中国地图";
 			treeNode71.Name = "节点0";
-			treeNode71.Text = "中国地图天气";
+			treeNode71.Text = "中国地图暗主题";
 			treeNode72.Name = "节点0";
-			treeNode72.Text = "无界控件";
+			treeNode72.Text = "中国地图天气";
+			treeNode73.Name = "节点0";
+			treeNode73.Text = "无界控件";
 			this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode35,
-            treeNode47,
-            treeNode56,
-            treeNode59,
-            treeNode64,
-            treeNode67,
-            treeNode72});
+            treeNode48,
+            treeNode57,
+            treeNode60,
+            treeNode65,
+            treeNode68,
+            treeNode73});
 			this.treeView1.Size = new System.Drawing.Size(169, 677);
 			this.treeView1.TabIndex = 1;
 			// 

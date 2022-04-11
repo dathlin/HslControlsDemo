@@ -28,17 +28,51 @@
         /// </summary>
         private void InitializeComponent( )
         {
+			this.label1 = new System.Windows.Forms.Label();
+			this.hslPanel1 = new HslControls.HslPanel();
+			this.hslBarChart4 = new HslControls.HslBarChart();
 			this.hslBarChart7 = new HslControls.HslBarChart();
 			this.hslBarChart6 = new HslControls.HslBarChart();
 			this.hslBarChart5 = new HslControls.HslBarChart();
-			this.hslBarChart4 = new HslControls.HslBarChart();
 			this.hslBarChart3 = new HslControls.HslBarChart();
 			this.hslBarChart2 = new HslControls.HslBarChart();
 			this.hslBarChart1 = new HslControls.HslBarChart();
-			this.label1 = new System.Windows.Forms.Label();
-			this.hslPanel1 = new HslControls.HslPanel();
 			this.hslPanel1.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(22, 624);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(401, 12);
+			this.label1.TabIndex = 7;
+			this.label1.Text = "举例应用，将1000以下和以上的颜色区分开来，并增加1000的辅助线标记。";
+			// 
+			// hslPanel1
+			// 
+			this.hslPanel1.CenterColor = System.Drawing.Color.LavenderBlush;
+			this.hslPanel1.Controls.Add(this.hslBarChart4);
+			this.hslPanel1.EdgeColor = System.Drawing.Color.Moccasin;
+			this.hslPanel1.Location = new System.Drawing.Point(24, 203);
+			this.hslPanel1.Name = "hslPanel1";
+			this.hslPanel1.Size = new System.Drawing.Size(310, 209);
+			this.hslPanel1.TabIndex = 8;
+			this.hslPanel1.Text = "hslPanel1";
+			// 
+			// hslBarChart4
+			// 
+			this.hslBarChart4.BarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+			this.hslBarChart4.BarPercentWidth = 0.5F;
+			this.hslBarChart4.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.hslBarChart4.Location = new System.Drawing.Point(0, 3);
+			this.hslBarChart4.Name = "hslBarChart4";
+			this.hslBarChart4.ShowBarValueFormat = "{0}";
+			this.hslBarChart4.Size = new System.Drawing.Size(307, 203);
+			this.hslBarChart4.TabIndex = 3;
+			this.hslBarChart4.Text = "hslBarChart4";
+			this.hslBarChart4.UseGradient = true;
+			this.hslBarChart4.Click += new System.EventHandler(this.HslBarChart1_Click);
 			// 
 			// hslBarChart7
 			// 
@@ -65,13 +99,12 @@
 			this.hslBarChart6.ColorDashLines = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
 			this.hslBarChart6.ColorLinesAndText = System.Drawing.Color.Silver;
 			this.hslBarChart6.ForeColor = System.Drawing.Color.White;
-			this.hslBarChart6.Location = new System.Drawing.Point(670, 215);
+			this.hslBarChart6.Location = new System.Drawing.Point(670, 203);
 			this.hslBarChart6.Name = "hslBarChart6";
 			this.hslBarChart6.ShowBarValueFormat = "{0}";
-			this.hslBarChart6.Size = new System.Drawing.Size(324, 197);
+			this.hslBarChart6.Size = new System.Drawing.Size(324, 209);
 			this.hslBarChart6.TabIndex = 5;
 			this.hslBarChart6.Text = "hslBarChart6";
-			this.hslBarChart6.Title = "日产量统计表";
 			this.hslBarChart6.UseGradient = true;
 			this.hslBarChart6.Click += new System.EventHandler(this.HslBarChart1_Click);
 			// 
@@ -80,28 +113,15 @@
 			this.hslBarChart5.BackColor = System.Drawing.Color.White;
 			this.hslBarChart5.BarBackColor = System.Drawing.Color.MediumOrchid;
 			this.hslBarChart5.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.hslBarChart5.Location = new System.Drawing.Point(340, 215);
+			this.hslBarChart5.Location = new System.Drawing.Point(340, 203);
 			this.hslBarChart5.Name = "hslBarChart5";
 			this.hslBarChart5.ShowBarValueFormat = "{0}";
-			this.hslBarChart5.Size = new System.Drawing.Size(324, 197);
+			this.hslBarChart5.Size = new System.Drawing.Size(324, 209);
 			this.hslBarChart5.TabIndex = 4;
 			this.hslBarChart5.Text = "hslBarChart5";
+			this.hslBarChart5.Title = "日产量统计表";
 			this.hslBarChart5.UseGradient = true;
 			this.hslBarChart5.Click += new System.EventHandler(this.HslBarChart1_Click);
-			// 
-			// hslBarChart4
-			// 
-			this.hslBarChart4.BarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-			this.hslBarChart4.BarPercentWidth = 0.5F;
-			this.hslBarChart4.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.hslBarChart4.Location = new System.Drawing.Point(0, 3);
-			this.hslBarChart4.Name = "hslBarChart4";
-			this.hslBarChart4.ShowBarValueFormat = "{0}";
-			this.hslBarChart4.Size = new System.Drawing.Size(307, 203);
-			this.hslBarChart4.TabIndex = 3;
-			this.hslBarChart4.Text = "hslBarChart4";
-			this.hslBarChart4.UseGradient = true;
-			this.hslBarChart4.Click += new System.EventHandler(this.HslBarChart1_Click);
 			// 
 			// hslBarChart3
 			// 
@@ -138,26 +158,6 @@
 			this.hslBarChart1.TabIndex = 0;
 			this.hslBarChart1.Text = "hslBarChart1";
 			this.hslBarChart1.Click += new System.EventHandler(this.HslBarChart1_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(22, 624);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(401, 12);
-			this.label1.TabIndex = 7;
-			this.label1.Text = "举例应用，将1000以下和以上的颜色区分开来，并增加1000的辅助线标记。";
-			// 
-			// hslPanel1
-			// 
-			this.hslPanel1.CenterColor = System.Drawing.Color.LavenderBlush;
-			this.hslPanel1.Controls.Add(this.hslBarChart4);
-			this.hslPanel1.EdgeColor = System.Drawing.Color.Moccasin;
-			this.hslPanel1.Location = new System.Drawing.Point(24, 203);
-			this.hslPanel1.Name = "hslPanel1";
-			this.hslPanel1.Size = new System.Drawing.Size(310, 209);
-			this.hslPanel1.TabIndex = 8;
-			this.hslPanel1.Text = "hslPanel1";
 			// 
 			// FormBarChart
 			// 

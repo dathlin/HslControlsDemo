@@ -44,8 +44,12 @@ namespace HslControlsWpf
             hslBarChart5.AddLeftAuxiliary( 300, Colors.Blue, 1f, false );
 
             hslBarChart6.UseAnimation = true;
-            hslBarChart6.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) },
-                new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" } );
+            hslBarChart6.SetDataSource( new Dictionary<string, double[]>( )
+            {
+                { "上周产量", new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } },
+                { "本周产量" , new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } }
+            },
+             new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" }, new Color[] { Colors.Tomato, Colors.DodgerBlue } );
 
             List<int> month = new List<int>( );
             List<string> days = new List<string>( );
@@ -70,8 +74,13 @@ namespace HslControlsWpf
         {
             hslBarChart4.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ) },
                 new string[] { "周一", "周二", "周三", "周四", "周五" } );
-            hslBarChart6.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) },
-                new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" } );
+
+            hslBarChart6.SetDataSource( new Dictionary<string, double[]>( )
+            {
+                { "上周产量", new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } },
+                { "本周产量" , new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } }
+            },
+            new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" }, new Color[] { Colors.Tomato, Colors.DodgerBlue } );
         }
 
         private Random random = new Random( );

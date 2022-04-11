@@ -204,8 +204,8 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(207, 162);
 			this.label4.TabIndex = 3;
-			this.label4.Text = "QQ群信息\r\n群1: 592132877\r\n群2: 948305931\r\n群3: 767856490\r\n群4: 818409889\r\n普通vip群: 838185" +
-    "568 (赞助240元)";
+			this.label4.Text = "QQ群信息\r\n群1: 592132877\r\n群2: 948305931\r\n群3: 767856490\r\n群4: 818409889\r\n群5: 474160094\r" +
+    "\n普通vip群: 838185568 (赞助240元)";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// panel1
@@ -243,7 +243,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(215, 75);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "连续运行12个月\r\n软件重启计时\r\n普通vip群:838185568\r\n赞助240";
+			this.label3.Text = "连续运行3年\r\n软件重启计时\r\n普通vip群:838185568\r\n赞助240";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label2

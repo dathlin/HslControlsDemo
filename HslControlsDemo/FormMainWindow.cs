@@ -56,7 +56,7 @@ namespace HslControlsDemo
 
 
         private HslCommunication.MQTT.MqttClient mqttClient;
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.8.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.9.0" );
 
         protected override void OnClosing( CancelEventArgs e )
         {
@@ -204,6 +204,7 @@ namespace HslControlsDemo
                 case "历史曲线阶梯": return new FormCurveHistory6( );
                 case "历史曲线多轴": return new FormCurveHistory8( );
                 case "历史曲线实时": return new FormCurveHistory9( );
+                case "历史曲线截面": return new FormCurveHistory10( );
                 // 图表
                 case "柱状图": return new FormBarChart( );
                 case "饼图": return new FormPieChart( );
