@@ -251,7 +251,7 @@ namespace HslControlsDemo
             fileDialog.InitialDirectory = Application.StartupPath;
             if (fileDialog.ShowDialog( ) == DialogResult.OK)
             {
-                hslCurveHistory1.SaveToBitmap( ).Save( fileDialog.FileName );
+                hslCurveHistory1.SaveToBitmap( true ).Save( fileDialog.FileName );
                 MessageBox.Show( "保存成功!" );
             }
             fileDialog.Dispose( );

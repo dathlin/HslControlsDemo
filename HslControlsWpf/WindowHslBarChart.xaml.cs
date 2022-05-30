@@ -30,7 +30,8 @@ namespace HslControlsWpf
         {
             base.OnSourceInitialized( e );
 
-            hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            //hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            hslBarChart2.SetDataSource( new double[] { 1.5d, 2.8, 12.4d, 9.55d, 7d }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart3.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
 
 

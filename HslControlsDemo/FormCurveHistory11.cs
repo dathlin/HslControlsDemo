@@ -10,9 +10,9 @@ using System.Threading;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory2 : FormContent
+    public partial class FormCurveHistory11 : FormContent
     {
-        public FormCurveHistory2( )
+        public FormCurveHistory11( )
         {
             InitializeComponent();
         }
@@ -31,6 +31,9 @@ namespace HslControlsDemo
             float[] steps = new float[2000];
             float[] data = new float[2000];
             float[] press = new float[2000];
+
+            float[] upper = new float[2000];
+            float[] lower = new float[2000];
             DateTime[] times = new DateTime[2000];
 
             for (int i = 0; i < data.Length; i++)
@@ -39,12 +42,29 @@ namespace HslControlsDemo
                 data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
                 times[i] = DateTime.Now.AddSeconds( i - 2000 );
                 press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
+                upper[i] = Convert.ToSingle( random.NextDouble( ) * 10 + 150 );
+                lower[i] = Convert.ToSingle( random.NextDouble( ) * 10 + 30 );
             }
 
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
              {
-                 hslCurveHistory1.SetLeftCurve( "步序", steps );
+                 // 区间颜色参考LineColor，背景色使用的透明的，淡化的LineColor，需要指定参考的坐标轴，数据，颜色
+                 // 样式只能选择 LineSegment 及 Curve
+                 // 下限如果设置为NULL，就使用坐标轴的最小值，需要指定参考的坐标轴，数据
+                 hslCurveHistory1.CurveRanges = new HslControls.HslCurveRange[]
+                 {
+                     new HslControls.HslCurveRange( )
+                     {
+                         ReferenceAxisIndex = 0,
+                         LineColor = Color.FromArgb(175, 226, 253),
+                         Upper = upper,
+                         Lower = lower,
+                         Style = HslControls.CurveStyle.Curve,  // 可选 LineSegment 及 Curve
+                     }
+                 };
+
+				 hslCurveHistory1.SetLeftCurve( "步序", steps );
                  hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
                  hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );

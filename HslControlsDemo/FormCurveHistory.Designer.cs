@@ -181,7 +181,7 @@
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(111, 37);
 			this.button7.TabIndex = 21;
-			this.button7.Text = "图片保存";
+			this.button7.Text = "当前图片保存";
 			this.button7.UseVisualStyleBackColor = true;
 			this.button7.Click += new System.EventHandler(this.button7_Click);
 			// 
@@ -201,7 +201,7 @@
 			// button8
 			// 
 			this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.button8.Location = new System.Drawing.Point(454, 612);
+			this.button8.Location = new System.Drawing.Point(496, 611);
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(87, 25);
 			this.button8.TabIndex = 23;

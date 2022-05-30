@@ -139,7 +139,7 @@
 			// hslBarChart2
 			// 
 			this.hslBarChart2.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.hslBarChart2.IsShowBarValue = false;
+			this.hslBarChart2.IsAoordinateRoundInt = true;
 			this.hslBarChart2.Location = new System.Drawing.Point(340, 12);
 			this.hslBarChart2.Name = "hslBarChart2";
 			this.hslBarChart2.ShowBarValueFormat = "{0}";

@@ -197,19 +197,8 @@ namespace HslControlsDemo
 
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 0.5f );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
-        private void button3_Click( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetScaleByXAxis(1f );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
-        private void button4_Click( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
+            // 自定义的缩放倍数
+            hslCurveHistory1.SetScaleXOptions( new float[] { 1 / 2f, 1f, 2f, 4f, 6f, 8f }, 1 );
             hslCurveHistory1.RenderCurveUI( );
         }
 

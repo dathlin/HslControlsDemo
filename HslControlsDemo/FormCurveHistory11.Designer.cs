@@ -1,7 +1,7 @@
 ﻿namespace HslControlsDemo
 {
-    partial class FormCurveHistory2
-    {
+    partial class FormCurveHistory11
+	{
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -263,7 +263,7 @@
 			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
 			this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
 			// 
-			// FormCurveHistory2
+			// FormCurveHistory11
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -288,9 +288,9 @@
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.hslCurveHistory1);
-			this.Name = "FormCurveHistory2";
+			this.Name = "FormCurveHistory11";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "FormCurveHistory2";
+			this.Text = "FormCurveHistory-区间范围示例，可以自定义设置区间信息";
 			this.Load += new System.EventHandler(this.FormCurveHistory_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

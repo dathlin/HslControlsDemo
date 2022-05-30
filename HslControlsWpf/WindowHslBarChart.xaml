@@ -11,7 +11,7 @@
     <Canvas>
 
         <WPF:HslBarChart Height="181" Canvas.Left="10" Canvas.Top="10" Width="320"/>
-        <WPF:HslBarChart x:Name="hslBarChart2" Height="181" Canvas.Left="335" Canvas.Top="10" Width="320" IsShowBarValue="False"/>
+        <WPF:HslBarChart x:Name="hslBarChart2" Height="181" Canvas.Left="335" Canvas.Top="10" Width="320" IsShowBarValue="True" IsAoordinateRoundInt="True"/>
         <WPF:HslBarChart x:Name="hslBarChart3" Height="181" Canvas.Left="660" Canvas.Top="10" Width="320" UseGradient="True" Title="测试的信息"/>
         <WPF:HslBarChart x:Name="hslBarChart4" Height="181" Canvas.Left="10" Canvas.Top="191" Width="320" BarPercentWidth="0.5"/>
         <WPF:HslBarChart x:Name="hslBarChart5" Height="181" Canvas.Left="335" Canvas.Top="191" Width="320" UseGradient="True" BarBackColor="Orchid" MouseDoubleClick="HslBarChart5_MouseDoubleClick"/>
