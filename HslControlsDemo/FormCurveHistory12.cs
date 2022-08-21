@@ -5,14 +5,15 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Threading;
+using System.Windows.Forms;
+using HslCommunication.BasicFramework;
 
 namespace HslControlsDemo
 {
-    public partial class FormCurveHistory6 : FormContent
+    public partial class FormCurveHistory12 : FormContent
     {
-        public FormCurveHistory6( )
+        public FormCurveHistory12( )
         {
             InitializeComponent();
         }
@@ -26,80 +27,72 @@ namespace HslControlsDemo
 
         private void ThreadReadExample1( )
         {
-            Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            float[] steps = new float[300];
-            float[] data = new float[300];
-            float[] press = new float[300];
-            DateTime[] times = new DateTime[300];
-
-            for (int i = 0; i < data.Length; i++)
-            {
-                steps[i] = random.Next( 10 );
-                data[i]  = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 40 + 120);
-                times[i] = DateTime.Now.AddSeconds( i - 2000 );
-                press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.8d + 4.1d);
-            }
+            float[] data1 = new float[8] { float.NaN, 28.5f, 31.4f, 35.1f, 31.6f, 35.9f, 38.1f, 37.3f };   // 最高温度
+            float[] data2 = new float[8] { float.NaN, 18.5f, 19.4f, 22.2f, 23.0f, 26.1f, 18.5f, 20.0f };   // 最低温度
+            DateTime[] dateTimes = new DateTime[8];
+            dateTimes[0] = DateTime.Now.AddDays( -7 );
 
             // 显示出数据信息来
             Invoke( new Action( ( ) =>
             {
-                 hslCurveHistory1.SetScaleXOptions( new float[] { 4f, 8f, 16f, 32f, 64f }, 1 ); // 设置倍率，默认8倍
-                 hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.StepLine, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.StepLineWithoutVertical, "{0:F2} Mpa" );
-                 hslCurveHistory1.SetDateTimes( times );
+                hslCurveHistory1.SetLeftCurve( "最高温度", data1, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                hslCurveHistory1.SetLeftCurve( "最低温度", data2, Color.LightSkyBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
 
-                 hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
-                 hslCurveHistory1.RenderCurveUI( );
-             } ) );
-        }
-
-        private void ThreadReadExample2( )
-        {
-            Thread.Sleep( 100 );
-            // 我们读取记事本的数据
-            string text = System.IO.File.ReadAllText( @"C:\Users\DATHLIN\Desktop\历史曲线-数据.txt", Encoding.UTF8 );
-            string[] texts = text.Split( new char[] { '#' } );
-
-            string[] str_datas = texts[0].Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            string[] str_dates = texts[1].Split( new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries );
-
-            float[] data = new float[str_datas.Length];
-            DateTime[] times = new DateTime[str_dates.Length];
-            for (int i = 0; i < str_datas.Length; i++)
-            {
-                if (str_datas[i] == "NaN")
-                    data[i] = float.NaN;
-                else
-                    data[i] = float.Parse( str_datas[i] );
-            }
-            for (int i = 0; i < str_dates.Length; i++)
-            {
-                times[i] = DateTime.Parse( str_dates[i] );
-            }
+                for ( int i = 1; i < 8; i++)
+                {
+                    dateTimes[i] = DateTime.Now.AddDays( i - 7 );
+                    hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
+                    {
+                        Index = i,
+                        CurveKey = "最高温度",
+                        MarkImage = Properties.Resources.Scattered_T_Storms,
+                        PositionStyle = HslControls.MarkTextPositionStyle.Up,
+                        MarkTextOffect = 10
+                    } );
 
 
-            // 显示出数据信息来
-            Invoke( new Action( ( ) =>
-            {
-                hslCurveHistory1.ReferenceAxisLeft.Min = 0;
-                hslCurveHistory1.ReferenceAxisLeft.Max = 1500;
+                    // 添加一个活动的标记
+                    HslControls.HslMarkForeSection active = new HslControls.HslMarkForeSection( )
+                    {
+                        StartIndex = i,
+                        EndIndex = i,
+                        Height = 0.9f,
+                    };
+                    active.CursorTexts.Add( "日期", DateTime.Now.AddDays( i - 7 ).ToString( "yyyy-MM-dd" ) );
+                    active.CursorTexts.Add( "天气", "多云转阵雨" );
 
-                hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
-                hslCurveHistory1.SetDateTimes( times );
+                    hslCurveHistory1.SetDateTimes( dateTimes );
+                    hslCurveHistory1.AddMarkActiveSection( active );
+                }
+
                 hslCurveHistory1.RenderCurveUI( );
             } ) );
         }
-        private Random random = new Random( );
 
         private void FormCurveHistory_Load( object sender, EventArgs e )
         {
-            hslCurveHistory1.AddLeftAuxiliary( 172f );
+            hslCurveHistory1.RightRemainWidth = 0;                                 // 右侧不留空白
+            hslCurveHistory1.SizeChanged += HslCurveHistory1_SizeChanged;          // 窗体大小变了，立即重新设置倍率
+            HslCurveHistory1_SizeChanged( hslCurveHistory1, e );
+
+            hslCurveHistory1.DateTimeFormate = "yyyy-MM-dd\r\ndddd";
+            hslCurveHistory1.HoverDateTimeFormate = "yyyy-MM-dd\r\ndddd";          // 显示日期及星期
+            hslCurveHistory1.RenderCurveUI( );                                     // 这步很重要
 
             linkLabel1.Click += LinkLabel1_Click;
             checkBox3.CheckedChanged += CheckBox3_CheckedChanged;
         }
+
+        private void HslCurveHistory1_SizeChanged( object sender, EventArgs e )
+        {
+            // 重新设置缩放倍率信息
+            float scale = (hslCurveHistory1.Width - hslCurveHistory1.LeftWidth - 10) / 8;   // 因为有8个数据，所以是除以8
+            hslCurveHistory1.SetScaleXOptions( new float[] { scale }, 0 );
+            hslCurveHistory1.IntervalAbscissaText = (int)scale;
+        }
+
+        private Random random = new Random( );
 
         private void CheckBox3_CheckedChanged( object sender, EventArgs e )
         {
@@ -120,38 +113,25 @@ namespace HslControlsDemo
 
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 4f );
+            hslCurveHistory1.SetScaleByXAxis( 0.5f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
         private void button3_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 8f );
+            hslCurveHistory1.SetScaleByXAxis(1f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
         private void button4_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 16f );
+            hslCurveHistory1.SetScaleByXAxis( 2f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
         private void hslCurveHistory1_onCurveDoubleClick( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
         {
             MessageBox.Show( $"Index: {index} Time:{dateTime.ToString( )}" );
-        }
-
-        private void button5_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox2.Text, out int radius ))
-            {
-                hslCurveHistory1.PointsRadius = radius;
-                hslCurveHistory1.RenderCurveUI( );
-            }
-            else
-            {
-                MessageBox.Show( "Input Error" );
-            }
         }
 
 
@@ -176,6 +156,7 @@ namespace HslControlsDemo
         private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, HslControls.HslMarkForeSection foreSection )
         {
             label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + foreSection.StartIndex + "  End:" + foreSection.EndIndex;
+            foreSection.MarkText = "这是标记的自定义的数据";
         }
 
         private void Button9_Click( object sender, EventArgs e )

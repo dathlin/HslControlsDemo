@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,7 +58,7 @@ namespace HslControlsDemo
 
 
         private HslCommunication.MQTT.MqttClient mqttClient;
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "3.0.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "3.1.0" );
 
         protected override void OnClosing( CancelEventArgs e )
         {
@@ -86,19 +88,34 @@ namespace HslControlsDemo
                     {
                         if (MessageBox.Show( "服务器有新版本：" + read.Content2 + Environment.NewLine + "是否启动更新？", "检测到更新", MessageBoxButtons.YesNo ) == DialogResult.Yes)
                         {
-                            try
-                            {
-                                System.Diagnostics.Process.Start( Application.StartupPath + "\\软件自动更新.exe" );
-                                System.Threading.Thread.Sleep( 50 );
-                                Close( );
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show( "更新软件丢失，无法启动更新： " + ex.Message );
-                            }
+                            StartUpdate( );
                         }
                     } ) );
                 }
+            }
+        }
+        private void StartUpdate( )
+        {
+            try
+            {
+                if (System.IO.File.Exists( Path.Combine( Application.StartupPath, "Upgrade.exe" ) ))
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "Upgrade.exe" ) );
+                }
+                else if (System.IO.File.Exists( Path.Combine( Application.StartupPath, "AutoUpdate.exe" ) ))
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "AutoUpdate.exe" ) );
+                }
+                else
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "软件自动更新.exe" ) );
+                }
+                System.Threading.Thread.Sleep( 50 );
+                Close( );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( "更新软件丢失，无法启动更新： " + ex.Message );
             }
         }
 
@@ -130,7 +147,7 @@ namespace HslControlsDemo
         }
         private void 官网ToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            OpenWebside( "http://www.hslcommunication.cn" );
+            OpenWebside( "http://www.hsltechnology.cn/" );
         }
 
         private FormPropertySetting propertySetting;
@@ -161,6 +178,7 @@ namespace HslControlsDemo
                 case "常用控件": return new FormBasic( );
                 case "进度条": return new FormProgress( );
                 case "进度条2": return new FormProgressColorful( );
+                case "进度条3": return new FormProgressBar( );
                 case "数码管": return new FormLedDisplay( );
                 case "时钟": return new FormClock( );
                 case "管道线": return new FormPipeLineTest( );
@@ -206,6 +224,7 @@ namespace HslControlsDemo
                 case "历史曲线实时": return new FormCurveHistory9( );
                 case "历史曲线截面": return new FormCurveHistory10( );
                 case "历史曲线范围": return new FormCurveHistory11( );
+                case "历史曲线天气预报": return new FormCurveHistory12( );
                 // 图表
                 case "柱状图": return new FormBarChart( );
                 case "饼图": return new FormPieChart( );
