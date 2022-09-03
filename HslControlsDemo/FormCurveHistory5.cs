@@ -107,8 +107,8 @@ namespace HslControlsDemo
             Invoke( new Action( ( ) =>
              {
                  hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, false, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
+                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.LineSegment, "{0:F1} ℃" );
+                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
                  hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
                  {
@@ -197,19 +197,8 @@ namespace HslControlsDemo
 
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 0.5f );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
-        private void button3_Click( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetScaleByXAxis(1f );
-            hslCurveHistory1.RenderCurveUI( );
-        }
-
-        private void button4_Click( object sender, EventArgs e )
-        {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
+            // 自定义的缩放倍数
+            hslCurveHistory1.SetScaleXOptions( new float[] { 1 / 2f, 1f, 2f, 4f, 6f, 8f }, 1 );
             hslCurveHistory1.RenderCurveUI( );
         }
 
@@ -262,9 +251,9 @@ namespace HslControlsDemo
             hslCurveHistory1.ScrollToRight( );
         }
 
-        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, int index, int end )
+        private void HslCurveHistory1_onCurveRangeSelect( HslControls.HslCurveHistory hslCurve, HslControls.HslMarkForeSection foreSection )
         {
-            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + index + "  End:" + end;
+            label4.Text = DateTime.Now.ToString( "HH:mm:ss" ) + "  Start:" + foreSection.StartIndex + "  End:" + foreSection.EndIndex;
         }
 
         private void Button9_Click( object sender, EventArgs e )
@@ -280,7 +269,7 @@ namespace HslControlsDemo
 
         private void Button10_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.ValueMinLeft = 80;
+            hslCurveHistory1.ReferenceAxisLeft.Min = 80;
             hslCurveHistory1.RenderCurveUI( );
         }
     }

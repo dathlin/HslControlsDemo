@@ -19,7 +19,14 @@ namespace HslControlsDemo
 
         public void SetControlRender(object control )
         {
-            propertyGrid1.SelectedObject = control;
+			try
+            {
+                propertyGrid1.SelectedObject = control;
+            }
+            catch
+			{
+
+			}
         }
     }
 }

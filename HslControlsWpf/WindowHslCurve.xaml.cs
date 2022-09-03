@@ -39,6 +39,7 @@ namespace HslControlsWpf
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
             hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Colors.Blue );
+            //hslCurve1.SetRightCurve( "B", GetRandomData( 12, 100, -80 ), Colors.Tomato );
             hslCurve1.AddMarkText( new HslWpfMarkText( )
             {
                 Index = 2,
@@ -84,9 +85,9 @@ namespace HslControlsWpf
                 TextBrush = Colors.DodgerBlue
             } );
 
-            hslCurve5.SetLeftCurve( "A", null, Colors.DodgerBlue, true );
-            hslCurve5.SetLeftCurve( "B", null, Colors.DarkOrange, true );
-            hslCurve5.SetLeftCurve( "C", null, Colors.LimeGreen, true );
+            hslCurve5.SetLeftCurve( "A", null, Colors.DodgerBlue, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "B", null, Colors.DarkOrange, HslControls.CurveStyle.StepLine );
+            hslCurve5.SetLeftCurve( "C", null, Colors.LimeGreen, HslControls.CurveStyle.StepLineWithoutVertical );
             auxiliaryLable5 = new WpfAuxiliaryLable( )
             {
                 LocationX = 0.7f,
@@ -110,15 +111,31 @@ namespace HslControlsWpf
             float random2 = (float)(Math.Sin( 2 * Math.PI * count_tick / 50 ) * 0.5d + 0.5);
             float random3 = (float)(Math.Cos( 2 * Math.PI * count_tick / 80 ) * 0.5d + 0.5);
 
-            hslCurve3.AddCurveData(
-                new string[] { "A", "B", "C" },
-                new float[]
-                {
+            if (lineBreak)
+            {
+                // 中间的部分数据没有，就不显示
+                hslCurve3.AddCurveData(
+                    new string[] { "A", "B", "C" },
+                    new float[]
+                    {
+                        float.NaN,
+                        float.NaN,
+                        float.NaN
+                    }
+                );
+            }
+            else
+            {
+                hslCurve3.AddCurveData(
+                    new string[] { "A", "B", "C" },
+                    new float[]
+                    {
                     random1*10 + 80,
                     random2*20+50,
                     random2*10,
-                }
-            );
+                    }
+                );
+            }
 
             auxiliaryLable5.Text = "报警信息：" + random.Next( 10 ) + " 个";
             if (count_tick % 20 == 0)
@@ -128,8 +145,8 @@ namespace HslControlsWpf
                     new float[]
                     {
                         random1*10 + 80 - 100,
-                        random2*20 + 50 - 100,
-                        random2*30 - 100,
+                        random2*40 + 20 - 100,
+                        random2*50 - 100,
                     },
                     new string[]
                     {
@@ -146,13 +163,28 @@ namespace HslControlsWpf
                    new float[]
                    {
                         random1*10 + 80 - 100,
-                        random2*20 + 50 - 100,
-                        random2*30 - 100,
+                        random2*40 + 20 - 100,
+                        random2*50 - 100,
                    }
                );
             }
 
-            hslCurve4.AddCurveData( new string[] { "A", "B", "C", "D" },
+            if (lineBreak)
+            {
+                // 中间的部分数据没有，就不显示
+                hslCurve4.AddCurveData( new string[] { "A", "B", "C", "D" },
+                new float[]
+                {
+                   float.NaN,
+                   float.NaN,
+                   float.NaN,
+                   float.NaN
+                }
+            );
+            }
+            else
+            {
+                hslCurve4.AddCurveData( new string[] { "A", "B", "C", "D" },
                 new float[]
                 {
                    (float)random.NextDouble( ) * 10 + 170,
@@ -161,6 +193,7 @@ namespace HslControlsWpf
                    (float)random.NextDouble( ) * 0.4f,
                 }
             );
+            }
 
             if (count_tick % 40 == 0)
             {
@@ -185,7 +218,7 @@ namespace HslControlsWpf
                     new float[]
                     {
                     random1*10 + 80,
-                    random2*20+50,
+                    random2*20 + 50,
                     }
                 );
             }
@@ -208,6 +241,7 @@ namespace HslControlsWpf
         private Random random = null;
         private Timer timerTick = null;
         private int count_tick = 0;
+        private bool lineBreak = false;
 
         private void Button_Click( object sender, RoutedEventArgs e )
         {
@@ -232,5 +266,15 @@ namespace HslControlsWpf
             // 清除
             hslCurve6.RemoveAllCurveData( );
         }
-    }
+
+		private void CheckBox_Checked( object sender, RoutedEventArgs e )
+		{
+            lineBreak = true;
+        }
+
+		private void CheckBox_Unchecked( object sender, RoutedEventArgs e )
+        {
+            lineBreak = false;
+        }
+	}
 }

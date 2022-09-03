@@ -51,5 +51,17 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
+
+        private void button1_Click( object sender, EventArgs e )
+        {
+            hslLanternAlarm4.IsAlarm = true;
+            hslLanternAlarm5.IsAlarm = true;
+        }
+
+        private void button2_Click( object sender, EventArgs e )
+        {
+            hslLanternAlarm4.IsAlarm = false;
+            hslLanternAlarm5.IsAlarm = false;
+        }
     }
 }

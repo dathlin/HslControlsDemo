@@ -18,7 +18,8 @@ namespace HslControlsDemo
 
         private void FormBarChart_Load( object sender, EventArgs e )
         {
-            hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            //hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            hslBarChart2.SetDataSource( new double[] { 1.5d, 2.8, 12.4d, 9.55d, 7d }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart3.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             
 
@@ -31,8 +32,13 @@ namespace HslControlsDemo
                 new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart5.AddLeftAuxiliary( 300, Color.Blue, 1f, false );
 
-            hslBarChart6.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) },
-                new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" } );
+            // 下面演示设置两种柱状同时显示的效果
+            hslBarChart6.SetDataSource( new Dictionary<string, double[]>( )
+            {
+                { "上周产量", new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } },
+                { "本周产量" , new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } }
+            },
+             new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" }, new Color[] { Color.Tomato, Color.DodgerBlue } );
 
             List<int> month = new List<int>( );
             List<string> days = new List<string>( );
@@ -60,5 +66,5 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
-    }
+	}
 }

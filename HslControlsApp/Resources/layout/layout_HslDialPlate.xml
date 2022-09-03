@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="50px"
+    android:paddingRight="50px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate1"
+        android:layout_width="500px"
+        android:layout_height="500px"/>
+    
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate2"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginLeft="550px"
+        app:maxValue="10"
+        app:segment="10"
+        app:value="1.3"
+        app:unitText="×1000 rpm"/>
+
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate8"
+        android:layout_width="80px"
+        android:layout_height="200px"
+        app:isRenderSegmentText="false"
+        android:layout_marginTop="550px"/>
+    
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate4"
+        android:layout_width="100px"
+        android:layout_height="200px"
+        android:layout_marginTop="550px"
+        android:layout_marginLeft="100px"/>
+    
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate5"
+        android:layout_width="150px"
+        android:layout_height="200px"
+        android:layout_marginTop="550px"
+        android:layout_marginLeft="250px"/>
+
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate6"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="550px"
+        android:layout_marginLeft="420px"/>
+    
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate7"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="550px"
+        android:layout_marginLeft="650px"/>
+    
+    <HslControls.HslDialPlate
+        android:id="@+id/hslDialPlate3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="850px"/>
+    
+
+</RelativeLayout>

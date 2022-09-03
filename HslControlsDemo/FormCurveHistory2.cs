@@ -45,8 +45,8 @@ namespace HslControlsDemo
             Invoke( new Action( ( ) =>
              {
                  hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, true, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
+                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
                  hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了", BackColor = Color.FromArgb(244,244,244) } );
                  // 添加两个标记
@@ -83,22 +83,33 @@ namespace HslControlsDemo
                  active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
                  active.CursorTexts.Add( "工号", "asd2sd123dasf" );
                  hslCurveHistory1.AddMarkActiveSection( active );
-
+                 hslCurveHistory1.DateTimeFormate = "yyyy-MM-dd\r\nHH:mm:ss";
                  hslCurveHistory1.SetCurveVisible( "步序", false );
                  hslCurveHistory1.RenderCurveUI( );
              } ) );
         }
 
         private Random random = new Random( );
+        private HslControls.AuxiliaryLine auxiliary;
 
         private void FormCurveHistory_Load( object sender, EventArgs e )
         {
-            hslCurveHistory1.AddLeftAuxiliary( 172f );
+            auxiliary = hslCurveHistory1.AddLeftAuxiliary( 172f );
 
             linkLabel1.Click += LinkLabel1_Click;
+            comboBox1.DataSource = (HslControls.CurveStyle[])Enum.GetValues( typeof( HslControls.CurveStyle ) );
+            comboBox1.SelectedItem = HslControls.CurveStyle.Curve;
+			comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
         }
 
-        private void LinkLabel1_Click( object sender, EventArgs e )
+		private void ComboBox1_SelectedIndexChanged( object sender, EventArgs e )
+        {
+            hslCurveHistory1.SetCurveLineCurveStyle( "温度", (HslControls.CurveStyle)comboBox1.SelectedItem );
+            hslCurveHistory1.SetCurveLineCurveStyle( "压力", (HslControls.CurveStyle)comboBox1.SelectedItem );
+
+        }
+
+		private void LinkLabel1_Click( object sender, EventArgs e )
         {
             try
             {
@@ -124,7 +135,7 @@ namespace HslControlsDemo
 
         private void button4_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
+            hslCurveHistory1.SetScaleByXAxis( 50f );
             hslCurveHistory1.RenderCurveUI( );
         }
 
@@ -140,7 +151,7 @@ namespace HslControlsDemo
                 hslCurveHistory1.AddMarkText( new HslControls.HslMarkText( )
                 {
                     Index = index,
-                    CurveKey = "温度",
+                    CurveKey = "温度", 
                     MarkText = textBox2.Text,
                     CircleBrush = Brushes.DodgerBlue,
                     TextBrush = Brushes.Blue
@@ -175,6 +186,20 @@ namespace HslControlsDemo
         private void HslCurveHistory1_Click( object sender, EventArgs e )
         {
             Control_Click( sender, e );
+        }
+
+        private void button8_Click( object sender, EventArgs e )
+        {
+            // 动态修改辅助线的值
+            try
+            {
+                auxiliary.Value = float.Parse( textBox3.Text );
+                hslCurveHistory1.RenderCurveUI( );
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show( "Wrong:" + ex.Message );
+            }
         }
     }
 }

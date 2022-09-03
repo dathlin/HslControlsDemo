@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControlsWpf"
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" x:Class="HslControlsWpf.WindowHslBagFilter"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="WindowHslBarChart" Height="684" Width="1020">
+    <Canvas>
+
+        <WPF:HslBagFilter Height="26" Canvas.Left="22" Canvas.Top="20" Width="28"/>
+        <WPF:HslBagFilter Height="52" Canvas.Left="67" Canvas.Top="20" Width="58"/>
+        <WPF:HslBagFilter Height="100" Canvas.Left="147" Canvas.Top="20" Width="114"/>
+        <WPF:HslBagFilter Height="176" Canvas.Left="291" Canvas.Top="20" Width="193"/>
+        <WPF:HslBagFilter Height="342" Canvas.Left="527" Canvas.Top="20" Width="419"/>
+        <WPF:HslBagFilter Height="199" Canvas.Left="48" Canvas.Top="303" Width="203" CenterColor="#C0C0FF" BorderColor="#6A5ACD" EdgeColor="#8080FF"/>
+        <WPF:HslBagFilter Height="199" Canvas.Left="291" Canvas.Top="303" Width="203" CenterColor="#FFE0C0" BorderColor="#FF8000" EdgeColor="#FFC080"/>
+
+    </Canvas>
+</Window>

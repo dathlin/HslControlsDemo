@@ -35,7 +35,7 @@ namespace HslControlsDemo
             timerTick.Start( );
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
-            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue );
+            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue, HslControls.CurveStyle.LineSegment );
             hslCurve1.AddMarkText( new HslControls.HslMarkText( )
             {
                 Index = 2,
@@ -80,9 +80,9 @@ namespace HslControlsDemo
                 TextBrush = Brushes.DodgerBlue
             } );
 
-            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, true );
-            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, true );
-            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, true );
+            hslCurve5.SetLeftCurve( "A", null, Color.DodgerBlue, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "B", null, Color.DarkOrange, HslControls.CurveStyle.Curve );
+            hslCurve5.SetLeftCurve( "C", null, Color.LimeGreen, HslControls.CurveStyle.Curve );
             auxiliaryLable5 = new HslControls.AuxiliaryLable( )
             {
                 LocationX = 0.7f,

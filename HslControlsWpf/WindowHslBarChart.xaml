@@ -11,11 +11,12 @@
     <Canvas>
 
         <WPF:HslBarChart Height="181" Canvas.Left="10" Canvas.Top="10" Width="320"/>
-        <WPF:HslBarChart x:Name="hslBarChart2" Height="181" Canvas.Left="335" Canvas.Top="10" Width="320" IsShowBarValue="False"/>
+        <WPF:HslBarChart x:Name="hslBarChart2" Height="181" Canvas.Left="335" Canvas.Top="10" Width="320" IsShowBarValue="True" IsAoordinateRoundInt="True"/>
         <WPF:HslBarChart x:Name="hslBarChart3" Height="181" Canvas.Left="660" Canvas.Top="10" Width="320" UseGradient="True" Title="测试的信息"/>
         <WPF:HslBarChart x:Name="hslBarChart4" Height="181" Canvas.Left="10" Canvas.Top="191" Width="320" BarPercentWidth="0.5"/>
         <WPF:HslBarChart x:Name="hslBarChart5" Height="181" Canvas.Left="335" Canvas.Top="191" Width="320" UseGradient="True" BarBackColor="Orchid" MouseDoubleClick="HslBarChart5_MouseDoubleClick"/>
-        <WPF:HslBarChart x:Name="hslBarChart6" Background="#363636" ColorDashLines="DimGray" ColorLinesAndText="LightGray" Height="181" Canvas.Left="660" Canvas.Top="191" Width="320" UseGradient="True" BarBackColor="#FF8000" Title="日产量统计表"/>
-        <WPF:HslBarChart x:Name="hslBarChart7" MouseDown="HslBarChart7_MouseDown" Background="#363636" ColorDashLines="DimGray" ColorLinesAndText="LightGray" Height="228" Canvas.Left="10" Canvas.Top="393" Width="970" UseGradient="True" Title="月产量统计表"/>
+        <WPF:HslBarChart x:Name="hslBarChart6" Background="#363636" ColorDashLines="DimGray" ColorLinesAndText="LightGray" Height="181" Canvas.Left="660" Canvas.Top="191" Width="320" UseGradient="True" BarBackColor="#FF8000" Title=""/>
+        <WPF:HslBarChart x:Name="hslBarChart7" MouseDown="HslBarChart7_MouseDown" Background="#363636" ColorDashLines="DimGray" UseAnimation="True" ColorLinesAndText="LightGray" Height="228" Canvas.Left="10" Canvas.Top="393" Width="970" UseGradient="True" Title="月产量统计表"/>
+        <CheckBox Content="Use Animation?" IsChecked="True" Canvas.Left="17" Canvas.Top="630" Height="18" Width="200" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
     </Canvas>
 </Window>

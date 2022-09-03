@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -29,7 +30,8 @@ namespace HslControlsWpf
         {
             base.OnSourceInitialized( e );
 
-            hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            //hslBarChart2.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
+            hslBarChart2.SetDataSource( new double[] { 1.5d, 2.8, 12.4d, 9.55d, 7d }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart3.SetDataSource( new int[] { 1, 2, 4, 0, 3 }, new string[] { "周一", "周二", "周三", "周四", "周五" } );
 
 
@@ -42,8 +44,13 @@ namespace HslControlsWpf
                 new string[] { "周一", "周二", "周三", "周四", "周五" } );
             hslBarChart5.AddLeftAuxiliary( 300, Colors.Blue, 1f, false );
 
-            hslBarChart6.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) },
-                new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" } );
+            hslBarChart6.UseAnimation = true;
+            hslBarChart6.SetDataSource( new Dictionary<string, double[]>( )
+            {
+                { "上周产量", new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } },
+                { "本周产量" , new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } }
+            },
+             new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" }, new Color[] { Colors.Tomato, Colors.DodgerBlue } );
 
             List<int> month = new List<int>( );
             List<string> days = new List<string>( );
@@ -55,9 +62,30 @@ namespace HslControlsWpf
             // 此处将小于1000的和大于1000的颜色区分开发
             hslBarChart7.SetDataSource( month.ToArray( ), days.ToArray( ), month.Select( m => m < 1000 ? Colors.Orchid : Colors.Gold ).ToArray( ) );
             hslBarChart7.AddLeftAuxiliary( 1000, Colors.Yellow );
+
+
+
+
+            timerTick = new Timer( );
+            timerTick.Interval = 2000;
+            timerTick.Tick += TimerTick_Tick;
+            timerTick.Start( );
+        }
+        private void TimerTick_Tick( object sender, EventArgs e )
+        {
+            hslBarChart4.SetDataSource( new int[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ) },
+                new string[] { "周一", "周二", "周三", "周四", "周五" } );
+
+            hslBarChart6.SetDataSource( new Dictionary<string, double[]>( )
+            {
+                { "上周产量", new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } },
+                { "本周产量" , new double[] { random.Next( 1500 ), random.Next( 1000 ), random.Next( 600 ), random.Next( 1500 ), random.Next( 800 ), random.Next( 1500 ), random.Next( 800 ) } }
+            },
+            new string[] { "周一", "周二", "周三", "周四", "周五", "周六", "周日" }, new Color[] { Colors.Tomato, Colors.DodgerBlue } );
         }
 
         private Random random = new Random( );
+        private Timer timerTick = null;
 
         private void HslBarChart5_MouseDoubleClick( object sender, MouseButtonEventArgs e )
         {
@@ -77,5 +105,14 @@ namespace HslControlsWpf
             // 此处将小于1000的和大于1000的颜色区分开发
             hslBarChart7.SetDataSource( month.ToArray( ), days.ToArray( ), month.Select( m => m < 1000 ? Colors.Orchid : Colors.Gold ).ToArray( ) );
         }
-    }
+
+		private void CheckBox_Checked( object sender, RoutedEventArgs e )
+		{
+            if(sender is System.Windows.Controls.CheckBox checkBox)
+            {
+                hslBarChart7.UseAnimation = checkBox.IsChecked.Value;
+
+            }
+		}
+	}
 }

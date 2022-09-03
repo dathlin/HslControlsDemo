@@ -24,23 +24,27 @@ namespace HslControlsDemo
 
             hslCurveHistory2.Text = "正在加载数据...";
             hslCurveHistory2.RemoveAllCurve( );
+
+            hslCurveHistory3.Text = "正在加载数据...";
+            hslCurveHistory3.RemoveAllCurve( );
             new Thread( new ThreadStart( ThreadReadExample1 ) ) { IsBackground = true }.Start( );
         }
 
         private void ThreadReadExample1( )
         {
+            int dataCount = 2000;
             Thread.Sleep( 2000 );
             // 我们假定从数据库中获取到了这些数据信息
-            float[] steps = new float[2000];
-            float[] data = new float[2000];
-            float[] press = new float[2000];
-            DateTime[] times = new DateTime[2000];
+            float[] steps = new float[dataCount];
+            float[] data = new float[dataCount];
+            float[] press = new float[dataCount];
+            DateTime[] times = new DateTime[dataCount];
 
             for (int i = 0; i < data.Length; i++)
             {
                 steps[i] = random.Next( 10 );
                 data[i] = Convert.ToSingle( random.NextDouble( ) * 40 + 100 );
-                times[i] = DateTime.Now.AddSeconds( i - 2000 );
+                times[i] = DateTime.Now.AddSeconds( i - dataCount );
                 press[i] = Convert.ToSingle( random.NextDouble( ) * 0.5d + 4 );
             }
 
@@ -48,8 +52,8 @@ namespace HslControlsDemo
             Invoke( new Action( ( ) =>
              {
                  hslCurveHistory1.SetLeftCurve( "步序", steps );
-                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, true, "{0:F1} ℃" );
-                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
+                 hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory1.SetDateTimes( times );
                  hslCurveHistory1.AddMarkBackSection( new HslControls.HslMarkBackSection( ) { StartIndex = 1000, EndIndex = 1200, MarkText = "报警了" } );
                  // 添加两个背景标记的示例，可以用来标记特殊用途的背景，例如一个产品的周期，停机，维修等等状态
@@ -101,14 +105,20 @@ namespace HslControlsDemo
                  hslCurveHistory1.RenderCurveUI( );
 
 
-
-
                  hslCurveHistory2.SetLeftCurve( "步序", steps );
-                 hslCurveHistory2.SetLeftCurve( "温度", data, Color.DodgerBlue, true, "{0:F1} ℃" );
-                 hslCurveHistory2.SetRightCurve( "压力", press, Color.Tomato, true, "{0:F2} Mpa" );
+                 hslCurveHistory2.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                 hslCurveHistory2.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                  hslCurveHistory2.SetDateTimes( times );
                  hslCurveHistory2.SetCurveVisible( "步序", false );
                  hslCurveHistory2.RenderCurveUI( );
+
+
+                 hslCurveHistory3.SetLeftCurve( "步序", steps );
+                 hslCurveHistory3.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
+                 hslCurveHistory3.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
+                 hslCurveHistory3.SetDateTimes( times );
+                 hslCurveHistory3.SetCurveVisible( "步序", false );
+                 hslCurveHistory3.RenderCurveUI( );
              } ) );
         }
 
@@ -119,12 +129,9 @@ namespace HslControlsDemo
             hslCurveHistory1.AddLeftAuxiliary( 172f );
 
             linkLabel1.Click += LinkLabel1_Click;
-            // 此处强制曲线图2随着曲线图1动作
-            hslCurveHistory1.Scroll += (sender1 , e1) => hslCurveHistory2.SetScrollPosition( e1 );
-            hslCurveHistory1.onCurveMouseMove += ( curve, x, y ) => hslCurveHistory2.SetCurveMousePosition( x, y );
-            // 此处强制曲线图1随着曲线图2动作
-            hslCurveHistory2.Scroll += ( sender1, e1 ) => hslCurveHistory1.SetScrollPosition( e1 );
-            hslCurveHistory2.onCurveMouseMove += ( curve, x, y ) => hslCurveHistory1.SetCurveMousePosition( x, y );
+            // 此处强制曲线图1和曲线图2随着曲线图3动作
+            hslCurveHistory1.SetSyncHslCurveHistory( hslCurveHistory3 );
+            hslCurveHistory2.SetSyncHslCurveHistory( hslCurveHistory3 );
 
         }
         
@@ -142,22 +149,27 @@ namespace HslControlsDemo
         
         private void button2_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 0.5f );
-            hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 0.5f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
         private void button3_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis(1f );
-            hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 1f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
         private void button4_Click( object sender, EventArgs e )
         {
-            hslCurveHistory1.SetScaleByXAxis( 2f );
-            hslCurveHistory1.RenderCurveUI( );
+            hslCurveHistory3.SetScaleByXAxis( 2f );
+            hslCurveHistory3.RenderCurveUI( );
         }
 
+        private void button7_Click( object sender, EventArgs e )
+        {
+            hslCurveHistory3.SetScaleByXAxis( 32f );
+            hslCurveHistory3.RenderCurveUI( );
+        }
         private void hslCurveHistory1_onCurveDoubleClick( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
         {
             MessageBox.Show( $"Index: {index} Time:{dateTime.ToString( )}" );
@@ -193,5 +205,6 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
-    }
+
+	}
 }

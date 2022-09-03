@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +40,7 @@ namespace HslControlsDemo
             treeView1.ExpandAll( );
             treeView1.MouseDoubleClick += TreeView1_MouseDoubleClick;
 
-            propertySetting.Show( dockPanel1, WeifenLuo.WinFormsUI.Docking.DockState.DockRight );
+            // propertySetting.Show( dockPanel1, WeifenLuo.WinFormsUI.Docking.DockState.DockRight );
             官网ToolStripMenuItem.Click += 官网ToolStripMenuItem_Click;
             论坛ToolStripMenuItem.Click += 论坛ToolStripMenuItem_Click;
             demo地址ToolStripMenuItem.Click += Demo地址ToolStripMenuItem_Click;
@@ -55,11 +57,25 @@ namespace HslControlsDemo
 
 
 
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "2.2.8" );
+        private HslCommunication.MQTT.MqttClient mqttClient;
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "3.1.0" );
+
+        protected override void OnClosing( CancelEventArgs e )
+        {
+            mqttClient?.ConnectClose( );
+            base.OnClosing( e );
+        }
 
         private void ThreadPoolCheckVersion( object obj )
         {
             System.Threading.Thread.Sleep( 100 );
+            mqttClient = new HslCommunication.MQTT.MqttClient( new HslCommunication.MQTT.MqttConnectionOptions( )
+            {
+                IpAddress = "118.24.36.220",
+                Port = 1883,
+                ClientId = "HslControls"
+            } );
+            mqttClient.ConnectServer( );
             HslCommunication.Enthernet.NetSimplifyClient simplifyClient = new HslCommunication.Enthernet.NetSimplifyClient( "118.24.36.220", 18467 );
             HslCommunication.OperateResult<HslCommunication.NetHandle, string> read = simplifyClient.ReadCustomerFromServer( 100, versionCurr.ToString( ) );
             if (read.IsSuccess)
@@ -72,19 +88,34 @@ namespace HslControlsDemo
                     {
                         if (MessageBox.Show( "服务器有新版本：" + read.Content2 + Environment.NewLine + "是否启动更新？", "检测到更新", MessageBoxButtons.YesNo ) == DialogResult.Yes)
                         {
-                            try
-                            {
-                                System.Diagnostics.Process.Start( Application.StartupPath + "\\软件自动更新.exe" );
-                                System.Threading.Thread.Sleep( 50 );
-                                Close( );
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show( "更新软件丢失，无法启动更新： " + ex.Message );
-                            }
+                            StartUpdate( );
                         }
                     } ) );
                 }
+            }
+        }
+        private void StartUpdate( )
+        {
+            try
+            {
+                if (System.IO.File.Exists( Path.Combine( Application.StartupPath, "Upgrade.exe" ) ))
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "Upgrade.exe" ) );
+                }
+                else if (System.IO.File.Exists( Path.Combine( Application.StartupPath, "AutoUpdate.exe" ) ))
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "AutoUpdate.exe" ) );
+                }
+                else
+                {
+                    Process.Start( Path.Combine( Application.StartupPath, "软件自动更新.exe" ) );
+                }
+                System.Threading.Thread.Sleep( 50 );
+                Close( );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( "更新软件丢失，无法启动更新： " + ex.Message );
             }
         }
 
@@ -116,14 +147,14 @@ namespace HslControlsDemo
         }
         private void 官网ToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            OpenWebside( "http://www.hslcommunication.cn" );
+            OpenWebside( "http://www.hsltechnology.cn/" );
         }
 
         private FormPropertySetting propertySetting;
 
         private void 属性窗口ToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            if (propertySetting.IsDisposed) propertySetting = new FormPropertySetting( );
+            if (propertySetting == null || propertySetting.IsDisposed) propertySetting = new FormPropertySetting( );
             propertySetting.Show( dockPanel1, WeifenLuo.WinFormsUI.Docking.DockState.DockRight );
         }
         private void TreeView1_MouseDoubleClick( object sender, MouseEventArgs e )
@@ -133,7 +164,10 @@ namespace HslControlsDemo
 
             FormContent form = GetFormByName( treeNode.Text );
             if (form == null) return;
-            form.OnControlSelected += new Action<object>( m => propertySetting.SetControlRender( m ) );
+            if (propertySetting != null)
+            {
+                form.OnControlSelected += new Action<object>( m => propertySetting?.SetControlRender( m ) );
+            }
             form.Show( dockPanel1 );
         }
 
@@ -144,9 +178,11 @@ namespace HslControlsDemo
                 case "常用控件": return new FormBasic( );
                 case "进度条": return new FormProgress( );
                 case "进度条2": return new FormProgressColorful( );
+                case "进度条3": return new FormProgressBar( );
                 case "数码管": return new FormLedDisplay( );
                 case "时钟": return new FormClock( );
                 case "管道线": return new FormPipeLineTest( );
+                case "三通管道": return new FormPipeLineThree( );
                 case "瓶子控件": return new FormBottle( );
                 case "信号灯": return new FormLanternSimple( );
                 case "传送带": return new FormConveryer( );
@@ -171,21 +207,34 @@ namespace HslControlsDemo
                 case "数字键盘": return new FormDigitalInput( );
                 case "冷却风扇": return new FormHslCoolFan( );
                 case "手动签名": return new FormSignature( );
+                case "袋式除尘": return new FormHslBagFilter( );
+                case "卡车": return new FormHslTruck( );
+                case "组合标签": return new FormHslLabelCombo( );
                 // 曲线
                 case "实时曲线": return new FormCurve( );
                 case "实时曲线中断": return new FormCurve2( );
+                case "实时曲线阶梯": return new FormCurve3( );
                 case "历史曲线暗": return new FormCurveHistory( );
                 case "历史曲线亮": return new FormCurveHistory2( );
                 case "历史曲线自定义": return new FormCurveHistory4( );
                 case "历史曲线同步": return new FormCurveHistory3( );
                 case "历史曲线中断": return new FormCurveHistory5( );
+                case "历史曲线阶梯": return new FormCurveHistory6( );
+                case "历史曲线多轴": return new FormCurveHistory8( );
+                case "历史曲线实时": return new FormCurveHistory9( );
+                case "历史曲线截面": return new FormCurveHistory10( );
+                case "历史曲线范围": return new FormCurveHistory11( );
+                case "历史曲线天气预报": return new FormCurveHistory12( );
                 // 图表
                 case "柱状图": return new FormBarChart( );
                 case "饼图": return new FormPieChart( );
                 case "综合图表": return new FormChart( );
                 case "仪表盘1": return new FormGauge( );
                 case "仪表盘2": return new FormGaugeChart( );
-                    // 机床
+                case "流量表": return new FormHslDialPlate( );
+                case "表格": return new FormHslTable( );
+                case "表格自定义": return new FormHslTable2( );
+                // 机床
                 case "加工中心": return new FormCncCenter( );
                 case "数控机床": return new FormMachineCenter( );
                     // 游戏
@@ -195,6 +244,12 @@ namespace HslControlsDemo
                 case "坦克大战": return new FormTank( );
                     // 测试
                 case "管道测试": return new FormPipeLine( );
+                case "曲线压力测试": return new FormCurveHistory7();
+                // 无界控件
+                case "基本无界控件": return new FormNoBoundaryControl( );
+                case "中国地图": return new FormHslChinaMap( );
+                case "中国地图暗主题": return new FormHslChinaMap2( );
+                case "中国地图天气": return new FormHslChinaMap3( );
                 default: return null;
             }
         }
