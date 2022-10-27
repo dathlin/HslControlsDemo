@@ -30,16 +30,14 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V3.1.0
-1. HslProgressBar: 新增一个基于系统进度条演变来的进度条，支持显示文本，自定义文本，支持设置进度条的颜色信息。
-2. HslBarChart: 饼图控件在调用SetDataSource方法的参数，修复输入null结果报异常的bug。
-3. HslTitle: 看板标题控件的左右侧文字支持单独的设置颜色，文字渐变色效果微调，背景的渐变支持设置变化比例，参数属性：LeftRightCenterColorScale。
-4. HslCurveHistory: 历史曲线控件在绘制选择区域范围的时间差时，根据时间差信息，自动匹配不同的单位显示。
-5. HslCurveHistory: 增加图片绘制时，可选是否进行缩放，点位标记使用显示图片时，图片位置的偏移量可以自由设定。
-6. HslCurveHistory: 修复在某些特殊情况下触发空对象的bug，Demo程序里新增一个天气预报的应用示例，并且缩放倍率自适应。
-7. HslCurveHistory: 历史曲线控件支持隐藏额外坐标轴的显示，可以使用属性IsOtherAxisHide控制，或是界面上滚动条左边的区域点击控制。
-8. HslCurveHistory: 历史曲线控件支持当Y轴放大到4倍以上时，Y轴的刻度线自动进行扩充倍数显示。
-9. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V3.2.0
+1. HslCurve: 实时曲线的坐标轴优化重新设计，支持了颜色调整，支持了单位显示，支持了数据格式化设置（不兼容更新，升级会报错）。
+2. NoBoundaryControl: 无界控件增加ResetGraphicsTransform方法，用来重置变换，配合GraphicsTransform绘制固定位置的数据。
+3. HslCurveHistory: 修复辅助线曲线在某些范围下触发异常的bug，历史曲线控件及实时曲线的坐标轴的数据显示支持格式化设置。
+4. HslCurveHistory: 历史曲线控件支持了当光标移动时，在每个Y轴上显示光标对应的实时值，同时可以设置IsRenderYTip属性为false来关闭这个功能。
+5. Demo: 修复demo界面的流量表控件点击不显示属性的bug。
+6. HslCurveHistory: 当纵轴的格式设置为 {0:E} 时，指数部分的数据自动屏蔽前面多余的0。
+7. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }

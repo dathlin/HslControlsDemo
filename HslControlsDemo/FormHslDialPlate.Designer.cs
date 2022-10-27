@@ -28,19 +28,20 @@
 		/// </summary>
 		private void InitializeComponent( )
 		{
-			HslControls.MarkValue markValue3 = new HslControls.MarkValue();
-			HslControls.MarkValue markValue4 = new HslControls.MarkValue();
+			HslControls.MarkValue markValue1 = new HslControls.MarkValue();
+			HslControls.MarkValue markValue2 = new HslControls.MarkValue();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.hslDialPlate6 = new HslControls.HslDialPlate();
+			this.label4 = new System.Windows.Forms.Label();
 			this.hslDialPlate5 = new HslControls.HslDialPlate();
 			this.hslDialPlate4 = new HslControls.HslDialPlate();
+			this.hslDialPlate6 = new HslControls.HslDialPlate();
 			this.hslDialPlate3 = new HslControls.HslDialPlate();
 			this.hslDialPlate2 = new HslControls.HslDialPlate();
 			this.hslDialPlate1 = new HslControls.HslDialPlate();
-			this.label4 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -82,17 +83,15 @@
 			this.panel1.Size = new System.Drawing.Size(581, 250);
 			this.panel1.TabIndex = 6;
 			// 
-			// hslDialPlate6
+			// label4
 			// 
-			this.hslDialPlate6.BoderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-			this.hslDialPlate6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.hslDialPlate6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.hslDialPlate6.IsRenderSegmentText = false;
-			this.hslDialPlate6.Location = new System.Drawing.Point(655, 467);
-			this.hslDialPlate6.Name = "hslDialPlate6";
-			this.hslDialPlate6.Size = new System.Drawing.Size(90, 72);
-			this.hslDialPlate6.TabIndex = 7;
-			this.hslDialPlate6.Value = 40F;
+			this.label4.AutoSize = true;
+			this.label4.ForeColor = System.Drawing.Color.White;
+			this.label4.Location = new System.Drawing.Point(132, 209);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(116, 17);
+			this.label4.TabIndex = 5;
+			this.label4.Text = "暗色效果及调整颜色";
 			// 
 			// hslDialPlate5
 			// 
@@ -108,6 +107,7 @@
 			this.hslDialPlate5.Segment = 12;
 			this.hslDialPlate5.Size = new System.Drawing.Size(172, 194);
 			this.hslDialPlate5.TabIndex = 1;
+			this.hslDialPlate5.Click += new System.EventHandler(this.hslDialPlate1_Click);
 			// 
 			// hslDialPlate4
 			// 
@@ -119,6 +119,20 @@
 			this.hslDialPlate4.Name = "hslDialPlate4";
 			this.hslDialPlate4.Size = new System.Drawing.Size(172, 194);
 			this.hslDialPlate4.TabIndex = 0;
+			this.hslDialPlate4.Click += new System.EventHandler(this.hslDialPlate1_Click);
+			// 
+			// hslDialPlate6
+			// 
+			this.hslDialPlate6.BoderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+			this.hslDialPlate6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.hslDialPlate6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslDialPlate6.IsRenderSegmentText = false;
+			this.hslDialPlate6.Location = new System.Drawing.Point(655, 467);
+			this.hslDialPlate6.Name = "hslDialPlate6";
+			this.hslDialPlate6.Size = new System.Drawing.Size(90, 72);
+			this.hslDialPlate6.TabIndex = 7;
+			this.hslDialPlate6.Value = 40F;
+			this.hslDialPlate6.Click += new System.EventHandler(this.hslDialPlate1_Click);
 			// 
 			// hslDialPlate3
 			// 
@@ -126,19 +140,20 @@
 			this.hslDialPlate3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.hslDialPlate3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.hslDialPlate3.Location = new System.Drawing.Point(601, 36);
-			markValue3.Color = System.Drawing.Color.Red;
-			markValue3.LineWidth = 2F;
-			markValue3.Value = 70F;
-			markValue4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-			markValue4.LineWidth = 1F;
-			markValue4.Value = 55F;
-			this.hslDialPlate3.MarkValues.Add(markValue3);
-			this.hslDialPlate3.MarkValues.Add(markValue4);
+			markValue1.Color = System.Drawing.Color.Red;
+			markValue1.LineWidth = 2F;
+			markValue1.Value = 70F;
+			markValue2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+			markValue2.LineWidth = 1F;
+			markValue2.Value = 55F;
+			this.hslDialPlate3.MarkValues.Add(markValue1);
+			this.hslDialPlate3.MarkValues.Add(markValue2);
 			this.hslDialPlate3.Name = "hslDialPlate3";
 			this.hslDialPlate3.Segment = 10;
 			this.hslDialPlate3.Size = new System.Drawing.Size(350, 365);
 			this.hslDialPlate3.TabIndex = 2;
 			this.hslDialPlate3.Value = 52F;
+			this.hslDialPlate3.Click += new System.EventHandler(this.hslDialPlate1_Click);
 			// 
 			// hslDialPlate2
 			// 
@@ -153,6 +168,7 @@
 			this.hslDialPlate2.TabIndex = 1;
 			this.hslDialPlate2.UnitText = "×1000 rpm";
 			this.hslDialPlate2.Value = 1.3F;
+			this.hslDialPlate2.Click += new System.EventHandler(this.hslDialPlate1_Click);
 			// 
 			// hslDialPlate1
 			// 
@@ -163,23 +179,26 @@
 			this.hslDialPlate1.Name = "hslDialPlate1";
 			this.hslDialPlate1.Size = new System.Drawing.Size(202, 221);
 			this.hslDialPlate1.TabIndex = 0;
+			this.hslDialPlate1.Click += new System.EventHandler(this.hslDialPlate1_Click);
 			// 
-			// label4
+			// button1
 			// 
-			this.label4.AutoSize = true;
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(132, 209);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(116, 17);
-			this.label4.TabIndex = 5;
-			this.label4.Text = "暗色效果及调整颜色";
+			this.button1.Location = new System.Drawing.Point(65, 306);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(126, 43);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "随机设置值";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// FormHslDialPlate
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.hslDialPlate6);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.label3);
@@ -214,5 +233,6 @@
 		private HslControls.HslDialPlate hslDialPlate4;
 		private HslControls.HslDialPlate hslDialPlate6;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Button button1;
 	}
 }

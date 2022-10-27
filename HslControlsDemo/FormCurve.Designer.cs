@@ -148,11 +148,12 @@
 			this.hslCurve5.IsRenderRightCoordinate = false;
 			this.hslCurve5.Location = new System.Drawing.Point(24, 436);
 			this.hslCurve5.Name = "hslCurve5";
+			this.hslCurve5.ReferenceAxisLeft.Color = System.Drawing.Color.DimGray;
+			this.hslCurve5.ReferenceAxisLeft.Max = 0F;
+			this.hslCurve5.ReferenceAxisLeft.Min = -100F;
 			this.hslCurve5.Size = new System.Drawing.Size(429, 172);
 			this.hslCurve5.StrechDataCountMax = 100;
 			this.hslCurve5.TabIndex = 4;
-			this.hslCurve5.ValueMaxLeft = 0F;
-			this.hslCurve5.ValueMinLeft = -100F;
 			this.hslCurve5.Click += new System.EventHandler(this.HslCurve1_Click);
 			// 
 			// hslCurve4
@@ -164,11 +165,11 @@
 			this.hslCurve4.IntervalAbscissaText = 30;
 			this.hslCurve4.Location = new System.Drawing.Point(503, 221);
 			this.hslCurve4.Name = "hslCurve4";
+			this.hslCurve4.ReferenceAxisLeft.Max = 200F;
+			this.hslCurve4.ReferenceAxisRight.Max = 5F;
 			this.hslCurve4.Size = new System.Drawing.Size(429, 172);
 			this.hslCurve4.TabIndex = 3;
 			this.hslCurve4.Title = "温度压力实时曲线图";
-			this.hslCurve4.ValueMaxLeft = 200F;
-			this.hslCurve4.ValueMaxRight = 5F;
 			this.hslCurve4.Click += new System.EventHandler(this.HslCurve1_Click);
 			// 
 			// hslCurve3
@@ -179,6 +180,8 @@
 			this.hslCurve3.IsRenderRightCoordinate = false;
 			this.hslCurve3.Location = new System.Drawing.Point(24, 221);
 			this.hslCurve3.Name = "hslCurve3";
+			this.hslCurve3.ReferenceAxisLeft.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+			this.hslCurve3.ReferenceAxisLeft.Unit = "℃";
 			this.hslCurve3.Size = new System.Drawing.Size(429, 172);
 			this.hslCurve3.TabIndex = 2;
 			this.hslCurve3.Click += new System.EventHandler(this.HslCurve1_Click);
@@ -192,6 +195,8 @@
 			this.hslCurve1.IsRenderRightCoordinate = false;
 			this.hslCurve1.Location = new System.Drawing.Point(24, 12);
 			this.hslCurve1.Name = "hslCurve1";
+			this.hslCurve1.ReferenceAxisLeft.Color = System.Drawing.Color.DimGray;
+			this.hslCurve1.ReferenceAxisLeft.Unit = "产量";
 			this.hslCurve1.Size = new System.Drawing.Size(908, 172);
 			this.hslCurve1.StrechDataCountMax = 12;
 			this.hslCurve1.TabIndex = 0;

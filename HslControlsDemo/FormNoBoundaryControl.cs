@@ -34,6 +34,15 @@ namespace HslControlsDemo
 
 				g.DrawString( "这是一条测试的数据信息", Font, Brushes.Red, new Point( 300, 500 ) );
 
+
+				g.DrawImage( Properties.Resources.weipay, new PointF( 700, 200 ) );
+				g.DrawString( "这是我的微信", Font, Brushes.Red, new Point( 800, 240 ) );
+
+				noBoundaryControl1.ResetGraphicsTransform( g );                                  // 不在变换操作
+				g.DrawString( "固定标题的字符串", Font, Brushes.Red, new Point( 10, 10 ) );       // 绘制的点位是绝对位置的点位，永远在左上角位置
+				noBoundaryControl1.GraphicsTransform( g );                                       // 恢复变换操作
+
+				// g.DrawImage( Image.FromFile("D:\\123.jpg"), new PointF( 700, 200 ) );  // 如果是绝对路径的情况
 			};
 		}
 	}

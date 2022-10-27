@@ -21,5 +21,15 @@ namespace HslControlsDemo
 		{
 
 		}
+
+		private void hslDialPlate1_Click( object sender, EventArgs e )
+		{
+			Control_Click( sender, e );
+		}
+
+		private void button1_Click( object sender, EventArgs e )
+		{
+			hslDialPlate1.Value = new Random( ).Next( 100 ) / 1.0f;
+		}
 	}
 }
