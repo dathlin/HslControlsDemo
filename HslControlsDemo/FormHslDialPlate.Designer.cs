@@ -42,6 +42,8 @@
 			this.hslDialPlate2 = new HslControls.HslDialPlate();
 			this.hslDialPlate1 = new HslControls.HslDialPlate();
 			this.button1 = new System.Windows.Forms.Button();
+			this.hslDialPlate7 = new HslControls.HslDialPlate();
+			this.label5 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -127,7 +129,7 @@
 			this.hslDialPlate6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.hslDialPlate6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.hslDialPlate6.IsRenderSegmentText = false;
-			this.hslDialPlate6.Location = new System.Drawing.Point(655, 467);
+			this.hslDialPlate6.Location = new System.Drawing.Point(653, 537);
 			this.hslDialPlate6.Name = "hslDialPlate6";
 			this.hslDialPlate6.Size = new System.Drawing.Size(90, 72);
 			this.hslDialPlate6.TabIndex = 7;
@@ -191,6 +193,27 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
+			// hslDialPlate7
+			// 
+			this.hslDialPlate7.BoderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+			this.hslDialPlate7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.hslDialPlate7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslDialPlate7.Location = new System.Drawing.Point(772, 440);
+			this.hslDialPlate7.MaxValue = 8F;
+			this.hslDialPlate7.Name = "hslDialPlate7";
+			this.hslDialPlate7.Size = new System.Drawing.Size(202, 169);
+			this.hslDialPlate7.SmallScaleColor = System.Drawing.Color.Transparent;
+			this.hslDialPlate7.TabIndex = 9;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(834, 616);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(68, 17);
+			this.label5.TabIndex = 10;
+			this.label5.Text = "小刻度隐藏";
+			// 
 			// FormHslDialPlate
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -198,6 +221,8 @@
 			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.hslDialPlate7);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.hslDialPlate6);
 			this.Controls.Add(this.panel1);
@@ -234,5 +259,7 @@
 		private HslControls.HslDialPlate hslDialPlate6;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Button button1;
+		private HslControls.HslDialPlate hslDialPlate7;
+		private System.Windows.Forms.Label label5;
 	}
 }

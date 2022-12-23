@@ -30,14 +30,15 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V3.2.0
-1. HslCurve: 实时曲线的坐标轴优化重新设计，支持了颜色调整，支持了单位显示，支持了数据格式化设置（不兼容更新，升级会报错）。
-2. NoBoundaryControl: 无界控件增加ResetGraphicsTransform方法，用来重置变换，配合GraphicsTransform绘制固定位置的数据。
-3. HslCurveHistory: 修复辅助线曲线在某些范围下触发异常的bug，历史曲线控件及实时曲线的坐标轴的数据显示支持格式化设置。
-4. HslCurveHistory: 历史曲线控件支持了当光标移动时，在每个Y轴上显示光标对应的实时值，同时可以设置IsRenderYTip属性为false来关闭这个功能。
-5. Demo: 修复demo界面的流量表控件点击不显示属性的bug。
-6. HslCurveHistory: 当纵轴的格式设置为 {0:E} 时，指数部分的数据自动屏蔽前面多余的0。
-7. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V3.3.0
+1. HslGobang: 修复五子棋点击右侧边界发生索引超出范围的异常bug。
+2. HslTable: 修复HslTable控件默认背景色和实际背景色不一致的bug，在某些情况下，始终显示白色底色。
+3. HslConveyer: MoveSpeed增加注释值范围为 -9 ~ 9，修复设置巨大的情况下，绘制发生偏移的bug。
+4. HslDialPlate: HslDialPlate仪表盘控件支持显示更小刻度的信息，如果设置透明色即不显示刻度。
+5. HslGauge: HslGauge仪表盘控件优化，刻度显示分为10个挡。
+6. HslHorizonBarChart: 增加横向的柱状图控件，支持设置每个数据的颜色，显示的格式化文本信息。
+7. HslControls: 几乎所有的控件都支持了方法接口PaintHslControls( Graphics g, int width, int height)，可以自行绘制到任意的其他地方或是打印。
+8. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }

@@ -58,7 +58,7 @@ namespace HslControlsDemo
 
 
         private HslCommunication.MQTT.MqttClient mqttClient;
-        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "3.2.0" );
+        private HslCommunication.BasicFramework.SystemVersion versionCurr = new HslCommunication.BasicFramework.SystemVersion( "3.3.0" );
 
         protected override void OnClosing( CancelEventArgs e )
         {
@@ -133,7 +133,7 @@ namespace HslControlsDemo
 
         private void 赞助说明ToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            OpenWebside( "http://www.hslcommunication.cn/Cooperation" );
+            OpenWebside( "http://www.hsltechnology.cn/Home/Licence?area=HslControls" );
         }
 
         private void Demo地址ToolStripMenuItem_Click( object sender, EventArgs e )
@@ -227,7 +227,8 @@ namespace HslControlsDemo
                 case "历史曲线天气预报": return new FormCurveHistory12( );
                 // 图表
                 case "柱状图": return new FormBarChart( );
-                case "饼图": return new FormPieChart( );
+				case "横向柱状图": return new FormBarChartHorizon( );
+				case "饼图": return new FormPieChart( );
                 case "综合图表": return new FormChart( );
                 case "仪表盘1": return new FormGauge( );
                 case "仪表盘2": return new FormGaugeChart( );

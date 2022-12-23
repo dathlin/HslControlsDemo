@@ -30,9 +30,17 @@ namespace HslControlsDemo
             hslTable1.OnDrawCellTextEvent += HslTable1_OnDrawCellTextEvent;
             hslTable2.OnDrawCellTextEvent += HslTable2_OnDrawCellTextEvent;
             hslProgress.ProgressStyle = HslProgressStyle.Horizontal;
-        }
 
-        private HslProgress hslProgress = new HslProgress( );
+			hslTable1.MouseClick += HslTable1_MouseClick;
+			hslTable2.MouseClick += HslTable1_MouseClick;
+		}
+
+		private void HslTable1_MouseClick( object sender, MouseEventArgs e )
+		{
+			Control_Click( sender, e );
+		}
+
+		private HslProgress hslProgress = new HslProgress( );
 
         private void HslTable1_OnDrawCellTextEvent( Graphics g, int rowIndex, int colIndex, RectangleF rectangle, string value, StringFormat sf )
         {
@@ -71,7 +79,7 @@ namespace HslControlsDemo
                 }
                 else
                 {
-                    g.DrawString( value, hslTable2.Font, Brushes.DimGray, rectangle, sf );
+                    g.DrawString( value, hslTable2.Font, Brushes.LightGray, rectangle, sf );
                 }
             }
             else
