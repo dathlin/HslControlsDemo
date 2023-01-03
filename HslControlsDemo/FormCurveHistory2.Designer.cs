@@ -241,10 +241,12 @@
 			this.hslCurveHistory1.BackColor = System.Drawing.Color.White;
 			this.hslCurveHistory1.ButtomHeight = 40;
 			this.hslCurveHistory1.CoordinateColor = System.Drawing.Color.DimGray;
+			this.hslCurveHistory1.CurveRanges = null;
 			this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.hslCurveHistory1.ForeColor = System.Drawing.Color.RoyalBlue;
 			this.hslCurveHistory1.IntervalAbscissaText = 100;
 			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 31);
+			this.hslCurveHistory1.HoverBackColor = System.Drawing.Color.White;
 			this.hslCurveHistory1.MarkLineColor = System.Drawing.Color.DodgerBlue;
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.BlueViolet;
 			this.hslCurveHistory1.MoveLineColor = System.Drawing.Color.Red;
