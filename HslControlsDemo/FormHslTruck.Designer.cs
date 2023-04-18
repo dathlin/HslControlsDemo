@@ -50,6 +50,10 @@
 			this.hslTruck20 = new HslControls.HslTruck();
 			this.hslTruck21 = new HslControls.HslTruck();
 			this.hslTruck22 = new HslControls.HslTruck();
+			this.hslAgvCar1 = new HslControls.HslAgvCar();
+			this.hslAgvCar2 = new HslControls.HslAgvCar();
+			this.hslAgvCar3 = new HslControls.HslAgvCar();
+			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// hslTruck7
@@ -80,7 +84,7 @@
 			// 
 			this.hslTruck5.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck5.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck5.Location = new System.Drawing.Point(774, 7);
+			this.hslTruck5.Location = new System.Drawing.Point(774, 6);
 			this.hslTruck5.Name = "hslTruck5";
 			this.hslTruck5.Size = new System.Drawing.Size(177, 103);
 			this.hslTruck5.TabIndex = 4;
@@ -93,7 +97,7 @@
 			this.hslTruck4.BorderColor = System.Drawing.Color.Black;
 			this.hslTruck4.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck4.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck4.Location = new System.Drawing.Point(576, 7);
+			this.hslTruck4.Location = new System.Drawing.Point(576, 6);
 			this.hslTruck4.Name = "hslTruck4";
 			this.hslTruck4.Size = new System.Drawing.Size(177, 103);
 			this.hslTruck4.TabIndex = 3;
@@ -105,7 +109,7 @@
 			// 
 			this.hslTruck3.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck3.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck3.Location = new System.Drawing.Point(393, 7);
+			this.hslTruck3.Location = new System.Drawing.Point(393, 6);
 			this.hslTruck3.Name = "hslTruck3";
 			this.hslTruck3.Size = new System.Drawing.Size(177, 103);
 			this.hslTruck3.TabIndex = 2;
@@ -116,7 +120,7 @@
 			// 
 			this.hslTruck2.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck2.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck2.Location = new System.Drawing.Point(210, 7);
+			this.hslTruck2.Location = new System.Drawing.Point(210, 6);
 			this.hslTruck2.Name = "hslTruck2";
 			this.hslTruck2.Size = new System.Drawing.Size(177, 103);
 			this.hslTruck2.TabIndex = 1;
@@ -127,7 +131,7 @@
 			// 
 			this.hslTruck1.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck1.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck1.Location = new System.Drawing.Point(17, 7);
+			this.hslTruck1.Location = new System.Drawing.Point(17, 6);
 			this.hslTruck1.Name = "hslTruck1";
 			this.hslTruck1.Size = new System.Drawing.Size(177, 103);
 			this.hslTruck1.TabIndex = 0;
@@ -302,7 +306,7 @@
 			// 
 			this.hslTruck21.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck21.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck21.Location = new System.Drawing.Point(46, 393);
+			this.hslTruck21.Location = new System.Drawing.Point(3, 393);
 			this.hslTruck21.Name = "hslTruck21";
 			this.hslTruck21.Size = new System.Drawing.Size(393, 240);
 			this.hslTruck21.TabIndex = 20;
@@ -313,7 +317,7 @@
 			// 
 			this.hslTruck22.CenterColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 			this.hslTruck22.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-			this.hslTruck22.Location = new System.Drawing.Point(467, 393);
+			this.hslTruck22.Location = new System.Drawing.Point(402, 393);
 			this.hslTruck22.Name = "hslTruck22";
 			this.hslTruck22.Size = new System.Drawing.Size(393, 240);
 			this.hslTruck22.TabIndex = 21;
@@ -321,12 +325,54 @@
 			this.hslTruck22.TruckStyle = 2;
 			this.hslTruck22.Click += new System.EventHandler(this.hslTruck16_Click);
 			// 
+			// hslAgvCar1
+			// 
+			this.hslAgvCar1.BackColor = System.Drawing.Color.Transparent;
+			this.hslAgvCar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslAgvCar1.Location = new System.Drawing.Point(853, 486);
+			this.hslAgvCar1.Name = "hslAgvCar1";
+			this.hslAgvCar1.Size = new System.Drawing.Size(84, 43);
+			this.hslAgvCar1.TabIndex = 22;
+			// 
+			// hslAgvCar2
+			// 
+			this.hslAgvCar2.AgvColor = System.Drawing.Color.Silver;
+			this.hslAgvCar2.BackColor = System.Drawing.Color.Transparent;
+			this.hslAgvCar2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslAgvCar2.Location = new System.Drawing.Point(853, 535);
+			this.hslAgvCar2.Name = "hslAgvCar2";
+			this.hslAgvCar2.Size = new System.Drawing.Size(84, 43);
+			this.hslAgvCar2.TabIndex = 23;
+			// 
+			// hslAgvCar3
+			// 
+			this.hslAgvCar3.AgvColor = System.Drawing.Color.LimeGreen;
+			this.hslAgvCar3.BackColor = System.Drawing.Color.Transparent;
+			this.hslAgvCar3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.hslAgvCar3.Location = new System.Drawing.Point(853, 585);
+			this.hslAgvCar3.Name = "hslAgvCar3";
+			this.hslAgvCar3.Size = new System.Drawing.Size(84, 43);
+			this.hslAgvCar3.TabIndex = 24;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(867, 631);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(57, 17);
+			this.label1.TabIndex = 25;
+			this.label1.Text = "AGV事例";
+			// 
 			// FormHslTruck
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.ClientSize = new System.Drawing.Size(1010, 648);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.hslAgvCar3);
+			this.Controls.Add(this.hslAgvCar2);
+			this.Controls.Add(this.hslAgvCar1);
 			this.Controls.Add(this.hslTruck16);
 			this.Controls.Add(this.hslTruck17);
 			this.Controls.Add(this.hslTruck18);
@@ -355,6 +401,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "FormHslTruck";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
@@ -382,5 +429,9 @@
 		private HslControls.HslTruck hslTruck20;
 		private HslControls.HslTruck hslTruck21;
 		private HslControls.HslTruck hslTruck22;
+		private HslControls.HslAgvCar hslAgvCar1;
+		private HslControls.HslAgvCar hslAgvCar2;
+		private HslControls.HslAgvCar hslAgvCar3;
+		private System.Windows.Forms.Label label1;
 	}
 }

@@ -60,6 +60,7 @@
 			this.label10 = new System.Windows.Forms.Label();
 			this.hslProgressBar17 = new HslControls.HslProgressBar();
 			this.hslProgressBar16 = new HslControls.HslProgressBar();
+			this.label11 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -276,6 +277,7 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.label11);
 			this.groupBox3.Controls.Add(this.hslProgressBar15);
 			this.groupBox3.Controls.Add(this.hslProgressBar14);
 			this.groupBox3.Controls.Add(this.hslProgressBar13);
@@ -298,6 +300,7 @@
 			this.hslProgressBar15.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.hslProgressBar15.Size = new System.Drawing.Size(487, 23);
 			this.hslProgressBar15.TabIndex = 6;
+			this.hslProgressBar15.UseSmallSquares = true;
 			this.hslProgressBar15.Value = 80;
 			// 
 			// hslProgressBar14
@@ -308,7 +311,7 @@
 			this.hslProgressBar14.ProgressColor = System.Drawing.Color.HotPink;
 			this.hslProgressBar14.Size = new System.Drawing.Size(487, 23);
 			this.hslProgressBar14.TabIndex = 5;
-			this.hslProgressBar14.Value = 50;
+			this.hslProgressBar14.Value = 20;
 			// 
 			// hslProgressBar13
 			// 
@@ -318,7 +321,7 @@
 			this.hslProgressBar13.ProgressColor = System.Drawing.Color.DodgerBlue;
 			this.hslProgressBar13.Size = new System.Drawing.Size(487, 23);
 			this.hslProgressBar13.TabIndex = 4;
-			this.hslProgressBar13.Value = 50;
+			this.hslProgressBar13.Value = 40;
 			// 
 			// hslProgressBar12
 			// 
@@ -328,7 +331,8 @@
 			this.hslProgressBar12.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.hslProgressBar12.Size = new System.Drawing.Size(487, 23);
 			this.hslProgressBar12.TabIndex = 3;
-			this.hslProgressBar12.Value = 50;
+			this.hslProgressBar12.UseSmallSquares = true;
+			this.hslProgressBar12.Value = 60;
 			// 
 			// hslProgressBar11
 			// 
@@ -338,7 +342,7 @@
 			this.hslProgressBar11.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.hslProgressBar11.Size = new System.Drawing.Size(487, 23);
 			this.hslProgressBar11.TabIndex = 2;
-			this.hslProgressBar11.Value = 50;
+			this.hslProgressBar11.Value = 80;
 			// 
 			// hslProgressBar10
 			// 
@@ -371,6 +375,7 @@
 			this.hslProgressBar18.Size = new System.Drawing.Size(418, 23);
 			this.hslProgressBar18.TabIndex = 10;
 			this.hslProgressBar18.UseBackColor = true;
+			this.hslProgressBar18.UseSmallSquares = true;
 			this.hslProgressBar18.Value = 50;
 			// 
 			// label10
@@ -409,6 +414,15 @@
 			this.hslProgressBar16.UseBackColor = true;
 			this.hslProgressBar16.Value = 70;
 			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(13, 320);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(296, 17);
+			this.label11.TabIndex = 7;
+			this.label11.Text = "可以通过属性 UseSmallSquares 控制显示分割的样式";
+			// 
 			// FormProgressBar
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -427,6 +441,7 @@
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
@@ -467,5 +482,6 @@
 		private HslControls.HslProgressBar hslProgressBar17;
 		private HslControls.HslProgressBar hslProgressBar18;
 		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Label label11;
 	}
 }
