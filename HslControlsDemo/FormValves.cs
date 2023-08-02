@@ -34,5 +34,10 @@ namespace HslControlsDemo
         {
             Control_Click( sender, e );
         }
-    }
+
+		private void FormValves_Load( object sender, EventArgs e )
+		{
+		}
+
+	}
 }

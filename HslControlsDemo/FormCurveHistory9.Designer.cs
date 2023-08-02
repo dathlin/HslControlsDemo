@@ -48,6 +48,7 @@
 			this.hslCurveHistory1 = new HslControls.HslCurveHistory();
 			this.button10 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -232,20 +233,19 @@
 			this.hslCurveHistory1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.hslCurveHistory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-			this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+			this.hslCurveHistory1.CurveRanges = null;
 			this.hslCurveHistory1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.hslCurveHistory1.IsAllowSelectSection = false;
 			this.hslCurveHistory1.Location = new System.Drawing.Point(12, 30);
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
 			this.hslCurveHistory1.Name = "hslCurveHistory1";
+			this.hslCurveHistory1.ReferenceAxisLeft.Max = 200F;
+			this.hslCurveHistory1.ReferenceAxisLeft.Unit = " ℃";
+			this.hslCurveHistory1.ReferenceAxisRight.Max = 5F;
+			this.hslCurveHistory1.ReferenceAxisRight.Unit = "Mpa";
 			this.hslCurveHistory1.Size = new System.Drawing.Size(980, 524);
 			this.hslCurveHistory1.TabIndex = 0;
 			this.hslCurveHistory1.Text = "hslCurveHistory1";
-			this.hslCurveHistory1.ReferenceAxisLeft.Unit = " ℃";
-			this.hslCurveHistory1.ReferenceAxisRight.Unit = "Mpa";
-			this.hslCurveHistory1.ReferenceAxisLeft.Max = 200F;
-			this.hslCurveHistory1.ReferenceAxisRight.Max = 5F;
 			this.hslCurveHistory1.ValueSegment = 25;
 			this.hslCurveHistory1.onCurveDoubleClick += new HslControls.HslCurveHistory.CurveDoubleClick(this.hslCurveHistory1_onCurveDoubleClick);
 			this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
@@ -265,11 +265,22 @@
 			// 
 			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(10, 562);
+			this.label5.Location = new System.Drawing.Point(10, 560);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(503, 12);
 			this.label5.TabIndex = 27;
 			this.label5.Text = "实时曲线的原理是自己维护float数组，数据新增后，重新设置到曲线，然后滚动条最后即可。";
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.checkBox1.AutoSize = true;
+			this.checkBox1.Location = new System.Drawing.Point(14, 584);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(108, 16);
+			this.checkBox1.TabIndex = 28;
+			this.checkBox1.Text = "铺满当前的界面";
+			this.checkBox1.UseVisualStyleBackColor = true;
 			// 
 			// FormCurveHistory9
 			// 
@@ -277,6 +288,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1004, 645);
+			this.Controls.Add(this.checkBox1);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.button10);
 			this.Controls.Add(this.button9);
@@ -328,5 +340,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.CheckBox checkBox1;
 	}
 }

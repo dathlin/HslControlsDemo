@@ -30,14 +30,16 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V3.3.2
-1. HslProgressBar: HslProgressBar进度条控件新增属性UseSmallSquares，支持显示块状的进度条信息。
-2. HslCurve: 实时曲线控件支持使用属性UpDownHeight上下边距调整，使用属性LeftRightWidth调整左右的坐标轴的边距。
-3. HslLanternAlarm: 报警灯控件底部的高度支持使用属性ButtonHeight来自定义调整，小于1表示高度百分比，大于1表示绝对像素值。
-4. HslBottle: 瓶子控件当顶部的文本设置为空的时候自动延展高度，底部的大小高度支持设置小于1，表示占用百分比信息。
-5. HslAgvCar: 新增AGV小车的控件，暂时只能设置一个方向，但是在接下来另一个高级控件产品里支持移动，旋转动画。
-6. Curve: HslCurve和HslCurveHistory曲线控件新增方法接口GetAllCurve(), 用来获取当前控件所有的曲线数据信息，从而可以进行一些更加自由的操作。
-7. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V3.4.0
+1. HslValves: 控制阀门方向的属性PipeLineStyle修改为 GraphDirection 枚举，现在支持上下左右四种方向朝向了(升级可能不兼容，手动修改一点代码)。
+2. HslCurveHistory: 历史曲线控件新增滚动到指定索引的数据，指定的时间位置的功能方法，新增RenderCurveUI指定数据索引区间，或是指定时间区间的功能方法。
+3. HslCurveHistory: 方法新增参数 RenderCurveUI( bool stretchToFull = false )， 如果传入true，可以自动铺满当前的控件界面显示。
+4. HslCurveHistory: 调试光标移动提示框的宽度属性DataTipWidth支持如果设置小于0，则宽度自适应，如果等于0则不显示，大于0则表示绝对像素宽度。
+5. HslCurveHistory: 新增方法AddMarkCurvePeakPoint，用来增加历史曲线控件的峰值标记功能。
+6. HslCurveHistory: 新增事件OnScrollChanged当滚动条操作的时候，以及挪动曲线显示的时候触发，ScrollToRight直接取消文本显示模式。
+7. HslCurveHistory: 坐标轴新增是否设置为对数坐标轴的功能，可能用于对数的方式显示曲线信息。
+8. 全新的曲线控件使用手册：http://www.hsltechnology.cn/Doc/HslControls
+9. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }
