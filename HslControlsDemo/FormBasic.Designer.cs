@@ -70,6 +70,7 @@
 			this.hslButton3 = new HslControls.HslButton();
 			this.hslButton2 = new HslControls.HslButton();
 			this.hslButton1 = new HslControls.HslButton();
+			this.hslArrow10 = new HslControls.HslArrow();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -120,6 +121,7 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.hslArrow10);
 			this.groupBox3.Controls.Add(this.hslArrow9);
 			this.groupBox3.Controls.Add(this.hslArrow8);
 			this.groupBox3.Controls.Add(this.hslArrow7);
@@ -514,7 +516,7 @@
 			this.hslArrow2.FactorY = 0.27F;
 			this.hslArrow2.Location = new System.Drawing.Point(24, 80);
 			this.hslArrow2.Name = "hslArrow2";
-			this.hslArrow2.Size = new System.Drawing.Size(176, 49);
+			this.hslArrow2.Size = new System.Drawing.Size(186, 49);
 			this.hslArrow2.TabIndex = 1;
 			this.hslArrow2.Text = "hslArrow2";
 			this.hslArrow2.Click += new System.EventHandler(this.HslButton1_Click);
@@ -526,7 +528,7 @@
 			this.hslArrow1.FactorY = 0.27F;
 			this.hslArrow1.Location = new System.Drawing.Point(24, 25);
 			this.hslArrow1.Name = "hslArrow1";
-			this.hslArrow1.Size = new System.Drawing.Size(176, 49);
+			this.hslArrow1.Size = new System.Drawing.Size(186, 49);
 			this.hslArrow1.TabIndex = 0;
 			this.hslArrow1.Text = "hslArrow1";
 			this.hslArrow1.Click += new System.EventHandler(this.HslButton1_Click);
@@ -614,6 +616,19 @@
 			this.hslButton1.TabIndex = 0;
 			this.hslButton1.Text = "hslButton1";
 			this.hslButton1.Click += new System.EventHandler(this.HslButton1_Click);
+			// 
+			// hslArrow10
+			// 
+			this.hslArrow10.ArrowBoth = true;
+			this.hslArrow10.ArrowDirection = System.Windows.Forms.ArrowDirection.Down;
+			this.hslArrow10.EdgeColor = System.Drawing.Color.Gray;
+			this.hslArrow10.FactorX = 0.75F;
+			this.hslArrow10.FactorY = 0.3F;
+			this.hslArrow10.Location = new System.Drawing.Point(410, 204);
+			this.hslArrow10.Name = "hslArrow10";
+			this.hslArrow10.Size = new System.Drawing.Size(44, 132);
+			this.hslArrow10.TabIndex = 9;
+			this.hslArrow10.Text = "流量";
 			// 
 			// FormBasic
 			// 
@@ -705,5 +720,6 @@
 		private HslControls.HslButton hslButton8;
 		private System.Windows.Forms.Panel panel1;
 		private HslControls.HslBadge hslBadge13;
+		private HslControls.HslArrow hslArrow10;
 	}
 }

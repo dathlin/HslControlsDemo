@@ -43,6 +43,8 @@
 			this.hslLanternSimple10 = new HslControls.HslLanternSimple();
 			this.hslLanternSimple9 = new HslControls.HslLanternSimple();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
@@ -51,8 +53,7 @@
 			this.hslLanternAlarm3 = new HslControls.HslLanternAlarm();
 			this.hslLanternAlarm2 = new HslControls.HslLanternAlarm();
 			this.hslLanternAlarm1 = new HslControls.HslLanternAlarm();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.hslLanternAlarm6 = new HslControls.HslLanternAlarm();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -213,6 +214,7 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.hslLanternAlarm6);
 			this.groupBox3.Controls.Add(this.button2);
 			this.groupBox3.Controls.Add(this.button1);
 			this.groupBox3.Controls.Add(this.label3);
@@ -229,6 +231,26 @@
 			this.groupBox3.TabIndex = 9;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "报警灯的效果";
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(820, 133);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(131, 41);
+			this.button2.TabIndex = 17;
+			this.button2.Text = "结束报警";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(820, 66);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(131, 41);
+			this.button1.TabIndex = 16;
+			this.button1.Text = "开始报警";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label3
 			// 
@@ -261,7 +283,7 @@
 			// 
 			this.hslLanternAlarm5.AlarmColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
 			this.hslLanternAlarm5.IsAlarm = true;
-			this.hslLanternAlarm5.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+			this.hslLanternAlarm5.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
 			this.hslLanternAlarm5.Location = new System.Drawing.Point(636, 66);
 			this.hslLanternAlarm5.Name = "hslLanternAlarm5";
 			this.hslLanternAlarm5.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -272,7 +294,6 @@
 			// hslLanternAlarm4
 			// 
 			this.hslLanternAlarm4.IsAlarm = true;
-			this.hslLanternAlarm4.LightColor = System.Drawing.Color.LightGray;
 			this.hslLanternAlarm4.Location = new System.Drawing.Point(473, 66);
 			this.hslLanternAlarm4.Name = "hslLanternAlarm4";
 			this.hslLanternAlarm4.Size = new System.Drawing.Size(61, 86);
@@ -282,48 +303,38 @@
 			// hslLanternAlarm3
 			// 
 			this.hslLanternAlarm3.LightColor = System.Drawing.Color.Blue;
-			this.hslLanternAlarm3.Location = new System.Drawing.Point(257, 66);
+			this.hslLanternAlarm3.Location = new System.Drawing.Point(214, 66);
 			this.hslLanternAlarm3.Name = "hslLanternAlarm3";
-			this.hslLanternAlarm3.Size = new System.Drawing.Size(61, 86);
+			this.hslLanternAlarm3.Size = new System.Drawing.Size(71, 86);
 			this.hslLanternAlarm3.TabIndex = 10;
 			this.hslLanternAlarm3.Click += new System.EventHandler(this.HslLanternSimple8_Click);
 			// 
 			// hslLanternAlarm2
 			// 
 			this.hslLanternAlarm2.LightColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-			this.hslLanternAlarm2.Location = new System.Drawing.Point(145, 66);
+			this.hslLanternAlarm2.Location = new System.Drawing.Point(108, 66);
 			this.hslLanternAlarm2.Name = "hslLanternAlarm2";
-			this.hslLanternAlarm2.Size = new System.Drawing.Size(61, 86);
+			this.hslLanternAlarm2.Size = new System.Drawing.Size(68, 86);
 			this.hslLanternAlarm2.TabIndex = 9;
 			this.hslLanternAlarm2.Click += new System.EventHandler(this.HslLanternSimple8_Click);
 			// 
 			// hslLanternAlarm1
 			// 
-			this.hslLanternAlarm1.Location = new System.Drawing.Point(38, 66);
+			this.hslLanternAlarm1.Location = new System.Drawing.Point(18, 66);
 			this.hslLanternAlarm1.Name = "hslLanternAlarm1";
 			this.hslLanternAlarm1.Size = new System.Drawing.Size(61, 86);
 			this.hslLanternAlarm1.TabIndex = 8;
 			this.hslLanternAlarm1.Click += new System.EventHandler(this.HslLanternSimple8_Click);
 			// 
-			// button1
+			// hslLanternAlarm6
 			// 
-			this.button1.Location = new System.Drawing.Point(820, 66);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(131, 41);
-			this.button1.TabIndex = 16;
-			this.button1.Text = "开始报警";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(820, 133);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(131, 41);
-			this.button2.TabIndex = 17;
-			this.button2.Text = "结束报警";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.hslLanternAlarm6.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.hslLanternAlarm6.ButtonHeight = 0.2F;
+			this.hslLanternAlarm6.LightColor = System.Drawing.Color.SlateGray;
+			this.hslLanternAlarm6.Location = new System.Drawing.Point(308, 128);
+			this.hslLanternAlarm6.Name = "hslLanternAlarm6";
+			this.hslLanternAlarm6.Size = new System.Drawing.Size(22, 24);
+			this.hslLanternAlarm6.TabIndex = 18;
 			// 
 			// FormLanternSimple
 			// 
@@ -373,5 +384,6 @@
         private HslControls.HslLanternAlarm hslLanternAlarm2;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
+		private HslControls.HslLanternAlarm hslLanternAlarm6;
 	}
 }

@@ -30,6 +30,7 @@ namespace HslControlsDemo
                 textBox1.Text = m;
                 formHslDigital.Close( );
             };
+            formHslDigital.DigitalInput.DisplayText = "123";
             formHslDigital.ShowDialog( );
         }
 

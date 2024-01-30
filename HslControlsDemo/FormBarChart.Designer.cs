@@ -194,5 +194,5 @@
         private HslControls.HslBarChart hslBarChart7;
         private System.Windows.Forms.Label label1;
         private HslControls.HslPanel hslPanel1;
-    }
+	}
 }

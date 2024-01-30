@@ -147,7 +147,10 @@ namespace HslControlsDemo
                 hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
                 hslCurveHistory1.SetDateTimes( times );
                 hslCurveHistory1.SetCurveVisible( "步序", false );   // 步序不是曲线信息，不用显示出来
-                hslCurveHistory1.ScrollToRight( );
+                if (checkBox1.Checked)
+                    hslCurveHistory1.RenderCurveUI( stretchToFull: true );
+                else
+                    hslCurveHistory1.ScrollToRight( );
                 timeTick++;
             }
         }
