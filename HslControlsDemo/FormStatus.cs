@@ -9,233 +9,264 @@ using System.Windows.Forms;
 
 namespace HslControlsDemo
 {
-    public partial class FormStatus : FormContent
-    {
-        public FormStatus( )
-        {
-            InitializeComponent();
-            random = new Random( );
-        }
+	public partial class FormStatus : FormContent
+	{
+		public FormStatus( )
+		{
+			InitializeComponent();
+			random = new Random( );
+			this.hslStatusManagement4.OnStatusClick += HslStatusManagement4_OnStatusClick;
+		}
 
-        private void hslStatusManagement2_Load( object sender, EventArgs e )
-        {
+		private void HslStatusManagement4_OnStatusClick( HslControls.HslStatusManagement hslStatus, int row, int col )
+		{
+			if (hslStatus.GetColorFromPosition( row, col ) != Color.DodgerBlue)
+				hslStatus.SetColorByLocation( row, col, Color.DodgerBlue );
+			else
+				hslStatus.SetColorByLocation( row, col, Color.LightGray );
 
-        }
+		}
 
-        private Random random;
+		private void hslStatusManagement2_Load( object sender, EventArgs e )
+		{
 
-        private void button3_Click( object sender, EventArgs e )
-        {
-            hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Rectangle;
-        }
+		}
 
-        private void button4_Click( object sender, EventArgs e )
-        {
-            hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Ellipse;
-        }
+		private Random random;
 
-        private void button5_Click( object sender, EventArgs e )
-        {
-            hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Rhombus;
-        }
+		private void button3_Click( object sender, EventArgs e )
+		{
+			hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Rectangle;
+		}
 
-        private void button1_Click( object sender, EventArgs e )
-        {
-            hslStatusManagement2.SetColorAll( Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
-        }
+		private void button4_Click( object sender, EventArgs e )
+		{
+			hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Ellipse;
+		}
 
-        private void button2_Click( object sender, EventArgs e )
-        {
-            hslStatusManagement2.ResetColorAll( );
-        }
+		private void button5_Click( object sender, EventArgs e )
+		{
+			hslStatusManagement2.RenderStyle = HslControls.HslRenderStyle.Rhombus;
+		}
 
-        private void button6_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox1.Text, out int rowIndex ))
-            {
-                hslStatusManagement2.SetColorByRow( rowIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
-            }
-            else
-            {
-                MessageBox.Show( "Row Input error!" );
-            }
-        }
+		private void button1_Click( object sender, EventArgs e )
+		{
+			hslStatusManagement2.SetColorAll( Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
+		}
 
-        private void button7_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox1.Text, out int rowIndex ))
-            {
-                hslStatusManagement2.ResetColorByRow( rowIndex );
-            }
-            else
-            {
-                MessageBox.Show( "Row Input error!" );
-            }
-        }
+		private void button2_Click( object sender, EventArgs e )
+		{
+			hslStatusManagement2.ResetColorAll( );
+		}
 
-        private void button9_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox2.Text, out int colIndex ))
-            {
-                hslStatusManagement2.SetColorByCol( colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
-            }
-            else
-            {
-                MessageBox.Show( "Col Input error!" );
-            }
-        }
+		private void button6_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox1.Text, out int rowIndex ))
+			{
+				hslStatusManagement2.SetColorByRow( rowIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
+			}
+			else
+			{
+				MessageBox.Show( "Row Input error!" );
+			}
+		}
 
-        private void button8_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox2.Text, out int colIndex ))
-            {
-                hslStatusManagement2.ResetColorByRow( colIndex );
-            }
-            else
-            {
-                MessageBox.Show( "Col Input error!" );
-            }
-        }
+		private void button7_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox1.Text, out int rowIndex ))
+			{
+				hslStatusManagement2.ResetColorByRow( rowIndex );
+			}
+			else
+			{
+				MessageBox.Show( "Row Input error!" );
+			}
+		}
 
-        private void button11_Click( object sender, EventArgs e )
-        {
-            if(int.TryParse( textBox3.Text, out int rowIndex ) && int.TryParse( textBox4.Text, out int colIndex ))
-            {
-                hslStatusManagement2.SetColorByLocation( rowIndex, colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
-            }
-            else
-            {
-                MessageBox.Show( "Input error!" );
-            }
-        }
+		private void button9_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox2.Text, out int colIndex ))
+			{
+				hslStatusManagement2.SetColorByCol( colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
+			}
+			else
+			{
+				MessageBox.Show( "Col Input error!" );
+			}
+		}
 
-        private void button10_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox3.Text, out int rowIndex ) && int.TryParse( textBox4.Text, out int colIndex ))
-            {
-                hslStatusManagement2.ResetColorByLocation( rowIndex, colIndex );
-            }
-            else
-            {
-                MessageBox.Show( "Input error!" );
-            }
-        }
+		private void button8_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox2.Text, out int colIndex ))
+			{
+				hslStatusManagement2.ResetColorByRow( colIndex );
+			}
+			else
+			{
+				MessageBox.Show( "Col Input error!" );
+			}
+		}
 
-        private void button12_Click( object sender, EventArgs e )
-        {
-            if (int.TryParse( textBox5.Text, out int offect ))
-            {
-                hslStatusManagement2.SpacingOffect = offect;
-            }
-            else
-            {
-                MessageBox.Show( "offect Input error!" );
-            }
-        }
+		private void button11_Click( object sender, EventArgs e )
+		{
+			if(int.TryParse( textBox3.Text, out int rowIndex ) && int.TryParse( textBox4.Text, out int colIndex ))
+			{
+				hslStatusManagement2.SetColorByLocation( rowIndex, colIndex, Color.FromArgb( random.Next( 256 ), random.Next( 256 ), random.Next( 256 ) ) );
+			}
+			else
+			{
+				MessageBox.Show( "Input error!" );
+			}
+		}
 
-        private void FormStatus_Load( object sender, EventArgs e )
-        {
-            Inni();
+		private void button_mark_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox_mark_row.Text, out int rowIndex ) && int.TryParse( textBox_mark_col.Text, out int colIndex ))
+			{
+				hslStatusManagement2.SetMark( rowIndex, colIndex, textBox_mark_text.Text );
+			}
+			else
+			{
+				MessageBox.Show( "Input error!" );
+			}
+		}
 
-            SetExample();
+		private void button10_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox3.Text, out int rowIndex ) && int.TryParse( textBox4.Text, out int colIndex ))
+			{
+				hslStatusManagement2.ResetColorByLocation( rowIndex, colIndex );
+			}
+			else
+			{
+				MessageBox.Show( "Input error!" );
+			}
+		}
 
-        }
+		private void button12_Click( object sender, EventArgs e )
+		{
+			if (int.TryParse( textBox5.Text, out int offect ))
+			{
+				hslStatusManagement2.SpacingOffect = offect;
+			}
+			else
+			{
+				MessageBox.Show( "offect Input error!" );
+			}
+		}
 
-        #region 示例
+		private void FormStatus_Load( object sender, EventArgs e )
+		{
+			Inni();
 
-        private void SetExample( )
-        {
-            byte[] buffer = new byte[hslStatusManagement6.RowCount * hslStatusManagement6.ColCount];
-            random.NextBytes(buffer);
-            hslStatusManagement6.SetColorAll(buffer.Select(new Func<byte, Color>(GetColorFromValue)).ToArray());
-            hslStatusManagement6.SetAllDescription( buffer.Select( new Func<byte, string>( m => $"Value:{m}" ) ).ToArray( ) ) ;
-        }
+			SetExample();
 
-        private Color GetColorFromValue( byte value )
-        {
-            if (value < 50)
-            {
-                return Color.FromArgb(224, 224, 224);
-            }
-            else if (value < 100)
-            {
-                return Color.FromArgb(198, 228, 139);
-            }
-            else if (value < 150)
-            {
-                return Color.FromArgb(123, 201, 111);
-            }
-            else if (value < 200)
-            {
-                return Color.FromArgb(35, 154, 59);
-            }
-            else
-            {
-                return Color.FromArgb(25, 97, 39);
-            }
-        }
+		}
 
-        #endregion
+		#region 示例
 
-        #region 跑马灯示例
+		private void SetExample( )
+		{
+			byte[] buffer = new byte[hslStatusManagement6.RowCount * hslStatusManagement6.ColCount];
+			random.NextBytes(buffer);
+			hslStatusManagement6.SetColorAll(buffer.Select(new Func<byte, Color>(GetColorFromValue)).ToArray());
+			hslStatusManagement6.SetAllDescription( buffer.Select( new Func<byte, string>( m => $"Value:{m}" ) ).ToArray( ) ) ;
+		}
 
-        private Timer timer;
-        private Point activePoint = new Point(0, 0);
+		private Color GetColorFromValue( byte value )
+		{
+			if (value < 50)
+			{
+				return Color.FromArgb(224, 224, 224);
+			}
+			else if (value < 100)
+			{
+				return Color.FromArgb(198, 228, 139);
+			}
+			else if (value < 150)
+			{
+				return Color.FromArgb(123, 201, 111);
+			}
+			else if (value < 200)
+			{
+				return Color.FromArgb(35, 154, 59);
+			}
+			else
+			{
+				return Color.FromArgb(25, 97, 39);
+			}
+		}
 
-        private void Inni( )
-        {
-            timer = new Timer();
-            timer.Interval = 60;
-            timer.Tick += Timer_Tick;
-            timer.Start();
-            hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
-        }
+		#endregion
 
-        private void Timer_Tick( object sender, EventArgs e )
-        {
-            // 先判断能否往右
-            if(activePoint.Y + 1 < hslStatusManagement5.ColCount && activePoint.X == 0)
-            {
-                hslStatusManagement5.ResetColorByLocation(activePoint);
-                activePoint.Y++;
-                hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
-                return;
-            }
+		#region 跑马灯示例
 
-            // 判断能否往下
-            if(activePoint.X + 1 < hslStatusManagement5.RowCount && activePoint.Y == hslStatusManagement5.ColCount - 1)
-            {
-                hslStatusManagement5.ResetColorByLocation(activePoint);
-                activePoint.X++;
-                hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
-                return;
-            }
+		private Timer timer;
+		private Point activePoint = new Point(0, 0);
 
-            // 判断能否往左
-            if (activePoint.Y - 1 >= 0 && activePoint.X == hslStatusManagement5.RowCount - 1)
-            {
-                hslStatusManagement5.ResetColorByLocation(activePoint);
-                activePoint.Y--;
-                hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
-                return;
-            }
+		private void Inni( )
+		{
+			timer = new Timer();
+			timer.Interval = 60;
+			timer.Tick += Timer_Tick;
+			timer.Start();
+			hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
+		}
 
-            // 判断能否往上
-            if (activePoint.X - 1 >= 0 && activePoint.Y == 0)
-            {
-                hslStatusManagement5.ResetColorByLocation(activePoint);
-                activePoint.X--;
-                hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
-            }
-        }
+		private void Timer_Tick( object sender, EventArgs e )
+		{
+			// 先判断能否往右
+			if(activePoint.Y + 1 < hslStatusManagement5.ColCount && activePoint.X == 0)
+			{
+				hslStatusManagement5.StopRendering( );                       // 暂停界面刷新
+				hslStatusManagement5.ResetColorByLocation(activePoint);
+				activePoint.Y++;
+				hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
+				hslStatusManagement5.ContinueRendering( );                   // 继续界面刷新
+				return;
+			}
+
+			// 判断能否往下
+			if(activePoint.X + 1 < hslStatusManagement5.RowCount && activePoint.Y == hslStatusManagement5.ColCount - 1)
+			{
+				hslStatusManagement5.StopRendering( );                       // 暂停界面刷新
+				hslStatusManagement5.ResetColorByLocation(activePoint);
+				activePoint.X++;
+				hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
+				hslStatusManagement5.ContinueRendering( );                   // 继续界面刷新
+				return;
+			}
+
+			// 判断能否往左
+			if (activePoint.Y - 1 >= 0 && activePoint.X == hslStatusManagement5.RowCount - 1)
+			{
+				hslStatusManagement5.StopRendering( );                       // 暂停界面刷新
+				hslStatusManagement5.ResetColorByLocation(activePoint);
+				activePoint.Y--;
+				hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
+				hslStatusManagement5.ContinueRendering( );                   // 继续界面刷新
+				return;
+			}
+
+			// 判断能否往上
+			if (activePoint.X - 1 >= 0 && activePoint.Y == 0)
+			{
+				hslStatusManagement5.StopRendering( );                       // 暂停界面刷新
+				hslStatusManagement5.ResetColorByLocation(activePoint);
+				activePoint.X--;
+				hslStatusManagement5.SetColorByLocation(activePoint, Color.DodgerBlue);
+				hslStatusManagement5.ContinueRendering( );                   // 继续界面刷新
+			}
+		}
 
 
 
-        #endregion
+		#endregion
 
-        private void HslStatusManagement1_Click( object sender, EventArgs e )
-        {
-            Control_Click( sender, e );
-        }
-    }
+		private void HslStatusManagement1_Click( object sender, EventArgs e )
+		{
+			Control_Click( sender, e );
+		}
+
+	}
 }
