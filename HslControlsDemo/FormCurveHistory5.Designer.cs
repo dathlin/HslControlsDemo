@@ -44,6 +44,7 @@
 			this.button10 = new System.Windows.Forms.Button();
 			this.hslPanel1 = new HslControls.HslPanel();
 			this.hslCurveHistory1 = new HslControls.HslCurveHistory();
+			this.button3 = new System.Windows.Forms.Button();
 			this.hslPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -211,7 +212,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.hslCurveHistory1.BackColor = System.Drawing.Color.Transparent;
-			this.hslCurveHistory1.DashCoordinateColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+			this.hslCurveHistory1.CurveRanges = null;
 			this.hslCurveHistory1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.hslCurveHistory1.Location = new System.Drawing.Point(5, 5);
 			this.hslCurveHistory1.MarkTextColor = System.Drawing.Color.Yellow;
@@ -230,12 +231,24 @@
 			this.hslCurveHistory1.onCurveRangeSelect += new HslControls.HslCurveHistory.CurveRangeSelect(this.HslCurveHistory1_onCurveRangeSelect);
 			this.hslCurveHistory1.Click += new System.EventHandler(this.HslCurveHistory1_Click);
 			// 
+			// button3
+			// 
+			this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.button3.Location = new System.Drawing.Point(383, 614);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(119, 23);
+			this.button3.TabIndex = 28;
+			this.button3.Text = "隐藏温度提示";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
+			// 
 			// FormCurveHistory5
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1007, 645);
+			this.Controls.Add(this.button3);
 			this.Controls.Add(this.hslPanel1);
 			this.Controls.Add(this.button10);
 			this.Controls.Add(this.button9);
@@ -279,5 +292,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
 		private HslControls.HslPanel hslPanel1;
+		private System.Windows.Forms.Button button3;
 	}
 }

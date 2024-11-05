@@ -35,7 +35,7 @@ namespace HslControlsDemo
             timerTick.Start( );
 
             hslCurve1.SetCurveText( new string[] { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" } );
-            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue, HslControls.CurveStyle.LineSegment );
+            hslCurve1.SetLeftCurve( "A", GetRandomData( 12, 100, 0 ), Color.Blue, HslControls.CurveStyle.Section );
             hslCurve1.AddMarkText( new HslControls.HslMarkText( )
             {
                 Index = 2,

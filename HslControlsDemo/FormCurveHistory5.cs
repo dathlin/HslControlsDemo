@@ -272,5 +272,10 @@ namespace HslControlsDemo
             hslCurveHistory1.ReferenceAxisLeft.Min = 80;
             hslCurveHistory1.RenderCurveUI( );
         }
-    }
+
+		private void button3_Click( object sender, EventArgs e )
+		{
+			hslCurveHistory1.GetAllCurve( )["温度"].TipInfoVisiable = false;
+		}
+	}
 }

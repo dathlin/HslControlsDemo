@@ -216,25 +216,25 @@
             this.groupBox2.Size = new System.Drawing.Size(521, 349);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "另一种进度条的示例";
+            this.groupBox2.Text = "另一种进度条的示例: hslProgressLine";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(390, 330);
+            this.label10.Location = new System.Drawing.Point(358, 330);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 12);
+            this.label10.Size = new System.Drawing.Size(113, 12);
             this.label10.TabIndex = 18;
-            this.label10.Text = "动态变化";
+            this.label10.Text = "动态变化及端点样式";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(223, 330);
+            this.label9.Location = new System.Drawing.Point(203, 330);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
+            this.label9.Size = new System.Drawing.Size(89, 12);
             this.label9.TabIndex = 17;
-            this.label9.Text = "修改颜色";
+            this.label9.Text = "修改颜色及粗细";
             // 
             // label8
             // 
@@ -247,6 +247,8 @@
             // 
             // hslProgressLine13
             // 
+            this.hslProgressLine13.CircularWidth = 8;
+            this.hslProgressLine13.LineCapStyle = System.Drawing.Drawing2D.LineCap.RoundAnchor;
             this.hslProgressLine13.Location = new System.Drawing.Point(350, 197);
             this.hslProgressLine13.Name = "hslProgressLine13";
             this.hslProgressLine13.ProgressStyle = HslControls.HslProgressStyle.Circular;
@@ -257,6 +259,7 @@
             // 
             // hslProgressLine12
             // 
+            this.hslProgressLine12.CircularWidth = 6;
             this.hslProgressLine12.Location = new System.Drawing.Point(187, 197);
             this.hslProgressLine12.Name = "hslProgressLine12";
             this.hslProgressLine12.ProgressColor = System.Drawing.Color.LimeGreen;
