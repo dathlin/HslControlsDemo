@@ -30,14 +30,15 @@ namespace HslControlsDemo
 
         private void FormCharge_Load( object sender, EventArgs e )
         {
-            textBox1.Text = @"V3.4.3
-1. HslCurveHistory: 曲线类HslCurveItem新增属性TipInfoVisiable来指示是否显示光标移动时的提示信息，使用方法为hslCurveHistory1.GetAllCurve( )[""温度""].TipInfoVisiable = false;
-2. HslProgressLine: 基于线条的进度条新增属性CircularWidth用于调整粗细，属性LineCapStyle，用于调整两端的样式，圆形样式下的粗细。
-3. HslCurveHistory: 修复历史曲线放大并拖动显示位置后，使用代码重新调整放大倍数时，显示Y轴偏移信息不正确的bug。
-4. HslCurveHistory: 新增方法SetScaleByYAxis( float scale )可以单独调整Y轴的缩放倍率，RemoveAllCurve( )方法调用时重新初始化当前的Y轴显示偏移位置信息。
-5. HslCurve: 修复实时曲线控件在曲线设置样式CurveStyle.Section下，阴影部分显示在上面的bug，原因来自Y轴基准线设置不正确。
-6. 全新的曲线控件使用手册：http://www.hsltechnology.cn/Doc/HslControls
-7. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
+            textBox1.Text = @"V3.5.0
+1. HslCurveHistory: 历史曲线控件新增 public void SetTextTip( string key, string[] data ) 方法，用来添加纯字符串信息到提示上去，可以显示任何字符串。
+2. HslCurveHistory: 历史曲线控件新增事件 onCurveMouseHover , 方便外界获取到光标实时的位置及数据内容信息。
+3. AuxiliaryLine: 历史曲线的辅助线类AuxiliaryLine新增枚举属性TextLocation，可以用来设置文本在不同的位置，具体教程参考官网。
+4. HslCurveHistory: 历史曲线控件除了按下滚轮可以拖动曲线外，还支持了按下Ctrl键+鼠标左键来拖动曲线，方便用于没有滚轮的情况，需要注意，控件需要先获取焦点。
+5. CurveStyle: 曲线样式新增PointCircle, PointTriangle, PointSquare分别为圆点，三角形，正方形，不再绘制曲线线条，只有一个一个的点。
+6. HslCurveHistory: 历史曲线控件新增属性EnableMouseDoubleClickFreeze,可以手动控制是否运行双击固定光标直线标记，优化部分字体颜色。
+7. 全新的曲线控件使用手册：http://www.hsltechnology.cn/Doc/HslControls
+8. HslControls企业授权费：4200rmb，一次付费，终身授权，开放源代码，支持后续更新。
 ";
         }
     }

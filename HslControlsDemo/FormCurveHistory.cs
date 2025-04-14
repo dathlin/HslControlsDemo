@@ -34,6 +34,7 @@ namespace HslControlsDemo
 			float[] data = new float[total];
 			float[] press = new float[total];
 			DateTime[] times = new DateTime[total];
+			string[] codes = new string[total];
 
 			for (int i = 0; i < data.Length; i++)
 			{
@@ -41,6 +42,7 @@ namespace HslControlsDemo
 				data[i] = (float)(Math.Sin( 2 * Math.PI * i / 50 ) * 20 + 120);
 				times[i] = DateTime.Now.AddSeconds( i - total );
 				press[i] = (float)(Math.Sin( 2 * Math.PI * i / 100 ) * 0.5d + 4.1d);
+				codes[i] = "K" + i.ToString( "D6" );
 			}
 
 			// 显示出数据信息来
@@ -50,6 +52,8 @@ namespace HslControlsDemo
 				hslCurveHistory1.SetLeftCurve( "温度", data, Color.DodgerBlue, HslControls.CurveStyle.Curve, "{0:F1} ℃" );
 				hslCurveHistory1.SetRightCurve( "压力", press, Color.Tomato, HslControls.CurveStyle.Curve, "{0:F2} Mpa" );
 				hslCurveHistory1.SetDateTimes( times );
+				hslCurveHistory1.SetTextTip( "条码", codes );
+				hslCurveHistory1.SetTextTip( "规格", codes );
 				hslCurveHistory1.AddAuxiliaryLabel( new HslControls.AuxiliaryLable( )
 				{
 					LocationX = 0.6f,
@@ -174,12 +178,25 @@ namespace HslControlsDemo
 		private void FormCurveHistory_Load( object sender, EventArgs e )
 		{
 			hslCurveHistory1.AddLeftAuxiliary( 172f );
+			hslCurveHistory1.AddLeftAuxiliary( 150f ).TextLocation = HslControls.AuxiliaryTextLocation.LeftUp;
+			hslCurveHistory1.AddLeftAuxiliary( 130f ).TextLocation = HslControls.AuxiliaryTextLocation.LeftDown;
+			hslCurveHistory1.AddLeftAuxiliary( 100f ).TextLocation = HslControls.AuxiliaryTextLocation.RightUp;
+			hslCurveHistory1.AddLeftAuxiliary( 80f ).TextLocation = HslControls.AuxiliaryTextLocation.RightDown;
+			hslCurveHistory1.AddLeftAuxiliary( 50f ).TextLocation = HslControls.AuxiliaryTextLocation.CenterUp;
+			hslCurveHistory1.AddLeftAuxiliary( 30f ).TextLocation = HslControls.AuxiliaryTextLocation.CenterDown;
+			hslCurveHistory1.AddRightAuxiliary( 1.6f ).TextLocation = HslControls.AuxiliaryTextLocation.Center;
 
 			linkLabel1.Click += LinkLabel1_Click;
 			checkBox3.CheckedChanged += CheckBox3_CheckedChanged;
 
 			hslCurveHistory1.onCurveRangeSelect += HslCurveHistory1_onCurveRangeSelect;
+			hslCurveHistory1.onCurveMouseHover += HslCurveHistory1_onCurveMouseHover;
+		}
 
+		private void HslCurveHistory1_onCurveMouseHover( HslControls.HslCurveHistory hslCurve, int index, DateTime dateTime )
+		{
+			label7.Text = "温度: " + hslCurveHistory1.GetAllCurve( )["温度"].Data[index].ToString( ); ;
+			label8.Text = "条码: " + hslCurveHistory1.GetAllText( )["条码"].Data[index];
 		}
 
 		private void CheckBox3_CheckedChanged( object sender, EventArgs e )

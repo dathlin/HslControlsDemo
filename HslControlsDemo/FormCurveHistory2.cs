@@ -78,7 +78,7 @@ namespace HslControlsDemo
                      EndIndex = 1500,
                      Height = 0.9f,
                      LinePen = Pens.Blue,
-                     FontBrush = Brushes.Chocolate
+                     FontBrush = Brushes.Chocolate,
                  };
                  active.CursorTexts.Add( "条码", "A123123124ashdiahsd是的iahsidasd" );
                  active.CursorTexts.Add( "工号", "asd2sd123dasf" );
